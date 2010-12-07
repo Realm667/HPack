@@ -1,0 +1,5 @@
+ACTOR HCandelabra : Candelabra	12312
+{
+	//$Category Lights
+	//$Title Candelabra
+}

@@ -1,0 +1,284 @@
+WARP texture wredliq
+WARP texture wskulli2
+WARP texture wskullic
+WARP texture wskullie
+WARP texture wskullig
+WARP texture wskullim
+WARP texture wskullin
+WARP texture wskulliq
+WARP2 texture wslime01
+WARP texture wslime02
+WARP2 texture wwater01
+WARP texture wlava01
+WARP texture WSLIME03
+WARP texture WSLIMH
+WARP2 texture WDWATR01
+warp flat KDSKYT66
+warp2 flat WINDIGO
+
+texture WLLATFL1
+ pic WLLATFL1 tics 8
+ pic WLLATFL2 tics 8
+ pic WLLATFL3 tics 8
+
+texture WLLBLOD1
+ pic WLLBLOD1 tics 8
+ pic WLLBLOD2 tics 8
+ pic WLLBLOD3 tics 8
+
+texture WLLSLIM1
+ pic WLLSLIM1 tics 8
+ pic WLLSLIM2 tics 8
+ pic WLLSLIM3 tics 8
+
+texture CANDLES1
+ pic CANDLES1 tics 8
+ pic CANDLES2 tics 8
+ pic CANDLES3 tics 8
+
+texture DOORXNF1
+ pic DOORXNF1 tics 8
+ pic DOORXNF2 tics 8
+ pic DOORXNF3 tics 8
+
+texture DOORXNV1
+ pic DOORXNV1 tics 8
+ pic DOORXNV2 tics 8
+ pic DOORXNV3 tics 8
+
+texture ELECDOR1
+ pic ELECDOR1 tics 8
+ pic ELECDOR2 tics 8
+ pic ELECDOR3 tics 8
+
+texture ELECDOR4
+ pic ELECDOR4 tics 8
+ pic ELECDOR5 tics 8
+ pic ELECDOR6 tics 8
+
+texture ELECDOR7
+ pic ELECDOR7 tics 8
+ pic ELECDOR8 tics 8
+ pic ELECDOR9 tics 8
+
+texture ELECDR10
+ pic ELECDR10 tics 8
+ pic ELECDR11 tics 8
+ pic ELECDR12 tics 8
+
+texture GLAVA1
+ pic GLAVA1 tics 8
+ pic GLAVA2 tics 8 
+ pic GLAVA3 tics 8
+
+texture FLTAAWA1
+ pic FLTAAWA1 tics 8
+ pic FLTAAWA2 tics 8
+ pic FLTAAWA3 tics 8
+
+texture FLTMUD1
+ pic FLTMUD1 tics 8
+ pic FLTMUD2 tics 8
+ pic FLTMUD3 tics 8
+
+texture FLTTEL21
+ pic FLTTEL21 tics 8
+ pic FLTTEL22 tics 8
+ pic FLTTEL23 tics 8
+ pic FLTTEL24 tics 8
+
+texture FLTTEL31
+ pic FLTTEL31 tics 8
+ pic FLTTEL32 tics 8
+ pic FLTTEL33 tics 8
+ pic FLTTEL34 tics 8
+
+texture FLTTEL41
+ pic FLTTEL41 tics 8
+ pic FLTTEL42 tics 8
+ pic FLTTEL43 tics 8
+ pic FLTTEL44 tics 8
+
+texture lvwalla1
+ pic lvwalla1 tics 8
+ pic lvwalla2 tics 8
+ pic lvwalla3 tics 8
+
+texture lvwallb1
+ pic lvwallb1 tics 8
+ pic lvwallb2 tics 8
+ pic lvwallb3 tics 8
+
+texture lvwallc1
+ pic lvwallc1 tics 8
+ pic lvwallc2 tics 8
+ pic lvwallc3 tics 8
+ 
+texture SKULFAC1	range SKULFAC3	tics 9
+texture CHAINFA1	range CHAINFA3	tics 9
+
+
+switch SW3ON on sound Switch1 pic SW3OFF tics 0
+switch SW3OFF off sound Switch2 pic SW3ON tics 0
+
+switch SW8ON on sound Switch1 pic SW8OFF tics 0
+switch SW8OFF off sound Switch2 pic SW8ON tics 0
+
+switch SW9ON on sound Switch1 pic SW9OFF tics 0
+switch SW9OFF off sound Switch2 pic SW9ON tics 0
+
+switch SW10ON on sound Switch1 pic SW10OFF tics 0
+switch SW10OFF off sound Switch2 pic SW10ON tics 0
+
+switch SWATB00 on sound Switch1 pic SWATB01 tics 0
+switch SWATB01 off sound Switch2 pic SWATB00 tics 0
+
+switch SWTION on sound Switch1 pic SWTIOFF tics 0
+switch SWTIOFF off sound Switch2 pic SWTION tics 0
+
+switch SWTRION on sound Switch1 pic SWTRIOFF tics 0
+switch SWTRIOFF off sound Switch2 pic SWTRION tics 0
+
+switch SW50ON on sound Switch1 pic SW50OFF tics 0
+switch SW50OFF off sound Switch2 pic SW50ON tics 0
+
+switch SW51ON on sound Switch1 pic SW51OFF tics 0
+switch SW51OFF off sound Switch2 pic SW51ON tics 0
+
+switch SWPAT_A0 on sound Switch1 pic SWPAT_A1 tics 0
+switch SWPAT_A1 off sound Switch2 pic SWPAT_A0 tics 0
+
+switch SWPAT_B0 on sound Switch1 pic SWPAT_B1 tics 0
+switch SWPAT_B1 off sound Switch2 pic SWPAT_B0 tics 0
+
+switch SWPAT_C0 on sound Switch1 pic SWPAT_C1 tics 0
+switch SWPAT_C1 off sound Switch2 pic SWPAT_C0 tics 0
+
+switch SWPAT_F0 on sound Switch1 pic SWPAT_F1 tics 0
+switch SWPAT_F1 off sound Switch2 pic SWPAT_F0 tics 0
+
+switch SWPAT_G0 on sound Switch1 pic SWPAT_G1 tics 0
+switch SWPAT_G1 off sound Switch2 pic SWPAT_G0 tics 0
+
+switch SWPAT_I0 on sound Switch1 pic SWPAT_I1 tics 0
+switch SWPAT_I1 off sound Switch2 pic SWPAT_I0 tics 0
+
+switch SWPAT_P0 on sound Switch1 pic SWPAT_P1 tics 0
+switch SWPAT_P1 off sound Switch2 pic SWPAT_P0 tics 0
+
+switch SWPAT_S0 on sound Switch1 pic SWPAT_S1 tics 0
+switch SWPAT_S1 off sound Switch2 pic SWPAT_S0 tics 0
+
+/* Animation definition for Shadowcaster textures when used in Doom, Heretic, Hexen or Strife. */
+
+flat	SCBLOOD1	range SCBLOOD3	tics 8
+flat	SCBLOOD4	range SCBLOOD6	tics 7
+flat	SCFOUNT1	range SCFOUNT3	tics 5
+flat	SCGATEA1	range SCGATEA5	tics 6
+flat	SCLAVAA1	range SCLAVAA3	tics 8
+flat	SCLAVAB1	range SCLAVAB3	tics 8
+flat	SCLAVAC1	range SCLAVAC3	tics 4
+flat	SCLAVAD1	range SCLAVAD3	tics 8
+flat	SCSLIME1	range SCSLIME3	tics 8
+flat	SCSLUDG1	range SCSLUDG3	tics 8
+flat	SCSLUDG4	range SCSLUDG6	tics 8
+flat	SCSLUDG7	range SCSLUDG9	tics 8
+flat	SCWATER1	range SCWATER3	tics 8 
+// SCWATER4 to SCWATERS is to be used in a script that empties water in an area.
+
+texture SCBLOODA	range SCBLOODC	tics 8
+texture SCBLOODD	range SCBLOODF	tics 8
+texture SCBLUET1	range SCBLUET3	tics 6
+texture SCFACES1	range SCFACES3	tics 9
+texture SCGATEC1	range SCGATEC4	tics 5
+texture SCGREEN1	range SCGREEN3	tics 8
+texture SCHEADB1	range SCHEADB5	tics 6
+texture SCHEADG1	range SCHEADG3	tics 6
+texture SCROKWF1	range SCROKWF3	tics 4
+texture SCSTWAT1	range SCSTWAT3	tics 8
+texture SCVEINS1	range SCVEINS3	tics 8
+texture SCWEIRD1	range SCWEIRD3	tics 8
+
+switch	SCSWHED0  on  pic SCSWHED1	tics 0
+switch	SCSWHRG0  on  pic SCSWHRG1	tics 0
+switch	SCSWKAP0  on  pic SCSWKAP1	tics 0
+switch	SCSWGRN0  on  pic SCSWGRN1	tics 0
+switch	SCSWPRS0  on  pic SCSWPRS1	tics 0
+switch	SCSWSQR0  on  pic SCSWSQR1	tics 0
+switch	SCSWTRG0  on  pic SCSWTRG1	tics 0
+switch	SCSWTRK0  on  pic SCSWTRK1	tics 0
+switch	SCTEMPLS  on  pic SCTEMPLT	tics 0
+switch	SCTEMPLU  on  pic SCTEMPLV	tics 0
+switch	SCTEMPLW  on  pic SCTEMPLX	tics 0
+
+// Tome of Might
+texture SPINTM0
+pic SPINTM0 tics 3
+pic SPINTM1 tics 3
+pic SPINTM2 tics 3
+pic SPINTM3 tics 3
+pic SPINTM4 tics 3
+pic SPINTM5 tics 3
+pic SPINTM6 tics 3
+pic SPINTM7 tics 3
+pic SPINTM8 tics 3
+pic SPINTM9 tics 3
+pic SPINTM10 tics 3
+pic SPINTM11 tics 3
+pic SPINTM12 tics 3
+pic SPINTM13 tics 3
+pic SPINTM14 tics 3
+pic SPINTM15 tics 3
+
+// Tome of Eternity
+texture SPININ0
+pic SPININ0 tics 3
+pic SPININ1 tics 3
+pic SPININ2 tics 3
+pic SPININ3 tics 3
+pic SPININ4 tics 3
+pic SPININ5 tics 3
+pic SPININ6 tics 3
+pic SPININ7 tics 3
+pic SPININ8 tics 3
+pic SPININ9 tics 3
+pic SPININ10 tics 3
+pic SPININ11 tics 3
+pic SPININ12 tics 3
+pic SPININ13 tics 3
+pic SPININ14 tics 3
+pic SPININ15 tics 3
+
+// Wraith
+WARP2 texture WRAIA1
+WARP2 texture WRAIA2A8
+WARP2 texture WRAIA3A7
+WARP2 texture WRAIA4A6
+WARP2 texture WRAIA5
+WARP2 texture WRAIB1
+WARP2 texture WRAIB2B8
+WARP2 texture WRAIB3B7
+WARP2 texture WRAIB4B6
+WARP2 texture WRAIB5
+WARP2 texture WRAIC0
+WARP2 texture WRAID0
+WARP2 texture WRAIE0
+WARP2 texture WRAIF0
+WARP2 texture WRAIG0
+WARP2 texture WRAIH0
+WARP2 texture WRAII0
+
+// Shrines
+warp2 texture SHR0A0
+warp2 texture SHR1A0
+warp2 texture SHR2A0
+warp2 texture SHR3A0
+warp2 texture SHR4A0
+warp2 texture SHR5A0
+warp2 texture SHR6A0
+warp2 texture SHR7A0
+warp2 texture SHR8A0
+warp2 texture SHR9A0
+warp2 texture SHRAA0
+warp2 texture SHRBA0
+warp2 texture SHRCA0

@@ -1,0 +1,17 @@
+brightmap sprite crbwa0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwa0.png"	disablefullbright	}
+brightmap sprite crbwb0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwb0.png"	disablefullbright	}
+brightmap sprite crbwc0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwc0.png"	disablefullbright	}
+brightmap sprite crbwd0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwd0.png"	disablefullbright	}
+brightmap sprite crbwf0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwf0.png"	disablefullbright	}
+brightmap sprite crbwg0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwg0.png"	disablefullbright	}
+brightmap sprite crbwh0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwh0.png"	disablefullbright	}
+// The affected area is identical on both CRBWH0 and CRBWI0, so no need to duplicate the brightmap image.
+brightmap sprite crbwi0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwh0.png"	disablefullbright	}
+brightmap sprite crbwj0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwj0.png"	disablefullbright	}
+brightmap sprite crbwk0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwk0.png"	disablefullbright	}
+brightmap sprite crbwl0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwl0.png"	disablefullbright	}
+brightmap sprite crbwm0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwm0.png"	disablefullbright	}
+// The affected area is identical on both CRBWA0 and CRBWN0, so no need to duplicate the brightmap image.
+brightmap sprite crbwn0	{ map "Brightmaps/Sprites/Items/Crossbow/crbwa0.png"	disablefullbright	}
+brightmap sprite wbowa0	{ map "Brightmaps/Sprites/Items/Crossbow/wbowa0.png"	disablefullbright	}
+

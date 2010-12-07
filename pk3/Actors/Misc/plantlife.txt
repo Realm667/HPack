@@ -1,0 +1,406 @@
+ACTOR HPTree01 30001
+{
+	//$Category Obstacles
+	//$Title Tree (Young 1)
+  Radius 24
+  Height 80
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE A -1
+    Stop
+  }
+}
+
+ACTOR HPTree02 30002
+{
+	//$Category Obstacles
+	//$Title Tree (Young 2)
+  Radius 24
+  Height 104
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE B -1
+    Stop
+  }
+}
+
+ACTOR HPTree03 30003
+{
+	//$Category Obstacles
+	//$Title Tree (Young 3)
+  Radius 16
+  Height 80
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE C -1
+    Stop
+  }
+}
+
+ACTOR HPTree04 30004
+{
+	//$Category Obstacles
+	//$Title Tree (Autumn 1)
+  Radius 16
+  Height 52
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE D -1
+    Stop
+  }
+}
+
+ACTOR HPTree05 30005
+{
+	//$Category Obstacles
+	//$Title Tree (Autumn 2)
+  Radius 24
+  Height 96
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE E -1
+    Stop
+  }
+}
+
+ACTOR HPTree06 30006
+{
+	//$Category Obstacles
+	//$Title Tree (Autumn 3)
+  Radius 24
+  Height 104
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE F -1
+    Stop
+  }
+}
+
+ACTOR HPTree07 30007
+{
+	//$Category Obstacles
+	//$Title Tree (Leafy 1)
+  Radius 24
+  Height 128
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE G -1
+    Stop
+  }
+}
+
+ACTOR HPTree08 30008
+{
+	//$Category Obstacles
+	//$Title Tree (Leafy 2)
+  Radius 24
+  Height 136
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE H -1
+    Stop
+  }
+}
+
+ACTOR HPTree09 30009
+{
+	//$Category Obstacles
+	//$Title Tree (Leafy3)
+  Radius 36
+  Height 96
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE I -1
+    Stop
+  }
+}
+
+ACTOR HPTree10 30010
+{
+	//$Category Obstacles
+	//$Title Tree (Leafy 4)
+  Radius 24
+  Height 128
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE J -1
+    Stop
+  }
+}
+
+ACTOR HPTree11 30011
+{
+	//$Category Obstacles
+	//$Title Tree (Leafy 5)
+  Radius 36
+  Height 132
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE K -1
+    Stop
+  }
+}
+
+ACTOR HPTree12 30012
+{
+	//$Category Obstacles
+	//$Title Tree (Autumn 4)
+  Radius 16
+  Height 80
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE L -1
+    Stop
+  }
+}
+
+ACTOR HPTree13 30013
+{
+	//$Category Obstacles
+	//$Title Tree (Autumn 5)
+  Radius 16
+  Height 104
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE M -1
+    Stop
+  }
+}
+
+ACTOR HPTree14 30014
+{
+	//$Category Obstacles
+	//$Title Tree (Young 4)
+  Radius 16
+  Height 104
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE N -1
+    Stop
+  }
+}
+
+ACTOR HPTree15 30015
+{
+	//$Category Obstacles
+	//$Title Tree (Leafy 6)
+  Radius 16
+  Height 114
+  +SOLID
+  States
+  {
+  Spawn:
+    TREE O -1
+    Stop
+  }
+}
+
+ACTOR HPFlower01 30016
+{
+	//$Category Decoration
+	//$Title Flower (Orange)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    FLWR A -1
+    Stop
+  }
+}
+
+ACTOR HPFlower02 30017
+{
+	//$Category Decoration
+	//$Title Flower (Red)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    FLWR B -1
+    Stop
+  }
+}
+
+ACTOR HPFlower03 30018
+{
+	//$Category Decoration
+	//$Title Flower (Blue)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    FLWR C -1
+    Stop
+  }
+}
+
+ACTOR HPFlower04 30019
+{
+	//$Category Decoration
+	//$Title Flower (Yellow)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    FLWR D -1
+    Stop
+  }
+}
+
+ACTOR HPFlower05 30020
+{
+	//$Category Decoration
+	//$Title Flower (Russet)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    FLWR E -1
+    Stop
+  }
+}
+
+ACTOR HPFlower06 30021
+{
+	//$Category Decoration
+	//$Title Flower (Crimson)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    FLWR F -1
+    Stop
+  }
+}
+
+ACTOR HPPlant1 30031
+{
+	//$Category Decoration
+	//$Title Plant (Sedge 1)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    PLNT A -1
+    Stop
+  }
+}
+
+ACTOR HPPlant2 30032
+{
+	//$Category Decoration
+	//$Title Plant (Sedge 2)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    PLNT B -1
+    Stop
+  }
+}
+
+ACTOR HPPlant3 30033
+{
+	//$Category Decoration
+	//$Title Plant (Rush 1)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    PLNT C -1
+    Stop
+  }
+}
+
+ACTOR HPPlant4 30034
+{
+	//$Category Decoration
+	//$Title Plant (Rush 2)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    PLNT D -1
+    Stop
+  }
+}
+
+ACTOR HPPlant5 30035
+{
+	//$Category Decoration
+	//$Title Plant (Reed 1)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    PLNT E -1
+    Stop
+  }
+}
+
+ACTOR HPPlant6 30036
+{
+	//$Category Decoration
+	//$Title Plant (Reed 2)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    PLNT F -1
+    Stop
+  }
+}
+
+ACTOR HPPlant7 30037
+{
+	//$Category Decoration
+	//$Title Plant (Reed 3)
+  Radius 6
+  Height 12
+  States
+  {
+  Spawn:
+    PLNT G -1
+    Stop
+  }
+}

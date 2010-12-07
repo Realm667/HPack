@@ -1,0 +1,183 @@
+// Excerpted and adapted from NJSPLASH.wad
+
+splash Blood
+{
+	smallclass		BloodSplash
+	smallclip		10
+	smallsound		world/sludgegloopsmall
+
+	baseclass		BloodSplash
+	chunkclass		BloodSplash
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			world/sludgegloop
+	NoAlert
+}
+
+splash Acid
+{
+	smallclass		AcidSplash
+	smallclip		6
+	smallsound		world/lavasizzlesmall
+
+	baseclass		SludgeSplash
+	chunkclass		LavaSmoke
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			world/lavasizzle
+	NoAlert
+}
+
+splash LavaRed
+{
+	smallclass		BloodSplash
+	smallclip		12
+	smallsound		world/lavasizzlesmall
+
+	baseclass		BloodSplash
+	chunkclass		LavaSmoke
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			world/lavasizzle
+	NoAlert
+}
+
+splash Sizzle
+{
+	smallclass		LavaSmoke
+	smallclip		12
+	smallsound		world/lavsiz2
+
+	baseclass		LavaSmoke
+	chunkclass		LavaSmoke
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			world/lavsiz2
+	NoAlert
+}
+
+splash Mud
+{
+	smallclass		SlimeSplash
+	smallclip		6
+	smallsound		world/sludgegloopsmall
+
+	baseclass		SlimeSplash
+	chunkclass		SlimeChunk
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	1
+	sound			world/sludgegloop
+	NoAlert
+}
+
+//Terrains
+
+terrain LavaRed
+{
+	splash			LavaRed
+	footclip		4
+	liquid
+}
+
+terrain Sizzle
+{
+	splash			Sizzle
+	footclip		0
+	liquid
+}
+
+terrain Blood
+{
+	splash			Blood
+	footclip		10
+	liquid
+}
+
+terrain Acid
+{
+	splash			Acid
+	footclip		10
+	liquid
+}
+
+terrain Mud
+{
+	splash			Mud
+	footclip		10
+	liquid
+}
+
+// The flats!
+floor FLTAAWA1 Acid
+floor FLTAAWA2 Acid
+floor FLTAAWA3 Acid
+floor FLTMUD1  Mud
+floor FLTMUD2  Mud
+floor FLTMUD3  Mud
+floor SCBLOOD1 Blood
+floor SCBLOOD2 Blood
+floor SCBLOOD3 Blood
+floor SCBLOOD4 Blood
+floor SCBLOOD5 Blood
+floor SCBLOOD6 Blood
+floor WREDLIQ Blood
+floor WLLBLOD1 Blood
+floor WLLBLOD2 Blood
+floor WLLBLOD3 Blood
+floor SCLAVAA1 LavaRed
+floor SCLAVAA2 LavaRed
+floor SCLAVAA3 LavaRed
+floor SCLAVAB1 LavaRed
+floor SCLAVAB2 LavaRed
+floor SCLAVAB3 LavaRed
+floor WLAVA01 Lava
+floor SCLAVAC1 Lava
+floor SCLAVAC2 Lava
+floor SCLAVAC3 Lava
+floor SCLAVAD1 Sizzle
+floor SCLAVAD2 Sizzle
+floor SCLAVAC3 Sizzle
+floor SCSLIME1 Acid
+floor SCSLIME2 Acid
+floor SCSLIME3 Acid
+floor WLLATFL1 Acid
+floor WLLATFL2 Acid
+floor WLLATFL3 Acid
+floor SCSLUDG1 Mud
+floor SCSLUDG2 Mud
+floor SCSLUDG3 Mud
+floor SCSLUDG4 Mud
+floor SCSLUDG5 Mud
+floor SCSLUDG6 Mud
+floor WLLSLIM1 Mud
+floor WLLSLIM2 Mud
+floor WLLSLIM3 Mud
+floor SCWATER1 Water
+floor SCWATER2 Water
+floor SCWATER3 Water
+floor WWATER01 Water
+floor WDWATR01 Water
+floor WSLIME01 Acid
+floor WSLIME02 Mud
+floor WSLIME03 Sludge
+floor FLTMUD1 Sludge
+floor FLTMUD2 Sludge
+floor FLTMUD3 Sludge
+floor FLTAAWA1 Acid
+floor FLTAAWA2 Acid
+floor FLTAAWA3 Acid
+floor FLATHUA1 Acid
+floor FLATHUA2 Acid
+floor FLATHUA3 Acid
+floor WSLIMH Mud
+floor WINDIGO sizzle

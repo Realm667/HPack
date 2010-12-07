@@ -1,0 +1,181 @@
+// <XA> This is the entire language.enu definition for now, sanely organized with some slight changes.
+//    Future versions will only contain what's necessary and such, so as to not stomp on eveyone's toes.
+
+[enu default]
+
+// Items & weapons
+
+TXT_WPNSTAFF = "ELVEN STAFF";
+TXT_WPNWAND = "ELVEN WAND"; // not "Gold Wand," since it's referred to as the "Elvenwand" in-game.
+TXT_WPNFORCE = "FORCE BLAST";
+TXT_WPNDSPARILS = "GLOVES OF D'SPARIL";
+TXT_WPNSUNSTAFF = "LIGHTBRINGER";
+TXT_WPNSTAFFCHAOS = "STAFF OF CHAOS";
+TXT_WPNPOLYMORPH = "POLYMORPH WAND";
+
+TXT_AMMOCHAOS1 = "CHAOS RUNE";
+TXT_AMMOCHAOS2 = "CHAOS SIGIL";
+TXT_AMMOCHAOS3 = "CHAOS GLYPH";
+TXT_AMMOSUNSTAFF1 = "SUN STONE";
+TXT_AMMOSUNSTAFF2 = "SOLAR PRISM";
+TXT_AMMOSUNSTAFF3 = "RADIANT GEM";
+TXT_AMMOMORPH1 = "PETRIFIED ACORN";
+TXT_AMMOMORPH2 = "PILE OF PETRIFIED ACORNS";
+TXT_AMMOMORPH3 = "PETRIFIED ACORNS";
+
+TXT_AMMOGOLDWAND3 = "CRYSTAL GEM";
+TXT_AMMOCROSSBOW3 = "BUNDLE OF ETHEREAL ARROWS";
+TXT_AMMOBLASTER3 = "POWER ORB";
+TXT_AMMOSKULLROD3 = "MEDIAN RUNES";
+TXT_AMMOPHOENIXROD3 = "BLAZE ORB";
+TXT_AMMOMACE3 = "GREATER MACE SPHERE";
+
+
+TXT_ARTIHADESSPHERE = "HADES SPHERE";
+TXT_ARTIJUMP = "BOOTS OF JUMPING";
+TXT_ARTITOMEOFMIGHT = "TOME OF MIGHT";
+TXT_ARTIMASTERSCROLL = "SCROLL OF THE MASTER";
+TXT_ARTIWANDCRYSTAL = "ELYSIUM CRYSTAL"; // slight renaming on my part :P
+TXT_ARTIFIREWAVE = "FIRESTORM RUNE"; // ditto
+TXT_ARTILICHSKULL = "LICH SKULL";
+TXT_ARTITALISMANDEPTHS = "TALISMAN OF THE DEPTHS";
+TXT_ARTIFIRERESISTANCE = "BLOOD OF THE SALAMANDER";
+TXT_ARTIREGENERATION = "RING OF REGENERATION";
+TXT_ARTIHELLFIRE = "SCROLL OF HELLFIRE";
+TXT_ARTIWRAITHHAND = "HAND OF THE WRAITH";
+TXT_ARTIOWLRING = "RING OF THE OWL";
+TXT_ARTIFORCEBRACERS = "BRACERS OF FORCE";
+TXT_ARTITERRORMASK = "MASK OF TERROR";
+TXT_ARTIEMERALDAMULET = "EMERALD AMULET";
+TXT_ARTIFROSTRESISTANCE = "BOOTS OF THE NORTH";
+
+TXT_GOTREDKEY = "RED KEY";
+TXT_FOODCHICKEN = "CHICKEN WING";
+TXT_FOODBREAD = "LOAF OF BREAD";
+TXT_FOODCHEESE = "SLICE OF CHEESE";
+TXT_FOODAPPLE1 = "GREEN APPLE";
+TXT_FOODAPPLE2 = "RED APPLE";
+
+TXT_FIREWALLFAILED = "Cannot use underwater!";
+TXT_FORCEBRACERSFAILED = "Not enough runes!"
+
+// Locked Doors
+
+TXT_NEEDREDKEY = "YOU NEED A RED KEY TO OPEN THIS DOOR";
+TXT_NEEDBLUEKEYO = "YOU NEED A BLUE KEY TO ACTIVATE THIS OBJECT";
+TXT_NEEDGREENKEYO = "YOU NEED A GREEN KEY TO ACTIVATE THIS OBJECT";
+TXT_NEEDREDKEYO = "YOU NEED A RED KEY TO ACTIVATE THIS OBJECT";
+TXT_NEEDYELLOWKEYO = "YOU NEED A YELLOW KEY TO ACTIVATE THIS OBJECT";
+
+PD_ALL4 = "YOU NEED ALL FOUR KEYS TO OPEN THIS DOOR";
+PD_ALL4O = "YOU NEED ALL FOUR KEYS TO ACTIVATE THIS DOOR";
+PD_COOLCOLOR = "YOU NEED A GREEN OR BLUE KEY TO OPEN THIS DOOR";
+PD_COOLCOLORO = "YOU NEED A GREEN OR BLUE KEY TO ACTIVATE THIS OBJECT";
+PD_WARMCOLOR = "YOU NEED A RED OR YELLOW KEY TO OPEN THIS DOOR";
+PD_WARMCOLORO = "YOU NEED A RED OR YELLOW KEY TO ACTIVATE THIS OBJECT";
+PD_BOTHCOLORTYPE = "YOU NEED A COOL-COLORED KEY AND A WARM-COLORED KEY TO OPEN THIS DOOR";
+PD_BOTHCOLORTYPEO = "YOU NEED A COOL-COLORED KEY AND A WARM-COLORED KEY TO ACTIVATE THIS OBJECT";
+PD_ANYKEY = "YOU NEED A PRISMATIC KEY TO OPEN THIS DOOR";
+PD_ANYKEYO = "YOU NEED A PRISMATIC KEY TO ACTIVATE THIS OBJECT";
+
+// Obituaries
+OB_ACOLYTE = "An Acolyte was promoted for killing %o.";
+OB_ARCHWIZARD = "%o was no match for the Arch-Wizard.";
+OB_AVATAR = "%o was smitten by the Dark Avatar";
+OB_BEASTSHADOW = "%o was charred by a Shadow Dragon";
+OB_BEASTSTRONG = "%o was utterly crushed by a Weredragon Brute.";
+OB_BLOODLICH = "%o was reduced to a pile of ash by a Blood Lich.";
+OB_BORMERETH = "%o was incinerated by the rage of Bormereth.";
+OB_BORMERETHH = "%o was smashed by Bormereth.";
+OB_BUTCHER = "%o was mashed by a Butcher";
+OB_CHAMION = "%o was defeated by an Undead Champion.";
+OB_CHAMPIONH = "%o was slaughtered by an Undead Champion.";
+OB_CHAOSWYVERN = "%o was cremated by the Chaos Wyvern.";
+OB_CULTIST = "%o was killed by a lowly Cultist.";
+OB_DARKCLINKH = "%o was decapitated by a Sabreblade";
+OB_DARKCLINK = "%o was zapped by a Sabreblade";
+OB_DARKLICH = "%o did not learn to flee the Dark Lich";
+OB_DEMON3 = "%o was blasted by a Magma Serpent.";
+OB_DEMON3H = "%o was chewed by a Magma Serpent.";
+OB_INVISIBLEWARRIOR = "%o was violated by an Invisible Warrior.";
+OB_DARKNESSRIFT = "%o overwhelmed by a Darkness Rift";
+OB_DARKNESSRIFTH = "%o was choked by a Darkness Rift";
+OB_DEATHKNIGHT = "%o thought he could battle a Deathknight and live.";
+OB_DEATHKNIGHTH = "A Deathknight hacked %o into pieces.";
+OB_DISCIPLE = "%o was smitten by a Disciple.";
+OB_DRAGONFAMILIAR = "%o was cooked by a Dragon Familiar.";
+OB_FALLEN = "%o was burned by a Fallen.";
+OB_FELLBEAST = "%o was dissolved by a FellBeast's acid.";
+OB_FELLBEASTH = "%o was mauled by a FellBeast.";
+OB_FROSTIMP = "%o was rammed by a Frost Gargoyle.";
+OB_FROSTIMPH = "%o was frostbitten by a Gargoyle.";
+OB_FROSTIMPL =  "%o was frozen stiff by a Frost Gargoyle.";
+OB_GHOUL = "%o fell to a Ghoul's toxins.";
+OB_GHOULH = "%o was beaten to death by a Ghoul.";
+OB_GUARDIAN = "%o was fried by a Guardian Cube.";
+OB_HELLROSE = "%o is six feet under.";
+OB_HELLMAGE =  "A Pupil of D'Sparil rained death upon %o's head.";
+OB_HELLMAGEH = "%o succumbed to the withering touch of a Pupil of D'Sparil.";
+OB_HORNBEAST = "%o was burned to a crisp by a Horn Beast.";
+OB_ICELICH = "%o was frozen by an Ice Lich";
+OB_INFERNODEMON = "%o was sent to burn in the fires of Hell for an eternity.";
+OB_NIGHTSHADE = "%o couldn't escape the Nightshade.";
+OB_KNIGHTARCHER = "%o was blazed by a Knight Archer.";
+OB_REIVERGHOST = "%o was charred by a reiver ghost.";
+OB_REIVERGHOSTH = "%o had %p soul devoured by a reiver ghost.";
+OB_SATYR = "%o was stung by a Satyr's arrow.";
+OB_SCIMITAR = "%o was sliced by a Scimitar.";
+OB_SENTINEL = "%o was blasted away by a Sentinel.";
+OB_SHADOWBEAST = "%o was killed by a Shadow Beast.";
+OB_SHADOWWIZARD = "%o was consumed by a Shadow Wizard's foul arts.";
+OB_SKULLWIZARD = "%o succumbed to a Skull Wizard's magic.";
+OB_SNAKEWEAK = "%o was singed by ophidian offspring.";
+OB_SNAKESTRONG = "%o was shocked by the firepower of the Ophidian Lord.";
+OB_SONOFDSPARIL = "%o fell before one who claims to be a Son of D'Sparil.";
+OB_SQUIRREL = "%o was too nutty for %p own good.";
+OB_VULGAR = "%o was poisoned by a Vulgar.";
+OB_VULGARH = "A Vulgar had %o for lunch.";
+OB_WICKED = "%o was blasted by a Wicked.";
+OB_WRAITH = "%o felt the chill of a Wraith.";
+
+OB_MPSTAFF = "%o got Staffed by %k.";
+OB_MPGAUNTLETS = "%o was shockingly destroyed by %k's Gauntlets.";
+OB_MPGOLDWAND = "%o waved goodbye to %k's Wand.";
+OB_MPCROSSBOW = "%o swallowed a shaft of ethereal death from %k's Crossbow.";
+OB_MPFORCE = "%o learned the hard way that %k is a Force to be reckoned with.";
+OB_MPBLASTER = "%o was blasted a new one by %k's Dragon Claw.";
+OB_MPSKULLROD = "%o got sent down under by %k's Hellstaff.";
+OB_MPPHOENIXROD = "%o was scorched to cinders by %k's Phoenix Rod.";
+OB_MPMACE = "%o got a Mace to the face from $k.";
+OB_MPDSPARILS = "%o was seared to a crisp by %k's Chaos Gauntlets.";
+OB_MPSUNSTAFF = "%o was blinded by the glory of %k's Lightbringer staff.";
+OB_MPSQUIRREL = "%o was not a tough nut to crack for %k.";
+OB_MPSTAFFCHAOS = "%o could not hide from %k's chaotic energy.";
+OB_COSTSTAFFCHAOS = "%o succumbed to the forces of Chaos.";
+
+OB_HELLFIRE = "%o tried to walk through a wall of fire";
+
+// Tags
+TAG_FORCEBLAST = "Force Blast";
+TAG_DSPARILSG = "Gloves of D'Sparil";
+TAG_SUNSTAFF = "Lightbringer";
+TAG_STAFFOFCHAOS = "Staff of Chaos";
+TAG_POLYMORPHWAND = "Polymorph Wand";
+
+TAG_ARTIHADESSPHERE = "Hades Sphere";
+TAG_ARTIJUMP = "Boots of Jumping";
+TAG_ARTITOMEOFMIGHT = "Tome of Might";
+TAG_ARTIMASTERSCROLL = "Scroll of the Master";
+TAG_ARTIWANDCRYSTAL = "Elysium Crystal";
+TAG_ARTIFIREWAVE = "Firestorm Rune";
+TAG_ARTILICHSKULL = "Lich Skull";
+TAG_ARTITALISMANDEPTHS = "Talisman of the Depths";
+TAG_ARTIFIRERESISTANCE = "Blood of the Salamander";
+TAG_ARTIREGENERATION = "Ring of Regeneration";
+TAG_ARTIHELLFIRE = "Scroll of Hellfire";
+TAG_ARTIWRAITHHAND = "Hand of the Wraith";
+TAG_ARTIOWLRING = "Ring of the Owl";
+TAG_ARTIFORCEBRACERS = "Bracers of Force";
+TAG_ARTITERRORMASK = "Mask of Terror";
+TAG_ARTIEMERALDAMULET = "Emerald Amulet";
+TAG_ARTIFROSTRESISTANCE = "Boots of the North";

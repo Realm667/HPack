@@ -1,0 +1,4 @@
+brightmap sprite gwnda0	{ map "Brightmaps/Sprites/Items/Goldwand/gwnda0.png"	disablefullbright	}
+brightmap sprite gwndb0	{ map "Brightmaps/Sprites/Items/Goldwand/gwndb0.png"	disablefullbright	}
+brightmap sprite gwndc0	{ map "Brightmaps/Sprites/Items/Goldwand/gwndc0.png"	disablefullbright	}
+brightmap sprite gwndd0	{ map "Brightmaps/Sprites/Items/Goldwand/gwndd0.png"	disablefullbright	}

@@ -1,0 +1,17 @@
+brightmap flat floor21	{ map "Brightmaps/Flats/floor21.png"	}
+brightmap flat floor22	{ map "Brightmaps/Flats/floor22.png"	}
+brightmap flat floor23	{ map "Brightmaps/Flats/floor23.png"	}
+brightmap flat floor24	{ map "Brightmaps/Flats/floor24.png"	}
+brightmap flat floor26	{ map "Brightmaps/Flats/floor26.png"	}
+brightmap flat flathuh1	{ map "Brightmaps/Flats/flathuh1.png"	}
+brightmap flat flathuh2	{ map "Brightmaps/Flats/flathuh2.png"	}
+brightmap flat flathuh3	{ map "Brightmaps/Flats/flathuh3.png"	}
+brightmap flat flathuh4	{ map "Brightmaps/Flats/flathuh4.png"	}
+brightmap flat fltlava1	{ map "Brightmaps/Flats/fltlava1.png"	}
+brightmap flat fltlava2	{ map "Brightmaps/Flats/fltlava2.png"	}
+brightmap flat fltlava3	{ map "Brightmaps/Flats/fltlava3.png"	}
+brightmap flat fltlava4	{ map "Brightmaps/Flats/fltlava4.png"	}
+brightmap flat flttele1	{ map "Brightmaps/Flats/flttele1.png"	}
+brightmap flat flttele2	{ map "Brightmaps/Flats/flttele2.png"	}
+brightmap flat flttele3	{ map "Brightmaps/Flats/flttele3.png"	}
+brightmap flat flttele4	{ map "Brightmaps/Flats/flttele4.png"	}

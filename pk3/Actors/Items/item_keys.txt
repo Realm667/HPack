@@ -1,0 +1,48 @@
+ACTOR KeyRed : HereticKey 91
+{
+	//$Category keys
+	//$Title Red Key
+	Game Heretic
+	SpawnID 88
+	Inventory.PickupMessage "$TXT_GOTREDKEY"
+	States
+	{
+	Spawn:
+		DKYY ABCDEFGH 3 Bright
+		Loop
+	}
+}
+
+// --- Red Key gizmo -----------------------------------------------------------
+
+ACTOR KeyGizmoRed 97
+{
+	//$Category Decoration
+	//$Title Red Key Marker
+	Game Heretic
+	Radius 16
+	Height 50
+	+SOLID
+	States
+	{
+	Spawn:
+		KGZ1 A 1
+		KGZ1 A 1 A_SpawnItemEx("KeyGizmoFloatRed", 0, 0, 60)
+		KGZ1 A -1
+		Stop
+	}
+}
+
+ACTOR KeyGizmoFloatRed
+{
+	Radius 16
+	Height 16
+	+SOLID
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		KGZR A -1 Bright
+		Stop
+	}
+}

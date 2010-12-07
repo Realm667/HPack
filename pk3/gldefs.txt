@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////
+///////////// OPENGL SFX DEFINITIONS ///////////////////////
+////////////////////////////////////////////////////////////
+
+// Standard definitions are loaded first
+#include "hexen.gl"
+#include "heretic.gl"
+
+// Special effects
+#include "brightmaps.gl"
+#include "glowingflats.gl"
+#include "actors/misc/sfx_fire.gl"
+
+// Items and decoration
+#include "actors/misc/prop_decorations.gl"
+#include "actors/misc/prop_hexen.gl"
+#include "actors/misc/sfx_lights.gl"
+#include "actors/misc/candelabra.gl"
+#include "actors/items/ammo.gl"
+#include "actors/items/item_keys.gl"
+#include "actors/items/artifacts/artifacts.gl"
+#include "actors/items/weapons/firemace.gl"
+#include "actors/items/weapons/forceblast.gl"
+#include "actors/items/weapons/sunstaff.gl"
+#Include "actors/items/weapons/StaffChaos.gl"
+#include "actors/items/weapons/goldwand.gl"
+#include "actors/items/weapons/crossbow.gl"
+#include "actors/items/weapons/dragonclaw.gl"
+#include "actors/items/weapons/hellstaff.gl"
+#include "actors/items/weapons/phoenixrod.gl"
+#include "actors/items/weapons/dsparilsgloves.gl" 
+
+// Monsters
+#include "actors/monsters/acolyte.gl"
+#include "actors/monsters/avatar.gl"
+#include "actors/monsters/archwizard.gl"
+#include "actors/monsters/bormereth.gl"
+#include "actors/monsters/bishop.gl"
+#include "actors/monsters/bloodlich.gl"
+#include "actors/monsters/cultist.gl"
+#include "actors/monsters/chaoswyvern.gl"
+#include "actors/monsters/darkclink.gl"
+#include "actors/monsters/darknessrift.gl"
+#include "actors/monsters/deathknight.gl"
+#include "actors/monsters/disciple.gl"
+#include "actors/monsters/dragonfamiliar.gl"
+#include "actors/monsters/fallen.gl"
+#include "actors/monsters/ghoul.gl"
+#include "actors/monsters/guardiancube.gl"
+#include "actors/monsters/infernodemon.gl"
+#include "actors/monsters/invisiblewarrior.gl"
+#include "actors/monsters/lizard.gl"
+#include "actors/monsters/satyr.gl"
+#include "actors/monsters/sentinel.gl"
+#include "actors/monsters/shadowbeast.gl"
+#include "actors/monsters/shadowdragon.gl"
+#include "actors/monsters/shadowwizard.gl"
+#include "actors/monsters/skullwizard.gl"
+#include "actors/monsters/vulgar.gl"
+#include "actors/monsters/wicked.gl"
+#include "actors/monsters/wraith.gl"

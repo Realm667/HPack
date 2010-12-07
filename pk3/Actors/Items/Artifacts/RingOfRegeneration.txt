@@ -1,0 +1,24 @@
+// RING OF REGENERATION
+Actor ArtiRingOfRegeneration : PowerupGiver 19875
+{
+	//$Category Artifacts
+	//$Title Ring of Regeneration
+  Inventory.PickupMessage "$TXT_ARTIREGENERATION"
+  Tag "$TAG_ARTIREGENERATION"
+  Powerup.Color Red 0.1
+  Inventory.DefMaxAmount
+  Powerup.Type Regeneration
+  Powerup.Duration -60
+  Inventory.Icon "RRGNA0"
+  +Inventory.InvBar
+  +FloatBob
+  +CountItem
+  +Inventory.PickupFlash
+  Scale 0.75
+  States
+  {
+  Spawn:
+    RRGN BBBBCDDDDC 3 Bright
+    Loop
+  }
+}

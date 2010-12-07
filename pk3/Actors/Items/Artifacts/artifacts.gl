@@ -1,0 +1,64 @@
+// Emerald Amulet
+PulseLight EMERALDAMULET
+{
+	Color 0.0 0.5 0.0
+	Size 32
+	SecondarySize 48
+	Interval 2.0
+	Offset 0 20 0
+}
+
+// Hand of the Wraith
+FlickerLight WRAITHHAND
+{
+	Color 1.0 1.0 1.0
+	Subtractive 1
+	Size 28
+	SecondarySize 32
+	Chance 0.1
+	Offset 0 32 0
+}
+
+// Scroll of Hellfire
+Pointlight FIRESCROLL1
+{
+	Color 0.6 0.2 0.0
+	Size 32
+	Offset 0 20 0
+}
+
+Pointlight FIRESCROLL2
+{
+	Color 0.8 0.4 0.0
+	Size 40
+	Offset 0 20 0
+}
+
+Pointlight FIRESCROLL3
+{
+	Color 1.0 0.6 0.0
+	Size 48
+	Offset 0 20 0
+}
+
+Object ArtiScrollOfHellfire
+{
+	Frame HFSCB { Light FIRESCROLL1 }
+	Frame HFSCC { Light FIRESCROLL2 }
+	Frame HFSCD { Light FIRESCROLL3 }
+}
+
+FlickerLight HELLFIRE
+{
+	Color 1.0 0.7 0.0
+	Size 32
+	SecondarySize 48
+	Chance 0.3
+	Offset 0 16 0
+}
+
+Object Firewall2
+{
+	Frame TNT1 { Light HELLFIRE }
+}
+

@@ -1,0 +1,77 @@
+//Wicked==========
+
+Flickerlight2 WickedballA
+{
+	Color 1.0 0.0 0.0
+	Offset 0 4 0
+	Size 20
+	SecondarySize 25
+	Interval 0.005
+}
+
+Flickerlight2 WickedballB
+{
+	Color 1.0 0.0 0.0
+	Offset 0 4 0
+	Size 30
+	SecondarySize 35
+	Interval 0.005
+}
+
+Flickerlight2 WickedballJ
+{
+	Color 0.9 0.0 0.0
+	Offset 0 4 0
+	Size 50
+	SecondarySize 55
+	Interval 0.005
+}
+
+Flickerlight2 WickedballK
+{
+	Color 0.8 0.0 0.0
+	Offset 0 4 0
+	Size 55
+	SecondarySize 60
+	Interval 0.005
+}
+
+Flickerlight2 WickedballL
+{
+	Color 0.4 0.0 0.0
+	Offset 0 4 0
+	Size 58
+	SecondarySize 64
+	Interval 0.005
+}
+
+Flickerlight2 WickedballM
+{
+	Color 0.2 0.0 0.0
+	Offset 0 4 0
+	Size 60
+	SecondarySize 66
+	Interval 0.005
+}
+
+Flickerlight2 WickedballN
+{
+	Color 0.1 0.0 0.0
+	Offset 0 4 0
+	Size 61
+	SecondarySize 67
+	Interval 0.005
+}
+
+Object Wickedshot
+{
+	Frame WIBLA { Light WickedballA }
+	Frame WIBLB { Light WickedballB }
+	Frame WIBLC { Light WickedballA }
+	Frame WIBLD { Light WickedballB }
+	Frame WIBLJ { Light WickedballJ }
+	Frame WIBLK { Light WickedballK }
+	Frame WIBLL { Light WickedballL }
+	Frame WIBLM { Light WickedballM }
+	Frame WIBLN { Light WickedballN }
+}

@@ -1,0 +1,40 @@
+// The corpse sprite (HCORB) is extracted from the endgame graphic.
+// The dripping blood sprites (BDRPA, BDPLA, BDSH) are borrowed from Hexen, where they are used for a similar purpose.
+
+ACTOR HangingHalfCorpse : ZCorpseLynchedNoHeart 57
+{
+	//$Category Obstacles
+	//$Title Corpse (Half-Cultist)
+	Game Heretic
+	Radius 12
+	Height 40
+	Scale 0.5
+	+SOLID
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		HCOR B 140 A_CorpseBloodDrip
+		Loop
+	}
+}
+
+// A sprite edit of a hanging RotT cultist from a Duke Nukem easter-egg
+ACTOR HangingMonk 10420
+{
+	//$Category Obstacles
+	//$Title Corpse (Hanged Monk)
+	Radius 12
+	Height 64
+	Scale 0.75
+	+SOLID
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		HMOK A -1
+		Stop
+	}
+}

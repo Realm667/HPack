@@ -1,0 +1,23 @@
+// MASK OF TERROR
+Actor ArtiMaskOfTerror : PowerupGiver 18935
+{
+	//$Category Artifacts
+	//$Title Mask of Terror
+  Inventory.DefMaxAmount
+  Powerup.Type Frightener
+  Powerup.Color Black 0.2
+  Powerup.Duration -30
+  Inventory.PickupMessage "$TXT_ARTITERRORMASK"
+  Tag "$TAG_ARTITERRORMASK"
+  Inventory.Icon "MTRRA0"
+  +CountItem
+  +Inventory.InvBar
+  +FloatBob
+  +Inventory.PickupFlash
+  States
+  {
+  Spawn:
+    MTRR BBBBBBBBBCDC 3 Bright
+    Loop
+  }
+}

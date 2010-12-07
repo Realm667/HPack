@@ -1,0 +1,118 @@
+SPARKLE FOUNTAINS
+=================
+Place on map and use the first two arguments to control the 
+intensity and area of the spawner. The original was a 64x64 
+square.
+
+First argument controls the size of the area. 32, for example, 
+spawns in a 64x64 square (or 64 diameter circle. See second 
+argument).
+
+Second argument controls the type of area it spawns in. 0 is 
+square, 1 is circle.
+
+It should be noted that pngs can't be translated like normal 
+graphics. Because of this, if you convert the SPFXA0 sprite to 
+a png, the spawners will spawn white effects. Use Doom's lmp format, 
+instead.
+
+STEAM GENERATORS
+================
+Place on map and use the first four arguments to change 
+behavior.
+
+First argument controls direction. 0 is up, 1 is down, 2 is 
+forward. For best results, down-pointing spawners should be placed 
+2 or 3 map units below the ceiling.
+
+Second argument chooses if it's a constant spawner, or spawns in 
+bursts. Burst spawners use the third argument and play a different sound.
+
+Third argument controls the frequency of the bursts (divided by 16. 
+I.e, 128 will end up as 8). This is only used by the second argument.
+
+Fourth argument silences the spawner. 0 will play the sound, 1 will not.
+
+THUNDER
+=======
+Place them on the map and deactivate them with the DORMANT flag, 
+then activate them in certain intervals with some looping acs script.
+
+EMBER
+=====
+Place on map and use the first two arguments to control the intensity 
+and area of the spawner.
+
+First argument controls the size of the area. 32, for example, spawns 
+in a 64x64 square (or 64 diameter circle. See second argument).
+
+Second argument controls the type of area it spawns in. 0 is 
+square, 1 is circle.
+
+Third argument controls it's frequency. The lower the number, 
+the heavier the ember count.
+
+FIRE
+====
+Place on map and use the first argument to control the size of the 
+fire. 0 is small, 1 is medium, 2 and above is large.
+
+The second argument prevents it from playing sounds. 0 will play 
+the sounds, 1 will not.
+
+RAIN
+====
+Place the RainDropSpawner on your map, and use values set on the 
+specials tab to modify it 
+
+The first argument controls it's area. 128, for example makes 
+it a 256x256 square or 256-radius circle (See fourth argument)
+
+The second argument controls it's frequency. The lower the number, 
+the heavier the rainfall
+
+The third argument controls whether or not it plays it's ambient 
+sound. 0 will play the sound, 1 will not
+
+The fourth argument controls the area type. 0 is a square, 1 is 
+a circle
+
+SNOW
+====
+Place on map and use the first three arguments to control 
+the intensity and area of the spawner.
+
+First argument controls the size of the area. 128, for example, 
+spawns in a 256x256 square (or 256 diameter circle. See third argument).
+
+Second argument controls the frequency of which it spawns snow. 
+The lower the number, the more frequent (0 for always).
+
+Third argument controls the type of area it spawns in. 0 is
+square, 1 is circle.
+
+DRY ICE FOG
+===========
+
+Place these fog actors in large tight groups
+to create a blanket of ankle-level fog. There are several colours
+to choose from.
+
+HAND STATUE
+===========
+
+The value of the first argument determines the color; the first four 
+correspond quite closely to the colors of the key gizmos.
+	00: Red
+	01: Yellow
+	02: Green
+	03: Blue
+	04: Orange
+	05: Purple
+	06: White
+	07: Black
+	08: Orange-red
+	09: Bright yellow
+	10: Lime green
+	11: Cobalt blue
+	12: Pink

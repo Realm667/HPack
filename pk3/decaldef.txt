@@ -1,0 +1,69 @@
+Decal FallenBall
+{
+Pic PLASMA1
+Shade "00 00 00"
+X-Scale 0.5
+Y-Scale 0.5
+RandomFlipX
+RandomFlipY
+}
+
+Generator FallenShot 		FallenBall
+generator DarkClinkBall		DoomImpScorch
+Generator SkullWizardProjectile MummyScorch
+
+// --------------------- //
+// Staff of Chaos Decals //
+// --------------------- //
+
+Decal ChaosScorch1
+{
+	Pic "BFGSCRC1"
+	Shade "00 00 00"
+	RandomFlipX
+	RandomFlipY
+}
+
+Decal ChaosScorch2
+{
+	Pic "BFGSCRC2"
+	Shade "00 00 00"
+	RandomFlipX
+	RandomFlipY
+}
+
+DecalGroup ChaosScorch
+{
+	ChaosScorch1		1
+	ChaosScorch2		1
+}
+
+Decal ChaosLightning1
+{
+	Pic "BFGLITE1"
+	Shade "20 20 FF"
+	RandomFlipX
+	RandomFlipY
+	FullBright
+	Animator GoAway2
+	LowerDecal ChaosScorch
+}
+
+Decal ChaosLightning2
+{
+	Pic "BFGLITE2"
+	Shade "20 20 FF"
+	RandomFlipX
+	RandomFlipY
+	FullBright
+	Animator GoAway2
+	LowerDecal ChaosScorch
+}
+
+DecalGroup ChaosLightning
+{
+	ChaosLightning1		1
+	ChaosLightning2		1
+}
+
+// END Staff of Chaos Decals

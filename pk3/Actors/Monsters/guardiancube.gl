@@ -1,0 +1,84 @@
+//Guardian Cube
+
+PointLight GuardianExplode1
+{
+	Color 1.0 0.6 0.2
+	Size 64
+	Offset 0 16 0
+}
+
+PointLight GuardianExplode2
+{
+	Color 0.7 0.4 0.0
+	Size 72
+	Offset 0 16 0
+}
+
+PointLight GuardianExplode3
+{
+	Color 0.6 0.3 0.0
+	Size 72
+	Offset 0 16 0
+}
+
+PointLight GuardianExplode4
+{
+	Color 0.5 0.2 0.0
+	Size 64
+	Offset 0 16 0
+}
+
+Object Guardian
+{
+	Frame CUBEF { Light GuardianExplode1 }
+	Frame CUBEG { Light GuardianExplode2 }
+	Frame CUBEH { Light GuardianExplode3 }
+	Frame CUBEI { Light GuardianExplode4 }
+}
+
+PointLight CubeShot1
+{
+	Color 1.0 0.2 0.0
+	Size 32
+}
+
+PointLight CubeShot2
+{
+	Color 1.0 0.4 0.0
+	Size 48
+}
+
+PointLight CubeShot3
+{
+	Color 1.0 0.4 0.0
+	Size 40
+}
+
+PointLight CubeShot4
+{
+	Color 0.8 0.3 0.0
+	Size 32
+}
+
+PointLight CubeShot5
+{
+	Color 0.6 0.2 0.0
+	Size 24
+}
+
+PointLight CubeShot6
+{
+	Color 0.5 0.1 0.0
+	Size 16
+}
+
+Object CubeShot
+{
+	Frame CBALA { Light CubeShot1 }
+	Frame CBALB { Light CubeShot1 }
+	Frame CBALC { Light CubeShot2 }
+	Frame CBALD { Light CubeShot3 }
+	Frame CBALE { Light CubeShot4 }
+	Frame CBALF { Light CubeShot5 }
+	Frame CBALG { Light CubeShot6 }
+}

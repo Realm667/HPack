@@ -1,0 +1,106 @@
+// Blue Key Statue
+pointlight BLUESTATUE
+{
+    color 0.0 0.0 1.0
+    size 32
+    offset 0 64 0
+}
+
+object KeyGizmoBlue
+{
+    frame KGZ1 { light BLUESTATUE }
+}
+
+// Blue Key
+pulselight HBLUEKEY
+{
+    color 0.0 0.0 1.0
+    size 24
+    secondarySize 26
+    interval 2.0
+}
+
+object KeyBlue
+{
+    frame BKYY { light HBLUEKEY }
+}
+
+// Yellow Key Statue
+pointlight YELLOWSTATUE
+{
+    color 1.0 1.0 0.0
+    size 32
+    offset 0 64 0
+}
+
+object KeyGizmoYellow
+{
+    frame KGZ1 { light YELLOWSTATUE }
+}
+
+// Yellow Key
+pulselight HYELLOWKEY
+{
+    color 1.0 1.0 0.0
+    size 24
+    secondarySize 26
+    interval 2.0
+}
+object KeyYellow
+{
+    frame CKYY { light HYELLOWKEY }
+}
+
+// Green Key Statue
+pointlight GREENSTATUE
+{
+    color 0.0 1.0 0.0
+    size 32
+    offset 0 64 0
+}
+
+object KeyGizmoGreen
+{
+    frame KGZ1 { light GREENSTATUE }
+}
+
+// Green Key
+pulselight HGREENKEY
+{
+    color 0.0 1.0 0.0
+    size 24
+    secondarySize 26
+    interval 2.0
+}
+
+object KeyGreen
+{
+    frame AKYY { light HGREENKEY }
+}
+
+// Red Key Statue
+pointlight REDSTATUE
+{
+    color 1.0 0.0 0.0
+    size 32
+    offset 0 64 0
+}
+
+object KeyGizmoRed
+{
+    frame KGZ1 { light REDSTATUE }
+}
+
+// Red Key
+pulselight HREDKEY
+{
+    color 1.0 0.0 0.0
+    size 24
+    secondarySize 26
+    interval 2.0
+}
+
+object KeyRed
+{
+    frame DKYY { light HREDKEY }
+}

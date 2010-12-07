@@ -1,0 +1,9 @@
+brightmap texture Doorexit	{ map "Brightmaps/Textures/doorexit.png"	}
+brightmap texture grskull3	{ map "Brightmaps/Textures/grskull3.png"	}
+brightmap texture grstnpbv	{ map "Brightmaps/Textures/grstnpbv.png"	}
+brightmap texture grstnpbw	{ map "Brightmaps/Textures/grstnpbw.png"	}
+brightmap texture sw1on		{ map "Brightmaps/Textures/sw1on.png"	}
+brightmap texture sw2on		{ map "Brightmaps/Textures/sw2on.png"	}
+brightmap texture lavafl1	{ map "Brightmaps/Textures/lavafl1.png"	}
+brightmap texture lavafl2	{ map "Brightmaps/Textures/lavafl2.png"	}
+brightmap texture lavafl3	{ map "Brightmaps/Textures/lavafl3.png"	}

@@ -1,0 +1,37 @@
+// Acid (sludge with a different sprite) -----------------------------------
+
+ACTOR AcidChunk
+{
+	Radius 2
+	Height 4
+	+NOBLOCKMAP 
+	+MISSILE 
+	+DROPOFF
+	+NOTELEPORT
+	+LOWGRAVITY
+	+CANNOTPUSH
+	+DONTSPLASH
+	States
+	{
+	Spawn:
+		ACID ABCD 8
+		Stop
+	Death:
+		ACID D 6
+		Stop
+	}
+}
+
+ACTOR AcidSplash
+{
+	+NOBLOCKMAP
+	+NOCLIP
+	+NOGRAVITY
+	+DONTSPLASH
+	States
+	{
+	Spawn:
+		ACID EFGH 6
+		Stop
+	}
+}

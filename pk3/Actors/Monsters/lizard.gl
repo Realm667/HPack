@@ -1,0 +1,9 @@
+Object LizardShot
+{
+	Frame FVULA { Light VulgarShot }
+	Frame FVULB { Light VulgarShot }
+	Frame FVULC { Light VulgarShot2 }
+	Frame FVULD { Light VulgarShot3 }
+	Frame FVULE { Light VulgarShot4 }
+	Frame FVULF { Light VulgarShot5 }
+}

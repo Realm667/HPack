@@ -1,0 +1,118 @@
+// ------------------ //
+// HELLSTAFF LIGHTING //
+// ------------------ //
+
+// Hellstaff bolt
+pointlight HELLSTAFFBALL
+{
+    color 1.0 0.2 0.2
+    size 56
+}
+
+flickerlight HELLSTAFFBALL_X1
+{
+    color 1.0 0.4 0.4
+    size 56
+    secondarySize 64
+    chance 0.3
+}
+
+flickerlight HELLSTAFFBALL_X2
+{
+    color 0.8 0.3 0.3
+    size 64
+    secondarySize 72
+    chance 0.3
+}
+
+flickerlight HELLSTAFFBALL_X3
+{
+    color 0.6 0.2 0.2
+    size 80
+    secondarySize 88
+    chance 0.3
+}
+
+flickerlight HELLSTAFFBALL_X4
+{
+    color 0.4 0.1 0.1
+    size 88
+    secondarySize 96
+    chance 0.3
+}
+
+flickerlight HELLSTAFFBALL_X5
+{
+    color 0.2 0.0 0.0
+    size 96
+    secondarySize 104
+    chance 0.3
+}
+
+object HPHornRodFX1
+{
+    frame FX00A { light HELLSTAFFBALL }
+    frame FX00B { light HELLSTAFFBALL }
+
+    frame FX00H { light HELLSTAFFBALL_X1 }
+    frame FX00I { light HELLSTAFFBALL_X2 }
+    frame FX00J { light HELLSTAFFBALL_X3 }
+    frame FX00K { light HELLSTAFFBALL_X4 }
+    frame FX00L { light HELLSTAFFBALL_X5 }
+}
+
+object HPHornRodFX2
+{
+    frame FX00C { light HELLSTAFFBALL }
+    frame FX00D { light HELLSTAFFBALL }
+    frame FX00E { light HELLSTAFFBALL }
+    frame FX00F { light HELLSTAFFBALL }
+
+    frame FX00H { light HELLSTAFFBALL_X1 }
+    frame FX00I { light HELLSTAFFBALL_X2 }
+    frame FX00J { light HELLSTAFFBALL_X3 }
+    frame FX00K { light HELLSTAFFBALL_X4 }
+    frame FX00L { light HELLSTAFFBALL_X5 }
+}
+
+// Tomed hellstaff rain
+pointlight REDRAIN
+{
+    color 1.0 0.0 0.0
+    size 32
+}
+
+pointlight REDRAIN_X1
+{
+    color 1.0 0.4 0.4
+    size 48
+}
+
+pointlight REDRAIN_X2
+{
+    color 0.8 0.3 0.3
+    size 40
+}
+
+pointlight REDRAIN_X3
+{
+    color 0.5 0.1 0.1
+    size 32
+}
+
+pointlight REDRAIN_X4
+{
+    color 0.3 0.0 0.0
+    size 24
+}
+
+object RainPillar
+{
+    frame FX22A { light REDRAIN }
+    frame FX22B { light REDRAIN }
+
+    frame FX22C { light REDRAIN_X1 }
+    frame FX22D { light REDRAIN_X2 }
+    frame FX22E { light REDRAIN_X3 }
+    frame FX22F { light REDRAIN_X4 }
+}

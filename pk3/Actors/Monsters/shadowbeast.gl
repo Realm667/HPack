@@ -1,0 +1,187 @@
+PointLight SBeastFire
+{
+	Color 0.4 0.8 0.2
+	Size 64
+	Offset 0 48 30
+}
+
+Object ShadowBeast
+{
+	Frame BDEMI { Light SBeastFire }
+}
+
+Pointlight SBeastBall11
+{
+	Color 0.4 0.8 0.3
+	Size 40
+}
+
+Pointlight SBeastBall12
+{
+	Color 0.4 0.8 0.3
+	Size 48
+}
+
+Pointlight SBeastBall13
+{
+	Color 0.6 1.0 0.4
+	Size 56
+}
+
+Pointlight SBeastBall14
+{
+	Color 0.5 0.9 0.3
+	Size 48
+}
+
+Pointlight SBeastBall15
+{
+	Color 0.3 0.6 0.15
+	Size 36
+}
+
+Pointlight SBeastBall16
+{
+	Color 0.2 0.5 0.05
+	Size 24
+}
+
+Object ShadowBeast_Ball1
+{
+	Frame BDP2A { Light SBeastBall11 }
+	Frame BDP2B { Light SBeastBall11 }
+	Frame BDP2C { Light SBeastBall11 }
+	Frame BDP2D { Light SBeastBall12 }
+	Frame BDP2E { Light SBeastBall13 }
+	Frame BDP2F { Light SBeastBall14 }
+	Frame BDP2G { Light SBeastBall15 }
+	Frame BDP2H { Light SBeastBall16 }
+}
+
+Object ShadowBeast_BallFire
+{
+	Frame BDP2A { Light SBeastBall11 }
+	Frame BDP2B { Light SBeastBall11 }
+	Frame BDP2C { Light SBeastBall11 }
+	Frame BDP2D { Light SBeastBall12 }
+	Frame BDP2E { Light SBeastBall13 }
+	Frame BDP2F { Light SBeastBall14 }
+	Frame BDP2G { Light SBeastBall15 }
+	Frame BDP2H { Light SBeastBall16 }
+}
+
+Pulselight SBeastBall21
+{
+	Color 0.3 0.6 0.2
+	Size 32
+	SecondarySize 24
+	Interval 1.5
+}
+
+Pointlight SBeastBall22
+{
+	Color 0.35 0.7 0.25
+	Size 36
+}
+
+Pointlight SBeastBall23
+{
+	Color 0.4 0.9 0.3
+	Size 42
+}
+
+Pointlight SBeastBall24
+{
+	Color 0.2 0.5 0.1
+	Size 28
+}
+
+Pointlight SBeastBall25
+{
+	Color 0.1 0.4 0.0
+	Size 16
+}
+
+Object ShadowBeast_Ball2
+{
+	Frame BDP1D { Light SBeastBall21 }
+	Frame BDP1E { Light SBeastBall21 }
+	Frame BDP1F { Light SBeastBall22 }
+	Frame BDP1G { Light SBeastBall23 }
+	Frame BDP1H { Light SBeastBall24 }
+	Frame BDP1I { Light SBeastBall25 }
+}
+
+Object ShadowBeast_Ball3
+{
+	Frame BDP1D { Light SBeastBall21 }
+	Frame BDP1E { Light SBeastBall21 }
+	Frame BDP1F { Light SBeastBall22 }
+	Frame BDP1G { Light SBeastBall23 }
+	Frame BDP1H { Light SBeastBall24 }
+	Frame BDP1I { Light SBeastBall25 }
+}
+
+Pulselight SBeastCreature1
+{
+	Color 0.2 0.4 0.05
+	Size 56
+	SecondarySize 48
+	Interval 4
+	Offset 0 8 0
+}
+
+Pointlight SBeastCreature2
+{
+	Color 0.2 0.4 0.05
+	Size 48
+	Offset 0 12 0
+}
+
+Pointlight SBeastCreature3
+{
+	Color 0.2 0.4 0.05
+	Size 40
+	Offset 0 16 0
+}
+
+Pointlight SBeastCreature4
+{
+	Color 0.2 0.4 0.05
+	Size 32
+	Offset 0 20 0
+}
+
+Pointlight SBeastCreature5
+{
+	Color 0.2 0.4 0.05
+	Size 24
+	Offset 0 24 0
+}
+
+Pointlight SBeastCreature6
+{
+	Color 0.2 0.4 0.05
+	Size 16
+	Offset 0 28 0
+}
+
+Pointlight SBeastCreature7
+{
+	Color 0.2 0.4 0.05
+	Size 8
+	Offset 0 32 0
+}
+
+Object ShadowBeast_Creature
+{
+	Frame BDSPA { Light SBeastCreature1 }
+	Frame BDSPB { Light SBeastCreature1 }
+	Frame BDSPE { Light SBeastCreature2 }
+	Frame BDSPF { Light SBeastCreature3 }
+	Frame BDSPG { Light SBeastCreature4 }
+	Frame BDSPH { Light SBeastCreature5 }
+	Frame BDSPI { Light SBeastCreature6 }
+	Frame BDSPJ { Light SBeastCreature7 }
+}
+

@@ -1,0 +1,62 @@
+Pulselight Wraithlight1
+{
+	Color 0.6 0.6 0.6
+	Size 56
+	SecondarySize 48
+	Interval 4
+	Offset 0 8 0
+}
+
+Pointlight Wraithlight2
+{
+	Color 0.5 0.5 0.5
+	Size 48
+	Offset 0 12 0
+}
+
+Pointlight Wraithlight3
+{
+	Color 0.4 0.4 0.4
+	Size 40
+	Offset 0 16 0
+}
+
+Pointlight Wraithlight4
+{
+	Color 0.35 0.35 0.35
+	Size 32
+	Offset 0 20 0
+}
+
+Pointlight Wraithlight5
+{
+	Color 0.3 0.3 0.3
+	Size 24
+	Offset 0 24 0
+}
+
+Pointlight Wraithlight6
+{
+	Color 0.3 0.3 0.3
+	Size 16
+	Offset 0 28 0
+}
+
+Pointlight Wraithlight6
+{
+	Color 0.3 0.3 0.3
+	Size 8
+	Offset 0 32 0
+}
+
+Object HPWraith
+{
+	Frame WRAIA { Light Wraithlight1 }
+	Frame WRAIB { Light Wraithlight1 }
+	Frame WRAIB { Light Wraithlight2 }
+	Frame WRAIC { Light Wraithlight3 }
+	Frame WRAID { Light Wraithlight4 }
+	Frame WRAIE { Light Wraithlight5 }
+	Frame WRAIF { Light Wraithlight6 }
+	Frame WRAIG { Light Wraithlight7 }
+}

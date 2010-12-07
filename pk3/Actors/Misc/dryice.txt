@@ -1,0 +1,48 @@
+ACTOR DryIce 12381
+{
+//$Category HPack_SpecialEffects
+radius 2
+height 2
++NOINTERACTION
++FORCEXYBILLBOARD
++ALLOWCLIENTSPAWN
+renderstyle Add
+yscale 0.5
+alpha 0.5
+States
+{
+	Spawn:
+	LOWF A -1
+	stop
+	}
+}
+
+ACTOR DryIceGreen : DryIce 12382
+{
+//$Category HPack_SpecialEffects
+translation "0:31=[0,0,0]:[96,128,96]"
+}
+
+ACTOR DryIceRed : DryIce 12383
+{
+//$Category HPack_SpecialEffects
+translation "0:31=[0,0,0]:[128,96,96]"
+}
+
+ACTOR DryIceBlue : DryIce 12384
+{
+//$Category HPack_SpecialEffects
+translation "0:31=[0,0,0]:[96,96,128]"
+}
+
+ACTOR DryIcePurple : DryIce 12385
+{
+//$Category HPack_SpecialEffects
+translation "0:31=[0,0,0]:[128,96,128]"
+}
+
+ACTOR DryIceYellow : DryIce 12386
+{
+//$Category HPack_SpecialEffects
+translation "0:31=[0,0,0]:[128,128,96]"
+}

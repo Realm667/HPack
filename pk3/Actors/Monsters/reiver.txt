@@ -1,0 +1,79 @@
+ACTOR ReiverGhost : Wraith
+{
+    Speed 6
+    Alpha 0.75
+    RenderStyle Add
+    HitObituary "$OB_REIVERGHOSTH"
+    Obituary "$OB_REIVERGHOST"
+    +GHOST
+    +NOICEDEATH
+    +DONTFALL
+    +NOBLOOD
+    +NOTARGET
+    -COUNTKILL
+    States
+    {
+    See:
+    	WRTH A 2 A_WraithChase
+	WRTH A 2 A_VileChase
+    	WRTH B 2 A_WraithChase
+	WRTH B 2 A_VileChase
+    	WRTH C 2 A_WraithChase
+	WRTH C 2 A_VileChase
+    	WRTH D 2 A_WraithChase
+	WRTH D 2 A_VileChase
+	Loop
+    Missile:
+	WRTH E 6 A_FaceTarget
+	WRTH F 6
+	WRTH G 0 A_Jump(128,1,2)
+	WRTH G 6 A_CustomMissile("ReiverGhostFX", 32, 0)
+	Goto See
+	WRTH G 6 A_SkullAttack(30)
+	WRTH G 2
+	Goto Missile+5
+    Heal:
+	TNT1 A 0 A_SpawnItemEx("ResurrectionFlame",16,0,floorz,0,0,0,32,0)
+	WRTH EF 6
+	WRTH G 1 A_FadeOut(0.06)
+	Wait
+    XDeath:
+	Stop
+    Death:
+	TNT1 A 0 A_SpawnItemEx("ReiverGhostExplode",0,0,32,0,0,0,0,32,0)
+	Stop
+    }
+}
+
+ACTOR ReiverGhostExplode
+{
+    +NOINTERACTION
+    RenderStyle Add
+    States
+    {
+    Spawn:
+	XPL1 ABCDEF 4 Bright
+	Stop
+    }
+}
+ACTOR ReiverGhostFX : WraithFX1
+{
+    +MTHRUSPECIES
+}
+
+ACTOR ResurrectionFlame
+{
+    Height 78
+    +NOBLOCKMAP
+    +NOGRAVITY
+    +FLOORHUGGER
+    RenderStyle Add
+    Alpha 0.65
+    States
+    {
+    Spawn:
+	FIRE ABCDEFGH 2 Bright
+	Stop
+    }
+}
+

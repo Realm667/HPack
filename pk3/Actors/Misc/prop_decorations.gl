@@ -1,0 +1,78 @@
+PointLight HandCrystalRed
+{
+	Color 1.0 0.0 0.0
+	Size 32
+}
+
+PointLight HandCrystalYellow
+{
+	Color 1.0 1.0 0.0
+	Size 32
+}
+
+PointLight HandCrystalGreen
+{
+	Color 0.0 1.0 0.0
+	Size 32
+}
+
+PointLight HandCrystalBlue
+{
+	Color 0.0 0.0 1.0
+	Size 32
+}
+
+PointLight HandCrystalOrange
+{
+	Color 1.0 0.5 0.0
+	Size 32
+}
+
+PointLight HandCrystalPurple
+{
+	Color 0.8 0.0 1.0
+	Size 32
+}
+
+PointLight HandCrystalWhite
+{
+	Color 1.0 1.0 1.0
+	Size 32
+}
+
+PointLight HandCrystalBlack
+{
+	Color 0.3 0.3 0.3
+	Size 32
+	Subtractive 1
+}
+
+PointLight HandCrystalRusset
+{
+	Color 0.7 0.1 0.0
+	Size 32
+}
+
+PointLight HandCrystalChartreuse
+{
+	Color 0.7 0.6 0.0
+	Size 32
+}
+
+PointLight HandCrystalLime
+{
+	Color 0.0 0.6 0.1
+	Size 32
+}
+
+PointLight HandCrystalCobalt
+{
+	Color 0.0 0.4 0.7
+	Size 32
+}
+
+PointLight HandCrystalPink
+{
+	Color 0.6 0.1 0.4
+	Size 32
+}

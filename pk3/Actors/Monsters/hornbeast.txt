@@ -1,0 +1,157 @@
+// Horn Beast
+// Sprites : Rolls
+// Decorate : Mr.Green
+actor HornBeast 20002
+{
+	//$Category Monsters
+	//$Title Horned Beast
+      Health 400
+      Speed 10
+      Radius 20
+      Height 60
+	  Scale 1.5
+      cameraheight 45
+      Mass 800
+      PainChance 50
+      PainChance "Fire",1
+      DamageFactor "Fire",0.025
+      BloodColor Orange
+      
+      Monster
+      +FLOORCLIP
+      +NOICEDEATH
+      
+      SeeSound "horn/sight"
+      ActiveSound "demon/active"
+      PainSound "demon/pain"
+      DeathSound "horn/death"
+
+      Obituary "$OB_HORNBEAST"
+      States
+      {
+      Spawn:
+         HBST A 0 A_Jump (81,2)
+         HBST A 10 Bright A_Look
+         Loop                
+         HSBT A 0 A_CustomMissile ("HBeastSmoke",64,0,0)
+         Loop
+      See:
+         HBST A 0 A_Jump (81,9)
+         HBST AABBCCDD 3 Bright A_Chase
+         Loop
+         HSBT A 0 A_CustomMissile ("HBeastSmoke",64,0,0)
+         Loop
+      Missile:
+         HBST E 20 Bright A_FaceTarget
+         HBST E 0 A_CustomMissile ("HBeastShot",32,20,0)
+         HBST E 0 A_CustomMissile ("HBeastShot",32,-20,0)
+         HBST E 25 Bright A_FaceTarget
+         Goto See
+      Pain:
+         HBST F 3 Bright
+         HBST F 3 Bright A_Pain
+         Goto See
+      Death:
+         HBST G 8 Bright A_Scream
+         HBST H 7 Bright A_PlaySound ("horn/shotx")
+         HBST I 6 Bright
+         HBST JK 5 Bright
+         HBST LMNO 4
+         HBST P -1
+         Stop
+       Raise:
+         HBST PONMLKJIHG 5
+         goto See
+      }
+}
+
+actor HBeastSmoke
+{
+    Radius 0
+    Height 0
+    Speed 0
+    Alpha 0.3
+    Scale 0.55
+    
+    Projectile
+    RenderStyle Add
+    States
+    {
+    Spawn:
+       BISH QRSTUVW 3
+       BISH W 3 A_FadeOut (0.50)
+       Stop
+    }
+}
+
+actor HBeastShot
+{
+    Radius 2
+    Height 3
+    Speed 20
+    Alpha 0.8
+    
+    Projectile
+    RenderStyle Add
+    +FLOORHUGGER
+    -NOBLOCKMAP
+	+THRUGHOST
+    SeeSound "horn/attack"
+    DeathSound "horn/shotx"
+    States
+    {
+    Spawn:
+       CFFX NOP 10 Bright
+    Death:
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-5)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,5)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-10)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,10)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-20)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,20)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-30)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,30)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-40)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,40)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-50)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,50)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-60)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,60)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-70)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,70)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-80)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,80)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-90)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,90)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,-100)
+       CFFX A 0 A_CustomMissile ("HBeastFlame",1,0,100)
+       CFCF Q 0 A_Scream
+       CFCF Q 1 Bright A_Explode (16, 32)
+       CFCF QRSTUVXYZ 3 Bright 
+       Stop
+    }
+}
+
+actor HBeastFlame
+{
+    Radius 5
+    Height 4
+    Speed 20
+    Alpha 0.8
+    Damage 1
+    Decal DoomImpScorch
+    
+    Projectile
+    RenderStyle Add
+    +FLOORHUGGER
+    +STRIFEDAMAGE
+    SeeSound "imp/shotx"
+    States
+    {
+    Spawn:
+       CFCF ABCDEFGHIJKLMNOP 2 Bright
+    Death:
+       TNT1 A 1
+       Stop
+    }
+}

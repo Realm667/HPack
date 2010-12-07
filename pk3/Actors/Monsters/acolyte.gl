@@ -1,0 +1,130 @@
+Pointlight AcolyteShot1
+{
+	Color 0.4 0.4 0.0
+	Size 32
+}
+
+Pointlight AcolyteShot2
+{
+	Color 0.7 0.7 0.2
+	Size 56
+}
+
+Pointlight AcolyteShot3
+{
+	Color 0.7 0.7 0.2
+	Size 64
+}
+
+Pointlight AcolyteShot4
+{
+	Color 0.6 0.6 0.0
+	Size 48
+}
+
+Pointlight AcolyteShot5
+{
+	Color 0.4 0.4 0.0
+	Size 32
+}
+
+Pointlight AcolyteShot5
+{
+	Color 0.2 0.2 0.0
+	Size 16
+}
+
+Object AcolyteShot
+{
+	Frame CFX1A { Light AcolyteShot1 }
+	Frame CFX1B { Light AcolyteShot1 }
+	Frame CFX1C { Light AcolyteShot1 }
+	Frame CFX1D { Light AcolyteShot2 }
+	Frame CFX1E { Light AcolyteShot3 }
+	Frame CFX1F { Light AcolyteShot4 }
+	Frame CFX1G { Light AcolyteShot1 }
+	Frame CFX1H { Light AcolyteShot5 }
+}
+
+Flickerlight2 AcolyteFire1
+{
+	Color 0.4 0.4 0.0
+	Size 16
+	SecondarySize 32
+	Interval 0.7
+	Offset 0 42 0
+}
+
+Flickerlight2 AcolyteFire2
+{
+	Color 0.4 0.4 0.0
+	Size 32
+	SecondarySize 56
+	Interval 0.7
+	Offset 0 42 0
+}
+
+Flickerlight2 AcolyteFire3
+{
+	Color 0.4 0.4 0.0
+	Size 56
+	SecondarySize 64
+	Interval 0.7
+	Offset 0 42 0
+}
+
+Pointlight AcolyteExplode1
+{
+	Color 0.6 0.6 0.0
+	Size 32
+	Offset 0 42 0
+}
+
+Pointlight AcolyteExplode2
+{
+	Color 0.6 0.6 0.0
+	Size 64
+	Offset 0 42 0
+}
+
+Pointlight AcolyteExplode3
+{
+	Color 0.6 0.6 0.0
+	Size 80
+	Offset 0 42 0
+}
+
+Pointlight AcolyteExplode4
+{
+	Color 0.8 0.8 0.0
+	Size 140
+	Offset 0 42 0
+}
+
+Pointlight AcolyteExplode5
+{
+	Color 0.7 0.7 0.0
+	Size 96
+	Offset 0 42 0
+}
+
+Pointlight AcolyteExplode6
+{
+	Color 0.6 0.6 0.0
+	Size 48
+	Offset 0 48 0
+}
+
+Object DarkAcolyte
+{
+	Frame ACOLD { Light AcolyteFire1 }
+	Frame ACOLE { Light AcolyteFire2 }
+	Frame ACOLF { Light AcolyteFire3 }
+	Frame ACOLG { Light AcolyteExplode1 }
+	Frame ACOLH { Light AcolyteExplode2 }
+	Frame ACOLI { Light AcolyteExplode3 }
+	Frame ACOLJ { Light AcolyteExplode4 }
+	Frame ACOLK { Light AcolyteExplode5 }
+	Frame ACOLL { Light AcolyteExplode6 }
+	Frame ACOLM { Light AcolyteExplode7 }
+}

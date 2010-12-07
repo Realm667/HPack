@@ -1,0 +1,114 @@
+ACTOR ChaosWyvern : FireDemon 16518
+{
+	//$Category Monsters
+	//$Title Chaos Wyvern
+ 	Monster
+	Health 1000
+	Painchance 16
+	Speed 10
+	Height 64
+	Radius 32
+	Mass 0x7fffffff
+	Monster
+	+NOGRAVITY
+	+FLOAT
+	+BOSS
+	+DONTMORPH
+	+NOTARGET
+	+MISSILEMORE
+	-INVULNERABLE
+	Obituary "$OB_CHAOSWYVERN"
+
+	SeeSound "ChaosWyvern/Sight"
+	ActiveSound "ChaosWyvern/Act"
+	PainSound "ChaosWyvern/Pain"
+	DeathSound "ChaosWyvern/Death"
+
+	States
+	{
+	Spawn:
+		CWYV D 10 A_Look
+		Loop
+	See:
+		CWYV CB 5
+	Fly:
+		CWYV AABBCCDDCCBB 2 A_FireDChase
+		Goto Fly
+	Pain:
+		CWYV F 10 A_Pain
+		Goto Fly
+	Pain.HandOfTheWraith:
+	 	CWYV F 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+	 	CWYV F 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+	 	CWYV F 10 A_Pain
+	 	Goto Fly
+	Missile:
+		CWYV E 1 A_FaceTarget
+		CWYV E 0 A_JumpIfCloser(256, "Melee")
+		CWYV E 8 Bright A_CustomMissile("WyvernBall")
+		Goto Fly
+	Melee:
+		CWYV E 1 Bright A_CustomMissile("WyvernBreath", 40, 0, random(-5,5))
+		CWYV E 0 Bright A_Chase
+		CWYV E 0 Bright A_FaceTarget
+		CWYV E 1 Bright A_CustomMissile("WyvernBreath", 40, 0, random(-5,5))
+		CWYV E 0 Bright A_Chase
+		CWYV E 0 Bright A_FaceTarget
+		CWYV E 1 Bright A_CustomMissile("WyvernBreath", 40, 0, random(-5,5))
+		CWYV E 0 Bright A_Chase
+		CWYV E 0 Bright A_FaceTarget
+		CWYV E 1 Bright A_CustomMissile("WyvernBreath", 40, 0, random(-5,5))
+		CWYV E 0 Bright A_Chase
+		CWYV E 0 Bright A_FaceTarget
+		CWYV E 1 A_Jump(32, "Fly")
+		Goto Melee
+	XDeath:
+	Death:
+	    CWYV G 5 A_Scream
+		CWYV H 4 A_NoBlocking
+		CWYV I 4
+		CWYV J 4
+		Wait
+	Crash:
+		CWYV KL 5
+		CWYV M -1
+		Stop
+	Ice:
+		CWYV N 5 A_FreezeDeath
+		CWYV N 1 A_FreezeDeathChunks
+		Wait
+	}
+}
+		
+Actor WyvernBall
+{
+	Radius 6
+	Height 16
+	Speed 20
+	Damage 5
+	RenderStyle Add
+	Alpha 1
+	DamageType "Fire"
+	Projectile
+	SeeSound "ChaosWyvern/Breath"
+	DeathSound "ChaosWyvern/Bomb"
+	States
+	{
+	Spawn:
+		CWVB AABB 2 Bright A_SpawnItemEx("Puffy", random2[BeastPuff]()*0.015625, random2[BeastPuff]()*0.015625, 
+                                    random2[BeastPuff]()*0.015625, 0,0,0,0,SXF_ABSOLUTEPOSITION, 64)
+		Loop
+	Death:
+		CWVB C 4 Bright
+		CWVB D 4 Bright A_Explode(64, 128, false)
+		CWVB EFG 4 Bright
+		Stop
+	}
+}
+
+Actor WyvernBreath : PhoenixFX2
+{
+	Damage 1
+	Speed 20
+	SeeSound "ChaosWyvern/Toast"
+}

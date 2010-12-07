@@ -1,0 +1,679 @@
+// Staff of Chaos ---------------------------------------------
+
+Actor HPStaffChaos : Weapon 23125
+{
+	//$Category Weapons
+	//$Title Staff of Chaos
+	Game Heretic
+	Weapon.SelectionOrder 3000
+	Weapon.SisterWeapon "HPStaffChaosPowered"
+	Weapon.AmmoType "DummyHealthAmmo"
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 0
+	Weapon.KickBack 300
+	Weapon.YAdjust 0
+	+WEAPON.AMMO_OPTIONAL
+	+WEAPON.NOAUTOFIRE
+	Inventory.Icon "WSCHA0"
+	Inventory.PickupMessage "$TXT_WPNSTAFFCHAOS"
+	Tag "$TAG_STAFFOFCHAOS"
+	AttackSound ""
+	States
+	{
+	Select:
+		TNT1 A 1 A_PlaySound ("Weapon/StaffChaos/Static", CHAN_AUTO)
+	Select1:
+		STCH A 0 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 A_Raise
+		Loop
+	Deselect:
+		STCH A 0 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 A_Lower
+		Loop
+	Ready:
+		STCH A 0 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 A_WeaponReady
+		Loop
+	Fire:
+		STCH A 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireNone")
+		STCH A 0 A_JumpIfHealthLower (11, "AltFire")
+		STCH A 0 A_PlaySound ("Weapon/StaffChaos/Charge", CHAN_AUTO)
+		STCH AAABBBCCC 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH D 0 A_Light (1)
+		STCH DDD 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH E 0 A_Light (2)
+		STCH EEE 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH F 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireFail")
+		STCH F 0 A_Light (3)
+		STCH F 0 A_Recoil (4)
+		STCH F 0 A_PlaySound ("Weapon/StaffChaos/Fire", CHAN_WEAPON)
+		STCH F 0 A_SpawnItemEx ("ChaosDamager10", 0, 0, 10, VelX, VelY, VelZ, 0, SXF_ABSOLUTEMOMENTUM)
+		STCH F 0 A_FireCustomMissile ("ChaosMissile", 0, 0)
+		STCH F 0 A_SetPitch (Pitch - 2)
+		STCH F 0 A_SetAngle (Angle + FRandom(-1,1))
+		STCH FFF 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+	FireDone:
+		STCH G 0 A_SetPitch (Pitch + 1)
+		STCH G 0 A_SetAngle (Angle + FRandom(-0.5,0.5))
+		STCH G 0 A_Light (2)
+		STCH GGG 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH G 0 A_SetPitch (Pitch + 1)
+		STCH B 0 A_SetAngle (Angle + FRandom(-0.5,0.5))
+		STCH B 0 A_Light (1)
+		STCH BBB 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_Light (0)
+		STCH AAA 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 16)
+		Goto FireDone1
+	FireDone1:
+		STCH A 0 A_WeaponReady (WRF_NOFIRE|WRF_NOSWITCH)
+		STCH A 1 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_TakeInventory ("CountChaosLoop", 1)
+		STCH A 0 A_JumpIfInventory ("CountChaosLoop", 1, "FireDone1")
+		STCH A 0 A_Refire
+		Goto Ready
+	FireFail:
+		STCH D 0 A_PlaySound ("Weapon/StaffChaos/Static", CHAN_WEAPON)
+		STCH D 0 A_Light (1)
+		STCH DDD 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH C 0 A_Light (0)
+		STCH CCCBBBAAA 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 16)
+		Goto FireDone1
+	FireNone:
+		STCH A 0 A_PlaySound ("Weapon/StaffChaos/Static", CHAN_AUTO)
+		STCH A 1 Offset (-1,0) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 Offset (1,0) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 Offset (-1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 Offset (1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 Offset (-1,34) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 Offset (1,34) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 Offset (-1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 1 Offset (1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 16)
+		Goto FireDone1
+	Hold:
+		STCH A 0 A_JumpIfHealthLower (11, "AltHold")
+		STCH A 0 A_ClearRefire
+		Goto Fire
+	AltFire:
+		STCH A 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireNone")
+		STCH A 0 A_PlaySound ("Weapon/StaffChaos/Charge", CHAN_AUTO)
+		STCH AAA 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH H 0 A_JumpIfInventory ("FlagStaffRightFired", 1, "AltFireLeft")
+		STCH H 0 A_GiveInventory ("FlagStaffRightFired", 1)
+		STCH HHH 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		Goto AltHold1
+	AltFireLeft:
+		STCH M 0 A_TakeInventory ("FlagStaffRightFired", 1)
+		STCH MMM 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		Goto AltHoldLeft1
+	AltHold:
+		STCH H 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireNone")
+		STCH H 0 A_JumpIfInventory ("FlagStaffRightFired", 1, "AltHoldLeft")
+		STCH H 0 A_GiveInventory ("FlagStaffRightFired", 1)
+		STCH HHH 1 Bright Offset(-1,36) A_GiveInventory ("DummyHealthScanner", 1)
+	AltHold1:
+		STCH IIIJJJKKK 1 Bright Offset(1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH L 0 A_PlaySound ("Weapon/StaffChaos/ZapShot", CHAN_WEAPON)
+		STCH L 0 A_Light (1)
+		STCH L 0 A_SpawnItemEx ("ChaosDamager2", 0, 0, 10, VelX, VelY, VelZ, 0, SXF_ABSOLUTEMOMENTUM)
+		STCH L 0 A_FireCustomMissile ("ChaosBolt1", -5, 0, 8, 2)
+		STCH LLL 1 Bright Offset(4,40) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_Light (0)
+		STCH A 0 A_Refire
+		STCH AAA 1 Bright Offset(2,36) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 Bright Offset(1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 4)
+		Goto FireDone1
+	AltHoldLeft:
+		STCH M 0 A_TakeInventory ("FlagStaffRightFired", 1)
+		STCH MMM 1 Bright Offset(1,36) A_GiveInventory ("DummyHealthScanner", 1)
+	AltHoldLeft1:
+		STCH NNNOOOPPP 1 Bright Offset(-1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH Q 0 A_PlaySound ("Weapon/StaffChaos/ZapShot", CHAN_WEAPON)
+		STCH Q 0 A_SpawnItemEx ("ChaosDamager2", 0, 0, 10, VelX, VelY, VelZ, 0, SXF_ABSOLUTEMOMENTUM)
+		STCH L 0 A_Light (1)
+		STCH Q 0 A_FireCustomMissile ("ChaosBolt1", 5, 0, -8, 2)
+		STCH QQQ 1 Bright Offset(-4,40) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_Light (0)
+		STCH A 0 A_Refire
+		STCH AAA 1 Bright Offset(-2,36) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 Bright Offset(-1,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 4)
+		Goto FireDone1
+	AltFireFail:
+		STCH A 0 A_PlaySound ("Weapon/StaffChaos/Static", CHAN_WEAPON)
+		STCH AAA 1 Bright Offset(0,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 Offset(0,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 8)
+		Goto FireDone1
+	Spawn:
+		WSCH A 1
+		WSCH A 1 Bright
+		Loop
+	}
+}
+
+Actor HPStaffChaosPowered : HPStaffChaos
+{
+	Weapon.SisterWeapon "HPStaffChaos"
+	+WEAPON.POWERED_UP
+	Tag "$TAG_STAFFOFCHAOS"
+	States
+	{
+	Fire:
+		STCH A 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireNone")
+		STCH A 0 A_JumpIfHealthLower (21, "AltFire")
+		STCH A 0 A_PlaySound ("Weapon/StaffChaos/Charge", CHAN_AUTO)
+		STCH AAA 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH RRR 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH S 0 A_Light (1)
+		STCH SSS 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH T 0 A_Light (2)
+		STCH TTT 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH U 0 A_Light (3)
+		STCH UUU 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH V 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireFail")
+		STCH V 0 A_JumpIfInventory ("FlagChaosArcActive", 1, "FireFail")
+		STCH V 0 A_Light (4)
+		STCH V 0 A_Recoil (8)
+		STCH V 0 A_PlaySound ("Weapon/StaffChaos/Fire", CHAN_WEAPON)
+		STCH V 0 A_SpawnItemEx ("ChaosDamager20", 0, 0, 10, VelX, VelY, VelZ, 0, SXF_ABSOLUTEMOMENTUM)
+		STCH V 0 A_GiveInventory ("FlagChaosArcActive", 1)
+		STCH V 0 A_FireCustomMissile ("ChaosArcSpawner", 0, 0, 0, 0, 1)
+		STCH V 0 A_SetPitch (Pitch - 5)
+		STCH V 0 A_SetAngle (Angle + FRandom(-2,2))
+		STCH VVV 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+	FireDone:
+		STCH W 0 A_SetPitch (Pitch + 1)
+		STCH W 0 A_SetAngle (Angle + FRandom(-0.5,0.5))
+		STCH W 0 A_Light (3)
+		STCH WWW 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH X 0 A_SetPitch (Pitch + 1)
+		STCH X 0 A_SetAngle (Angle + FRandom(-0.5,0.5))
+		STCH X 0 A_Light (2)
+		STCH XXX 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH C 0 A_SetPitch (Pitch + 1)
+		STCH C 0 A_SetAngle (Angle + FRandom(-0.5,0.5))
+		STCH C 0 A_Light (1)
+		STCH CCC 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH B 0 A_SetPitch (Pitch + 1)
+		STCH B 0 A_SetAngle (Angle + FRandom(-0.5,0.5))
+		STCH B 0 A_Light (0)
+		STCH BBB 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_SetPitch (Pitch + 1)
+		STCH A 0 A_SetAngle (Angle + FRandom(-0.5,0.5))
+		STCH AAA 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 16)
+		Goto FireDone1
+	FireFail:
+		STCH D 0 A_PlaySound ("Weapon/StaffChaos/Static", CHAN_WEAPON)
+		STCH D 0 A_Light (2)
+		STCH DDD 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH C 0 A_Light (1)
+		STCH CCC 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH B 0 A_Light (0)
+		STCH BBB 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH AAA 1 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 16)
+		Goto FireDone1
+	Hold:
+		STCH A 0 A_JumpIfHealthLower (11, "AltHold")
+		STCH A 0 A_ClearRefire
+		Goto Fire
+	AltFire:
+	AltHold:
+		STCH A 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireNone")
+		STCH A 0 A_PlaySound ("Weapon/StaffChaos/Charge", CHAN_AUTO)
+		STCH AAABBBCCCDDD 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH Y 0 A_Light (1)
+		STCH YYY 1 Bright A_GiveInventory ("DummyHealthScanner", 1)
+		STCH Z 0 A_JumpIfInventory ("PowerInvulnerable", 1, "FireFail")
+		STCH Z 0 A_Light (2)
+		STCH Z 0 A_PlaySound ("Weapon/StaffChaos/ZapShot", CHAN_WEAPON)
+		STCH Z 0 A_SpawnItemEx ("ChaosDamager5", 0, 0, 10, VelX, VelY, VelZ, 0, SXF_ABSOLUTEMOMENTUM)
+		STCH Z 0 A_FireCustomMissile ("ChaosBolt2", 0, 0, 8, 2)
+		STCH Z 0 A_FireCustomMissile ("ChaosBolt2", 0, 0, -8, 2)
+		STCH Z 0 A_FireCustomMissile ("ChaosBolt2", -5, 0, 8, 2)
+		STCH Z 0 A_FireCustomMissile ("ChaosBolt2", 5, 0, -8, 2)
+		STCH ZZZ 1 Bright Offset(0,40) A_GiveInventory ("DummyHealthScanner", 1)
+	AltDone:
+		STCH A 0 A_Light (1)
+		STCH AAA 1 Bright Offset(0,36) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_Light (0)
+		STCH AAA 1 Bright Offset(0,33) A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_Refire
+		STCH AAA 1 A_GiveInventory ("DummyHealthScanner", 1)
+		STCH A 0 A_GiveInventory ("CountChaosLoop", 4)
+		Goto FireDone1
+	}
+}
+
+Actor FlagStaffRightFired : Inventory
+{
+	Inventory.Amount 1
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 1
+	+INVENTORY.UNDROPPABLE
+}
+
+Actor FlagChaosArcActive : Inventory
+{
+	Inventory.Amount 1
+	Inventory.MaxAmount 1
+	Inventory.InterHubAmount 0
+}
+
+Actor ChaosMissile : Sorcerer2FX1
+{
+	Radius 10
+	Height 6
+	Speed 20
+	Damage 20
+	DamageType "Electric"
+	Projectile
+	+SEEKERMISSILE
+	+SCREENSEEKER
+	+NODAMAGETHRUST
+	+FORCEXYBILLBOARD
+	RenderStyle Add
+	SeeSound "Weapon/StaffChaos/Shock"
+	DeathSound "Weapon/StaffChaos/Hit"
+	Obituary "$OB_MPSTAFFCHAOS"
+	Decal "ChaosLightning"
+	States
+	{
+	Spawn:
+		FX16 ABC 3 Bright A_BlueSpark
+	Spawn1:
+		FX16 A 0 A_AlertMonsters
+		FX16 A 0 A_PlaySound ("Weapon/StaffChaos/Charge", CHAN_AUTO)
+		FX16 A 0 A_SeekerMissile (1, 2, SMF_LOOK|SMF_PRECISE, 128, 8)
+		FX16 A 0 A_ChangeVelocity (0, FRandom(-1,1), FRandom(-1,1), 1)
+		FX16 A 3 Bright Light("ChaosFlash8") A_BlueSpark
+		FX16 B 0 A_PlaySound ("Weapon/StaffChaos/Charge", CHAN_AUTO)
+		FX16 B 0 A_SeekerMissile (1, 2, SMF_LOOK|SMF_PRECISE, 128, 8)
+		FX16 B 0 A_ChangeVelocity (0, FRandom(-1,1), FRandom(-1,1), 1)
+		FX16 B 3 Bright Light("ChaosFlash8") A_BlueSpark
+		FX16 C 0 A_PlaySound ("Weapon/StaffChaos/Charge", CHAN_AUTO)
+		FX16 C 0 A_SeekerMissile (1, 2, SMF_LOOK|SMF_PRECISE, 128, 8)
+		FX16 C 0 A_ChangeVelocity (0, FRandom(-1,1), FRandom(-1,1), 1)
+		FX16 C 3 Bright Light("ChaosFlash8") A_BlueSpark
+		Loop
+	Death:
+		FX16 G 1 Bright Light("ChaosFlash8") A_Explode(40, 256, 0, 1, 128)
+		FX16 G 1 Bright Light("ChaosFlash9")
+		FX16 G 1 Bright Light("ChaosFlash10")
+		FX16 H 1 Bright Light("ChaosFlash11") A_Explode(40, 256, 0, 0, 128)
+		FX16 H 1 Bright Light("ChaosFlash12")
+		FX16 H 1 Bright Light("ChaosFlash13")
+		FX16 I 1 Bright Light("ChaosFlash14") A_Explode(40, 256, 0, 0, 128)
+		FX16 I 1 Bright Light("ChaosFlash15")
+		FX16 I 1 Bright Light("ChaosFlash16")
+		FX16 JKL 3 Bright Light("ChaosFlash16") A_Explode(40, 256, 0, 0, 128)
+		TNT1 A 1 Light("ChaosFlash15")
+		TNT1 A 1 Light("ChaosFlash14")
+		TNT1 A 1 Light("ChaosFlash13")
+		TNT1 A 1 Light("ChaosFlash12")
+		TNT1 A 1 Light("ChaosFlash11")
+		TNT1 A 1 Light("ChaosFlash10")
+		TNT1 A 1 Light("ChaosFlash9")
+		TNT1 A 1 Light("ChaosFlash8")
+		TNT1 A 1 Light("ChaosFlash7")
+		TNT1 A 1 Light("ChaosFlash6")
+		TNT1 A 1 Light("ChaosFlash5")
+		TNT1 A 1 Light("ChaosFlash4")
+		TNT1 A 1 Light("ChaosFlash3")
+		TNT1 A 1 Light("ChaosFlash2")
+		TNT1 A 1 Light("ChaosFlash1")
+		Stop
+	}
+}
+
+Actor ChaosBolt1 : ChaosMissile
+{
+	Radius 2
+	Height 4
+	Speed 40
+	Damage 12
+	BounceFactor 1.0 
+	WallBounceFactor 1.0
+	BounceCount 4
+	+BOUNCEONWALLS
+	+BOUNCEONFLOORS
+	+BOUNCEONCEILINGS
+	+CANBOUNCEWATER
+	+BOUNCEAUTOOFF
+	+FORCEXYBILLBOARD
+	SeeSound "Weapon/StaffChaos/ZapShot"
+	DeathSound ""
+	BounceSound "Weapon/StaffChaos/Zapped"
+	Obituary "$OB_MPSTAFFCHAOS"
+	States
+	{
+	Spawn:
+		FX16 DEDE 1 Bright A_SpawnItemEx ("ChaosBoltTrail1")
+	Spawn1:
+		FX16 D 0 A_SeekerMissile (2, 2, SMF_LOOK|SMF_PRECISE, 128, 8)
+		FX16 D 0 A_ChangeVelocity (0, FRandom(-1,1), FRandom(-1,1), 1)
+		FX16 DEDE 1 Bright Light("ChaosFlash2") A_SpawnItemEx ("ChaosBoltTrail1")
+		Loop
+	Death:
+		FX16 D 0 A_PlaySound ("Weapon/StaffChaos/ZapHit")
+		FX16 D 3 Bright Light("ChaosFlash4") A_BlueSpark
+		FX16 E 3 Bright Light("ChaosFlash3") A_BlueSpark
+		FX16 F 3 Bright Light("ChaosFlash2") A_BlueSpark
+		TNT1 A 1 Light("ChaosFlash1") A_BlueSpark
+		Stop
+	}
+}
+
+Actor ChaosBolt2 : ChaosBolt1
+{
+	Speed 48
+	Obituary "$OB_MPSTAFFCHAOS"
+	States
+	{
+	Spawn:
+		FX16 DEDE 1 Bright A_SpawnItemEx ("ChaosBoltTrail2")
+	Spawn1:
+		FX16 D 0 A_SeekerMissile (2, 2, SMF_LOOK|SMF_PRECISE, 128, 8)
+		FX16 D 0 A_ChangeVelocity (0, FRandom(-1,1), FRandom(-1,1), 1)
+		FX16 D 1 Bright Light("ChaosFlash2") A_SpawnItemEx ("ChaosBoltTrail2")
+		FX16 E 0 A_SeekerMissile (0, 1, SMF_LOOK|SMF_PRECISE, 128, 8)
+		FX16 E 0 A_ChangeVelocity (0, FRandom(-1,1), FRandom(-1,1), 1)
+		FX16 E 1 Bright Light("ChaosFlash2") A_SpawnItemEx ("ChaosBoltTrail2")
+		Loop
+	}
+}
+
+Actor ChaosBoltTrail1
+{
+	+NOINTERACTION
+	+FORCEXYBILLBOARD
+	RenderStyle Add
+	Scale 0.5
+	States
+	{
+	Spawn:
+		TNT1 A 2
+		FX16 EDF 2 Bright
+		Stop
+	}
+}
+
+Actor ChaosBoltTrail2 : ChaosBoltTrail1
+{
+	Scale 0.5
+	States
+	{
+	Spawn:
+		TNT1 A 2
+		FX16 EDF 3 Bright
+		Stop
+	}
+}
+
+Actor ChaosArcSpawner : FastProjectile
+{
+	Radius 4
+	Height 8
+	Speed 256
+	Damage 0
+	DamageType "Electric"
+	ReactionTime 7
+	+BLOODLESSIMPACT
+	+NODAMAGETHRUST
+	+PAINLESS
+	+SEEKERMISSILE
+	ActiveSound ""
+	AttackSound "Weapon/StaffChaos/Static"
+	SeeSound "Weapon/StaffChaos/Arc"
+	States
+	{
+	Spawn:
+		TNT1 A 1 A_CountDown
+		Loop
+	Death:
+		TNT1 A 0 A_SpawnItemEx ("ChaosArcTracker", 0, 0, 0, 32, 0, 0, 0, SXF_TRANSFERPOINTERS|SXF_NOCHECKPOSITION)
+		TNT1 A 1
+		Stop
+	}
+}
+
+Actor ChaosArcTracker
+{
+	Radius 2
+	Height 2
+	Speed 32
+	Damage 0
+	DamageType "Electric"
+	Projectile
+	BounceType "Grenade"
+	BounceFactor 1.0
+	WallBounceFactor 1.0
+	ReactionTime 128
+	+NOEXPLODEFLOOR
+	+SEEKERMISSILE
+	+BLOODLESSIMPACT
+	+THRUACTORS
+	+NOTRIGGER
+	RenderStyle Add
+	SeeSound "Weapon/StaffChaos/Arc"
+	DeathSound "Weapon/StaffChaos/Static"
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_AlertMonsters
+		TNT1 A 0 A_SeekerMissile (10, 45, SMF_LOOK|SMF_PRECISE, 256, 2)
+		TNT1 A 0 A_JumpIfTracerCloser (129, "Spawn1")
+		TNT1 A 0 A_SetAngle (Random(0,359))
+		TNT1 A 0 A_ChangeVelocity (32, 0, 0, 3)
+	Spawn1:
+		TNT1 A 0 A_Jump (128, "Spawn2")
+		TNT1 A 1 Light("ChaosFlash16") A_SpawnItemEx ("ChaosArcZap1", Random(-64,64), Random(-64,64), CeilingZ - Z - 32, 0, 0, -32, Random(0,359), SXF_TRANSFERPOINTERS)
+		TNT1 A 0 A_CountDown
+		Goto Spawn
+	Spawn2:
+		TNT1 A 1 Light("ChaosFlash16") A_SpawnItemEx ("ChaosArcZap2", Random(-64,64), Random(-64,64), CeilingZ - Z - 32, 0, 0, -32, Random(0,359), SXF_TRANSFERPOINTERS)
+		TNT1 A 0 A_CountDown
+		Goto Spawn
+	Death:
+		TNT1 A 1 Light("ChaosFlash16")
+		TNT1 A 1 Light("ChaosFlash15")
+		TNT1 A 1 Light("ChaosFlash14")
+		TNT1 A 1 Light("ChaosFlash13")
+		TNT1 A 1 Light("ChaosFlash12")
+		TNT1 A 1 Light("ChaosFlash11")
+		TNT1 A 1 Light("ChaosFlash10")
+		TNT1 A 1 Light("ChaosFlash9")
+		TNT1 A 1 Light("ChaosFlash8")
+		TNT1 A 1 Light("ChaosFlash7")
+		TNT1 A 1 Light("ChaosFlash6")
+		TNT1 A 1 Light("ChaosFlash5")
+		TNT1 A 1 Light("ChaosFlash4")
+		TNT1 A 1 Light("ChaosFlash3")
+		TNT1 A 1 Light("ChaosFlash2")
+		TNT1 A 1 Light("ChaosFlash1")
+		TNT1 A 1 A_TakeFromTarget ("FlagChaosArcActive", 1)
+		Stop
+	}
+}
+
+Actor ChaosArcZap1
+{
+	Radius 8
+	Height 32
+	Damage 1
+	DamageType "Electric"
+	Projectile
+	+BLOODLESSIMPACT
+	+NODAMAGETHRUST
+	+RIPPER
+	+NOBOSSRIP
+	-ACTIVATEIMPACT
+	-ACTIVATEPCROSS
+	RenderStyle Add
+	SeeSound "Weapon/StaffChaos/Static"
+	DeathSound "Weapon/StaffChaos/Arc"
+	Obituary "$OB_MPSTAFFCHAOS"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump (256, 1, 2, 3, 4, 5)
+	Spawn1:
+		CHE1 IIJJKKLLMM 1 Bright Light("ChaosFlash4") A_Explode (Random(8,16), 16, 0, 0, 16)
+		Loop
+	Death:
+		CHE1 NO 2 Bright Light("ChaosFlash4")
+		CHE1 PQ 2 Bright Light("ChaosFlash3")
+		CHE1 RS 2 Bright Light("ChaosFlash2")
+		CHE1 TU 2 Bright Light("ChaosFlash1")
+		Stop
+	}
+}
+
+Actor ChaosArcZap2 : ChaosArcZap1
+{
+	Damage 1
+	DamageType "Electric"
+	+PAINLESS
+	Obituary "$OB_MPSTAFFCHAOS"
+}
+
+Actor ChaosDamager
+{
+	+PIERCEARMOR
+	+FOILINVUL
+	+FORCERADIUSDMG
+	+PAINLESS
+	+NODAMAGETHRUST
+	+NOINTERACTION
+	+NOTIMEFREEZE
+	Obituary "$OB_STAFFCHAOSCOST"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Explode (1, 2, 1, 0, 2)
+		TNT1 A 1 A_GiveToTarget ("DummyHealthAlerter", 1)
+		Stop
+	}
+}
+
+Actor ChaosDamager2 : ChaosDamager
+{
+	Obituary "$OB_STAFFCHAOSCOST"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Explode (2, 2, 1, 0, 2)
+		TNT1 A 1 A_GiveToTarget ("DummyHealthAlerter", 1)
+		Stop
+	}
+}
+
+Actor ChaosDamager5 : ChaosDamager
+{
+	Obituary "$OB_STAFFCHAOSCOST"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Explode (5, 2, 1, 0, 2)
+		TNT1 A 1 A_GiveToTarget ("DummyHealthAlerter", 1)
+		Stop
+	}
+}
+
+Actor ChaosDamager10 : ChaosDamager
+{
+	Obituary "$OB_STAFFCHAOSCOST"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Explode (10, 2, 1, 0, 2)
+		TNT1 A 1 A_GiveToTarget ("DummyHealthAlerter", 1)
+		Stop
+	}
+}
+
+Actor ChaosDamager20 : ChaosDamager
+{
+	Obituary "$OB_STAFFCHAOSCOST"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Explode (20, 2, 1, 0, 2)
+		TNT1 A 1 A_GiveToTarget ("DummyHealthAlerter", 1)
+		Stop
+	}
+}
+
+Actor DummyHealthAmmo : Ammo
+{
+	Inventory.Amount 1
+	Inventory.MaxAmount 100
+	Inventory.InterHubAmount 0
+	Ammo.BackpackAmount 0
+	Ammo.BackpackMaxAmount 0
+	Inventory.Icon "PTN1A0"
+}
+
+Actor DummyHealthScanner : CustomInventory
+{
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.MaxAmount 0
+	States
+	{
+	Pickup:
+		TNT1 A 0 A_TakeInventory ("DummyHealthAmmo", 100)
+		TNT1 A 0 A_GiveInventory ("DummyHealthAmmo", Health)
+		Stop
+	}
+}
+
+Actor DummyHealthAlerter : CustomInventory
+{
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	Inventory.MaxAmount 0
+	States
+	{
+	Pickup:
+		TNT1 A 0 A_JumpIfHealthLower (1, "PickupDied")
+		TNT1 A 0 A_JumpIfHealthLower (26, "PickupAlert")
+		Stop
+	PickupAlert:
+		TNT1 A 0 A_PlaySound ("*Pain25")
+		Stop
+	PickupDied:
+		TNT1 A 0
+		Stop
+	}
+}
+
+Actor CountChaosLoop : Inventory
+{
+	Inventory.Amount 1
+	Inventory.MaxAmount 16
+	Inventory.InterHubAmount 0
+}
+
+Actor Sorcerer2FXSparkXY : Sorcerer2FXSpark Replaces Sorcerer2FXSpark
+{
+	+FORCEXYBILLBOARD
+}
+

@@ -1,0 +1,203 @@
+// ---------------- //
+// CRYSTALLINE AMMO //
+// ---------------- //
+
+// Small wand ammo
+pointlight SWANDAMMO
+{
+    color 1.0 1.0 0.0
+    size 8
+}
+
+object GoldWandAmmo
+{
+    frame AMG1 { light SWANDAMMO }
+}
+
+// Medium wand ammo
+Pulselight MWANDAMMO
+{
+	Color 0.8 0.8 0.0
+	Size 10
+	SecondarySize 13
+	Interval 3
+}
+
+// Large wand ammo
+pulselight LWANDAMMO
+{
+    color 1.0 1.0 0.0
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object GoldWandHefty
+{
+    frame AMG2 { light LWANDAMMO }
+}
+
+// -------------- //
+// ETHREAL ARROWS //
+// -------------- //
+
+// Ethereal arrows
+pointlight ETHARROWS
+{
+    color 0.0 1.0 0.0
+    size 12
+    offset 0 8 0
+}
+
+object CrossbowAmmo
+{
+    frame AMC1 { light ETHARROWS }
+}
+
+// Ethereal bundle
+Pulselight ETHBUNDLE
+{
+	Color 0.0 0.8 0.0
+	Size 15
+	SecondarySize 18
+	Interval 3
+}
+
+// Quiver of ethereal arrows
+pulselight ETHQUIVER
+{
+    color 0.0 1.0 0.0
+    size 16
+    secondarySize 18
+    interval 2.0
+    offset 0 16 0
+}
+
+object CrossbowHefty
+{
+    frame AMC2 { light ETHQUIVER }
+}
+
+// ----------- //
+// ENERGY AMMO //
+// ----------- //
+
+// Small claw ammo
+pulselight SCLAWAMMO
+{
+    color 0.0 0.0 1.0
+    size 8
+    secondarySize 10
+    interval 2.0
+}
+
+object BlasterAmmo
+{
+    frame AMB1 { light SCLAWAMMO }
+}
+
+// Middle claw ammo
+Pulselight MCLAWAMMO
+{
+	Color 0.0 0.0 1.0
+	Size 10
+	SecondarySize 13
+	Interval 3
+}
+
+// Large claw ammo
+pulselight LCLAWAMMO
+{
+    color 0.0 0.0 1.0
+    size 16
+    secondarySize 18
+    interval 2.0
+    offset 0 6 0
+}
+
+object BlasterHefty
+{
+    frame AMB2 { light LCLAWAMMO }
+}
+
+// ---------- //
+// RUNIC AMMO //
+// ---------- //
+
+// Small hellstaff ammo
+pulselight SSTAFFAMMO
+{
+    color 1.0 0.0 0.0
+    size 8
+    secondarySize 10
+    interval 2.0
+}
+
+object SkullRodAmmo
+{
+    frame AMS1 { light SSTAFFAMMO }
+}
+
+// Medium hellstaff ammo
+Pulselight MSTAFFAMMO
+{
+	Color 1.0 0.0 0.0
+	Size 10
+	SecondarySize 13
+	Interval 3
+}
+
+// Large hellstaff ammo
+pulselight LSTAFFAMMO
+{
+    color 1.0 0.0 0.0
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object SkullRodHefty
+{
+    frame AMS2 { light LSTAFFAMMO }
+}
+
+// ---------- //
+// FIERY AMMO //
+// ---------- //
+
+// Small phoenix rod ammo
+pulselight SRODAMMO
+{
+    color 1.0 0.6 0.0
+    size 8
+    secondarySize 10
+    interval 2.0
+}
+
+object PhoenixRodAmmo
+{
+    frame AMP1 { light SRODAMMO }
+}
+
+// Medium phoenix rod ammo
+Pulselight MRODAMMO
+{
+	Color 1.0 0.6 0.0
+	Size 10
+	SecondarySize 13
+	Interval 3
+}
+
+// Large phoenix rod ammo
+pulselight LRODAMMO
+{
+    color 1.0 0.6 0.0
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object PhoenixRodHefty
+{
+    frame AMP2 { light LRODAMMO }
+}

@@ -1,0 +1,175 @@
+ACTOR Disciple 30117 
+{ 
+	//$Category Monsters
+	//$Title Disciple
+	Health 220
+	PainChance 140
+	Speed 12
+	Radius 20 
+	Height 56 
+	cameraheight 41
+	Mass 320 
+	Monster
+	bloodcolor "white"
+	+FLOORCLIP
+	+DONTHURTSPECIES
+	+FLOAT
+	+NOGRAVITY
+	DropItem "SkullRodAmmo" 84 20
+	DropItem "ArtiTomeOfPower" 5
+	Obituary "$OB_DISCIPLE"
+	SeeSound "monster/dissit" 
+	PainSound "monster/dispai" 
+	DeathSound "monster/disdth" 
+	ActiveSound "monster/disact"
+	States 
+	{ 
+	Spawn: 
+		DISC AB 10 A_Look 
+		Loop 
+	See: 
+		DISC AAABBB 2 A_Chase
+		Loop
+	Missile:
+		DISC A 1 A_Jump(192,1)
+		Goto See
+		DISC C 0 Bright A_Jump(128,10)
+		DISC C 1 Bright A_PlaySound("monster/disat1")
+		DISC CC 5 Bright A_FaceTarget
+		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,-4,0)
+		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,4,0)
+		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,-8,0)
+		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,8,0)
+		DISC D 8 Bright A_CustomMissile("DiscipleShot1",36,0,0,0)
+		DISC D 0 Bright A_Jump(64,1)
+		Goto See
+		DISC E 1 Bright A_PlaySound("monster/disat2")
+		DISC EE 5 Bright A_FaceTarget
+		DISC F 8 Bright A_CustomMissile("DiscipleShot2",36,0,0,0)
+		DISC E 1 Bright A_PlaySound("monster/disat2")
+		DISC EE 5 Bright A_FaceTarget
+		DISC F 8 Bright A_CustomMissile("DiscipleShot2",36,0,0,0)
+		DISC E 1 Bright A_PlaySound("monster/disat2")
+		DISC EE 5 Bright A_FaceTarget
+		DISC F 8 Bright A_CustomMissile("DiscipleShot2",36,0,0,0)
+		Goto See
+	Pain: 
+		DISC G 2 
+		DISC G 2 A_Pain 
+		Goto See 
+	Death: 
+		DISC H 8 Bright A_Scream 
+		DISC I 5 Bright
+		DISC J 5 Bright
+		DISC K 5 Bright A_NoBlocking 
+		DISC LMN 4 Bright  
+		DISC O -1 
+		Stop 
+	Raise: 
+		DISC ONMLKJIH 5 
+		Goto See 
+	} 
+}
+
+ACTOR DSFX3
+{   
+   Radius 2
+   Height 2
+   Speed 0
+   Scale 0.90
+   PROJECTILE
+   RENDERSTYLE Translucent
+   ALPHA 0.90
+   States
+   {
+   Spawn:
+      TNT1 A 3
+      DISC A 3 A_FadeOut(0.10)
+      goto spawn+1
+   }
+}
+
+ACTOR DiscipleShot1
+{
+   Radius 8
+   Height 16
+   Speed 15
+   FastSpeed 20
+   Damage 2
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   PROJECTILE
+//   +THRUGHOST
+   DeathSound "monster/disht1"
+   States
+   {
+   Spawn:
+      CFX2 ABCD 2 Bright A_CustomMissile("DSFX1",0,0,0,0)
+      loop
+   Death:
+      CFX2 EFGHI 3 Bright
+      stop
+   }
+}
+
+ACTOR DiscipleShot2
+{
+   Radius 8
+   Height 16
+   Speed 15
+   FastSpeed 20
+   Damage 6
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   PROJECTILE
+//   +THRUGHOST
+   +SEEKERMISSILE
+   DeathSound "monster/disht2"
+   States
+   {
+   Spawn:
+      CFX3 A 3 Bright A_CustomMissile("DSFX2",0,0,0,0)
+      CFX3 A 0 Bright A_SeekerMissile(5,8)
+      CFX3 B 3 Bright A_CustomMissile("DSFX2",0,0,0,0)
+      CFX3 B 0 Bright A_SeekerMissile(5,8)
+      loop
+   Death:
+      CFX3 CDEFG 3 Bright
+      stop
+   }
+}
+
+ACTOR DSFX1
+{   
+   Radius 2
+   Height 2
+   Speed 0
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   States
+   {
+   Spawn:
+      TNT1 A 3 Bright
+      CFX2 EFGHI 3 Bright
+      Stop 
+   }
+}
+
+ACTOR DSFX2
+{   
+   Radius 2
+   Height 2
+   Speed 0
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   States
+   {
+   Spawn:
+      TNT1 A 3 Bright
+      CFX3 HIJK 3 Bright
+      Stop 
+   }
+}
+

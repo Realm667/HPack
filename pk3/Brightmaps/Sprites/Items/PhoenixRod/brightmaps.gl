@@ -1,0 +1,7 @@
+brightmap sprite phnxa0	{ map "Brightmaps/Sprites/Items/PhoenixRod/phnxa0.png"	disablefullbright	}
+brightmap sprite phnxb0	{ map "Brightmaps/Sprites/Items/PhoenixRod/phnxb0.png"	disablefullbright	}
+brightmap sprite phnxc0	{ map "Brightmaps/Sprites/Items/PhoenixRod/phnxc0.png"	disablefullbright	}
+brightmap sprite phnxd0	{ map "Brightmaps/Sprites/Items/PhoenixRod/phnxd0.png"	disablefullbright	}
+brightmap sprite phnxe0	{ map "Brightmaps/Sprites/Items/PhoenixRod/phnxe0.png"	disablefullbright	}
+brightmap sprite phnxf0	{ map "Brightmaps/Sprites/Items/PhoenixRod/phnxf0.png"	disablefullbright	}
+brightmap sprite wphxa0	{ map "Brightmaps/Sprites/Items/PhoenixRod/wphxa0.png"	disablefullbright	}

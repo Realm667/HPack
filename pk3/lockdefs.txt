@@ -1,0 +1,121 @@
+ClearLocks
+//
+// Heretic KeyDefs
+//
+
+Lock 1 Heretic
+{
+	KeyGreen
+	Message "$TXT_NEEDGREENKEY"
+	RemoteMessage "$TXT_NEEDGREENKEYO"
+	Mapcolor 0 255 0
+}
+
+
+Lock 2 Heretic
+{
+	KeyBlue 
+	Message "$TXT_NEEDBLUEKEY"
+	RemoteMessage "$TXT_NEEDBLUEKEYO"
+	Mapcolor 0 0 255
+}
+
+
+Lock 3 Heretic
+{
+	KeyYellow
+	Message "$TXT_NEEDYELLOWKEY"
+	RemoteMessage "$TXT_NEEDYELLOWKEYO"
+	Mapcolor 255 255 0
+}
+
+Lock 4 Heretic
+{
+	KeyRed
+	Message "$TXT_NEEDREDKEY"
+	RemoteMessage "$TXT_NEEDREDKEYO"
+	Mapcolor 255 0 0
+}
+
+Lock 129 Heretic
+{
+	KeyGreen
+	Message "$TXT_NEEDGREENKEY"
+	RemoteMessage "$TXT_NEEDGREENKEYO"
+	Mapcolor 0 255 0
+}
+
+
+Lock 130 Heretic
+{
+	KeyBlue 
+	Message "$TXT_NEEDBLUEKEY"
+	RemoteMessage "$TXT_NEEDBLUEKEYO"
+	Mapcolor 0 0 255
+}
+
+
+Lock 131 Heretic
+{
+	KeyYellow
+	Message "$TXT_NEEDYELLOWKEY"
+	RemoteMessage "$TXT_NEEDYELLOWKEYO"
+	Mapcolor 255 255 0
+}
+
+Lock 132 Heretic
+{
+	KeyRed
+	Message "$TXT_NEEDREDKEY"
+	RemoteMessage "$TXT_NEEDREDKEYO"
+	Mapcolor 255 0 0
+}
+
+Lock 229 Heretic
+{
+	KeyGreen 
+	KeyYellow 
+	KeyBlue
+	KeyRed
+	Message "$PD_ALL4"
+	RemoteMessage "$PD_ALL4O"
+}
+
+Lock 101 Heretic
+{
+	KeyGreen 
+	KeyYellow 
+	KeyBlue
+	KeyRed
+	Message "$PD_ALL4"
+	RemoteMessage "$PD_ALL4O"
+}
+
+Lock 102 Heretic
+{
+	Any { KeyGreen KeyBlue}
+	Message "$PD_COLDCOLOR"
+	RemoteMessage "$PD_COLDCOLORO"
+}
+
+Lock 103 Heretic
+{
+	Any { KeyYellow KeyRed }
+	Message "$PD_WARMCOLOR"
+	RemoteMessage "$PD_WARMCOLORO"
+}
+
+Lock 104 Heretic
+{
+	Any { KeyGreen KeyBlue}
+	Any { KeyYellow KeyRed }
+	Message "$PD_BOTHCOLORTYPE"
+	RemoteMessage "$PD_BOTHCOLORTYPEO"
+}
+
+Lock 105 Heretic
+{
+	Any { KeyGreen KeyBlue KeyYellow KeyRed }
+	Message "$PD_ANYKEY"
+	RemoteMessage "$PD_ANYKEYO"
+}

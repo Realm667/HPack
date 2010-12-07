@@ -1,0 +1,118 @@
+actor Thunder_GeneratorWhite : SwitchableDecoration 3199
+{
+//$Category HPack_SpecialEffects
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+NOSECTOR
+	+NOINTERACTION
+	+CLIENTSIDEONLY
+	+NOCLIP
+	-SOLID
+	Renderstyle Add
+	Height 1
+	Radius 1
+	Alpha 0.2
+	Scale 4.0
+	states
+	{
+	Spawn:
+	Active:
+		TNT1 A 0 
+		//TNT1 A 0 A_PlaySoundEx("thunder/hit", "Voice", 0, 2)                //Uncommented because script controlled
+		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("Thunder_Spark", 0, 0, 0, random(1,10), 0, random(1,10), random(0,359), 129)
+		THND AAAA 1 Bright A_FadeIn(0.2)
+		THND AAAA 2 Bright A_FadeOut(0.2)
+		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1  Bright A_SpawnItemEx("Thunder_Smoke", 0, 0, 0, random(0,3), 0, random(2,3), random(0,359), 128)
+		Goto Inactive
+	Inactive:
+		TNT1 A 1
+		Loop
+	}     
+}
+
+actor Thunder_GeneratorTan : Thunder_GeneratorWhite 3198
+{
+//$Category HPack_SpecialEffects
+        translation "0:35=66:94"
+}
+
+actor Thunder_GeneratorGreen : Thunder_GeneratorWhite 3197
+{
+//$Category HPack_SpecialEffects
+        translation "0:35=209:224"
+}
+
+actor Thunder_GeneratorRed : Thunder_GeneratorWhite 3196
+{
+//$Category HPack_SpecialEffects
+        translation "0:35=145:163"
+}
+
+actor Thunder_GeneratorBlue : Thunder_GeneratorWhite 3195
+{
+//$Category HPack_SpecialEffects
+        translation "0:35=185:208"
+}
+
+actor Thunder_GeneratorOrange : Thunder_GeneratorWhite 3194
+{
+//$Category HPack_SpecialEffects
+        translation "0:35=137:144"
+}
+
+actor Thunder_GeneratorPurple : Thunder_GeneratorWhite 3193
+{
+//$Category HPack_SpecialEffects
+        translation "0:35=169:176"
+}
+
+Actor Thunder_Spark
+{
+	Speed 3
+	Height 2
+	Radius 1
+	Mass 0
+	+MISSILE
+	+LOWGRAVITY
+	+DONTSPLASH
+	RenderStyle Add
+	Scale 0.4
+	States
+	{
+	Spawn:
+	    TNT1 A 0
+		SPRK A 1 A_Jump(80, 4)              
+		SPRK A 1 A_Jump(80, 4)              
+		SPRK A 1 A_Jump(80, 4)              
+	    SPRK A 32 Bright
+	    SPRK A 32 Bright
+	    SPRK A 32 Bright
+	    SPRK A 32 Bright
+	    SPRK ABCDEFGHHH 1 Bright A_FadeOut(0.1)
+	    Stop
+	Death:
+	    SPRK ABCDEFGHHH 1 Bright A_FadeOut(0.1)
+ 	    Stop		
+	}
+}
+
+Actor Thunder_Smoke
+{
+    Height 2
+    Radius 1
+	+MISSILE
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+NOINTERACTION
+	+DONTSPLASH
+    RenderStyle Translucent
+    Alpha .5
+    Scale .65
+    States
+    {
+    Spawn:
+    	SMK1 IHGFEEDDCCBBBBAAAAAA 2 A_FadeOut(0.05) 
+        Stop
+    }
+}
+

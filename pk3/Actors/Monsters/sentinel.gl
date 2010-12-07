@@ -1,0 +1,171 @@
+//Sentinel
+
+Pointlight SentGMissile1
+{
+	Color 0.0 1.0 0.4
+	Size 48
+}
+
+Pointlight SentGMissile2
+{
+	Color 0.0 1.0 0.4
+	Size 32
+}
+
+Pointlight SentGMissile3
+{
+	Color 0.0 1.0 0.4
+	Size 24
+}
+
+Pointlight SentGMissile4
+{
+	Color 0.0 1.0 0.4
+	Size 16
+}
+
+Pointlight SentGMissile5
+{
+	Color 0.0 1.0 0.4
+	Size 8
+}
+
+Object SentGMissile
+{
+	frame CFX6A { Light SentGMissile1 }
+	frame CFX6B { Light SentGMissile2 }
+	frame CFX6C { Light SentGMissile3 }
+	frame CFX6D { Light SentGMissile4 }
+	frame CFX6E { Light SentGMissile5 }
+}
+
+Pointlight SentRMissile1
+{
+	Color 1.0 0.2 0.0
+	Size 56
+}
+
+Pointlight SentRMissile2
+{
+	Color 1.0 0.6 0.0
+	Size 64
+}
+
+Pointlight SentRMissile3
+{
+	Color 0.8 0.2 0.0
+	Size 72
+}
+
+Pointlight SentRMissile4
+{
+	Color 0.6 0.0 0.0
+	Size 56
+}
+
+Object SentRMissile
+{
+	Frame SEF1A { Light SentRMissile1 }
+	Frame SEF1B { Light SentRMissile1 }
+	Frame SEF1C { Light SentRMissile1 }
+	Frame SEF1D { Light SentRMissile2 }
+	Frame SEF1E { Light SentRMissile3 }
+	Frame SEF1F { Light SentRMissile4 }
+}
+
+Pointlight GreenFire1
+{
+	Color 0.0 1.0 0.4
+	Size 32
+}
+
+Pointlight GreenFire2
+{
+	Color 0.0 1.0 0.4
+	Size 48
+	Offset 0 8 0
+}
+
+Pointlight GreenFire3
+{
+	Color 0.0 1.0 0.4
+	Size 64
+	Offset 0 32 0
+}
+
+Pointlight GreenFire4
+{
+	Color 0.0 1.0 0.4
+	Size 64
+	Offset 0 40 0
+}
+
+Pointlight GreenFire5
+{
+	Color 0.0 1.0 0.4
+	Size 48
+	Offset 0 48 0
+}
+
+Pointlight GreenFire6
+{
+	Color 0.0 1.0 0.4
+	Size 32
+	Offset 0 64 0
+}
+
+Pointlight GreenFire7
+{
+	Color 0.0 1.0 0.4
+	Size 16
+	Offset 0 80 0
+}
+
+Pointlight GreenFire8
+{
+	Color 0.0 1.0 0.4
+	Size 8
+	Offset 0 90 0
+}
+
+Object GCSpawner
+{
+	Frame SEF2 { Light SentGMissile1 }
+	Frame FIRGA { Light GreenFire1 }
+	Frame FIRGB { Light GreenFire2 }
+	Frame FIRGC { Light GreenFire3 }
+	Frame FIRGD { Light GreenFire4 }
+	Frame FIRGE { Light GreenFire5 }
+	Frame FIRGF { Light GreenFire6 }
+	Frame FIRGG { Light GreenFire7 }
+	Frame FIRGH { Light GreenFire8 }
+}
+
+
+Pointlight SentinelExplode1
+{
+	Color 1.0 0.9 0.0
+	Size 80
+	Offset 0 48 0
+}
+
+Pointlight SentinelExplode2
+{
+	Color 1.0 0.5 0.0
+	Size 128
+	Offset 0 48 0
+}
+
+Pointlight SentinelExplode3
+{
+	Color 0.7 0.2 0.0
+	Size 96
+	Offset 0 48 0
+}
+
+Object HPSentinel
+{
+	Frame SENTG { Light SentinelExplode1 }
+	Frame SENTH { Light SentinelExplode2 }
+	Frame SENTI { Light SentinelExplode3 }
+}

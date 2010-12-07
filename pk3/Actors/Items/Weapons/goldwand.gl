@@ -1,0 +1,84 @@
+// ------------------- //
+// ELVEN WAND LIGHTING //
+// ------------------- //
+
+// Wand puffs
+pointlight WANDPUFF1
+{
+    color 1.0 1.0 0.0
+    size 32
+}
+
+pointlight WANDPUFF2
+{
+    color 0.7 0.7 0.0
+    size 24
+}
+
+pointlight WANDPUFF3
+{
+    color 0.4 0.4 0.0
+    size 16
+}
+
+pointlight WANDPUFF4
+{
+    color 0.2 0.2 0.0
+    size 8
+}
+
+object GoldWandPuff1
+{
+    frame PUF2A { light WANDPUFF1 }
+    frame PUF2B { light WANDPUFF2 }
+    frame PUF2C { light WANDPUFF3 }
+    frame PUF2D { light WANDPUFF4 }
+}
+
+object GoldWandPuff2
+{
+    frame PUF2C { light WANDPUFF3 }
+    frame PUF2D { light WANDPUFF4 }
+}
+
+// Tomed wand projectile
+pointlight WANDBALL
+{
+    color 1.0 1.0 0.0
+    size 24
+}
+
+pointlight WANDBALL_X1
+{
+    color 0.8 0.8 0.0
+    size 32
+}
+
+pointlight WANDBALL_X2
+{
+    color 0.6 0.6 0.0
+    size 34
+}
+
+pointlight WANDBALL_X3
+{
+    color 0.4 0.4 0.0
+    size 36
+}
+
+pointlight WANDBALL_X4
+{
+    color 0.2 0.2 0.0
+    size 38
+}
+
+object GoldWandFX2
+{
+    frame FX01C { light WANDBALL }
+    frame FX01D { light WANDBALL }
+
+    frame FX01E { light WANDBALL_X1 }
+    frame FX01F { light WANDBALL_X2 }
+    frame FX01G { light WANDBALL_X3 }
+    frame FX01H { light WANDBALL_X4 }
+}

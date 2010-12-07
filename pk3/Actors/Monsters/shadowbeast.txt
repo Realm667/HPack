@@ -1,0 +1,325 @@
+ACTOR ShadowBeast 30129
+{
+	//$Category Monsters
+	//$Title Shadow Beast
+  OBITUARY "$OB_SHADOWBEAST"
+  Bloodcolor "70 AC 00"
+  Health 500
+  Radius 40
+  Height 80
+  cameraheight 65
+  Mass 500
+  Speed 12
+  PainChance 144
+  SEESOUND "shadowbeast/sight"
+  PAINSOUND "shadowbeast/pain"
+  DEATHSOUND "shadowbeast/death"
+  ACTIVESOUND "shadowbeast/active"
+  MONSTER
+  +FloorClip
+  +DontMorph
+  +DOntSquash
+  +NOTELEOTHER
+  DropItem "MedianRunes", 84, 10
+  DropItem "ArtiHealth", 10, 1
+  states
+  {
+  Spawn:
+    BDEM AB 10 A_Look
+    Loop
+  See:
+    TNT1 A 0 A_JumpIfHealthLower (250, "Run") 
+    BDEM ABCDEF 6 A_Chase
+    Loop
+  Run:
+    TNT1 A 0 A_PlaySound("shadowbeast/sight")
+    BDEM AABBCCDDEEFF 2 A_Chase(0,0)
+    BDEM AABBCCDDEEFF 2 A_Chase(0,0)
+    BDEM AABBCCDDEEFF 2 A_Chase(0,0)
+    Goto Missile
+  Missile:
+    TNT1 A 0 A_JumpIfHealthLower (250, "Missile2") 
+    TNT1 A 0 A_Jump(90, 5)
+    BDEM H 6 A_FaceTarget
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball1", 56, 0, -8)
+    BDEM I 6 A_CustomMissile ("ShadowBeast_Ball1", 56, 0, 8)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball1", 56, 0, 0)
+    Goto See
+    BDEM H 4 A_FaceTarget
+    BDEM I 4 A_CustomMissile ("ShadowBeast_Ball2", 56, 0, -16)
+    BDEM I 0 A_FaceTarget
+    BDEM I 4 A_CustomMissile ("ShadowBeast_Ball2", 56, 0, -8)
+    BDEM I 0 A_FaceTarget
+    BDEM I 4 A_CustomMissile ("ShadowBeast_Ball2", 56, 0, 0)
+    BDEM I 0 A_FaceTarget
+    BDEM I 4 A_CustomMissile ("ShadowBeast_Ball2", 56, 0, 8)
+    BDEM I 0 A_FaceTarget
+    BDEM I 4 A_CustomMissile ("ShadowBeast_Ball2", 56, 0, 16)
+    BDEM I 0 A_FaceTarget
+    BDEM I 4 A_CustomMissile ("ShadowBeast_Ball2", 56, 0, 32)
+    Goto See
+  Missile2:
+    TNT1 A 0 A_Jump(90, 15)
+    BDEM H 6 A_FaceTarget
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    BDEM I 2 A_CustomMissile ("ShadowBeast_BallFire", 56, 0, random(-8,8))
+    Goto See
+    BDEM H 16 A_FaceTarget
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -64)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 64)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -56)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 56)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -48)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 48)    
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -40)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 40)    
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -32)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 32)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -24)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 24)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -16)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 16)    
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, -8)
+    BDEM I 0 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 8)    
+    BDEM I 6 A_CustomMissile ("ShadowBeast_Ball3", 56, 0, 0)
+    Goto See
+  Pain:
+    TNT1 A 0 A_Jump (16, "Spread")
+    BDEM G 4 A_Pain
+    Goto See
+  Death:
+    BDEM R 8
+    BDEM S 8 A_Scream
+    BDEM TUVWX 6
+    BDEM Y 6 A_NoBlocking
+    BDEM Z -1
+    Stop
+  Raise:
+    BDEM ZYXWVUTSR 8
+    goto See
+  Spread:
+    TNT1 A 0 A_SpawnItemEx ("ShadowBeast_Spread", 0, 0, 0, 0, 0, 0, 0, 128)
+    TNT1 AAAAAAAAAAAAA 0 A_SpawnItemEx ("ShadowBeast_Sparkle", random(0,16), random(0,16), random(16,48), 0, 0, 0, random(0,359), 128)
+    TNT1 AAAAA 0 A_SpawnItemEx ("ShadowBeast_Creature", 0, 0, random(16,48), random(0,8), random(0,8), random(0,8), random(0,359), 0)
+    TNT1 A 0 A_SetTranslucent (0.0)
+    Goto Wander
+  Wander:
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_ChangeFlag("NoPain", 1)
+    TNT1 A 0 A_Jump(60, 5)
+    TNT1 A 0 A_Jump(60, 15)
+    TNT1 A 0 A_Jump(60, 25)
+    TNT1 A 0 A_Jump(60, 35)
+    TNT1 A 0 A_Jump(60, 45)
+    TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_Wander
+    BDEM A 3 A_Wander
+    BDEM A 0 A_SetTranslucent (0.2)
+    BDEM B 3 A_Wander
+    BDEM A 0 A_SetTranslucent (0.4)
+    BDEM C 3 A_Wander
+    BDEM A 0 A_SetTranslucent (0.6)
+    BDEM D 3 A_Wander
+    BDEM A 0 A_SetTranslucent (0.75)
+    BDEM E 3 A_Wander
+    BDEM A 0 A_SetTranslucent (0.8)
+    BDEM F 3 A_Wander
+    BDEM A 0 A_SetTranslucent (1.0)
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_ChangeFlag("NoPain", 0)
+    Goto See
+  }
+}
+
+ACTOR ShadowBeast_Spread
+{   
+	Radius 1
+	Height 1
+	Damage 0
+	Speed 0
+	PROJECTILE
+	states
+	{
+		Spawn:
+		  TNT1 A 0
+		  TNT1 A 0 A_PlaySound ("shadowbeast/spread")
+		  BDEM JKLMNOP 8
+	          BDEM Q 70 
+	          BDEM QQQQQQQQQQ 1 A_FadeOut(0.1)
+		  stop
+	}
+}
+
+ACTOR ShadowBeast_Creature
+{
+  Alpha 1.0
+  Renderstyle Add
+  Speed 16
+  MONSTER
+  -SOLID
+  -SHOOTABLE
+  +FLOAT
+  +NOGRAVITY
+  states
+  {
+  	Spawn:
+  	  TNT1 A 0
+  	  TNT1 A 0 A_Playsound("shadowbeast/spiritsit")
+  	  Goto See
+  	See:
+	  TNT1 A 0 A_Jump(60, 5)
+    	  TNT1 A 0 A_Jump(60, 15)
+          TNT1 A 0 A_Jump(60, 25)
+          TNT1 A 0 A_Jump(60, 35)
+          TNT1 A 0 A_Jump(60, 45)
+	  BDSP ABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABAB 2 A_Chase
+	  Goto Death  
+	Melee:
+	  BDSP AB 2 A_CustomMeleeAttack(5)
+	  Goto See
+	Death:
+	  TNT1 A 0 A_Playsound("shadowbeast/spiritdth")
+	  BDSP EFGHIJ 5
+	  Stop
+  }
+}
+
+ACTOR ShadowBeast_Sparkle
+{   
+	Alpha 1.0
+        Renderstyle Add
+	Radius 1
+	Height 1
+	Damage 0
+	Speed 0
+	PROJECTILE
+	Scale 1.0
+
+	states
+	{
+		Spawn:
+		  TNT1 A 0
+		  TNT1 A 0 A_Jump(128,4)
+		  TNT1 A 0 A_Jump(128,2)
+		  BDP1 GHI 5
+		  stop
+	}
+}
+
+ACTOR ShadowBeast_BallFire
+{
+  Alpha 1.0  
+  Renderstyle Add
+  Speed 15
+  FastSpeed 20
+  Radius 10
+  Height 6
+  Damage 1
+  DamageType Poison
+  Projectile
+  +SPAWNSOUNDSOURCE
+  +RIPPER
+  RenderStyle Add
+  SeeSound "shadowbeast/pr1death"
+  Decal MummyScorch
+  States
+  {
+  Spawn:
+    BDP2 DEFGH 5 Bright
+    Goto Death
+  Death:
+    TNT1 A 0
+    Stop
+  }
+}
+
+ACTOR ShadowBeast_Ball1
+{
+  Alpha 1.0  
+  Renderstyle Add
+  Speed 15
+  FastSpeed 20
+  Radius 10
+  Height 6
+  Damage 5
+  DamageType Poison
+  Projectile
+  +SPAWNSOUNDSOURCE
+  RenderStyle Add
+  SeeSound "shadowbeast/pr1sight"
+  DeathSound "shadowbeast/pr1death"
+  States
+  {
+  Spawn:
+    BDP2 ABC 4 Bright
+    Loop
+  Death:
+    BDP2 DE 4 Bright
+    BDP2 FGH 3 Bright
+    Stop
+  }
+}
+
+ACTOR ShadowBeast_Ball2
+{
+   Alpha 1.0
+   Renderstyle Add
+   Radius 8
+   Height 6
+   Damage 2
+   Speed 16
+   FastSpeed 22
+   PROJECTILE
+   +Randomize
+   SeeSound "shadowbeast/pr2sight"
+   DeathSound "shadowbeast/pr2death"
+   Decal PlasmaScorchLower
+   States
+     {
+     Spawn:
+     BDP1 D 1 A_BishopMissileWeave
+     BDP1 E 1 A_BishopMissileWeave
+     loop
+     Death:
+     BDP1 FGHI 3
+     Stop
+   }
+}
+
+ACTOR ShadowBeast_Ball3
+{
+   Alpha 1.0
+   Scale 1.4
+   Renderstyle Add
+   Radius 8
+   Height 6
+   Damage 10
+   Speed 20
+   FastSpeed 25
+   PROJECTILE
+   +Randomize
+   SeeSound "shadowbeast/pr2sight"
+   DeathSound "shadowbeast/pr2death"
+   Decal PlasmaScorchLower
+   States
+     {
+     Spawn:
+     BDP1 DEDEDEDED 2 A_BishopMissileWeave
+     BDP1 ED 2 A_BishopMissileWeave
+     TNT1 A 0 A_FadeOut(0.20)
+     Goto Spawn+9
+     Death:
+     BDP1 FGHI 3
+     Stop
+   }
+}

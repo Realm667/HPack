@@ -1,0 +1,29 @@
+Actor PowerNoDrown : PowerProtection
+{
+  DamageFactor "Drowning", 0
+  Inventory.Icon "TDEPA0"
+}
+
+// TALISMAN OF THE DEPTHS
+actor ArtiDepthsTalisman : PowerupGiver 10111
+{
+	//$Category Artifacts
+	//$Title Talisman of the Depths
+  Inventory.PickupMessage "$TXT_ARTITALISMANDEPTHS"
+  Tag "$TAG_ARTITALISMANDEPTHS"
+  Powerup.Color Grey 0.1
+  Inventory.DefMaxAmount
+  Powerup.Type NoDrown
+  Powerup.Duration -60
+  +Inventory.InvBar
+  +FloatBob
+  +Inventory.PickupFlash
+  +CountItem
+  Inventory.Icon "TDEPB0"
+  states
+  {
+  Spawn:
+    TDEP A 1 Bright
+    Loop
+  }
+}

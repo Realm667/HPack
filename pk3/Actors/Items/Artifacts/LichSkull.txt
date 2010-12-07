@@ -1,0 +1,30 @@
+// LICH SKULL
+ACTOR PowerDoubleDamage : PowerDamage
+{
+	DamageFactor "normal", 2
+	// This icon is not present in the pack...
+	//inventory.icon "MEGAA0"
+}
+
+ACTOR ArtiLichSkull : PowerupGiver 5212
+{
+	//$Category Artifacts
+	//$Title Lich Skull
+	Powerup.Type DoubleDamage
+	Tag "$TAG_ARTILICHSKULL"
+	Inventory.PickupMessage "$TXT_ARTILICHSKULL"
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.Icon ARTISKRD
+	Powerup.Duration 1000
+	Powerup.Color "50,30,0,.5"
+	+FLOATBOB
+	+COUNTITEM
+	+INVENTORY.PICKUPFLASH
+	+INVENTORY.FANCYPICKUPSOUND
+	States
+	{
+	Spawn:
+		SKRD ABCD 4 Bright
+		Loop
+	}
+}

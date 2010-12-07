@@ -1,0 +1,76 @@
+// ------------------- //
+// DRAGONCLAW LIGHTING //
+// ------------------- //
+
+// Claw puff
+pointlight CLAWPUFF1
+{
+    color 0.4 0.4 1.0
+    size 32
+}
+
+pointlight CLAWPUFF2
+{
+    color 0.3 0.3 0.8
+    size 24
+}
+
+pointlight CLAWPUFF3
+{
+    color 0.2 0.2 0.6
+    size 16
+}
+
+pointlight CLAWPUFF4
+{
+    color 0.1 0.1 0.4
+    size 8
+}
+
+// Tomed claw puff
+pointlight BIGCLAWPUFF1
+{
+    color 0.4 0.4 1.0
+    size 56
+}
+
+pointlight BIGCLAWPUFF2
+{
+    color 0.3 0.3 0.8
+    size 48
+}
+
+pointlight BIGCLAWPUFF3
+{
+    color 0.2 0.2 0.6
+    size 40
+}
+
+pointlight BIGCLAWPUFF4
+{
+    color 0.1 0.1 0.4
+    size 32
+}
+
+pointlight BIGCLAWPUFF5
+{
+    color 0.0 0.0 0.2
+    size 24
+}
+
+object HPBlasterFX1
+{
+    frame FX18C { light BIGCLAWPUFF1 }
+    frame FX18D { light BIGCLAWPUFF2 }
+    frame FX18E { light BIGCLAWPUFF3 }
+    frame FX18F { light BIGCLAWPUFF4 }
+    frame FX18G { light BIGCLAWPUFF5 }
+}
+
+object Ripper
+{
+    frame FX18O { light CLAWPUFF2 }
+    frame FX18P { light BIGCLAWPUFF1 }
+    frame FX18Q { light CLAWPUFF1 }
+    frame FX18R { light CLAWPUFF4 }
+}

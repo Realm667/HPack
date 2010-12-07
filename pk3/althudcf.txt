@@ -1,0 +1,13 @@
+// No icons for morph weapons
+Beak ""
+Snout ""
+SquirrelNose ""
+// Gets rid of replaced weapon icons in the alt-hud
+Staff ""
+Gauntlets ""
+GoldWand ""
+Crossbow ""
+Blaster ""
+Skullrod ""
+PhoenixRod ""
+Mace ""

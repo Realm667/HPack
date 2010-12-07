@@ -1,0 +1,7 @@
+brightmap sprite hrodb0	{ map "Brightmaps/Sprites/Items/Hellstaff/hrodb0.png"	disablefullbright	}
+brightmap sprite hrodc0	{ map "Brightmaps/Sprites/Items/Hellstaff/hrodc0.png"	disablefullbright	}
+brightmap sprite hrodd0	{ map "Brightmaps/Sprites/Items/Hellstaff/hrodd0.png"	disablefullbright	}
+brightmap sprite hrode0	{ map "Brightmaps/Sprites/Items/Hellstaff/hrode0.png"	disablefullbright	}
+brightmap sprite hrodf0	{ map "Brightmaps/Sprites/Items/Hellstaff/hrodf0.png"	disablefullbright	}
+brightmap sprite hrodg0	{ map "Brightmaps/Sprites/Items/Hellstaff/hrodg0.png"	disablefullbright	}
+brightmap sprite wskla0	{ map "Brightmaps/Sprites/Items/Hellstaff/wskla0.png"	disablefullbright	}

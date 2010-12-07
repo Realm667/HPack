@@ -1,0 +1,121 @@
+// Gauntlets of the Necromancer ---------------------------------------------
+
+ACTOR HPGauntlets : Gauntlets replaces Gauntlets
+{
+	//$Category Weapons
+	//$Title Gauntlets of the Necromancer
+	Scale .75
+	Weapon.SisterWeapon "HPGauntletsPowered"
+	Weapon.SelectionOrder 2200
+	Obituary "$OB_MPGAUNTLETS"
+	Tag "$TAG_GAUNTLETS"
+	States
+	{
+	AltFire:
+		// Reset the counters when you begin an attack
+		GAUN O 0 Offset (5, 40) A_TakeInventory("PunchCounter", 3)
+		GAUN O 0 Offset (5, 40) A_TakeInventory("PunchToken", 1)
+		// Fall through
+	AltHold:
+		GAUN O 5 Offset (5, 40)
+		GAUN P 4 Offset (5, 40)
+		GAUN Q 2 Offset (5, 40) A_CustomPunch(0, true, false, "GauntletPunch1")
+		// If you've punched a target three time in a row, do the combo!
+		GAUN Q 0 Offset (5, 40) A_JumpIfInventory("PunchCounter", 3, "PunchCombo")
+		// If you have not hit a target this time, reset the counter
+		GAUN Q 0 Offset (5, 40) A_JumpIfInventory("PunchToken", 1, "DoPunch")
+		GAUN Q 0 Offset (5, 40) A_TakeInventory("PunchCounter", 3)
+	DoPunch:
+		GAUN Q 2 Offset (5, 40) A_CustomPunch((40+random(0, 15)), true, false, "GauntletPunch2")
+		GAUN Q 0 Offset (5, 40) A_TakeInventory("PunchToken", 1)
+		GAUN P 4 Offset (5, 40)
+		GAUN O 5 Offset (5, 40) A_ReFire
+		Goto Ready
+	PunchCombo:
+		GAUN Q 0 Offset (5, 40) A_CustomPunch((2*(40+random(0, 15))), true, false, "GauntletPunch3")
+		GAUN QR 4 Offset (5, 40) A_PlaySound("*grunt", CHAN_VOICE)
+		GAUN R 1 Offset (15, 50) A_TakeInventory("PunchToken", 1)
+		GAUN R 1 Offset (25, 60) A_TakeInventory("PunchCounter", 3)
+		GAUN R 1 Offset (35, 70)
+		GAUN R 1 Offset (45, 80)
+		GAUN R 1 Offset (55, 90)
+		GAUN R 1 Offset (65, 90)
+		GAUN R 10 Offset (0, 150)
+		Goto Ready
+	}
+}
+
+ACTOR PunchToken : Inventory { Inventory.MaxAmount 1 }
+ACTOR PunchCounter : Inventory { Inventory.MaxAmount 3 }
+
+ACTOR GauntletPunch1 : BulletPuff
+{
+	-ALLOWPARTICLES
+	+PUFFONACTORS
+	+PUFFGETSOWNER
+	+NOTIMEFREEZE
+	ActiveSound ""
+	AttackSound ""
+	SeeSound ""
+	States
+	{
+	Spawn:
+	Crash:
+		TNT1 A 0
+		Stop
+	Melee:
+		TNT1 A 1 // Wait for PUFFGETSOWNER to do its magic
+		TNT1 A 0 A_GiveToTarget("PunchToken", 1)
+		TNT1 A 0 A_GiveToTarget("PunchCounter", 1)
+		Stop
+	}
+}
+
+ACTOR GauntletPunch2 : PunchPuff
+{
+	SeeSound "weapons/gauntletspunch"
+	AttackSound "weapons/gauntletswall1"
+	ActiveSound "weapons/gauntletsmiss1"
+	States
+	{
+	Spawn:
+		GSMK ABCDE 4
+		Stop
+	}
+}
+
+ACTOR GauntletPunch3 : GauntletPunch2
+{
+	SeeSound "weapons/gauntletscombo"
+}
+
+ACTOR HPGauntletsPowered : HPGauntlets
+{
+	Weapon.SisterWeapon "HPGauntlets"
+	Tag "$TAG_GAUNTLETS"
+	+POWERED_UP
+	Weapon.Kickback 100
+	States
+	{
+	Ready:
+		//GAUN G 0 A_PlayWeaponSound("weapons/gauntletson")
+		GAUN GGGHHHIII 1 A_WeaponReady
+		Loop
+	Deselect:
+		GAUN GGGHHHIII 1 A_Lower
+		Loop
+	Select:
+		GAUN GGGHHHIII 1 A_Raise
+		Loop
+	Fire:
+		GAUN J 4 A_PlayWeaponSound("weapons/gauntletsuse")
+		GAUN K 4
+	Hold:
+		GAUN LMN 4 BRIGHT A_GauntletAttack(1)
+		GAUN K 4 A_ReFire
+		GAUN J 4 A_Light0
+		Goto Ready
+	}
+}
+
+//GNF2 A 0 BRIGHT A_SeekerMissile(20,20, SMF_LOOK, 100, 4)

@@ -1,0 +1,24 @@
+// HADES SPHERE
+actor ArtiHadesSphere : HealthPickup 5211
+{
+	//$Category Artifacts
+	//$Title Hades Sphere
+	Tag "$TAG_ARTIHADESSPHERE"
+	Inventory.PickupMessage "$TXT_ARTIHADESSPHERE"
+	Inventory.PickupSound "misc/p_pkup"
+	Health 100
+	Inventory.DefMaxAmount
+	Inventory.Icon ARTIHADS
+	Scale .75
+	HealthPickup.AutoUse 3
+	+FLOATBOB
+	+COUNTITEM
+	+INVENTORY.PICKUPFLASH
+	+INVENTORY.FANCYPICKUPSOUND
+	States
+	{
+	Spawn:
+		HADS ABCD 4 Bright
+		Loop
+	}
+}

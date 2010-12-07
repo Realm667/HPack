@@ -1,0 +1,416 @@
+ACTOR Avatar 30125 
+{ 
+	//$Category Monsters
+	//$Title Avatar
+	Health 4000
+	PainChance 10
+	Speed 15 
+	Radius 30 
+	Height 96 
+	cameraheight 81
+	Mass 2000 
+	MONSTER
+	+FLOORCLIP
+	+NORADIUSDMG 
+	+BOSS 
+	+NOTARGET
+	+DONTMORPH
+	DropItem "BlasterAmmo" 84 10
+	DropItem "ArtiInvulnerability" 51
+	Obituary "$OB_AVATAR"
+	SeeSound "monster/avasit" 
+	PainSound "monster/avapai" 
+	DeathSound "monster/avadth" 
+	ActiveSound "monster/avaact"
+	SpawnID 170
+	States 
+   { 
+   Spawn: 
+       AVAT AB 10 A_Look 
+       Loop 
+   See: 
+       AVAT AABBCCDD 3 A_Chase 
+       Loop 
+   Missile:
+       AVAT B 0 A_Jump(64,4)
+       AVAT B 0 A_Jump(152,4)
+       AVAT B 0 A_Jump(64,4)
+       AVAT B 0
+       Goto Missile1
+       AVAT B 0
+       Goto Missile2
+       AVAT B 0
+       Goto Missile3
+       AVAT B 0
+       Goto Missile4
+   Missile1: //Red Lightning
+       AVAT E 0 Bright A_FaceTarget
+       AVAT E 1 Bright A_PlaySound ("monster/avaatk")
+       AVAT EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 2 Bright A_FaceTarget
+       AVAT F 1 Bright A_PlaySound ("MageLightningFire")
+       AVAT F 0 Bright A_CustomMissile ("RedLiteTop",0,0,15,2,-45)
+       AVAT F 0 Bright A_CustomMissile ("RedLiteBot",0,0,15,2,-45)
+       AVAT F 0 Bright A_CustomMissile ("RedLiteTop",0,0,0,2,45)
+       AVAT F 0 Bright A_CustomMissile ("RedLiteBot",0,0,0,2,-45)
+       AVAT F 0 Bright A_CustomMissile ("RedLiteTop",0,0,-15,2,45)
+       AVAT F 14 Bright A_CustomMissile ("RedLiteBot",0,0,-15,2,-45)
+       Goto See
+   Missile2: //Blue Ball
+       AVAT I 0 Bright A_FaceTarget
+       AVAT I 1 Bright A_PlaySound ("monster/avaatk")
+       AVAT IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII 2 Bright A_FaceTarget 
+       AVAT J 15 Bright A_CustomMissile ("AvaBall1",56,0,0,0,0)
+       Goto See
+   Missile3:
+       AVAT K 0 Bright A_FaceTarget
+       AVAT K 1 Bright A_PlaySound ("monster/avaatk")
+       AVAT KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 2 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget
+       AVAT L 2 Bright A_CustomMissile ("AvaFireBall",56,0,Random(-3,3),0,0)
+       AVAT L 0 Bright A_FaceTarget         
+       Goto See
+   Missile4:
+       AVAT G 0 Bright A_FaceTarget
+       AVAT G 1 Bright A_PlaySound ("monster/avaatk")
+       AVAT GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG 2 Bright A_FaceTarget
+       AVAT H 1 Bright A_PlaySound("weapons/justfi")
+       AVAT H 14 Bright A_CustomMissile ("UnholyMissile",52,0,0,0,0)
+       Goto See
+   Pain: 
+       AVAT M 2 
+       AVAT M 2 A_Pain 
+       Goto See 
+   Death: 
+       AVAT N 7 Bright
+       AVAT O 7 Bright A_Scream 
+       AVAT P 7 Bright
+       AVAT Q 7 Bright A_NoBlocking 
+       AVAT RSTU 7 Bright
+       AVAT V -1
+   } 
+}
+
+ACTOR RedLiteTop : LightningCeiling
+{
+	MissileType "RedLiteZap"
+	States
+	{
+	Spawn:
+		MLF3 A 2 Bright A_LightningZap
+		MLF3 BCD 2 Bright A_LightningClip
+		Loop
+	Death:
+		MLF4 A 2 Bright A_LightningRemove
+		MLF4 BCDEKLM 3 Bright
+		ACLO E 35
+		MLF4 NO 3 Bright
+		MLF4 P 4 Bright
+		MLF4 QP 3 Bright
+		MLF4 Q 4 Bright
+		MLF4 P 3 Bright
+		MLF4 O 3 Bright
+		MLF4 P 3 Bright
+		MLF4 P 1 Bright A_HideThing
+		ACLO E 1050
+		Stop
+	}
+}
+
+ACTOR RedLiteBot : LightningFloor
+{
+	MissileType "RedLiteZap"
+	States
+	{
+	Spawn:
+		MLF3 E 2 Bright A_LightningZap
+		MLF3 FGH 2 Bright A_LightningClip
+		Loop
+	Death:
+		MLF4 F 2 Bright A_LightningRemove
+		MLF4 GHIJKLM 3 Bright
+		ACLO E 20
+		MLF4 NO 3 Bright
+		MLF4 P 4 Bright
+		MLF4 QP 3 Bright
+		MLF3 Q 4 Bright A_LastZap
+		MLF4 POP 3 Bright
+		MLF4 P 1 Bright
+		ACLO E 1050
+		Stop
+	}
+}
+
+ACTOR RedLiteZap : LightningZap
+{
+	States
+	{
+	Spawn:
+		MLF3 IJKLM 2 Bright A_ZapMimic
+		Loop
+	Death:
+		MLF3 NOPQRSTU 2 Bright
+		Stop
+	}
+}
+
+ACTOR AvaBall1
+{
+   Radius 20
+   Height 40
+   Speed 12
+   Damage 100
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.80
+   +THRUGHOST
+   SeeSound "weapons/gntini"
+   DeathSound "weapons/devexp"
+   States
+   {
+   Spawn:
+      AFX4 ABCDEFGH 1 Bright A_Explode(64,64,0)
+      loop
+   Death:
+      AFX4 I 5 Bright
+      AFX4 I 0 Bright A_CustomMissile("AvaBall2",0,0,0,2)
+      AFX4 I 0 Bright A_CustomMissile("AvaBall2",0,0,60,2)
+      AFX4 I 0 Bright A_CustomMissile("AvaBall2",0,0,120,2)
+      AFX4 I 0 Bright A_CustomMissile("AvaBall2",0,0,180,2)
+      AFX4 I 0 Bright A_CustomMissile("AvaBall2",0,0,240,2)
+      AFX4 I 0 Bright A_CustomMissile("AvaBall2",0,0,300,2)
+      AFX4 JKL 5 Bright A_Explode(128,128,0)
+      stop
+   }
+}
+
+ACTOR AvaFireBall
+{
+   Radius 9
+   Height 18
+   Speed 20
+   Damage 5
+   DamageType Fire
+   ExplosionDamage 8
+   ExplosionRadius 32
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.80
+//   +THRUGHOST
+   SeeSound "weapons/bwoosh"
+   DeathSound "weapons/firex2"
+   States
+   {
+   Spawn:
+      AFX5 ABC 3 Bright
+      loop
+   Death:
+      AFX5 D 3 Bright A_Explode
+      AFX5 EFGH 3 Bright
+      stop
+   }
+}
+
+ACTOR AvaBall2
+{
+   Radius 10
+   Height 20
+   Speed 15
+   Damage 0
+   ExplosionDamage 64
+   ExplosionRadius 32
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.75
+//   +THRUGHOST
+   DeathSound "weapons/devzap"
+   States
+   {
+   Spawn:
+      AFX1 ABC 1 Bright
+      loop
+   Death:
+      AFX1 DE 4 Bright A_Explode
+      AFX1 G 0 Bright A_CustomMissile("AvaBall3",0,0,0,2)
+      AFX1 G 0 Bright A_CustomMissile("AvaBall3",0,0,60,2)
+      AFX1 G 0 Bright A_CustomMissile("AvaBall3",0,0,120,2)
+      AFX1 G 0 Bright A_CustomMissile("AvaBall3",0,0,180,2)
+      AFX1 G 0 Bright A_CustomMissile("AvaBall3",0,0,240,2)
+      AFX1 G 0 Bright A_CustomMissile("AvaBall3",0,0,300,2)
+      AFX1 FGHI 4 bright
+      stop
+   }
+}
+
+ACTOR AvaBall3
+{
+   Radius 6
+   Height 12
+   Speed 12
+   Damage 0
+   ExplosionDamage 24
+   ExplosionRadius 16
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.75
+ //  +THRUGHOST
+   DeathSound "weapons/gnthit"
+   States
+   {
+   Spawn:
+      AFX2 ABC 1 Bright
+      loop
+   Death:
+      AFX2 D 4 Bright A_Explode
+      AFX2 D 0 Bright A_CustomMissile("AvaBall4",0,0,0,2)
+      AFX2 D 0 Bright A_CustomMissile("AvaBall4",0,0,60,2)
+      AFX2 D 0 Bright A_CustomMissile("AvaBall4",0,0,120,2)
+      AFX2 D 0 Bright A_CustomMissile("AvaBall4",0,0,180,2)
+      AFX2 D 0 Bright A_CustomMissile("AvaBall4",0,0,240,2)
+      AFX2 D 0 Bright A_CustomMissile("AvaBall4",0,0,300,2)
+      AFX2 EFG 4 bright
+      stop
+   }
+}
+
+ACTOR AvaBall4
+{
+   Radius 3
+   Height 6
+   Speed 10
+   Damage 0
+   ExplosionDamage 8
+   ExplosionRadius 8
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.75
+ //  +THRUGHOST
+   DeathSound "monster/hadsit"
+   States
+   {
+   Spawn:
+      AFX3 ABC 1 Bright
+      loop
+   Death:
+      AFX3 D 3 Bright A_Explode
+      AFX3 EFGH 3 Bright
+      stop
+   }
+}
+
+ACTOR UnholyMissile
+{
+   Radius 3
+   Height 3
+   Speed 20
+   Damage 16
+   PROJECTILE
+   +SEEKERMISSILE
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   MissileType UnholyMissileTrail
+   SeeSound "monster/bomb"
+   DeathSound "monster/explode"
+   States
+   {
+   Spawn:
+      SPRT A 1 Bright A_CustomMissile("UnholyMissileTrail",0,0,0,0)
+	  SPRT A 0 Bright A_SeekerMissile(10,10)
+      SPRT B 1 Bright A_CustomMissile("UnholyMissileTrail",0,0,0,0)
+	  SPRT A 0 Bright A_SeekerMissile(10,10)
+      SPRT A 1 Bright A_CustomMissile("UnholyMissileTrail",0,0,0,0)
+	  SPRT A 0 Bright A_SeekerMissile(10,10)
+      SPRT B 1 Bright A_CustomMissile("UnholyMissileTrail",0,0,0,0)
+	  SPRT A 0 Bright A_SeekerMissile(10,10)
+      SPRT A 1 Bright A_CustomMissile("UnholyMissileTrail",0,0,0,0)
+	  SPRT A 0 Bright A_SeekerMissile(10,10)
+      SPRT B 1 Bright A_CustomMissile("UnholyMissileTrail",0,0,0,0)
+      Loop
+   Death:
+      SPRT A 0 Bright 
+      SPRT B 0 Bright
+      SPRT K 3 Bright
+      SPRT L 3 Bright
+      SPRT M 3 Bright
+      SPRT N 3 Bright
+      SPRT O 3 Bright
+      Stop
+   }
+}
+
+ACTOR UnholyMissileTrail
+{
+   Radius 3
+   Height 3
+   Speed 15
+   PROJECTILE
+   RENDERSTYLE ADD
+   Alpha 0.67
+   +FireDamage
+   states
+   {
+   Spawn:
+      SPRT QRS 4
+      Goto Death
+   Death:
+      SPRT C 3 BRIGHT
+      SPRT D 3 BRIGHT
+      Stop
+   }
+}

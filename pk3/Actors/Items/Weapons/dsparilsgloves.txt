@@ -1,0 +1,355 @@
+// Gauntlets of D'Sparil ---------------------------------------------
+
+ACTOR HPDSparilGauntlets : Weapon 23465
+{
+	//$Category Weapons
+	//$Title Gloves of D'Sparil
+	Weapon.SisterWeapon "HPDSparilGauntletsPowered"
+	Weapon.SelectionOrder 2001
+	Weapon.Kickback 100
+	Weapon.AmmoUse1 1
+	Weapon.AmmoUse2 5
+	Weapon.AmmoGive1 10
+	Weapon.YAdjust 10
+	Weapon.AmmoType1 "ChaosAmmo"
+	Weapon.AmmoType2 "ChaosAmmo"
+	Obituary "$OB_MPDSPARILS"
+	+WEAPON.NOAUTOFIRE
+	Inventory.PickupMessage "$TXT_WPNDSPARILS"
+	Tag "$TAG_DSPARILSG"
+	States
+	{
+	Spawn:
+		WGT3 A -1
+		Stop
+	Ready:
+		GAU3 A 0 A_TakeInventory("GauntletHand",1)
+		GAU3 A 1 A_WeaponReady
+		Wait
+	Deselect:
+		GAU3 A 0 A_TakeInventory("GauntletHand",1)
+		GAU3 A 1 A_Lower
+		Wait
+	Select:
+		GAU3 A 0 A_TakeInventory("GauntletHand",1)
+		GAU3 A 1 A_Raise
+		Wait
+	Fire:
+		GAU3 A 3 A_PlaySound("weapons/gauntletsactivate")
+		GAU3 B 3 
+		GAU3 C 3 
+		GAU3 D 1 BRIGHT
+		GAU3 E 1 BRIGHT A_FireCustomMissile("GauntletFX1",0,1,-8)
+		GAU3 FGH 2
+		GAU3 A 0 A_PlayWeaponSound("weapons/gauntletsrip")
+		GAU3 A 2 A_Refire
+		Goto Ready
+	Hold:
+		GAU3 A 0 A_JumpIfInventory("GauntletHand",1,"FireLeft")
+	FireRight:
+		GAU3 I 2 A_GiveInventory("GauntletHand",1)
+		GAU3 J 1 BRIGHT
+		GAU3 K 1 BRIGHT A_FireCustomMissile("GauntletFX1",0,1,8)
+		GAU3 LMN 2
+		GAU3 A 0 A_PlayWeaponSound("weapons/gauntletsrip")
+		GAU3 A 2 A_Refire
+		Goto Ready
+	FireLeft:
+		GAU3 O 2 A_TakeInventory("GauntletHand",1)
+		GAU3 P 1 BRIGHT
+		GAU3 E 1 BRIGHT A_FireCustomMissile("GauntletFX1",0,1,-8)
+		GAU3 FGH 2
+		GAU3 A 0 A_PlayWeaponSound("weapons/gauntletsrip")
+		GAU3 A 2 A_Refire
+		Goto Ready
+	AltFire:
+		GAU4 A 3 A_PlaySound("weapons/gauntletspowhit")
+		GAU4 BC 3 BRIGHT
+		GAU4 D 3 A_PlayWeaponSound("weapons/gauntletscharge")
+		GAU4 EFGHI 3 BRIGHT
+		GAU4 H 0 A_SetBlend("FF 00 FF", 0.25, 10)
+		GAU4 J 3 BRIGHT A_FireCustomMissile("GauntletAltFX1",0,1,1)
+		GAU4 KLM 3
+		Goto Ready
+	}
+}
+
+ACTOR GauntletHand : Inventory { Inventory.MaxAmount 3 }
+
+ACTOR GauntletFX1 : WizardFX1
+{
+	Obituary "%o was seared to a crisp by %k's gauntlets."
+	SeeSound "weapons/gauntletsshoot"
+	DeathSound "weapons/macehit"
+	Damage 10
+	+SEEKERMISSILE
+	+FORCEXYBILLBOARD
+	Decal "HImpScorch"
+	States
+	{
+	Spawn:
+		GNFX A 0 BRIGHT A_SeekerMissile(20,20)
+		GNFX AAA 1 BRIGHT A_SpawnItemEx("GauntletFX2",random2[BoltSpark]()*0.015625, random2[BoltSpark]()*0.015625, 0, 0,0,0,0,SXF_ABSOLUTEPOSITION, 50)
+		GNFX B 0 BRIGHT A_SeekerMissile(20,20)
+		GNFX BBB 1 BRIGHT A_SpawnItemEx("GauntletFX2",random2[BoltSpark]()*0.015625, random2[BoltSpark]()*0.015625, 0, 0,0,0,0,SXF_ABSOLUTEPOSITION, 50)
+		Loop
+	Death:
+		GNFX C 4 BRIGHT A_SpawnItemEx("GauntletFX3",0,0,0,0,0,0,0,0)
+		GNFX DEFG 4 BRIGHT
+		Stop
+	}
+}
+
+ACTOR GauntletFX2 : GauntletPuff2
+{
+	+FORCEXYBILLBOARD
+	States
+	{
+	Spawn:
+		GNFX HIJK 3 BRIGHT
+		Stop
+	}
+}
+
+ACTOR GauntletFX3 : GauntletFX2
+{
+	+FORCEXYBILLBOARD
+	Alpha .8
+	States
+	{
+	Spawn:
+		GNFX NO 3 BRIGHT
+		GNFX PPPQQQ 1 BRIGHT A_FadeOut(0.1)
+		Stop
+	}
+}
+
+ACTOR GauntletAltFX1 : WizardFX1
+{
+	Obituary "%o was seared to a crisp by %k's gauntlets."
+	SeeSound "weapons/gauntletspowshoot"
+	+RIPPER
+	+NODAMAGETHRUST
+	+BLOODLESSIMPACT
+	+NOEXPLODEFLOOR
+	+FORCERADIUSDMG
+	+CANBOUNCEWATER
+	+FORCEXYBILLBOARD
+	RenderStyle Add
+	Speed 5
+	Damage 1
+	BounceType "Doom"
+	BounceFactor 0.9
+	States
+	{
+	Spawn:
+	Death:
+		GNF1 ABCABC 2 BRIGHT
+		GNF1 A 0 A_PlaySound("weapons/gauntletson")
+		GNF1 ABCABC 2 BRIGHT
+		GNF1 A 0 A_PlaySound("weapons/gauntletson")
+		GNF1 ABCABC 2 BRIGHT
+		GNF1 A 0 BRIGHT A_Stop
+		GNF1 A 0 A_PlaySound("weapons/gauntletshit")
+		GNF1 ABC 1 BRIGHT
+		GNF1 ABC 1 BRIGHT
+		GNF1 ABC 1 BRIGHT
+		GNF1 D 0 A_PlaySound("weapons/gauntletsuse")
+		GNF1 D 2 BRIGHT //A_Explode(8,48,1)
+		GNF1 E 2 BRIGHT 
+		GNF1 F 2 BRIGHT A_Explode(16,64,1)
+		GNF1 G 2 BRIGHT 
+		GNF1 H 2 BRIGHT //A_Explode(32,96,1)
+		GNF1 I 2 BRIGHT 
+		GNF1 J 2 BRIGHT A_Explode(32,128,1)
+		GNF1 K 2 BRIGHT 
+		GNF1 L 2 BRIGHT //A_Explode(64,160,1)
+		GNF1 M 2 BRIGHT 
+		GNF1 N 2 BRIGHT A_Explode(64,192,1)
+		GNF1 O 2 BRIGHT 
+		GNF1 P 2 BRIGHT //A_Explode(80,192,1)
+		GNF1 Q 2 BRIGHT 
+		GNF1 R 2 BRIGHT A_Explode(64,160,1)
+		GNF1 S 2 BRIGHT A_FadeOut(0.2) 
+		GNF1 T 2 BRIGHT //A_Explode(48,128,1)
+		GNF1 U 2 BRIGHT A_FadeOut(0.2) 
+		GNF1 V 2 BRIGHT A_Explode(32,96,1)
+		GNF1 W 2 BRIGHT A_FadeOut(0.2) 
+		GNF1 X 2 BRIGHT //A_Explode(16,64,1)
+		GNF1 Y 2 BRIGHT A_FadeOut(0.2)
+		GNF1 Z 2 BRIGHT A_Explode(8,48,1)
+		GNF1 "[" 2 BRIGHT  A_FadeOut(0.2)
+		Stop
+	}
+}
+
+
+
+ACTOR HPDSparilGauntletsPowered : HPDSparilGauntlets
+{
+	Weapon.SisterWeapon "HPDSparilGauntlets"
+	+POWERED_UP
+	Weapon.Kickback 100
+	Weapon.AmmoUse1 2
+	Weapon.AmmoUse2 10
+	Tag "$TAG_DSPARILSG"
+	States
+	{
+	Ready:
+		GAU2 A 0 A_TakeInventory("GauntletHand",1)
+		GAU2 AAAQQQRRR 1 A_WeaponReady
+		goto ready +1
+	Deselect:
+		GAU2 A 0 A_TakeInventory("GauntletHand",1)
+		GAU2 A 1 A_Lower
+		Wait
+	Select:
+		GAU2 A 0 A_TakeInventory("GauntletHand",1)
+		GAU2 A 1 A_Raise
+		Wait
+	Fire:
+		GAU2 A 3 A_PlaySound("weapons/gauntletsactivate")
+		GAU2 B 3 
+		GAU2 C 3 
+		GAU2 D 2 BRIGHT
+		GAU2 E 2 BRIGHT A_FireCustomMissile("GauntletFX4",0,1,-8)
+		GAU2 FGH 2
+		GAU2 A 0 A_PlayWeaponSound("weapons/gauntletsrip")
+		GAU2 A 2 A_Refire
+		Goto Ready
+	Hold:
+		GAU2 A 0 A_JumpIfInventory("GauntletHand",1,"FireLeft")
+	FireRight:
+		GAU2 I 2 A_GiveInventory("GauntletHand",1)
+		GAU2 J 2 BRIGHT
+		GAU2 K 2 BRIGHT A_FireCustomMissile("GauntletFX4",0,1,8)
+		GAU2 LMN 2
+		GAU2 A 0 A_PlayWeaponSound("weapons/gauntletsrip")
+		GAU2 A 2 A_Refire
+		Goto Ready
+	FireLeft:
+		GAU2 O 2 A_TakeInventory("GauntletHand",1)
+		GAU2 P 2 BRIGHT
+		GAU2 E 2 BRIGHT A_FireCustomMissile("GauntletFX4",0,1,-8)
+		GAU2 FGH 2
+		GAU2 A 0 A_PlayWeaponSound("weapons/gauntletsrip")
+		GAU2 A 2 A_Refire
+		Goto Ready
+	AltFire:
+		GAU2 A 3 A_PlaySound("weapons/gauntletscharge")
+		GAU5 DEFGHI 3 BRIGHT
+		GAU5 J 0 A_SetBlend("FF 00 00", 0.5,15)
+		GAU5 J 3 BRIGHT A_FireCustomMissile("GauntletAltFX2",0,1,1)
+		GAU5 KLM 3
+		Goto Ready
+	}
+}
+
+ACTOR GauntletFX4 : MageStaffFX2
+{
+	Alpha 1
+	SeeSound "weapons/gauntletspowshoot"
+	DeathSound "weapons/gauntletspowhit"
+	Damage 10
+	+FORCEXYBILLBOARD
+	+SEEKERMISSILE
+	+EXTREMEDEATH
+	DamageType ""
+	Decal "HImpScorch"
+	States
+	{
+	Spawn:
+		GNF2 A 0 BRIGHT A_MStaffTrack
+		GNF2 AAA 1 BRIGHT A_SpawnItemEx("GauntletFX5",random2[BoltSpark]()*0.015625, random2[BoltSpark]()*0.015625, 0, 0,0,0,0,SXF_ABSOLUTEPOSITION, 50)
+		GNF2 B 0 BRIGHT A_MStaffTrack
+		GNF2 BBB 1 BRIGHT A_SpawnItemEx("GauntletFX5",random2[BoltSpark]()*0.015625, random2[BoltSpark]()*0.015625, 0, 0,0,0,0,SXF_ABSOLUTEPOSITION, 50)
+		Loop
+	Death:
+		GNF2 C 4 BRIGHT A_SpawnItemEx("GauntletFX6",0,0,0,0,0,0,0,0)
+		GNF2 DEFG 4 BRIGHT
+		Stop
+	}
+}
+
+ACTOR GauntletFX5 : GauntletFX2
+{
+	+FORCEXYBILLBOARD
+	-NOGRAVITY
+	Gravity 0.05
+	Alpha 1
+	Renderstyle Add
+	States
+	{
+	Spawn:
+		GNF2 L 8 BRIGHT
+		GNF2 M 8 BRIGHT A_FadeOut(0.2)
+		Stop
+	}
+}
+
+ACTOR GauntletFX6 : GauntletFX3
+{
+	+FORCEXYBILLBOARD
+	Alpha 1
+	States
+	{
+	Spawn:
+		GNF2 NO 3 BRIGHT
+		GNF2 PPPQQQ 1 BRIGHT A_FadeOut(0.1)
+		Stop
+	}
+}
+
+ACTOR GauntletAltFX2 : MageStaffFX2
+{
+	Obituary "%o was seared to a crisp by %k's gauntlets."
+	SeeSound "weapons/gauntletsuse"
+	+RIPPER
+	+SEEKERMISSILE
+	+EXTREMEDEATH
+	+NODAMAGETHRUST
+	+BLOODLESSIMPACT
+	+NOEXPLODEFLOOR
+	+FORCERADIUSDMG
+	+CANBOUNCEWATER
+	+FORCEXYBILLBOARD
+	Speed 3
+	Damage 1
+	BounceType "Doom"
+	BounceFactor 0.9
+	States
+	{
+	Spawn:
+	Death:
+		GNF3 AABBCC 1 BRIGHT
+		GNF3 AABBCC 1 BRIGHT A_MStaffTrack
+		GNF3 A 0 A_PlaySound("weapons/gauntletson")
+		GNF3 AABBCC 1 BRIGHT A_MStaffTrack
+		GNF3 AABBCC 1 BRIGHT A_MStaffTrack
+		GNF3 A 0 A_PlaySound("weapons/gauntletson")
+		GNF3 AABBCC 1 BRIGHT A_MStaffTrack
+		GNF3 AABBCC 1 BRIGHT A_MStaffTrack
+		GNF3 A 0 BRIGHT A_Stop
+		GNF3 A 0 A_PlaySound("weapons/gauntletshit")
+		GNF3 ABC 1 BRIGHT
+		GNF3 ABC 1 BRIGHT
+		GNF3 ABC 1 BRIGHT
+		GNF3 D 0 A_PlaySound("weapons/gauntletshadoken")
+		GNF3 D 0 BRIGHT A_Blast(0, 255, 255, 20.0, "Nothing", "")
+		GNF3 D 2 BRIGHT A_Explode(200,192)
+		GNF3 E 2 BRIGHT
+		GNF3 F 2 BRIGHT
+		GNF3 G 2 BRIGHT
+		GNF3 H 2 BRIGHT
+		GNF3 I 2 BRIGHT
+		GNF3 J 2 BRIGHT
+		GNF3 K 2 BRIGHT
+		GNF3 L 2 BRIGHT A_FadeOut(0.2)
+		GNF3 M 2 BRIGHT A_FadeOut(0.2)
+		GNF3 N 2 BRIGHT A_FadeOut(0.2)
+		GNF3 O 2 BRIGHT A_FadeOut(0.2)
+		Stop
+	}
+}
+
+ACTOR Nothing {} // DAMN HACK DAMNIT DAMN... DAMN!

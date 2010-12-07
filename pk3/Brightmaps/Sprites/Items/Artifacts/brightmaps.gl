@@ -1,0 +1,14 @@
+brightmap sprite atlpa0	{ map "Brightmaps/Sprites/Items/Artifacts/atlpa0.png"	disablefullbright	}
+brightmap sprite atlpb0	{ map "Brightmaps/Sprites/Items/Artifacts/atlpb0.png"	disablefullbright	}
+brightmap sprite atlpc0	{ map "Brightmaps/Sprites/Items/Artifacts/atlpc0.png"	disablefullbright	}
+brightmap sprite eggca0	{ map "Brightmaps/Sprites/Items/Artifacts/eggca0.png"	disablefullbright	}
+brightmap sprite eggcb0	{ map "Brightmaps/Sprites/Items/Artifacts/eggcb0.png"	disablefullbright	}
+brightmap sprite eggcc0	{ map "Brightmaps/Sprites/Items/Artifacts/eggcc0.png"	disablefullbright	}
+brightmap sprite invua0	{ map "Brightmaps/Sprites/Items/Artifacts/invua0.png"	disablefullbright	}
+brightmap sprite invub0	{ map "Brightmaps/Sprites/Items/Artifacts/invub0.png"	disablefullbright	}
+brightmap sprite invuc0	{ map "Brightmaps/Sprites/Items/Artifacts/invuc0.png"	disablefullbright	}
+brightmap sprite invud0	{ map "Brightmaps/Sprites/Items/Artifacts/invud0.png"	disablefullbright	}
+brightmap sprite shd2a0	{ map "Brightmaps/Sprites/Items/Artifacts/shd2a0.png"	disablefullbright	}
+brightmap sprite trcha0	{ map "Brightmaps/Sprites/Items/Artifacts/trcha0.png"	disablefullbright	}
+brightmap sprite trchb0	{ map "Brightmaps/Sprites/Items/Artifacts/trchb0.png"	disablefullbright	}
+brightmap sprite trchc0	{ map "Brightmaps/Sprites/Items/Artifacts/trchc0.png"	disablefullbright	}

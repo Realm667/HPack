@@ -1,0 +1,166 @@
+Pointlight FireBreath1
+{
+    color 1.0 1.0 0.0
+    size 68
+}
+
+Pointlight FireBreath2
+{
+    color 0.8 0.8 0.0
+    size 70
+}
+
+Pointlight FireBreath3
+{
+    color 0.7 0.7 0.0
+    size 69
+}
+
+flickerlight OrangeMediumFlicker1
+{
+    color 1.0 0.5 0.3
+    size 80
+    secondarySize 85
+    chance 0.4
+}
+flickerlight OrangeMediumFlicker2
+{
+    color 1.0 0.5 0.3
+    size 60
+    secondarySize 65
+    chance 0.4
+}
+flickerlight OrangeMediumFlicker3
+{
+    color 1.0 0.5 0.3
+    size 50
+    secondarySize 55
+    chance 0.4
+}
+
+flickerlight ArchFire1
+{
+    color 1.0 1.0 0.0
+    size 24
+    secondarySize 32
+    chance 0.3
+    offset 0 8 0
+}
+
+flickerlight ArchFire2
+{
+    color 1.0 1.0 0.0
+    size 40
+    secondarySize 48
+    chance 0.3
+    offset 0 24 0
+}
+
+flickerlight ArchFire3
+{
+    color 1.0 1.0 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 32 0
+}
+
+flickerlight ArchFire4
+{
+    color 0.8 0.8 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 40 0
+}
+
+flickerlight ArchFire5
+{
+    color 0.8 0.8 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 48 0
+}
+
+flickerlight ArchFire6
+{
+    color 0.6 0.6 0.0
+    size 48
+    secondarySize 56
+    chance 0.3
+    offset 0 64 0
+}
+
+flickerlight ArchFire7
+{
+    color 0.4 0.4 0.0
+    size 32
+    secondarySize 40
+    chance 0.3
+    offset 0 72 0
+}
+
+flickerlight ArchFire8
+{
+    color 0.2 0.2 0.0
+    size 16
+    secondarySize 24
+    chance 0.3
+    offset 0 80 0
+}
+
+flickerlight CurseLight
+{
+    color 0.5 0.6 0.4
+    size 40
+    secondarySize 50
+    chance 0.4
+}
+
+object LichFireBreath
+{
+    Frame FRBSE { Light FireBreath1 }
+    Frame FRBSF { Light FireBreath2 }
+    Frame FRBSG { Light FireBreath3 }
+}
+
+object BloodLichFireball
+{
+    Frame MSP4A { Light OrangeMediumFlicker2 }
+    Frame MSP4B { Light OrangeMediumFlicker2 }
+    Frame MSP4C { Light OrangeMediumFlicker2 }
+    Frame MSP4D { Light OrangeMediumFlicker2 }
+    Frame MSP4E { Light OrangeMediumFlicker2 }
+    Frame MSP4F { Light OrangeMediumFlicker1 }
+    Frame MSP4G { Light OrangeMediumFlicker1 }
+    Frame MSP4H { Light OrangeMediumFlicker2 }
+    Frame MSP4I { Light OrangeMediumFlicker3 }
+}
+
+object ReiverGhostFX
+{
+    Frame WRBLA { Light OrangeMediumFlicker3 }
+    Frame WRBLB { Light OrangeMediumFlicker3 }
+    Frame WRBLC { Light OrangeMediumFlicker3 }
+    Frame WRBLD { Light OrangeMediumFlicker1 }
+    Frame WRBLE { Light OrangeMediumFlicker2 }
+    Frame WRBLF { Light OrangeMediumFlicker3 }
+}
+
+object ResurrectionFlame
+{
+    Frame FIREA { Light ArchFire1 }
+    Frame FIREB { Light ArchFire2 }
+    Frame FIREC { Light ArchFire3 }
+    Frame FIRED { Light ArchFire4 }
+    Frame FIREE { Light ArchFire5 }
+    Frame FIREF { Light ArchFire6 }
+    Frame FIREG { Light ArchFire7 }
+    Frame FIREH { Light ArchFire8 }
+}
+
+/*object CurseSpell
+{
+    Frame CURS { Light CurseLight }
+}*/

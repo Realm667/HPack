@@ -1,0 +1,433 @@
+FlickerLight2 AvatarAttack11
+{
+	Color 0.8 0.0 0.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 96 0
+}
+
+FlickerLight2 AvatarAttack12
+{
+	Color 0.8 0.0 0.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 48 0
+}
+
+FlickerLight2 AvatarAttack21
+{
+	Color 1.0 1.0 1.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 96 0
+}
+
+FlickerLight2 AvatarAttack22
+{
+	Color 1.0 1.0 1.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 48 0
+}
+
+FlickerLight2 AvatarAttack31
+{
+	Color 0.3 0.0 1.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 96 0
+}
+
+FlickerLight2 AvatarAttack32
+{
+	Color 0.3 0.3 1.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 48 0
+}
+
+FlickerLight2 AvatarAttack41
+{
+	Color 1.0 0.4 0.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 96 0
+}
+
+FlickerLight2 AvatarAttack42
+{
+	Color 1.0 0.4 0.0
+	Size 96
+	SecondarySize 72
+	Interval 1.0
+	Offset 0 48 0
+}
+
+PointLight AvatarExplode1
+{
+	Color 0.8 0.0 0.0
+	Size 48
+	Offset 0 48 0
+}
+
+PointLight AvatarExplode2
+{
+	Color 0.8 0.0 0.0
+	Size 192
+	Offset 0 48 0
+}
+
+PointLight AvatarExplode3
+{
+	Color 0.8 0.0 0.0
+	Size 160
+	Offset 0 48 0
+}
+
+PointLight AvatarExplode4
+{
+	Color 0.8 0.0 0.0
+	Size 128
+	Offset 0 48 0
+}
+
+PointLight AvatarExplode5
+{
+	Color 0.8 0.0 0.0
+	Size 96
+	Offset 0 48 0
+}
+
+
+PointLight AvatarExplode6
+{
+	Color 0.8 0.0 0.0
+	Size 64
+	Offset 0 48 0
+}
+
+Object Avatar
+{
+	Frame AVATE { Light AvatarAttack11 }
+	Frame AVATF { Light AvatarAttack12 }
+	Frame AVATG { Light AvatarAttack21 }
+	Frame AVATH { Light AvatarAttack22 }
+	Frame AVATI { Light AvatarAttack31 }
+	Frame AVATJ { Light AvatarAttack32 }
+	Frame AVATK { Light AvatarAttack41 }
+	Frame AVATL { Light AvatarAttack42 }
+	Frame AVATN { Light AvatarExplode1 }
+	Frame AVATO { Light AvatarExplode2 }
+	Frame AVATP { Light AvatarExplode3 }
+	Frame AVATQ { Light AvatarExplode4 }
+	Frame AVATR { Light AvatarExplode5 }
+	Frame AVATS { Light AvatarExplode6 }
+}
+
+Flickerlight AvatarLightning
+{
+	Color 0.8 0.0 0.0
+	Size 48
+	SecondarySize 52
+	Chance 0.7
+}
+
+Object RedLiteTop
+{
+	Frame MLF3 { light AvatarLightning }
+	Frame MLF4 { light AvatarLightning }
+}
+
+Object RedLiteBot
+{
+	Frame MLF3 { Light AvatarLightning }
+	Frame MLF4 { Light AvatarLightning }
+}
+
+Object LightningZap
+{
+	Frame MLF3 { Light AvatarLightning }
+	Frame MLF4 { Light AvatarLightning }
+}
+
+Pointlight AvatarElectroBall11
+{
+	Color 0.4 0.4 1.0
+	Size 80
+}
+
+Pointlight AvatarElectroBall12
+{
+	Color 0.2 0.2 1.0
+	Size 80
+}
+
+Pointlight AvatarElectroBall13
+{
+	Color 0.3 0.3 1.0
+	Size 104
+}
+
+Pointlight AvatarElectroBall14
+{
+	Color 0.5 0.5 1.0
+	Size 120
+}
+
+Pointlight AvatarElectroBall15
+{
+	Color 0.2 0.2 0.7
+	Size 56
+}
+
+Pointlight AvatarElectroBall16
+{
+	Color 0.1 0.1 0.3
+	Size 48
+}
+
+Object AvaBall1
+{
+	Frame AFX4A { Light AvatarElectroBall11 }
+	Frame AFX4B { Light AvatarElectroBall11 }
+	Frame AFX4C { Light AvatarElectroBall11 }
+	Frame AFX4D { Light AvatarElectroBall11 }
+	Frame AFX4E { Light AvatarElectroBall11 }
+	Frame AFX4F { Light AvatarElectroBall11 }
+	Frame AFX4G { Light AvatarElectroBall11 }
+	Frame AFX4H { Light AvatarElectroBall11 }
+	Frame AFX4I { Light AvatarElectroBall11 }
+	Frame AFX4J { Light AvatarElectroBall12 }
+	Frame AFX4K { Light AvatarElectroBall13 }
+	Frame AFX4L { Light AvatarElectroBall14 }
+	Frame AFX4M { Light AvatarElectroBall15 }
+	Frame AFX4N { Light AvatarElectroBall16 }
+}
+
+Pointlight AvatarElectroBall21
+{
+	Color 0.4 0.4 1.0
+	Size 80
+}
+
+Pointlight AvatarElectroBall22
+{
+	Color 0.2 0.2 1.0
+	Size 40
+}
+
+Pointlight AvatarElectroBall23
+{
+	Color 0.3 0.3 1.0
+	Size 64
+}
+
+Pointlight AvatarElectroBall24
+{
+	Color 0.5 0.5 1.0
+	Size 72
+}
+
+Pointlight AvatarElectroBall25
+{
+	Color 0.2 0.2 0.7
+	Size 24
+}
+
+Pointlight AvatarElectroBall26
+{
+	Color 0.1 0.1 0.3
+	Size 16
+}
+
+Object AvaBall2
+{
+	Frame AFX1A { Light AvatarElectroBall21 }
+	Frame AFX1B { Light AvatarElectroBall21 }
+	Frame AFX1C { Light AvatarElectroBall21 }
+	Frame AFX4D { Light AvatarElectroBall21 }
+	Frame AFX4E { Light AvatarElectroBall22 }
+	Frame AFX4F { Light AvatarElectroBall23 }
+	Frame AFX4G { Light AvatarElectroBall24 }
+	Frame AFX4H { Light AvatarElectroBall25 }
+	Frame AFX4I { Light AvatarElectroBall26 }
+}
+
+Pointlight AvatarElectroBall31
+{
+	Color 0.4 0.4 1.0
+	Size 24
+}
+
+Pointlight AvatarElectroBall32
+{
+	Color 0.2 0.2 1.0
+	Size 24
+}
+
+Pointlight AvatarElectroBall33
+{
+	Color 0.3 0.3 1.0
+	Size 36
+}
+
+Pointlight AvatarElectroBall34
+{
+	Color 0.5 0.5 1.0
+	Size 24
+}
+
+Object AvaBall3
+{
+	Frame AFX2A { Light AvatarElectroBall31 }
+	Frame AFX2B { Light AvatarElectroBall31 }
+	Frame AFX2C { Light AvatarElectroBall31 }
+	Frame AFX2D { Light AvatarElectroBall31 }
+	Frame AFX2E { Light AvatarElectroBall32 }
+	Frame AFX2F { Light AvatarElectroBall33 }
+	Frame AFX2G { Light AvatarElectroBall34 }
+}
+
+Pointlight AvatarElectroBall41
+{
+	Color 0.4 0.4 1.0
+	Size 16
+}
+
+Pointlight AvatarElectroBall42
+{
+	Color 0.2 0.2 1.0
+	Size 16
+}
+
+Pointlight AvatarElectroBall43
+{
+	Color 0.3 0.3 1.0
+	Size 24
+}
+
+Pointlight AvatarElectroBall44
+{
+	Color 0.5 0.5 0.8
+	Size 16
+}
+
+Pointlight AvatarElectroBall45
+{
+	Color 0.1 0.1 0.5
+	Size 8
+}
+
+Object AvaBall4
+{
+	Frame AFX3A { Light AvatarElectroBall41 }
+	Frame AFX3B { Light AvatarElectroBall41 }
+	Frame AFX3C { Light AvatarElectroBall41 }
+	Frame AFX3D { Light AvatarElectroBall41 }
+	Frame AFX3E { Light AvatarElectroBall42 }
+	Frame AFX3F { Light AvatarElectroBall43 }
+	Frame AFX3G { Light AvatarElectroBall44 }
+	Frame AFX3H { Light AvatarElectroBall45 }
+}
+
+Pointlight AvatarFireball1
+{
+	Color 0.5 0.2 0.0
+	Size 32
+}
+
+Pointlight AvatarFireball2
+{
+	Color 0.8 0.4 0.0
+	Size 40
+}
+
+Pointlight AvatarFireball3
+{
+	Color 1.0 0.6 0.0
+	Size 48
+}
+
+Pointlight AvatarFireball4
+{
+	Color 0.8 0.4 0.0
+	Size 56
+}
+
+Pointlight AvatarFireball5
+{
+	Color 0.5 0.25 0.0
+	Size 48
+}
+
+Pointlight AvatarFireball6
+{
+	Color 0.3 0.1 0.0
+	Size 32
+}
+
+Object AvaFireball
+{
+	Frame AFX5A { Light AvatarFireball1 }
+	Frame AFX5B { Light AvatarFireball1 }
+	Frame AFX5C { Light AvatarFireball1 }
+	Frame AFX5D { Light AvatarFireball2 }
+	Frame AFX5E { Light AvatarFireball3 }
+	Frame AFX5F { Light AvatarFireball4 }
+	Frame AFX5G { Light AvatarFireball5 }
+	Frame AFX5H { Light AvatarFireball6 }
+}
+
+Pointlight AvatarHoly1
+{
+	Color 1.0 1.0 1.0
+	Size 64
+}
+
+Pointlight AvatarHoly2
+{
+	Color 1.0 1.0 1.0
+	Size 80
+}
+
+Pointlight AvatarHoly3
+{
+	Color 1.0 1.0 1.0
+	Size 96
+}
+
+Pointlight AvatarHoly4
+{
+	Color 1.0 1.0 1.0
+Size 72
+}
+
+Pointlight AvatarHoly5
+{
+	Color 1.0 1.0 1.0
+	Size 56
+}
+
+Pointlight AvatarHoly6
+{
+	Color 1.0 1.0 1.0
+	Size 24
+}
+
+Object UnholyMissile
+{
+	Frame SPRTA { Light AvatarHoly1 }
+	Frame SPRTB { Light AvatarHoly1 }
+	Frame SPRTK { Light AvatarHoly2 }
+	Frame SPRTL { Light AvatarHoly3 }
+	Frame SPRTM { Light AvatarHoly4 }
+	Frame SPRTN { Light AvatarHoly5 }
+	Frame SPRTO { Light AvatarHoly6 }
+}

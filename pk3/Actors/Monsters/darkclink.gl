@@ -1,0 +1,18 @@
+//DarkClinkBall light
+pointlight DARKCLINKBALL
+{
+   color 0.3 0.0 0.4
+   size 64
+}
+
+object DarkClinkBall
+{
+   frame CLBLA { light DARKCLINKBALL }
+   frame CLBLB { light DARKCLINKBALL }
+   frame CLBLC { light DARKCLINKBALL }
+   frame CLBLD { light DARKCLINKBALL }
+   frame CLBLE { light DARKCLINKBALL }
+   frame CLBLF { light DARKCLINKBALL }
+   frame CLBLG { light DARKCLINKBALL }
+}
+

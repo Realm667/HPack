@@ -1,0 +1,84 @@
+
+
+:Platform
+	playuntildone   plats/pt1_strt
+	playrepeat      plats/pt1_mid
+	stopsound	plats/pt1_stop
+	platform 1
+end
+
+:PlatformMetal
+	playtime	PlatformStartMetal 35
+	playrepeat      MetalMove
+	stopsound	plats/pt1_stop
+	platform 2
+end
+
+:PlatformMetal2
+	playuntildone	PlatformStartMetal
+	stopsound	plats/pt1_stop
+	platform 3
+end
+
+:DoorNormal
+	playtime        DoorOpen        13
+	playrepeat      plats/pt1_mid
+	stopsound	DoorCloseLight
+	door 1
+end
+
+:DoorHeavy
+	playtime        DoorOpen        13
+	playrepeat      plats/pt1_mid
+	stopsound	DoorCloseHeavy
+	door 2
+end
+
+:DoorMetal
+	playtime  	DoorOpenMetal 35
+	playrepeat      MetalMove
+	stopsound	DoorCloseMetal
+	door 3
+end
+
+:DoorMetal2
+	playuntildone  	DoorOpenMetal
+	stopsound	DoorCloseMetal
+	door 4
+end
+
+:DoorCreak
+	playuntildone   DoorCreak
+	stopsound	DoorCloseLight
+	door 5
+end
+
+:DoorGrind
+	playrepeat printz/sequence/grind/loop
+	stopsound DoorCloseHeavy
+	door 6
+end
+
+:Silence
+end
+
+:Lava
+	playrepeat	LavaMove
+	platform 4
+end
+
+:Water
+	playrepeat	WaterMove
+	platform 5
+end
+
+:Ice
+	playuntildone	IceStartMove
+	platform 6
+end
+
+:Earth
+	playuntildone	EarthStartMove
+	platform 7
+end
+

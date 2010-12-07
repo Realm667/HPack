@@ -1,0 +1,14 @@
+// Hexen definition adjusted to use equivalent Heretic lights with more appropriate color
+
+object BishopFX
+{
+    frame BPFXA { light DISCIPLEBALL }
+    frame BPFXB { light DISCIPLEBALL }
+
+    frame BPFXC { light DISCIPLEBALL }
+    frame BPFXD { light DISCIPLEBALL_X1 }
+    frame BPFXE { light DISCIPLEBALL_X1 }
+    frame BPFXF { light DISCIPLEBALL_X2 }
+    frame BPFXG { light DISCIPLEBALL_X2 }
+    frame BPFXH { light DISCIPLEBALL_X2 }
+}

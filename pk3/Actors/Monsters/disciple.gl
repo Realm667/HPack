@@ -1,0 +1,131 @@
+Pointlight DiscipleShot11
+{
+	Color 1.0 1.0 1.0
+	Size 32
+}
+
+Pointlight DiscipleShot12
+{
+	Color 1.0 1.0 1.0
+	Size 48
+}
+
+Pointlight DiscipleShot13
+{
+	Color 1.0 1.0 1.0
+	Size 40
+}
+
+Pointlight DiscipleShot14
+{
+	Color 1.0 1.0 1.0
+	Size 24
+}
+
+Pointlight DiscipleShot15
+{
+	Color 1.0 1.0 1.0
+	Size 16
+}
+
+Pointlight DiscipleShot16
+{
+	Color 1.0 1.0 1.0
+	Size 8
+}
+
+Object DiscipleShot1
+{
+	Frame CFX2A { Light DiscipleShot11 }
+	Frame CFX2B { Light DiscipleShot11 }
+	Frame CFX2C { Light DiscipleShot11 }
+	Frame CFX2D { Light DiscipleShot11 }
+	Frame CFX2E { Light DiscipleShot12 }
+	Frame CFX2F { Light DiscipleShot13 }
+	Frame CFX2G { Light DiscipleShot14 }
+	Frame CFX2H { Light DiscipleShot15 }
+	Frame CFX2I { Light DiscipleShot16 }
+}
+
+Pointlight DiscipleShot21
+{
+	Color 1.0 0.3 0.3
+	Size 48
+}
+
+Pointlight DiscipleShot22
+{
+	Color 1.0 0.3 0.3
+	Size 56
+}
+
+Pointlight DiscipleShot23
+{
+	Color 0.7 0.2 0.2
+	Size 64
+}
+
+Pointlight DiscipleShot24
+{
+	Color 0.5 0.1 0.1
+	Size 72
+}
+
+Pointlight DiscipleShot25
+{
+	Color 0.3 0.0 0.0
+	Size 64
+}
+
+Pointlight DiscipleShot26
+{
+	Color 0.1 0.0 0.0
+	Size 56
+}
+
+Object DiscipleShot2
+{
+	Frame CFX3A { Light DiscipleShot21 }
+	Frame CFX3B { Light DiscipleShot21 }
+	Frame CFX3C { Light DiscipleShot22 }
+	Frame CFX3D { Light DiscipleShot23 }
+	Frame CFX3E { Light DiscipleShot24 }
+	Frame CFX3F { Light DiscipleShot25 }
+	Frame CFX3G { Light DiscipleShot26 }
+}
+
+Pointlight DiscipleFire11
+{
+	Color 1.0 1.0 1.0
+	Size 24
+	Offset 0 48 0
+}
+
+Pointlight DiscipleFire12
+{
+	Color 1.0 1.0 1.0
+	Size 24
+	Offset 0 32 0
+}
+
+Pointlight DiscipleFire21
+{
+	Color 1.0 0.0 0.0
+	Size 24
+	Offset 0 48 0
+}
+
+Pointlight DiscipleFire22
+{
+	Color 1.0 0.0 0.0
+	Size 24
+	Offset 0 32 0
+}
+
+Object Disciple
+{
+	Frame DISCC { Light DiscipleFire11 }
+	Frame DISCD { Light DiscipleFire12 }
+	Frame DISCE { Light DiscipleFire21 }
+	Frame DISCF { Light DiscipleFire22 }
+}

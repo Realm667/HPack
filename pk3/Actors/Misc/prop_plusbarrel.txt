@@ -1,0 +1,16 @@
+ACTOR BBarrel : Barrel replaces Barrel
+{
+	Health 50
+	+VULNERABLE
+	+NOBLOOD
+	DeathSound "woodenbarrel/death"
+	States
+	{
+	Death:
+		BARL B 4 A_Scream
+		BARL C 4 A_NoBlocking
+		BARL D 4 
+		BARL E -1
+		Stop
+	}
+}

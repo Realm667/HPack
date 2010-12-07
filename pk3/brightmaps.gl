@@ -1,0 +1,3 @@
+#include "Brightmaps/Flats/Brightmaps.gl"
+#include "Brightmaps/Textures/Brightmaps.gl"
+#include "Brightmaps/Sprites/Brightmaps.gl"

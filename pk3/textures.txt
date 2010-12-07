@@ -1,0 +1,98 @@
+// Stained glass: Fighter and Quietus
+texture SGLASS1F, 128, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch W_266, 0, 128	{}
+   Patch W_269, 0, 0		{}
+}
+
+// Stained glass: Cleric and Wraithverge
+texture SGLASS1C, 128, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch W_267, 0, 128	{}
+   Patch W_270, 0, 0		{}
+}
+
+// Stained glass: Mage and Bloodscourge
+texture SGLASS1M, 128, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch W_268, 0, 128	{}
+   Patch W_271, 0, 0		{}
+}
+
+// Stained glass: broken
+texture SGLASS1B, 128, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch W_273, 0, 128	{}
+   Patch W_274, 0, 0		{}
+}
+
+// Stained glass: broken, other side
+texture SGLASS1R, 128, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch W_273, 0, 128	{FlipX}
+   Patch W_274, 0, 0		{FlipX}
+}
+
+// Stained glass: D'Sparil
+texture SGLASS2S, 256, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch WALL513, 0, 128	{}
+   Patch WALL518, 0, 0		{}
+}
+
+// Stained glass: Trident
+texture SGLASS2T, 256, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch WALL60, 0, 128		{}
+   Patch WALL518, 0, 0		{}
+}
+
+// Stained glass: D'Sparil, broken
+texture SGLASS3S, 256, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch WALL513B, 0, 128	{}
+   Patch WALL518B, 0, 0		{}
+}
+
+// Stained glass: Trident, broken
+texture SGLASS3T, 256, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch WALL60B, 0, 128	{}
+   Patch WALL518B, 0, 0		{}
+}
+
+// Stained glass: D'Sparil, broken, other side
+texture SGLASS4S, 256, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch WALL513B, 0, 128	{FlipX}
+   Patch WALL518B, 0, 0		{FlipX}
+}
+
+// Stained glass: Trident, broken, other side
+texture SGLASS4T, 256, 256
+{
+   XScale 1.0
+   YScale 1.0
+   Patch WALL60B, 0, 128	{FlipX}
+   Patch WALL518B, 0, 0		{FlipX}
+}

@@ -1,0 +1,59 @@
+ACTOR HPWraith replaces Wraith 30106 
+{
+	//$Category Monsters
+	//$Title Wraith
+	Health 50
+	Radius 16
+	Height 32 
+	Mass 50 
+	Speed 10
+	Damage 2
+	RenderStyle Add
+	Obituary "$OB_WRAITH"
+	DamageType "Wraith"
+	DamageFactor "Wraith", 0
+	Alpha 0.6
+	PainChance 96
+	Monster
+	+DONTGIB
+	+NOTARGET
+	+NOGRAVITY
+	+FLOAT
+	+DONTFALL
+	+DONTHURTSPECIES
+	+THRUGHOST
+	+FLOATBOB
+	+VISIBILITYPULSE
+	+NOBLOOD
+	AttackSound "HWraith/Attack"
+	PainSound "HWraith/Pain" 
+	DeathSound "HWraith/Death"
+	ActiveSound "HWraith/Active"
+	SeeSound "HWraith/Active"
+	States 
+	{ 
+	Spawn: 
+		WRAI AB 10 A_Look 
+		Loop 
+	See: 
+		WRAI AABB 3 A_VileChase 
+		Loop 
+	Missile: 
+		WRAI A 4 A_FaceTarget 
+		WRAI B 4 A_SkullAttack 
+		WRAI AB 4 
+		Goto See
+	Heal:
+		WRAI AB 3
+		Goto Death 
+	Pain: 
+		WRAI A 3  
+		WRAI B 3 A_Pain 
+		Goto See 
+	Death: 
+		WRAI C 3 A_Noblocking
+		WRAI D 3 A_Scream 
+		WRAI EFGH 3  
+		Stop 
+	} 
+}

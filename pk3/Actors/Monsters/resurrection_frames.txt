@@ -1,0 +1,321 @@
+actor HPBeast : Beast replaces Beast
+{
+	DropItem "PhoenixRodAmmo", 84, 5
+	States
+	{
+	Raise:
+		BEAS ZYXWVUTSR 6
+		Goto See
+  	Pain.HandOfTheWraith: //Custom pain state for the powerup
+    	BEAS G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	BEAS G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	BEAS G 3
+    	BEAS G 3 A_Pain
+    	Goto See
+	}
+}
+
+actor HPBeastStrong : HPBeast 16601
+{
+	//$Category Monsters
+	//$Title Weredragon Brute
+	+NORADIUSDMG
+	+DONTHURTSPECIES
+	Health 1200
+	Scale 1.4
+	Speed 18
+	Mass 1000
+	Radius 48
+	Height 128
+	Translation "66:136=%[0.0, 0.0, 0.0]:[2.0, 0.4, 0.2]", "210:217=137:144"
+	Obituary "$OB_BEASTSTRONG"
+	States
+	{
+	Missile:
+    	BEAS H 10 A_FaceTarget
+    	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+		BEAS H 5 bright A_FaceTarget
+		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+		BEAS H 5 bright A_FaceTarget
+		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+		BEAS H 5 bright A_FaceTarget
+		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+		goto see
+	}
+}
+
+ACTOR BeastBall2 : BeastBall
+{
+	Speed 15
+	Damage 5
+	Scale 1.25
+	States
+	{
+	Death:
+        FRB1 DEFGH 4 A_Explode(16,64)
+        Stop
+	}
+}
+
+actor HPChicken : Chicken replaces Chicken 16602
+{
+	//$Category Monsters
+	//$Title Chicken
+	States
+	{
+	Raise:
+		CHKN LKJIHGFE 6
+		Goto See
+	}
+}
+
+actor HPClink : Clink replaces Clink
+{
+	States
+	{
+	Melee:
+		CLNK E 5 A_FaceTarget
+		CLNK F 4 A_FaceTarget
+		CLNK G 7 A_CustomMeleeAttack(random[ClinkAttack](3,9), "clink/attack", "clink/attack")
+		Goto See
+	Raise:
+		CLNK ONMLKJI 5
+		Goto See
+  	Pain.HandOfTheWraith:
+    	CLNK H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	CLNK H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	CLNK H 3
+    	CLNK H 3 A_Pain
+    	Goto See
+	}
+}
+
+actor HPIronLich : IronLich replaces IronLich
+{
+	States
+	{
+	Raise:
+		LICH IHGFEDC 7
+		Goto See
+	Pain.HandOfTheWraith:
+    	LICH A 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	LICH A 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	LICH A 3
+    	LICH A 3 A_Pain
+    	Goto See
+	}
+}
+
+actor HPKnight : Knight replaces Knight
+{
+	States
+	{
+	Raise:
+		KNIG ONMLKJI 6
+		Goto See
+	Pain.HandOfTheWraith:
+    	KNIG H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	KNIG H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	KNIG H 3
+    	KNIG H 3 A_Pain
+    	Goto See
+	}
+}
+
+actor HPKnightGhost : KnightGhost replaces KnightGhost
+{
+	States
+	{
+	Raise:
+		KNIG ONMLKJI 6
+		Goto See
+	}
+}
+
+actor HPMummy : Mummy replaces Mummy
+{
+	States
+	{
+	Raise:
+		MUMM PONMLKJI 5
+		Goto See
+  	Pain.HandOfTheWraith:
+    	MUMM H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	MUMM H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	MUMM H 4
+    	MUMM H 4 A_Pain
+    	Goto See
+	}
+}
+
+actor HPMummyGhost : MummyGhost replaces MummyGhost
+{
+	States
+	{
+	Raise:
+		MUMM PONMLKJI 5
+		Goto See
+	}
+}
+
+actor HPMummyLeader : MummyLeader replaces MummyLeader
+{
+	States
+	{
+	Raise:
+		MUMM PONMLKJI 5
+		Goto See
+  	Pain.HandOfTheWraith:
+    	MUMM H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	MUMM H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	MUMM H 4
+    	MUMM H 4 A_Pain
+    	Goto See
+	}
+}
+
+actor HPMummyLeaderGhost : MummyLeaderGhost replaces MummyLeaderGhost
+{
+	States
+	{
+	Raise:
+		MUMM PONMLKJI 5
+		Goto See
+	}
+}
+
+actor HPSnake : Snake replaces Snake
+{
+	States
+	{
+	Raise:
+		SNKE PONMLKJIHG 5
+		Goto See
+	Pain.HandOfTheWraith:
+    	SNKE E 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	SNKE E 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	SNKE E 3
+    	SNKE E 3 A_Pain
+		Goto See
+	}
+}
+
+actor HPSnakeWeak : HPSnake 16603
+{
+	//$Category Monsters
+	//$Title Ophidian Offspring
+	Health 100
+	Mass 50
+	Translation "66:136=%[0.0, 0.0, 0.0]:[1.8, 0.8, 0.1]"
+	Scale 0.8
+	DropItem "GoldWandAmmo", 84, 10
+	Obituary "$OB_SNAKEWEAK"
+	States
+	{
+	Missile:
+    	SNKE F 5 A_FaceTarget
+    	SNKE F 4 A_CustomMissile("SnakeProjC", 32, 0, 0, CMF_CHECKTARGETDEAD)
+    	Goto See
+	}
+}
+
+actor SnakeProjC : SnakeProjB
+{
+	Damage 1
+}
+
+actor HPSnakeStrong : HPSnake 16604
+{
+	//$Category Monsters
+	//$Title Ophidian Lord
+	Health 500
+	Mass 500
+	Speed 14
+	Translation "66:68=254:252", "69:94=225:240", "95:110=209:224", "111:136=209:224"
+	Radius 24
+	Height 96
+	Scale 1.2
+	DropItem "BlasterAmmo", 84, 10
+	Obituary "$OB_SNAKESTRONG"
+	States
+	{
+	Missile:
+    	SNKE F 10 A_FaceTarget
+		SNKE F 0 bright A_PlaySound("array/firep")
+    	SNKE F 10 bright A_CustomMissile("ForceShot3", 56)
+		SNKE F 10 bright A_CustomMissile("ForceShot3", 56)
+		SNKE F 10 bright A_CustomMissile("ForceShot3", 56)
+    	Goto See
+	}
+}
+
+actor ForceShot3 : ForceShot2
+{
+	Speed 30
+	Damage 4
+}
+
+actor HPWizard : Wizard replaces Wizard
+{
+	States
+	{
+	Raise:
+		WZRD MLKJIHGF 6
+		Goto See
+	}
+}
+
+actor HPHereticImp : HereticImp replaces HereticImp
+{
+	States
+	{
+	Raise:
+		IMPX HG 5
+		Goto See
+	Pain.HandOfTheWraith:
+    	IMPX G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	IMPX G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	IMPX G 3
+    	IMPX G 3 A_Pain
+		Goto See
+	}
+}
+
+actor HPHereticImpLeader : HereticImpLeader replaces HereticImpLeader
+{
+	States
+	{
+	Raise:
+		IMPX HG 5
+		Goto See
+	Pain.HandOfTheWraith:
+    	IMPX G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+    	IMPX G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+    	IMPX G 3
+    	IMPX G 3 A_Pain
+		Goto See
+	}
+}
+
+ACTOR HPSuperGargoyle : HPHereticImp 17051
+{
+	//$Category Monsters
+	//$Title Gargoyle Lord
+	Health 120
+	Speed 13
+	Scale 1.5
+	States
+	{
+	Melee:
+		IMPX DE 6 A_FaceTarget
+		IMPX F 6 A_CustomComboAttack("HereticImpBall", 32, random[ImpMsAttack2](8,15), "himp/leaderattack")
+		Goto See
+	Missile:
+		IMPX A 0 A_Jump(192, "Melee")
+		IMPX A 10 A_FaceTarget
+		IMPX B 6 A_SkullAttack(12)
+		IMPX CBAB 6
+		IMPX A 0 A_Jump(192, "Melee")
+		Goto Missile+2
+	}
+}

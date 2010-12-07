@@ -1,0 +1,59 @@
+FlickerLight2 FireSkull
+{
+	Offset 0 4 0
+	Color 1.0 0.25 0
+	Size 40
+	SecondarySize 64
+	Interval 2.0
+}
+
+PointLight FireSkullX_1
+{
+	Offset 0 4 0
+	Color 1.0 0.25 0.0
+	Size 56
+}
+
+PointLight FireSkullX_2
+{
+	Offset 0 4 0
+	Color 1.0 0.25 0.0
+	Size 64
+}
+
+PointLight FireSkullX_3
+{
+	Offset 0 4 0
+	Color 1.0 0.25 0.0
+	Size 32
+}
+
+FlickerLight2 RedSkull
+{
+	Offset 0 4 0
+	Color 1.0 0.0 0
+	Size 32
+	SecondarySize 48
+	Interval 2.0
+}
+
+PointLight RedSkullX_1
+{
+	Offset 0 4 0
+	Color 1.0 0.0 0
+	Size 48
+}
+
+PointLight RedSkullX_2
+{
+	Offset 0 4 0
+	Color 1.0 0.0 0
+	Size 40
+}
+
+PointLight RedSkullX_3
+{
+	Offset 0 2 0
+	Color 1.0 0.0 0
+	Size 24
+}

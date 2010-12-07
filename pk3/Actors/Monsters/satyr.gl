@@ -1,0 +1,53 @@
+Pointlight SatyrTrail1
+{
+	Color 0.0 0.8 0.0
+	Size 40
+}
+
+Pointlight SatyrTrail2
+{
+	Color 0.0 0.8 0.0
+	Size 48
+}
+
+Pointlight SatyrTrail3
+{
+	Color 0.0 0.9 0.0
+	Size 56
+}
+
+Pointlight SatyrTrail4
+{
+	Color 0.0 1.0 0.0
+	Size 56
+}
+
+Pointlight SatyrTrail5
+{
+	Color 0.0 0.7 0.0
+	Size 40
+}
+
+Pointlight SatyrTrail6
+{
+	Color 0.0 0.4 0.0
+	Size 32
+}
+
+Pointlight SatyrTrail7
+{
+	Color 0.0 0.2 0.0
+	Size 24
+}
+
+Object SatyrTrail
+{
+	Frame BONEI { Light KnightArrow1 }
+	Frame BONEJ { Light KnightArrow2 }
+	Frame BONEK { Light KnightArrow3 }
+	Frame BONEL { Light KnightArrow4 }
+	Frame BONEM { Light KnightArrow5 }
+	Frame BONEN { Light KnightArrow6 }
+	Frame BONEO { Light KnightArrow7 }
+}
+

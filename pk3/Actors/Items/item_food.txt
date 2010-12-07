@@ -1,0 +1,69 @@
+actor FoodChicken : Health 20004
+{
+	//$Category Health
+	//$Title Chicken Wing
+	Inventory.Amount 5
+	Inventory.PickupMessage "$TXT_FOODCHICKEN"
+	States
+	{
+	Spawn:
+		FOOD A -1
+		wait
+	}
+}
+
+actor FoodBread : Health 20005
+{
+	//$Category Health
+	//$Title Loaf of Bread
+	Inventory.Amount 5
+	Inventory.PickupMessage "$TXT_FOODBREAD"
+	States
+	{
+	Spawn:
+		FOOD B -1
+		wait
+	}
+}
+
+actor FoodCheese : Health 20006
+{
+	//$Category Health
+	//$Title Slice of Cheese
+	Inventory.Amount 5
+	Inventory.PickupMessage "$TXT_FOODCHEESE"
+	States
+	{
+	Spawn:
+		FOOD C -1
+		wait
+	}
+}
+
+actor FoodApple : Health 20007
+{
+	//$Category Health
+	//$Title Green Apple
+	Inventory.Amount 3
+	Inventory.PickupMessage "$TXT_FOODAPPLE1"
+	States
+	{
+	Spawn:
+		FOOD D -1
+		wait
+	}
+}
+
+actor FoodApple2 : Health 20008
+{
+	//$Category Health
+	//$Title Red Apple
+	Inventory.Amount 3
+	Inventory.PickupMessage "$TXT_FOODAPPLE2"
+	States
+	{
+	Spawn:
+		FOOD E -1
+		wait
+	}
+}

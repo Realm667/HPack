@@ -1,0 +1,343 @@
+ACTOR Deathknight : Knight 30114 
+{ 
+	//$Category Monsters
+	//$Title Death Knight
+	Health 500
+	Radius 24
+	Height 72
+	CameraHeight 57
+	Mass 700 
+	Speed 10
+	PainChance 20 
+	MeleeDamage 5
+	+SHIELDREFLECT
+	+DONTHARMSPECIES
+	+DONTMORPH
+	+DONTSQUASH
+	DropItem "SkullRodAmmo" 84 20
+	DropItem "ArtiTimeBomb" 4
+	Obituary "$OB_DEATHKNIGHT"
+	HitObituary "OB_DEATHKNIGHTH"
+	MeleeSound "monster/dknhit" 
+	SeeSound "monster/dknsit" 
+	PainSound "monster/dknpai" 
+	DeathSound "monster/dkndth" 
+	ActiveSound "monster/dknact" 
+	damagefactor "DKFire", 0.0
+
+	States 
+	{ 
+	Spawn: 
+		DKNT AB 10 A_Look 
+		Loop 
+	See:
+		DKNT A 0 A_Jump(32,10)
+		DKNT A 0 A_UnSetReflectiveInvulnerable
+		DKNT AABBCCDD 3 A_Chase
+		Goto See
+		DKNT P 0 A_SetReflectiveInvulnerable
+		DKNT PPQQRRSS 3 A_Chase
+		DKNT A 0 A_Jump(8, 1)
+		Goto see+12
+		DKNT A 0
+		Goto see+1
+	Melee:
+		DKNT E 0 A_UnSetReflectiveInvulnerable
+		DKNT E 6 A_FaceTarget
+		DKNT F 1 A_Playsound ("monster/dknswg")
+		DKNT F 6 A_FaceTarget
+		DKNT G 6 A_MeleeAttack 
+		Goto See
+	Missile:
+		DKNT A 0 A_Jump(25,10)
+		DKNT A 0 A_Jump(25,17)
+		DKNT E 0 Bright A_UnSetReflectiveInvulnerable
+		DKNT E 6 Bright A_FaceTarget
+		DKNT F 6 Bright A_Playsound ("monster/kntswg")
+		DKNT G 0 Bright A_CustomMissile ("DKDart",32,0,-3,0)
+		DKNT G 0 Bright A_CustomMissile ("DKDart",32,0,-1,0)
+		DKNT G 0 Bright A_CustomMissile ("DKDart",32,0,1,0)
+		DKNT G 5 Bright A_CustomMissile ("DKDart",32,0,3,0)
+		DKNT A 0 A_Jump(5,9)
+		Goto See
+		DKNT T 0 Bright A_SetReflectiveInvulnerable
+		DKNT T 6 Bright A_FaceTarget
+		DKNT U 1 Bright A_FaceTarget
+		DKNT U 0 Bright A_CustomMissile("FHeadShot",44,-4,-12,0)      
+		DKNT U 5 Bright A_CustomMissile("FHeadShot",44,-4,12,0)
+		DKNT U 0 Bright A_UnSetReflectiveInvulnerable
+		DKNT U 0 A_Jump(5,1)
+		Goto See
+		DKNT T 0 Bright A_SetReflectiveInvulnerable
+		DKNT T 3 Bright A_FaceTarget      
+		DKNT U 3 Bright A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 Bright A_FaceTarget      
+		DKNT U 3 Bright A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 Bright A_FaceTarget      
+		DKNT U 3 Bright A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 Bright A_FaceTarget      
+		DKNT U 3 Bright A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 Bright A_FaceTarget      
+		DKNT U 3 Bright A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 Bright A_FaceTarget      
+		DKNT U 2 Bright A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT U 0 Bright A_UnSetReflectiveInvulnerable
+		Goto See
+	Pain:
+		DKNT H 2 
+		DKNT H 2 A_Pain
+		DKNT T 105 A_SetReflectiveInvulnerable
+		DKNT T 0 A_UnSetReflectiveInvulnerable
+		DKNT P 0 A_Jump (16,1)
+		Goto See+12
+		DKNT H 1
+		Goto See
+	Pain.HandOfTheWraith:
+	 	DKNT H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+	 	DKNT H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+	 	DKNT H 2 
+		DKNT H 2 A_Pain
+	 	Goto See
+	Death:
+		DKNT I 0 Bright A_CustomMissile("DKSword",44,32,-90,0)
+		DKNT I 8 Bright A_CustomMissile("DKShield",44,-32,90,0)
+		DKNT J 8 Bright A_Scream 
+		DKNT K 8 Bright
+		DKNT L 8 Bright A_NoBlocking 
+		DKNT MN 8 Bright 
+		DKNT O -1 
+		Stop 
+	Raise: 
+		DKNT ONMLKJI 8 Bright
+		Goto See 
+	} 
+}
+
+ACTOR DKDart
+{
+	Radius 3
+	Height 12
+	Speed 25
+	Damage 2
+	DamageType Fire
+	ExplosionDamage 8
+	ExplosionRadius 64
+	RenderStyle Add
+	Alpha 1.00
+	Projectile
+	+THRUGHOST
+	SeeSound "monster/dkndrt"
+	DeathSound "weapons/firex2"
+	States
+	{
+	Spawn:
+		DKAT ABC 3 Bright
+		loop
+	Death:
+		DKAT D 0 Bright A_SetTranslucent (0.85,1)
+		DKAT D 3 Bright
+		DKAT E 3 Bright A_Explode
+		DKAT FG 3 Bright
+		DKAT G 0 Bright A_Jump(251,9)
+		DKAT H 0 Bright A_CustomMissile("DKFire",0,0,45,2)
+		DKAT H 0 Bright A_CustomMissile("DKFire",0,0,90,2)
+		DKAT H 0 Bright A_CustomMissile("DKFire",0,0,135,2)
+		DKAT H 0 Bright A_CustomMissile("DKFire",0,0,180,2)
+		DKAT H 0 Bright A_CustomMissile("DKFire",0,0,225,2)
+		DKAT H 0 Bright A_CustomMissile("DKFire",0,0,270,2)
+		DKAT H 0 Bright A_CustomMissile("DKFire",0,0,315,2)
+		DKAT H 3 Bright A_CustomMissile("DKFire",0,0,0,2)
+		DKAT IJKLM 3 Bright
+		Stop
+	}
+}
+
+ACTOR FHeadShot
+{
+	Radius 12
+	Height 12
+	Speed 15
+	FastSpeed 18
+	Damage 5
+	RenderStyle Add
+	Alpha 1.00
+	Projectile
+	DamageType Fire
+	+SEEKERMISSILE
+	+THRUGHOST
+	SeeSound "monster/dknmsl"
+	DeathSound "weapons/boom1"
+	States
+	{
+	Spawn:
+		FHED ABCD 3 Bright A_SeekerMissile (5,15)
+		loop
+	Death:
+		RIP1 DEFGH 5 Bright
+		stop
+	}
+}
+
+ACTOR DKbolt
+{
+	Radius 8
+	Height 8
+	Speed 15
+	FastSpeed 20
+	Damage 4
+	Projectile
+	RenderStyle Add
+	Alpha 0.80
+	DamageType Fire
+//	+THRUGHOST commented by printz 26.01.2010: it's worth to have a spare attack that CAN hit invisible people
+	SeeSound "Weapons/boltfi"
+	DeathSound "weapons/firex4"
+	States
+	{
+	Spawn:
+		BOLT A 1 Bright A_BishopMissileWeave
+		BOLT A 0 A_SpawnItem("RedPuff",0,0)
+		Loop
+	Death:
+		HBAL EFHI 2 Bright
+		Stop
+	}
+}
+
+ACTOR DKSword
+{   
+	Radius 8
+	Height 8
+	Speed 1
+	Projectile
+	RenderStyle Normal
+	-NOGRAVITY
+	+LOWGRAVITY
+	States
+	{
+	Spawn:
+		SWRD KLMNOPQ 3 BRIGHT
+		goto Death 
+	Death:
+		SWRD RS 4 BRIGHT
+		SWRD T 4 BRIGHT
+		SWRD U 4
+		SWRD T 4 BRIGHT
+		SWRD U 8
+		SWRD T 4 BRIGHT
+		SWRD U 16
+		SWRD T 4 BRIGHT
+		SWRD U -1
+	}
+}
+
+ACTOR DKShield
+{   
+	Radius 8
+	Height 8
+	Speed 1
+	Projectile
+	RenderStyle Normal
+	-NOGRAVITY
+	+LOWGRAVITY
+	States
+	{
+	Spawn:
+		XHLD ABCDEFGHI 3
+		Goto death 
+	Death:
+		XHLD H -1
+	}
+}
+
+ACTOR DKFire
+{
+	Radius 2
+	Height 6
+	Speed 4
+	Damage 0
+	ExplosionDamage 3
+	ExplosionRadius 8
+	RenderStyle Add
+	Alpha 0.95
+	Projectile
+	+THRUGHOST
+// printz 26.01.2010: add this so the death knights don't kill themselves
+	damagetype "DKFire"
+// /printz
+	DeathSound "weapons/scorch"
+	States
+	{
+	Spawn:
+		DKAT NOPQRSTNOPQRSTNOPQRST 3 Bright A_Explode
+		Goto death
+	Death:
+		DKAT UVW 3 Bright A_Explode
+		Stop
+	}
+}
+
+ACTOR RedPuff
+{   
+	Radius 0
+	Height 1
+	Speed 0
+	Projectile
+	RenderStyle Add
+	Alpha 0.85
+	States
+	{
+	Spawn:
+		NULL A 3 Bright
+		RPUF ABCDE 3 Bright
+		Stop 
+   	}
+}
+
+Actor DeathKnightGhost : DeathKnight 32114
+{
+	//$Category Monsters
+	//$Title Death Spectre
+	+SHADOW
+	+GHOST
+	RenderStyle Translucent
+	Alpha 0.4
+	States 
+	{ 
+	Missile:
+		DKNT A 0 A_Jump(50,10)
+		DKNT A 0 A_Jump(50,17)
+		DKNT E 0 A_UnSetReflectiveInvulnerable
+		DKNT E 6 A_FaceTarget
+		DKNT F 6 A_Playsound ("monster/kntswg")
+		DKNT G 0 A_CustomMissile ("DKDart",32,0,-3,0)
+		DKNT G 0 A_CustomMissile ("DKDart",32,0,-1,0)
+		DKNT G 0 A_CustomMissile ("DKDart",32,0,1,0)
+		DKNT G 5 A_CustomMissile ("DKDart",32,0,3,0)
+		DKNT A 0 A_Jump(10,9)
+		Goto See
+		DKNT T 0 A_SetReflectiveInvulnerable
+		DKNT T 6 A_FaceTarget
+		DKNT U 1 A_FaceTarget
+		DKNT U 0 A_CustomMissile("FHeadShot",44,-4,-12,0)      
+		DKNT U 5 A_CustomMissile("FHeadShot",44,-4,12,0)
+		DKNT U 0 A_UnSetReflectiveInvulnerable
+		DKNT U 0 A_Jump(10,1)
+		Goto See
+		DKNT T 0 A_SetReflectiveInvulnerable
+		DKNT T 3 A_FaceTarget      
+		DKNT U 3 A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 A_FaceTarget      
+		DKNT U 3 A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 A_FaceTarget      
+		DKNT U 3 A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 A_FaceTarget      
+		DKNT U 3 A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 A_FaceTarget      
+		DKNT U 3 A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT T 3 A_FaceTarget      
+		DKNT U 2 A_CustomMissile("DKbolt",44,-4,0,0)
+		DKNT U 0 A_UnSetReflectiveInvulnerable
+		Goto See
+	} 
+}

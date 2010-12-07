@@ -1,0 +1,27 @@
+// BOOTS OF THE NORTH - INSTANT
+Actor PowerNorthBoots : PowerProtection
+{
+  DamageFactor "Ice", 0.5
+}
+
+Actor ArtiBootsOfTheNorth : PowerupGiver
+{
+	//$Category Artifacts
+	//$Title Boots of the North
+  Inventory.MaxAmount 0
+  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupMessage "$TXT_ARTIFROSTRESISTANCE"
+  Tag "$TAG_ARTIFROSTRESISTANCE"
+  Powerup.Type NorthBoots
+  Powerup.Duration 0x7FFFFFFF
+  +Inventory.PickupFlash
+  +Inventory.AutoActivate
+  +FloatBob
+  +CountItem
+  States
+  {
+  Spawn:
+    BNOR ABC 4 Bright
+    Loop
+  }
+}

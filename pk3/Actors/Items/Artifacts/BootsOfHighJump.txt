@@ -1,0 +1,25 @@
+actor ArtiHighJump : PowerupGiver 20003
+{
+	//$Category Artifacts
+	//$Title Boots of High Jump
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	+INVENTORY.INVBAR
+	+INVENTORY.FANCYPICKUPSOUND
+	+INVENTORY.HUBPOWER
+	Tag "$TAG_ARTIJUMP"
+	Inventory.PickupMessage "$TXT_ARTIJUMP"
+	Inventory.Icon "ARTIJUMP"
+	Inventory.DefMaxAmount
+	Inventory.PickupSound "pickups/p_pkup"
+	Inventory.UseSound "misc/invuse"
+	Powerup.Type "HighJump"
+	Powerup.Duration 1000
+	States
+	{
+	Spawn:
+		JMPB A -1 bright
+		Loop
+	}
+}

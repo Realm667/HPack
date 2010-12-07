@@ -1,0 +1,550 @@
+ACTOR HPSorcerer
+{
+  Game Heretic
+  Health 350
+  Radius 12
+  Height 53
+  Mass 400
+  Speed 14
+  Painchance 32
+  Monster
+  +DROPOFF
+  +NOICEDEATH
+  +FLOORCLIP
+  SeeSound "sonMage/sight"
+  PainSound "sonMage/pain"
+  ActiveSound "sonMage/idle"
+  Obituary "$OB_SONOFDSPARIL"
+  States
+  {
+  Spawn:
+    DSON AB 10 A_Look
+    Loop
+  See:
+    DSON ABCD 4 A_Chase
+    Loop
+  Rise:
+    DSON NM 4
+    DSON L 4 A_PlaySoundEx("dsparil/rise", "Body")
+    DSON KJI 4
+    DSON H 12 A_PlaySoundEx("dsparil/sight", "Body")
+    Goto See
+  Pain:
+    DSON E 3
+    DSON E 6 A_Pain
+    Goto See
+  Missile:
+    DSON F 9 bright
+    DSON G 9 bright A_FaceTarget
+    Goto See
+  Death:
+    DSON H 8
+    DSON I 8 A_PlaySoundEx("sonMage/death", "Body")
+    DSON J 6 A_NoBlocking
+    DSON KLM 6
+    DSON N -1
+    Stop
+  }
+}
+
+// --------------- //
+// --SON OF FIRE-- //
+// --------------- //
+
+ACTOR HPSonFire : HPSorcerer 22001
+{
+	//$Category Monsters
+	//$Title Son of D'Sparil (Fire)
+  Game Heretic
+  Translation "209:224=145:159","192:208=247:241"
+  DropItem "FireAmmo", 84, 10
+  bloodcolor "orange"
+  states
+  {
+  Missile:
+    DSON F 0 A_PlaySoundEx("sonMage/fireShot", "Body")
+    DSON F 8 bright A_FaceTarget
+    DSON G 8 bright A_CustomMissile("HPSorcererFX1",56,-16)
+    Goto See
+  Death:
+    DSON H 0 A_PlaySoundEx("sonMage/death", "Body")
+	DSON H 0 A_NoBlocking
+	DSON HH 1 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+	DSON HH 1 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+	DSON II 1 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+	DSON II 1 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+	DSON JJ 1 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+	DSON JJ 1 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+	DSON KK 1 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+	DSON KK 1 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+	DSON LL 1 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+	DSON LL 1 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+	DSON MM 1 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+	DSON MM 1 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+	DSON N 1
+	DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+    DSON N -1
+    Stop
+  }
+}
+
+ACTOR HPSorcererFX1 : SorcererFX1
+{
+  Game Heretic
+  //SpawnID 144
+  Damage 4
+  Scale .75
+  DamageType Fire
+  RenderStyle Add
+  States
+  {
+  Spawn:
+    FX14 ABC 6 BRIGHT
+    Loop
+  Death:
+    FX14 D 0 A_PlaySoundEx("sonMage/fireXp", "Body")
+    FX14 DDDDDDDDDDDDDDDD 0 A_CustomMissile("HPSorcererEmber",0,0,random(90,270),6,random(-20,20))
+    FX14 DDDDDDDDDDDDDDDD 0 A_CustomMissile("HPSorcererEmber",0,0,random(0,359),6,random(-90,90))
+    FX14 D 5 BRIGHT A_Explode(16,128)
+    FX14 EFGH 5 BRIGHT
+    Stop
+  }
+}
+ACTOR HPSorcererEmber : HereticImpBall
+{
+  DamageType Fire
+  Damage 1
+  Scale .5
+  Alpha .75
+}
+
+//END SON OF FIRE
+
+// -------------------- //
+// --SON OF LIGHTNING-- //
+// -------------------- //
+
+ACTOR HPSonLightning : HPSorcerer 22002
+{
+	//$Category Monsters
+	//$Title Son of D'Sparil (Lightning)
+	Game Heretic
+  Translation "209:224=188:204"
+  DropItem "BlasterAmmo", 84, 10
+  bloodcolor "blue"
+  states
+  {
+  Missile:
+    DSON F 0 A_PlaySoundEx("dsparil/attack", "Body")
+    DSON F 8 bright A_FaceTarget
+    DSON G 8 bright A_CustomMissile("Sorcerer2FX1",56,-16)
+    Goto See
+  Death:
+    DSON H 0 A_PlaySoundEx("sonMage/death", "Body")
+	DSON H 0 A_NoBlocking
+	DSON HH 1 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+	DSON HH 1 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+	DSON II 1 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+	DSON II 1 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+	DSON JJ 1 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+	DSON JJ 1 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+	DSON KK 1 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+	DSON KK 1 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+	DSON LL 1 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+	DSON LL 1 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+	DSON MM 1 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+	DSON MM 1 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+	DSON N 1
+	DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("SparkEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("SparkEmber",0,0,random(0,359),6,random(-90,90))
+    DSON N -1
+    Stop
+  }
+}
+
+ACTOR SparkEmber
+{
+  Game Heretic 
+  Radius 8
+  Height 8
+  Speed 10
+  FastSpeed 20
+  Damage 1
+  Projectile
+  -ACTIVATEPCROSS
+  -ACTIVATEIMPACT
+  +SPAWNSOUNDSOURCE
+  RenderStyle Add
+  States
+  {
+  Spawn:
+    FX16 DEF 6 Bright
+    Loop
+  Death:
+    FX16 DEF 2 Bright
+    Stop
+  }
+}
+
+//END SON OF LIGHTNING
+
+// ---------------- //
+// --SON OF METAL-- //
+// ---------------- //
+
+ACTOR HPSonMetal : HPSorcerer 22003
+{
+	//$Category Monsters
+	//$Title Son of D'Sparil (Metal)
+  Game Heretic
+  Translation "192:208=210:220"
+  DropItem "CrossBowAmmo", 84, 10
+  bloodcolor "green"
+  states
+  {
+  Missile:
+    DSON F 0 A_PlaySoundEx("sonMage/ethreal", "Body")
+    DSON F 8 bright A_FaceTarget
+    DSON G 0 bright A_CustomMissile("MetalShot",56,-16)
+	DSON F 0 A_PlaySoundEx("sonMage/ethreal", "Body")
+    DSON F 8 bright A_FaceTarget
+    DSON G 8 bright A_CustomMissile("MetalShot",56,-16)
+	DSON F 0 A_PlaySoundEx("sonMage/ethreal", "Body")
+    DSON F 8 bright A_FaceTarget
+    DSON G 8 bright A_CustomMissile("MetalShot",56,-16)
+    Goto See
+  Death:
+    DSON H 0 A_PlaySoundEx("sonMage/death", "Body")
+	DSON H 0 A_NoBlocking
+	DSON HH 1 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+	DSON HH 1 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+	DSON II 1 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+	DSON II 1 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+	DSON JJ 1 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+	DSON JJ 1 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+	DSON KK 1 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+	DSON KK 1 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+	DSON LL 1 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+	DSON LL 1 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+	DSON MM 1 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+	DSON MM 1 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+	DSON N 1
+	DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("MetalEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("MetalEmber",0,0,random(0,359),6,random(-90,90))
+    DSON N -1
+    Stop
+  }
+}
+
+ACTOR MetalShot
+{
+  Game Heretic
+  Speed 25
+  Radius 6
+  Height 8
+  Damage 4
+  PROJECTILE
+  RENDERSTYLE ADD
+  States
+  {
+  Spawn:
+    IDSP AB 2 bright A_SpawnItemEx("MetalTrail", 0, 0, 0, 0, 0, 0, 0, 128)
+    loop
+  Death:
+	IDSE A 0 A_PlaySoundEx("sonMage/ethrealXp", "Body")
+    IDSE ABCDE 2 bright
+    stop
+    }
+}
+ 
+ACTOR MetalTrail
+{
+	Speed 0
+	Damage 0
+	Height 8
+	Radius 5
+	Scale .5
+	Alpha .75
+	PROJECTILE
+	RENDERSTYLE ADD
+	States
+	{
+	Spawn:
+		IDPR ABCDE 3 BRIGHT
+		Stop
+	}
+}
+
+ACTOR MetalEmber
+{
+  Game Heretic 
+  Radius 8
+  Height 8
+  Speed 10
+  FastSpeed 20
+  Damage 1
+  Scale .25
+  Alpha .5
+  Projectile
+  -ACTIVATEPCROSS
+  -ACTIVATEIMPACT
+  +SPAWNSOUNDSOURCE
+  RenderStyle Add
+  States
+  {
+  Spawn:
+    IDSE A 1 Bright
+    Loop
+  Death:
+    IDSE ABCDE 2 Bright
+    Stop
+  }
+}
+
+// END SON OF METAL
+
+// -------------- //
+// --SON OF ICE-- //
+// -------------- //
+
+ACTOR HPSonIce : HPSorcerer 22004
+{
+	//$Category Monsters
+	//$Title Son of D'Sparil (Ice)
+  Game Heretic
+  Translation "209:224=52:65","192:208=177:184"
+  DropItem "BlasterAmmo", 84, 10
+  bloodcolor "blue"
+  states
+  {
+  Missile:
+    DSON F 9 bright A_FaceTarget
+    DSON G 9 bright A_CustomMissile("SorcererIceFX",56,-16)
+    Goto See
+  Death:
+    DSON H 0 A_PlaySoundEx("sonMage/death", "Body")
+	DSON H 0 A_NoBlocking
+	DSON HH 1 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+	DSON HH 1 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+	DSON II 1 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+	DSON II 1 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+	DSON JJ 1 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+	DSON JJ 1 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+	DSON KK 1 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+	DSON KK 1 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+	DSON LL 1 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+	DSON LL 1 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+	DSON MM 1 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+	DSON MM 1 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+	DSON N 1
+	DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("IceEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("IceEmber",0,0,random(0,359),6,random(-90,90))
+    DSON N -1
+    Stop
+  }
+}
+
+ACTOR SorcererIceFX : IceGuyFX
+{
+  Speed 20
+  FastSpeed 30
+  SeeSound "IceGuyAttack"
+  DeathSound "IceGuyMissileExplode"
+  DamageType Ice
+  +BRIGHT
+  RenderStyle Normal
+  Damage 3
+  states
+  {
+  Death:
+    FX05 DDDDDDDDDDDDDDDD 0 A_CustomMissile("SorcererIceFX2",0,0,random(90,270),6,random(-20,20))
+    FX05 DDDDDDDDDDDDDDDD 0 A_CustomMissile("SorcererIceFX2",0,0,random(0,359),6,random(-90,90))
+    FX05 DEFG 5 BRIGHT
+    Stop
+  }
+}
+
+ACTOR SorcererIceFX2 : HeadFX2
+{
+  Speed 15
+  FastSpeed 25
+  DamageType Ice
+  +BRIGHT
+  RenderStyle Normal
+  Damage 1
+}
+
+ACTOR IceEmber
+{
+  Game Heretic 
+  Radius 8
+  Height 8
+  Speed 10
+  FastSpeed 20
+  Damage 1
+  Scale .5
+  Alpha .5
+  Projectile
+  -ACTIVATEPCROSS
+  -ACTIVATEIMPACT
+  +SPAWNSOUNDSOURCE
+  RenderStyle Add
+  States
+  {
+  Spawn:
+    FX05 D 1 Bright
+    Loop
+  Death:
+    FX05 DDDDD 2 Bright A_FadeOut(0.2)
+    Stop
+  }
+}
+
+// END SON OF ICE
+
+// ---------------- //
+// --SON OF CHAOS-- //
+// ---------------- //
+
+/*
+ACTOR HPSonChaos : HPSorcerer 22005
+{
+	//$Category Monsters
+	//$Title Son of D'Sparil (Chaos)
+  Game Heretic
+  Translation "209:224=169:175","192:208=169:175"
+  DropItem "MaceAmmo", 84, 10
+  bloodcolor "purple"
+  states
+  {
+  Missile:
+    DSON F 0 A_PlaySoundEx("sonMage/timeatk", "Body")
+    DSON F 8 bright A_FaceTarget
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,-16)
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,0)
+    DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,16)
+	DSON F 6 bright A_FaceTarget
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,-16)
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,0)
+    DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,16)
+	DSON F 6 bright A_FaceTarget
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,-16)
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,0)
+    DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,16)
+	DSON F 6 bright A_FaceTarget
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,-16)
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,0)
+    DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,16)
+	DSON F 6 bright A_FaceTarget
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,-16)
+	DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,0)
+    DSON G 0 bright A_CustomMissile("ChaosFX1",56,-16,16)
+	Goto See
+  Death:
+    DSON H 0 A_PlaySoundEx("sonMage/death", "Body")
+	DSON H 0 A_NoBlocking
+	DSON HH 1 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+	DSON HH 1 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+	DSON II 1 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+	DSON II 1 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+	DSON JJ 1 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+	DSON JJ 1 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+	DSON KK 1 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+	DSON KK 1 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+	DSON LL 1 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+	DSON LL 1 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+	DSON MM 1 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+	DSON MM 1 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+	DSON N 1
+	DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("ChaosEmber",0,0,random(90,270),6,random(-20,20))
+    DSON NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 0 A_CustomMissile("ChaosEmber",0,0,random(0,359),6,random(-90,90))
+    DSON N -1
+    Stop
+  }
+}
+
+GNFX is a sprite conflict! Do not re-enable these actors without renaming the sprites.
+ACTOR ChaosFX1 : WizardFX1
+{
+	+EXTREMEDEATH
+	SeeSound "sonMage/timeshot"
+	DeathSound "weapons/macehit"
+	Damage 1
+	Speed 30
+	+SEEKERMISSILE
+	Decal "PlasmaScorchLower"
+	States
+	{
+	Spawn:
+		FX11 A 0 BRIGHT A_SeekerMissile(20,20)
+		FX11 AAA 1 BRIGHT A_SpawnItemEx("ChaosFX2",random2[BoltSpark]()*0.015625, random2[BoltSpark]()*0.015625, 0, 0,0,0,0,SXF_ABSOLUTEPOSITION, 50)
+		FX11 B 0 BRIGHT A_SeekerMissile(20,20)
+		FX11 BBB 1 BRIGHT A_SpawnItemEx("ChaosFX2",random2[BoltSpark]()*0.015625, random2[BoltSpark]()*0.015625, 0, 0,0,0,0,SXF_ABSOLUTEPOSITION, 50)
+		Loop
+	Death:
+		GNFX C 4 BRIGHT A_SpawnItemEx("ChaosFX3",0,0,0,0,0,0,0,0)
+		GNFX DEFG 4 BRIGHT
+		Stop
+	}
+}
+
+ACTOR ChaosFX2 : GauntletPuff2
+{
+	States
+	{
+	Spawn:
+		GNFX HIJK 3 BRIGHT
+		Stop
+	}
+}
+
+ACTOR ChaosFX3 : ChaosFX2
+{
+	Alpha .8
+	States
+	{
+	Spawn:
+		GNFX NO 3 BRIGHT
+		GNFX PPPQQQ 1 BRIGHT A_FadeOut(0.1)
+		Stop
+	}
+}
+
+ACTOR ChaosEmber
+{
+  Game Heretic 
+  Radius 8
+  Height 8
+  Speed 10
+  FastSpeed 20
+  Damage 1
+  Alpha .5
+  Projectile
+  -ACTIVATEPCROSS
+  -ACTIVATEIMPACT
+  +SPAWNSOUNDSOURCE
+  RenderStyle Add
+  States
+  {
+  Spawn:
+    GNFX L 1 BRIGHT 
+    Loop
+  Death:
+    GNFX MNOP 3 BRIGHT A_FadeOut(0.1)
+    Stop
+  }
+}
+
+// END SON OF CHAOS
+*/

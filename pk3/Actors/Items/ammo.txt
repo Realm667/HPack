@@ -1,0 +1,225 @@
+// ---------------- //
+// CRYSTALLINE AMMO //
+// ---------------- //
+
+ACTOR GoldWandMed : GoldWandAmmo 14256
+{
+	//$Category Ammunition
+	//$Title Crystal Gem
+  	Inventory.PickupMessage "$TXT_AMMOGOLDWAND1"
+  	Inventory.Amount 25
+  	States
+  	{
+  	Spawn:
+    	MGLD A -1 Bright Light(MWANDAMMO)
+    	Loop
+  	}
+}
+
+// -------------- //
+// ETHREAL ARROWS //
+// -------------- //
+
+ACTOR CrossbowMed : CrossbowAmmo 14257
+{
+  	//$Category Ammunition
+	//$Title Ethereal Arrow Bundle
+  	Inventory.PickupMessage "$TXT_AMMOCROSSBOW3"
+  	Inventory.Amount 10
+	Scale .75
+  	States
+  	{
+  	Spawn:
+    	META A -1 Bright Light(ETHBUNDLE)
+    	Loop
+  	}
+}
+
+// ----------- //
+// ENERGY AMMO //
+// ----------- //
+
+ACTOR BlasterMed : BlasterAmmo 14253
+{
+	//$Category Ammunition
+	//$Title Power Orb
+  	Inventory.PickupMessage "$TXT_AMMOBLASTER3"
+  	Inventory.Amount 15
+  	States
+  	{
+  	Spawn:
+    	MBLS ABC 4 Bright Light(MCLAWAMMO)
+    	Loop
+  	}
+}
+
+// ---------- //
+// RUNIC AMMO //
+// ---------- //
+
+ACTOR SkullRodMed : SkullRodAmmo 14258
+{
+	//$Category Ammunition
+	//$Title Median Runes
+	Inventory.PickupMessage "$TXT_AMMOSKULLROD3"
+	Inventory.Amount 50
+	States
+	{
+	Spawn:
+		MRUN AB 5 Bright Light(MSTAFFAMMO)
+		Loop
+	}
+}
+
+// ---------- //
+// FIERY AMMO //
+// ---------- //
+
+ACTOR PhoenixRodMed : PhoenixRodAmmo 14255
+{
+	//$Category Ammunition
+	//$Title Blaze Orb
+  	Inventory.PickupMessage "$TXT_AMMOPHOENIXROD3"
+  	Inventory.Amount 5
+  	States
+  	{
+  	Spawn:
+    	MPHE ABC 4 Bright Light(MRODAMMO)
+    	Loop
+  	}
+}
+
+// --------- //
+// MACE AMMO //
+// --------- //
+
+ACTOR MaceMed : MaceAmmo 14254
+{
+	//$Category Ammunition
+	//$Title Greater Mace Sphere
+  	Inventory.PickupMessage "$TXT_AMMOMACE3"
+  	Inventory.Amount 50
+  	States
+  	{
+  	Spawn:
+    	MMCE A -1 
+    	Stop
+  	}
+}
+
+// ----------------- //
+// LIGHTBRINGER AMMO //
+// ----------------- //
+
+actor SunStaffAmmo : Ammo 16454
+{
+	//$Category Ammunition
+	//$Title Sun Stone
+	+RANDOMIZE
+	+NOGRAVITY
+	radius 8
+	height 8
+	inventory.pickupmessage "$TXT_AMMOSUNSTAFF1"
+	inventory.icon "SUNAB0"
+	inventory.amount 20
+	inventory.maxamount 250
+	ammo.backpackamount 50
+	ammo.backpackmaxamount 500
+	states
+	{
+	Spawn:
+		SUNA ABCD 4 BRIGHT light(LWANDAMMO)
+		loop
+	}
+}
+
+actor SunStaffHefty : SunStaffAmmo 16455
+{
+	//$Category Ammunition
+	//$Title Solar Prism
+	radius 12
+	height 12
+	inventory.pickupmessage "$TXT_AMMOSUNSTAFF2"
+	inventory.icon "BAL8A0"
+	inventory.amount 100
+	states
+	{
+	Spawn:
+		BAL8 ABCDEFGH 3 BRIGHT light(LWANDAMMO)
+		loop
+	}
+}
+
+// ----------------------- //
+// GLOVES OF D'SPARIL AMMO //
+// ----------------------- //
+
+ACTOR ChaosAmmo : Ammo 16456
+{
+	//$Category Ammunition
+	//$Title Chaos Rune
+  +NOGRAVITY
+  Inventory.PickupMessage "$TXT_AMMOCHAOS1"
+  Inventory.Amount 10
+  Inventory.MaxAmount 150
+  Ammo.BackpackAmount 0
+  Ammo.BackpackMaxAmount 300
+  Inventory.Icon "GAMMB0"
+  States
+  {
+  Spawn:
+    GAMM AB 8 bright 
+    loop
+  }
+}
+
+ACTOR ChaosHefty : ChaosAmmo 16457
+{
+	//$Category Ammunition
+	//$Title Chaos Sigil
+  Inventory.PickupMessage "$TXT_AMMOCHAOS2"
+  Inventory.Amount 25
+  States
+  {
+  Spawn:
+    GAMM CDED 5 bright
+    loop
+  }
+}
+
+// ------------------- //
+// POLYMORPH WAND AMMO //
+// ------------------- //
+
+ACTOR AcornAmmo : Ammo 16458
+{
+	//$Category Ammunition
+	//$Title Petrified Acorn
+  Inventory.PickupMessage "$TXT_AMMOMORPH1"
+  Inventory.Amount 1
+  Inventory.MaxAmount 15
+  Ammo.BackpackAmount 3
+  Ammo.BackpackMaxAmount 30
+  Inventory.Icon "ACCRA0"
+  States
+  {
+  Spawn:
+    ACCR A -1
+    Stop
+  }
+}
+
+ACTOR AcornHefty : AcornAmmo 16459
+{
+	//$Category Ammunition
+	//$Title Petrified Acorn Pile
+  Inventory.PickupMessage "$TXT_AMMOMORPH2"
+  Inventory.Amount 3
+  States
+  {
+  Spawn:
+    ACCR B -1
+    Stop
+  }
+}
+

@@ -1,0 +1,103 @@
+actor Lizard 30126
+{
+	//$Category Monsters
+	//$Title Fell Beast
+    MONSTER 
+    +FLOORCLIP
+    seesound "monster/vulsit"
+    painsound "monster/vulpai"
+    deathsound "monster/vuldth"
+    activesound "monster/vulact"
+    meleesound "monster/vulhit"
+	DropItem "GoldWandAmmo", 84, 5
+    Obituary "$OB_FELLBEAST"
+    HitObituary "OB_FELLBEASTH"
+	Health 200
+	Scale .75
+    Radius 24
+    Height 48
+    Speed 8
+    PainChance 30
+    Mass 200
+    MeleeDamage 3
+    States
+    {
+    Spawn:
+        LIZR A 10 A_Look
+        Loop
+    See:
+        LIZR ABCD 3 A_Chase
+        Loop
+    Melee:
+        LIZR FG 2 A_FaceTarget
+        // LIZR H 0 A_Playsound ("monster/lizardattack")
+        LIZR H 4 A_MeleeAttack
+        LIZR H 0 A_Jump (192,1)
+        LIZR GF 4
+        Goto See
+	Missile:
+        LIZR E 6 A_FaceTarget
+        LIZR E 0 Bright A_PlaySound("monster/lizardidle")
+        LIZR E 0 BRIGHT A_CustomMissile ("LizardShot",32,0,0)
+        LIZR E 4
+        Goto See
+        Death:
+        LZXD A 4
+        LZXD B 4 A_Scream
+        LZXD C 4
+        LZXD D 4 A_Fall
+        LZXD EFGHIJ 4
+        LZXD K -1
+        Stop
+    Pain:
+        LIZR E 4
+        LIZR E 4 A_Pain
+        Goto See
+	Pain.HandOfTheWraith:
+	    LIZR E 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+	    LIZR E 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+	    LIZR E 4
+	    LIZR E 4 A_Pain
+	    Goto See
+    DEATH:
+        LIZR L 0 A_PlaySound("monster/vuldth")
+        LIZR L 4 
+        LIZR M 4 A_XScream 
+        LIZR N 4 A_NoBlocking 
+        LIZR OPQRS 4 
+        LIZR T -1
+    Ice:
+        LIZR U 5 A_FreezeDeath
+        LIZR U 1 A_FreezeDeathChunks
+        wait
+    Raise: 
+        CULT MLKJHI 5 
+        Goto See 
+    }
+}
+
+ACTOR LizardShot
+{
+   Radius 8
+   Height 16
+   Speed 16
+   FastSpeed 20
+   Damage 4
+   PoisonDamage 32
+   RENDERSTYLE ADD
+   Scale 1.25
+   ALPHA 0.75
+   PROJECTILE
+   +THRUGHOST
+   Seesound "poly/stmdr1"
+   DeathSound "weapons/bloodx"
+   States
+   {
+   Spawn:
+      FVUL AAABBB 1 Bright A_SpawnItemEx("BarbTrail",0,0,0,0,0,0,0,128,0)
+      loop
+   Death:
+      FVUL CDEF 4 Bright
+      stop
+   }
+}

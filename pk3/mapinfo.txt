@@ -1,0 +1,169 @@
+// Properties that all maps have, unless they specifically override them
+adddefaultmap 
+{
+	grinding_polyobj
+	fallingdamage
+	smoothlighting
+}
+
+map titlemap "Demonic Uprising" {}
+
+
+map H1M1 "Silverspring Docks"
+{
+	fade = "20 15 20"
+	music = MUS_E1M1
+	next = h1m2
+	Cluster = 101
+}
+
+map H1M2 "Crypt"
+{
+	fade = "10 15 20"
+	music = FANTAR
+	next = h1m3
+	Cluster = 101
+}
+
+map H1M3 "Elven Wood"
+{
+	fade = "15 25 5"
+	music = BARBICAN
+	next = h1m4
+	Cluster = 101
+}
+
+map H1M7 "Dead End"
+{
+	next = "H1M8"
+	sky1 = "SKYTOP03", 0
+	music = "D_SSLD1"
+	par = 600
+	monsterfallingdamage
+	smoothlighting
+	Cluster = 101
+}
+
+map H1M8 "City of Darkness"
+{
+	music = "D_BGATE1"
+	next = H1M9
+	Cluster = 101
+}
+
+map H2M1 "Chapel of the Seas"
+{
+	fade = "10 30 20"
+	music = UNDERHAL
+	next = h2m4
+	Cluster = 102
+}
+
+map H2M2 "Dark Water"
+{
+	music = MUS_E1M3
+	next = h2m3
+	Cluster = 102
+}
+
+map H2M3 "Aquatemple"
+{
+	fade = "10 20 50"
+	music = MUS_E3M3
+	next = h2m4
+	Cluster = 102
+}
+
+map H2M0 "The Labyrinth"
+{
+	music = MUS_E1M9
+	next = "Endtitle"
+	Cluster = 102
+}
+
+map H3M4 "Tabernacle of Magma"
+{
+	fade = "40 20 10"
+	music = MIRE
+	next = h3m5
+	Cluster = 103
+}
+
+map H3M5 "Inunduate Keep"
+{
+	fade = "40 20 10"
+	music = MIRE
+	next = h3m5
+	Cluster = 103
+}
+
+map H4M1 "Scorched Earth"
+{
+	fade = "50 20 10"
+	music = PANDEM
+	next = h4m2
+	Cluster = 104
+}
+
+map H4M4 "Fortress"
+{
+//	sky1 = PRI_OSKY, -0.2
+	music = "ORGAN"
+	next = h4m5
+}
+
+map H5M1 "Abyss"
+{
+//	fade = "10 50 10"
+	music = ROMERIC
+	next = h5m2
+	Cluster = 105
+}
+
+Map H5M7 "The Edge of the Universe"
+{
+	Next = "h5m8"
+//	fade = "50 25 15"
+	Sky1 = "SKY2", 0.001
+	Cluster = 105
+	Par = 450
+	Sucktime = 1
+	Music = "MUS_E3M2"
+}
+
+ClearEpisodes
+
+Episode H1M1
+{
+	Name = "Terrene of Sorrow"
+	Optional
+}
+Cluster 101 {}
+
+Episode H2M1
+{
+	Name = "Beneath the Altar"
+	Optional
+}
+Cluster 102 {}
+
+Episode H3M1
+{
+	Name = "Into the Furnace"
+	Optional
+}
+Cluster 103 {}
+
+Episode H4M1
+{
+	Name = "Hell's Wake"
+	Optional
+}
+Cluster 104 {}
+
+Episode H5M1
+{
+	Name = "The Astral Plane"
+	Optional
+}
+Cluster 105 {}

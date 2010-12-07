@@ -1,0 +1,17 @@
+Actor HPBishop : Bishop replaces Bishop 30155
+{
+	//$Category Monsters
+	//$Title Dark Bishop
+	Species "Wizard"
+	Health 180
+	DropItem "ArtiSpeedBoots", 4, 0	
+	DropItem "SkullRodAmmo", 84, 10
+	States
+	{
+	Raise:
+		BISH PONML 4 Bright
+		BISH KJI 5 Bright
+		BISH HG 6 Bright
+		Goto See
+	}
+}

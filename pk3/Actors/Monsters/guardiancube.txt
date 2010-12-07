@@ -1,0 +1,89 @@
+ACTOR Guardian 30102 
+{ 
+	//$Category Monsters
+	//$Title Guardian
+	Health 80 
+	Radius 16 
+	Height 32 
+	CameraHeight 17
+	Mass 150 
+	Speed 8 
+	PainChance 64 
+	Monster
+	+NOGRAVITY 
+	+FLOAT
+	+DONTFALL
+	+NOBLOOD
+	Species "IronLich"
+	SeeSound "monster/cubsit" 
+	PainSound "weapons/bounc1"
+	ActiveSound "monster/cubfly"
+	DeathSound "monster/cubdth"
+	Obituary "$OB_GUARDIAN"
+	DropItem "GoldWandAmmo" 120 5
+	States 
+	{ 
+	Spawn: 
+		CUBE A 10 A_Look 
+		Loop 
+	See: 
+		CUBE ABC 5 A_Chase
+		Loop 
+	Missile: 
+		CUBE D 5 BRIGHT A_FaceTarget 
+		CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
+		CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
+		CUBE D 4 BRIGHT A_FaceTarget 
+		CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
+		CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
+		CUBE D 4 BRIGHT A_FaceTarget  
+		CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
+		CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
+		CUBE D 4 BRIGHT A_FaceTarget
+		Goto See 
+	Pain: 
+		CUBE D 3 
+		CUBE D 3 A_Pain 
+		Goto See
+	Pain.HandOfTheWraith:
+	 	CUBE D 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+	 	CUBE D 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+	 	CUBE D 3
+	 	CUBE D 3 A_Pain
+	 	Goto See
+	Death:
+		CUBE E 0 BRIGHT A_NoBlocking
+		CUBE E 0 BRIGHT A_SetFloorClip
+		CUBE E 6 BRIGHT A_Scream 
+		CUBE FGHI 6 BRIGHT
+		Stop 
+	Inactive:
+		CUBE J 5
+		Loop
+	} 
+}
+
+ACTOR CubeShot
+{
+	Radius 5
+	Height 5
+	Speed 15
+	FastSpeed 20
+	Damage 1
+	DamageType fire
+	RenderStyle Add
+	Alpha 0.85
+	Projectile
+	SeeSound "weapons/firsfi"
+	DeathSound "weapons/maceex"
+	States
+	{
+	Spawn:
+		CBAL AB 3 Bright A_SpawnItem("CubePuff",0,0)
+		loop
+	Death:
+		CBAL CDEFG 3 Bright
+		stop
+	}
+}
+

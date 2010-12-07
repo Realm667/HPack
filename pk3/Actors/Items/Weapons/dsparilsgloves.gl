@@ -1,0 +1,169 @@
+// Gauntlets of D'Sparil
+
+object GauntletFX1
+{
+    frame GNFXA { light DISCIPLEBALL }
+    frame GNFXB { light DISCIPLEBALL }
+    frame GNFXC { light DISCIPLEBALL }
+
+    frame GNFXD { light DISCIPLEBALL    }
+    frame GNFXE { light DISCIPLEBALL    }
+    frame GNFXF { light DISCIPLEBALL_X1 }
+    frame GNFXG { light DISCIPLEBALL_X2 }
+}
+
+object GauntletAltFX1
+{
+    frame GNF1A { light DISCIPLEBALL }
+    frame GNF1B { light DISCIPLEBALL }
+    frame GNF1C { light DISCIPLEBALL }
+
+    frame GNF1D { light DISCIPLEBALL  }
+    frame GNF1E { light DISCIPLEBALL  }
+    frame GNF1F { light GAUNTLETBOOM1 }
+    frame GNF1G { light GAUNTLETBOOM1 }
+    frame GNF1H { light GAUNTLETBOOM1 }
+    frame GNF1I { light GAUNTLETBOOM2 }
+    frame GNF1J { light GAUNTLETBOOM2 }
+    frame GNF1K { light GAUNTLETBOOM2 }
+    frame GNF1L { light GAUNTLETBOOM3 }
+    frame GNF1M { light GAUNTLETBOOM3 }
+    frame GNF1N { light GAUNTLETBOOM4 }
+    frame GNF1O { light GAUNTLETBOOM4 }
+    frame GNF1P { light GAUNTLETBOOM5 }
+    frame GNF1Q { light GAUNTLETBOOM5 }
+    frame GNF1R { light GAUNTLETBOOM4 }
+    frame GNF1S { light GAUNTLETBOOM4 }
+    frame GNF1T { light GAUNTLETBOOM3 }
+    frame GNF1U { light GAUNTLETBOOM3 }
+    frame GNF1V { light GAUNTLETBOOM2 }
+    frame GNF1W { light GAUNTLETBOOM2 }
+    frame GNF1X { light GAUNTLETBOOM1 }
+    frame GNF1Y { light GAUNTLETBOOM1 }
+    frame GNF1Z { light GAUNTLETBOOM1 }
+}
+
+object GauntletFX4
+{
+    frame GNF2A { light GAUNTLETPOWBALL }
+    frame GNF2B { light GAUNTLETPOWBALL }
+    frame GNF2C { light GAUNTLETPOWBALL }
+
+    frame GNF2D { light GAUNTLETPOWBALL    }
+    frame GNF2E { light GAUNTLETPOWBALL    }
+    frame GNF2F { light GAUNTLETPOWBALL_X1 }
+    frame GNF2G { light GAUNTLETPOWBALL_X2 }
+}
+
+object GauntletAltFX2
+{
+    frame GNF3A { light GAUNTLETPOWBALL }
+    frame GNF3B { light GAUNTLETPOWBALL }
+    frame GNF3C { light GAUNTLETPOWBALL }
+
+    frame GNF3D { light GAUNTLETPOWBALL  }
+    frame GNF3E { light GAUNTLETPOWBALL  }
+    frame GNF3F { light GAUNTLETPOWBOOM1 }
+    frame GNF3G { light GAUNTLETPOWBOOM1 }
+    frame GNF3H { light GAUNTLETPOWBOOM2 }
+    frame GNF3I { light GAUNTLETPOWBOOM2 }
+    frame GNF3J { light GAUNTLETPOWBOOM3 }
+    frame GNF3K { light GAUNTLETPOWBOOM3 }
+    frame GNF3L { light GAUNTLETPOWBOOM4 }
+    frame GNF3M { light GAUNTLETPOWBOOM4 }
+    frame GNF3N { light GAUNTLETPOWBOOM5 }
+    frame GNF3O { light GAUNTLETPOWBOOM5 }
+    frame GNF3P { light GAUNTLETPOWBOOM4 }
+}
+
+flickerlight GAUNTLETBOOM1
+{
+    color 1.0 0.0 1.0
+    size 64
+    secondarySize 64
+    chance 0.3
+}
+flickerlight GAUNTLETBOOM2
+{
+    color 1.0 0.0 1.0
+    size 96
+    secondarySize 96
+    chance 0.3
+}
+flickerlight GAUNTLETBOOM3
+{
+    color 1.0 0.0 1.0
+    size 128
+    secondarySize 128
+    chance 0.3
+}
+flickerlight GAUNTLETBOOM4
+{
+    color 1.0 0.0 1.0
+    size 160
+    secondarySize 160
+    chance 0.3
+}
+flickerlight GAUNTLETBOOM5
+{
+    color 1.0 0.0 1.0
+    size 192
+    secondarySize 192
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBALL
+{
+    color 1.0 0.0 0.0
+    size 32
+    secondarySize 40
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBALL_X1
+{
+    color 0.7 0.0 0.0
+    size 16
+    secondarySize 24
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBALL_X2
+{
+    color 0.3 0.0 0.0
+    size 8
+    secondarySize 16
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBOOM1
+{
+    color 1.0 0.0 0.0
+    size 64
+    secondarySize 64
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBOOM2
+{
+    color 1.0 0.0 0.0
+    size 96
+    secondarySize 96
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBOOM3
+{
+    color 1.0 0.0 0.0
+    size 128
+    secondarySize 128
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBOOM4
+{
+    color 1.0 0.0 0.0
+    size 160
+    secondarySize 160
+    chance 0.3
+}
+flickerlight GAUNTLETPOWBOOM5
+{
+    color 1.0 0.0 0.0
+    size 192
+    secondarySize 192
+    chance 0.3
+}

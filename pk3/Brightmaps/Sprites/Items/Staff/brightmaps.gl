@@ -1,0 +1,6 @@
+// The powered-up frames do not have the same name as in vanilla Heretic.
+brightmap sprite STFPA0	{ map "Brightmaps/Sprites/Items/Staff/stffd0.png"	disablefullbright	}
+brightmap sprite STFPB0	{ map "Brightmaps/Sprites/Items/Staff/stffe0.png"	disablefullbright	}
+brightmap sprite STFPC0	{ map "Brightmaps/Sprites/Items/Staff/stfff0.png"	disablefullbright	}
+brightmap sprite STFPD0	{ map "Brightmaps/Sprites/Items/Staff/stffg0.png"	disablefullbright	}
+brightmap sprite STFPE0	{ map "Brightmaps/Sprites/Items/Staff/stffh0.png"	disablefullbright	}

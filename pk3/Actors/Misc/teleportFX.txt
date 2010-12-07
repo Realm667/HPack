@@ -1,0 +1,47 @@
+ACTOR HTeleportFog : TeleportFog replaces TeleportFog
+{
+  States
+  {
+  Raven:
+    TNT1 A 3 A_SpawnItemEx ("TCentreStar", 0, 0, 0, 0, 0, 0, 0, 160)
+    TNT1 AAAAAAAAAA 0 A_SpawnItemEx ("TGlitter", random (32, -32), random (32, -32), -20, 0, 0, random (1, 4), 0, 160)
+    TNT1 A 3
+    TNT1 AAAAAAAAAA 0 A_SpawnItemEx ("TGlitter", random (32, -32), random (32, -32), -20, 0, 0, random (1, 4), 0, 160)
+    TNT1 A 3
+    TNT1 AAAAAAAAAA 0 A_SpawnItemEx ("TGlitter", random (32, -32), random (32, -32), -20, 0, 0, random (1, 4), 0, 160)
+    TNT1 A 3
+    TNT1 AAAAAAAAAA 0 A_SpawnItemEx ("TGlitter", random (32, -32), random (32, -32), -20, 0, 0, random (1, 4), 0, 160)
+    TNT1 A 3
+    TNT1 AAAAAAAAAA 0 A_SpawnItemEx ("TGlitter", random (32, -32), random (32, -32), -20, 0, 0, random (1, 4), 0, 160)
+    Stop
+  }
+}
+
+ACTOR TCentreStar
+{
+  +NOINTERACTION
+  RenderStyle Add
+  Alpha 1
+  States
+  {
+  Spawn:
+     TELE ABCDEF 3 Bright
+  Fade:
+     TELE GH 3 Bright A_FadeOut (0.1)
+     Loop
+  }
+}
+
+ACTOR TGlitter
+{
+  +NOINTERACTION
+  RenderStyle Add
+  Alpha 1
+  States
+  {
+  Spawn:
+    TGLT FGHIJ 2 Bright A_FadeOut (0.075)
+    Loop
+  }
+}
+

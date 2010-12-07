@@ -1,0 +1,15 @@
+//Bridge
+pointlight TLGLLIGHT
+{
+	color 0.5 0.5 1.0
+	size 17
+}
+
+object BridgeBall
+{
+	frame TLGL
+	{
+		light TLGLLIGHT
+	}
+}
+

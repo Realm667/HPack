@@ -1,0 +1,22 @@
+// EMERALD AMULET
+Actor ArtiEmeraldAmulet : PowerupGiver 18794
+{
+	//$Category Artifacts
+	//$Title Emerald Amulet
+  +Inventory.InvBar
+  +Inventory.PickupFlash
+  +CountItem
+  +FloatBob
+  Inventory.DefMaxAmount
+  Inventory.PickupMessage "$TXT_ARTIEMERALDAMULET"
+  Tag "$TAG_ARTIEMERALDAMULET"
+  Powerup.Type "IronFeet"
+  Powerup.Duration -60
+  Inventory.Icon "EMAMB0"
+  States
+  {
+  Spawn:
+    EMAM A -1 Bright Light(EMERALDAMULET)
+    Stop
+  }
+}

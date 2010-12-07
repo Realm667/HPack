@@ -1,0 +1,53 @@
+Pointlight RedShadowBall1
+{
+  Color 1.0 0.0 0.0
+  Size 42
+}
+
+Pointlight RedShadowBall2
+{
+  Color 1.0 0.0 0.0
+  Size 42
+}
+
+Pointlight RedShadowBall3
+{
+  Color 1.0 0.0 0.0
+  Size 40
+}
+
+Pointlight RedShadowBall4
+{
+  Color 1.2 0.0 0.0
+  Size 42
+}
+
+Pointlight RedShadowBall5
+{
+  Color 0.8 0.0 0.0
+  Size 38
+}
+
+Pointlight RedShadowBall6
+{
+  Color 0.6 0.0 0.0
+  Size 36
+}
+
+Pointlight RedShadowBall7
+{
+  Color 0.4 0.0 0.0
+  Size 24
+}
+
+
+object RedShadowBall
+{
+  frame SHAXA { Light RedShadowBall1 }
+  frame SHAXB { Light RedShadowBall2 }
+  frame SHAXC { Light RedShadowBall3 }
+  frame SHAXI { Light RedShadowBall4 }
+  frame SHAXJ { Light RedShadowBall5 }
+  frame SHAXK { Light RedShadowBall6 }
+  frame SHAXL { Light RedShadowBall7 }
+}

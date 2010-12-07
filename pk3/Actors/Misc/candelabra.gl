@@ -1,0 +1,12 @@
+// Candelabra
+pointlight CANDELABRA
+{
+    color 1.0 1.0 0.0
+    size 48
+    offset 0 52 0
+}
+
+object HCandelabra
+{
+    frame CBRA { light CANDELABRA }
+}

@@ -1,0 +1,1101 @@
+ACTOR HPBatSpawner : RandomSpawner 16123
+{
+	//$Category Decoration
+	//$Title Bat Spawner
+	//$Sprite ABATB1
+	DropItem "BatSpawner"
+}
+
+ACTOR HPBrassTorch : RandomSpawner 16082
+{
+	//$Category Lights
+	//$Title Brass Torch
+	//$Sprite BRTRB0
+	DropItem "BrassTorch"
+}
+
+ACTOR HPFireThing : RandomSpawner 16081
+{
+	//$Category Lights
+	//$Title Demon Brazier
+	//$Sprite FSKLA0
+	DropItem "FireThing"
+}
+
+ACTOR HPLeafSpawner : RandomSpawner 16119
+{
+	//$Category Decoration
+	//$Title Leaf Spawner
+	//$Sprite LEF1G0
+	DropItem "LeafSpawner"
+}
+
+ACTOR HPTableStuff10 : RandomSpawner 16100
+{
+	//$Category Decoration
+	//$Title Table Clutter (Meat Cleaver)
+	//$Sprite TST0A0
+	DropItem "TableShit10"
+}
+
+ACTOR HPTableStuff1 : RandomSpawner 16120
+{
+	//$Category Decoration
+	//$Title Table Clutter (Large Mug)
+	//$Sprite TST1A0
+	DropItem "TableShit1"
+}
+
+ACTOR HPTableStuff2 : RandomSpawner 16092
+{
+	//$Category Decoration
+	//$Title Table Clutter (Mug)
+	//$Sprite TST2A0
+	DropItem "TableShit2"
+}
+
+ACTOR HPTableStuff3 : RandomSpawner 16093
+{
+	//$Category Decoration
+	//$Title Table Clutter (Cobwebbed Candle)
+	//$Sprite TST3A0
+	DropItem "TableShit3"
+}
+
+ACTOR HPTableStuff4 : RandomSpawner 16094
+{
+	//$Category Decoration
+	//$Title Table Clutter (Unlit Candle)
+	//$Sprite TST4A0
+	DropItem "TableShit4"
+}
+
+ACTOR HPTableStuff5 : RandomSpawner 16095
+{
+	//$Category Decoration
+	//$Title Table Clutter (Tall Unlit Candle)
+	//$Sprite TST5A0
+	DropItem "TableShit5"
+}
+
+ACTOR HPTableStuff6 : RandomSpawner 16096
+{
+	//$Category Decoration
+	//$Title Table Clutter (Spilled Goblet)
+	//$Sprite TST6A0
+	DropItem "TableShit6"
+}
+
+ACTOR HPTableStuff7 : RandomSpawner 16097
+{
+	//$Category Decoration
+	//$Title Table Clutter (Goblet)
+	//$Sprite TST7A0
+	DropItem "TableShit7"
+}
+
+ACTOR HPTableStuff8 : RandomSpawner 16098
+{
+	//$Category Decoration
+	//$Title Table Clutter (Short Goblet)
+	//$Sprite TST8A0
+	DropItem "TableShit8"
+}
+
+ACTOR HPTableStuff9 : RandomSpawner 16099
+{
+	//$Category Decoration
+	//$Title Table Clutter (Silver Goblet)
+	//$Sprite TST9A0
+	DropItem "TableShit9"
+}
+
+ACTOR HPTeleSmoke : RandomSpawner 16101
+{
+	//$Category Teleports
+	//$Title Teleporter Smoke
+	//$Sprite TSMKA0
+	DropItem "TeleSmoke"
+}
+
+ACTOR HPTreeDestructible : RandomSpawner 16103
+{
+	//$Category Obstacles
+	//$Title Tree (Destructible)
+	//$Sprite TRDTA0
+	DropItem "TreeDestructible"
+}
+
+ACTOR HPZBannerTattered : RandomSpawner 16056
+{
+	//$Category Obstacles
+	//$Title Banner (Battle Rags)
+	//$Sprite BNR1A0
+	DropItem "ZBannerTattered"
+}
+
+ACTOR HPZBarrel : RandomSpawner 16079
+{
+	//$Category Obstacles
+	//$Title Barrel (Hexen)
+	//$Sprite ZBARA0
+	DropItem "ZBarrel"
+}
+
+ACTOR HPZBlueCandle : RandomSpawner 16083
+{
+	//$Category Lights
+	//$Title Candle (Blue)
+	//$Sprite BCANA0
+	DropItem "ZBlueCandle"
+}
+
+ACTOR HPZBucket : RandomSpawner 16080
+{
+	+SPAWNCEILING
+	//$Category Decoration
+	//$Title Bucket
+	//$Sprite BCKTA0
+	DropItem "ZBucket"
+}
+
+ACTOR HPZCandle : RandomSpawner 16078
+{
+	//$Category Lights
+	//$Title Candles
+	//$Sprite CNDLA0
+	DropItem "ZCandle"
+}
+
+ACTOR HPZCauldron : RandomSpawner 16113
+{
+	//$Category Lights
+	//$Title Cauldron (Lit)
+	//$Sprite CDRNG0
+	DropItem "ZCauldron"
+}
+
+ACTOR HPZCauldronUnlit : RandomSpawner 16114
+{
+	//$Category Lights
+	//$Title Cauldron (Unlit)
+	//$Sprite CDRNA0
+	DropItem "ZCauldronUnlit"
+}
+
+ACTOR HPZChainBit32 : ZChainBit32 16085
+{
+	//$Category Decoration
+	//$Title Chain (32-tall)
+	+FORCEYBILLBOARD
+}
+
+ACTOR HPZChainBit64 : ZChainBit64 16086
+{
+	//$Category Decoration
+	//$Title Chain (64-tall)
+	+FORCEYBILLBOARD
+}
+
+ACTOR HPZChainEndHeart : ZChainEndHeart 16087
+{
+	//$Category Decoration
+	//$Title Chain (Heart on Hook)
+	+FORCEYBILLBOARD
+}
+
+ACTOR HPZChainEndHook1 : ZChainEndHook1 16088
+{
+	//$Category Decoration
+	//$Title Chain (Hook 1)
+	+FORCEYBILLBOARD
+}
+
+ACTOR HPZChainEndHook2 : ZChainEndHook2 16089
+{
+	//$Category Decoration
+	//$Title Chain (Hook 2)
+	+FORCEYBILLBOARD
+}
+
+ACTOR HPZChainEndSkull : ZChainEndSkull 16091
+{
+	//$Category Decoration
+	//$Title Chain (Skull on Hook)
+	+FORCEYBILLBOARD
+}
+
+ACTOR HPZChainEndSpike : ZChainEndSpike 16090
+{
+	//$Category Decoration
+	//$Title Chain (Spiked Ball)
+	+FORCEYBILLBOARD
+}
+
+ACTOR HPZChandelier : RandomSpawner 16005
+{
+	//$Category Lights
+	//$Title Chandelier (Hexen, Lit)
+	//$Sprite CDLRA0
+	+SPAWNCEILING
+	DropItem "ZChandelier"
+}
+
+ACTOR HPZChandelierUnlit : RandomSpawner 16006
+{
+	//$Category Lights
+	//$Title Chandelier (Hexen, Unlit)
+	//$Sprite CDLRD0
+	+SPAWNCEILING
+	DropItem "ZChandelierUnlit"
+}
+
+ACTOR HPZCorpseHanging : RandomSpawner 16042
+{
+	//$Category Obstacles
+	//$Title Corpse (Hanging)
+	//$Sprite CPS3A0
+	+SPAWNCEILING
+	DropItem "ZCorpseHanging"
+}
+
+ACTOR HPZCorpseKabob : RandomSpawner 16033
+{
+	//$Category Obstacles
+	//$Title Corpse (Impaled)
+	//$Sprite CPS1A0
+	+SPAWNCEILING
+	DropItem "ZCorpseKabob"
+}
+
+ACTOR HPZCorpseLynched : RandomSpawner 16077
+{
+	//$Category Obstacles
+	//$Title Corpse (Lynched)
+	//$Sprite CPS4A0
+	+SPAWNCEILING
+	DropItem "ZCorpseLynched"
+}
+
+ACTOR HPZCorpseLynchedNoHeart : RandomSpawner 16121
+{
+	//$Category Obstacles
+	//$Title Corpse (Lynched, No Heart)
+	//$Sprite CPS5A0
+	+SPAWNCEILING
+	DropItem "ZCorpseLynchedNoHeart"
+}
+ACTOR HPZCorpseSleeping : RandomSpawner 16034
+{
+	//$Category Obstacles
+	//$Title Corpse (Sleeping)
+	//$Sprite CPS2A0
+	DropItem "ZCorpseSleeping"
+}
+
+ACTOR HPZFireBull : RandomSpawner 16110
+{
+	//$Category Lights
+	//$Title Maulotaur Brazier (Lit)
+	//$Sprite FBULB0
+	DropItem "ZFireBull"
+}
+
+ACTOR HPZFireBullUnlit : RandomSpawner 16111
+{
+	//$Category Lights
+	//$Title Maulotaur Brazier (Unlit)
+	//$Sprite FBULH0
+	DropItem "ZFireBullUnlit"
+}
+
+ACTOR HPGemPedestal : RandomSpawner 16102
+{
+	//$Category Obstacles
+	//$Title Pedestal for Gem
+	//$Sprite GMPDA0
+	DropItem "ZGemPedestal"
+}
+
+ACTOR HPZIronMaiden : RandomSpawner 16084
+{
+	//$Category Obstacles
+	//$Title Iron Maiden
+	//$Sprite IRONA0
+	DropItem "ZIronMaiden"
+}
+
+ACTOR HPZLog : RandomSpawner 16061
+{
+	//$Category Obstacles
+	//$Title Log
+	//$Sprite LOGGA0
+	DropItem "ZLog"
+}
+
+ACTOR HPZMossCeiling1 : RandomSpawner 16030
+{
+	//$Category Decoration
+	//$Title Moss (Hexen, 1)
+	//$Sprite MSS1A0
+	+SPAWNCEILING
+	DropItem "ZMossCeiling1"
+}
+
+ACTOR HPMossCeiling2 : RandomSpawner 16031
+{
+	//$Category Decoration
+	//$Title Moss (Hexen, 2)
+	//$Sprite MSS2A0
+	+SPAWNCEILING
+	DropItem "ZMossCeiling2"
+}
+
+ACTOR HPZPoisonShroom : RandomSpawner 16122
+{
+	//$Category Decoration
+	//$Title Mushroom (Poison Cap)
+	//$Sprite SHRMB0
+	DropItem "ZPoisonShroom"
+}
+
+ACTOR HPZRock1 : RandomSpawner 16001
+{
+	//$Category Decoration
+	//$Title Rock (1)
+	//$Sprite RCK1A0
+	DropItem "ZRock1"
+}
+
+ACTOR HPZRock2 : RandomSpawner 16002
+{
+	//$Category Decoration
+	//$Title Rock (2)
+	//$Sprite RCK2A0
+	DropItem "ZRock2"
+}
+
+ACTOR HPZRock3 : RandomSpawner 16003
+{
+	//$Category Decoration
+	//$Title Rock (3)
+	//$Sprite RCK3A0
+	DropItem "ZRock3"
+}
+
+ACTOR HPZRock4 : RandomSpawner 16004
+{
+	//$Category Decoration
+	//$Title Rock (4)
+	//$Sprite RCK4A0
+	DropItem "ZRock4"
+}
+
+ACTOR HPZRockBlack : RandomSpawner 16072
+{
+	//$Category Obstacles
+	//$Title Rock (Black)
+	//$Sprite RKBKA0
+	DropItem "ZRockBlack"
+}
+
+ACTOR HPZRockBrown1 : RandomSpawner 16070
+{
+	//$Category Obstacles
+	//$Title Rock (Brown, Large)
+	//$Sprite RKBLA0
+	DropItem "ZRockBrown1"
+}
+
+ACTOR HPZRockBrown2 : RandomSpawner 16071
+{
+	//$Category Obstacles
+	//$Title Rock (Brown, Small)
+	//$Sprite RKBSA0
+	DropItem "ZRockBrown2"
+}
+
+ACTOR HPZRubble1 : RandomSpawner 16073
+{
+	//$Category Decoration
+	//$Title Rubble (1)
+	//$Sprite RBL1A0
+	DropItem "ZRubble1"
+}
+
+ACTOR HPZRubble2 : RandomSpawner 16074
+{
+	//$Category Decoration
+	//$Title Rubble (2)
+	//$Sprite RBL2A0
+	DropItem "ZRubble2"
+}
+
+ACTOR HPZRubble3 : RandomSpawner 16075
+{
+	//$Category Decoration
+	//$Title Rubble (3)
+	//$Sprite RBL3A0
+	DropItem "ZRubble3"
+}
+
+ACTOR HPZShroomLarge1 : RandomSpawner 16015
+{
+	//$Category Decoration
+	//$Title Mushroom (Large, 1)
+	//$Sprite MSH1A0
+	DropItem "ZShroomLarge1"
+}
+
+ACTOR HPZShroomLarge2 : RandomSpawner 16016
+{
+	//$Category Decoration
+	//$Title Mushroom (Large, 2)
+	//$Sprite MSH2A0
+	DropItem "ZShroomLarge2"
+}
+
+ACTOR HPZShroomLarge3 : RandomSpawner 16017
+{
+	//$Category Decoration
+	//$Title Mushroom (Large, 3)
+	//$Sprite MSH3A0
+	DropItem "ZShroomLarge3"
+}
+
+ACTOR HPZShroomSmall1 : RandomSpawner 16018
+{
+	//$Category Decoration
+	//$Title Mushroom (Small, 1)
+	//$Sprite MSH4A0
+	DropItem "ZShroomSmall1"
+}
+
+ACTOR HPZShroomSmall2 : RandomSpawner 16019
+{
+	//$Category Decoration
+	//$Title Mushroom (Small, 2)
+	//$Sprite MSH5A0
+	DropItem "ZShroomSmall2"
+}
+
+ACTOR HPZShroomSmall3 : RandomSpawner 16020
+{
+	//$Category Decoration
+	//$Title Mushroom (Small, 3)
+	//$Sprite MSH6A0
+	DropItem "ZShroomSmall3"
+}
+
+ACTOR HPZShroomSmall4 : RandomSpawner 16021
+{
+	//$Category Decoration
+	//$Title Mushroom (Small, 4)
+	//$Sprite MSH7A0
+	DropItem "ZShroomSmall4"
+}
+
+ACTOR HPZShroomSmall5 : RandomSpawner 16022
+{
+	//$Category Decoration
+	//$Title Mushroom (Small, 5)
+	//$Sprite MSH8A0
+	DropItem "ZShroomSmall5"
+}
+
+ACTOR HPZShrub1 : ZShrub1 16108
+{
+	//$Category Obstacles
+	//$Title Shrub (1)
+	-SHOOTABLE
+	+VULNERABLE
+}
+
+ACTOR HPZShrub2 : ZShrub2 16109
+{
+	//$Category Obstacles
+	//$Title Shrub (2)
+	-SHOOTABLE
+	+VULNERABLE
+}
+
+ACTOR HPZStalactiteIceLarge : RandomSpawner 16062
+{
+	//$Category Obstacles
+	//$Title Stalactite (Ice, Large)
+	//$Sprite ICT1A0
+	+SPAWNCEILING
+	DropItem "ZStalactiteIceLarge"
+}
+
+ACTOR HPZStalactiteIceMedium : RandomSpawner 16063
+{
+	//$Category Obstacles
+	//$Title Stalactite (Ice, Medium)
+	//$Sprite ICT2A0
+	+SPAWNCEILING
+	DropItem "ZStalactiteIceMedium"
+}
+
+ACTOR HPZStalactiteIceSmall : RandomSpawner 16064
+{
+	//$Category Obstacles
+	//$Title Stalactite (Ice, Small)
+	//$Sprite ICT3A0
+	+SPAWNCEILING
+	DropItem "ZStalactiteIceSmall"
+}
+
+ACTOR HPZStalactiteIceTiny : RandomSpawner 16065
+{
+	//$Category Obstacles
+	//$Title Stalactite (Ice, Tiny)
+	//$Sprite ICT4A0
+	+SPAWNCEILING
+	DropItem "ZStalactiteIceTiny"
+}
+
+ACTOR HPZStalactiteLarge : RandomSpawner 16027
+{
+	//$Category Obstacles
+	//$Title Stalactite (Rock, Large)
+	//$Sprite SLC1A0
+	+SPAWNCEILING
+	DropItem "ZStalactiteLarge"
+}
+
+ACTOR HPZStalactiteMedium : RandomSpawner 16028
+{
+	//$Category Obstacles
+	//$Title Stalactite (Rock, Medium)
+	//$Sprite SLC2A0
+	+SPAWNCEILING
+	DropItem "ZStalactiteMedium"
+}
+
+ACTOR HPZStalactiteSmall : RandomSpawner 16029
+{
+	//$Category Obstacles
+	//$Title Stalactite (Rock, Small)
+	//$Sprite SLC3A0
+	+SPAWNCEILING
+	DropItem "ZStalactiteSmall"
+}
+
+ACTOR HPZStalagmiteIceLarge : RandomSpawner 16066
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Ice, Large)
+	//$Sprite ICM1A0
+	DropItem "ZStalagmiteIceLarge"
+}
+
+ACTOR HPZStalagmiteIceMedium : RandomSpawner 16067
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Ice, Medium)
+	//$Sprite ICM2A0
+	DropItem "ZStalagmiteIceMedium"
+}
+
+ACTOR HPZStalagmiteIceSmall : RandomSpawner 16068
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Ice, Small)
+	//$Sprite ICM3A0
+	DropItem "ZStalagmiteIceSmall"
+}
+
+ACTOR HPZStalagmiteIceTiny : RandomSpawner 16069
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Ice, Tiny)
+	//$Sprite ICM4A0
+	DropItem "ZStalagmiteIceTiny"
+}
+
+ACTOR HPZStalagmiteLarge : RandomSpawner 16024
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Rock, Large)
+	//$Sprite SGM1A0
+	DropItem "ZStalagmiteLarge"
+}
+
+ACTOR HPZStalagmiteMedium : RandomSpawner 16025
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Rock, Medium)
+	//$Sprite SGM2A0
+	DropItem "ZStalagmiteMedium"
+}
+
+ACTOR HPZStalagmitePillar : RandomSpawner 16023
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Rock, Pillar)
+	//$Sprite SGMPA0
+	DropItem "ZStalagmitePillar"
+}
+
+ACTOR HPZStalagmiteSmall : RandomSpawner 16026
+{
+	//$Category Obstacles
+	//$Title Stalagmite (Rock, Small)
+	//$Sprite SGM3A0
+	DropItem "ZStalagmiteSmall"
+}
+
+ACTOR HPZStatueGargoyleBlueShort : RandomSpawner 16046
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Ice, Short)
+	//$Sprite STT5A0
+	DropItem "ZStatueGargoyleBlueShort"
+}
+
+ACTOR HPZStatueGargoyleBlueTall : RandomSpawner 16044
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Ice, Tall)
+	//$Sprite STT3A0
+	DropItem "ZStatueGargoyleBlueTall"
+}
+
+ACTOR HPZStatueGargoyleDarkRedShort : RandomSpawner 16052
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Dark Fire, Short)
+	//$Sprite GAR6A0
+	DropItem "ZStatueGargoyleDarkRedShort"
+}
+
+ACTOR HPZStatueGargoyleDarkRedTall : RandomSpawner 16048
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Dark Fire, Tall)
+	//$Sprite GAR2A0
+	DropItem "ZStatueGargoyleDarkRedTall"
+}
+
+ACTOR HPZStatueGargoyleGreenShort : RandomSpawner 16045
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Stone, Short)
+	//$Sprite STT4A0
+	DropItem "ZStatueGargoyleGreenShort"
+}
+
+ACTOR HPZStatueGargoyleGreenTall : RandomSpawner 16043
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Stone, Tall)
+	//$Sprite STT2A0
+	DropItem "ZStatueGargoyleGreenTall"
+}
+
+ACTOR HPZStatueGargoyleRedShort : RandomSpawner 16053
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Lava, Short)
+	//$Sprite GAR7A0
+	DropItem "ZStatueGargoyleRedShort"
+}
+
+ACTOR HPZStatueGargoyleRedTall : RandomSpawner 16049
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Lava, Tall)
+	//$Sprite GAR3A0
+	DropItem "ZStatueGargoyleRedTall"
+}
+
+ACTOR HPZStatueGargoyleRustShort : RandomSpawner 16055
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Steel, Short)
+	//$Sprite GAR9A0
+	DropItem "ZStatueGargoyleRustShort"
+}
+
+ACTOR HPZStatueGargoyleRustTall : RandomSpawner 16051
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Steel, Tall)
+	//$Sprite GAR5A0
+	DropItem "ZStatueGargoyleRustTall"
+}
+
+ACTOR HPZStatueGargoyleStripeTall : RandomSpawner 16047
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Rusty, Tall)
+	//$Sprite GAR1A0
+	DropItem "ZStatueGargoyleStripeTall"
+}
+
+ACTOR HPZStatueGargoyleTanShort : RandomSpawner 16054
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Bronze, Short)
+	//$Sprite GAR8A0
+	DropItem "ZStatueGargoyleTanShort"
+}
+
+ACTOR HPZStatueGargoyleTanTall : RandomSpawner 16050
+{
+	//$Category Obstacles
+	//$Title Statue (Gargoyle, Bronze, Tall)
+	//$Sprite GAR4A0
+	DropItem "ZStatueGargoyleTanTall"
+}
+
+ACTOR HPZStumpBare : RandomSpawner 16012
+{
+	//$Category Obstacles
+	//$Title Tree Stump (Bare)
+	//$Sprite STM2A0
+	DropItem "ZStumpBare"
+}
+
+ACTOR HPZStumpBurned : RandomSpawner 16011
+{
+	//$Category Obstacles
+	//$Title Tree Stump (Burned)
+	//$Sprite STM1A0
+	DropItem "ZStumpBurned"
+}
+
+ACTOR HPZStumpSwamp1 : RandomSpawner 16013
+{
+	//$Category Obstacles
+	//$Title Tree Stump (Swamp 1)
+	//$Sprite STM3A0
+	DropItem "ZStumpSwamp1"
+}
+
+ACTOR HPZStumpSwamp2 : RandomSpawner 16014
+{
+	//$Category Obstacles
+	//$Title Tree Stump (Swamp 2)
+	//$Sprite STM4A0
+	DropItem "ZStumpSwamp2"
+}
+
+ACTOR HPZSwampVine : RandomSpawner 16032
+{
+	//$Category Obstacles
+	//$Title Tree (Swamp, Dead)
+	//$Sprite SWMVA0
+	DropItem "ZSwampVine"
+}
+
+ACTOR HPZTombstoneBigCross : RandomSpawner 16037
+{
+	//$Category Obstacles
+	//$Title Tombstone (Big Cross)
+	//$Sprite TMS3A0
+	DropItem "ZTombStoneBigCross"
+}
+
+ACTOR HPZTombstoneBrianP : RandomSpawner 16041
+{
+	//$Category Obstacles
+	//$Title Tombstone (Brian Pelletier)
+	//$Sprite TMS7A0
+	DropItem "ZTombstoneBrianP"
+}
+
+ACTOR HPZTombstoneBrianR : RandomSpawner 16038
+{
+	//$Category Obstacles
+	//$Title Tombstone (Brian Raffel)
+	//$Sprite TMS4A0
+	DropItem "ZTombstoneBrianR"
+}
+
+ACTOR HPZTombstoneCrossCircle : RandomSpawner 16039
+{
+	//$Category Obstacles
+	//$Title Tombstone (Cross in Circle)
+	//$Sprite TMS5A0
+	DropItem "ZTombstoneCrossCircle"
+}
+
+ACTOR HPZTombstoneRIP : RandomSpawner 16035
+{
+	//$Category Obstacles
+	//$Title Tombstone (RIP)
+	//$Sprite TMS1A0
+	DropItem "ZTombstoneRIP"
+}
+
+ACTOR HPZTombstoneShane : RandomSpawner 16036
+{
+	//$Category Obstacles
+	//$Title Tombstone (Shane Gurno)
+	//$Sprite TMS2A0
+	DropItem "ZTombstoneShane"
+}
+
+ACTOR HPZTombstoneSmallCross : RandomSpawner 16040
+{
+	//$Category Obstacles
+	//$Title Tombstone (Small Cross)
+	//$Sprite TMS6A0
+	DropItem "ZTombstoneSmallCross"
+}
+
+ACTOR HPZTree : RandomSpawner 16008
+{
+	//$Category Obstacles
+	//$Title Tree (Hexen)
+	//$Sprite ZTREA0
+	DropItem "ZTree"
+}
+
+ACTOR HPZTreeGnarled1 : RandomSpawner 16059
+{
+	//$Category Obstacles
+	//$Title Tree (Gnarled 1)
+	//$Sprite TRE6A0
+	DropItem "ZTreeGnarled1"
+}
+
+ACTOR HPZTreeGnarled2 : RandomSpawner 16060
+{
+	//$Category Obstacles
+	//$Title Tree (Gnarled 2)
+	//$Sprite TRE7A0
+	DropItem "ZTreeGnarled2"
+}
+
+ACTOR HPZTreeLarge1 : RandomSpawner 16057
+{
+	//$Category Obstacles
+	//$Title Tree (Large 1)
+	//$Sprite TRE4A0
+	DropItem "ZTreeLarge1"
+}
+
+ACTOR HPZTreeLarge2 : RandomSpawner 16058
+{
+	//$Category Obstacles
+	//$Title Tree (Large 2)
+	//$Sprite TRE5A0
+	DropItem "ZTreeLarge2"
+}
+
+ACTOR HPZTreeSwamp120 : RandomSpawner 16010
+{
+	//$Category Obstacles
+	//$Title Tree (Swamp, 120-tall)
+	//$Sprite TRE3A0
+	DropItem "ZTreeSwamp120"
+}
+
+ACTOR HPZTreeSwamp150 : RandomSpawner 16009
+{
+	//$Category Obstacles
+	//$Title Tree (Swamp, 150-tall)
+	//$Sprite TRESA0
+	DropItem "ZTreeSwamp150"
+}
+
+ACTOR HPZTwinedTorch : RandomSpawner 16104
+{
+	//$Category Lights
+	//$Title Twined Torch (Lit)
+	//$Sprite TWTRA0
+	DropItem "ZTwinedTorch"
+}
+
+ACTOR HPZTwinedTorchUnlit : RandomSpawner 16105
+{
+	//$Category Lights
+	//$Title Twined Torch (Unlit)
+	//$Sprite TWTRI0
+	DropItem "ZTwinedTorchUnlit"
+}
+
+ACTOR HPZVasePillar : RandomSpawner 16076
+{
+	//$Category Obstacles
+	//$Title Pillar With Vase
+	//$Sprite VASEA0
+	DropItem "ZVasePillar"
+}
+
+ACTOR HPZWallTorch : RandomSpawner 16106
+{
+	//$Category Lights
+	//$Title Wall Torch (Hexen, Lit)
+	//$Sprite WLTRB0
+	DropItem "ZWallTorch"
+}
+
+ACTOR HPZWallTorchUnlit : RandomSpawner 16107
+{
+	//$Category Lights
+	//$Title Wall Torch (Hexen, Unlit)
+	//$Sprite WLTRI0
+	DropItem "ZWallTorchUnlit"
+}
+
+ACTOR HPZWingedStatue : RandomSpawner 16000
+{
+	//$Category Obstacles
+	//$Title Statue (Winged Demon)
+	//$Sprite STTWA0
+	DropItem "ZWingedStatue"
+}
+
+ACTOR HPZXmasTree : ZXmasTree 16112
+{
+	//$Category Obstacles
+	//$Title Tree (Evergreen)
+	-SHOOTABLE
+	+VULNERABLE
+}
+
+
+
+ACTOR HRandomFogSpawn 16115
+{
+	//$Category Decoration
+	//$Title Fog Spawner
+	//$Sprite FOGMA0
+	Game Heretic
+	+DONTSPLASH
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 100 A_Jump(32, 1)
+		Loop
+		TNT1 A 0 A_Jump(128, 2, 3)
+		TNT1 A 0 A_SpawnItemEx("HBigFog", 0, 0, 0, 0, 0, 0, 0, 128)
+		Loop
+		TNT1 A 0 A_SpawnItemEx("HMediumFog", 0, 0, 0, 0, 0, 0, 0, 128)
+		Loop
+		TNT1 A 0 A_SpawnItemEx("HSmallFog", 0, 0, 0, 0, 0, 0, 0, 128)
+		Loop
+	}
+}
+
+ACTOR HBigFogSpawn 16116
+{
+	//$Category Decoration
+	//$Title Fog Spawner (Large)
+	//$Sprite FOGLA0
+	Game Heretic
+	+DONTSPLASH
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 100 A_Jump(32, 1)
+		Loop
+		TNT1 A 0 A_SpawnItemEx("HBigFog", 0, 0, 0, 0, 0, 0, 0, 128)
+		Loop
+	}
+}
+
+ACTOR HMediumFogSpawn 16117
+{
+	//$Category Decoration
+	//$Title Fog Spawner (Medium)
+	//$Sprite FOGMA0
+	Game Heretic
+	+DONTSPLASH
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 100 A_Jump(32, 1)
+		Loop
+		TNT1 A 0 A_SpawnItemEx("HMediumFog", 0, 0, 0, 0, 0, 0, 0, 128)
+		Loop
+	}
+}
+
+ACTOR HSmallFogSpawn 16118
+{
+	//$Category Decoration
+	//$Title Fog Spawner (Small)
+	//$Sprite FOGSA0
+	Game Heretic
+	+DONTSPLASH
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 100 A_Jump(32, 1)
+		Loop
+		TNT1 A 0 A_SpawnItemEx("HSmallFog", 0, 0, 0, 0, 0, 0, 0, 128)
+		Loop
+	}
+}
+
+ACTOR HBigFog
+{
+	renderstyle translucent
+	alpha 0.7
+	speed 4
+	radius 30
+	height 10
+	+NOBLOCKMAP
+	+DONTSPLASH
+	+NOTELEPORT
+	+NONSHOOTABLE
+	+CANTLEAVEFLOORPIC
+	States
+	{
+	Spawn:
+		FOGL AAAAAAAABBBBBBBBCCCCCCCCDDDDDDDEEEEEEE 3 A_Wander
+		FOGL A 0 A_FadeOut(0.04)
+		Loop
+	}
+}
+
+ACTOR HMediumFog
+{
+	renderstyle translucent
+	alpha 0.7
+	speed 4
+	radius 20
+	height 10
+	+NOBLOCKMAP
+	+DONTSPLASH
+	+NOTELEPORT
+	+NONSHOOTABLE
+	+CANTLEAVEFLOORPIC
+	States
+	{
+	Spawn:
+		FOGM AAAAAAAABBBBBBBBCCCCCCCCDDDDDDDEEEEEEE 3 A_Wander
+		FOGM A 0 A_FadeOut(0.04)
+		Loop
+	}
+}
+
+ACTOR HSmallFog
+{
+	renderstyle translucent
+	alpha 0.7
+	speed 4
+	radius 12
+	height 10
+	+NOBLOCKMAP
+	+DONTSPLASH
+	+NOTELEPORT
+	+NONSHOOTABLE
+	+CANTLEAVEFLOORPIC
+	States
+	{
+	Spawn:
+		FOGS AAAAAAAABBBBBBBBCCCCCCCCDDDDDDDEEEEEEE 3 A_Wander
+		FOGS A 0 A_FadeOut(0.04)
+		Loop
+	}
+}

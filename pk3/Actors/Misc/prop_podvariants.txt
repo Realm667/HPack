@@ -1,0 +1,380 @@
+/* NOTE: Some actor declarations have "old states" and "new states".
+It is pretty easy to toggle them on and off. Just add or delete a slash
+to the line with "// blah states" in this way:
+//* // Blah states -> /* Blah states      This comments out the states
+/* // Blah states -> //* Blah states      This uncomments the states
+
+Now, why bother with that? Because of the sprites. The new states are
+meant to be used with Keksdose's new sprites. The archive contains the
+old sprites. The thing is that these new sprites are not finished, so
+I am not making a decision here.
+*/
+
+
+// No pod should be damaged by a poison cloud...
+actor BlastPod : Pod replaces Pod { DamageFactor "Poison", 0 }
+
+actor IcePod : BlastPod 20009
+{
+	//$Category Obstacles
+	//$Title Pod (Ice Variant)
+	DamageType Ice
+	DamageFactor "Fire", 15.0
+   // Most definitely _not_ "DamageFactor Ice, 0" or they
+   // never have chain reactions like self-respecting pods should!
+   States
+   {
+   //* // Old states
+   Spawn:
+      IPOD A 10
+      Loop
+   Pain:
+      IPOD B 14 A_PodPain("IcePodGoo")
+      Goto Spawn
+   Death:
+      IPOD C 5 BRIGHT A_RemovePod
+      IPOD D 5 BRIGHT A_Scream
+      IPOD E 5 BRIGHT A_SpawnItemEx("IcePodExplosion", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
+      IPOD F 10 BRIGHT
+      Stop
+   Grow:
+      IPDG ABCDEFGHI 3
+      Goto Spawn
+   //*/// end of old states
+   /* // New states
+   Spawn:
+      IPOD A 0
+      IPOD A 0 A_JumpIfHealthLower(15, "Idle2")
+      IPOD A 0 A_JumpIfHealthLower(30, "Idle1")
+      IPOD A 10
+      Loop
+   Idle1:
+      IPOD B 10
+      Loop
+   Idle2:
+      IPOD C 10
+      Loop
+   Pain:
+      IPOD A 0 A_JumpIfHealthLower(15, "Pain2")
+      IPOD A 0 A_JumpIfHealthLower(30, "Pain1")
+      IPOD A 2 A_PlaySound("Icepod/Crack")
+      IPOD A 12 A_PodPain("IcePodGoo")
+      Goto Spawn
+   Pain1:
+      IPOD B 2 A_PlaySound("Icepod/Crack")
+      IPOD B 12 A_PodPain("IcePodGoo")
+      Goto Spawn
+   Pain2:
+      IPOD B 2 A_PlaySound("Icepod/Crack")
+      IPOD B 12 A_PodPain("IcePodGoo")
+      Goto Spawn
+   Death:
+      IPOD C 4
+      IPOD A 0 A_RemovePod
+      IPOD A 0 A_SpawnItemEx("IcePodExplosion", 0, 40, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
+      IPOD A 0 A_IceGuyDie
+      Stop
+   Grow:
+      IPOD AA 0 A_SetTranslucent(0.0, 0) //No idea yet.
+      IPOD AAAAAAAAAA 1 A_FadeIn(0.1)
+      Goto Spawn
+	//*/// end of new states
+   }
+   
+}
+
+ACTOR IcePodGoo : PodGoo
+{
+   Speed 3
+   States
+   {
+   Spawn:
+      IPDG AB 8
+      Loop
+   Death:
+      IPDG B 10
+      Stop
+   }
+}
+
+ACTOR IcePodExplosion
+{
+   // NOINTERACTION on that? What a silly idea. A_Explode does nothing then...
+   Projectile
+   radius 2
+   height 4
+   speed 0
+   DamageType Ice
+   States
+   {
+   Spawn:
+      TNT1 AA 0 A_Explode
+      Stop
+   }
+}
+
+actor FirePod : BlastPod 20010
+{
+	//$Category Obstacles
+	//$Title Pod (Fire Variant)
+   DamageFactor Fire, 0.0
+   States
+   {
+   //* // Old states
+   Spawn:
+      FPOD A 10
+      Loop
+   Pain:
+      FPOD B 14 A_PodPain("FirePodGoo")
+      Goto Spawn
+   Death:
+      FPOD C 5 BRIGHT A_RemovePod
+      FPOD D 5 BRIGHT A_Scream
+      FPOD AAAAAAAAAAAA 0 A_PodPain("FirePodGoo")
+      FPOD E 5 BRIGHT A_SpawnItemEx("FirePodExplosion", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
+      FPOD F 10 BRIGHT
+      Stop
+   Grow:
+      FPDG ABCDEFGHI 3
+      Goto Spawn
+   // */// end of old states
+   /* // New states
+   Spawn:
+      FPOD A 10 A_PlaySoundEx("SFX/FireLoop1", "SoundSlot6", 1)
+      Loop
+   Pain:
+      FPOD B 14 A_PodPain("FirePodGoo")
+      Goto Spawn
+   Death:
+      FPOD BBBBBBB 2 A_PodPain("FirePodGoo")
+      FPOD C 5 Bright A_RemovePod
+      FPOD D 5 Bright A_Scream
+      FPOD E 5 Bright A_SpawnItemEx("FirePodExplosion", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
+      FPOD F 10 Bright
+      Stop
+   Stop
+   Grow:
+      TNT1 A 0
+      TNT1 A 0 A_PlaySoundEx("SFX/FireStart", "SoundSlot7", 0)
+      FPGR ABCDE 3
+      Goto Spawn
+	// */// end of new states
+   }
+}
+
+ACTOR FirePodGoo : PodGoo
+{
+	+DONTSPLASH
+	States
+	{
+	Spawn:
+   //* // Old states
+		FPDG AB 8
+   // */// end of old states
+   /* // New states
+		FPDG A 8
+	// */// end of new states
+		Loop
+	Death:
+		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 5 A_SpawnItemEx ("FirePodGooFireSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER, 0)
+		Stop
+	}
+}
+
+// This actor is needed to fix the fancy SFX stuff. This is the actor that
+// deals damage for the pod goo flames, so it has damagetype fire.
+// NOTE: FireSpawner had to be modified to make it work!
+ACTOR FirePodGooFireSpawner : FireSpawner
+{
+   DamageType Fire
+   Args 0, 0, 1, 2, 1
+   States
+   {
+   Spawn:
+      TNT1 A 0
+      TNT1 A 0 A_Explode(32,32)
+      Goto "Countdown"
+   }
+}
+
+// Important note: this does _not_ have DamageType Fire, and this is _not_
+// an oversight! This is the blast from the explosion, and it does blast damage.
+// Making it deal fire damage would prevent chain reactions, which would be a
+// crying shame. A SHAME! DO YOU HEAR ME? A SHAME!
+ACTOR FirePodExplosion
+{
+   PROJECTILE
+   radius 2
+   height 4
+   speed 0
+   States
+   {
+   Spawn:
+      TNT1 AA 0 A_Explode
+      Stop
+   }
+}
+
+actor PoisonPod : BlastPod 20020
+{
+	//$Category Obstacles
+	//$Title Pod (Poison Variant)
+	DeathSound "PoisonPod/Puff"
+	States
+	{
+	//* // Old states
+	Spawn:
+		TPOD A 10
+		Loop
+	Pain:
+		TPOD B 14 A_PodPain("PoisonPodGoo") 
+		Goto Spawn
+	Death:
+		TPOD C 5 BRIGHT A_RemovePod
+		TPOD D 5 BRIGHT A_Scream
+		TPOD E 5 BRIGHT A_Explode
+		TPOD A 0 A_SpawnItemEx("PoisonCloud", 0, 0, 28, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
+		TPOD F 10 BRIGHT
+		Stop
+	Grow:
+		TPDG ABCDEFGHI 3
+		Goto Spawn
+	// */// end of old states
+	/* // New states
+	Spawn:
+		VPOD A 10
+		Loop
+	Pain:
+		VPOD A 0 A_PodPain("PoisonPodGoo")
+		VPOD B 14 A_CustomMissile("PoisonPodSmallGas", 40, 0, Random(0, 359), 2, 0)
+		Goto Spawn
+	Death:
+		VPOD A 0 A_SpawnItemEx("PoisonPodGas", 0, 40, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
+		VPOD C 5 A_RemovePod
+		VPOD D 5 A_Scream
+		VPOD D 0 A_Explode
+		Stop
+	Grow:
+		VPGR ABCDEFGH 3
+		Goto Spawn
+   // */// end of new states
+   }
+}
+
+ACTOR PoisonPodGoo : PodGoo
+{
+	Speed 3
+	States
+	{
+	//* // Old states
+	Spawn:
+		TPDG AB 8
+		Loop
+	Death:
+		TPDG B 10
+		Stop
+	// */// end of old states
+	/* // New states
+	Spawn:
+		VPDG A 8
+		Loop
+	Death:
+		VPDG B 10
+		Stop
+	// */// end of new states
+	}
+}
+
+Actor PoisonPodGas
+{
+   Projectile
+   +Ripper
+   +BloodlessImpact
+   DamageType "Poison"
+   Damage 1
+   Speed 0
+   Alpha 0.8
+   SeeSound ""
+   DeathSound ""
+   States
+   {
+   Spawn:
+      VPGS ABC 5
+   Idle:
+      VPGS DEFG 5 A_FadeOut(0.02)
+      Loop
+   }
+}
+
+Actor PoisonPodSmallGas : PoisonPodGas
+{
+   Speed 2
+   Scale 0.5
+   Radius 10
+   Height 20
+}
+
+
+ACTOR FirePodGenerator : PodGenerator 21001
+{
+	//$Category Obstacles
+	//$Title Pod Generator (Fire Variant)
+	//$Sprite FPDGH0
+   States
+   {
+   Spawn:
+      TNT1 A 35 A_MakePod("FirePod")
+      Loop
+   }
+}
+
+ACTOR PoisonPodGenerator : PodGenerator 21002
+{
+	//$Category Obstacles
+	//$Title Pod Generator (Poison Variant)
+	//$Sprite TPDGH0
+   States
+   {
+   Spawn:
+      TNT1 A 35 A_MakePod("PoisonPod")
+      Loop
+     }
+}
+
+ACTOR IcePodGenerator : PodGenerator 21003
+{
+	//$Category Obstacles
+	//$Title Pod Generator (Ice Variant)
+	//$Sprite IPDGH0
+   States
+   {
+   Spawn:
+      TNT1 A 35 A_MakePod("IcePod")
+      Loop
+   }
+}
+
+ACTOR RandomPodGenerator : PodGenerator 21000
+{
+	//$Category Obstacles
+	//$Title Pod Generator (Random Variant)
+	//$Sprite PPODO0
+   States
+   {
+   Spawn:
+       TNT1 A 35 A_Jump(256, "StandardGen", "FireGen", "IceGen", "PoisonGen")
+       Loop
+   StandardGen:
+      TNT1 A 35 A_MakePod("BlastPod")
+      Goto Spawn
+   FireGen:
+      TNT1 A 35 A_MakePod("FirePod")
+      Goto Spawn
+   IceGen:
+      TNT1 A 35 A_MakePod("IcePod")
+      Goto Spawn
+   PoisonGen:
+      TNT1 A 35 A_MakePod("PoisonPod")
+      Goto Spawn
+   }
+}

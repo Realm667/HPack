@@ -1,0 +1,40 @@
+Pointlight ToxinShot1
+{
+	Color 0.0 0.3 0.0
+	Size 32
+}
+
+Pointlight ToxinShot2
+{
+	Color 0.0 0.8 0.0
+	Size 48
+}
+
+Pointlight ToxinShot3
+{
+	Color 0.0 0.6 0.0
+	Size 48
+}
+
+Pointlight ToxinShot4
+{
+	Color 0.0 0.4 0.0
+	Size 32
+}
+
+Pointlight ToxinShot5
+{
+	Color 0.0 0.2 0.0
+	Size 24
+}
+
+Object ToxinShot
+{
+	Frame GHFXA { Light ToxinShot1 }
+	Frame GHFXB { Light ToxinShot1 }
+	Frame GHFXC { Light ToxinShot2 }
+	Frame GHFXD { Light ToxinShot3 }
+	Frame GHFXE { Light ToxinShot4 }
+	Frame GHFXF { Light ToxinShot5 }
+}
+

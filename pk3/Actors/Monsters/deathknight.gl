@@ -1,0 +1,239 @@
+Pointlight DKDart1
+{
+	Color 0.6 0.0 0.0
+	Size 32
+}
+
+Pointlight DKDart2
+{
+	Color 1.0 0.0 0.0
+	Size 48
+}
+
+Pointlight DKDart3
+{
+	Color 1.0 0.2 0.2
+	Size 56
+}
+
+Pointlight DKDart4
+{
+	Color 1.0 0.2 0.2
+	Size 64
+}
+
+Pointlight DKDart5
+{
+	Color 0.8 0.0 0.0
+	Size 64
+}
+
+Pointlight DKDart6
+{
+	Color 0.7 0.0 0.0
+	Size 56
+}
+
+Pointlight DKDart7
+{
+	Color 0.7 0.0 0.0
+	Size 48
+}
+
+Pointlight DKDart8
+{
+	Color 0.5 0.0 0.0
+	Size 40
+}
+
+Pointlight DKDart9
+{
+	Color 0.5 0.0 0.0
+	Size 32
+}
+
+Pointlight DKDart10
+{
+	Color 0.4 0.0 0.0
+	Size 24
+}
+
+Pointlight DKDart11
+{
+	Color 0.3 0.0 0.0
+	Size 16
+}
+
+Object DKDart
+{
+	Frame DKATA { Light DKDart1 }
+	Frame DKATB { Light DKDart1 }
+	Frame DKATC { Light DKDart1 }
+	Frame DKATD { Light DKDart2 }
+	Frame DKATE { Light DKDart3 }
+	Frame DKATF { Light DKDart4 }
+	Frame DKATG { Light DKDart5 }
+	Frame DKATH { Light DKDart6 }
+	Frame DKATI { Light DKDart7 }
+	Frame DKATJ { Light DKDart8 }
+	Frame DKATK { Light DKDart9 }
+	Frame DKATL { Light DKDart10 }
+	Frame DKATM { Light DKDart11 }
+}
+
+Pointlight FHeadShot1
+{
+	Color 0.6 0.2 0.0
+	Size 48
+}
+
+Pointlight FHeadShot2
+{
+	Color 1.0 0.5 0.0
+	Size 64
+}
+
+Pointlight FHeadShot3
+{
+	Color 0.8 0.3 0.0
+	Size 48
+}
+
+Pointlight FHeadShot4
+{
+	Color 0.6 0.2 0.0
+	Size 32
+}
+
+
+Pointlight FHeadShot5
+{
+	Color 0.4 0.1 0.0
+	Size 24
+}
+
+Pointlight FHeadShot6
+{
+	Color 0.2 0.0 0.0
+	Size 8
+}
+
+Object FHeadShot
+{
+	Frame FHED { Light FHeadShot1 }
+	Frame RIP1D { Light FHeadShot2 }
+	Frame RIP1E { Light FHeadShot3 }
+	Frame RIP1F { Light FHeadShot4 }
+	Frame RIP1G { Light FHeadShot5 }
+	Frame RIP1H { Light FHeadShot6 }
+}
+
+Pointlight DKBolt1
+{
+	Color 1.0 0.0 0.0
+	Size 48
+}
+
+Pointlight DKBolt2
+{
+	Color 1.0 0.0 0.0
+	Size 16
+}
+
+Pointlight DKBolt3
+{
+	Color 1.0 0.4 0.0
+	Size 32
+}
+
+Pointlight DKBolt4
+{
+	Color 1.0 0.6 0.0
+	Size 64
+}
+
+Pointlight DKBolt5
+{
+	Color 1.0 0.4 0.0
+	Size 32
+	Offset 0 16 0
+}
+
+Pointlight DKBolt6
+{
+	Color 1.0 0.0 0.0
+	Size 16
+	Offset 0 24 0
+}
+
+Object DKBolt
+{
+	Frame BOLT { Light DKBolt1 }
+	Frame HBALE { Light DKBolt2 }
+	Frame HBALF { Light DKBolt3 }
+	Frame HBALG { Light DKBolt4 }
+	Frame HBALI { Light DKBolt5 }
+	Frame HBALJ { Light DKBolt6 }
+}
+
+Pointlight DKSword
+{
+	Color 0.7 0.0 0.0
+	Size 48
+}
+
+Object DKSword
+{
+	Frame SWRDK { Light DKSword }
+	Frame SWRDL { Light DKSword }
+	Frame SWRDM { Light DKSword }
+	Frame SWRDN { Light DKSword }
+	Frame SWRDO { Light DKSword }
+	Frame SWRDP { Light DKSword }
+	Frame SWRDQ { Light DKSword }
+	Frame SWRDR { Light DKSword }
+	Frame SWRDS { Light DKSword }
+	Frame SWRDT { Light DKSword }
+}
+
+FlickerLight2 DKFire1
+{
+	Color 0.5 0.0 0.0
+	Size 24
+	SecondarySize 32
+	Interval 1.4
+}
+
+Pointlight DKFire2
+{
+	Color 0.7 0.0 0.0
+	Size 32
+}
+
+Pointlight DKFire3
+{
+	Color 0.5 0.0 0.0
+	Size 18
+	Offset 0 8 0
+}
+
+Pointlight DKFire4
+{
+	Color 0.3 0.0 0.0
+	Size 8
+	Offset 0 16 0
+}
+
+Object DKFire
+{
+	Frame DKATN { Light DKFire1 }
+	Frame DKATO { Light DKFire1 }
+	Frame DKATP { Light DKFire1 }
+	Frame DKATQ { Light DKFire1 }
+	Frame DKATR { Light DKFire1 }
+	Frame DKATS { Light DKFire1 }
+	Frame DKATT { Light DKFire1 }
+	Frame DKATU { Light DKFire2 }
+	Frame DKATV { Light DKFire3 }
+	Frame DKATW { Light DKFire4 }
+}

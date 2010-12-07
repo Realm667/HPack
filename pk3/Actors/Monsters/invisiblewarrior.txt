@@ -1,0 +1,119 @@
+actor InvisibleWarrior 3293
+{
+	//$Category Monsters
+	//$Title Invisible Warrior
+  obituary "$OB_INVISIBLEWARRIOR"
+  health 700
+  Alpha .5
+  radius 24
+  height 64
+  cameraheight 49
+  mass 1000
+  speed 18
+  painchance 50
+  PainSound "PlayerFighterPain"
+  DeathSound "PlayerFighterCrazyDeath"
+  DropItem "BlasterHefty" 84 5
+  DropItem "ArtiInvisibility" 51
+  MONSTER
+  +FLOORCLIP
+  +DONTMORPH
+  +DONTSQUASH
+  +NOTELEOTHER
+  states
+  {
+  Spawn:
+    INVW A 10 A_Look
+    loop
+  See:
+    INVW ABCD 3 A_Chase
+    loop
+  Melee:
+  Missile:
+    INVW EF 8 A_FaceTarget
+    INVW G 8 A_CustomMissile(InvisibleAttack,48,0) 
+    goto See
+  Pain:
+    INVW H 2
+    INVW H 2 A_Pain
+    goto See
+  Death:
+    INVB A 5
+    INVB B 5 A_Scream
+    INVB C 5 A_SpawnItemEx("InvisibleSword", 0,0,8.5, random[DropMace](-128,127) * 0.03125, random[DropMace](-128,127) * 0.03125,
+                           10 + random[DropMace](0,255) * 0.015625, 0, SXF_ABSOLUTEMOMENTUM)
+    INVB D 5 A_NoBlocking
+    INVB EFGHIJK 8
+    INVB L -1 A_BossDeath
+    stop
+  Raise:
+    INVB LKJIHGFEDCBA 5
+    goto See
+  }
+}
+
+Actor InvisibleSword
+{
+  Radius 5
+  Height 5
+  gravity 0.5
+  Alpha .5
+  +DROPOFF
+  +CORPSE
+  +NOTELEPORT
+  +FLOORCLIP
+  States
+{
+  Spawn:
+    SWOR MNOP 5
+    Loop
+  Crash:
+    SWOR Q 5
+    SWOR R 5 A_QueueCorpse
+    SWOR S -1
+    Stop
+  }
+}
+
+Actor InvisibleAttack
+{
+  Speed 15
+  Radius 10
+  Height 6
+  Damage 12
+  Projectile
+  +SPAWNSOUNDSOURCE
+  RenderStyle Add
+  ExplosionRadius 1500
+  ExplosionDamage 80
+  SeeSound "elect1"
+  DeathSound "elect1"
+  States
+  {
+  Spawn:
+    FAXE RRRRSSSSTTTTSSSSRRRR 1 Bright A_SpawnItem("InvisibleTrail",0,0)
+    Loop
+  Death:
+    FAXE RSTU 4 Bright
+    FAXE VWX 3 Bright
+    Stop
+  }
+}
+
+Actor InvisibleTrail
+{   
+   Radius 3
+   Height 3
+   Scale 0.75
+   Speed 0
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   States
+   {
+   Spawn:
+      FAXE RSTU 3 Bright A_PlaySound(elect2)
+      FAXE VWX 3 BRIGHT
+      Stop 
+   }
+}

@@ -1,0 +1,39 @@
+Pointlight ThrallShot1
+{
+	Color 0.0 0.0 1.0
+	Size 20
+}
+
+Pointlight ThrallShot12
+{
+	Color 0.0 0.0 1.0
+	Size 25
+}
+
+Pointlight ThrallShot13
+{
+	Color 0.0 0.0 0.8
+	Size 20
+}
+
+Pointlight ThrallShot14
+{
+	Color 0.0 0.0 0.6
+	Size 15
+}
+
+Pointlight ThrallShot15
+{
+	Color 0.0 0.0 0.4
+	Size 10
+}
+
+Object ThrallShot1
+{
+	Frame CFX4A { Light ThrallShot1 }
+	Frame CFX4B { Light ThrallShot1 }
+	Frame CFX4C { Light ThrallShot12 }
+	Frame CFX4D { Light ThrallShot13 }
+	Frame CFX4E { Light ThrallShot14 }
+	Frame CFX4F { Light ThrallShot15 }
+}

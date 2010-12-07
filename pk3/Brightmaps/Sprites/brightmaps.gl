@@ -1,0 +1,18 @@
+#include "Brightmaps/Sprites/Projectiles/Brightmaps.gl"
+
+#include "Brightmaps/Sprites/Items/Ammo/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/Staff/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/Pickups/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/Crossbow/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/Goldwand/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/Gauntlets/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/Hellstaff/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/Artifacts/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/PhoenixRod/Brightmaps.gl"
+#include "Brightmaps/Sprites/Items/DragonClaw/Brightmaps.gl"
+
+brightmap sprite playf1		{ map "Brightmaps/Sprites/playf1.png"	disablefullbright	}
+brightmap sprite playf2f8	{ map "Brightmaps/Sprites/playf2f8.png"	disablefullbright	}
+brightmap sprite playf3f7	{ map "Brightmaps/Sprites/playf3f7.png"	disablefullbright	}
+brightmap sprite playf4f6	{ map "Brightmaps/Sprites/playf4f6.png"	disablefullbright	}
+brightmap sprite playf5		{ map "Brightmaps/Sprites/playf5.png"	disablefullbright	}
