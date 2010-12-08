@@ -3,8 +3,8 @@ setlocal enableextensions disabledelayedexpansion
 cd /d %~dp0
 if errorlevel 1 goto error1
 set TempFile=$$$$$$$$.$$$
-set Path=%PATH%;%cd%\..\utils
-if exist ..\temp goto tempexists
+set Path=%PATH%;%cd%\utils
+if exist temp goto tempexists
 :back
 echo Figuring out our version number...
 svnversion pk3 >%TempFile%
@@ -49,21 +49,21 @@ echo *** Warning *** The following process may take a few minutes, and does not
 echo                 produce any output. Your computer is actually doing something
 echo                 when it looks like it doesn't, so be patient! :)
 echo Exporting SVN...
-svn export pk3/ ../temp
-if not exist ..\temp goto NoSVNInstalled2
-pushd ..\temp
+svn export pk3/ temp
+if not exist temp goto NoSVNInstalled2
+pushd temp
 echo Creating archive...
-zip -r9 ../trunk/%filename% *
+zip -r9 ../%filename% *
 popd
 echo Removing temporary folder.
-rd /s /q ..\temp
+rd /s /q temp
 echo Done!
 if exist %filename% echo %filename% written.
 if not exist %filename% echo There was an error!
 goto :eof
 :removetemp
-rd /s /q ..\temp >nul
-del /a /f ..\temp >nul
+rd /s /q temp >nul
+del /a /f temp >nul
 goto back
 :NoSVNInstalled
 set filename=hpack_data.pk3
@@ -86,7 +86,7 @@ rem This occurs if svnversion returns "exported" - special handling will be requ
 echo Unknown error. Exiting.
 goto :eof
 :tempexists
-echo Warning! The subdirectory or file "..\temp" already exists!
+echo Warning! The subdirectory or file "temp" already exists!
 echo This build script uses that folder to build the pk3 file, and it must be
 echo removed in order to continue. Do you wish to remove that folder/file?
 echo.
