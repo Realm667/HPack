@@ -51,6 +51,15 @@ map H1M8 "City of Darkness"
 	Cluster = 101
 }
 
+map H1M9 "Glave Tower"
+{
+	fade = "25 25 25"
+	music = "MUS_E2M7"
+	lightning
+	next = H1M9
+	Cluster = 101
+}
+
 map H2M1 "Chapel of the Seas"
 {
 	fade = "10 30 20"
