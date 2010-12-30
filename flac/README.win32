@@ -1,0 +1,25 @@
+============
+FLAC - 1.2.1
+============
+
+This is the Win32 binary release for the FLAC project.
+
+All programs and plugins are released under the GPL (see COPYING.GPL)
+except the Winamp 2 plugin which is LGPL (see COPYING.LGPL).
+The documentation is released under the FDL (see COPYING.FDL).  See
+
+	doc\html\index.html
+
+for full documentation, including how to obtain the source
+code.
+
+Binaries here are statically linked.
+
+A summary of the contents is as follows:
+
+bin\flac.exe     The command-line compressor/decompressor
+bin\metaflac.exe The command-line metadata editor
+bin\in_flac.dll  The Winamp2 plugin (move to <Winamp2_Install_Dir>\Plugins)
+bin\flac_mac.exe
+bin\flac_ren.exe The utilities for adding FLAC to the Monkey's Audio GUI
+doc\html         FLAC HTML documentation
