@@ -1,3 +1,0 @@
-This program can be used to inspect the content of an ACS lump either inside
-a wad file or saved separately. It can list the strings and scripts in the
-lump and also disassemble specific scripts.
