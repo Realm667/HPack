@@ -3,7 +3,7 @@ setlocal enableextensions disabledelayedexpansion
 cd /d %~dp0
 if errorlevel 1 goto error1
 set TempFile=$$$$$$$$.$$$
-set Path=%PATH%;%cd%\utils
+set Path=%PATH%;%cd%\utilis
 if exist temp goto tempexists
 :back
 echo Figuring out our version number...
