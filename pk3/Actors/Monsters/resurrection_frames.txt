@@ -1,6 +1,5 @@
 actor HPBeast : Beast replaces Beast
 {
-	DropItem "PhoenixRodAmmo", 84, 5
 	States
 	{
 	Raise:
