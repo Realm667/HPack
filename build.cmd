@@ -60,6 +60,7 @@ rd /s /q temp
 echo Done!
 if exist %filename% echo %filename% written.
 if not exist %filename% echo There was an error!
+pause
 goto :eof
 :removetemp
 rd /s /q temp >nul
