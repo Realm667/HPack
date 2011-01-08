@@ -635,3 +635,5 @@ printz/sequence/grind/loop grndloop
 printz/ambient/growl growl
 printz/ambient/humnoise humnoise
 $rolloff printz/ambient/humnoise 200 600
+printz/ambient/kerri_purrclip_short turbulen
+$ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
