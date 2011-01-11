@@ -61,3 +61,11 @@ Textures contributed:
 					foreground.
 - WINDIGO.png	-	based on SCLAVAA2.png from the common pack, recoloured
 					purple.
+
+
+
+-------------------------
+Contributor: Serge Jaeken
+-------------------------
+Maps:	H2M2 - Dark Water
+	H3M3 - Untitled
