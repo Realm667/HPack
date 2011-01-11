@@ -622,7 +622,6 @@ DoorCloseMetal          drstp2
 DoorCloseLight          dorstp4
 DoorCloseHeavy          drstp7
 DoorCreak               drcrk5a
-printz/sequence/grind/loop grndloop
 
 LavaMove                lava2
 WaterMove               brook1
