@@ -515,7 +515,7 @@ Monk/Laugh		DSMLAUGH
 woodenbarrel/death		dswbrldt
 
 //Printz Growl
-amb/growl		growl
+amb/growl		lowgrowl
 
 // Curse
 CurseActive		CURSEACT
