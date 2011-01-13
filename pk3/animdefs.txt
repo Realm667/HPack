@@ -15,6 +15,7 @@ WARP texture WSLIMH
 WARP2 texture WDWATR01
 warp flat KDSKYT66
 warp2 flat WINDIGO
+warp texture SKYTP14W
 
 texture WLLATFL1
  pic WLLATFL1 tics 8
