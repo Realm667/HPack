@@ -96,3 +96,8 @@ texture SGLASS4T, 256, 256
    Patch WALL60B, 0, 128	{FlipX}
    Patch WALL518B, 0, 0		{FlipX}
 }
+
+// [NF] Warping variant of SKYTOP14
+texture SKYTP14W, 512, 512 {
+	patch SKYTOP14, 0, 0 {}
+}

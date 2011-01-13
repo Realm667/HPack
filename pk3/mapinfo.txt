@@ -157,6 +157,13 @@ Map H5M7 "The Edge of the Universe"
 	Music = "MUS_E3M2"
 }
 
+map H5M9 "The Floating Fortress" {
+	next = "h5m10"
+	cluster = 105
+	sucktime = 1
+	music = "MUS_E2M7" // [NF] at least for now o.O
+}
+
 ClearEpisodes
 
 Episode H1M1
