@@ -139,6 +139,13 @@ map H5M1 "Abyss"
 	Cluster = 105
 }
 
+map H5M3 "The Void Temple"
+{
+	music = D7
+	next = h5m4
+	Cluster = 105
+}
+
 Map H5M7 "The Edge of the Universe"
 {
 	Next = "h5m8"
