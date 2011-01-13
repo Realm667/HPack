@@ -69,3 +69,10 @@ Contributor: Serge Jaeken
 -------------------------
 Maps:	H2M2 - Dark Water
 	H3M3 - Untitled
+
+
+-------------------------
+Contributor: Gez
+-------------------------
+Map: H5M3 - The Void Temple
+Used music: D7.mid (Daggerfall dungeon music, composed by Eric Heberling)
