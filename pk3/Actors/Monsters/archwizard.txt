@@ -129,7 +129,7 @@ ACTOR ArchWSkeleton
 
 ACTOR ArchWHomingBall : MageStaffFX2
 {
-  Speed 20
+  Speed 15
   SeeSound "HomingBall/Fire"
   DeathSound "HomingBall/Explode"
   DamageType "none"
@@ -151,7 +151,7 @@ ACTOR ArchWHomingBall : MageStaffFX2
   Death:
     BSBS E 0 Bright Light(DISCIPLEBALL) A_StopSoundEx ("SoundSlot6")
     BSBS E 0 Bright Light(DISCIPLEBALL) A_SetTranslucent (1, 1) 
-    BSBS E 3 Bright Light(DISCIPLEBALL) A_Explode (64, 96, 0)
+    BSBS E 3 Bright Light(DISCIPLEBALL) A_Explode (25, 96, 0)
     BSBS FGHIJKLM 3 Bright
     Stop
   }
