@@ -1,123 +1,111 @@
-actor FrostImp : HereticImp 19283
+Actor FrostImp : HereticImp 19283
 {
 	//$Category Monsters
 	//$Title Frost Gargoyle
- Obituary "$OB_FROSTIMP"
- HitObituary "$OB_FROSTIMPH"
- BloodColor "A4 A4 B8"
- +NOICEDEATH //How do you freeze an ice cube? ;)
- States
-   {
-   Spawn:
-     IIMP ABCB 10 A_Look
-     loop
-   See:
-     IIMP AABBCCBB 3 A_Chase
-     loop
-   Melee:
-     IIMP DE 6 A_FaceTarget
-     IIMP F 6 A_CustomMeleeAttack(random[ImpMeAttack](5,12), "himp/attack", "himp/attack")
-   Missile:
-     IIMP A 10 A_FaceTarget
-     IIMP B 6 A_Skullattack(12)
-     IIMP CBAB 6
-     goto Missile+2
-   Pain:
-     IIMP G 3
-     IIMP G 3 A_Pain
-     goto See
-   Pain.HandOfTheWraith:
-	 IIMP G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 IIMP G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 IIMP G 3
-	 IIMP G 4 A_Pain
-	 Goto See
-   Death:
-     IIMP G 4 A_Scream
-     IIMP G 0 A_CustomMissile("FrostImpChunk1",24,0,15,0,-10)
-     IIMP G 0 A_CustomMissile("FrostImpChunk2",24,0,-15,0,-10)     
-     IIMP H 5
-     Wait
-   XDeath:
-     IIMP S 5 A_XScream
-     IIMP S 0 A_CustomMissile("FrostImpChunk1",24,0,15,0,-10)
-     IIMP S 0 A_CustomMissile("FrostImpChunk2",24,0,-15,0,-10)
-     IIMP TU 5
-     IIMP V 5 A_Gravity
-     IIMP W 5 
-     Wait
-   Crash:
-     IIMP I 7 A_NoBlocking
-     IIMP J 7 A_Scream
-     IIMP K 7
-     IIMP L -1
-     Stop
-   XCrash:
-     IIMP X 7
-     IIMP Y 7
-     IIMP Z -1
-    Raise:
-     IIMP HG 5
-     Goto See
-    Stop  
+	Obituary "$OB_FROSTIMP"
+	HitObituary "$OB_FROSTIMPH"
+	BloodColor "A4 A4 B8"
+	+NOICEDEATH //How do you freeze an ice cube? ;)
+	States
+	{
+	Spawn:
+		IIMP ABCB 10 A_Look
+		Loop
+	See:
+		IIMP AABBCCBB 3 A_Chase
+		Loop
+	Melee:
+		IIMP DE 6 A_FaceTarget
+		IIMP F 6 A_CustomMeleeAttack(random[ImpMeAttack](5,12), "himp/attack", "himp/attack")
+	Missile:
+		IIMP A 10 A_FaceTarget
+		IIMP B 6 A_Skullattack(12)
+		IIMP CBAB 6
+		Goto Missile+2
+	Pain:
+		IIMP G 3
+		IIMP G 3 A_Pain
+		Goto See
+	Pain.HandOfTheWraith:
+		IIMP G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
+		IIMP G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
+		IIMP G 3
+		IIMP G 4 A_Pain
+		Goto See
+	Death:
+		IIMP G 4 A_Scream
+		IIMP G 0 A_CustomMissile("FrostImpChunk1",24,0,15,0,-10)
+		IIMP G 0 A_CustomMissile("FrostImpChunk2",24,0,-15,0,-10)     
+		IIMP H 5
+		Wait
+	XDeath:
+		IIMP S 5 A_XScream
+		IIMP S 0 A_CustomMissile("FrostImpChunk1",24,0,15,0,-10)
+		IIMP S 0 A_CustomMissile("FrostImpChunk2",24,0,-15,0,-10)
+		IIMP TU 5
+		IIMP V 5 A_Gravity
+		IIMP W 5 
+		Wait
+	Crash:
+		IIMP I 7 A_NoBlocking
+		IIMP J 7 A_Scream
+		IIMP K 7
+		IIMP L -1
+		Stop
+	XCrash:
+		IIMP X 7
+		IIMP Y 7
+		IIMP Z -1
+	Raise:
+		IIMP HG 5
+		Goto See
+		Stop  
    }
 }     
 
-actor FrostImpLeader : FrostImp 19284
+Actor FrostImpLeader : FrostImp 19284
 {
 	//$Category Monsters
 	//$Title Ice Gargoyle
- Health 80
- -MISSILEMORE
- Obituary "$OB_FROSTIMPL"
- States
-   {
-   Melee:
-   Missile:
-     IIMP DE 6 A_FaceTarget
-     IIMP F 6 A_CustomComboAttack("FrostImpBall", 32, random[ImpMsAttack2](5,12), "himp/attack")
-     goto See
-   }  
+	Health 80
+	-MISSILEMORE
+	Obituary "$OB_FROSTIMPL"
+	States
+	{
+	Melee:
+	Missile:
+		IIMP DE 6 A_FaceTarget
+		IIMP F 6 A_CustomComboAttack("FrostImpShard", 32, random[ImpMsAttack2](5,12), "himp/attack")
+		goto See
+	}  
 }
 
-actor FrostImpChunk1
+Actor FrostImpChunk1
 {
- Mass 5
- Radius 4
- Speed 2
- States
- {
- Spawn:
-   IIMP M 5
-   IIMP NO 700
-   Stop
- }
+	Mass 5
+	Radius 4
+	Speed 2
+	States
+	{
+	Spawn:
+		IIMP M 5
+		IIMP NO 700
+		Stop
+	}
 }
 
-actor FrostImpChunk2
+Actor FrostImpChunk2
 {
- Mass 5
- Speed 2
- Radius 4
- States
- {
- Spawn:
-   IIMP P 5
-   IIMP QR 700
-   Stop
- }
+	Mass 5
+	Speed 2
+	Radius 4
+	States
+	{
+	Spawn:
+		IIMP P 5
+		IIMP QR 700
+		Stop
+	}
 }
 
-
-actor FrostImpBall : IceGuyFX //Too lazy to make the projectile on my own.
-{
- SeeSound "IceGuyAttack"
- DeathSound "IceGuyMissileExplode"
- FastSpeed 20
- States
-   {
-   Death: //Doesn't spawn those extra shards now.
-     ICPR DEFGH 4 Bright
-     stop
-   }
-}     
+Actor FrostImpShard : IceGuyFX2 { Gravity 0 }
