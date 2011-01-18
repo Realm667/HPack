@@ -78,3 +78,11 @@ Added snake braziers based on serpent brazier prop derived from Hexx game.
 
 Map: H5M3 - The Void Temple
 Used music: D7.mid (Daggerfall dungeon music, composed by Eric Heberling)
+
+-------------------------
+Contributor: darkhaven3
+-------------------------
+Map: H4M9 - Dark Sun Rising
+Used music:	dh3-h4m9-amb.spc (Super Metroid "Crateria Raining" ambient loop)
+		dh3-h4m9-enemies.spc (Super Metroid Space Pirates theme)
+		dh3-h4m9-final.spc (Super Metroid Samus Aran's theme)
