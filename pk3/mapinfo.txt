@@ -131,6 +131,15 @@ map H4M4 "Fortress"
 	next = h4m5
 }
 
+map H4M9 "Dark Sun Rising"	//totally not by darkhaven3
+{
+	levelnum = 49		//Why are there no levelnums defined in the whole pk3?
+	cluster = 104		//e4 sux
+	sky1 = "SKULWAL1", 32	//pretty sky coming whenever
+	//next = H4M9 		//FIXME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	music = "Music/dh3-h4m9-amb.spc"
+}
+
 map H5M1 "Abyss"
 {
 //	fade = "10 50 10"
