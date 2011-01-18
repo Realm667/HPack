@@ -11,7 +11,7 @@ Actor ToTLBrassTorch : SwitchableDecoration replaces BrassTorch
   Spawn:
     BRTR A 0
     BRTR A 0 A_SpawnItemEx("RedFlare", 0, 0, 38, 0, 0, 0, 0, 176)
-    BRTR A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(37, 39), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+    BRTR A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(34, 36), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
     Loop
   Inactive:
     BRTR A 0 A_PlaySound("Torch/Die")
@@ -33,7 +33,7 @@ Actor TOTLTwinedTorch : SwitchableDecoration replaces ZTwinedTorch
   Spawn:
     TWTR A 0
     TWTR A 0 A_SpawnItemEx("RedFlare", 0, 0, 64, 0, 0, 0, 0, 176)
-    TWTR A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-3, 3), Random(63, 65), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+    TWTR A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-3, 3), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
     Loop
   Inactive:
     TWTR I 0 A_PlaySound("Torch/Die")
@@ -99,7 +99,7 @@ Actor ToTLSerpentTorch : SwitchableDecoration replaces SerpentTorch
   Spawn:
     SRTC A 0
     SRTC A 0 A_SpawnItemEx("RedFlare", 0, 0, 54, 0, 0, 0, 0, 176)
-    SRTC A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(53, 55), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+    SRTC A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(50, 52), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
     Loop
   Inactive:
     SRTC B 0 A_PlaySound("Torch/Die")
@@ -142,7 +142,7 @@ Actor RedFlare
   +NoBlockmap
   +ForceXYBillboard
   RenderStyle Add
-  Scale 0.4
+  Scale 0.12
   Alpha 0.6
   States
   {
