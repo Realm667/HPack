@@ -74,5 +74,7 @@ Maps:	H2M2 - Dark Water
 -------------------------
 Contributor: Gez
 -------------------------
+Added snake braziers based on serpent brazier prop derived from Hexx game.
+
 Map: H5M3 - The Void Temple
 Used music: D7.mid (Daggerfall dungeon music, composed by Eric Heberling)
