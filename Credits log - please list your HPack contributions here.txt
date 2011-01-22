@@ -94,3 +94,10 @@ Map(s): H1MX - Ghost Town
 	H3M8 - Hell's Forge
 Used music: H_CREEP.midi (Alternate late game music replacement - Mr. Chris)
 	    H_FORGE.mid (If someone knows please tell me)
+
+-------------------------
+Contributor: Nightfall
+-------------------------
+Map: H5M9 - The Floating Fortress
+TEXTURES entry - SKYTP14W (warping version of SKYTOP14) FWIW
+REDPORT1-9, REDPORTX (Hexen red portal textures, X is frame)
