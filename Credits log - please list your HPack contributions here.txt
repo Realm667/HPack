@@ -86,3 +86,11 @@ Map: H4M9 - Dark Sun Rising
 Used music:	dh3-h4m9-amb.spc (Super Metroid "Crateria Raining" ambient loop)
 		dh3-h4m9-enemies.spc (Super Metroid Space Pirates theme)
 		dh3-h4m9-final.spc (Super Metroid Samus Aran's theme)
+
+-------------------------
+Contributor: Disguise
+-------------------------
+Map(s): H1MX - Ghost Town
+	H3M8 - Hell's Forge
+Used music: H_CREEP.midi (Alternate late game music replacement - Mr. Chris)
+	    H_FORGE.mid (If someone knows please tell me)
