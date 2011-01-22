@@ -60,6 +60,17 @@ map H1M9 "Glave Tower"
 	Cluster = 101
 }
 
+map H1MX "Ghost Town"
+{
+	next = H1M1
+	cluster = 101
+	music = H_CREEP
+	sky1 = sky1
+	fade = "20 15 20"
+	outsidefog = "20 15 20"
+	lightmode = 2
+}
+
 map H2M1 "Chapel of the Seas"
 {
 	fade = "10 30 20"
@@ -114,6 +125,16 @@ map H3M5 "Inunduate Keep"
 	music = MIRE
 	next = h3m5
 	Cluster = 103
+}
+
+map H3M8 "Hell's Forge"
+{
+	next = H3M9
+	cluster = 103
+	music = H_FORGE
+	fade = "40 20 10"
+	outsidefog = "40 20 10"
+	lightmode = 2
 }
 
 map H4M1 "Scorched Earth"
