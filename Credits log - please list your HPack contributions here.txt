@@ -92,8 +92,9 @@ Contributor: Disguise
 -------------------------
 Map(s): H1MX - Ghost Town
 	H3M8 - Hell's Forge
-Used music: H_CREEP.midi (Alternate late game music replacement - Mr. Chris)
-	    H_FORGE.mid (If someone knows please tell me)
+Used music(s): H_CREEP.midi (Alternate late game music replacement - Mr. Chris)
+	    H_FORGE.mid (HellCore 2.0)
+Texture(s): METL4C (Vertical version of METL4)
 
 -------------------------
 Contributor: Nightfall
