@@ -102,3 +102,4 @@ Contributor: Nightfall
 Map: H5M9 - The Floating Fortress
 TEXTURES entry - SKYTP14W (warping version of SKYTOP14) FWIW
 REDPORT1-9, REDPORTX (Hexen red portal textures, X is frame)
+MOSAICT2 and MOSAIC1R (Are recolored mosaic textures that look like shit, if somebody could make them look better it'd be great.)
