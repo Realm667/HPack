@@ -12,6 +12,7 @@ ACTOR GreenChaosSerpent : Demon1 16513
 	Speed 8
 	Mass 600
 	Height 100
+	radius 32
 	health 750
 	+BOSS
 	+DONTMORPH
