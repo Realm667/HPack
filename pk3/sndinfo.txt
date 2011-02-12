@@ -197,11 +197,6 @@ monster/nshdth                  dsnshdth
 monster/nshatk                  dsnshatk
 monster/nshexp                  dsnshexp
 
-// LavaBeast
-lavdsit			lavdsit
-lavddie			lavddie
-beast/attack		bstatk
-
 // Ice Lich
 FrostBreath		FROSTB
 IceGuyAttack            frosty2
