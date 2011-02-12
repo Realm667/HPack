@@ -296,84 +296,25 @@ actor HPHereticImpLeader : HereticImpLeader replaces HereticImpLeader
 	}
 }
 
-ACTOR Dgarg : HPHereticImp 17051 
+ACTOR HPSuperGargoyle : HPHereticImp 17051
 {
-  //$Category Monsters
-  //$Title Gargoyle Lord
-  Game Heretic
-  Health 120
-  Radius 16
-  Height 36
-  Mass 50
-  Speed 15
-  Painchance 50
-  scale 1.2
-  Monster
-  +FLOAT
-  +NOGRAVITY
-  +SPAWNFLOAT
-  +DONTOVERLAP
-  +MISSILEMORE
-  SeeSound "himp/sight"
-  AttackSound "himp/attack"
-  PainSound "himp/pain"
-  DeathSound "himp/death"
-  ActiveSound "himp/active"
-  Obituary "%o was burnt by a Gargoyle Lord."
-  HitObituary "%o was slashed by a Gargoyle Lord."
-  
-  States
-  {
-  Spawn:
-    WATC ABCB 10 A_Look
-    Loop
-  See:
-    WATC AABBCCBB 3 A_Chase
-    Loop
-  Melee:
-    WATC DE 4 BRIGHT A_FaceTarget
-    WATC F 4 BRIGHT A_CustomMeleeAttack(random[ImpMeAttack](7,14), "himp/attack")
-    WATC "[\]" 4 BRIGHT A_FaceTarget
-    WATC ] 0 BRIGHT A_CustomMeleeAttack(random[ImpMeAttack](7,14), "himp/attack")     
-    Goto See
-  Missile:
-    WATC E 0 BRIGHT A_jump(50,"beastball")
-	
-    WATC DE 4 BRIGHT A_FaceTarget
-    WATC F 4 BRIGHT A_CustomComboAttack("HereticImpBall", 28, 14, "himp/leaderattack")	
-    WATC "[\]" 4 BRIGHT A_FaceTarget
-    WATC ] 0 BRIGHT A_CustomComboAttack("HereticImpBall", 28, -14, "himp/leaderattack")	
-    WATC DE 4 BRIGHT A_FaceTarget
-    WATC F 4 BRIGHT A_CustomComboAttack("HereticImpBall", 28, 14, "himp/leaderattack")    
-    Goto See
-  Beastball:
-    WATC DE 6 BRIGHT A_FaceTarget
-    WATC F 6 BRIGHT A_CustomComboAttack(BeastBall, 28, random[BeastAttack](1,8)*3, "beast/attack")
-    Goto See
-  Pain:
-    WATC G 3
-    WATC G 3 A_Pain
-    Goto See
-  Death:
-    WATC G 4 A_ImpDeath
-    WATC H 5
-    Wait
-  XDeath:
-    WATC S 5 A_ImpXDeath1
-    WATC TU 5
-    WATC V 5 A_Gravity
-    WATC W 5 
-    Wait
-  Crash:
-    WATC I 7 A_ImpExplode
-    WATC J 7 A_Scream
-    WATC K 7
-    WATC L -1
-    Stop
-  XCrash:
-    WATC X 7
-    WATC Y 7
-    WATC Z -1
-    Stop
-  }
+	//$Category Monsters
+	//$Title Gargoyle Lord
+	Health 120
+	Speed 13
+	Scale 1.5
+	States
+	{
+	Melee:
+		IMPX DE 6 A_FaceTarget
+		IMPX F 6 A_CustomComboAttack("HereticImpBall", 32, random[ImpMsAttack2](8,15), "himp/leaderattack")
+		Goto See
+	Missile:
+		IMPX A 0 A_Jump(192, "Melee")
+		IMPX A 10 A_FaceTarget
+		IMPX B 6 A_SkullAttack(12)
+		IMPX CBAB 6
+		IMPX A 0 A_Jump(192, "Melee")
+		Goto Missile+2
+	}
 }

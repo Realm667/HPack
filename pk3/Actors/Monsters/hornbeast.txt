@@ -1,7 +1,7 @@
 // Horn Beast
 // Sprites : Rolls
 // Decorate : Mr.Green
-actor HornBeast
+actor HornBeast 20002
 {
 	//$Category Monsters
 	//$Title Horned Beast
