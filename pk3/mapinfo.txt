@@ -188,7 +188,7 @@ Map H5M7 "The Edge of the Universe"
 	Music = "MUS_E3M2"
 }
 
-map H5M9 "The Floating Fortress" {
+map H5M9 "Fortress of Despair" {
 	next = "h5m10"
 	cluster = 105
 	sucktime = 1
