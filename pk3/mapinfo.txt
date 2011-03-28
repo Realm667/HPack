@@ -35,7 +35,6 @@ map H1M3 "Elven Wood"
 
 map H1M4 "LightHouse"
 {
-	fade = "5 5 5"
 	music = MUS_E1M4
 	next = h1m5
 	Cluster = 101
@@ -43,9 +42,16 @@ map H1M4 "LightHouse"
 
 map H1M5 "Battlements"
 {
-	fade = "5 5 5"
 	music = MUS_E1M5
 	next = h1m6
+	Cluster = 101
+}
+
+map H1M6 "WhoKnows"
+{
+	sky1 = "SKYTOP10", 1
+	music = MUS_E1M5
+	next = h1m7
 	Cluster = 101
 }
 
