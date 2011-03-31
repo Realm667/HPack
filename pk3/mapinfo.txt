@@ -227,6 +227,7 @@ map H5M9 "Fortress of Despair" {
 Map H5M11 "Vortex"
 {
 	Next = "H5M12"
+	Music = "MUS_E2M3"
 	Cluster = 105
 	Sky1 = "CSSKY", 0.01
 	Fade = "57 00 7F"
