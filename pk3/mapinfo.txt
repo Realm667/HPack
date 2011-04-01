@@ -76,7 +76,7 @@ map H1M8 "City of Darkness"
 map H1M12 "No name for now"
 {
 	music = "H1M12" //Mist ache - by Lee Jackson (3DRealms|Apogee - Rise of the Triad - MISTACHE.MID)
-	sky1 = "SKY1", 0
+	sky1 = "SKYTOP15", 0
 	Cluster = 101
 }
 
