@@ -6,7 +6,7 @@
 #include "actors/misc/sfx_steam.txt"
 #include "actors/misc/sfx_thunder.txt"
 #include "actors/misc/sfx_sparkle.txt"
-#include "actors/misc/sfx_sparkl.txt"
+#include "actors/misc/sfx_starl.txt"
 #include "actors/misc/sfx_splash.txt"
 #include "actors/misc/sfx_lights.txt"
 #include "actors/misc/teleportFX.txt"
