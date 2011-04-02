@@ -7,7 +7,7 @@
 
 ///////////////////////////////// HERETIC VARIANT /////////////////////////////////////////////
 
-Actor BaseSparkle
+Actor BaseStar
 {
  +Missile
  +NoGravity
@@ -46,7 +46,7 @@ Actor BaseSparkle
  }
 }
 
-actor GreenSparkleSpawner 501
+actor GreenStarSpawner 501
 {
    //$Category HPack_SpecialEffects
 	+NoBlockMap +NoGravity +NoSector +NoInteraction +NoClip -Solid +CLIENTSIDEONLY
@@ -55,7 +55,7 @@ actor GreenSparkleSpawner 501
         Spawn:
            Active:
         	TNT1 A 0
-        	TNT1 A 1 A_SpawnItemEx ("BaseSparkle", random(-Args[1],Args[1]), random(-Args[1],Args[1]), random(0,2*Args[1]), 0, 0, 0, 0, 129, Args[2]) 
+        	TNT1 A 1 A_SpawnItemEx ("BaseStar", random(-Args[1],Args[1]), random(-Args[1],Args[1]), random(0,2*Args[1]), 0, 0, 0, 0, 129, Args[2]) 
         	Loop
            Inactive:
 		TNT1 A 1
@@ -64,25 +64,25 @@ actor GreenSparkleSpawner 501
         
 }
 
-actor BlueSparkleSpawner : GreenSparkleSpawner 502
+actor BlueStarSpawner : GreenStarSpawner 502
 {
    //$Category HPack_SpecialEffects
 	translation "209:224=185:200"
 }
 
-actor WhiteSparkleSpawner : GreenSparkleSpawner 503
+actor WhiteStarSpawner : GreenStarSpawner 503
 {
    //$Category HPack_SpecialEffects
 	translation "209:224=0:35"
 }
 
-actor RedSparkleSpawner : GreenSparkleSpawner 504
+actor RedStarSpawner : GreenStarSpawner 504
 {
    //$Category HPack_SpecialEffects
 	translation "209:224=145:159"
 }
 
-actor OrangeSparkleSpawner: GreenSparkleSpawner 505
+actor OrangeStarSpawner: GreenStarSpawner 505
 {
    //$Category HPack_SpecialEffects
 	translation "209:224=112:127"
