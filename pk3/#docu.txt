@@ -1,3 +1,24 @@
+SPARKLE SPAWNERS
+================
+This one is the Heretic variant
+
+Place on map and use the first two arguments 
+to control the intensity and area of the 
+spawner. 
+
+Second argument controls the size of the area. 
+32 for example, spawns in a 64x64x64 qube.
+
+Third argument controls the chance of sparkles 
+being spawned. 255 spawns no sparkles at all.
+
+It should be noted that pngs can't be translated 
+like normal graphics. Because of this, if
+you convert the SKFXA0 sprite to a png, the spawners 
+will spawn white effects. Use Doom's
+lmp format, instead.
+
+
 SPARKLE FOUNTAINS
 =================
 Place on map and use the first two arguments to control the 
