@@ -1,0 +1,89 @@
+////////////////////////////
+// SPARKLE SPAWNERS ////////
+// for REALM667     ////////
+// by Tormentor667  ////////
+////////////////////////////
+
+
+///////////////////////////////// HERETIC VARIANT /////////////////////////////////////////////
+
+Actor BaseSparkle
+{
+ +Missile
+ +NoGravity
+ +NoBlockmap
+ +NoInteraction
+ -Solid
+ Radius 0
+ Height 0
+ RenderStyle Add
+ Alpha 1.0
+ Scale 0.1
+ States
+ {
+  Spawn:
+   SKFX A 0 Bright
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.15)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.2)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.25)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.3)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.35)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.4)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.45)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.5)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   SKFX A 1 Bright A_SetScale(0.55)   
+   SKFX A 1 Bright A_FadeOut(0.1)   
+   Stop
+ }
+}
+
+actor GreenSparkleSpawner 501
+{
+   //$Category HPack_SpecialEffects
+	+NoBlockMap +NoGravity +NoSector +NoInteraction +NoClip -Solid +CLIENTSIDEONLY
+        states
+        {
+        Spawn:
+           Active:
+        	TNT1 A 0
+        	TNT1 A 1 A_SpawnItemEx ("BaseSparkle", random(-Args[1],Args[1]), random(-Args[1],Args[1]), random(0,2*Args[1]), 0, 0, 0, 0, 129, Args[2]) 
+        	Loop
+           Inactive:
+		TNT1 A 1
+		Loop
+        }     
+        
+}
+
+actor BlueSparkleSpawner : GreenSparkleSpawner 502
+{
+   //$Category HPack_SpecialEffects
+	translation "209:224=185:200"
+}
+
+actor WhiteSparkleSpawner : GreenSparkleSpawner 503
+{
+   //$Category HPack_SpecialEffects
+	translation "209:224=0:35"
+}
+
+actor RedSparkleSpawner : GreenSparkleSpawner 504
+{
+   //$Category HPack_SpecialEffects
+	translation "209:224=145:159"
+}
+
+actor OrangeSparkleSpawner: GreenSparkleSpawner 505
+{
+   //$Category HPack_SpecialEffects
+	translation "209:224=112:127"
+}
