@@ -7,7 +7,7 @@
 
 ///////////////////////////////// HERETIC VARIANT /////////////////////////////////////////////
 
-Actor BaseStar
+Actor BaseStar2
 {
  +Missile
  +NoGravity
@@ -55,7 +55,7 @@ actor GreenStarSpawner 501
         Spawn:
            Active:
         	TNT1 A 0
-        	TNT1 A 1 A_SpawnItemEx ("BaseStar", random(-Args[1],Args[1]), random(-Args[1],Args[1]), random(0,2*Args[1]), 0, 0, 0, 0, 129, Args[2]) 
+        	TNT1 A 1 A_SpawnItemEx ("BaseStar2", random(-Args[1],Args[1]), random(-Args[1],Args[1]), random(0,2*Args[1]), 0, 0, 0, 0, 129, Args[2]) 
         	Loop
            Inactive:
 		TNT1 A 1
