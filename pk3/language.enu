@@ -57,7 +57,7 @@ TXT_FOODAPPLE1 = "GREEN APPLE";
 TXT_FOODAPPLE2 = "RED APPLE";
 
 TXT_FIREWALLFAILED = "Cannot use underwater!";
-TXT_FORCEBRACERSFAILED = "Not enough runes!"
+TXT_FORCEBRACERSFAILED = "Not enough runes!";
 
 // Locked Doors
 
