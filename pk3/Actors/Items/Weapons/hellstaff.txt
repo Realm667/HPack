@@ -24,9 +24,10 @@ ACTOR HPSkull : SkullRod replaces SkullRod
 		HROD B 0 A_ReFire
 		Goto Ready
 	AltFire:
+		HROD A 0 A_JumpIfNoAmmo("Ready")
 		HROD G 0 Bright A_PlaySound("weapons/wandcharge")
 		HROD G 0 Bright A_PlaySoundEx("weapons/spikeattack","Weapon")
-		HROD C 2 Bright Offset (0,32) A_JumpIfNoAmmo("Ready")
+		HROD C 2 Bright Offset (0,32)
 		HROD D 3 Bright Offset (0,36)
 		HROD E 2 Bright Offset (0,40)
 		HROD F 3 Bright Offset (0,44)
