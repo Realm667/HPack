@@ -190,9 +190,9 @@ map H4M9 "Dark Sun Rising"	//totally not by darkhaven3
 	music = "Music/dh3-h4m9-amb.spc"
 }
 
-map H5M1 "Abyss"
+map H5M1 "Ziggurat of Sorrow"
 {
-//	fade = "10 50 10"
+	fade = "0 05 10"
 	music = ROMERIC
 	next = h5m2
 	Cluster = 105
