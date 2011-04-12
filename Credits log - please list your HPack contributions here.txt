@@ -104,3 +104,9 @@ TEXTURES entry - SKYTP14W (warping version of SKYTOP14) FWIW
 REDPORT1-9, REDPORTX (Hexen red portal textures, X is frame)
 FLAT504M - red version of FLAT504
 REDMET** - red recolors of the various black metal textures
+
+-------------------------
+Contributor: Kore(siarch)
+-------------------------
+Map(s): H3M2
+Used music(s): TMPH3M2.xm (Anthems.xm - Emperor At Work 8:11 tracked by kurtz)
