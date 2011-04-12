@@ -129,6 +129,14 @@ map H2M0 "The Labyrinth"
 	Cluster = 102
 }
 
+map H3M2 "The generic land of fire"
+{
+	sky1 = "pri_osky", 0
+	music = TMPH3M2
+	next = h3m3
+	Cluster = 103
+}
+
 map H3M3 "Untitled"
 {
 	doublesky
