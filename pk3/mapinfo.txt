@@ -129,6 +129,14 @@ map H2M0 "The Labyrinth"
 	Cluster = 102
 }
 
+map H3M1 "City of Blood"
+{
+	fade = "20 05 05"
+	music = CHAP_3R
+	next = h3m2
+	Cluster = 103
+}
+
 map H3M2 "The generic land of fire"
 {
 	sky1 = "pri_osky", 0
