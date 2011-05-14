@@ -110,3 +110,8 @@ Contributor: Kore(siarch)
 -------------------------
 Map(s): H3M2
 Used music(s): TMPH3M2.xm (Anthems.xm - Emperor At Work 8:11 tracked by kurtz)
+
+-------------------------
+Contributor: Ghastly
+-------------------------
+Some general resource and quality management and testing.
