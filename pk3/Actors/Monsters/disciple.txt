@@ -4,7 +4,7 @@ ACTOR Disciple 30117
 	//$Title Disciple
 	Health 220
 	PainChance 140
-	Speed 12
+	Speed 6
 	Radius 20 
 	Height 56 
 	cameraheight 41
