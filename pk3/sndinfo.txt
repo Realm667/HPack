@@ -226,6 +226,7 @@ SwarmFlySight1 SFLYSIT1
 SwarmFlySight2 SFLYSIT2
 
 //Frostgargoyle
+FrostImp/Shards		IIMPSHRD
 IceGuyAttack            frosty2
 IceGuyMissileExplode    shards1b
 
