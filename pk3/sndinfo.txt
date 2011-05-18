@@ -216,6 +216,9 @@ satyr/pain 		dssatpai
 satyr/hit		dssathit
 
 //Swarm
+Swarm/Fly	SWRMFLY
+Swarm/Death	SWRMDETH
+
 SwarmFly SFLY
 $RANDOM SwarmFlyAttack {SwarmFlyAttack1 SwarmFlyAttack2}
 SwarmFlyAttack1 SFLYATK1
