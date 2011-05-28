@@ -61,7 +61,11 @@ Textures contributed:
 					foreground.
 - WINDIGO.png	-	based on SCLAVAA2.png from the common pack, recoloured
 					purple.
-
+- LEATHPU1	\
+- LEATHPU2	|
+- LEATHPU3	--	purple variants of already existing blue-lit textures
+- LEATHERD	|
+- LEATHERE	/
 
 
 -------------------------
