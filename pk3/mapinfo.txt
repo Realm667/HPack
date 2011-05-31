@@ -115,7 +115,7 @@ map H2M3 "Aquatemple"
 	Cluster = 102
 }
 
-map H2M9 "Residence Serpent"
+map H2M9 "Serpent Residence"
 {
 	sky1 = "SKYTOP10", 0
 	music = MUS_E2M3
