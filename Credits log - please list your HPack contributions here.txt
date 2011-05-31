@@ -31,7 +31,7 @@ Sounds contributed:
 									original author: "Big Room Sound"
 									downloaded from www.soundsnap.com (royalty 
 									free).
-- printz/ambient/growl	-	"SCIENCE FICTION WIND STORM MONSTER GROWL SHORT 01"
+- printz/ambient/growl (or amb/growl)	-	"SCIENCE FICTION WIND STORM MONSTER GROWL SHORT 01"
 							original author: "SFX Bible"
 							downloaded from www.soundsnap.com (royalty free).
 - printz/ambient/humnoise	-	based on:
@@ -43,6 +43,10 @@ Sounds contributed:
 											"33628_kerri_purr_clip.mp3"
 											from www.freesound.org (royalty 
 											free).
+- amb/windsubs	-	based on:	"SUBS BASS EERIE"
+					original author: "Justine Angus"
+					downloaded from www.soundsnap.com (royalty free)
+
 - WaterMove	-	from id/Raven Software's Hexen
 
 Textures contributed:

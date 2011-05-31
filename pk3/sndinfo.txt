@@ -520,6 +520,9 @@ woodenbarrel/death		dswbrldt
 
 //Printz Growl
 amb/growl		lowgrowl
+//ambient low-noise wind
+amb/windsubs		windsubs
+$ambient 62 amb/windsubs surround continuous 0.5
 
 // Curse
 CurseActive		CURSEACT
@@ -635,6 +638,7 @@ EarthStartMove          quake2
 // Map sounds
 
 printz/sequence/grind/loop grndloop
+$limit printz/sequence/grind/loop 5
 printz/ambient/humnoise humnoise
 $rolloff printz/ambient/humnoise 200 600
 printz/ambient/kerri_purrclip_short turbulen
