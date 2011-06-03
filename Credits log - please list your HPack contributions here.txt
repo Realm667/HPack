@@ -46,6 +46,12 @@ Sounds contributed:
 - amb/windsubs	-	based on:	"SUBS BASS EERIE"
 					original author: "Justine Angus"
 					downloaded from www.soundsnap.com (royalty free)
+- printz/ambient/pr_wind1	-	"Sound design horror accentghost wind swell"
+					original author: "BLASTWAVE FX"
+					downloaded from www.soundsnap.com (royalty free)
+- printz/ambient/pr_wind2	-	"Sound design horror accent supernatural wind gust 01"
+					original author: "SFX Bible"
+					downloaded from www.soundsnap.com (royalty free)
 
 - WaterMove	-	from id/Raven Software's Hexen
 
