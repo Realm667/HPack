@@ -522,7 +522,7 @@ woodenbarrel/death		dswbrldt
 amb/growl		lowgrowl
 //ambient low-noise wind
 amb/windsubs		windsubs
-$ambient 62 amb/windsubs surround continuous 0.5
+
 
 // Curse
 CurseActive		CURSEACT
@@ -534,7 +534,7 @@ misc/gibbed		DSSLOP
 // CaptainToenails Map
 DSGONG	DSGONG
 PortalChoir/Loop	DSCHOIR
-$ambient 60 "PortalChoir/Loop" POINT continuous  255
+
 
 
 ////////////////////
@@ -554,17 +554,6 @@ AMBX10   ambx10 //Night
 AMBX11   ambx11 //Night
 
 
-$AMBIENT 1 ambx1 RANDOM 20.0 35.0 1.0
-$AMBIENT 2 ambx2 RANDOM 20.0 35.0 1.0
-$AMBIENT 3 ambx3 RANDOM 20.0 35.0 1.0
-$AMBIENT 4 ambx4 SURROUND CONTINUOUS 0.35
-$AMBIENT 5 ambx5 POINT CONTINUOUS 1.0
-$AMBIENT 6 ambx6 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 7 ambx7 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 8 ambx8 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 9 ambx9 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 10 ambx10 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 11 ambx11 POINT RANDOM 20.0 35.0 1.0
 
 ///////////////////////////
 // SPECIAL EFFECT SOUNDS //
@@ -642,4 +631,26 @@ $limit printz/sequence/grind/loop 5
 printz/ambient/humnoise humnoise
 $rolloff printz/ambient/humnoise 200 600
 printz/ambient/kerri_purrclip_short turbulen
+
+printz/ambient/pr_wind1 pr_wind1
+printz/ambient/pr_wind2 pr_wind2
+
+;=========================================================
+;AMBIENT SOUND LISTING
+;=========================================================
+$AMBIENT 1 ambx1 RANDOM 20.0 35.0 1.0
+$AMBIENT 2 ambx2 RANDOM 20.0 35.0 1.0
+$AMBIENT 3 ambx3 RANDOM 20.0 35.0 1.0
+$AMBIENT 4 ambx4 SURROUND CONTINUOUS 0.35
+$AMBIENT 5 ambx5 POINT CONTINUOUS 1.0
+$AMBIENT 6 ambx6 POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 7 ambx7 POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 8 ambx8 POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 9 ambx9 POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 10 ambx10 POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 11 ambx11 POINT RANDOM 20.0 35.0 1.0
+$ambient 60 "PortalChoir/Loop" POINT continuous  255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
+$ambient 62 amb/windsubs surround continuous 0.5
+$ambient 63 printz/ambient/pr_wind1 surround random 30.0 300.0 0.5
+$ambient 64 printz/ambient/pr_wind2 surround random 30.0 300.0 0.7
