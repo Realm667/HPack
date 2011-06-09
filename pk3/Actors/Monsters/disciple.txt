@@ -28,29 +28,31 @@ ACTOR Disciple 30117
 		DISC AB 10 A_Look 
 		Loop 
 	See: 
-		DISC AAABBB 2 A_Chase
+		DISC A 2 A_Chase("", "")
+		DISC AABBB 2 A_Chase
 		Loop
 	Missile:
-		DISC A 1 A_Jump(192,1)
+		DISC A 1 A_Jump(192, 1)
 		Goto See
-		DISC C 0 Bright A_Jump(128,10)
+		DISC C 0 Bright A_Jump(128, "Missile2")
 		DISC C 1 Bright A_PlaySound("monster/disat1")
-		DISC CC 5 Bright A_FaceTarget
+		DISC CCCC 5 Bright A_FaceTarget
 		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,-4,0)
 		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,4,0)
 		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,-8,0)
 		DISC D 0 Bright A_CustomMissile("DiscipleShot1",36,0,8,0)
 		DISC D 8 Bright A_CustomMissile("DiscipleShot1",36,0,0,0)
-		DISC D 0 Bright A_Jump(64,1)
+		DISC D 0 Bright A_Jump(64, "Missile2")
 		Goto See
+	Missile2:
 		DISC E 1 Bright A_PlaySound("monster/disat2")
-		DISC EE 5 Bright A_FaceTarget
+		DISC EEEE 5 Bright A_FaceTarget
 		DISC F 8 Bright A_CustomMissile("DiscipleShot2",36,0,0,0)
 		DISC E 1 Bright A_PlaySound("monster/disat2")
-		DISC EE 5 Bright A_FaceTarget
+		DISC EEEE 5 Bright A_FaceTarget
 		DISC F 8 Bright A_CustomMissile("DiscipleShot2",36,0,0,0)
 		DISC E 1 Bright A_PlaySound("monster/disat2")
-		DISC EE 5 Bright A_FaceTarget
+		DISC EEEE 5 Bright A_FaceTarget
 		DISC F 8 Bright A_CustomMissile("DiscipleShot2",36,0,0,0)
 		Goto See
 	Pain: 
@@ -101,10 +103,11 @@ ACTOR DiscipleShot1
    PROJECTILE
 //   +THRUGHOST
    DeathSound "monster/disht1"
+   Decal PlasmaScorchLower
    States
    {
    Spawn:
-      CFX2 ABCD 2 Bright A_CustomMissile("DSFX1",0,0,0,0)
+      CFX2 ABCD 2 Bright A_SpawnItemEx("DSFX1",0,0,0,0,0,0,0,128)
       loop
    Death:
       CFX2 EFGHI 3 Bright
@@ -125,12 +128,13 @@ ACTOR DiscipleShot2
 //   +THRUGHOST
    +SEEKERMISSILE
    DeathSound "monster/disht2"
+   Decal MummyScorch
    States
    {
    Spawn:
-      CFX3 A 3 Bright A_CustomMissile("DSFX2",0,0,0,0)
+      CFX3 A 3 Bright A_SpawnItemEx("DSFX2",0,0,0,0,0,0,0,128)
       CFX3 A 0 Bright A_SeekerMissile(5,8)
-      CFX3 B 3 Bright A_CustomMissile("DSFX2",0,0,0,0)
+      CFX3 B 3 Bright A_SpawnItemEx("DSFX2",0,0,0,0,0,0,0,128)
       CFX3 B 0 Bright A_SeekerMissile(5,8)
       loop
    Death:
