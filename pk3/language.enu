@@ -79,11 +79,12 @@ PD_ANYKEY = "YOU NEED A PRISMATIC KEY TO OPEN THIS DOOR";
 PD_ANYKEYO = "YOU NEED A PRISMATIC KEY TO ACTIVATE THIS OBJECT";
 
 // Obituaries
-OB_ACOLYTE = "An Acolyte was promoted for killing %o.";
+OB_ACOLYTE = "An Acolyte of Chaos was promoted for killing %o.";
 OB_ARCHWIZARD = "%o was no match for the Arch-Wizard.";
 OB_AVATAR = "%o was smitten by the Dark Avatar";
 OB_BEASTSHADOW = "%o was charred by a Shadow Dragon";
 OB_BEASTSTRONG = "%o was utterly crushed by a Weredragon Brute.";
+OB_BISHOP = "%o succumbed to the power of a Bishop of Chaos.";
 OB_BLOODLICH = "%o was reduced to a pile of ash by a Blood Lich.";
 OB_BORMERETH = "%o was incinerated by the rage of Bormereth.";
 OB_BORMERETHH = "%o was smashed by Bormereth.";
@@ -102,7 +103,7 @@ OB_DARKNESSRIFT = "%o overwhelmed by a Darkness Rift";
 OB_DARKNESSRIFTH = "%o was choked by a Darkness Rift";
 OB_DEATHKNIGHT = "%o thought he could battle a Deathknight and live.";
 OB_DEATHKNIGHTH = "A Deathknight hacked %o into pieces.";
-OB_DISCIPLE = "%o was smitten by a Disciple.";
+OB_DISCIPLE = "%o was smitten by an Apostle of Chaos.";
 OB_DRAGONFAMILIAR = "%o was cooked by a Dragon Familiar.";
 OB_FALLEN = "%o was burned by a Fallen.";
 OB_FELLBEAST = "%o was dissolved by a FellBeast's acid.";
@@ -136,6 +137,8 @@ OB_SQUIRREL = "%o was too nutty for %p own good.";
 OB_VULGAR = "%o was poisoned by a Vulgar.";
 OB_VULGARH = "A Vulgar had %o for lunch.";
 OB_WICKED = "%o was blasted by a Wicked.";
+OB_WIZARD = "%o was cursed by a Disciple of Chaos.";
+OB_WIZARDHIT = "%o was palpated by a Disciple of Chaos.";
 OB_WRAITH = "%o felt the chill of a Wraith.";
 
 OB_MPSTAFF = "%o got Staffed by %k.";
