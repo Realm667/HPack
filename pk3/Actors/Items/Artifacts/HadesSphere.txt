@@ -1,24 +1,313 @@
-// HADES SPHERE
-actor ArtiHadesSphere : HealthPickup 5211
+// ********* //
+// -POTIONS- //
+// ********* //
+
+// ACTOR SmallHealthPotion : Health replaces CrystalVial
+// {
+//  //$Category Health and Armor
+//   Tag "Crystal Vial"
+//   Inventory.Amount 10
+//   Inventory.PickupMessage "Small Health Potion"
+//   +FLOATBOB
+//   States
+//   {
+//   Spawn:
+//     HPP1 A -1
+//     Stop
+//   }
+// }
+
+ACTOR MediumHealthPotion : Health 5202
 {
-	//$Category Artifacts
-	//$Title Hades Sphere
-	Tag "$TAG_ARTIHADESSPHERE"
-	Inventory.PickupMessage "$TXT_ARTIHADESSPHERE"
-	Inventory.PickupSound "misc/p_pkup"
-	Health 100
-	Inventory.DefMaxAmount
-	Inventory.Icon ARTIHADS
-	Scale .75
-	HealthPickup.AutoUse 3
-	+FLOATBOB
-	+COUNTITEM
-	+INVENTORY.PICKUPFLASH
-	+INVENTORY.FANCYPICKUPSOUND
-	States
-	{
-	Spawn:
-		HADS ABCD 4 Bright
-		Loop
-	}
+  //$Category Health and Armor
+  Tag "Crystal Ampul"
+  Inventory.Amount 15
+  Inventory.PickupMessage "Medium Health Potion"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    HPP2 A -1
+    Stop
+  }
+}
+
+ACTOR LargeHealthPotion : Health 5203
+{
+  //$Category Health and Armor
+  Tag "Crystal Flask"
+  Inventory.Amount 25
+  Inventory.PickupMessage "Large Health Potion"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    HPP3 A -1
+    Stop
+  }
+}
+
+ACTOR SuperHealthPotion : Health 5204
+{
+  //$Category Health and Armor
+  Tag "Crystal Ewer"
+  Inventory.Amount 50
+  Inventory.PickupMessage "Super Health Potion"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    HPP4 A -1
+    Stop
+  }
+}
+
+//-----------------------------------------------------------------------
+
+ACTOR SmallMiraclePotion : Health 5205
+{
+  //$Category Health and Armor
+  Tag "Miracle Vial"
+  Inventory.Amount 10
+  Inventory.MaxAmount 200
+  Inventory.PickupMessage "Small Miracle Potion"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    MRP1 A -1
+    Stop
+  }
+}
+
+ACTOR MediumMiraclePotion : Health 5206
+{
+  //$Category Health and Armor
+  Tag "Miracle Ampul"
+  Inventory.Amount 15
+  Inventory.MaxAmount 200
+  Inventory.PickupMessage "Medium Miracle Potion"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    MRP2 A -1
+    Stop
+  }
+}
+
+ACTOR LargeMiraclePotion : Health 5207
+{
+  //$Category Health and Armor
+  Tag "Miracle Flask"
+  Inventory.Amount 25
+  Inventory.MaxAmount 200
+  Inventory.PickupMessage "Large Miracle Potion"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    MRP3 A -1
+    Stop
+  }
+}
+
+ACTOR SuperMiraclePotion : Health 5208
+{
+  //$Category Health and Armor
+  Tag "Miracle Ewer"
+  Inventory.Amount 50
+  Inventory.MaxAmount 200
+  Inventory.PickupMessage "Super Miracle Potion"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    MRP4 A -1
+    Stop
+  }
+}
+
+//-----------------------------------------------------------------------
+
+ACTOR SmallPortablePotion : HealthPickup 5209
+{
+  //$Category Artifacts
+  Health 10
+  HealthPickup.Autouse 1
+  Inventory.Icon "PRP1B0"
+  Inventory.PickupMessage "Small Portable Potion"
+  Inventory.PickupSound "misc/p_pkup"
+  Tag "Quartz Vial"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.FANCYPICKUPSOUND
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    PRP1 A -1
+    Stop
+  }
+}
+
+ACTOR MediumPortablePotion : HealthPickup 5210
+{
+  //$Category Artifacts
+  Health 15
+  HealthPickup.Autouse 1
+  Inventory.Icon "PRP2B0"
+  Inventory.PickupMessage "Medium Portable Potion"
+  Inventory.PickupSound "misc/p_pkup"
+  Tag "Quartz Ampul"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.FANCYPICKUPSOUND
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    PRP2 A -1
+    Stop
+  }
+}
+
+ACTOR LargePortablePotion : HealthPickup replaces ArtiHealth
+{
+  //$Category Artifacts
+  Health 25
+  HealthPickup.Autouse 1
+  Inventory.Icon "PRP3B0"
+  Inventory.PickupMessage "Large Portable Potion"
+  Inventory.PickupSound "misc/p_pkup"
+  Tag "Quartz Flask"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.FANCYPICKUPSOUND
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    PRP3 A -1
+    Stop
+  }
+}
+
+ACTOR SuperPortablePotion : HealthPickup 5211
+{
+  //$Category Artifacts
+  Health 50
+  HealthPickup.Autouse 1
+  Inventory.Icon "PRP4B0"
+  Inventory.PickupMessage "Super Portable Potion"
+  Inventory.PickupSound "misc/p_pkup"
+  Tag "Quartz Ewer"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.FANCYPICKUPSOUND
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    PRP4 A -1
+    Stop
+  }
+}
+
+//-----------------------------------------------------------------------
+
+ACTOR PowerRegenerationSmall : PowerRegeneration
+{
+  Powerup.Color 0, 112, 224, 0.125
+  Powerup.Duration -10
+}
+
+ACTOR PowerRegenerationMedium : PowerRegeneration
+{
+  Powerup.Color 0, 112, 224, 0.125
+  Powerup.Duration -15
+}
+
+ACTOR PowerRegenerationLarge : PowerRegeneration
+{
+  Powerup.Color 0, 112, 224, 0.125
+  Powerup.Duration -25
+}
+
+ACTOR PowerRegenerationSuper : PowerRegeneration
+{
+  Powerup.Color 0, 112, 224, 0.125
+  Powerup.Duration -50
+}
+
+ACTOR SmallRegenerationPotion : PowerupGiver 5212
+{
+  //$Category Artifacts
+  Inventory.Icon "RGP1B0"
+  Inventory.PickupMessage "Small Regeneration Potion"
+  Powerup.Type "PowerRegenerationSmall"
+  Tag "Regeneration Vial"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    RGP1 A -1
+    Stop
+  }
+}
+
+ACTOR MediumRegenerationPotion : PowerupGiver 5216
+{
+  //$Category Artifacts
+  Inventory.Icon "RGP2B0"
+  Inventory.PickupMessage "Medium Regeneration Potion"
+  Powerup.Type "PowerRegenerationMedium"
+  Tag "Regeneration Ampul"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    RGP2 A -1
+    Stop
+  }
+}
+
+ACTOR LargeRegenerationPotion : PowerupGiver 5214
+{
+  //$Category Artifacts
+  Inventory.Icon "RGP3B0"
+  Inventory.PickupMessage "Large Regeneration Potion"
+  Powerup.Type "PowerRegenerationLarge"
+  Tag "Regeneration Flask"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    RGP3 A -1
+    Stop
+  }
+}
+
+ACTOR SuperRegenerationPotion : PowerupGiver 5215
+{
+  //$Category Artifacts
+  Inventory.Icon "RGP4B0"
+  Inventory.PickupMessage "Super Regeneration Potion"
+  Powerup.Type "PowerRegenerationSuper"
+  Tag "Regeneration Ewer"
+  +COUNTITEM
+  +FLOATBOB
+  +INVENTORY.PICKUPFLASH
+  States
+  {
+  Spawn:
+    RGP4 A -1
+    Stop
+  }
 }
