@@ -6,8 +6,7 @@ Actor ArtiRingOfRegeneration : PowerupGiver 19875
   Inventory.PickupMessage "$TXT_ARTIREGENERATION"
   Tag "$TAG_ARTIREGENERATION"
   Powerup.Color Red 0.1
-  // Inventory.DefMaxAmount
-  Inventory.MaxAmount 200
+  Inventory.DefMaxAmount
   Powerup.Type Regeneration
   Powerup.Duration -100
   Inventory.Icon "RRGNA0"
