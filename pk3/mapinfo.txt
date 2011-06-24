@@ -20,12 +20,8 @@ map H1M1 "Silverspring Docks"
 map H1M2 "Sidhe Altar"
 {
 	fade = "10 15 10"
-	music = D_STLKS2
+	music = "H1M12" //Mist ache - by Lee Jackson (3DRealms|Apogee - Rise of the Triad - MISTACHE.MID)
 	next = h1m3
-	Cluster = 101
-	// music = "H1M12" //Mist ache - by Lee Jackson (3DRealms|Apogee - Rise of the Triad - MISTACHE.MID)
-	lightmode = 2
-	sky1 = "SKYTOP15", 0
 	Cluster = 101
 }
 
