@@ -17,11 +17,15 @@ map H1M1 "Silverspring Docks"
 	Cluster = 101
 }
 
-map H1M2 "Crypts"
+map H1M2 "Sidhe Altar"
 {
-	fade = "10 15 20"
-	music = FANTAR
+	fade = "10 15 10"
+	music = D_STLKS2
 	next = h1m3
+	Cluster = 101
+	// music = "H1M12" //Mist ache - by Lee Jackson (3DRealms|Apogee - Rise of the Triad - MISTACHE.MID)
+	lightmode = 2
+	sky1 = "SKYTOP15", 0
 	Cluster = 101
 }
 
@@ -73,14 +77,6 @@ map H1M8 "City of Darkness"
 	Cluster = 101
 }
 
-map H1M12 "No name for now"
-{
-	music = "H1M12" //Mist ache - by Lee Jackson (3DRealms|Apogee - Rise of the Triad - MISTACHE.MID)
-	lightmode = 2
-	sky1 = "SKYTOP15", 0
-	Cluster = 101
-}
-
 map H1MX "Ghost Town"
 {
 	next = H1M1
@@ -112,6 +108,14 @@ map H2M3 "Aquatemple"
 	fade = "10 20 50"
 	music = MUS_E3M3
 	next = h2m4
+	Cluster = 102
+}
+
+map H2M4 "Icy Catacomb"
+{
+	fade = "10 15 20"
+	music = FANTAR
+	next = h2m5
 	Cluster = 102
 }
 
