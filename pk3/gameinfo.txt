@@ -1,3 +1,3 @@
-// Gameinfo file for GZDoom
-// This makes the port automatically know which IWAD to use with this mod.
-IWAD = "Heretic.wad"
+IWAD = "HERETIC.WAD"
+STARTUPTITLE = "DEMONIC UPRISING"
+STARTUPCOLORS = "A6783F","222222"
