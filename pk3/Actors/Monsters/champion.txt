@@ -1,57 +1,10 @@
 ACTOR Champion : HPKnight 16512
 {
-	//$Category Monsters
-	//$Title Undead Champion
-	Health 300
+  //$Category Monsters
+  //$Title Undead Champion
+  Health 260
   Obituary "$OB_CHAMPION"
   HitObituary "$OB_CHAMPIONH"
-  // Translation "210:225=170:176","145:155=170:176"
-  // Translation "0:35=[0,0,0]:[255,185,37]", "36:51=[64,48,16]:[255,185,37]", "145:168=[40,8,60]:[160,32,240]"
-  Scale 1.1
-  Speed 16
-  Painchance 50
-  DropItem "PhoenixRodAmmo", 84, 2
-  +MISSILEMORE
-  +MISSILEEVENMORE
-  States
-  {
-  Spawn:
-    BOSS AB 10 A_Look
-    Loop
-  See:
-    BOSS ABCD 4 A_Chase
-    Loop
-  Melee:
-  Missile:
-    BOSS E 10 A_FaceTarget
-    BOSS F 8 A_FaceTarget
-    BOSS G 0 A_CustomMissile("RedAxe",48,0,4)
-    BOSS G 0 A_CustomMissile("RedAxe",48,0,0)
-    BOSS G 0 A_CustomMissile("RedAxe",48,0,-4)
-	BOSS E 10 A_FaceTarget
-    BOSS F 8 A_FaceTarget
-    BOSS G 0 A_CustomMissile("RedAxe",48,0,4)
-    BOSS G 0 A_CustomMissile("RedAxe",48,0,0)
-    BOSS G 0 A_CustomMissile("RedAxe",48,0,-4)
-	BOSS G 8
-    Goto See
-  Pain:
-    BOSS H 3
-    BOSS H 3 A_Pain
-    Goto See
-  Pain.HandOfTheWraith:
-	BOSS H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	BOSS H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	BOSS H 3
-    BOSS H 3 A_Pain
-	Goto See
-  Death:
-    BOSS I 6
-    BOSS J 6 A_Scream
-    BOSS K 6
-    BOSS L 6 A_NoBlocking
-    BOSS MN 6
-    BOSS O -1
-    Stop
-  }
+  Translation "210:225=170:176","145:155=170:176"
+  Translation "0:35=[0,0,0]:[255,185,37]", "36:51=[64,48,16]:[255,185,37]", "145:168=[40,8,60]:[160,32,240]"
 }
