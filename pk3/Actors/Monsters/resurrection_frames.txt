@@ -1,5 +1,6 @@
 actor HPBeast : Beast replaces Beast
 {
+	Health 400
 	States
 	{
 	Raise:
@@ -185,6 +186,7 @@ actor HPMummyLeaderGhost : MummyLeaderGhost replaces MummyLeaderGhost
 
 actor HPSnake : Snake replaces Snake
 {
+	Health 200
 	States
 	{
 	Raise:
