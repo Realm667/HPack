@@ -23,6 +23,7 @@ map H1M2 "Sidhe Altar"
 	music = "H1M12" //Mist ache - by Lee Jackson (3DRealms|Apogee - Rise of the Triad - MISTACHE.MID)
 	next = h1m3
 	Cluster = 101
+	lightmode = 2
 }
 
 map H1M3 "Elven Wood"
