@@ -22,23 +22,23 @@ Pointlight invlight4
 	Size 120
 }
 
-Object InvisibleAttack
-{
-	Frame FAXES { Light invlight1 }
-	Frame FAXET { Light invlight2 }
-	Frame FAXEU { Light invlight3 }
-	Frame FAXEV { Light invlight4 }
-	Frame FAXEW { Light invlight5 }
-	Frame FAXEX { Light invlight6 }
-}
+//Object InvisibleAttack
+//{
+//	Frame FAXES { Light invlight1 }
+//	Frame FAXET { Light invlight2 }
+//	Frame FAXEU { Light invlight3 }
+//	Frame FAXEV { Light invlight4 }
+//	Frame FAXEW { Light invlight5 }
+//	Frame FAXEX { Light invlight6 }
+//}
 
-Object InvisibleTrail
-{
-	Frame FAXES { Light invlight1 }
-	Frame FAXET { Light invlight2 }
-	Frame FAXEU { Light invlight3 }
-	Frame FAXEV { Light invlight4 }
-	Frame FAXEW { Light invlight5 }
-	Frame FAXEX { Light invlight6 }
-}
+//Object InvisibleTrail
+//{
+//	Frame FAXES { Light invlight1 }
+//	Frame FAXET { Light invlight2 }
+//	Frame FAXEU { Light invlight3 }
+//	Frame FAXEV { Light invlight4 }
+//	Frame FAXEW { Light invlight5 }
+//	Frame FAXEX { Light invlight6 }
+//}
 
