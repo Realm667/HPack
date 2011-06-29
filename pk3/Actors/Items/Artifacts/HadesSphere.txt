@@ -22,7 +22,7 @@ ACTOR MediumHealthPotion : Health 5202
   //$Category Health and Armor
   Tag "Crystal Ampul"
   Inventory.Amount 15
-  Inventory.PickupMessage "Medium Health Potion"
+  Inventory.PickupMessage "Crystal Ampul"
   +FLOATBOB
   States
   {
@@ -37,7 +37,7 @@ ACTOR LargeHealthPotion : Health 5203
   //$Category Health and Armor
   Tag "Crystal Flask"
   Inventory.Amount 25
-  Inventory.PickupMessage "Large Health Potion"
+  Inventory.PickupMessage "Crystal Flask"
   +FLOATBOB
   States
   {
@@ -52,7 +52,7 @@ ACTOR SuperHealthPotion : Health 5204
   //$Category Health and Armor
   Tag "Crystal Ewer"
   Inventory.Amount 50
-  Inventory.PickupMessage "Super Health Potion"
+  Inventory.PickupMessage "Crystal Ewer"
   +FLOATBOB
   States
   {
@@ -70,7 +70,7 @@ ACTOR SmallMiraclePotion : Health 5205
   Tag "Miracle Vial"
   Inventory.Amount 10
   Inventory.MaxAmount 200
-  Inventory.PickupMessage "Small Miracle Potion"
+  Inventory.PickupMessage "Miracle Vial"
   +FLOATBOB
   States
   {
@@ -86,7 +86,7 @@ ACTOR MediumMiraclePotion : Health 5206
   Tag "Miracle Ampul"
   Inventory.Amount 15
   Inventory.MaxAmount 200
-  Inventory.PickupMessage "Medium Miracle Potion"
+  Inventory.PickupMessage "Miracle Ampul"
   +FLOATBOB
   States
   {
@@ -102,7 +102,7 @@ ACTOR LargeMiraclePotion : Health 5207
   Tag "Miracle Flask"
   Inventory.Amount 25
   Inventory.MaxAmount 200
-  Inventory.PickupMessage "Large Miracle Potion"
+  Inventory.PickupMessage "Miracle Flask"
   +FLOATBOB
   States
   {
@@ -118,7 +118,7 @@ ACTOR SuperMiraclePotion : Health 5208
   Tag "Miracle Ewer"
   Inventory.Amount 50
   Inventory.MaxAmount 200
-  Inventory.PickupMessage "Super Miracle Potion"
+  Inventory.PickupMessage "Miracle Ewer"
   +FLOATBOB
   States
   {
@@ -136,7 +136,7 @@ ACTOR SmallPortablePotion : HealthPickup 5209
   Health 10
   HealthPickup.Autouse 1
   Inventory.Icon "PRP1B0"
-  Inventory.PickupMessage "Small Portable Potion"
+  Inventory.PickupMessage "Quartz Vial"
   Inventory.PickupSound "misc/p_pkup"
   Tag "Quartz Vial"
   +COUNTITEM
@@ -157,7 +157,7 @@ ACTOR MediumPortablePotion : HealthPickup 5210
   Health 15
   HealthPickup.Autouse 1
   Inventory.Icon "PRP2B0"
-  Inventory.PickupMessage "Medium Portable Potion"
+  Inventory.PickupMessage "Quartz Ampul"
   Inventory.PickupSound "misc/p_pkup"
   Tag "Quartz Ampul"
   +COUNTITEM
@@ -172,26 +172,26 @@ ACTOR MediumPortablePotion : HealthPickup 5210
   }
 }
 
-ACTOR LargePortablePotion : HealthPickup replaces ArtiHealth
-{
-  //$Category Artifacts
-  Health 25
-  HealthPickup.Autouse 1
-  Inventory.Icon "PRP3B0"
-  Inventory.PickupMessage "Large Portable Potion"
-  Inventory.PickupSound "misc/p_pkup"
-  Tag "Quartz Flask"
-  +COUNTITEM
-  +FLOATBOB
-  +INVENTORY.FANCYPICKUPSOUND
-  +INVENTORY.PICKUPFLASH
-  States
-  {
-  Spawn:
-    PRP3 A -1
-    Stop
-  }
-}
+//ACTOR LargePortablePotion : HealthPickup replaces ArtiHealth
+//{
+//  $Category Artifacts
+//  Health 25
+//  HealthPickup.Autouse 1
+//  Inventory.Icon "PRP3B0"
+//  Inventory.PickupMessage "Quartz Flask"
+//  Inventory.PickupSound "misc/p_pkup"
+//  Tag "Quartz Flask"
+//  +COUNTITEM
+//  +FLOATBOB
+//  +INVENTORY.FANCYPICKUPSOUND
+//  +INVENTORY.PICKUPFLASH
+//  States
+//  {
+//  Spawn:
+//    PRP3 A -1
+//    Stop
+//  }
+//}
 
 ACTOR SuperPortablePotion : HealthPickup 5211
 {
@@ -199,7 +199,7 @@ ACTOR SuperPortablePotion : HealthPickup 5211
   Health 50
   HealthPickup.Autouse 1
   Inventory.Icon "PRP4B0"
-  Inventory.PickupMessage "Super Portable Potion"
+  Inventory.PickupMessage "Quartz Ewer"
   Inventory.PickupSound "misc/p_pkup"
   Tag "Quartz Ewer"
   +COUNTITEM
@@ -244,7 +244,7 @@ ACTOR SmallRegenerationPotion : PowerupGiver 5212
 {
   //$Category Artifacts
   Inventory.Icon "RGP1B0"
-  Inventory.PickupMessage "Small Regeneration Potion"
+  Inventory.PickupMessage "Regeneration Vial"
   Powerup.Type "PowerRegenerationSmall"
   Tag "Regeneration Vial"
   +COUNTITEM
@@ -262,7 +262,7 @@ ACTOR MediumRegenerationPotion : PowerupGiver 5216
 {
   //$Category Artifacts
   Inventory.Icon "RGP2B0"
-  Inventory.PickupMessage "Medium Regeneration Potion"
+  Inventory.PickupMessage "Regeneration Ampul"
   Powerup.Type "PowerRegenerationMedium"
   Tag "Regeneration Ampul"
   +COUNTITEM
@@ -280,7 +280,7 @@ ACTOR LargeRegenerationPotion : PowerupGiver 5214
 {
   //$Category Artifacts
   Inventory.Icon "RGP3B0"
-  Inventory.PickupMessage "Large Regeneration Potion"
+  Inventory.PickupMessage "Regeneration Flask"
   Powerup.Type "PowerRegenerationLarge"
   Tag "Regeneration Flask"
   +COUNTITEM
@@ -298,7 +298,7 @@ ACTOR SuperRegenerationPotion : PowerupGiver 5215
 {
   //$Category Artifacts
   Inventory.Icon "RGP4B0"
-  Inventory.PickupMessage "Super Regeneration Potion"
+  Inventory.PickupMessage "Regeneration Ewer"
   Powerup.Type "PowerRegenerationSuper"
   Tag "Regeneration Ewer"
   +COUNTITEM
