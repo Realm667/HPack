@@ -8,7 +8,7 @@ Actor ArtiRingOfRegeneration : PowerupGiver 19875
   Powerup.Color Red 0.1
   Inventory.DefMaxAmount
   Powerup.Type Regeneration
-  Powerup.Duration -100
+  Powerup.Duration -60
   Inventory.Icon "RRGNA0"
   +Inventory.InvBar
   +FloatBob

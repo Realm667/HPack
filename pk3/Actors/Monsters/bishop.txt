@@ -5,7 +5,7 @@ Actor HPBishop : Bishop replaces Bishop 30155
 	Species "Wizard"
 	Health 180
 	DropItem "ArtiSpeedBoots", 4, 0	
-	DropItem "BlasterMed", 84, 25
+	DropItem "SkullRodAmmo", 84, 10
 	States
 	{
 	Raise:
