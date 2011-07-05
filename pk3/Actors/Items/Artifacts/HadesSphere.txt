@@ -1,24 +1,15 @@
-// HADES SPHERE
-actor ArtiHadesSphere : HealthPickup 5211
+// SUPER HEALTH POTION
+ACTOR SuperHealthPotion : Health 5211
 {
-	//$Category Artifacts
-	//$Title Hades Sphere
-	Tag "$TAG_ARTIHADESSPHERE"
-	Inventory.PickupMessage "$TXT_ARTIHADESSPHERE"
-	Inventory.PickupSound "misc/p_pkup"
-	Health 100
-	Inventory.DefMaxAmount
-	Inventory.Icon ARTIHADS
-	Scale .75
-	HealthPickup.AutoUse 3
-	+FLOATBOB
-	+COUNTITEM
-	+INVENTORY.PICKUPFLASH
-	+INVENTORY.FANCYPICKUPSOUND
-	States
-	{
-	Spawn:
-		HADS ABCD 4 Bright
-		Loop
-	}
+  //$Category Health and Armor
+  Tag "Crystal Ewer"
+  Inventory.Amount 50
+  Inventory.PickupMessage "Crystal Ewer"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    HPP4 A -1
+    Stop
+  }
 }
