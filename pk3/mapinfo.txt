@@ -183,6 +183,14 @@ map H3M8 "Hell's Forge"
 	lightmode = 2
 }
 
+map H3M0 "Infernux Prime"
+{
+   levelnum = 30
+   next = "E1M2"
+   music = "D_INFERN"
+   sky1 = "SKY2" 
+}
+
 map H4M1 "Scorched Earth"
 {
 	fade = "50 20 10"
