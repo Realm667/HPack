@@ -48,10 +48,10 @@ map H1M5 "Battlements"
 	Cluster = 101
 }
 
-map H1M6 "WhoKnows"
+map H1M6 "Keep"
 {
 	sky1 = "SKYTOP10", 1
-	music = MUS_E1M5
+	music = MUS_E1M7
 	next = h1m7
 	Cluster = 101
 }
@@ -71,6 +71,12 @@ map H1M8 "City of Darkness"
 {
 	music = "D_BGATE1"
 	next = H1M9
+	Cluster = 101
+}
+
+map H1M0 "Gloom Citadel"
+{
+	music = "BADASS"
 	Cluster = 101
 }
 
@@ -131,11 +137,11 @@ map H2M0 "The Labyrinth"
 	Cluster = 102
 }
 
-map H3M1 "City of Blood"
+map H3M1 "Scorched Earth"
 {
-	fade = "20 05 05"
-	music = CHAP_3R
-	next = h3m2
+	fade = "50 20 10"
+	music = PANDEM
+	next = h4m2
 	Cluster = 103
 }
 
@@ -191,11 +197,11 @@ map H3M0 "Infernux Prime"
    sky1 = "SKY2" 
 }
 
-map H4M1 "Scorched Earth"
+map H4M1 "City of Blood"
 {
-	fade = "50 20 10"
-	music = PANDEM
-	next = h4m2
+	fade = "20 05 05"
+	music = CHAP_3R
+	next = h3m2
 	Cluster = 104
 }
 
@@ -243,7 +249,8 @@ Map H5M7 "The Edge of the Universe"
 	Music = "MUS_E3M2"
 }
 
-map H5M9 "Fortress of Despair" {
+map H5M9 "Fortress of Despair"
+{
 	next = "h5m10"
 	cluster = 105
 	sucktime = 1
