@@ -202,7 +202,7 @@ Actor RedFire2
 
 Actor SnakeBrazierBrass 32484
 {
-	//$Category Decorations
+	//$Category Light sources
 	//$Title Snake Brazier (Brass)
 	Radius 12
 	Height 56
@@ -227,7 +227,7 @@ Actor SnakeBrazierBrass 32484
 
 Actor SnakeBrazierGold 32485
 {
-	//$Category Decorations
+	//$Category Light sources
 	//$Title Snake Brazier (Gold)
 	Radius 12
 	Height 56
@@ -252,7 +252,7 @@ Actor SnakeBrazierGold 32485
 
 Actor SnakeBrazierJade 32486
 {
-	//$Category Decorations
+	//$Category Light sources
 	//$Title Snake Brazier (Jade)
 	Radius 12
 	Height 56
