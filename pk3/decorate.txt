@@ -71,6 +71,7 @@
 #include "actors/monsters/reiver.txt"
 #include "actors/monsters/satyr.txt"
 #include "actors/monsters/scimitar.txt"
+#include "actors/monsters/secretmonsters.txt"
 #include "actors/monsters/sentinel.txt"
 #include "actors/monsters/serpent.txt"
 #include "actors/monsters/shadowbeast.txt"
