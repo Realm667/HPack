@@ -499,7 +499,14 @@ DSWPAN2		DSWPAN2
 DSWPAN3		DSWPAN3
 $random HWraith/Pain	{ DSWPAN1 DSWPAN2 DSWPAN3 }
 
+epig/grunz EPIGGRUN
+epig/see EPIGSEE
+epig/tod EPIGTOD
+epig/angriff EPIGANGR
+epig/port EPIGPORT
+epig/explo EPIGXPLO
 
+vile/firecrkl DSFLAME
 
 /////////////////
 // MISC SOUNDS //
