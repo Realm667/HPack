@@ -256,6 +256,8 @@ actor ForceShot3 : ForceShot2
 
 actor HPWizard : Wizard replaces Wizard
 {
+	BloodType "WizardPurpleBlood"
+	+NoBloodDecals
 	States
 	{
 	Raise:

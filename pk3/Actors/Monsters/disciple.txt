@@ -10,7 +10,8 @@ ACTOR Disciple 30117
 	cameraheight 41
 	Mass 320 
 	Monster
-	bloodcolor "white"
+	bloodtype "WizardWhiteBlood"
+	+NoBloodDecals
 	+FLOORCLIP
 	+DONTHURTSPECIES
 	+FLOAT
