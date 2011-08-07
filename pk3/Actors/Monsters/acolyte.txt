@@ -9,6 +9,9 @@ ACTOR DarkAcolyte : Bishop replaces Acolyte 30118
 	DropItem "GoldWandAmmo", 84, 10
 	PainChance 170
 	Obituary "$OB_ACOLYTE"
+	BloodType "WizardYellowBlood"
+	+NoBloodDecals
+	-NoBlood
 	States 
 	{ 
 	Spawn: 
