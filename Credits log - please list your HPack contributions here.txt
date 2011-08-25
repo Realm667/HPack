@@ -104,10 +104,9 @@ Used music:	dh3-h4m9-amb.spc (Super Metroid "Crateria Raining" ambient loop)
 -------------------------
 Contributor: Disguise
 -------------------------
-Map(s): H1MX - Ghost Town
-	H3M8 - Hell's Forge
-Used music(s): H_CREEP.midi (Alternate late game music replacement - Mr. Chris)
-	    H_FORGE.mid (HellCore 2.0)
+Map(s): H3M8 - Hell's Forge
+Used music(s): H_FORGE.mid (HellCore 2.0)
+	       H_CREEP.midi (Alternate late game music replacement by Mr. Chris)
 Texture(s): METL4C (Vertical version of METL4)
 
 -------------------------
