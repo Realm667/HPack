@@ -264,7 +264,7 @@ Map H5M11 "Vortex"
 	Cluster = 105
 	Sky1 = "CSSKY", 0.01
 	Fade = "57 00 7F"
-	Gravity = 550
+	Gravity = 300
 }
 
 ClearEpisodes
