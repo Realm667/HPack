@@ -12,7 +12,7 @@ actor ArtiHighJump : PowerupGiver 20003
 	Inventory.PickupMessage "$TXT_ARTIJUMP"
 	Inventory.Icon "ARTIJUMP"
 	Inventory.DefMaxAmount
-	Inventory.PickupSound "pickups/p_pkup"
+	Inventory.PickupSound "misc/p_pkup"
 	Inventory.UseSound "misc/invuse"
 	Powerup.Type "HighJump"
 	Powerup.Duration 1000
