@@ -201,7 +201,15 @@ map H4M1 "City of Blood"
 {
 	fade = "20 05 05"
 	music = CHAP_3R
-	next = h3m2
+	next = h4m2
+	Cluster = 104
+}
+
+map H4M2 "the bloody path"
+{
+	//sky1 = "SKYTOP10", 0
+	music = romeric
+	next = h4m3
 	Cluster = 104
 }
 
