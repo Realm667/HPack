@@ -230,6 +230,13 @@ map H4M9 "Dark Sun Rising"	//totally not by darkhaven3
 	music = "Music/dh3-h4m9-amb.spc"
 }
 
+map H4M0 "Pseudo heaven"
+{
+	music = bldrstod
+	//next = END of episode 4
+	cluster = 104
+}
+
 map H5M1 "Ziggurat of Sorrow"
 {
 	fade = "0 05 10"
