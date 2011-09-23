@@ -16,185 +16,185 @@ ACTOR SCRedFruit 31104
 {
 	//$Category Decoration
 	//$Title Fruit (Red)
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    FRUT A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		FRUT A -1
+		Stop
+	}
 }
 
 ACTOR SCBlueFruit 31105
 {
 	//$Category Decoration
 	//$Title Fruit (Blue)
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    FRUT B -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		FRUT B -1
+		Stop
+	}
 }
 
 ACTOR SCHourglass 31106
 {
 	//$Category Decoration
 	//$Title Hourglass
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    HOUR A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		HOUR A -1
+		Stop
+	}
 }
 
 ACTOR SCStoneHead 31107
 {
 	//$Category Decoration
 	//$Title Statue Head
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    FACE A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		FACE A -1
+		Stop
+	}
 }
 
 ACTOR SCCrystal 31108
 {
 	//$Category Decoration
 	//$Title Crystal
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    GEM1 A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		GEM1 A -1
+		Stop
+	}
 }
 
 ACTOR SCFloatSeed 31109
 {
 	//$Category Decoration
 	//$Title Float Seed
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    SEED A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		SEED A -1
+		Stop
+	}
 }
 
 ACTOR SCStone 31110
 {
 	//$Category Decoration
 	//$Title Rock (Gray)
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    ROC1 A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		ROC1 A -1
+		Stop
+	}
 }
 
 ACTOR SCMossyRock 31111
 {
 	//$Category Obstacles
 	//$Title Rock (Mossy)
-  Radius 16
-  Height 64
-+SOLID
-  States
-  {
-  Spawn:
-    ROC2 A -1
-    Stop
-  }
+	Radius 16
+	Height 64
+	+SOLID
+	States
+	{
+	Spawn:
+		ROC2 A -1
+		Stop
+	}
 }
 
 ACTOR SCMossyPillar 31112
 {
 	//$Category Obstacles
 	//$Title Ruin Pillar
-  Radius 16
-  Height 64
-+SOLID
-  States
-  {
-  Spawn:
-    ROC3 A -1
-    Stop
-  }
+	Radius 16
+	Height 64
+	+SOLID
+	States
+	{
+	Spawn:
+		ROC3 A -1
+		Stop
+	}
 }
 
 ACTOR SCPillar 31113
 {
 	//$Category Obstacles
 	//$Title Pillar
-  Radius 16
-  Height 96
-+SOLID
-  States
-  {
-  Spawn:
-    ROC4 A -1
-    Stop
-  }
+	Radius 16
+	Height 96
+	+SOLID
+	States
+	{
+	Spawn:
+		ROC4 A -1
+		Stop
+	}
 }
 
 ACTOR SCCoin 31114
 {
 	//$Category Decoration
 	//$Title Coin
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    COIN A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		COIN A -1
+		Stop
+	}
 }
 
 ACTOR SCHorn 31115
 {
 	//$Category Decoration
 	//$Title Horn
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    HORN A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		HORN A -1
+		Stop
+	}
 }
 
 ACTOR SCBottle 31116
 {
 	//$Category Decoration
 	//$Title Bottle
-  Radius 4
-  Height 4
-  States
-  {
-  Spawn:
-    BOTL A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	States
+	{
+	Spawn:
+		BOTL A -1
+		Stop
+	}
 }
 
 ACTOR SCCocoon 31117
@@ -218,49 +218,49 @@ ACTOR SCCocoonedGuy 31118
 {
 	//$Category Obstacles
 	//$Title Cocoon with Guy
-  Radius 16
-  Height 48
-  +SPAWNCEILING
-  +NOGRAVITY
-+SOLID
-  States
-  {
-  Spawn:
-    WEB2 A -1
-    Stop
-  }
+	Radius 16
+	Height 48
+	+SPAWNCEILING
+	+NOGRAVITY
+	+SOLID
+	States
+	{
+	Spawn:
+		WEB2 A -1
+		Stop
+	}
 }
 
 ACTOR SCCobwebWide 31119
 {
 	//$Category Decoration
 	//$Title Cobweb (Wide)
-  Radius 4
-  Height 4
-  +SPAWNCEILING
-  +NOGRAVITY
-  States
-  {
-  Spawn:
-    WEB3 A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		WEB3 A -1
+		Stop
+	}
 }
 
 ACTOR SCCobwebThin 31120
 {
 	//$Category Decoration
 	//$Title Cobweb (Thin)
-  Radius 4
-  Height 4
-  +SPAWNCEILING
-  +NOGRAVITY
-  States
-  {
-  Spawn:
-    WEB4 A -1
-    Stop
-  }
+	Radius 4
+	Height 4
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		WEB4 A -1
+		Stop
+	}
 }
 
 ACTOR SCCobwebLarge 31121
@@ -285,6 +285,7 @@ ACTOR SCGnarlyTree 31122
 	//$Title Tree (Gnarly, Shadowcaster)
 	Radius 16
 	Height 80
+	+SOLID
 	States
 	{
 	Spawn:
@@ -299,6 +300,7 @@ ACTOR SCGreenTree 31123
 	//$Title Tree (Shadowcaster)
 	Radius 18
 	Height 70
+	+SOLID
 	States
 	{
 	Spawn:
@@ -313,6 +315,7 @@ ACTOR SCShrub 31124
 	//$Title Shrub (Shadowcaster)
 	Radius 16
 	Height 24
+	+SOLID
 	States
 	{
 	Spawn:

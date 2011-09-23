@@ -1,20 +1,20 @@
 ACTOR DryIce 12381
 {
-//$Category HPack_SpecialEffects
-radius 2
-height 2
-+NOINTERACTION
-+FORCEXYBILLBOARD
-+ALLOWCLIENTSPAWN
-renderstyle Add
-yscale 0.5
-alpha 0.5
-States
-{
+	//$Category HPack_SpecialEffects
+	radius 2
+	height 2
+	+NOINTERACTION
+	+FORCEXYBILLBOARD
+	+ALLOWCLIENTSPAWN
+	renderstyle Add
+	yscale 0.5
+	alpha 0.5
+	States
+	{
 	Spawn:
-	LOWF A -1
-	stop
-	}
+		LOWF A -1
+		stop
+		}
 }
 
 ACTOR DryIceGreen : DryIce 12382
