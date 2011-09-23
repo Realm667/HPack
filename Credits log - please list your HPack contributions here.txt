@@ -133,4 +133,7 @@ Some general resource and quality management and testing.
 Contributor: Archi
 -------------------------
 Maps:	H2M9 - Serpent Residence
+	H4M2 - The Bloody Path
 	H4M0 - Pseudo Heaven
+
+Used music: bldrstod.ogg - "Falkenbach - Baldurs Tod" ogg compressed variant

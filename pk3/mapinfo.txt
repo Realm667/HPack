@@ -235,6 +235,7 @@ map H4M0 "Pseudo heaven"
 	music = bldrstod
 	//next = END of episode 4
 	cluster = 104
+	fade = "5D 8A A8"
 }
 
 map H5M1 "Ziggurat of Sorrow"
