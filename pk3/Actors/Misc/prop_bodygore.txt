@@ -1,5 +1,6 @@
 // The corpse sprite (HCORB) is extracted from the endgame graphic.
-// The dripping blood sprites (BDRPA, BDPLA, BDSH) are borrowed from Hexen, where they are used for a similar purpose.
+// The dripping blood sprites (BDRPA, BDPLA, BDSH) are borrowed from Hexen,
+// where they are used for a similar purpose.
 
 ACTOR HangingHalfCorpse : ZCorpseLynchedNoHeart 57
 {

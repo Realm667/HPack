@@ -121,7 +121,7 @@ ACTOR HPTree08 30008
 ACTOR HPTree09 30009
 {
 	//$Category Obstacles
-	//$Title Tree (Leafy3)
+	//$Title Tree (Leafy 3)
   Radius 36
   Height 96
   +SOLID
