@@ -1,13 +1,13 @@
-SPARKLE SPAWNERS
-================
-This one is the Heretic variant
+STAR SPAWNERS
+=============
+Place on map and use the second and third
+arguments to control the intensity and area of 
+the spawner.
 
-Place on map and use the first two arguments 
-to control the intensity and area of the 
-spawner. 
+First argument is not used.
 
 Second argument controls the size of the area. 
-32 for example, spawns in a 64x64x64 qube.
+32 for example, spawns in a 64x64x64 cube.
 
 Third argument controls the chance of sparkles 
 being spawned. 255 spawns no sparkles at all.
@@ -15,9 +15,8 @@ being spawned. 255 spawns no sparkles at all.
 It should be noted that pngs can't be translated 
 like normal graphics. Because of this, if
 you convert the SKFXA0 sprite to a png, the spawners 
-will spawn white effects. Use Doom's
-lmp format, instead.
-
+will spawn white effects. Use Doom's lmp format, 
+instead.
 
 SPARKLE FOUNTAINS
 =================
@@ -32,10 +31,48 @@ argument).
 Second argument controls the type of area it spawns in. 0 is 
 square, 1 is circle.
 
+The third argument controls the vertical spread. A value of 0
+means to use the default, that is to say, eight units above the
+actor's position. Otherwise, the spread will be twice the value
+given above the actor's position.
+
+The fourth argument controls the behavior of the sparkles. 
+With 0, they move at constant speed; with 1 they accelerate in 
+the same way as Heretic's stock "teleport glitter" sparkles.
+
 It should be noted that pngs can't be translated like normal 
-graphics. Because of this, if you convert the SPFXA0 sprite to 
-a png, the spawners will spawn white effects. Use Doom's lmp format, 
-instead.
+graphics. Because of this, if you convert the PTCL* sprite
+to a png, the spawners will spawn white effects. Use Doom's 
+lmp format, instead.
+
+RANDOM STAR FOUNTAINS
+=====================
+This is an alternative to the sparkle fountain. It will randomly
+spawn four types of particles: glitter (identical to Heretic teleport 
+glitter), sparkles and accelerating sparkles (from sparkle fountain)
+and slow-moving stars (from star spawner, but with a slight upward
+movement).
+
+The first argument controls the size of the area. 32, for example, 
+results in a circle with a radius of 32 units. If left to 0, the 
+default value of 16 will be used.
+
+The second argument is not used.
+
+The third argument controls the vertical spread. The particles will
+appear randomly at any point between the thing itself and twice that
+value above it. If left to 0, the default value of 4 will be used.
+
+The fourth argument controls the colors of the particles:
+	1 is red
+	2 is blue
+	4 is yellow
+	8 is green
+	16 is purple
+	32 is white
+These values can be combined, for example 21 will result in red, 
+yellow and purple particles. If left to 0, the default value of
+63 is used, giving a fountain of all colors.
 
 STEAM GENERATORS
 ================
@@ -70,7 +107,7 @@ in a 64x64 square (or 64 diameter circle. See second argument).
 Second argument controls the type of area it spawns in. 0 is 
 square, 1 is circle.
 
-Third argument controls it's frequency. The lower the number, 
+Third argument controls its frequency. The lower the number, 
 the heavier the ember count.
 
 FIRE

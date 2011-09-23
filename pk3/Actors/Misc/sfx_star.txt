@@ -9,81 +9,106 @@
 
 Actor BaseStar2
 {
- +Missile
- +NoGravity
- +NoBlockmap
- +NoInteraction
- -Solid
- Radius 0
- Height 0
- RenderStyle Add
- Alpha 1.0
- Scale 0.1
- States
- {
-  Spawn:
-   SKFX A 0 Bright
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.15)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.2)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.25)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.3)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.35)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.4)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.45)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.5)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   SKFX A 1 Bright A_SetScale(0.55)   
-   SKFX A 1 Bright A_FadeOut(0.1)   
-   Stop
- }
+	+MISSILE
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+NOINTERACTION
+	+FORCEXYBILLBOARD
+	-SOLID
+	Radius 0
+	Height 0
+	RenderStyle Add
+	Alpha 1.0
+	Scale 0.1
+	States
+	{
+	Spawn:
+		SKFX A 0 Bright
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.15)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.2)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.25)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.3)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.35)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.4)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.45)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.5)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		SKFX A 1 Bright A_SetScale(0.55)   
+		SKFX A 1 Bright A_FadeOut(0.1)   
+		Stop
+	}
 }
 
 actor GreenStarSpawner 501
 {
-   //$Category HPack_SpecialEffects
-	+NoBlockMap +NoGravity +NoSector +NoInteraction +NoClip -Solid +CLIENTSIDEONLY
-        states
-        {
-        Spawn:
-           Active:
-        	TNT1 A 0
-        	TNT1 A 1 A_SpawnItemEx ("BaseStar2", random(-Args[1],Args[1]), random(-Args[1],Args[1]), random(0,2*Args[1]), 0, 0, 0, 0, 129, Args[2]) 
-        	Loop
-           Inactive:
+	//$Category HPack_SpecialEffects
+	//$Title Star Spawner (Green)
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+NOSECTOR
+	+NOINTERACTION
+	+NOCLIP
+	-SOLID
+	+CLIENTSIDEONLY
+	States
+	{
+	Spawn:
+	Active:
+		TNT1 A 0
+		TNT1 A 1 A_SpawnItemEx ("BaseStar2",
+						random(-Args[1], Args[1]),	// X offset
+						random(-Args[1], Args[1]),	// Y offset
+						random(0,2*Args[1]),		// Z offset
+						0, 0, 0,					// X/Y/Z velocities
+						0,							// Angle
+						SXF_TRANSFERTRANSLATION|SXF_CLIENTSIDE,
+						Args[2]) 					// Fail chance
+		Loop
+	Inactive:
 		TNT1 A 1
 		Loop
-        }     
-        
+	}     
 }
 
 actor BlueStarSpawner : GreenStarSpawner 502
 {
    //$Category HPack_SpecialEffects
+   //$Title Star Spawner (Blue)
 	translation "209:224=185:200"
 }
 
 actor WhiteStarSpawner : GreenStarSpawner 503
 {
    //$Category HPack_SpecialEffects
+   //$Title Star Spawner (White)
 	translation "209:224=0:35"
 }
 
 actor RedStarSpawner : GreenStarSpawner 504
 {
    //$Category HPack_SpecialEffects
+   //$Title Star Spawner (Red)
 	translation "209:224=145:159"
 }
 
 actor OrangeStarSpawner: GreenStarSpawner 505
 {
    //$Category HPack_SpecialEffects
+   //$Title Star Spawner (Orange)
 	translation "209:224=112:127"
+}
+
+actor PurpleStarSpawner: GreenStarSpawner 506
+{
+   //$Category HPack_SpecialEffects
+   //$Title Star Spawner (Purple)
+	translation "209:224=169:176"
 }
