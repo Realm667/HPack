@@ -17,6 +17,7 @@ warp flat KDSKYT66
 warp2 flat WINDIGO
 warp texture SKYTP14W
 warp texture CSSKY
+warp texture BSSKY
 
 texture WLLATFL1
  pic WLLATFL1 tics 8
@@ -39,14 +40,14 @@ texture CANDLES1
  pic CANDLES3 tics 8
 
 texture DOORXNF1
- pic DOORXNF1 tics 8
- pic DOORXNF2 tics 8
- pic DOORXNF3 tics 8
+ pic DOORXNF1 tics 6
+ pic DOORXNF2 tics 6
+ pic DOORXNF3 tics 6
 
 texture DOORXNV1
- pic DOORXNV1 tics 8
- pic DOORXNV2 tics 8
- pic DOORXNV3 tics 8
+ pic DOORXNV1 tics 6
+ pic DOORXNV2 tics 6
+ pic DOORXNV3 tics 6
 
 texture ELECDOR1
  pic ELECDOR1 tics 8
@@ -191,7 +192,7 @@ flat	SCWATER1	range SCWATER3	tics 8
 texture SCBLOODA	range SCBLOODC	tics 8
 texture SCBLOODD	range SCBLOODF	tics 8
 texture SCBLUET1	range SCBLUET3	tics 6
-texture SCFACES1	range SCFACES3	tics 9
+texture SCFACES1	range SCFACES3	tics 6
 texture SCGATEC1	range SCGATEC4	tics 5
 texture SCGREEN1	range SCGREEN3	tics 8
 texture SCHEADB1	range SCHEADB5	tics 6

@@ -59,3 +59,9 @@
 #include "actors/monsters/vulgar.gl"
 #include "actors/monsters/wicked.gl"
 #include "actors/monsters/wraith.gl"
+
+HardwareShader Texture "SCBLOOD9"
+{
+	Shader "Shaders/warp3.fs"
+}
+

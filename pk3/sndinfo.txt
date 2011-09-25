@@ -631,6 +631,10 @@ WaterMove               brook1
 IceStartMove            icemv2
 EarthStartMove          quake2
 
+// Redefined Heretic sounds
+world/drip				drop2
+world/sludgegloop		muck5
+
 // Map sounds
 
 printz/sequence/grind/loop grndloop
