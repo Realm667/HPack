@@ -250,7 +250,7 @@ map H5M3 "The Void Temple"
 {
 	music = D7
 	next = h5m4
-	sky1 = TM_BLACK
+	sky1 = BSSKY
 	Cluster = 105
 }
 
