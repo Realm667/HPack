@@ -254,17 +254,6 @@ map H5M3 "The Void Temple"
 	Cluster = 105
 }
 
-Map H5M7 "The Edge of the Universe"
-{
-	Next = "h5m8"
-//	fade = "50 25 15"
-	Sky1 = "SKY2", 0.001
-	Cluster = 105
-	Par = 450
-	Sucktime = 1
-	Music = "MUS_E3M2"
-}
-
 map H5M9 "Fortress of Despair"
 {
 	next = "h5m10"
