@@ -67,16 +67,16 @@ map H1M7 "Dead End"
 	Cluster = 101
 }
 
-map H1M8 "City of Darkness"
+map H1M8 "Gloom Citadel"
 {
-	music = "D_BGATE1"
-	next = H1M9
+	music = "BADASS"
 	Cluster = 101
 }
 
-map H1M0 "Gloom Citadel"
+map H1M0 "City of Darkness"
 {
-	music = "BADASS"
+	music = "D_BGATE1"
+	next = H1M9
 	Cluster = 101
 }
 
