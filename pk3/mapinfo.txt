@@ -140,25 +140,26 @@ map H2M0 "The Labyrinth"
 map H3M1 "Scorched Earth"
 {
 	fade = "50 20 10"
-	music = PANDEM
-	next = h4m2
+	music = MUS_E2M1
+	next = h3m2
 	Cluster = 103
 }
 
-map H3M2 "The generic land of fire"
+map H3M2 "LavaFalls"
 {
 	sky1 = "pri_osky", 0
-	music = TMPH3M2
+	// music = TMPH3M2
+	music = MUS_E2M2
 	next = h3m3
 	Cluster = 103
 }
 
-map H3M3 "Untitled"
+map H3M3 "Bastion"
 {
 	doublesky
 	sky1 = "skywall", 0
 	sky2 = "skytop02", 50
-	music = MIRE
+	music = MUS_E1M4
 	next = h3m4
 	Cluster = 103
 }
@@ -174,8 +175,8 @@ map H3M4 "Tabernacle of Magma"
 map H3M5 "Inunduate Keep"
 {
 	fade = "40 20 10"
-	music = MIRE
-	next = h3m5
+	music = MUS_E2M6
+	next = h3m6
 	Cluster = 103
 }
 
@@ -216,7 +217,8 @@ map H4M2 "the bloody path"
 map H4M4 "Fortress"
 {
 //	sky1 = PRI_OSKY, -0.2
-	music = "ORGAN"
+	// music = "ORGAN"
+	music = MUS_E2M4
 	next = h4m5
 }
 
