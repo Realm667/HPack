@@ -148,6 +148,7 @@ map H3M1 "Scorched Earth"
 map H3M2 "LavaFalls"
 {
 	sky1 = "pri_osky", 0
+	fade = "20 10 5"
 	// music = TMPH3M2
 	music = MUS_E2M2
 	next = h3m3
