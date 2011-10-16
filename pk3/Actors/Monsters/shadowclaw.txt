@@ -1,0 +1,133 @@
+// Recolour by Bouncy, new (edited) sprites by Phobus
+// Decorate by Phobus, edited by Bouncy, revamped by Ghastly
+
+//Spawn and use SetActorState(tid, FadeIn, true) to get them to fade in.
+//This can be used very nicely to ambush the player without using loud
+//teleporting sprites and sounds.
+
+Actor Shadowclaw 10301
+{ 
+  Health 250
+  Height 64
+  Radius 30
+  Mass 300
+  Speed 14
+  PainChance 32
+  Monster
+  +NoBlood
+  SeeSound "clink/sight"
+  DeathSound "clink/death"
+  PainSound "clink/pain"
+  ActiveSound "clink/active"
+  MeleeSound "clink/attack"
+  MeleeDamage 4
+  Renderstyle Translucent
+  Alpha 0.6
+  HitObituary "%o was decapitated by a Shadowclaw"
+  States
+  {
+  Spawn:
+    SCLW E 0 A_JumpIfInventory("ShadowclawTeleporting", 1, "FadeIn")
+    SCLW E 0 A_UnsetInvulnerable
+    SCLW E 0 A_UnsetReflective
+    SCLW E 0 A_SetTranslucent(0.6, 0)
+    SCLW AB 10 A_Look
+    Loop
+  See:
+    SCLW E 0 A_UnsetInvulnerable
+    SCLW E 0 A_UnsetReflective
+    SCLW E 0 A_SetTranslucent(0.6, 0)
+    SCLW AAABBBCCCDDD 2 A_Chase
+    Loop
+  Melee:
+    SCLW E 0 A_JumpIfInventory("ShadowclawTeleporting", 1, "Melee2")
+    SCLW E 0 A_SetTranslucent(0.6, 0)
+    SCLW EF 8 A_FaceTarget
+    SCLW G 8 A_MeleeAttack
+    Goto See
+  Melee2:
+    SCLW E 0 A_TakeInventory("ShadowclawTeleporting", 1)
+    SCLW E 1 A_SetTranslucent(0.1, 0)
+    SCLW E 1 A_SetTranslucent(0.2, 0)
+    SCLW E 1 A_SetTranslucent(0.3, 0)
+    SCLW E 1 A_SetTranslucent(0.4, 0)
+    SCLW E 1 A_SetTranslucent(0.5, 0)
+    TNT1 A 0 A_ChangeFlag("NonShootable", 0)
+    TNT1 A 0 A_ChangeFlag("Shootable", 1)
+    SCLW E 1 A_SetTranslucent(0.6, 0)
+    SCLW F 4 A_FaceTarget
+    SCLW G 8 A_MeleeAttack
+    Goto See
+  Missile:
+    SCLW E 8 A_FaceTarget
+    SCLW E 0 A_SpawnItemEx("ShadowclawGhost", 0, 0, 0, 0, 0, 0, 0, 128)
+    SCLW E 0 A_SetTranslucent(0.0, 0)
+    TNT1 A 0 A_ChangeFlag("NonShootable", 1)
+    TNT1 A 0 A_ChangeFlag("Shootable", 0)
+    TNT1 A 0 A_GiveInventory("ShadowclawTeleporting", 1)
+    TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Chase("Melee", "")
+    TNT1 A 1 A_Chase("Melee", "")
+    SCLW E 1 A_SetTranslucent(0.1, 0)
+    SCLW E 1 A_SetTranslucent(0.2, 0)
+    SCLW E 1 A_SetTranslucent(0.3, 0)
+    SCLW E 1 A_SetTranslucent(0.4, 0)
+    SCLW E 1 A_SetTranslucent(0.5, 0)
+    TNT1 A 0 A_TakeInventory("ShadowclawTeleporting", 1)
+    TNT1 A 0 A_ChangeFlag("NonShootable", 0)
+    TNT1 A 0 A_ChangeFlag("Shootable", 1)
+    SCLW E 1 A_SetTranslucent(0.6, 0)
+    SCLW E 4 A_FaceTarget
+    Goto See
+  FadeIn: //Can be used with SetActorState after spawning, as an ambush state.
+    TNT1 A 0 A_ChangeFlag("NonShootable", 1)
+    TNT1 A 0 A_ChangeFlag("Shootable", 0)
+    TNT1 A 0 A_ChangeFlag("NoPain", 1)
+    TNT1 A 0 A_GiveInventory("ShadowclawTeleporting", 1)
+    SCLW E 1 A_SetTranslucent(0.1, 0)
+    SCLW E 1 A_SetTranslucent(0.2, 0)
+    SCLW E 1 A_SetTranslucent(0.3, 0)
+    SCLW E 1 A_SetTranslucent(0.4, 0)
+    SCLW E 1 A_SetTranslucent(0.5, 0)
+    TNT1 A 0 A_TakeInventory("ShadowclawTeleporting", 1)
+    TNT1 A 0 A_ChangeFlag("NonShootable", 0)
+    TNT1 A 0 A_ChangeFlag("Shootable", 1)
+    TNT1 A 0 A_ChangeFlag("NoPain", 0)
+    Goto Spawn
+  Pain:
+    SCLW H 5
+    SCLW H 5 A_Pain
+    Goto See
+  Death:
+    SCLW I 8
+    SCLW J 8 A_Scream
+    SCLW K 8
+    SCLW L 8 A_NoBlocking
+    SCLW MN 8
+    SCLW O -1 A_Die
+    Stop
+  Raise:
+    CKNK ONMLKJI 8
+    Goto See
+  }
+}
+
+Actor ShadowclawGhost
+{
+  -Solid
+  +NoClip
+  RenderStyle Translucent
+  Alpha 0.6
+  States
+  {
+  Spawn:
+    SCLW E 0
+    SCLW E 1 A_SetTranslucent(0.5, 0)
+    SCLW E 1 A_SetTranslucent(0.4, 0)
+    SCLW E 1 A_SetTranslucent(0.3, 0)
+    SCLW E 1 A_SetTranslucent(0.2, 0)
+    SCLW E 1 A_SetTranslucent(0.1, 0)
+    Stop
+  }
+}
+
+Actor ShadowclawTeleporting : Inventory { Inventory.MaxAmount 1 }
