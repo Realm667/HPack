@@ -9,7 +9,6 @@ RandomFlipY
 }
 
 Generator FallenShot 		FallenBall
-generator DarkClinkBall		DoomImpScorch
 Generator SkullWizardProjectile MummyScorch
 
 // --------------------- //
