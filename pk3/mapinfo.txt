@@ -130,6 +130,12 @@ map H2M9 "Serpent Residence"
 	Cluster = 102
 }
 
+map H2M11 "Dome of doom"
+{
+	next = h2m12
+	cluster = 102
+}
+
 map H2M0 "The Labyrinth"
 {
 	music = MUS_E1M9
