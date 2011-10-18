@@ -137,3 +137,10 @@ Maps:	H2M9 - Serpent Residence
 	H4M0 - Pseudo Heaven
 
 Used music: bldrstod.ogg - "Falkenbach - Baldurs Tod" ogg compressed variant
+
+
+-------------------------
+Contributor: UltimateLorenzo
+-------------------------
+Maps:	H1M4 - Lighthouse
+	H1M11 - Dungeon
