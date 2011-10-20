@@ -134,6 +134,7 @@ map H2M11 "Dome of doom"
 {
 	next = h2m12
 	cluster = 102
+	music = MUS_E1M7
 }
 
 map H2M0 "The Labyrinth"
