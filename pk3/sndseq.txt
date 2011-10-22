@@ -59,6 +59,36 @@ end
 	door 6
 end
 
+
+:HereticDoorPoly
+	play		doors/dr1_open
+	stopsound	doors/dr1_clos
+	door 7
+end
+
+:CeilingNormalPoly
+	playrepeat	plats/pt1_mid
+	door 8
+end
+
+:CeilingSemiSilentPoly
+	stopsound	plats/pt1_stop
+	door 9
+end
+
+:FloorPoly
+	playrepeat	plats/pt1_mid
+	stopsound	plats/pt1_stop
+	door 10
+end
+
+:PlatformPoly
+	playuntildone   plats/pt1_strt
+	stopsound	plats/pt1_stop
+	door 11
+end
+
+
 :Silence
 end
 
