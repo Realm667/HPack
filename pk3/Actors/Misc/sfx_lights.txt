@@ -77,7 +77,8 @@ Actor TOTLFireBrazier : SwitchableDecoration replaces FireBrazier
   Spawn:
     KFR1 A 0
     KFR1 A 0 A_SpawnItemEx("RedFlare", 0, 0, 45, 0, 0, 0, 0, 176)
-    KFR1 A 1 A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(48, 50), 0, 0, 0, 0, 128)
+    KFR1 A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(43, 45), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+    //KFR1 A 1 A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(48, 50), 0, 0, 0, 0, 128)
     Loop
   Inactive:
     KFR1 B 0 A_PlaySound("Torch/Die")
@@ -216,7 +217,7 @@ Actor SnakeBrazierBrass 32484
 		SNAK B 0 Light("SNAKETORCH")
 		SNAK B 0 Light("SNAKETORCH") A_SpawnItemEx("RedFlare", 0, 0, 62, 0, 0, 0, 0, 176)
 		SNAK B 0 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
-		SNAK B 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
+		//SNAK B 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
 		Loop
 	Inactive:
 		SNAK B 0 A_PlaySound("Torch/Die")
@@ -241,7 +242,7 @@ Actor SnakeBrazierGold 32485
 		SNAK Y 0 Light("SNAKETORCH")
 		SNAK Y 0 Light("SNAKETORCH") A_SpawnItemEx("RedFlare", 0, 0, 62, 0, 0, 0, 0, 176)
 		SNAK Y 0 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
-		SNAK Y 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
+		//SNAK Y 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
 		Loop
 	Inactive:
 		SNAK Y 0 A_PlaySound("Torch/Die")
@@ -266,7 +267,7 @@ Actor SnakeBrazierJade 32486
 		SNAK G 0 Light("SNAKETORCH")
 		SNAK G 0 Light("SNAKETORCH") A_SpawnItemEx("RedFlare", 0, 0, 62, 0, 0, 0, 0, 176)
 		SNAK G 0 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
-		SNAK G 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
+		//SNAK G 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
 		Loop
 	Inactive:
 		SNAK G 0 A_PlaySound("Torch/Die")
