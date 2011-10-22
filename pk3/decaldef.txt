@@ -9,7 +9,6 @@ RandomFlipY
 }
 
 Generator FallenShot 		FallenBall
-Generator SkullWizardProjectile MummyScorch
 
 // --------------------- //
 // Staff of Chaos Decals //

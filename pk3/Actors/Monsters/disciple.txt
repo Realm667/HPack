@@ -1,7 +1,7 @@
 ACTOR Disciple 30117 
 { 
 	//$Category Monsters
-	//$Title Disciple
+	//$Title Apostle of Chaos
 	Health 220
 	PainChance 140
 	Speed 6

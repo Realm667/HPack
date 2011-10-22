@@ -1,134 +1,144 @@
 Actor SkullWizard 16511
 {
-	//$Category Monsters
-	//$Title Skull Wizard
-	Obituary "$OB_SKULLWIZARD"
-	Health 500
-	Radius 21
-	Height 66
-	Mass 1000
-	Speed 8
-	PainChance 32
-	MeleeRange 96
-	MeleeDamage 2
-	MissileType "SkullWizardProjectile"
-	SeeSound "H2SkullWizard/Sight"
-	PainSound "H2SkullWizard/Pain"
-	DeathSound "H2SkullWizard/Death"
-	ActiveSound "H2SkullWizard/Sight"
-	MeleeSound "H2SkullWizard/Melee"
-	DropItem "SkullRodAmmo", 84, 10
-	DropItem "LichSkull", 4, 1
-	Species "Wizard"
-	Monster
-	+DONTHARMSPECIES
-	+MISSILEMORE
-	+NOGRAVITY
-	+FLOAT
-	+FLOATBOB
-	+DONTMORPH
-	States
-	{
-	Spawn:
-		SKWZ AB 4 A_Look
-		Loop
-	See:
-	   SKWZ AAABBB 2 A_Chase
-       SKWZ A 0 A_Jump(96,1)
-       Loop
-       SKWZ A 0 A_FastChase
-       SKWZ A 1 A_PlaySound("monster/blur")
-       SKWZ A 0 A_SpawnItem("SKFX3",0,0)
-       SKWZ A 1 A_FastChase
-       SKWZ A 0 A_SpawnItem("SKFX3",0,0)
-       SKWZ A 1 A_FastChase
-       SKWZ A 0 A_SpawnItem("SKFX3",0,0)
-       SKWZ A 1 A_FastChase
-       SKWZ A 0 A_SpawnItem("SKFX3",0,0) 
-       SKWZ B 1 A_FastChase
-       SKWZ B 0 A_SpawnItem("SKFX3",0,0)
-       SKWZ B 1 A_FastChase
-       SKWZ B 0 A_SpawnItem("SKFX3",0,0)
-       SKWZ B 1 A_FastChase
-       SKWZ B 0 A_SpawnItem("SKFX3",0,0)
-       SKWZ B 1 A_FastChase
-       SKWZ B 0 A_SpawnItem("SKFX3",0,0)
-       Goto See
-	Melee:
-	    SKWZ B 4 A_FaceTarget
-		SKWZ C 4 A_FaceTarget
-		SKWZ D 4 bright A_FaceTarget
-		SKWZ E 4 bright A_FaceTarget
-		SKWZ E 0 bright A_PlaySound("H2SkullWizard/Melee")
-		SKWZ E 4 bright A_CustomBulletAttack(0, 0, 1, 8, "SkullWizardPuff")
-		Goto See
-	Missile:
-		SKWZ C 0 A_Jump(32, "Teleport")
-		SKWZ C 0 A_Jump(96, "Yellow")
-		SKWZ C 6 A_FaceTarget
-		SKWZ D 6 Bright A_FaceTarget
-		SKWZ D 6 Bright A_CustomMissile("SkullWizardProjectile", 40, 0, 0)
-		SKWZ C 6 A_FaceTarget
-		SKWZ D 6 Bright A_FaceTarget
-		SKWZ D 6 Bright A_CustomMissile("SkullWizardProjectile", 40, 0, 0)
-		SKWZ D 0 Bright A_Jump(80, 2)
-		SKWZ D 0 Bright A_SpidReFire
-		Goto Missile+1
-		SKWZ D 0
-		Goto See
-	Yellow:
-		SKWZ C 6 A_FaceTarget
-		SKWZ D 6 Bright A_FaceTarget
-		SKWZ E 6 Bright
-		SKWZ F 6 Bright
-        SKWZ F 0 bright A_CustomMissile("RedSkullSeeker", 40, 0, -32)
-		SKWZ F 0 bright A_CustomMissile("RedSkullSeeker", 40, 0, 32)
-		Goto See
-	Teleport:
-		SKWZ C 0 A_JumpIfCloser(512, 1)
-		Goto See
-		SKWZ C 0 A_ChangeFlag("NoPain", 1)
-		SKWZ C 6 A_PlaySoundEx("H2SkullWizard/Teleport", "SoundSlot7", 0)
-		SKWZ DEF 6 Bright A_FaceTarget
-		TNT1 A 0 A_Stop
-		TNT1 A 0 A_StopSoundEx("SoundSlot7")
-		TNT1 A 0 A_SpawnItemEx("TeleportFog", 0, 0, 33, 0, 0, 0, 0, 128) //Remove the 33 for Doom
-		TNT1 A 0 A_ChangeFlag(Invulnerable, 1)
-		TNT1 A 0 A_UnSetShootable
-		TNT1 A 0 A_ChangeFlag("NonShootable", 1)
-		TNT1 A 0 A_ChangeFlag("NoRadiusDMG", 1)
-		TNT1 A 0 A_ChangeFlag("NoTeleport", 1)
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
-		TNT1 AAA 2 A_Wander
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
-		TNT1 AAA 2 A_Wander
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
-		TNT1 AAA 2 A_Wander
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
-		TNT1 AAA 2 A_Wander
-		SKWZ A 0 A_SpawnItemEx("TeleportFog", 0, 0, 33, 0, 0, 0, 0, 128) //Remove the 33 for Doom
-		SKWZ A 0 A_ChangeFlag(Invulnerable, 0)
-		SKWZ A 0 A_SetShootable
-		SKWZ A 0 A_ChangeFlag(Shootable, 1)
-		SKWZ A 0 A_ChangeFlag("NonShootable", 0)
-		SKWZ A 0 A_ChangeFlag("NoRadiusDMG", 0)
-		SKWZ A 0 A_ChangeFlag("NoTeleport", 0)
-		SKWZ A 0 A_ChangeFlag("NoPain", 0)
-		Goto See
-	Pain:
-		SKWZ A 3
-		SKWZ A 3 A_Pain
-		SKWZ A 0 A_Jump(96, "Teleport")
-		Goto See
-	Death:
-		SKWZ G 4 A_Scream
-		SKWZ G 1 A_ChangeFlag("FLOATBOB",0)
-		SKWZ HIJKLM 5 bright
-		SKWZ N 5
-		SKWZ O 5 A_NoBlocking
-		SKWZ P -1
-		Stop
-	}
+  //$Category Monsters
+  //$Title Augur of Chaos
+  Obituary "%o succumbed to the magic of an Augur of Chaos."
+  Health 500
+  Radius 21
+  Height 66
+  Mass 1000
+  Speed 8
+  PainChance 32
+  MeleeRange 96
+  MeleeDamage 2
+  SeeSound "H2SkullWizard/Sight"
+  PainSound "H2SkullWizard/Pain"
+  DeathSound "H2SkullWizard/Death"
+  ActiveSound "H2SkullWizard/Sight"
+  MeleeSound "H2SkullWizard/Melee"
+  DropItem "SkullRodAmmo", 84, 10
+  DropItem "LichSkull", 4, 1
+  Species "Wizard"
+  BloodType "WizardRedBlood"
+  Monster
+  +DONTHARMSPECIES
+  +MISSILEMORE
+  +NOGRAVITY
+  +FLOAT
+  +FLOATBOB
+  +DONTMORPH
+  +NoBloodDecals
+  States
+  {
+  Spawn:
+    SKWZ AAABBB 4 A_Look
+    Loop
+  See:
+    SKWZ AAABBB 2 A_Chase
+    SKWZ A 0 A_Jump(96,1)
+    Loop
+    SKWZ A 0 A_FastChase
+    SKWZ A 1 A_PlaySound("monster/blur")
+    SKWZ A 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    SKWZ A 1 A_FastChase
+    SKWZ A 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    SKWZ A 1 A_FastChase
+    SKWZ A 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    SKWZ A 1 A_FastChase
+    SKWZ A 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    SKWZ B 1 A_FastChase
+    SKWZ B 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    SKWZ B 1 A_FastChase
+    SKWZ B 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    SKWZ B 1 A_FastChase
+    SKWZ B 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    SKWZ B 1 A_FastChase
+    SKWZ B 0 A_SpawnItemEx("SKFX3",0,0,0,0,0,0,0,128)
+    Goto See
+  Melee:
+    SKWZ B 4 A_FaceTarget
+    SKWZ C 4 A_FaceTarget
+    SKWZ D 4 bright A_FaceTarget
+    SKWZ E 4 bright A_FaceTarget
+    SKWZ E 0 bright A_PlaySound("H2SkullWizard/Melee")
+    SKWZ E 4 bright A_CustomBulletAttack(0, 0, 1, 10, "SkullWizardPuff")
+    Goto See
+  Missile:
+    SKWZ C 0 A_Jump(32, "Rain")
+    SKWZ C 0 A_Jump(32, "Teleport")
+    SKWZ C 0 A_Jump(96, "Seeker")
+    SKWZ C 6 A_FaceTarget
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, -8, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, -6, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, -4, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, -2, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, 0, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, 2, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, 4, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, 6, 1)
+    SKWZ D 2 A_CustomMissile("MageHornRodFX1", 32, 0, 8, 1)
+    SKWZ C 8 A_FaceTarget
+    Goto See
+  Rain:
+    SKWZ B 4 A_FaceTarget
+    SKWZ C 4 A_FaceTarget
+    SKWZ D 4 Bright A_FaceTarget
+    SKWZ E 8 Bright A_FaceTarget
+    SKWZ D 4 Bright A_CustomMissile("MageHornRodFX2", 32, 0, random (-7, 7), 0)
+    Goto See
+  Seeker:
+    SKWZ C 6 A_FaceTarget
+    SKWZ D 6 Bright A_FaceTarget
+    SKWZ E 6 Bright
+    SKWZ F 6 Bright
+    SKWZ F 0 bright A_CustomMissile("RedSkullSeeker", 40, 0, -32)
+    SKWZ F 0 bright A_CustomMissile("RedSkullSeeker", 40, 0, 32)
+    Goto See
+  Teleport:
+    SKWZ C 0 A_JumpIfCloser(512, 1)
+    Goto See
+    SKWZ C 0 A_ChangeFlag("NoPain", 1)
+    SKWZ C 6 A_PlaySoundEx("H2SkullWizard/Teleport", "SoundSlot7", 0)
+    SKWZ DEF 6 Bright A_FaceTarget
+    TNT1 A 0 A_Stop
+    TNT1 A 0 A_StopSoundEx("SoundSlot7")
+    TNT1 A 0 A_SpawnItemEx("TeleportFog", 0, 0, 33, 0, 0, 0, 0, 128)
+    TNT1 A 0 A_ChangeFlag(Invulnerable, 1)
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_ChangeFlag("NonShootable", 1)
+    TNT1 A 0 A_ChangeFlag("NoRadiusDMG", 1)
+    TNT1 A 0 A_ChangeFlag("NoTeleport", 1)
+    TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
+    TNT1 AAA 2 A_Wander
+    TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
+    TNT1 AAA 2 A_Wander
+    TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
+    TNT1 AAA 2 A_Wander
+    TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Wander
+    TNT1 AAA 2 A_Wander
+    SKWZ A 0 A_SpawnItemEx("TeleportFog", 0, 0, 33, 0, 0, 0, 0, 128)
+    SKWZ A 0 A_ChangeFlag(Invulnerable, 0)
+    SKWZ A 0 A_SetShootable
+    SKWZ A 0 A_ChangeFlag(Shootable, 1)
+    SKWZ A 0 A_ChangeFlag("NonShootable", 0)
+    SKWZ A 0 A_ChangeFlag("NoRadiusDMG", 0)
+    SKWZ A 0 A_ChangeFlag("NoTeleport", 0)
+    SKWZ A 0 A_ChangeFlag("NoPain", 0)
+    Goto See
+  Pain:
+    SKWZ A 3
+    SKWZ A 3 A_Pain
+    SKWZ A 0 A_Jump(96, "Teleport")
+    Goto See
+  Death:
+    SKWZ G 4 A_Scream
+    SKWZ G 1 A_ChangeFlag("FLOATBOB",0)
+    SKWZ HIJKLM 5 bright
+    SKWZ N 5 A_SpawnItemEx("AcolFX1",0,0,54,0,0,0,0,128)
+    SKWZ O 5 A_NoBlocking
+    SKWZ P -1
+    Stop
+  }
 }
 
 ACTOR SKFX3
@@ -148,79 +158,64 @@ ACTOR SKFX3
    }
 }
 
-Actor SkullWizardProjectile
+Actor MageHornRodFX1 : HornRodFX1
 {
-	Radius 8
-	Height 14
-	Speed 10
-	FastSpeed 20
-	Damage 2	
-	RenderStyle Add
-	Projectile
-	-ACTIVATEPCROSS
-	-ACTIVATEIMPACT
-	+SEEKERMISSILE
-	PROJECTILE
-    RENDERSTYLE ADD
-	SeeSound "H2SkullWizard/Fire"
-	DeathSound "H2SkullWizard/Hit"
-	States
-	{
-	Spawn:
-		SWPJ ABCB 5 Bright Light("RedSkull") A_SeekerMissile(5,8)
-		Loop
-	Death:
-		SWPJ D 6 Bright Light("RedSkull")
-		SWPJ E 6 Bright Light("RedSkullX_1")
-		SWPJ F 6 Bright Light("RedSkullX_2")
-		SWPJ G 6 Bright Light("RedSkullX_3")
-		Stop
-	}
+  Speed 10
+  Damage (Random(6, 8))
+  Decal PlasmaScorchLower
+  Scale 0.85
+}
+
+Actor MageHornRodFX2 : HornRodFX2
+{
+  Speed 15
+  Damage (Random(20, 30))
+  Health 35
+  SeeSound "weapons/hornrodpowshoot2"
+  Decal PlasmaScorchLower
 }
 
 Actor SkullWizardPuff : BulletPuff
 {
-	Radius 1
-	Height 1
-	+NOCLIP
-	+PUFFONACTORS
-	-BLOODSPLATTER
-	+BLOODLESSIMPACT
-	States
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 1 A_RadiusThrust(5120, 128, 0)
-		Stop
-	}
+  Radius 1
+  Height 1
+  +NOCLIP
+  +PUFFONACTORS
+  -BLOODSPLATTER
+  +BLOODLESSIMPACT
+  States
+  {
+  Spawn:
+    TNT1 A 0
+    TNT1 A 1 A_RadiusThrust(5120, 128, 0)
+    Stop
+  }
 }
 
-actor RedSkullSeeker
+ACTOR RedSkullSeeker
 {
-    Radius 8
-    Height 6
-    Speed 15
-    FastSpeed 30
-    Damage 3
-    DamageType Fire
-    +SEEKERMISSILE
-    PROJECTILE
-    RENDERSTYLE ADD
-    scale 0.67
-    ALPHA 0.67
-    DeathSound "yellowskull/hit"
-    Decal RevenantScorch
-    States
-    {
-    Spawn:
-        SBS1 ABCD 3 Bright Light("FireSkull") A_SeekerMissile (5,10)
-        Loop
-    Death:
-		XPL1 A 0 A_Explode(32,32)
-        XPL1 A 3 Bright Light("FireSkullX_1")
-        XPL1 B 3 Bright Light("FireSkullX_2")
-        XPL1 C 3 Bright Light("FireSkullX_3")
-		XPL1 DEF 3
-        Stop
-    }
+   Radius 8
+   Height 16
+   Speed 15
+   FastSpeed 20
+   Damage (Random(15, 25))
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   PROJECTILE
+   +SEEKERMISSILE
+   SeeSound "weapons/hornrodpowshoot2"
+   DeathSound "monster/disht2"
+   Decal MummyScorch
+   States
+   {
+   Spawn:
+      CFX3 A 3 Bright A_SpawnItemEx("DSFX2",0,0,0,0,0,0,0,128)
+      CFX3 A 0 Bright A_SeekerMissile(5,8)
+      CFX3 B 3 Bright A_SpawnItemEx("DSFX2",0,0,0,0,0,0,0,128)
+      CFX3 B 0 Bright A_SeekerMissile(5,8)
+      loop
+   Death:
+      CFX3 CDEFG 3 Bright
+      stop
+   }
 }

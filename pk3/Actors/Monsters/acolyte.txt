@@ -2,7 +2,7 @@
 ACTOR DarkAcolyte : Bishop replaces Acolyte 30118 
 { 
 	//$Category Monsters
-	//$Title Dark Acolyte
+	//$Title Acolyte of Chaos
 	Species "Wizard"
 	Health 180
 	DropItem "ArtiWandCrystal", 64, 1

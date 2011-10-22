@@ -53,7 +53,6 @@
 #include "actors/monsters/sentinel.gl"
 #include "actors/monsters/shadowbeast.gl"
 #include "actors/monsters/shadowdragon.gl"
-#include "actors/monsters/shadowwizard.gl"
 #include "actors/monsters/skullwizard.gl"
 #include "actors/monsters/vulgar.gl"
 #include "actors/monsters/wicked.gl"
