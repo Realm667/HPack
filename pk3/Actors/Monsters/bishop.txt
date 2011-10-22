@@ -1,7 +1,7 @@
 Actor HPBishop : Bishop replaces Bishop 30155
 {
 	//$Category Monsters
-	//$Title Dark Bishop
+	//$Title Bishop of Chaos
 	Species "Wizard"
 	Health 180
 	DropItem "ArtiSpeedBoots", 4, 0	

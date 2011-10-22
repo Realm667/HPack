@@ -147,14 +147,6 @@ H2SkullWizard/Teleport	SKWZTELE
 H2SkullWizard/Death		SKWZDEAT
 yellowskull/hit			shldhit
 
-H2ShadowWizard/Pain		SHWZPAIN
-H2ShadowWizard/Fire		SHWZFIRE
-H2ShadowWizard/Hit		SHWZHIT
-H2ShadowWizard/Melee	SHWZMELE
-H2ShadowWizard/Teleport	SHWZTELE
-H2ShadowWizard/Death	SHWZDEAT
-H2ShadowWizard/Ress		SORRAISE
-
 fireblast/explode		DSFREXP
 superfireblast/explode	DSHELLEX
 
