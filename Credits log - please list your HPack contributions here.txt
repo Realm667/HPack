@@ -119,10 +119,9 @@ FLAT504M - red version of FLAT504
 REDMET** - red recolors of the various black metal textures
 
 -------------------------
-Contributor: Kore(siarch)
+Contributor: Kore
 -------------------------
 Map(s): H3M2
-Used music(s): TMPH3M2.xm (Anthems.xm - Emperor At Work 8:11 tracked by kurtz)
 
 -------------------------
 Contributor: Ghastly
