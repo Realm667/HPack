@@ -216,7 +216,7 @@ Actor SnakeBrazierBrass 32484
 	Spawn:
 		SNAK B 0 Light("SNAKETORCH")
 		SNAK B 0 Light("SNAKETORCH") A_SpawnItemEx("RedFlare", 0, 0, 62, 0, 0, 0, 0, 176)
-		SNAK B 0 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+		SNAK B 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
 		//SNAK B 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
 		Loop
 	Inactive:
@@ -241,7 +241,7 @@ Actor SnakeBrazierGold 32485
 	Spawn:
 		SNAK Y 0 Light("SNAKETORCH")
 		SNAK Y 0 Light("SNAKETORCH") A_SpawnItemEx("RedFlare", 0, 0, 62, 0, 0, 0, 0, 176)
-		SNAK Y 0 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+		SNAK Y 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
 		//SNAK Y 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
 		Loop
 	Inactive:
@@ -266,7 +266,7 @@ Actor SnakeBrazierJade 32486
 	Spawn:
 		SNAK G 0 Light("SNAKETORCH")
 		SNAK G 0 Light("SNAKETORCH") A_SpawnItemEx("RedFlare", 0, 0, 62, 0, 0, 0, 0, 176)
-		SNAK G 0 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+		SNAK G 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(58, 60), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
 		//SNAK G 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
 		Loop
 	Inactive:
