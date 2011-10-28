@@ -222,6 +222,7 @@ map H4M2 "the bloody path"
 	Cluster = 104
 }
 
+
 map H4M4 "Fortress"
 {
 //	sky1 = PRI_OSKY, -0.2
@@ -229,6 +230,15 @@ map H4M4 "Fortress"
 	music = MUS_E2M4
 	next = h4m5
 }
+map H4M5 "Bishop's Sanctuary"
+{
+	sky1 = "SKYTOP02",0
+	music = "Music/fearfact.spc"//there has to be a better song or something but this will do in the interim
+	next = h4m6
+	Cluster = 104
+}
+
+
 
 map H4M9 "Dark Sun Rising"	//totally not by darkhaven3
 {
