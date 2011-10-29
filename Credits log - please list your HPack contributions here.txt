@@ -5,6 +5,24 @@ Every feature you import to HPack should be listed here, along with its
 original author or source, so we can keep track of resources and credit
 (hopefully) everyone when we release the pack.
 
+
+-------------------
+Contributor: PRIMEVAL
+-------------------
+- Intermission music 
+- Titlemusoc 
+- Music for H2M6
+
+-------------------
+Contributor: Tormentor667
+-------------------
+- Numerous textures
+- TITLEMAP
+- H1M0.WAD
+- H2M6.WAD
+
+
+-------------------
 Contributor: printz
 -------------------
 Map(s): H4M4 (given to ShadesMaster), H2M11
@@ -143,3 +161,4 @@ Contributor: UltimateLorenzo
 -------------------------
 Maps:	H1M4 - Lighthouse
 	H1M11 - Dungeon
+
