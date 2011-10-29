@@ -122,6 +122,14 @@ map H2M4 "Icy Catacomb"
 	Cluster = 102
 }
 
+map H2M6 "Fortress of Eternity"
+{
+	fade = "10 15 20"
+	music = HINTER
+	next = h2m7
+	Cluster = 102
+}
+
 map H2M9 "Serpent Residence"
 {
 	sky1 = "SKYTOP10", 0
@@ -214,7 +222,7 @@ map H4M1 "City of Blood"
 	Cluster = 104
 }
 
-map H4M2 "the bloody path"
+map H4M2 "The Bloody Path"
 {
 	//sky1 = "SKYTOP10", 0
 	music = romeric
