@@ -11,7 +11,7 @@ map titlemap "Demonic Uprising" {}
 
 map H1M1 "Silverspring Docks"
 {
-	fade = "20 15 20"
+	fade = "38 46 78"
 	music = MUS_E1M1
 	next = h1m2
 	Cluster = 101
