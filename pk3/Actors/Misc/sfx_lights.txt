@@ -133,8 +133,8 @@ Actor TOTLWallTorch : SwitchableDecoration replaces WallTorch
 }
 
 
+//Flares
 
-//Effect
 
 Actor RedFlare
 {
@@ -148,10 +148,48 @@ Actor RedFlare
   States
   {
   Spawn:
-    RFLR A 2 Bright
+    RFLR A 1 Bright
+    RFLR B 1 Bright
     Stop
   }
 }
+
+Actor BlueFlare : RedFlare
+{
+  States
+  {
+  Spawn:
+    RFLB A 1 Bright
+    RFLB B 1 Bright
+    Stop
+  }
+}
+
+Actor GreenFlare : RedFlare
+{
+  States
+  {
+  Spawn:
+    RFLG A 1 Bright
+    RFLG B 1 Bright
+    Stop
+  }
+}
+
+Actor YellowFlare : RedFlare
+{
+  States
+  {
+  Spawn:
+    RFLY A 1 Bright
+    RFLY B 1 Bright
+    Stop
+  }
+}
+
+
+
+//Effect
 
 Actor RedFire1
 {
