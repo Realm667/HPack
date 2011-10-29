@@ -143,8 +143,8 @@ Actor RedFlare
   +NoBlockmap
   +ForceXYBillboard
   RenderStyle Add
-  Scale 0.12
-  Alpha 0.6
+  Scale 0.3
+  Alpha 0.5
   States
   {
   Spawn:
