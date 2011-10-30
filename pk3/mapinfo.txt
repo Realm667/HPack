@@ -164,8 +164,8 @@ map H3M2 "LavaFalls"
 {
 	sky1 = "pri_osky", 0
 	fade = "30 10 10"
-	music = TMPH3M2
-	// music = MUS_E2M2
+	// music = TMPH3M2
+	music = MUS_E2M2
 	next = h3m3
 	Cluster = 103
 }
