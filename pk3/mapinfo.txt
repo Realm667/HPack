@@ -190,8 +190,7 @@ map H3M4 "Tabernacle of Magma"
 
 map H3M5 "Cavern of Earthblood"
 {
-	fade = "40 02 02"
-	music = MUS_E1M2
+	music = MUS_E1M9
 	next = h3m6
 	Cluster = 103
 }
