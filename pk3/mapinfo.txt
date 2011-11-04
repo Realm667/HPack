@@ -11,7 +11,7 @@ map titlemap "Demonic Uprising" {}
 
 map H1M1 "Silverspring Docks"
 {
-	fade = "26 29 41"
+	// fade = "26 29 41"
 	music = H1M1
 	next = h1m2
 	Cluster = 101
@@ -19,7 +19,7 @@ map H1M1 "Silverspring Docks"
 
 map H1M2 "Sidhe Altar"
 {
-	fade = "10 15 10"
+	// fade = "10 15 10"
 	music = D_STLKS2
 	next = h1m3
 	Cluster = 101
@@ -28,7 +28,7 @@ map H1M2 "Sidhe Altar"
 
 map H1M3 "Elven Wood"
 {
-	fade = "15 25 5"
+	// fade = "15 25 5"
 	music = BARBICAN
 	next = h1m4
 	Cluster = 101
