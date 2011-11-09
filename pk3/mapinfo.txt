@@ -193,6 +193,8 @@ map H3M5 "Cavern of Earthblood"
 	music = MUS_E1M9
 	next = h3m6
 	Cluster = 103
+	sky1 = "sky2", 0
+	sky2 = "sky2", 0
 }
 
 map H3M8 "Hell's Forge"
