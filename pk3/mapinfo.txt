@@ -235,8 +235,8 @@ map H4M2 "The Bloody Path"
 map H4M4 "Fortress"
 {
 //	sky1 = PRI_OSKY, -0.2
-	music = "ORGAN"
-	// music = MUS_E2M4
+	// music = "ORGAN"
+	music = MUS_E2M4
 	next = h4m5
 }
 map H4M5 "Bishop's Sanctuary"
