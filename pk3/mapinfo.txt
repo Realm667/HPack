@@ -75,7 +75,7 @@ map H1M8 "Gloom Citadel"
 
 map H1M0 "City of Darkness"
 {
-	music = "D_BGATE1"
+	music = "H_E1M0"
 	next = H1M9
 	Cluster = 101
 }
