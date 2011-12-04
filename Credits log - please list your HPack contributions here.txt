@@ -12,7 +12,8 @@ Contributor: PRIMEVAL
 - Intermission music 
 - Titlemusoc 
 - Music for H2M6
-
+- Music for H1M1
+- Music for H1M0
 -------------------
 Contributor: Tormentor667
 -------------------
