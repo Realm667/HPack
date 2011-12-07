@@ -1,59 +1,36 @@
-FlickerLight2 FireSkull
+Object MageHornRodFX1
 {
-	Offset 0 4 0
-	Color 1.0 0.25 0
-	Size 40
-	SecondarySize 64
-	Interval 2.0
+    Frame FX00A { Light HELLSTAFFBALL }
+    Frame FX00B { Light HELLSTAFFBALL }
+
+    Frame FX00H { Light HELLSTAFFBALL_X1 }
+    Frame FX00I { Light HELLSTAFFBALL_X2 }
+    Frame FX00J { Light HELLSTAFFBALL_X3 }
+    Frame FX00K { Light HELLSTAFFBALL_X4 }
+    Frame FX00L { Light HELLSTAFFBALL_X5 }
 }
 
-PointLight FireSkullX_1
+Object MageHornRodFX2
 {
-	Offset 0 4 0
-	Color 1.0 0.25 0.0
-	Size 56
+    Frame FX00C { Light HELLSTAFFBALL }
+    Frame FX00D { Light HELLSTAFFBALL }
+    Frame FX00E { Light HELLSTAFFBALL }
+    Frame FX00F { Light HELLSTAFFBALL }
+
+    Frame FX00H { Light HELLSTAFFBALL_X1 }
+    Frame FX00I { Light HELLSTAFFBALL_X2 }
+    Frame FX00J { Light HELLSTAFFBALL_X3 }
+    Frame FX00K { Light HELLSTAFFBALL_X4 }
+    Frame FX00L { Light HELLSTAFFBALL_X5 }
 }
 
-PointLight FireSkullX_2
+Object RedSkullSeeker
 {
-	Offset 0 4 0
-	Color 1.0 0.25 0.0
-	Size 64
-}
-
-PointLight FireSkullX_3
-{
-	Offset 0 4 0
-	Color 1.0 0.25 0.0
-	Size 32
-}
-
-FlickerLight2 RedSkull
-{
-	Offset 0 4 0
-	Color 1.0 0.0 0
-	Size 32
-	SecondarySize 48
-	Interval 2.0
-}
-
-PointLight RedSkullX_1
-{
-	Offset 0 4 0
-	Color 1.0 0.0 0
-	Size 48
-}
-
-PointLight RedSkullX_2
-{
-	Offset 0 4 0
-	Color 1.0 0.0 0
-	Size 40
-}
-
-PointLight RedSkullX_3
-{
-	Offset 0 2 0
-	Color 1.0 0.0 0
-	Size 24
+    Frame CFX3A { Light DiscipleShot21 }
+    Frame CFX3B { Light DiscipleShot21 }
+    Frame CFX3C { Light DiscipleShot22 }
+    Frame CFX3D { Light DiscipleShot23 }
+    Frame CFX3E { Light DiscipleShot24 }
+    Frame CFX3F { Light DiscipleShot25 }
+    Frame CFX3G { Light DiscipleShot26 }
 }
