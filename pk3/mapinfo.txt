@@ -189,7 +189,7 @@ map H3M3 "Bastion"
 
 map H3M4 "Tabernacle of Magma"
 {
-	fade = "40 20 10"
+	fade = "20 10 05"
 	music = MIRE
 	next = h3m5
 	Cluster = 103
