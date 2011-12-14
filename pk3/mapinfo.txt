@@ -282,6 +282,15 @@ map H5M1 "Ziggurat of Sorrow"
 	Cluster = 105
 }
 
+map H5M2 "In the Ship to Eternity"
+{
+//	gravity = 1
+	music = hevngate
+	aircontrol = 1
+	next = h5m3
+	cluster = 105
+}
+
 map H5M3 "The Void Temple"
 {
 	music = D7
