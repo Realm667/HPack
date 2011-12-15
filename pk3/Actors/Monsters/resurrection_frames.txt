@@ -1,5 +1,7 @@
 actor HPBeast : Beast replaces Beast
 {
+	Health 400
+	Mass 400
 	States
 	{
 	Raise:
@@ -11,6 +13,23 @@ actor HPBeast : Beast replaces Beast
     	BEAS G 3
     	BEAS G 3 A_Pain
     	Goto See
+	}
+}
+
+actor HPBeastIce : HPBeast 16512
+{
+	//$Category Monsters
+	//$Title Ice Dragon
+	+NORADIUSDMG
+	+DONTHURTSPECIES
+	Translation "66:136=%[0.0, 0.0, 0.0]:[0.9, 0.9, 1.4]", "210:217=53:60"
+	Obituary "$OB_BEASTICE"
+	States
+	{
+	Missile:
+    		BEAS H 10 A_FaceTarget
+    		BEAS I 0 bright A_CustomMissile("HeadFX1",64)
+		goto see
 	}
 }
 
@@ -26,13 +45,13 @@ actor HPBeastStrong : HPBeast 16601
 	Mass 1000
 	Radius 48
 	Height 128
-	Translation "66:136=%[0.0, 0.0, 0.0]:[2.0, 0.4, 0.2]", "210:217=137:144"
+	Translation "66:136=%[0.0, 0.0, 0.0]:[2.0, 0.4, 0.2]", "210:217=55:62"
 	Obituary "$OB_BEASTSTRONG"
 	States
 	{
 	Missile:
-    	BEAS H 10 A_FaceTarget
-    	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+    		BEAS H 10 A_FaceTarget
+    		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
 		BEAS H 5 bright A_FaceTarget
 		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
 		BEAS H 5 bright A_FaceTarget
