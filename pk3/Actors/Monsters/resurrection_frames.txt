@@ -16,23 +16,6 @@ actor HPBeast : Beast replaces Beast
 	}
 }
 
-actor HPBeastIce : HPBeast 16512
-{
-	//$Category Monsters
-	//$Title Ice Dragon
-	+NORADIUSDMG
-	+DONTHURTSPECIES
-	Translation "66:136=%[0.0, 0.0, 0.0]:[0.9, 0.9, 1.4]", "210:217=53:60"
-	Obituary "$OB_BEASTICE"
-	States
-	{
-	Missile:
-    		BEAS H 10 A_FaceTarget
-    		BEAS I 0 bright A_CustomMissile("HeadFX1",64)
-		goto see
-	}
-}
-
 actor HPBeastStrong : HPBeast 16601
 {
 	//$Category Monsters
@@ -240,25 +223,6 @@ actor HPSnakeWeak : HPSnake 16603
 actor SnakeProjC : SnakeProjB
 {
 	Damage 1
-}
-
-actor HPSnakeMagma : HPSnake 3293
-{
-	//$Category Monsters
-	//$Title Ophidian of Fire
-	Health 300
-	Mass 50
-	Translation "66:136=%[0.0, 0.0, 0.0]:[2.8, 0.6, 0.1]"
-	Scale 0.8
-	DropItem "GoldWandAmmo", 84, 10
-	Obituary "$OB_SNAKEWEAK"
-	States
-	{
-	Missile:
-    	SNKE F 5 A_FaceTarget
-    	SNKE F 4 A_CustomMissile("SnakeProjC", 32, 0, 0, CMF_CHECKTARGETDEAD)
-    	Goto See
-	}
 }
 
 actor HPSnakeStrong : HPSnake 16604
