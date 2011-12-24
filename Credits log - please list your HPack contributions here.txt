@@ -99,10 +99,13 @@ Textures contributed:
 
 
 -------------------------
-Contributor: Serge Jaeken
+Contributor: S. Jaeken
 -------------------------
 Maps:	H2M2 - Dark Water
-	H3M3 - Untitled
+	H2M5 - Drowning Pools
+	H2M8 - Hellrose Garden
+	H3M3 - Mt. Heresy
+	H5M0 - Untitled
 
 
 -------------------------
