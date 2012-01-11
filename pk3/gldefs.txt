@@ -32,7 +32,6 @@
 
 // Monsters
 #include "actors/monsters/acolyte.gl"
-#include "actors/monsters/avatar.gl"
 #include "actors/monsters/archwizard.gl"
 #include "actors/monsters/bormereth.gl"
 #include "actors/monsters/bishop.gl"

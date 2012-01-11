@@ -259,24 +259,6 @@ weapons/firex5 dsfirex5
 elect1		invlight
 elect2		invligh2
 
-//Avatar
-monster/avasit dsavasit
-monster/avapai dsavapai
-monster/avadth dsavadth
-monster/avaact dsavaact
-monster/avaatk dsavaatk
-MageLightningFire dslight
-weapons/justfi dsjustfi
-weapons/gntini dsgntini
-weapons/devexp dsdevexp
-weapons/bwoosh dsbwoosh
-weapons/firex2 dsfirex2
-weapons/devzap dsdevzap
-weapons/gnthit dsgnthit
-monster/hadsit dshadsit
-monster/bomb FIREBALL
-monster/explode DSCMTEXP
-
 //Death Knight
 monster/dknhit dsdknhit
 monster/dknsit dsdknsit
