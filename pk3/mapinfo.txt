@@ -355,3 +355,30 @@ Episode H5M1
 	Optional
 }
 Cluster 105 {}
+
+
+
+
+Intermission Final
+{
+
+	Fader
+	{
+	  FadeType = FadeIn
+	}
+
+	Cast
+	{
+	  CastClass = "MummyLeader"
+	  CastName = "Nitrogolem"
+	  AttackSound = "Missile", 1, "mummy/head"
+	  AttackSound = "Melee", 1, "mummy/attack2"
+	}
+
+	
+	Fader
+	{
+	  FadeType = FadeOut
+	}
+
+}
