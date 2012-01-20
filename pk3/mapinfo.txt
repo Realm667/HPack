@@ -257,7 +257,7 @@ map H4M4 "Fortress"
 map H4M5 "Bishop's Sanctuary"
 {
 	sky1 = "SKYTOP02",0
-	music = "Music/fearfact.spc"//there has to be a better song or something but this will do in the interim
+	music = "Music/undersea.spc"
 	next = h4m6
 	Cluster = 104
 }
