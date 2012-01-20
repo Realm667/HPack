@@ -137,6 +137,14 @@ map H2M6 "Fortress of Eternity"
 	Cluster = 102
 }
 
+map H2M7 "Bastion of Sorrow"
+{
+	// fade = "10 15 20"
+	music = MUS_E1M2
+	next = h2m8
+	Cluster = 102
+}
+
 map H2M9 "Serpent Residence"
 {
 	sky1 = "SKYTOP10", 0
