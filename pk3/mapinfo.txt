@@ -132,7 +132,7 @@ map H2M5 "Gauntlet"
 map H2M6 "Fortress of Eternity"
 {
 	// fade = "10 15 20"
-	music = HINTER
+	music = MUS_H2M6
 	next = h2m7
 	Cluster = 102
 }
@@ -140,7 +140,7 @@ map H2M6 "Fortress of Eternity"
 map H2M7 "Bastion of Sorrow"
 {
 	// fade = "10 15 20"
-	music = MUS_E1M2
+	music = HINTER
 	next = h2m8
 	Cluster = 102
 }
