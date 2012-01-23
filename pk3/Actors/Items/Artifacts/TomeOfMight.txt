@@ -4,7 +4,12 @@ Actor TomeOfMightAmmo : PowerInfiniteAmmo
 	Powerup.Duration -40
 	Inventory.Icon "SPINTM0"
 }
+
+
 Actor TomeOfMightSpeed : PowerDoubleFiringSpeed {Powerup.Duration -40}
+
+
+
 Actor ArtiTomeOfMight : CustomInventory 19999
 {
 	//$Category Artifacts
