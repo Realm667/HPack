@@ -218,7 +218,7 @@ splash dirt
 	NoAlert
 }
 
-splash gravel
+splash gravel //
 {
 	smallclass		None
 	smallclip		0
@@ -234,7 +234,7 @@ splash gravel
 	NoAlert
 }
 
-splash metal
+splash metal //
 {
 	smallclass		None
 	smallclip		0
@@ -401,56 +401,56 @@ splash electric
 
 //Hard terrains
 
-terrain carpet
+terrain carpet //
 {
 	splash			carpet
 	footclip		0
 	//liquid
 }
 
-terrain dirt
+terrain dirt //
 {
 	splash			dirt
 	footclip		0
 	//liquid
 }
 
-terrain gravel
+terrain gravel //
 {
 	splash			gravel
 	footclip		0
 	//liquid
 }
 
-terrain metal
+terrain metal //
 {
 	splash			metal
 	footclip		0
 	//liquid
 }
 
-terrain metal2
+terrain metal2 //
 {
 	splash			metal2
 	footclip		0
 	//liquid
 }
 
-terrain rock
+terrain rock //
 {
 	splash			rock
 	footclip		0
 	//liquid
 }
 
-terrain snow
+terrain snow //
 {
 	splash			snow
 	footclip		0
 	//liquid
 }
 
-terrain slimy
+terrain slimy //
 {
 	splash			slimy
 	footclip		0
@@ -471,14 +471,14 @@ terrain tile
 	//liquid
 }
 
-terrain tile2
+terrain tile2 //
 {
 	splash			tile2
 	footclip		0
 	//liquid
 }
 
-terrain wood
+terrain wood //
 {
 	splash			wood
 	footclip		0
@@ -566,3 +566,732 @@ floor SCWOOD09 wood
 floor SCWOOD10 wood
 floor SCWOODT1 wood
 floor SCWOODT2 wood
+floor WCRAT01 wood
+floor WCRAT02 wood
+floor WDGAT64B wood
+floor WDGAT321 wood
+floor WDGAT322 wood
+
+floor CARPBLU carpet
+floor CARPGRN carpet
+floor CARPORN carpet
+floor CARPRED carpet
+floor FLOOR09B carpet
+floor FLOOR09C carpet
+floor FLOOR09D carpet
+floor FLOOR09E carpet
+floor FLOOR09F carpet
+floor FLOOR09G carpet
+floor FLOOR09H carpet
+floor SCCRPET1 carpet
+floor SCCRPET2 carpet
+floor SCCRPET3 carpet
+floor SCCRPET4 carpet
+floor SCCRPET5 carpet
+floor SCCRPET6 carpet
+floor SCCRPET7 carpet
+floor SCCRPET8 carpet
+floor SCCRPET9 carpet
+floor SCCRPETH carpet
+floor SCCRPETV carpet
+floor SCCLOTHG carpet
+floor SCCLOTHB carpet
+floor SCCLOTHR carpet
+floor SCCLOTHY carpet
+
+floor FLAT509B snow
+floor ICEY0 snow
+floor SNOW17 snow
+floor SNOW21 snow
+floor SNOW28 snow
+
+floor DIRT gravel
+floor FLDIRT01 gravel
+floor FLDIRT02 gravel
+floor RKFLOOR6 gravel
+floor ROCKWAL2 gravel
+floor RROCK01 gravel
+floor SCCOBBL1 gravel
+floor SCCOBBL2 gravel
+floor SCCOBBL3 gravel
+floor SCDIRTC0 gravel
+floor WALL912 gravel
+floor WALL911 gravel
+floor WALL913 gravel
+floor WALL914 gravel
+
+floor CELTICH metal2
+floor FLAT500B metal2
+floor FLAT500C metal2
+floor FLAT500D metal2
+floor FLAT500E metal2
+floor FLAT500F metal2
+floor FLAT500G metal2
+floor FLAT500H metal2
+floor FLAT500I metal2
+floor FLAT500J metal2
+floor FLAT500K metal2
+floor FLOOR08B metal2
+floor FLOOR08C metal2
+floor GLAVA1 metal2
+floor GLAVA2 metal2
+floor GLAVA3 metal2
+floor GLAVA4 metal2
+floor LILGRAT2 metal2
+floor LILGRATE metal2
+floor LILGRAT3 metal2
+floor LILGRAT4 metal2
+floor LITEBIG metal2
+floor LITEBIG2 metal2
+floor LITEBIG3 metal2
+floor LITEBIG4 metal2
+floor LITEBIG5 metal2
+floor LITEBIG6 metal2
+floor LITEF01 metal2
+floor LITEF02 metal2
+floor LITEF03 metal2
+floor MIDBAR04 metal2
+floor MIDGRAT1 metal2
+floor MIDGRAT2 metal2
+floor MIDGRAT3 metal2
+floor SCFENCE1 metal2
+floor SCFENCE2 metal2
+floor SCFENCE4 metal2
+floor SCFENCE5 metal2
+floor SCMETAL1 metal2
+floor SCMETAL2 metal2
+floor SCMETAL3 metal2
+floor STEPGOLD metal2
+floor STEPSIL2 metal2
+floor STEPSILV metal2
+floor TRIM009 metal2
+floor TRIM010 metal2
+floor TRIM011 metal2
+floor TRIM012 metal2
+
+floor FLMETL01 metal
+floor FLOOR2G1 metal
+floor FLOOR2G2 metal
+floor FLOOR281 metal
+floor FLOOR282 metal
+floor FLOOR283 metal
+floor FLOOR284 metal
+floor FLOOR285 metal
+floor FLOOR286 metal
+floor FLOOR287 metal
+floor FLOOR288 metal
+floor FLOOR289 metal
+floor FPLAT01 metal
+floor FPLAT02 metal
+floor GATE900 metal
+floor MET128A metal
+floor MET128B metal
+floor METAL32 metal
+floor METAL32T metal
+floor METAL32W metal
+floor METAL64 metal
+floor METALFLT metal
+floor METALWAL metal
+floor METGRN1 metal
+floor METGRN2 metal
+floor METL3 metal
+floor METL3A metal
+floor METL3B metal
+floor METL4 metal
+floor METL4A metal
+floor METL4B metal
+floor METL4C metal
+floor METL4X metal
+floor METL5 metal
+floor METL5A metal
+floor METL5B metal
+floor METLSKU1 metal
+floor METLSKU2 metal
+floor METLSPG0 metal
+floor METLSPG1 metal
+floor METLSPG2 metal
+floor METLSPG3 metal
+floor METLSPG4 metal
+floor METLSPG5 metal
+floor METLSPH0 metal
+floor METLSPH1 metal
+floor METLSPH2 metal
+floor METLSUG0 metal
+floor METLSUG1 metal
+floor METLSUG2 metal
+floor METLSUG3 metal
+floor METLSUG4 metal
+floor METLSUG5 metal
+floor METLSUP0 metal
+floor METLSUP1 metal
+floor METLSUP2 metal
+floor METX21 metal
+floor METX22 metal
+floor METX23 metal
+floor METX24 metal
+floor PLAT004 metal
+floor SCMETAL4 metal
+floor SCMETAL5 metal
+floor SCMETAL6 metal
+floor SCMETAL8 metal
+floor WALL641 metal
+floor WALL642 metal
+floor WALL643 metal
+floor WALL644 metal
+floor WALL645 metal
+floor WALL646 metal
+floor WALL647 metal
+floor WALL648 metal
+floor WALL649 metal
+floor WALL650 metal
+floor WALL651 metal
+floor WALL652 metal
+floor WALL653 metal
+floor WALL654 metal
+floor WALL655 metal
+floor WALL656 metal
+floor WALL657 metal
+floor WALL6421 metal
+floor WALL6422 metal
+
+floor DGREEN12 dirt
+floor FLOOR01B dirt
+floor FLOOR01C dirt
+floor FLOOR01D dirt
+floor FLOOR01E dirt
+floor FLROCK21 dirt
+floor FLROCK22 dirt
+floor FLROCK23 dirt
+floor FLROCK24 dirt
+floor FLROCK25 dirt
+floor GRASDRT1 dirt
+floor GRASDRT2 dirt
+floor GRASDRT3 dirt
+floor GRASDRT4 dirt
+floor GREEN1 dirt
+floor GREEN2 dirt
+floor GREEN3 dirt
+floor LAVAWA71 dirt
+floor LAVAWAL2 dirt
+floor LAVAWAL3 dirt
+floor LAVAWAL4 dirt
+floor LAVAWAL5 dirt
+floor LAVAWAL6 dirt
+floor LAVAWAL7 dirt
+floor LAVAWAL8 dirt
+floor LOOSEICE dirt
+floor LOOSERC2 dirt
+floor LOOSERC3 dirt
+floor LOOSERC5 dirt
+floor MOSASUN2 dirt
+floor RCKSNMU4 dirt
+floor RCKWAL01 dirt
+floor RCKWAL02 dirt
+floor RCKWAL03 dirt
+floor RCKWAL04 dirt
+floor RCKWAL05 dirt
+floor REDWALF1 dirt
+floor REDWALF2 dirt
+floor REDWALF3 dirt
+floor REDWALF4 dirt
+floor REDWALL2 dirt
+floor REDWALL3 dirt
+floor ROCK901 dirt
+floor ROCK902 dirt
+floor ROCK903 dirt
+floor ROCK904 dirt
+floor ROCK905 dirt
+floor ROCK906 dirt
+floor ROCK907 dirt
+floor ROCK908 dirt
+floor ROCK951 dirt
+floor ROCK952 dirt
+floor ROCK953 dirt
+floor ROCK954 dirt
+floor ROCKESS2 dirt
+floor ROCKESS3 dirt
+floor ROCKESS4 dirt
+floor ROCKESS5 dirt
+floor ROCKESSL dirt
+floor ROCKWAL2 dirt
+floor SCCELLRW dirt
+floor SCDIRTA1 dirt
+floor SCDIRTA2 dirt
+floor SCDIRTB1 dirt
+floor SCDIRTB2 dirt
+floor SCDIRTC0 dirt
+floor SCDIRTD0 dirt
+floor SCDIRTE0 dirt
+floor SCDIRTF0 dirt
+floor SCDIRTG0 dirt
+floor SCDIRTH0 dirt
+floor STNBASE1 dirt
+floor STNBASE2 dirt
+floor WALL44_21 dirt
+floor WALL44_2 dirt
+floor WALL44_3 dirt
+floor WALL44G2 dirt
+floor WALL44G3 dirt
+floor WALL50FL dirt
+floor WALL911 dirt
+floor WALL5091 dirt
+floor WALL5092 dirt
+floor WALL5061 dirt
+floor WALL5062 dirt
+floor WALL5063 dirt
+floor WALL5064 dirt
+floor WALL5065 dirt
+
+floor BRKWAL25 rock
+floor BRKWAL26 rock
+floor BRKWAL45 rock
+floor BRKWAL46 rock
+floor CASTLE01 rock
+floor CASTLE02 rock
+floor CSTLRCK1 rock
+floor CSTLRCK2 rock
+floor CSTLRCK3 rock
+floor CSTLRCK4 rock
+floor CSTLRCK5 rock
+floor CSTLRCK6 rock
+floor CSTLRCK7 rock
+floor CSTLRCK8 rock
+floor CSTLVRT1 rock
+floor CSTLVRT2 rock
+floor CSTLVRT3 rock
+floor CTBLACK1 rock
+floor DACH001 rock
+floor DGREEN05 rock
+floor DGREEN06 rock
+floor DGREEN09 rock
+floor DGREEN08 rock
+floor DGREEN13 rock
+floor DGREEN14 rock
+floor DGREEN18 rock
+floor DGREEN20 rock
+floor FLAT100 rock
+floor FLAT101 rock
+floor FLAT102 rock
+floor FLAT103 rock
+floor FLAT209 rock
+floor FLAT210 rock
+floor FLAT211 rock
+floor FLAT502B rock
+floor FLAT502C rock
+floor FLAT502D rock
+floor FLAT502E rock
+floor FLAT502F rock
+floor FLAT502G rock
+floor FLAT502H rock
+floor FLAT502I rock
+floor FLAT502J rock
+floor FLAT502K rock
+floor FLAT502L rock
+floor FLAT502M rock
+floor FLAT502N rock
+floor FLAT502O rock
+floor FLAT502P rock
+floor FLAT502Q rock
+floor FLAT502R rock
+floor FLAT502S rock
+floor FLAT502T rock
+floor FLAT502U rock
+floor FLAT502V rock
+floor FLAT502W rock
+floor FLAT502X rock
+floor FLAT502Y rock
+floor FLAT502Z rock
+floor FLAT503B rock
+floor FLAT503C rock
+floor FLAT503D rock
+floor FLAT503E rock
+floor FLAT503F rock
+floor FLAT503G rock
+floor FLAT503H rock
+floor FLAT503I rock
+floor FLAT503J rock
+floor FLAT504A rock
+floor FLAT504B rock
+floor FLAT504C rock
+floor FLAT504D rock
+floor FLAT504E rock
+floor FLAT504F rock
+floor FLAT504G rock
+floor FLAT504H rock
+floor FLAT504I rock
+floor FLAT504J rock
+floor FLAT504K rock
+floor FLAT504L rock
+floor FLAT504M rock
+floor FLAT5020 rock
+floor FLAT5021 rock
+floor FLAT5022 rock
+floor FLAT5023 rock
+floor FLAT5024 rock
+floor FLAT5025 rock
+floor FLAT5026 rock
+floor FLAT5027 rock
+floor FLAT5028 rock
+floor FLAT5029 rock
+floor FLOOR00B rock
+floor FLOOR00C rock
+floor FLOOR00D rock
+floor FLOOR00E rock
+floor FLOOR00F rock
+floor FLOOR00G rock
+floor FLOOR00H rock
+floor FLOOR03B rock
+floor FLOOR03C rock
+floor FLOOR03D rock
+floor FLOOR03E rock
+floor FLOOR03F rock
+floor FLOOR07B rock
+floor FLOOR07C rock
+floor FLOOR07D rock
+floor FLOOR07E rock
+floor FLOOR07F rock
+floor FLOOR07G rock
+floor FLOOR07H rock
+floor FLOOR07I rock
+floor FLOOR07J rock
+floor FLOOR07K rock
+floor FLOOR07L rock
+floor FLOOR07M rock
+floor FLOOR07N rock
+floor FLOOR07O rock
+floor FLOOR07P rock
+floor FLOOR07Q rock
+floor FLOOR07R rock
+floor FLOOR07S rock
+floor FLOOR07T rock
+floor FLOOR07U rock
+floor FLOOR07V rock
+floor FLOOR07W rock
+floor FLOOR07X rock
+floor FLOOR07Y rock
+floor FLOOR18B rock
+floor FLOOR18C rock
+floor FLOOR18D rock
+floor FLOOR18E rock
+floor FLOOR18F rock
+floor FLOOR18G rock
+floor FLOOR18H rock
+floor FLOOR20B rock
+floor FLOOR20C rock
+floor FLOOR20D rock
+floor FLOOR20E rock
+floor FLOOR20F rock
+floor FLOOR25B rock
+floor FLOOR181 rock
+floor FLOORX1A rock
+floor FLOORX1B rock
+floor FLOORX1C rock
+floor FLROCK01 rock
+floor FLROCK02 rock
+floor FLROCK03 rock
+floor FLROCK04 rock
+floor FLROCK05 rock
+floor FLROCK06 rock
+floor FLROCK11 rock
+floor FLROCK12 rock
+floor FLROCK13 rock
+floor FLROCK14 rock
+floor FLROCK15 rock
+floor FLROCK16 rock
+floor FLROCK17 rock
+floor FLROCK18 rock
+floor FLSTON01 rock
+floor FLSTON02 rock
+floor FLSTON03 rock
+floor FLSTON04 rock
+floor FLSTON05 rock
+floor FLSTON06 rock
+floor FLSTON07 rock
+floor FLSTON08 rock
+floor FLSTON11 rock
+floor FLSTON12 rock
+floor FLSTON13 rock
+floor FLSTON14 rock
+floor FLSTON15 rock
+floor FLSTON16 rock
+floor FLSTON17 rock
+floor GOLDC rock
+floor GOLDH rock
+floor GOLDF rock
+floor GOLDG rock
+floor GOLDI rock
+floor GOLDQ rock
+floor GREY3 rock
+floor GRNBLK91 rock
+floor GRNBLOK5 rock
+floor GRNBLOK8 rock
+floor GRNBLOK9 rock
+floor GRNBLOKB rock
+floor GRNBLOKC rock
+floor GRNBLOKF rock
+floor GRNBLOKG rock
+floor GRNBLOKJ rock
+floor GRNBLOKK rock
+floor GRNBLOKL rock
+floor GRNBLOKM rock
+floor GRNBLOKN rock
+floor GRNBLOKO rock
+floor GRNBLOKR rock
+floor GRNBLOKS rock
+floor GRNBLOKT rock
+floor GRNFLAT1 rock
+floor GRNFLAT5 rock
+floor GRNFLAT6 rock
+floor GRNFLAT7 rock
+floor GRNFLAT8 rock
+floor GRNFLAT9 rock
+floor GRNFLATK rock
+floor GRNFLATL rock
+floor GRNFLATM rock
+floor GRNFLATN rock
+floor GRNFLATO rock
+floor GRSTNPB2 rock
+floor GRSTNPB3 rock
+floor GRSTNPB4 rock
+floor GRSTNPB5 rock
+floor GRSTNPB6 rock
+floor GRSTNPB7 rock
+floor GRSTNPB8 rock
+floor ICEY921 rock
+floor ICEYB rock
+floor ICEYA rock
+floor ICEYC rock
+floor MARBSTUC rock
+floor MOSSRCK9 rock
+floor MOSSRCK8 rock
+floor MOSASUN rock
+floor MOSSRCKA rock
+floor MOSSRCKB rock
+floor MOSSRCKC rock
+floor MOSSRCKD rock
+floor MOSSRCKE rock
+floor ROCKICE2 rock
+floor ROOF2 rock
+floor ROOF3 rock
+floor SANDSG00 rock
+floor SANDSG01 rock
+floor SANDSG02 rock
+floor SANDSG03 rock
+floor SANDSG04 rock
+floor SANDSG05 rock
+floor SANDSG06 rock
+floor SANDSQ2A rock
+floor SANDSQ3A rock
+floor SANDSQ3B rock
+floor SANDSTN1 rock
+floor SANDSTN2 rock
+floor SANDSTN3 rock
+floor SANDSTN4 rock
+floor SCARAB01 rock
+floor SCDIRTG0 rock
+floor SCROCKF1 rock
+floor SCROCKF2 rock
+floor SCROCKG1 rock
+floor SCROCKW0 rock
+floor SCROKSTF rock
+floor SCSTONB1 rock
+floor SCSTONA1 rock
+floor SCSTONA2 rock
+floor SCSTONA3 rock
+floor SCSTONB2 rock
+floor SCSTONB3 rock
+floor SCSTONC0 rock
+floor SCSTONE0 rock
+floor SCSTONF1 rock
+floor SCSTONF2 rock
+floor SCSTONF4 rock
+floor SCSTONF3 rock
+floor SCSTONG0 rock
+floor SNDBLCF4 rock
+floor SNDBLCF5 rock
+floor SNDBLCK1 rock
+floor SNDBLCK2 rock
+floor SNDBLCK3 rock
+floor SNDBLCK7 rock
+floor SNDBLCK8 rock
+floor SNDBLOKZ rock
+floor SNDBRIF1 rock
+floor SNDBRIF2 rock
+floor SNDBRIF3 rock
+floor SNDBRIF4 rock
+floor SNDBRIF5 rock
+floor SNDBRIK1 rock
+floor SNDBRIK2 rock
+floor SNDBRIK3 rock
+floor SNDBRIK4 rock
+floor SNDBRIK5 rock
+floor SNDCHNK1 rock
+floor SNDCHNK2 rock
+floor SNDCHNK3 rock
+floor SNDCHNK4 rock
+floor SNDCHNK5 rock
+floor SNDCHNK6 rock
+floor SNDCHNK7 rock
+floor SNDFLAT1 rock
+floor SNDFLAT2 rock
+floor SNDFLAT3 rock
+floor SNDFLAT4 rock
+floor SNDFLAT5 rock
+floor SNDFLAT6 rock
+floor SNDFLAT7 rock
+floor SNDSTN01 rock
+floor SNDSTN44 rock
+floor SNDSTN48 rock
+floor SNDSTN49 rock
+floor SNDSTN50 rock
+floor SNDSTN51 rock
+floor SNOW01 rock
+floor SNOW05 rock
+floor SNOW20 rock
+floor SNOW23 rock
+floor SNOW24 rock
+floor SPINE2B rock
+floor SPINE2D rock
+floor SQPEB3 rock
+floor SQPEB4 rock
+floor SQPEB5 rock
+floor SQPEB6 rock
+floor STNBAR01 rock
+floor STNBAR02 rock
+floor STNBAR03 rock
+floor STNBAR04 rock
+floor STNBAR05 rock
+floor STNBAR06 rock
+floor STNBAR07 rock
+floor STNBAR08 rock
+floor STNBAR09 rock
+floor STNBAR10 rock
+floor STNBAR11 rock
+floor STNBAR12 rock
+floor STNBAR13 rock
+floor STNBAR14 rock
+floor STNBAR15 rock
+floor STNBAR16 rock
+floor STNBAR17 rock
+floor STNBAR18 rock
+floor STNBAR19 rock
+floor STNBAR21 rock
+floor STNBAR23 rock
+floor STNBAR24 rock
+floor STNBAR25 rock
+floor STNBAR26 rock
+floor STNBAR27 rock
+floor STNBAR28 rock
+floor STNBAR29 rock
+floor STNFLR01 rock
+floor STNFLR02 rock
+floor STNFLR03 rock
+floor STNSUP11 rock
+floor STNSUP12 rock
+floor STNSUP13 rock
+floor STNSUP14 rock
+floor STNSUP21 rock
+floor STNSUP22 rock
+floor STNSUP23 rock
+floor STNSUP24 rock
+floor STNSUPP1 rock
+floor STNSUPP2 rock
+floor STNSUPP3 rock
+floor STNSUPP4 rock
+floor STONTILE rock
+floor SUNPRT01 rock
+floor SUNPRT02 rock
+floor SUNPRT03 rock
+floor WALL04_2 rock
+floor WALL04_3 rock
+floor WALL04B2 rock
+floor WALL04B3 rock
+floor WALL04BN rock
+floor WALL06BN rock
+floor WALL06GY rock
+floor WALL30GB rock
+floor WALL30GY rock
+floor WALL32BN rock
+floor WALL38BN rock
+floor WALL38BL rock
+floor WALL38RE rock
+floor WALL061 rock
+floor WALL062 rock
+floor WALL100 rock
+floor WALL101 rock
+floor WALL102 rock
+floor WALL531 rock
+floor WALL910 rock
+floor WALL900 rock
+
+floor PODWL01 slimy
+floor PODVINES slimy
+floor SCFACES1 slimy
+floor SCFACES2 slimy
+floor SCFACES3 slimy
+floor SCSLUDG7 slimy
+floor SCSLUDG8 slimy
+floor SCSLUDG9 slimy
+floor SCVEINS1 slimy
+floor SCVEINS2 slimy
+floor SCVEINS3 slimy
+
+floor BLUEFRA2 tile2
+floor BLUEFRA3 tile2
+floor BLUEFRA4 tile2
+floor BLUEFRA5 tile2
+floor BLUEFRA6 tile2
+floor BLUEFRA7 tile2
+floor BLUEFRA8 tile2
+floor BLUEFRAG tile2
+floor BLUEFRED tile2
+floor ESSLMRB1 tile2
+floor ESSLMRB2 tile2
+floor ESSLMRB3 tile2
+floor ESSLMRB4 tile2
+floor ESSLMRF1 tile2
+floor ESSLMRF2 tile2
+floor ESSLMRF3 tile2
+floor ESSLMRF4 tile2
+floor FLATMAR1 tile2
+floor FLATMAR2 tile2
+floor FLATMAR3 tile2
+floor FLMARB01 tile2
+floor FLMARB02 tile2
+floor FLMARB03 tile2
+floor FLMARB04 tile2
+floor FLMARB05 tile2
+floor FLMARB06 tile2
+floor FLMARB07 tile2
+floor FLOOR191 tile2
+floor FLOOR211 tile2
+floor FLOOR221 tile2
+floor FLOOR231 tile2
+floor FLOOR241 tile2
+floor FLTTEL21 tile2
+floor FLTTEL22 tile2
+floor FLTTEL23 tile2
+floor FLTTEL24 tile2
+floor FLTTEL31 tile2
+floor FLTTEL32 tile2
+floor FLTTEL33 tile2
+floor FLTTEL34 tile2
+floor FLTTEL41 tile2
+floor FLTTEL42 tile2
+floor FLTTEL44 tile2
+floor FLTTEL43 tile2
+floor GREYC tile2
+floor GREYC2 tile2
+floor GREYC3 tile2
+floor GREYC4 tile2
+floor HEXAGON1 tile2
+floor HEXAGON2 tile2
+floor HEXAGON3 tile2
+floor SCFLAT01 tile2
+floor SCFLAT02 tile2
+floor SCFLAT03 tile2
+floor SCFLAT04 tile2
+floor SCTILEG1 tile2
+floor SCTILEG2 tile2
+floor SW9OFF tile2
+floor SW9ON tile2
