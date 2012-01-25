@@ -181,3 +181,388 @@ floor FLATHUA2 Acid
 floor FLATHUA3 Acid
 floor WSLIMH Mud
 floor WINDIGO sizzle
+
+//////////////////
+// FLOOR SOUNDS //
+//////////////////
+
+splash carpet
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/carpet
+	NoAlert
+}
+
+splash dirt
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/dirt
+	NoAlert
+}
+
+splash gravel
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/gravel
+	NoAlert
+}
+
+splash metal
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/metal
+	NoAlert
+}
+
+splash metal2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/met2
+	NoAlert
+}
+
+splash rock
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/rock
+	NoAlert
+}
+
+
+splash slimy
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/slimy
+	NoAlert
+}
+
+
+splash snow
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/snow
+	NoAlert
+}
+
+splash hard
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/hard
+	NoAlert
+}
+
+splash tile
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/tile
+	NoAlert
+}
+
+splash tile2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/tile2
+	NoAlert
+}
+
+splash wood
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/wood
+	NoAlert
+}
+
+
+splash electric
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/elec1
+	NoAlert
+}
+
+//Terrains
+
+//Hard terrains
+
+terrain carpet
+{
+	splash			carpet
+	footclip		0
+	//liquid
+}
+
+terrain dirt
+{
+	splash			dirt
+	footclip		0
+	//liquid
+}
+
+terrain gravel
+{
+	splash			gravel
+	footclip		0
+	//liquid
+}
+
+terrain metal
+{
+	splash			metal
+	footclip		0
+	//liquid
+}
+
+terrain metal2
+{
+	splash			metal2
+	footclip		0
+	//liquid
+}
+
+terrain rock
+{
+	splash			rock
+	footclip		0
+	//liquid
+}
+
+terrain snow
+{
+	splash			snow
+	footclip		0
+	//liquid
+}
+
+terrain slimy
+{
+	splash			slimy
+	footclip		0
+	//liquid
+}
+
+terrain hard
+{
+	splash			hard
+	footclip		0
+	//liquid
+}
+
+terrain tile
+{
+	splash			tile
+	footclip		0
+	//liquid
+}
+
+terrain tile2
+{
+	splash			tile2
+	footclip		0
+	//liquid
+}
+
+terrain wood
+{
+	splash			wood
+	footclip		0
+	//liquid
+	
+}
+
+terrain electric
+{
+	splash			electric
+	footclip		0
+	//liquid
+}
+
+// Which flat does what
+floor WODTR201 wood
+floor WODMET01 wood
+floor WODTR202 wood
+floor WODTR203 wood
+floor WODTR204 wood
+floor WODTR207 wood
+floor WODTR208 wood
+floor WODTR209 wood
+floor WOODESS2 wood
+floor WOODESS3 wood
+floor WOODESSL wood
+floor WOODF01 wood
+floor WOODSL01 wood
+floor WOODSL02 wood
+floor WOODSL03 wood
+floor WOODSL04 wood
+floor WOODSL05 wood
+floor WOODSL06 wood
+floor WOODSL07 wood
+floor WOODSL08 wood
+floor WOODSL09 wood
+floor WOODSL10 wood
+floor WOODSL11 wood
+floor WOODSL12 wood
+floor WOODSL13 wood
+floor WOODSL14 wood
+floor WOODSL15 wood
+floor WOODSL16 wood
+floor WOODSL19 wood
+floor WOODSLIM wood
+floor WOODTR01 wood
+floor WOODTR02 wood
+floor WOODTR03 wood
+floor WOODTR04 wood
+floor WOODTR05 wood
+floor WOODTR06 wood
+floor WOODTR07 wood
+floor WOODTR08 wood
+floor WOODTR10 wood
+floor WOODWLH wood
+floor CRATE2 wood
+floor CRATE3 wood
+floor CRATE514 wood
+floor CRATE515 wood
+floor CRATE811 wood
+floor CRATE812 wood
+floor CTYSTU87 wood
+floor DACH002 wood
+floor CTYSTUC7 wood
+floor CTYSTUC8 wood
+floor DOORW03 wood
+floor DOORW03M wood
+floor FLAT508B wood
+floor FLAT508C wood
+floor FLAT508D wood
+floor FLAT508E wood
+floor FLOOR10B wood
+floor FLOOR192 wood
+floor FLOOR193 wood
+floor FLOOR194 wood
+floor SCWOOD01 wood
+floor SCWOOD02 wood
+floor SCWOOD03 wood
+floor SCWOOD04 wood
+floor SCWOOD05 wood
+floor SCWOOD06 wood
+floor SCWOOD07 wood
+floor SCWOOD08 wood
+floor SCWOOD09 wood
+floor SCWOOD10 wood
+floor SCWOODT1 wood
+floor SCWOODT2 wood

@@ -73,6 +73,8 @@ Sounds contributed:
 					original author: "SFX Bible"
 					downloaded from www.soundsnap.com (royalty free)
 
+- wind.ogg / wind3.ogg / wind5.ogg 	- Bouncy
+
 - WaterMove	-	from id/Raven Software's Hexen
 
 Textures contributed:
