@@ -541,6 +541,10 @@ dong	 ambx16 //Cathedral Clock
 lava1	 ambx17 //Lava Loud
 lava2	 ambx18 //Lava Bubble
 water	 ambx19 //Small River
+cavelake ambx20 //Lake in a Cave
+drycave  ambx21 //Dry Cave
+river	 ambx22 //Middle River
+wetcave	 ambx23 //Wet Cave
 
 ;=========================================================
 ;AMBIENT SOUND LISTING
@@ -563,6 +567,11 @@ $AMBIENT 15 ambx15 POINT CONTINUOUS 0.6
 $AMBIENT 16 ambx16 POINT RANDOM 20.0 60.0 1.0
 $AMBIENT 17 ambx17 POINT CONTINUOUS 0.6
 $AMBIENT 18 ambx18 POINT CONTINUOUS 0.6
+$AMBIENT 19 ambx19 POINT CONTINUOUS 0.6
+$AMBIENT 20 ambx20 POINT CONTINUOUS 0.6
+$AMBIENT 21 ambx21 POINT CONTINUOUS 0.6
+$AMBIENT 22 ambx22 POINT CONTINUOUS 0.6
+$AMBIENT 23 ambx23 POINT CONTINUOUS 0.6
 $ambient 60 "PortalChoir/Loop" POINT continuous  255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
 $ambient 62 amb/windsubs surround continuous 0.5
