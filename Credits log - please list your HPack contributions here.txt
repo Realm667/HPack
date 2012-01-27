@@ -75,6 +75,8 @@ Sounds contributed:
 
 - wind.ogg / wind3.ogg / wind5.ogg 	- Bouncy
 
+- cavelake.ogg / drycave.ogg / river.ogg / wetcave.ogg - Bouncy
+
 - WaterMove	-	from id/Raven Software's Hexen
 
 Textures contributed:
