@@ -125,6 +125,10 @@ Map: H4M9 - Dark Sun Rising
 Used music:	dh3-h4m9-amb.spc (Super Metroid "Crateria Raining" ambient loop)
 		dh3-h4m9-enemies.spc (Super Metroid Space Pirates theme)
 		dh3-h4m9-final.spc (Super Metroid Samus Aran's theme)
+Texture(s):	ZZZBLACK.png
+		ZZZROCK1.png (based on the BLUEFRAG variants)
+		ZZZSTRT1.png (based on FLOOR03 variants)
+		ZZZTRIM1.png (based on METL2 variants)
 
 -------------------------
 Contributor: Disguise
