@@ -522,29 +522,29 @@ PortalChoir/Loop	DSCHOIR
 // AMBIENT SOUNDS //
 ////////////////////
 
-AMBX1    ambx1  //Thunder Close
-AMBX2    ambx2  //Thunder Far
-AMBX3    ambx3  //Thunder Close  
-AMBX4    ambx4  //Rain Slight
-AMBX5    ambx5  //Fire Medium
-AMBX6    ambx6  //Forest
-AMBX7    ambx7  //Frog Swamp
-AMBX8    ambx8  //Swarm Swamp
-AMBX9    ambx9  //Frog Swamp
-AMBX10   ambx10 //Night
-AMBX11   ambx11 //Night
-WIND 	 ambx12 //Wind Silent
-WIND3	 ambx13 //Wind Scary
-WIND5	 ambx14 //Wind Strong
-bubbleuw ambx15 //Bubbles Underwater
-dong	 ambx16 //Cathedral Clock
-lava1	 ambx17 //Lava Loud
-lava2	 ambx18 //Lava Bubble
-water	 ambx19 //Small River
-cavelake ambx20 //Lake in a Cave
-drycave  ambx21 //Dry Cave
-river	 ambx22 //Middle River
-wetcave	 ambx23 //Wet Cave
+AMBX1    ambx1    //Thunder Close
+AMBX2    ambx2    //Thunder Far
+AMBX3    ambx3    //Thunder Close  
+AMBX4    ambx4    //Rain Slight
+AMBX5    ambx5    //Fire Medium
+AMBX6    ambx6    //Forest
+AMBX7    ambx7    //Frog Swamp
+AMBX8    ambx8    //Swarm Swamp
+AMBX9    ambx9    //Frog Swamp
+AMBX10   ambx10   //Night
+AMBX11   ambx11   //Night
+ambx12   WIND 	  //Wind Silent
+ambx13   WIND3	  //Wind Scary
+ambx14   WIND5	  //Wind Strong
+ambx15   bubbleuw //Bubbles Underwater
+ambx16   dong	  //Cathedral Clock
+ambx17   lava1	  //Lava Loud
+ambx18   lava2	  //Lava Bubble
+ambx19   water	  //Small River
+ambx20   cavelake //Lake in a Cave
+ambx21   drycave  //Dry Cave
+ambx22   river	  //Middle River
+ambx23   wetcave  //Wet Cave
 
 ;=========================================================
 ;AMBIENT SOUND LISTING
