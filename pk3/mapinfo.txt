@@ -309,13 +309,14 @@ map H5M3 "The Void Temple"
 	Cluster = 105
 }
 
-map H5M4 "At the Ship to Eternity"
+map H5M5 "At the Ship to Eternity"
 {
 //	gravity = 1
 	music = hevngate
 	aircontrol = 1
 	next = h5m3
 	cluster = 105
+	smoothlighting
 }
 
 map H5M9 "Fortress of Despair"
