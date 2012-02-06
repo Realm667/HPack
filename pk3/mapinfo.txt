@@ -313,10 +313,10 @@ map H5M5 "At the Ship to Eternity"
 {
 //	gravity = 1
 	music = hevngate
-	aircontrol = 1
-	next = h5m3
+	next = h5m6
 	cluster = 105
 	smoothlighting
+	sky1 = BSSKY
 }
 
 map H5M9 "Fortress of Despair"
