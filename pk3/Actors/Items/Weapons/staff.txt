@@ -21,7 +21,7 @@ ACTOR HPStaff : Staff replaces Staff
 	Weapon.Kickback 10
 	Obituary "$OB_MPSTAFF"
 	+WEAPON.MELEEWEAPON
-	+WEAPON.NOAUTOFIRE
+	//+WEAPON.NOAUTOFIRE
 	+WEAPON.NOALERT
 	Decal "BulletChip"
 	Inventory.PickupMessage "ELVEN STAFF"
