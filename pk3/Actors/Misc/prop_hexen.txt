@@ -264,7 +264,7 @@ ACTOR HPZCorpseKabob : RandomSpawner 16033
 	//$Category Obstacles
 	//$Title Corpse (Impaled)
 	//$Sprite CPS1A0
-	+SPAWNCEILING
+	//+SPAWNCEILING 
 	DropItem "ZCorpseKabob"
 }
 
