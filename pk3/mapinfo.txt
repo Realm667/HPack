@@ -319,6 +319,14 @@ map H5M5 "At the Ship to Eternity"
 	sky1 = BSSKY
 }
 
+map H5M7 "Clash of the elements"
+{
+	music = castle4
+	sky1 = BSSKY
+	cluster = 105
+	next = h5m8
+}
+
 map H5M9 "Fortress of Despair"
 {
 	next = "h5m10"
