@@ -98,3 +98,49 @@ Actor HandCrystalLime		: HandCrystal { args 10 }
 Actor HandCrystalCobalt		: HandCrystal { args 11 }
 Actor HandCrystalPink		: HandCrystal { args 12 }
 
+
+
+actor CrimsonBanner 8930
+{
+	+SOLID
+	radius 8
+	height 132
+	
+	states
+	{
+	spawn:
+		BNR2 A -1
+		Stop
+	}
+}
+
+actor VioletBanner : CrimsonBanner 8931
+{
+	states
+	{
+	spawn:
+		BNR2 B -1
+		Stop
+	}
+}
+
+actor GreenBanner : CrimsonBanner 8932
+{
+	states
+	{
+	spawn:
+		BNR2 C -1
+		Stop
+	}
+}
+
+actor BlueBanner : CrimsonBanner 8933
+{
+	states
+	{
+	spawn:
+		BNR2 D -1
+		Stop
+	}
+}
+
