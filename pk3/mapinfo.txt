@@ -68,14 +68,43 @@ map H1M7 "Dead End"
 
 map H1M8 "Gloom Citadel"
 {
+	next = H1M9
 	music = "BADASS"
+	Cluster = 101
+}
+
+map H1M9 "Nameless Map"
+{
+	next = H1M10
+	music = "HSHADOWS"
+	Cluster = 101
+}
+
+map H1M10 "Nameless Map"
+{
+	next = H1M11
+	music = "HSHADOWS"
+	Cluster = 101
+}
+
+map H1M11 "The Dungeon"
+{
+	next = H1M12
+	music = "HSHADOWS"
+	Cluster = 101
+}
+
+map H1M12 "The Demon Well"
+{
+	next = H1M0
+	music = "HSHADOWS"
 	Cluster = 101
 }
 
 map H1M0 "City of Darkness"
 {
 	music = "H_E1M0"
-	next = H1M9
+	next = H2M1
 	Cluster = 101
 }
 
@@ -139,9 +168,8 @@ map H2M6 "Fortress of Eternity"
 
 map H2M7 "Bastion of Sorrow"
 {
-	// fade = "10 15 20"
+	next = H2M9 // Change me when H2M8 is added
 	music = HINTER
-	next = h2m8
 	Cluster = 102
 }
 
@@ -149,13 +177,20 @@ map H2M9 "Serpent Residence"
 {
 	sky1 = "SKYTOP10", 0
 	music = MUS_E2M3
-	next = h2m0
+	next = h2m10
+	Cluster = 102
+}
+
+map H2M10 "Nameless Map"
+{
+	next = H2M11
+	music = "HSHADOWS"
 	Cluster = 102
 }
 
 map H2M11 "Dome of doom"
 {
-	next = h2m12
+	next = h2m0
 	cluster = 102
 	music = MUS_E1M7
 }
@@ -212,6 +247,15 @@ map H3M5 "Cavern of Earthblood"
 	sky2 = "sky2", 0
 }
 
+map H3M6 "Nameless Map"
+{
+	music = HSHADOWS
+	next = h3m8
+	Cluster = 103
+	sky1 = "sky2", 0
+	sky2 = "sky2", 0
+}
+
 map H3M8 "Hell's Forge"
 {
 	next = H3M9
@@ -220,6 +264,20 @@ map H3M8 "Hell's Forge"
 	fade = "40 20 10"
 	outsidefog = "40 20 10"
 	lightmode = 2
+}
+
+map H3M9 "Nameless Map"
+{
+	next = H3M10
+	music = "HSHADOWS"
+	Cluster = 103
+}
+
+map H3M10 "Nameless Map"
+{
+	next = H3M0
+	music = "HSHADOWS"
+	Cluster = 103
 }
 
 map H3M0 "Infernux Prime"
@@ -246,6 +304,12 @@ map H4M2 "The Bloody Path"
 	Cluster = 104
 }
 
+map H4M3 "Nameless Map"
+{
+	next = H4M4
+	music = "HSHADOWS"
+	Cluster = 104
+}
 
 map H4M4 "Fortress"
 {
@@ -262,7 +326,19 @@ map H4M5 "Bishop's Sanctuary"
 	Cluster = 104
 }
 
+map H4M6 "Nameless Map"
+{
+	next = H4M7
+	music = "HSHADOWS"
+	Cluster = 104
+}
 
+map H4M7 "Nameless Map"
+{
+	next = H4M9 // Change me when H4M8 is added
+	music = "HSHADOWS"
+	Cluster = 104
+}
 
 map H4M9 "Dark Sun Rising"	//totally not by darkhaven3
 {
@@ -270,14 +346,14 @@ map H4M9 "Dark Sun Rising"	//totally not by darkhaven3
 	cluster = 104		//e4 sux
 	sky1 = "SKY2", 0		//pretty sky coming whenever
 	lightmode = 2		//fags use 0,1,3,4, pros use 2
-	//next = H4M9 		//FIXME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	next = H4M0
 	music = "Music/dh3-h4m9-amb.spc"
 }
 
-map H4M0 "Pseudo heaven"
+map H4M0 "Pseudo Heaven"
 {
 	music = bldrstod
-	//next = END of episode 4
+	next = endtitle
 	cluster = 104
 	fade = "5D 8A A8"
 }
@@ -303,9 +379,17 @@ Map H5M2 "Vortex"
 
 map H5M3 "The Void Temple"
 {
-	music = D7
+	music = Hexd
 	next = h5m4
 	sky1 = BSSKY
+	Cluster = 105
+	MonsterFallingDamage
+}
+
+map H5M4 "Nameless Map"
+{
+	next = H5M5
+	music = "HSHADOWS"
 	Cluster = 105
 }
 
@@ -319,17 +403,24 @@ map H5M5 "At the Ship to Eternity"
 	sky1 = BSSKY
 }
 
+map H5M6 "Nameless Map"
+{
+	next = H5M7
+	music = "HSHADOWS"
+	Cluster = 105
+}
+
 map H5M7 "Clash of the elements"
 {
 	music = castle4
 	sky1 = BSSKY
 	cluster = 105
-	next = h5m8
+	next = h5m9 // change me when H5M8 is added
 }
 
 map H5M9 "Fortress of Despair"
 {
-	next = "h5m10"
+	next = "h5m11" // change me when H5M10 is added
 	cluster = 105
 	sucktime = 1
 	music = "MUS_E2M7" // [NF] at least for now o.O
