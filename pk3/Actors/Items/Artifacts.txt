@@ -1,5 +1,4 @@
 #include "actors/items/artifacts/bootsofhighjump.txt"
-//#include "actors/items/artifacts/bootsofthenorth.txt"
 #include "actors/items/artifacts/bracersofforce.txt"
 #include "actors/items/artifacts/discofrepulsion.txt"
 #include "actors/items/artifacts/hadessphere.txt"
@@ -8,7 +7,6 @@
 #include "actors/items/artifacts/tomeofmight.txt"
 #include "actors/items/artifacts/elysiumcrystal.txt"
 #include "actors/items/artifacts/talismanofthedepths.txt"
-//#include "actors/items/artifacts/salamanderblood.txt"
 #include "actors/items/artifacts/ringofregeneration.txt"
 //#include "actors/items/artifacts/ringoftheowl.txt"
 #include "actors/items/artifacts/emeraldamulet.txt"
