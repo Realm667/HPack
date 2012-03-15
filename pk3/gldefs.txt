@@ -36,6 +36,7 @@
 #include "actors/monsters/bormereth.gl"
 #include "actors/monsters/bishop.gl"
 #include "actors/monsters/bloodlich.gl"
+#include "actors/monsters/champion.gl"
 #include "actors/monsters/cultist.gl"
 #include "actors/monsters/chaoswyvern.gl"
 #include "actors/monsters/darknessrift.gl"

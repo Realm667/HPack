@@ -1,0 +1,39 @@
+PointLight BLOODYAXE1
+{
+Color 1.0 0.0 0.0
+Size 32
+}
+
+FlickerLight BLOODYAXE2
+{
+Color 0.7 0.0 0.0
+Size 32
+SecondarySize 48
+Chance 0.3
+}
+
+FlickerLight BLOODYAXE3
+{
+Color 0.4 0.0 0.0
+Size 48
+SecondarySize 56
+Chance 0.3
+}
+
+FlickerLight BLOODYAXE4
+{
+Color 0.2 0.0 0.0
+Size 56
+SecondarySize 64
+Chance 0.3
+}
+
+Object BloodyAxe
+{
+Frame RAXEA { Light BLOODYAXE1 }
+Frame RAXEB { Light BLOODYAXE1 }
+Frame RAXEC { Light BLOODYAXE1 }
+Frame RAXED { Light BLOODYAXE2 }
+Frame RAXEE { Light BLOODYAXE3 }
+Frame RAXEF { Light BLOODYAXE4 }
+}

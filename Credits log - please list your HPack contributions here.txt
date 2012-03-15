@@ -160,7 +160,7 @@ Map(s): H3M2
 -------------------------
 Contributor: Ghastly
 -------------------------
-Some general resource and quality management and testing.
+General resource and quality management and testing.
 
 -------------------------
 Contributor: Archi
@@ -177,4 +177,9 @@ Contributor: UltimateLorenzo
 -------------------------
 Maps:	H1M4 - Lighthouse
 	H1M11 - Dungeon
+
+-------------------------
+Contributor: Blue Shadow
+-------------------------
+Undead Champion sprites.
 
