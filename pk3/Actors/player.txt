@@ -56,12 +56,6 @@ ACTOR HPackPlayer : HereticPlayer
 		PLAY G 4
 		PLAY G 4 A_Pain
 		Goto Spawn
-	Pain.HandOfTheWraith:
-	 	PLAY G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	PLAY G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-		PLAY G 0 A_PlaySound("CurseHit", CHAN_AUTO, 1.0, 0) // No looping! Bad!
-		PLAY G 0 A_Print("CURSED!")
-	 	Goto Pain
 	Death:
 		PLAY H 6 A_PlayerSkinCheck("AltSkinDeath")
 		PLAY I 6 A_PlayerScream

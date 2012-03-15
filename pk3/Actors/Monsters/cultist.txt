@@ -38,12 +38,6 @@ ACTOR Thrall 30119
 		CULT G 2 
 		CULT G 2 A_Pain 
 		Goto See
-	Pain.HandOfTheWraith:
-	 	CULT G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	CULT G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	CULT G 2
-	 	CULT G 2 A_Pain
-	 	Goto See
 	Death: 
 		CULT H 8 
 		CULT I 8 A_Scream 

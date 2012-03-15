@@ -68,12 +68,6 @@ actor HPSentinel : HPIronLich replaces Sentinel 30122
 		SENT B 0 Bright A_CustomMissile("GCSpawner",24,5,30,0)
 		SENT B 1
 		Goto See
-	Pain.HandOfTheWraith:
-	 	SENT B 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	SENT B 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	SENT B 3
-		SENT B 3 A_Pain
-	 	Goto See
 	Death:
 		SENT G 8 Bright
 		SENT H 7 Bright A_Scream

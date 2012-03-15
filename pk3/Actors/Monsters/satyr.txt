@@ -37,12 +37,6 @@ actor Satyr 3999
        STYR A 2
        STYR A 2 A_Pain
        Goto See
-	Pain.HandOfTheWraith:
-	   STYR A 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	   STYR A 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	   STYR A 2
-	   STYR A 2 A_Pain
-	   Goto See
     Death:
        STYR J 5 A_CustomMissile("SatyrBow",44,32,-90,0)
        STYR K 5 A_Scream

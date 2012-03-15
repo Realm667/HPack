@@ -37,12 +37,6 @@ ACTOR GreenChaosSerpent : Demon1 16513
 		Goto See
 		DEMN E 0 A_GiveInventory("SerpentTurboToken")
 		Goto See
-	Pain.HandOfTheWraith:
-	    DEMN E 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	DEMN E 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	DEMN E 4
-	 	DEMN E 4 A_Pain
-	 	Goto See
 	Melee:
 		DEMN E 6 A_FaceTarget
 		DEMN F 8 A_FaceTarget
@@ -150,12 +144,6 @@ ACTOR BrownChaosSerpent : GreenChaosSerpent 16514
 		Goto See
 		DEM2 E 0 A_GiveInventory("SerpentTurboToken")
 		Goto See
-	Pain.HandOfTheWraith:
-	    DEM2 E 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	DEM2 E 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	DEM2 E 4
-	 	DEM2 E 4 A_Pain
-	 	Goto See
 	Melee:
 		DEM2 E 6 A_FaceTarget
 		DEM2 F 8 A_FaceTarget
@@ -226,12 +214,6 @@ Actor RedChaosSerpent : GreenChaosSerpent 16555
 		Goto See
 		RDMN E 0 A_GiveInventory("SerpentTurboToken")
 		Goto See
-	Pain.HandOfTheWraith:
-	    RDMN E 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	RDMN E 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	RDMN E 4
-	 	RDMN E 4 A_Pain
-	 	Goto See
 	Melee:
 		RDMN E 6 A_FaceTarget
 		RDMN F 8 A_FaceTarget

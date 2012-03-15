@@ -39,12 +39,6 @@ Actor Butcher 3528
     BCHR H 3
     BCHR H 3 A_Pain
     Goto See
-  Pain.HandOfTheWraith:
-	BCHR H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	BCHR H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	BCHR H 3
-	BCHR H 3 A_Pain
-	Goto See
   Death:
     BCHR H 12 A_Scream
     BCHR I 0 A_PlaySound("Butcher/Explode")

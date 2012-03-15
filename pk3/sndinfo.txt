@@ -127,7 +127,6 @@ weapons/polyshot		polysht
 weapons/polyalt			polyalt
 
 ScrollOfHellfire/Start	HFSCSTRT
-HandOfTheWraith/Fire	HWTHFIRE
 
 misc/ripslop			null
 

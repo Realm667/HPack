@@ -92,12 +92,6 @@ ACTOR Deathknight : Knight 30114
 		Goto See+12
 		DKNT H 1
 		Goto See
-	Pain.HandOfTheWraith:
-	 	DKNT H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	DKNT H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	DKNT H 2 
-		DKNT H 2 A_Pain
-	 	Goto See
 	Death:
 		DKNT I 0 Bright A_CustomMissile("DKSword",44,32,-90,0)
 		DKNT I 8 Bright A_CustomMissile("DKShield",44,-32,90,0)
