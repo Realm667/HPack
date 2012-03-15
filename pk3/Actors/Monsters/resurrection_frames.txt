@@ -7,12 +7,6 @@ actor HPBeast : Beast replaces Beast
 	Raise:
 		BEAS ZYXWVUTSR 6
 		Goto See
-  	Pain.HandOfTheWraith: //Custom pain state for the powerup
-    	BEAS G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	BEAS G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	BEAS G 3
-    	BEAS G 3 A_Pain
-    	Goto See
 	}
 }
 
@@ -82,12 +76,6 @@ actor HPClink : Clink replaces Clink
 	Raise:
 		CLNK ONMLKJI 5
 		Goto See
-  	Pain.HandOfTheWraith:
-    	CLNK H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	CLNK H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	CLNK H 3
-    	CLNK H 3 A_Pain
-    	Goto See
 	}
 }
 
@@ -98,12 +86,6 @@ actor HPIronLich : IronLich replaces IronLich
 	Raise:
 		LICH IHGFEDC 7
 		Goto See
-	Pain.HandOfTheWraith:
-    	LICH A 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	LICH A 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	LICH A 3
-    	LICH A 3 A_Pain
-    	Goto See
 	}
 }
 
@@ -114,12 +96,6 @@ actor HPKnight : Knight replaces Knight
 	Raise:
 		KNIG ONMLKJI 6
 		Goto See
-	Pain.HandOfTheWraith:
-    	KNIG H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	KNIG H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	KNIG H 3
-    	KNIG H 3 A_Pain
-    	Goto See
 	}
 }
 
@@ -140,12 +116,6 @@ actor HPMummy : Mummy replaces Mummy
 	Raise:
 		MUMM PONMLKJI 5
 		Goto See
-  	Pain.HandOfTheWraith:
-    	MUMM H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	MUMM H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	MUMM H 4
-    	MUMM H 4 A_Pain
-    	Goto See
 	}
 }
 
@@ -166,12 +136,6 @@ actor HPMummyLeader : MummyLeader replaces MummyLeader
 	Raise:
 		MUMM PONMLKJI 5
 		Goto See
-  	Pain.HandOfTheWraith:
-    	MUMM H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	MUMM H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	MUMM H 4
-    	MUMM H 4 A_Pain
-    	Goto See
 	}
 }
 
@@ -191,12 +155,6 @@ actor HPSnake : Snake replaces Snake
 	{
 	Raise:
 		SNKE PONMLKJIHG 5
-		Goto See
-	Pain.HandOfTheWraith:
-    	SNKE E 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	SNKE E 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	SNKE E 3
-    	SNKE E 3 A_Pain
 		Goto See
 	}
 }
@@ -275,12 +233,6 @@ actor HPHereticImp : HereticImp replaces HereticImp
 	Raise:
 		IMPX HG 5
 		Goto See
-	Pain.HandOfTheWraith:
-    	IMPX G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	IMPX G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	IMPX G 3
-    	IMPX G 3 A_Pain
-		Goto See
 	}
 }
 
@@ -290,12 +242,6 @@ actor HPHereticImpLeader : HereticImpLeader replaces HereticImpLeader
 	{
 	Raise:
 		IMPX HG 5
-		Goto See
-	Pain.HandOfTheWraith:
-    	IMPX G 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-    	IMPX G 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-    	IMPX G 3
-    	IMPX G 3 A_Pain
 		Goto See
 	}
 }

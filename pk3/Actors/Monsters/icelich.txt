@@ -68,11 +68,6 @@ actor IceLich : Iceguy 16248
 	Pain:
 		ILCH A 2 A_Pain
 		Goto See
-	Pain.HandOfTheWraith:
-	    ILCH A 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	ILCH A 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-		ILCH A 2 A_Pain
-	 	Goto See
 	Death:
 		ILCH A 0 A_GenericFreezeDeath
 		ILCH A 3 A_Scream

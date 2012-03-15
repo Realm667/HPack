@@ -37,11 +37,6 @@ ACTOR ChaosWyvern : FireDemon 16518
 	Pain:
 		CWYV F 10 A_Pain
 		Goto Fly
-	Pain.HandOfTheWraith:
-	 	CWYV F 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	CWYV F 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	CWYV F 10 A_Pain
-	 	Goto Fly
 	Missile:
 		CWYV E 1 A_FaceTarget
 		CWYV E 0 A_JumpIfCloser(256, "Melee")

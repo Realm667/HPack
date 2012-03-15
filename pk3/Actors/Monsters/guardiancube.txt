@@ -45,12 +45,6 @@ ACTOR Guardian 30102
 		CUBE D 3 
 		CUBE D 3 A_Pain 
 		Goto See
-	Pain.HandOfTheWraith:
-	 	CUBE D 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	 	CUBE D 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	 	CUBE D 3
-	 	CUBE D 3 A_Pain
-	 	Goto See
 	Death:
 		CUBE E 0 BRIGHT A_NoBlocking
 		CUBE E 0 BRIGHT A_SetFloorClip

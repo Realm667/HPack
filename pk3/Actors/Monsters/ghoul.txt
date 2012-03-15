@@ -51,12 +51,6 @@ ACTOR Ghoul 30123
        GHUL H 2 
        GHUL H 2 A_Pain 
        Goto See
-   Pain.HandOfTheWraith:
-	   GHUL H 0 A_GiveInventory("WraithHandShadow", 1) //+Ghost flag and translucency
-	   GHUL H 0 A_GiveInventory("WraithHandDamage") //Vulnerability
-	   GHUL H 2 
-       GHUL H 2 A_Pain 
-	   Goto See
    Death: 
        GHUL I 5
        GHUL J 0 A_SpawnItemEx ("ToxinCloud", 40, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS) 

@@ -32,7 +32,7 @@ ACTOR BloodLich : IronLich 16249
 		Loop
     Missile:
 		BLCH B 0 Bright A_JumpIfCloser(300, "Breath")
-		BLCH B 0 Bright A_Jump(128,"Curse")
+		//BLCH B 0 Bright A_Jump(128,"Curse")
 		BLCH B 0 Bright A_FaceTarget
 		BLCH B 0 Bright A_PlaySoundEx("MageStaffFire", CHAN_AUTO) 
 		BLCH B 0 Bright A_CustomMissile("BloodLichFireball", 20, 0, 0, 1)
@@ -56,11 +56,11 @@ ACTOR BloodLich : IronLich 16249
 		BLCH B 0 Bright A_FaceTarget
 		BLCH BBB 2 Bright A_CustomMissile("LichFireBreath", 20, 0, frandom(-3,3), CMF_CHECKTARGETDEAD)
 		Goto See
-    Curse:
-		BLCH B 0 Bright A_JumpIfCloser(300, "Breath")
-		BLCH B 0 Bright A_FaceTarget
-		BLCH B 6 Bright A_CustomMissile("WraithHandProjectile", 20, 0, 0, 1)
-		Goto See
+    //Curse:
+		//BLCH B 0 Bright A_JumpIfCloser(300, "Breath")
+		//BLCH B 0 Bright A_FaceTarget
+		//BLCH B 6 Bright A_CustomMissile("WraithHandProjectile", 20, 0, 0, 1)
+		//Goto See
     Pain:
 		BLCH A 0 A_Pain
 		Goto See
