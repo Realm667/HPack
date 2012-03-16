@@ -187,7 +187,7 @@ Actor SkullWizardPuff : BulletPuff
   {
   Spawn:
     TNT1 A 0
-    TNT1 A 1 A_RadiusThrust(5120, 128, 0)
+    TNT1 A 1 A_RadiusThrust(10240, 128, 0)
     Stop
   }
 }
