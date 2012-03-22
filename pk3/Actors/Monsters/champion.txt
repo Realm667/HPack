@@ -5,7 +5,7 @@
 Actor Champion : HPKnight 16512
 {
   Health 260
-  PainChance 70
+  PainChance 50
   +MissileMore
   +DontHurtSpecies
   Translation "145:160=225:240", "209:224=145:160", "98:110=96:108"
