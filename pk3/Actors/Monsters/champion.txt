@@ -4,6 +4,8 @@
 
 Actor Champion : HPKnight 16512
 {
+  //$Category Monsters
+  //$Title Undead Champion
   Health 260
   PainChance 50
   +MissileMore
