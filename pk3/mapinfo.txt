@@ -214,7 +214,6 @@ map H3M2 "LavaFalls"
 {
 	sky1 = "pri_osky", 0
 	fade = "30 10 10"
-	// music = TMPH3M2
 	music = MUS_E2M2
 	next = h3m3
 	Cluster = 103
@@ -222,9 +221,8 @@ map H3M2 "LavaFalls"
 
 map H3M3 "Bastion"
 {
-	doublesky
-	sky1 = "skywall", 0
-	sky2 = "skytop02", 50
+	sky1 = "pri_osky", 0
+	fade = "30 10 10"
 	music = MUS_E1M4
 	next = h3m4
 	Cluster = 103
