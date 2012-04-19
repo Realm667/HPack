@@ -1,4 +1,228 @@
+
 //Monster-Nightshade
+
+//===============================================================
+//If the first argument is 1 or more, it won't ever go invisible.
+//If the second argument is 1 or more, it will start invisible.
+//Yes, they can both apply for a Nightshade that starts cloaked but
+//won't ever cloak again.
+//===============================================================
+Actor Nightshade 30131
+{
+  //$Category Monsters
+  //$Title Nightshade
+  Obituary "$OB_NIGHTSHADE"
+  Health 150
+  Radius 20
+  Height 56
+  Mass 400
+  Speed 8
+  PainChance 160
+  RenderStyle Translucent
+  Alpha 0.75
+  DropItem "SkullRodAmmo", 84, 10
+  SeeSound "monster/nshsit"
+  PainSound "monster/nshpai"
+  DeathSound "monster/nshdth"
+  ActiveSound "monster/nshact"
+  MinMissileChance 200
+  Monster
+  +NoBlood
+  +NoGravity
+  +Float
+  +FloatBoB
+  +DontFall
+  +Ghost
+  States
+  {
+  Spawn:
+    NSHA B 0 
+    NSHA B 0 A_JumpIf(args[1] > 0, "Spawn2") //If the second argument is more than 0
+    NSHA B 5 A_Look
+    Goto Spawn+2
+  Spawn2: //Go invisible, then go back to the Spawn state
+    NSHA E 0 A_ChangeFlag("JustHit", 0) //Prevents attacking immediately after A_Pain
+    NSHA E 5 A_ChangeFlag("NoPain", 1)
+    NSHA E 0 A_GiveInventory("NightShadeInvisible", 1)
+    NSHA E 1 A_SetTranslucent(0.70,0)
+    NSHA E 1 A_SetTranslucent(0.65,0)
+    NSHA E 1 A_SetTranslucent(0.60,0)
+    NSHA E 1 A_SetTranslucent(0.55,0)
+    NSHA E 1 A_SetTranslucent(0.50,0)
+    NSHA E 1 A_SetTranslucent(0.45,0)
+    NSHA E 1 A_SetTranslucent(0.40,0)
+    NSHA E 1 A_SetTranslucent(0.35,0)
+    NSHA E 1 A_SetTranslucent(0.30,0)
+    NSHA E 1 A_SetTranslucent(0.25,0)
+    NSHA E 1 A_SetTranslucent(0.20,0)
+    NSHA E 1 A_SetTranslucent(0.15,0)
+    NSHA E 1 A_SetTranslucent(0.10,0)
+    NSHA E 1 A_SetTranslucent(0.05,0)
+    NSHA E 1 A_SetTranslucent(0.00,0)
+    NSHA E 0 A_ChangeFlag("NoPain", 0)
+    Goto Spawn+2
+  See:
+    NSHA A 3 A_Chase
+    NSHA AA 3 A_Chase("", "")
+    NSHA B 3 A_Chase
+    NSHA BB 3 A_Chase("", "")
+    NSHA C 0 A_JumpIf(args[0] > 0, 3) //Skip invisibility if the first argument is non-0
+    NSHA C 0 A_JumpIfInventory("NightShadeInvisible", 1, 2)
+    NSHA C 0 A_Jump(8, "Disappear")
+    NSHA C 3 A_Chase
+    NSHA CC 3 A_Chase("", "")
+    NSHA D 3 A_Chase
+    NSHA DD 3 A_Chase("", "")
+    Loop
+  See2:
+    NSHA AAABBBCCCDDD 3 A_Wander //Let's randomize movement after cloaking
+    Goto See
+  Disappear:
+    NSHA E 0 A_ChangeFlag("JustHit", 0) //Prevents attacking immediately after A_Pain
+    NSHA E 5 A_ChangeFlag("NoPain", 1)
+    NSHA E 0 A_GiveInventory("NightShadeInvisible", 1)
+    NSHA E 1 A_SetTranslucent(0.70,0)
+    NSHA E 1 A_SetTranslucent(0.65,0)
+    NSHA E 1 A_SetTranslucent(0.60,0)
+    NSHA E 1 A_SetTranslucent(0.55,0)
+    NSHA E 1 A_SetTranslucent(0.50,0)
+    NSHA E 1 A_SetTranslucent(0.45,0)
+    NSHA E 1 A_SetTranslucent(0.40,0)
+    NSHA E 1 A_SetTranslucent(0.35,0)
+    NSHA E 1 A_SetTranslucent(0.30,0)
+    NSHA E 1 A_SetTranslucent(0.25,0)
+    NSHA E 1 A_SetTranslucent(0.20,0)
+    NSHA E 1 A_SetTranslucent(0.15,0)
+    NSHA E 1 A_SetTranslucent(0.10,0)
+    NSHA E 1 A_SetTranslucent(0.05,0)
+    NSHA E 1 A_SetTranslucent(0.00,0)
+    NSHA E 0 A_ChangeFlag("NoPain", 0)
+    Goto See2
+  Missile:
+    NSHA E 0 A_JumpIfInventory("NightShadeInvisible", 1, "MissileInvisible")
+    NSHA EE 4 Bright A_FaceTarget
+    NSHA F 8 Bright A_CustomMissile("ShadeMissile",32,0,0,0,0)
+    NSHA B 4
+    Goto See
+  MissileInvisible:
+    NSHA E 0 A_SetTranslucent(0.15,0)
+    NSHA E 1 A_FaceTarget
+    NSHA E 0 A_SetTranslucent(0.30,0)
+    NSHA E 1 A_FaceTarget
+    NSHA E 0 A_SetTranslucent(0.45,0)
+    NSHA E 1 A_FaceTarget
+    NSHA E 0 A_SetTranslucent(0.60,0)
+    NSHA E 1 A_FaceTarget
+    NSHA E 0 A_SetTranslucent(0.75,0)
+    NSHA E 0 A_TakeInventory("NightShadeInvisible", 1)
+    NSHA E 2 A_FaceTarget
+    NSHA F 8 Bright A_CustomMissile("ShadeMissile",32,0,0,0,0)
+    NSHA B 4
+    Goto See
+  Pain:
+    NSHA G 2 A_JumpIfInventory("NightShadeInvisible", 1, "PainInvisible")
+    NSHA G 2 A_Pain
+    NSHA G 0 A_JumpIf(args[0] > 0, "See") //Don't cloak if first argument is non-0
+    NSHA G 0 A_Jump(64, "Disappear")
+    Goto See
+  PainInvisible:
+    NSHA G 1 A_SetTranslucent(0.05,0)
+    NSHA G 1 A_SetTranslucent(0.10,0)
+    NSHA G 1 A_SetTranslucent(0.15,0)
+    NSHA G 1 A_SetTranslucent(0.20,0)
+    NSHA G 1 A_SetTranslucent(0.25,0)
+    NSHA G 1 A_SetTranslucent(0.30,0)
+    NSHA G 1 A_SetTranslucent(0.35,0)
+    NSHA G 1 A_SetTranslucent(0.40,0)
+    NSHA G 1 A_Pain
+    NSHA G 1 A_SetTranslucent(0.35,0)
+    NSHA G 1 A_SetTranslucent(0.30,0)
+    NSHA G 1 A_SetTranslucent(0.25,0)
+    NSHA G 1 A_SetTranslucent(0.20,0)
+    NSHA G 1 A_SetTranslucent(0.15,0)
+    NSHA G 1 A_SetTranslucent(0.10,0)
+    NSHA G 1 A_SetTranslucent(0.05,0)
+    NSHA G 0 A_SetTranslucent(0.00,0)
+    Goto See
+  Death:
+    NSHA H 0 A_JumpIfInventory("NightShadeInvisible", 1, "DeathInvisible") //Check if we have to uncloak before dying
+  RealDeath:
+    NSHA H 4 A_SetTranslucent(0.75,0)
+    NSHA I 4 A_SetTranslucent(0.5,0)
+    NSHA I 0 A_Scream
+    NSHA J 4 A_SetTranslucent(0.4,0)
+    NSHA K 4 A_NoBlocking
+    NSHA L 4 A_SetTranslucent(0.3,0)
+    NSHA M 4
+    NSHA N 4 A_SetTranslucent(0.2,0)
+    NSHA O 4
+    NSHA P 4 A_SetTranslucent(0.1,0)
+    Stop
+  DeathInvisible:
+    NSHA G 1 A_SetTranslucent(0.1,0)
+    NSHA G 1 A_SetTranslucent(0.2,0)
+    NSHA G 1 A_SetTranslucent(0.3,0)
+    NSHA G 1 A_SetTranslucent(0.4,0)
+    NSHA G 1 A_SetTranslucent(0.5,0)
+    NSHA G 1 A_SetTranslucent(0.6,0)
+    Goto RealDeath
+  }
+}
+
+Actor NightShadeInvisible : Inventory { Inventory.MaxAmount 1 }
+
+Actor ShadeMissile : CacodemonBall
+{
+  Damage (4*Random(3, 6))
+  Speed 15
+  FastSpeed 20
+  Scale 1.25
+  Alpha 0.80
+  DamageType normal
+  +ThruGhost
+  +SeekerMissile
+  +ForceXYBillBoard
+  SeeSound "Monster/nshatk"
+  DeathSound "Monster/nshexp"
+  States
+  {
+  Spawn:
+    NBAL A 5 Bright A_SpawnItemEx("ShadePuff",0,0,0,0,0,0,0,128)
+    NBAL A 0 Bright A_Seekermissile(5,7)
+    NBAL B 5 Bright A_SpawnItemEx("ShadePuff",0,0,0,0,0,0,0,128)
+    NBAL B 0 Bright A_Seekermissile(5,7)  
+    Loop
+  Death:
+    NBAL HIJKLM 3 Bright
+    Stop
+  }
+}
+
+Actor ShadePuff
+{   
+  Radius 3
+  Height 3
+  RenderStyle Add
+  Alpha 0.67
+  +NoGravity
+  +NoBlockMap
+  +DontSplash
+  +ForceXYBillBoard
+  States
+  {
+  Spawn:
+    TNT1 A 3 Bright
+    NBAL CDEFG 3 Bright
+    Stop 
+  }
+}
+
+
+
+
+
+
+/* Previous nightshade version. Commented out.
 Actor Nightshade 30131
 {
 	//$Category Monsters
@@ -102,4 +326,4 @@ ACTOR ShadePuff
       Stop 
    }
 }
-//End of Nightshade
+*/
