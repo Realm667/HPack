@@ -181,7 +181,7 @@ map H2M9 "Serpent Residence"
 	Cluster = 102
 }
 
-map H2M10 "Nameless Map"
+map H2M10 "House of the Ancients"
 {
 	next = H2M11
 	music = "HSHADOWS"
@@ -195,7 +195,7 @@ map H2M11 "Dome of doom"
 	music = MUS_E1M7
 }
 
-map H2M0 "The Labyrinth"
+map H2M0 "Asterion"
 {
 	music = MUS_E1M9
 	next = "Endtitle"

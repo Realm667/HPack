@@ -188,3 +188,9 @@ Contributor: Gothic
 -------------------------
 Maps:	H5M7 - Clash of the Elements
 	Music used: In the castle, Super Castlevania IV (MIDI from midishrine)
+
+-------------------
+Contributor: el zee
+-------------------
+Maps:	H2M10.WAD - "House of the ancients"
+	H2M0.WAD - "Asterion"
