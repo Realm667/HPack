@@ -49,7 +49,6 @@ map H1M5 "Battlements"
 
 map H1M6 "Graveyard"
 {
-	fade = "26 29 41"
 	music = MUS_E1M7
 	next = h1m7
 	Cluster = 101
