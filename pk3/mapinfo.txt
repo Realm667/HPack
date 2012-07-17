@@ -165,10 +165,11 @@ map H2M6 "Fortress of Eternity"
 	Cluster = 102
 }
 
-map H2M7 "Bastion of Sorrow"
+
+map H2M7 "Gloom Citadel"
 {
-	next = H2M9 // Change me when H2M8 is added
-	music = HINTER
+	next = H1M9
+	music = "BADASS"
 	Cluster = 102
 }
 
@@ -218,7 +219,7 @@ map H3M2 "LavaFalls"
 	Cluster = 103
 }
 
-map H3M3 "Bastion"
+map H3M3 "Bastion of Sorrow"
 {
 	sky1 = "pri_osky", 0
 	fade = "30 10 10"
