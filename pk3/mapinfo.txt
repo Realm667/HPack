@@ -47,7 +47,7 @@ map H1M5 "Battlements"
 	Cluster = 101
 }
 
-map H1M6 "Graveyard"
+map H1M6 "Asylum of Hate"
 {
 	music = MUS_E1M7
 	next = h1m7
@@ -56,7 +56,7 @@ map H1M6 "Graveyard"
 
 map H1M7 "Dead End"
 {
-	next = "H1M8"
+	next = "H1M0"
 	sky1 = "SKYTOP03", 0
 	music = "D_SSLD1"
 	par = 600
@@ -65,33 +65,6 @@ map H1M7 "Dead End"
 	Cluster = 101
 }
 
-map H1M8 "Gloom Citadel"
-{
-	next = H1M9
-	music = "BADASS"
-	Cluster = 101
-}
-
-map H1M9 "Nameless Map"
-{
-	next = H1M10
-	music = "HSHADOWS"
-	Cluster = 101
-}
-
-map H1M10 "Nameless Map"
-{
-	next = H1M11
-	music = "HSHADOWS"
-	Cluster = 101
-}
-
-map H1M11 "The Dungeon"
-{
-	next = H1M12
-	music = "HSHADOWS"
-	Cluster = 101
-}
 
 map H1M12 "The Demon Well"
 {
@@ -173,7 +146,7 @@ map H2M7 "Gloom Citadel"
 	Cluster = 102
 }
 
-map H2M9 "Serpent Residence"
+map H2M8 "Serpent Residence"
 {
 	sky1 = "SKYTOP10", 0
 	music = MUS_E2M3
@@ -181,25 +154,26 @@ map H2M9 "Serpent Residence"
 	Cluster = 102
 }
 
-map H2M10 "House of the Ancients"
+map H2M9 "House of the Ancients"
 {
 	next = H2M11
 	music = "HSHADOWS"
 	Cluster = 102
 }
 
-map H2M11 "Dome of doom"
-{
-	next = h2m0
-	cluster = 102
-	music = MUS_E1M7
-}
 
 map H2M0 "Asterion"
 {
 	music = MUS_E1M9
 	next = "Endtitle"
 	Cluster = 102
+}
+
+map H2MX "Dome of doom"
+{
+	next = h2m0
+	cluster = 102
+	music = MUS_E1M7
 }
 
 map H3M1 "Scorched Earth"
