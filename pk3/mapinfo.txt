@@ -219,18 +219,18 @@ map H3M5 "Cavern of Earthblood"
 	sky2 = "sky2", 0
 }
 
-map H3M6 "Nameless Map"
-{
-	music = HSHADOWS
-	next = h3m7
-	Cluster = 103
-	sky1 = "sky2", 0
-	sky2 = "sky2", 0
-}
-
-map H3M7 "uknown"
+map H3M6 "Firey Grotto"
 {
 	music = D_REQ_12
+	fade = "30 10 10"
+	sky1 = BSSKY, 0.0
+	cluster = 103
+	next = H3M7
+}
+
+map H3M7 "City of Metal"
+{
+	music = MUS_E1M5
 	fade = "30 10 10"
 	sky1 = BSSKY, 0.0
 	cluster = 103
@@ -239,7 +239,7 @@ map H3M7 "uknown"
 
 map H3M8 "Hell's Forge"
 {
-	next = H3M9
+	next = H3M0
 	cluster = 103
 	music = H_FORGE
 	fade = "40 20 10"
@@ -247,26 +247,12 @@ map H3M8 "Hell's Forge"
 	lightmode = 2
 }
 
-map H3M9 "Nameless Map"
-{
-	next = H3M10
-	music = "HSHADOWS"
-	Cluster = 103
-}
-
-map H3M10 "Nameless Map"
-{
-	next = H3M0
-	music = "HSHADOWS"
-	Cluster = 103
-}
 
 map H3M0 "Infernux Prime"
 {
-   levelnum = 30
-   next = "E1M2"
-   music = "D_INFERN"
-   sky1 = "SKY2" 
+   	levelnum = 30
+   	music = "D_INFERN"
+   	sky1 = "SKY2" 
 }
 
 map H4M1 "City of Blood"
@@ -285,7 +271,7 @@ map H4M2 "The Bloody Path"
 	Cluster = 104
 }
 
-map H4M3 "Nameless Map"
+map H4M3 "Portal of Souls"
 {
 	next = H4M4
 	music = "HSHADOWS"
@@ -302,19 +288,19 @@ map H4M4 "Fortress"
 map H4M5 "Bishop's Sanctuary"
 {
 	sky1 = "SKYTOP02",0
-	music = "Music/undersea.spc"
+	music = MUS_E1M2
 	next = h4m6
 	Cluster = 104
 }
 
-map H4M6 "Nameless Map"
+map H4M6 "Arid Crypt"
 {
 	next = H4M7
 	music = "HSHADOWS"
 	Cluster = 104
 }
 
-map H4M7 "Nameless Map"
+map H4M7 "Crystalline Cliffs"
 {
 	next = H4M9 // Change me when H4M8 is added
 	music = "HSHADOWS"
@@ -367,7 +353,7 @@ map H5M3 "The Void Temple"
 	MonsterFallingDamage
 }
 
-map H5M4 "Nameless Map"
+map H5M4 "Chambers of Gold"
 {
 	next = H5M5
 	music = "HSHADOWS"
@@ -384,7 +370,7 @@ map H5M5 "At the Ship to Eternity"
 	sky1 = BSSKY
 }
 
-map H5M6 "Nameless Map"
+map H5M6 "Canyon of Ether"
 {
 	next = H5M7
 	music = "HSHADOWS"
@@ -396,15 +382,15 @@ map H5M7 "Clash of the elements"
 	music = castle4
 	sky1 = BSSKY
 	cluster = 105
-	next = h5m9 // change me when H5M8 is added
+	next = h5m8
 }
 
-map H5M9 "Fortress of Despair"
+map H5M8 "Fortress of Despair"
 {
-	next = "h5m11" // change me when H5M10 is added
+	next = "h5m0"
 	cluster = 105
 	sucktime = 1
-	music = "MUS_E2M7" // [NF] at least for now o.O
+	music = "MUS_E2M7"
 }
 
 
