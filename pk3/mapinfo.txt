@@ -274,7 +274,7 @@ map H4M2 "The Bloody Path"
 map H4M3 "Portal of Souls"
 {
 	next = H4M4
-	music = "HSHADOWS"
+	music = cryptr
 	Cluster = 104
 }
 
@@ -296,26 +296,17 @@ map H4M5 "Bishop's Sanctuary"
 map H4M6 "Arid Crypt"
 {
 	next = H4M7
-	music = "HSHADOWS"
+	music = MUS_E3M9
 	Cluster = 104
 }
 
 map H4M7 "Crystalline Cliffs"
 {
-	next = H4M9 // Change me when H4M8 is added
-	music = "HSHADOWS"
+	next = H4M0 // Change me when H4M8 is added
+	music = "Music/dh3-h4m9-amb.spc"
 	Cluster = 104
 }
 
-map H4M9 "Dark Sun Rising"	//totally not by darkhaven3
-{
-	levelnum = 49		//Why are there no levelnums defined in the whole pk3?
-	cluster = 104		//e4 sux
-	sky1 = "SKY2", 0		//pretty sky coming whenever
-	lightmode = 2		//fags use 0,1,3,4, pros use 2
-	next = H4M0
-	music = "Music/dh3-h4m9-amb.spc"
-}
 
 map H4M0 "Pseudo Heaven"
 {
@@ -356,7 +347,7 @@ map H5M3 "The Void Temple"
 map H5M4 "Chambers of Gold"
 {
 	next = H5M5
-	music = "HSHADOWS"
+	music = MUS_E3M9
 	Cluster = 105
 }
 
@@ -373,7 +364,7 @@ map H5M5 "At the Ship to Eternity"
 map H5M6 "Canyon of Ether"
 {
 	next = H5M7
-	music = "HSHADOWS"
+	music = MUS_E1M5
 	Cluster = 105
 }
 
