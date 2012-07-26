@@ -296,7 +296,7 @@ map H4M5 "Bishop's Sanctuary"
 map H4M6 "Arid Crypt"
 {
 	next = H4M7
-	music = MUS_E3M9
+	music = MUS_E2M9
 	Cluster = 104
 }
 
