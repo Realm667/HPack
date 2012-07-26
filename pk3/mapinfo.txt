@@ -18,7 +18,6 @@ map H1M1 "Silverspring Docks"
 
 map H1M2 "Sidhe Altar"
 {
-	// fade = "10 15 10"
 	music = D_STLKS2
 	next = h1m3
 	Cluster = 101
@@ -295,6 +294,7 @@ map H4M5 "Bishop's Sanctuary"
 
 map H4M6 "Arid Crypt"
 {
+	fade = "20 20 20"
 	next = H4M7
 	music = MUS_E2M6
 	Cluster = 104
