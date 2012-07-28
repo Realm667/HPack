@@ -378,3 +378,17 @@ ACTOR RandomPodGenerator : PodGenerator 21000
       Goto Spawn
    }
 }
+
+ACTOR VolcanoPurple : Volcano 12457
+{
+  States
+  {
+  Spawn:
+    VLCP A 350
+    VLCP A 35 A_VolcanoSet
+    VLCP BCDBCD 3
+    VLCP E 10 A_VolcanoBlast
+    Goto Spawn+1
+  }
+
+}
