@@ -172,7 +172,7 @@ map H2MX "Dome of doom"
 {
 	next = h2m0
 	cluster = 102
-	music = MUS_E1M7
+	music = MUS_H2MX
 }
 
 map H3M1 "Scorched Earth"

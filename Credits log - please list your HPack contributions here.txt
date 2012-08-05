@@ -27,12 +27,13 @@ Contributor: Tormentor667
 -------------------
 Contributor: printz
 -------------------
-Map(s): H4M4 (given to ShadesMaster), H2M11, H5M2
+Map(s): H4M4 (given to ShadesMaster), H2MX, H5M2
 Used music:
 - ORGAN.MUS	-	MIDI version of "The Ytse Jam" by "Dream Theater"
 				Extracted from DETHMETL.WAD from /idgames/music
 				(wad compiled by Chris Pisarczyk).
 - HEVNGATE.MP3	-	"heaven gate" by "warg", downloaded from www.soundsnap.com (royalty free)
+- MUS_H2MX.MP3	-	Heretic MUS_E1M7 remix by Kinkiness.
 
 Sounds contributed:
 - DoorCloseHeavy	-	from id/Raven Software's Hexen
