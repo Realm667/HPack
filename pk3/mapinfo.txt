@@ -270,7 +270,7 @@ map H4M2 "The Bloody Path"
 	Cluster = 104
 }
 
-map H4M3 "Portal of Souls"
+map H4M3 "Monastery of Souls"
 {
 	next = H4M4
 	music = cryptr
