@@ -365,6 +365,7 @@ map H5M6 "Canyon of Ether"
 {
 	next = H5M7
 	music = MUS_E1M5
+	Sky1 = "CSSKY", 0.01
 	Cluster = 105
 }
 
