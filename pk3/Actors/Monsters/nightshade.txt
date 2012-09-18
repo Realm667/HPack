@@ -12,14 +12,15 @@ Actor Nightshade 30131
   //$Category Monsters
   //$Title Nightshade
   Obituary "$OB_NIGHTSHADE"
-  Health 150
-  Radius 20
-  Height 56
+  Health 100
+  Radius 16
+  Height 45
   Mass 400
   Speed 8
   PainChance 160
   RenderStyle Translucent
   Alpha 0.75
+  Scale 0.8
   DropItem "SkullRodAmmo", 84, 10
   SeeSound "monster/nshsit"
   PainSound "monster/nshpai"
@@ -101,7 +102,7 @@ Actor Nightshade 30131
   Missile:
     NSHA E 0 A_JumpIfInventory("NightShadeInvisible", 1, "MissileInvisible")
     NSHA EE 4 Bright A_FaceTarget
-    NSHA F 8 Bright A_CustomMissile("ShadeMissile",32,0,0,0,0)
+    NSHA F 8 Bright A_CustomMissile("ShadeMissile",26,0,0,0,0)
     NSHA B 4
     Goto See
   MissileInvisible:
@@ -116,7 +117,7 @@ Actor Nightshade 30131
     NSHA E 0 A_SetTranslucent(0.75,0)
     NSHA E 0 A_TakeInventory("NightShadeInvisible", 1)
     NSHA E 2 A_FaceTarget
-    NSHA F 8 Bright A_CustomMissile("ShadeMissile",32,0,0,0,0)
+    NSHA F 8 Bright A_CustomMissile("ShadeMissile",26,0,0,0,0)
     NSHA B 4
     Goto See
   Pain:
@@ -173,7 +174,7 @@ Actor NightShadeInvisible : Inventory { Inventory.MaxAmount 1 }
 
 Actor ShadeMissile : CacodemonBall
 {
-  Damage (4*Random(3, 6))
+  Damage (3*Random(3, 4))
   Speed 15
   FastSpeed 20
   Scale 1.25
