@@ -364,8 +364,9 @@ map H5M5 "At the Ship to Eternity"
 map H5M6 "Canyon of Ether"
 {
 	next = H5M7
-	music = MUS_E1M5
+	music = LEVELR
 	Sky1 = "CSSKY", 0.01
+	Fade = "57 00 7F"
 	Cluster = 105
 }
 
