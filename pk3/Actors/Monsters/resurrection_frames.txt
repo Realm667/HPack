@@ -26,16 +26,73 @@ actor HPBeastStrong : HPBeast 16601
 	Obituary "$OB_BEASTSTRONG"
 	States
 	{
+	// Missile:
+    	// 	BEAS H 10 A_FaceTarget
+    	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+	// 	BEAS H 5 bright A_FaceTarget
+	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+	// 	BEAS H 5 bright A_FaceTarget
+	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+	// 	BEAS H 5 bright A_FaceTarget
+	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
+	// 	goto see
 	Missile:
-    		BEAS H 10 A_FaceTarget
-    		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-		BEAS H 5 bright A_FaceTarget
-		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-		BEAS H 5 bright A_FaceTarget
-		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-		BEAS H 5 bright A_FaceTarget
-		BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-		goto see
+    		TNT1 A 0 A_JumpIfHealthLower (250, "Missile2") 
+    		TNT1 A 0 A_Jump(90, 5)
+    		BEAS H 6 A_FaceTarget
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -8)
+    		BEAS I 6 A_CustomMissile ("BeastBall2", 80, 0, 8)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 0)
+    		Goto See
+    		BEAS H 4 A_FaceTarget
+    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, -16)
+    		BEAS I 0 A_FaceTarget
+    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, -8)
+    		BEAS I 0 A_FaceTarget
+    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 0)
+    		BEAS I 0 A_FaceTarget
+    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 8)
+    		BEAS I 0 A_FaceTarget
+    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 16)
+    		BEAS I 0 A_FaceTarget
+    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 32)
+    		Goto See
+  	Missile2:
+    		TNT1 A 0 A_Jump(90, 15)
+    		BEAS H 6 A_FaceTarget
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+    		Goto See
+    		BEAS H 16 A_FaceTarget
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -64)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 64)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -56)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 56)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -48)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 48)    
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -40)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 40)    
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -32)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 32)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -24)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 24)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -16)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 16)    
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -8)
+    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 8)    
+    		BEAS I 6 A_CustomMissile ("BeastBall2", 80, 0, 0)
+    		Goto See
 	}
 }
 
