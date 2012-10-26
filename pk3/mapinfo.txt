@@ -18,7 +18,7 @@ map H1M1 "Silverspring Docks"
 
 map H1M2 "Sidhe Altar"
 {
-	music = D_STLKS2
+	music = H1M2
 	next = h1m3
 	Cluster = 101
 	lightmode = 2
@@ -27,7 +27,7 @@ map H1M2 "Sidhe Altar"
 map H1M3 "Elven Wood"
 {
 	// fade = "15 25 5"
-	music = BARBICAN
+	music = H1M3
 	next = h1m4
 	Cluster = 101
 }
