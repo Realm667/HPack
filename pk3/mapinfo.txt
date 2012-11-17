@@ -280,7 +280,6 @@ map H4M3 "Monastery of Souls"
 map H4M4 "Fortress"
 {
 //	sky1 = PRI_OSKY, -0.2
-	// music = "ORGAN"
 	music = MUS_E2M4
 	next = h4m5
 }
@@ -302,8 +301,22 @@ map H4M6 "Arid Crypt"
 
 map H4M7 "Crystalline Cliffs"
 {
-	next = H4M0 // Change me when H4M8 is added
+	next = H4M8
 	music = "Music/dh3-h4m9-amb.spc"
+	Cluster = 104
+}
+
+map H4M8 "DarkFort"
+{
+	next = H4M9
+	music = MUS_E1M9
+	Cluster = 104
+}
+
+map H4M9 "Temp"
+{
+	next = H4M0
+	music = ROMERIC
 	Cluster = 104
 }
 
