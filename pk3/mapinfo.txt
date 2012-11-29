@@ -1,0 +1,465 @@
+// Properties that all maps have, unless they specifically override them
+adddefaultmap 
+{
+	grinding_polyobj
+	fallingdamage
+	smoothlighting
+}
+
+map titlemap "Demonic Uprising" {}
+
+
+map H1M1 "Silverspring Docks"
+{
+	music = H1M1
+	next = h1m2
+	Cluster = 101
+}
+
+map H1M2 "Sidhe Altar"
+{
+	music = H1M2
+	next = h1m3
+	Cluster = 101
+	lightmode = 2
+}
+
+map H1M3 "Elven Wood"
+{
+	// fade = "15 25 5"
+	music = H1M3
+	next = h1m4
+	Cluster = 101
+}
+
+map H1M4 "LightHouse"
+{
+	music = MUS_E1M4
+	next = h1m5
+	Cluster = 101
+}
+
+map H1M5 "Battlements"
+{
+	music = MUS_E1M5
+	next = h1m6
+	Cluster = 101
+}
+
+map H1M6 "Asylum of Hate"
+{
+	music = MUS_E1M7
+	next = h1m7
+	Cluster = 101
+}
+
+map H1M7 "Dead End"
+{
+	next = "H1M0"
+	sky1 = "SKYTOP03", 0
+	music = "D_SSLD1"
+	par = 600
+	monsterfallingdamage
+	smoothlighting
+	Cluster = 101
+}
+
+
+map H1M12 "The Demon Well"
+{
+	next = H1M0
+	music = "HSHADOWS"
+	Cluster = 101
+}
+
+map H1M0 "City of Darkness"
+{
+	music = "H_E1M0"
+	next = H2M1
+	Cluster = 101
+}
+
+map H1MX "Ghost Town"
+{
+	next = H1M1
+	cluster = 101
+	music = H_CREEP
+	sky1 = sky1
+	fade = "20 15 20"
+	outsidefog = "20 15 20"
+	lightmode = 2
+}
+
+map H2M1 "Chapel of the Seas"
+{
+	fade = "10 30 20"
+	music = UNDERHAL
+	next = h2m2
+	Cluster = 102
+}
+
+map H2M2 "Dark Water"
+{
+	music = MUS_E1M3
+	next = h2m3
+	Cluster = 102
+}
+
+map H2M3 "Aquatemple"
+{
+	fade = "10 20 50"
+	music = MUS_E3M3
+	next = h2m4
+	Cluster = 102
+}
+
+map H2M4 "Icy Catacomb"
+{
+	fade = "10 15 20"
+	music = FANTAR
+	next = h2m5
+	Cluster = 102
+}
+
+map H2M5 "Gauntlet"
+{
+	sky1 = "SKYTOP10", 1
+	music = MUS_E1M7
+	next = h1m7
+	Cluster = 102
+}
+
+map H2M6 "Fortress of Eternity"
+{
+	// fade = "10 15 20"
+	music = MUS_H2M6
+	next = h2m7
+	Cluster = 102
+}
+
+
+map H2M7 "Gloom Citadel"
+{
+	next = H1M9
+	music = "BADASS"
+	Cluster = 102
+}
+
+map H2M8 "Serpent Residence"
+{
+	sky1 = "SKYTOP10", 0
+	music = MUS_E2M3
+	next = h2m10
+	Cluster = 102
+}
+
+map H2M9 "House of the Ancients"
+{
+	next = H2M11
+	music = "HSHADOWS"
+	Cluster = 102
+}
+
+
+map H2M0 "Asterion"
+{
+	music = MUS_E1M9
+	next = "Endtitle"
+	Cluster = 102
+}
+
+map H2MX "Dome of doom"
+{
+	next = h2m0
+	cluster = 102
+	music = MUS_H2MX
+}
+
+map H3M1 "Scorched Earth"
+{
+	fade = "50 20 10"
+	music = MUS_E2M1
+	next = h3m2
+	Cluster = 103
+}
+
+map H3M2 "LavaFalls"
+{
+	sky1 = "pri_osky", 0
+	fade = "30 10 10"
+	music = MUS_E2M2
+	next = h3m3
+	Cluster = 103
+}
+
+map H3M3 "Bastion of Sorrow"
+{
+	sky1 = "pri_osky", 0
+	fade = "30 10 10"
+	music = MUS_E1M4
+	next = h3m4
+	Cluster = 103
+}
+
+map H3M4 "Tabernacle of Magma"
+{
+	fade = "20 10 05"
+	music = MIRE
+	next = h3m5
+	Cluster = 103
+}
+
+map H3M5 "Cavern of Earthblood"
+{
+	music = MUS_E1M9
+	next = h3m6
+	Cluster = 103
+	sky1 = "sky2", 0
+	sky2 = "sky2", 0
+}
+
+map H3M6 "City of Metal"
+{
+	music = MUS_E1M5
+	fade = "30 10 10"
+	sky1 = BSSKY, 0.0
+	cluster = 103
+	next = H3M7
+}
+
+map H3M7 "Hell Stronghold"
+{
+	music = DADV_NGR
+	sky1 = BSSKY, 0.0
+	outsidefog = "40 20 10"
+	cluster = 103
+	next = H3M8
+}
+
+map H3M8 "Hell's Forge"
+{
+	next = H3M0
+	cluster = 103
+	music = H_FORGE
+	fade = "40 20 10"
+	outsidefog = "40 20 10"
+	lightmode = 2
+}
+
+
+map H3M0 "Infernux Prime"
+{
+   	levelnum = 30
+   	music = "D_INFERN"
+   	sky1 = "SKY2" 
+}
+
+map H4M1 "City of Blood"
+{
+	fade = "20 05 05"
+	music = CHAP_3R
+	next = h4m2
+	Cluster = 104
+}
+
+map H4M2 "The Bloody Path"
+{
+	//sky1 = "SKYTOP10", 0
+	music = romeric
+	next = h4m3
+	Cluster = 104
+}
+
+map H4M3 "Monastery of Souls"
+{
+	next = H4M4
+	music = cryptr
+	Cluster = 104
+}
+
+map H4M4 "Fortress"
+{
+//	sky1 = PRI_OSKY, -0.2
+	music = MUS_E2M4
+	next = h4m5
+}
+map H4M5 "Bishop's Sanctuary"
+{
+	sky1 = "SKYTOP02",0
+	music = MUS_E1M2
+	next = h4m6
+	Cluster = 104
+}
+
+map H4M6 "Arid Crypt"
+{
+	fade = "20 20 20"
+	next = H4M7
+	music = MUS_E2M6
+	Cluster = 104
+}
+
+map H4M7 "Crystalline Cliffs"
+{
+	next = H4M8
+	music = "Music/dh3-h4m9-amb.spc"
+	Cluster = 104
+}
+
+map H4M8 "DarkFort"
+{
+	next = H4M9
+	music = MUS_E1M9
+	Cluster = 104
+}
+
+map H4M9 "Temp"
+{
+	next = H4M0
+	music = ROMERIC
+	Cluster = 104
+}
+
+
+map H4M0 "Pseudo Heaven"
+{
+	music = bldrstod
+	next = endtitle
+	cluster = 104
+	fade = "5D 8A A8"
+}
+
+map H5M1 "Ziggurat of Sorrow"
+{
+	fade = "0 05 10"
+	music = ROMERIC
+	next = h5m2
+	Cluster = 105
+}
+
+
+Map H5M2 "Vortex"
+{
+	Next = "H5M3"
+	Music = "MUS_E2M3"
+	Cluster = 105
+	Sky1 = "CSSKY", 0.01
+	Fade = "57 00 7F"
+	Gravity = 300
+}
+
+map H5M3 "The Void Temple"
+{
+	music = Hexd
+	next = h5m4
+	sky1 = BSSKY
+	Cluster = 105
+	MonsterFallingDamage
+}
+
+map H5M4 "Chambers of Gold"
+{
+	next = H5M5
+	music = MUS_E3M9
+	Cluster = 105
+}
+
+map H5M5 "At the Ship to Eternity"
+{
+//	gravity = 1
+	music = hevngate
+	next = h5m6
+	cluster = 105
+	smoothlighting
+	sky1 = BSSKY
+}
+
+map H5M6 "Canyon of Ether"
+{
+	next = H5M7
+	music = LEVELR
+	Sky1 = "CSSKY", 0.01
+	Fade = "57 00 7F"
+	Cluster = 105
+}
+
+map H5M7 "Clash of the elements"
+{
+	music = castle4
+	sky1 = BSSKY
+	cluster = 105
+	next = h5m8
+}
+
+map H5M8 "Fortress of Despair"
+{
+	next = "h5m0"
+	cluster = 105
+	sucktime = 1
+	music = "MUS_E2M7"
+}
+
+
+ClearEpisodes
+
+Episode H1M1
+{
+	Name = "Terrene of Sorrow"
+	Optional
+}
+Cluster 101 {}
+
+Episode H2M1
+{
+	Name = "Beneath the Altar"
+	Optional
+}
+Cluster 102 {}
+
+Episode H3M1
+{
+	Name = "Into the Furnace"
+	Optional
+}
+Cluster 103 {}
+
+Episode H4M1
+{
+	Name = "Hell's Wake"
+	Optional
+}
+Cluster 104 {}
+
+Episode H5M1
+{
+	Name = "The Astral Plane"
+	Optional
+}
+Cluster 105 {}
+
+
+
+
+Intermission Final
+{
+
+	Fader
+	{
+	  FadeType = FadeIn
+	}
+
+	Cast
+	{
+	  CastClass = "MummyLeader"
+	  CastName = "Nitrogolem"
+	  AttackSound = "Missile", 1, "mummy/head"
+	  AttackSound = "Melee", 1, "mummy/attack2"
+	}
+
+	
+	Fader
+	{
+	  FadeType = FadeOut
+	}
+
+}
