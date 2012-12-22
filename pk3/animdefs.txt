@@ -10,6 +10,7 @@ WARP2 texture wslime01
 WARP texture wslime02
 WARP2 texture wwater01
 WARP texture wlava01
+WARP texture wlava02
 WARP texture WSLIME03
 WARP texture WSLIMH
 WARP2 texture WDWATR01
