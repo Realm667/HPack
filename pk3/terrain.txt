@@ -141,6 +141,7 @@ floor SCLAVAB1 LavaRed
 floor SCLAVAB2 LavaRed
 floor SCLAVAB3 LavaRed
 floor WLAVA01 Lava
+floor WLAVA02 Lava
 floor SCLAVAC1 Lava
 floor SCLAVAC2 Lava
 floor SCLAVAC3 Lava
