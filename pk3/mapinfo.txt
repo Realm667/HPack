@@ -65,11 +65,11 @@ map H1M7 "Dead End"
 }
 
 
-map H1M12 "The Demon Well"
+map H1M8 "Gloom Citadel"
 {
-	next = H1M0
-	music = "HSHADOWS"
-	Cluster = 101
+	next = H1M9
+	music = "BADASS"
+	Cluster = 102
 }
 
 map H1M0 "City of Darkness"
@@ -138,10 +138,11 @@ map H2M6 "Fortress of Eternity"
 }
 
 
-map H2M7 "Gloom Citadel"
+map H2M7 "Desert of the Ages"
 {
-	next = H1M9
-	music = "BADASS"
+	fade = "10 15 20"
+	next = H2M8
+	music = MUS_E1M8
 	Cluster = 102
 }
 
@@ -149,7 +150,7 @@ map H2M8 "Serpent Residence"
 {
 	sky1 = "SKYTOP10", 0
 	music = MUS_E2M3
-	next = h2m10
+	next = h2m9
 	Cluster = 102
 }
 
@@ -157,6 +158,7 @@ map H2M9 "House of the Ancients"
 {
 	next = H2M11
 	music = "HSHADOWS"
+	next = h2m0
 	Cluster = 102
 }
 
