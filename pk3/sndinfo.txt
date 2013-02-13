@@ -426,20 +426,6 @@ DemonDeath              sbtdth3
 DemonMissileFire        impfire2
 DemonMissileExplode     impact3
 
-//Vulgar
-$random monster/vulsit 		{ monster/vulsi1  monster/vulsi2 monster/vulsi3 }
-$random monster/vuldth 		{ monster/vuldt1  monster/vuldt2 }
-monster/vulsi1                  dsvulsi1
-monster/vulsi2                  dsvulsi2
-monster/vulsi3                  dsvulsi3
-monster/vulsi4                  dsvulsi4
-monster/vulact                  dsvulact
-monster/vulpai                  dsvulpai
-monster/vuldt1                  dsvuldt1
-monster/vuldt2                  dsvuldt2
-monster/vulswg                  dsvulswg
-monster/vulhit                  dsvulhit
-
 //Wicked
 monster/wiksit                  dswiksit
 $random monster/wikact		{ monster/wikac1    monster/wikac2 }

@@ -76,7 +76,6 @@
 #include "actors/monsters/skullwizard.txt"
 #include "actors/monsters/sonsofdsparil.txt"
 #include "actors/monsters/swarm.txt"
-#include "actors/monsters/vulgar.txt"
 #include "actors/monsters/wicked.txt"
 #include "actors/monsters/wraith.txt"
 #include "actors/monsters/wizardblood.txt"
