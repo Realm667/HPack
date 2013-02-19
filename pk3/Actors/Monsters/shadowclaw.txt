@@ -24,7 +24,7 @@ Actor Shadowclaw 10301
   MeleeThreshold 96
   Renderstyle Translucent
   Alpha 0.8
-  HitObituary "%o was decapitated by a Shadowclaw"
+  HitObituary "$OB_SHADOWCLAW"
   States
   {
   Spawn:
