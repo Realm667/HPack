@@ -7,7 +7,6 @@
 
 TXT_WPNSTAFF = "ELVEN STAFF";
 TXT_WPNWAND = "ELVEN WAND"; // not "Gold Wand," since it's referred to as the "Elvenwand" in-game.
-TXT_WPNFORCE = "FORCE BLAST";
 TXT_WPNDSPARILS = "GLOVES OF D'SPARIL";
 TXT_WPNSUNSTAFF = "LIGHTBRINGER";
 TXT_WPNSTAFFCHAOS = "STAFF OF CHAOS";
@@ -137,7 +136,6 @@ OB_MPSTAFF = "%o got Staffed by %k.";
 OB_MPGAUNTLETS = "%o was shockingly destroyed by %k's Gauntlets.";
 OB_MPGOLDWAND = "%o waved goodbye to %k's Wand.";
 OB_MPCROSSBOW = "%o swallowed a shaft of ethereal death from %k's Crossbow.";
-OB_MPFORCE = "%o learned the hard way that %k is a Force to be reckoned with.";
 OB_MPBLASTER = "%o was blasted a new one by %k's Dragon Claw.";
 OB_MPSKULLROD = "%o got sent down under by %k's Hellstaff.";
 OB_MPPHOENIXROD = "%o was scorched to cinders by %k's Phoenix Rod.";
@@ -151,7 +149,6 @@ OB_COSTSTAFFCHAOS = "%o succumbed to the forces of Chaos.";
 OB_HELLFIRE = "%o tried to walk through a wall of fire";
 
 // Tags
-TAG_FORCEBLAST = "Force Blast";
 TAG_DSPARILSG = "Gloves of D'Sparil";
 TAG_SUNSTAFF = "Lightbringer";
 TAG_STAFFOFCHAOS = "Staff of Chaos";

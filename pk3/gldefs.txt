@@ -20,7 +20,6 @@
 #include "actors/items/item_keys.gl"
 #include "actors/items/artifacts/artifacts.gl"
 #include "actors/items/weapons/firemace.gl"
-#include "actors/items/weapons/forceblast.gl"
 #include "actors/items/weapons/sunstaff.gl"
 #Include "actors/items/weapons/StaffChaos.gl"
 #include "actors/items/weapons/goldwand.gl"

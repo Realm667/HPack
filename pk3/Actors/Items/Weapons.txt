@@ -3,7 +3,6 @@
 #include "actors/items/weapons/goldwand.txt"
 #include "actors/items/weapons/crossbow.txt"
 #include "actors/items/weapons/dragonclaw.txt"
-#include "actors/items/weapons/forceblast.txt"
 #include "actors/items/weapons/hellstaff.txt"
 #include "actors/items/weapons/phoenixrod.txt"
 #include "actors/items/weapons/firemace.txt"
