@@ -265,6 +265,95 @@ actor HPSnakeStrong : HPSnake 16604
 	}
 }
 
+ACTOR ForceShot1
+{
+	Radius 3
+	Height 3
+	Speed 60
+	Damage 3
+	Alpha .5
+	Projectile
+	RenderStyle Add
+	DeathSound "weapons/skulprojdeath"
+	+FORCEXYBILLBOARD
+	States
+	{
+	Spawn:
+		RADE A 1 Bright Light("FORCEBLAST_X2")
+		RADE AEAEAEAEAEAE 2 Bright Light("FORCEBLAST_X2") A_SpawnItemEx("ForceTrail",0,0,0,0,0,0,0,8)
+	Death:
+		RADE A   2 Bright Light("FORCEBLAST_X2")
+		RADE BCD 2 Bright Light("FORCEBLAST_X1")
+		RADE EF  2 Bright Light("FORCEBLAST_X2")
+		RADE GHI 2 Bright Light("FORCEBLAST_X3")
+		Stop
+	}
+}
+
+ACTOR ForceShot2 : ForceShot1
+{
+	Radius 6
+	Height 6
+	Speed 60
+	Damage 20
+	Alpha .5
+	Scale 2
+	Projectile
+	RenderStyle Add
+	DeathSound "array/impactp"
+	States
+	{
+	Spawn:
+		RADE A 1 Bright Light("FORCEBLAST_X2")
+		RADE AEAEAEAEAEAE 2 Bright Light("FORCEBLAST_X2") A_SpawnItemEx("ForceTrail2",0,0,0,0,0,0,0,8)
+	Death:
+		// 8-way particles:
+		TNT1 A 0 A_PlaySound("array/impactp")
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-7,-7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-7,7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,7,7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,7,-7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,14,0)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,14)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-14,0)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,-14)
+		// Alternate height 8-way:
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-5,-5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-5,5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,5,5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,5,-5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,10,0,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,10,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-10,0,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,-10,5)
+		Goto Super::Death
+	}
+}
+
+ACTOR ForceTrail
+{   
+	Radius 1
+	Height 1
+	Damage 0
+	Speed 0
+	Projectile
+	RenderStyle Add
+	Alpha 0.3
+	+FORCEXYBILLBOARD
+	States
+	{
+	Spawn:
+		RADE FGHI 2 Bright Light("FORCEBLAST_X3")
+		Stop 
+	}
+}
+
+ACTOR ForceTrail2 : ForceTrail
+{
+	Scale 1.5
+	-NOGRAVITY
+}
+
 actor ForceShot3 : ForceShot2
 {
 	Speed 30
