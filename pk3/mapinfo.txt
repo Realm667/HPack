@@ -170,11 +170,11 @@ map H2M0 "Asterion"
 	Cluster = 102
 }
 
-map H2MX "Dome of doom"
+map H2M11 "Dome of doom"
 {
 	next = h2m0
 	cluster = 102
-	music = MUS_H2MX
+	music = MUS_2M11
 }
 
 map H3M1 "Scorched Earth"
