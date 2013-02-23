@@ -254,10 +254,6 @@ monster/falwng dsfalwng
 weapons/firmfi dsfirmfi
 weapons/firex5 dsfirex5
 
-//Invisible Warrior
-elect1		invlight
-elect2		invligh2
-
 //Death Knight
 monster/dknhit dsdknhit
 monster/dknsit dsdknsit
