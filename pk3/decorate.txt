@@ -62,7 +62,6 @@
 #include "actors/monsters/hornbeast.txt"
 #include "actors/monsters/icelich.txt"
 #include "actors/monsters/infernodemon.txt"
-#include "actors/monsters/invisiblewarrior.txt"
 #include "actors/monsters/nightshade.txt"
 #include "actors/monsters/reiver.txt"
 #include "actors/monsters/satyr.txt"
