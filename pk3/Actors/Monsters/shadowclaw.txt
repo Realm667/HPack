@@ -15,10 +15,10 @@ Actor Shadowclaw 10301
   PainChance 32
   Monster
   +NoBlood
-  SeeSound "clink/sight"
-  DeathSound "clink/death"
-  PainSound "clink/pain"
-  ActiveSound "clink/active"
+  SeeSound "Shadowclaw/sight"
+  DeathSound "Shadowclaw/death"
+  PainSound "Shadowclaw/pain"
+  ActiveSound "Shadowclaw/active"
   MeleeSound "clink/attack"
   MeleeDamage 4
   MeleeThreshold 96

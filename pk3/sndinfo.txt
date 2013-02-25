@@ -193,13 +193,6 @@ FrostBreath		FROSTB
 IceGuyAttack            frosty2
 IceGuyMissileExplode    shards1b
 
-// Scimitar
-scimitar/scimisee	SCIMISEE
-scimitar/scimipai	SCIMIPAI
-scimitar/scimidth	SCIMIDTH
-scimitar/scimihit	SCIMIHIT
-scimitar/scimiatk	SCIMIATK
-
 // Satyr
 satyr/sight		dssatsit
 satyr/death 	dssatdth
@@ -218,6 +211,12 @@ SwarmFlyDeath SFLYDTH
 $RANDOM SwarmFlySight {SwarmFlySight1 SwarmFlySight2}
 SwarmFlySight1 SFLYSIT1
 SwarmFlySight2 SFLYSIT2
+
+//Shadowclaw
+Shadowclaw/Sight	SCLWSIT
+Shadowclaw/Active	SCLWACT
+Shadowclaw/Pain		SCLWPAI
+Shadowclaw/Death	SCLWDTH
 
 //Frostgargoyle
 FrostImp/Shards		IIMPSHRD
