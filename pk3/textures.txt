@@ -556,11 +556,5 @@ Texture CELTICD, 64, 128
 {
 	Patch CELTICD, 0, 0
 }
-graphic VOID_N, 512, 512
-graphic VOID_E, 512, 512
-graphic VOID_S, 512, 512
-graphic VOID_W, 512, 512
-graphic VOID_T, 512, 512
-graphic VOID_B, 512, 512
 
 // End of texture definitions
