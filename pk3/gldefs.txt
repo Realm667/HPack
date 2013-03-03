@@ -9,7 +9,7 @@
 // Special effects
 #include "brightmaps.gl"
 #include "glowingflats.gl"
-#include "skyboxes.gl"
+#include "skybox.gl"
 #include "actors/misc/sfx_fire.gl"
 
 // Items and decoration
