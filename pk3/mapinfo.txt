@@ -400,7 +400,18 @@ map H5M8 "Fortress of Despair"
 	cluster = 105
 	sucktime = 1
 	music = "MUS_E2M7"
+	next = h5m9
 }
+
+map H5M9 "The Dark Rift"
+{
+	cluster = 105
+	sky1 = "VOID", 0.8
+	skyrotate =0.4, 0.3, 0.2
+	music = "D_ICYV2"
+	smoothlighting
+}
+
 
 
 ClearEpisodes

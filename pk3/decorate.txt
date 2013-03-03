@@ -12,6 +12,7 @@
 #include "actors/misc/teleportFX.txt"
 #include "actors/misc/sfx_blood.txt"
 #include "actors/misc/sfx_shrines.txt"
+#include "actors/misc/sfx_blackmagic.txt"
 
 //Player stuff
 #include "actors/player.txt"
