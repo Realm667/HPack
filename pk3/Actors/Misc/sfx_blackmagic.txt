@@ -1,0 +1,67 @@
+//Blackmagic sfx by Icytux for the dark rift.
+
+Actor Deatheffectupwhirl 31243
+{
+	+NOGRAVITY
+	+NOINTERACTION
+	+NOCLIP
+	+CLIENTSIDEONLY
+	States
+	{
+	Spawn:
+		TNT1 A 2 A_Spawnitemex("Deathwhirler1",0,0,0,0,0,0,0,SXF_CLIENTSIDE)
+		TNT1 A 0 A_Spawnitemex("Deathwhirler1",0,0,0,0,0,0,120,SXF_CLIENTSIDE)
+		TNT1 A 0 A_Spawnitemex("Deathwhirler1",0,0,0,0,0,0,240,SXF_CLIENTSIDE)
+		TNT1 A 0 A_Spawnitemex("Deathwhirlefx",random(-384,384),random(-384,384), 0, 0, 0, 0, random(0,360),SXF_CLIENTSIDE, 247)
+		TNT1 A 0 A_SetAngle(angle+2)
+		loop
+	}
+}
+
+Actor Deathwhirler1 : Deatheffectupwhirl
+{
+	scale 2.0
+	Renderstyle Translucent
+	+FORCEXYBILLBOARD
+	States
+	{
+	Spawn:
+		BLCK A 1 A_changevelocity(4,4,10,3)
+		BLCK A 0 A_Fadeout(0.01)
+		BLCK A 0 A_Setscale(scaleX-0.02,scaleY-0.02)
+		BLCK A 0 A_SetAngle(angle+8)
+		loop
+	}
+}
+
+Actor Deathwhirlefx : Deathwhirler1
+{
+	+NOINTERACTION
+	scale 1.0
+	Renderstyle None
+	alpha 0.5
+	States
+	{
+	Spawn:
+		BLCK A 0 A_Settranslucent(frandom(0.45,0.55),0)
+	Spawn2:
+		BLCK A 2 A_changevelocity(3,3,8,3)
+		BLCK A 0 A_Spawnitemex("Deathwhirlertrail",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_CLIENTSIDE)
+		BLCK A 0 A_Fadeout(0.005)
+		BLCK A 0 A_SetAngle(angle+6)
+		loop
+	}
+}
+
+
+Actor Deathwhirlertrail : Deathwhirler1
+{
+	scale 0.001
+	States
+	{
+	Spawn:
+		BLCK A 1 A_Fadeout(0.02)
+		BLCK A 1 A_SetScale(scalex+0.01,scaley+0.01)
+		loop
+	}
+}

@@ -1,0 +1,10 @@
+//Void Skybox icys dark rift map
+skybox VOID
+{ 
+VOID_N
+VOID_E
+VOID_S
+VOID_W
+VOID_T
+VOID_B
+}
