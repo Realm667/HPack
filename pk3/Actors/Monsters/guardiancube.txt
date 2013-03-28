@@ -70,10 +70,11 @@ ACTOR CubeShot
 	Projectile
 	SeeSound "weapons/firsfi"
 	DeathSound "weapons/maceex"
+	Decal HImpScorch
 	States
 	{
 	Spawn:
-		CBAL AB 3 Bright A_SpawnItem("CubePuff",0,0)
+		CBAL AB 3 Bright A_SpawnItemEx("CubePuff",0,0,0,0,0,0,0,128)
 		loop
 	Death:
 		CBAL CDEFG 3 Bright
