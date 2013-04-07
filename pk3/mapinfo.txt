@@ -69,7 +69,15 @@ map H1M8 "Gloom Citadel"
 {
 	next = H1M9
 	music = "BADASS"
-	Cluster = 102
+	Cluster = 101
+}
+
+map H1M10 "Citadel of Horrors"
+{
+	next = H1M0
+	music = "BADASS"
+	sky1 = DNIGHT
+	Cluster = 101
 }
 
 map H1M0 "City of Darkness"

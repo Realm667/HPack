@@ -8,3 +8,15 @@ VOID_W
 VOID_T
 VOID_B
 }
+
+
+//Night Skybox for Torms H1M10
+skybox DNIGHT
+{ 
+SKYB_N
+SKYB_E
+SKYB_S
+SKYB_W
+SKYB_T
+SKYB_B
+}

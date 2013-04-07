@@ -1,0 +1,6 @@
+define SKYB_N 512 512
+define SKYB_E 512 512
+define SKYB_S 512 512
+define SKYB_W 512 512
+define SKYB_T 512 512
+define SKYB_B 512 512
