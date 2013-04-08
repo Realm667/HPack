@@ -256,6 +256,14 @@ map H3M8 "Hell's Forge"
 	lightmode = 2
 }
 
+map H3M10 "Perceptive incentive"	// This map is supposed to be H3M6
+{					// I'll take H3M10 temporally - Kore
+	cluster = 103
+	sky1 = PRI_OSKB, 0.1
+	sky2 = PRI_OSKY, 0.0
+	DoubleSky
+	music = MUS_E2M9
+}
 
 map H3M0 "Infernux Prime"
 {
