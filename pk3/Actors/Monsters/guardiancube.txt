@@ -1,84 +1,99 @@
-ACTOR Guardian 30102 
+Actor Guardian 30102 
 { 
-	//$Category Monsters
-	//$Title Guardian
-	Health 80 
-	Radius 16 
-	Height 32 
-	CameraHeight 17
-	Mass 150 
-	Speed 8 
-	PainChance 64 
-	Monster
-	+NOGRAVITY 
-	+FLOAT
-	+DONTFALL
-	+NOBLOOD
-	Species "IronLich"
-	SeeSound "monster/cubsit" 
-	PainSound "weapons/bounc1"
-	ActiveSound "monster/cubfly"
-	DeathSound "monster/cubdth"
-	Obituary "$OB_GUARDIAN"
-	DropItem "GoldWandAmmo" 120 5
-	States 
-	{ 
-	Spawn: 
-		CUBE A 10 A_Look 
-		Loop 
-	See: 
-		CUBE ABC 5 A_Chase
-		Loop 
-	Missile: 
-		CUBE D 5 BRIGHT A_FaceTarget 
-		CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
-		CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
-		CUBE D 4 BRIGHT A_FaceTarget 
-		CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
-		CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
-		CUBE D 4 BRIGHT A_FaceTarget  
-		CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
-		CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
-		CUBE D 4 BRIGHT A_FaceTarget
-		Goto See 
-	Pain: 
-		CUBE D 3 
-		CUBE D 3 A_Pain 
-		Goto See
-	Death:
-		CUBE E 0 BRIGHT A_NoBlocking
-		CUBE E 0 BRIGHT A_SetFloorClip
-		CUBE E 6 BRIGHT A_Scream 
-		CUBE FGHI 6 BRIGHT
-		Stop 
-	Inactive:
-		CUBE J 5
-		Loop
-	} 
+  //$Category Monsters
+  //$Title Guardian
+  Health 80 
+  Radius 16 
+  Height 32 
+  CameraHeight 17
+  Mass 150 
+  Speed 8 
+  PainChance 64 
+  Monster
+  +NoGravity 
+  +Float
+  +DontFall
+  +NoBlood
+  +LookAllAround //It has four faces. [Ghastly]
+  Species "IronLich"
+  SeeSound "monster/cubsit" 
+  PainSound "weapons/bounc1"
+  ActiveSound "monster/cubfly"
+  DeathSound "monster/cubdth"
+  Obituary "$OB_GUARDIAN"
+  DropItem "GoldWandAmmo" 120 5
+  States 
+  { 
+  Spawn: 
+    CUBE A 10 A_Look 
+    Loop 
+  See: 
+    CUBE ABC 5 A_Chase
+    Loop 
+  Missile: 
+    CUBE D 5 BRIGHT A_FaceTarget 
+    CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
+    CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
+    CUBE D 4 BRIGHT A_FaceTarget 
+    CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
+    CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
+    CUBE D 4 BRIGHT A_FaceTarget  
+    CUBE E 0 BRIGHT A_CustomMissile("CubeShot",10,4,0,1)
+    CUBE E 4 BRIGHT A_CustomMissile("CubeShot",10,-4,0,1)
+    CUBE D 4 BRIGHT A_FaceTarget
+    Goto See
+  //No pain state. It's a construct, for crying out loud! :P  - [Ghastly]
+  Death:
+    CUBE D 0 BRIGHT A_NoBlocking
+    CUBE D 0 BRIGHT A_SetFloorClip
+    CUBE D 6 BRIGHT A_Scream 
+    CUBE FGHI 6 BRIGHT
+    Stop 
+  Inactive:
+    CUBE J 5
+    Loop
+  } 
 }
 
-ACTOR CubeShot
+Actor CubeShot
 {
-	Radius 5
-	Height 5
-	Speed 15
-	FastSpeed 20
-	Damage 1
-	DamageType fire
-	RenderStyle Add
-	Alpha 0.85
-	Projectile
-	SeeSound "weapons/firsfi"
-	DeathSound "weapons/maceex"
-	Decal HImpScorch
-	States
-	{
-	Spawn:
-		CBAL AB 3 Bright A_SpawnItemEx("CubePuff",0,0,0,0,0,0,0,128)
-		loop
-	Death:
-		CBAL CDEFG 3 Bright
-		stop
-	}
+  Radius 5
+  Height 5
+  Speed 15
+  FastSpeed 20
+  Damage 1
+  DamageType fire
+  RenderStyle Add
+  Alpha 0.85
+  Projectile
+  SeeSound "weapons/firsfi"
+  DeathSound "weapons/maceex"
+  Decal HImpScorch
+  States
+  {
+  Spawn:
+    CBAL AB 3 Bright A_SpawnItemEx("CubePuff",0,0,0,0,0,0,0,128)
+    Loop
+  Death:
+    CBAL CDEFG 3 Bright
+    Stop
+  }
 }
 
+ACTOR CubePuff
+{   
+  Radius 2
+  Height 2
+  Speed 0
+  Scale 1.0
+  Projectile
+  RenderStyle Add
+  Alpha 0.67
+  States
+  {
+  Spawn:
+    TNT1 A 3 //Keeps it from "appearing" inside the projectile.
+    CBAL HIJ 3 Bright
+    Stop 
+  }
+}

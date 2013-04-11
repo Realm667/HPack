@@ -176,6 +176,7 @@ ACTOR Barbtrail
 }
 */
 
+/* //Already defined in Guardian Cube.
 ACTOR CubePuff
 {   
 	Radius 2
@@ -190,7 +191,8 @@ ACTOR CubePuff
 	Spawn:
 		CBAL HIJ 3 Bright
 		Stop 
-	}
+	
+*/}
 }
 
 /* // Already defined in deathknight.txt
