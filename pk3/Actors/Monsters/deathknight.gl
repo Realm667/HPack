@@ -64,7 +64,7 @@ Pointlight DKDart11
 	Size 16
 }
 
-Object DKDart
+/*Object DKDart
 {
 	Frame DKATA { Light DKDart1 }
 	Frame DKATB { Light DKDart1 }
@@ -79,7 +79,7 @@ Object DKDart
 	Frame DKATK { Light DKDart9 }
 	Frame DKATL { Light DKDart10 }
 	Frame DKATM { Light DKDart11 }
-}
+}*/
 
 Pointlight FHeadShot1
 {
@@ -118,7 +118,7 @@ Pointlight FHeadShot6
 	Size 8
 }
 
-Object FHeadShot
+/*Object FHeadShot
 {
 	Frame FHED { Light FHeadShot1 }
 	Frame RIP1D { Light FHeadShot2 }
@@ -126,7 +126,7 @@ Object FHeadShot
 	Frame RIP1F { Light FHeadShot4 }
 	Frame RIP1G { Light FHeadShot5 }
 	Frame RIP1H { Light FHeadShot6 }
-}
+}*/
 
 Pointlight DKBolt1
 {
@@ -166,7 +166,7 @@ Pointlight DKBolt6
 	Offset 0 24 0
 }
 
-Object DKBolt
+/*Object DKBolt
 {
 	Frame BOLT { Light DKBolt1 }
 	Frame HBALE { Light DKBolt2 }
@@ -174,7 +174,7 @@ Object DKBolt
 	Frame HBALG { Light DKBolt4 }
 	Frame HBALI { Light DKBolt5 }
 	Frame HBALJ { Light DKBolt6 }
-}
+}*/
 
 Pointlight DKSword
 {
@@ -224,7 +224,7 @@ Pointlight DKFire4
 	Offset 0 16 0
 }
 
-Object DKFire
+/*Object DKFire
 {
 	Frame DKATN { Light DKFire1 }
 	Frame DKATO { Light DKFire1 }
@@ -236,4 +236,4 @@ Object DKFire
 	Frame DKATU { Light DKFire2 }
 	Frame DKATV { Light DKFire3 }
 	Frame DKATW { Light DKFire4 }
-}
+}*/
