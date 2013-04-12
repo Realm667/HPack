@@ -192,10 +192,10 @@ ACTOR CubePuff
 		CBAL HIJ 3 Bright
 		Stop 
 	
-*/}
-}
+	}
+}*/
 
-/* // Already defined in deathknight.txt
+// No longer defined in deathknight.txt
 ACTOR RedPuff
 {   
 	Radius 0
@@ -207,10 +207,8 @@ ACTOR RedPuff
 	States
 	{
 	Spawn:
-		NULL A 3 Bright
+		TNT1 A 3 Bright
 		RPUF ABCDE 3 Bright
 		Stop 
 	}
 }
-
-/**/
