@@ -428,6 +428,14 @@ map H5M9 "The Dark Rift"
 	smoothlighting
 }
 
+map H5MX "Paradisio"
+{
+   cluster = 105
+   levelnum = 7448
+   next = "H5M8"
+   music = "D_FARAWY"
+   sky1 = "SKY3" 
+}
 
 
 ClearEpisodes

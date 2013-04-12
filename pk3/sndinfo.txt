@@ -526,6 +526,18 @@ ambx21   drycave  //Dry Cave
 ambx22   river	  //Middle River
 ambx23   wetcave  //Wet Cave
 
+//Additional Ambient Screams
+
+Ambient/Scream1		scream1
+Ambient/Scream2		scream2
+Ambient/Scream3		scream3
+Ambient/Scream4		scream4
+Ambient/Scream5		scream5
+Ambient/Scream6		scream6
+Ambient/Scream7		scream7
+Ambient/Scream8		scream8
+Ambient/Scream		scrmeptm
+
 ;=========================================================
 ;AMBIENT SOUND LISTING
 ;=========================================================
