@@ -10,7 +10,7 @@ Actor Deathknight : Knight 30114
   PainChance 64
   MeleeRange 56
   DropItem "SkullRodAmmo" 84 20
-  Obituary "A Deathknight hacked %o into pieces."
+  Obituary "$OB_DEATHKNIGHTH"
   SeeSound "monster/dknsit"
   PainSound "monster/dknpai"
   DeathSound "monster/dkndth"
@@ -251,7 +251,9 @@ Actor DeathKnightWaveTrail
   }
 }
 
-Actor DeathKnightPuff
+// [Blue Shadow] This actor is a left-over from my version of the attack. It's not used anywhere else
+// so I'm commenting it out. Feel free to remove it altogether, if you want.
+/*Actor DeathKnightPuff
 {
   RenderStyle Add
   SeeSound "monster/dknhit"
@@ -268,7 +270,7 @@ Actor DeathKnightPuff
     DKAT EFGHIJKLM 3 Bright
     Stop
   }
-}
+}*/
 
 Actor DKSword
 {
