@@ -48,7 +48,7 @@ map H1M5 "Battlements"
 
 map H1M6 "Asylum of Hate"
 {
-	music = MUS_E1M7
+	music = H1M6
 	next = h1m7
 	Cluster = 101
 }
