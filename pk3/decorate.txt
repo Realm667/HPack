@@ -45,7 +45,6 @@
 #include "actors/monsters/bishop.txt"
 #include "actors/monsters/bloodlich.txt"
 #include "actors/monsters/bormereth.txt"
-#include "actors/monsters/butcher.txt"
 #include "actors/monsters/champion.txt"
 #include "actors/monsters/chaoswyvern.txt"
 #include "actors/monsters/clinkjump.txt"

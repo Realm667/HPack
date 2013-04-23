@@ -364,20 +364,6 @@ bormereth/missile2prepare   00PA04
 bormereth/missile2fired		00AM12
 bormereth/missile2death		STRIKE1
 
-//Butcher
-Butcher/Sight	BCHRSIGH
-Butcher/Active	BCHRACTI
-$Random Butcher/Step { BCHRSTP1 BCHRSTP2 BCHRSTP3 BCHRSTP4 }
-BCHRSTP1	BCHRSTP1
-BCHRSTP2	BCHRSTP2
-BCHRSTP3	BCHRSTP3
-BCHRSTP4	BCHRSTP4
-Butcher/Miss	BCHRMISS
-Butcher/Melee	BCHRHIT
-Butcher/Pain	BCHRPAIN
-Butcher/Death	BCHRDEAT
-Butcher/Explode	BCHREXPL
-
 //Cultist
 monster/culsit dsculsit
 monster/culatk dsculatk
