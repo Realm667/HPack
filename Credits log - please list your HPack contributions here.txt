@@ -9,7 +9,7 @@ original author or source, so we can keep track of resources and credit
 -------------------
 Contributor: PRIMEVAL
 -------------------
-- Intermission music (MUS_INTR) 
+- Intermission music (MUS_INTR)
 - Title music  (MUS_TITL)
 - Music for H2M6 (HInter)
 - Placeholder music (HShadows)
