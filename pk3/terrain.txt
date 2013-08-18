@@ -52,7 +52,7 @@ splash Sizzle
 {
 	smallclass		LavaSmoke
 	smallclip		12
-	smallsound		world/lavsiz2
+	smallsound		world/lavasizzlesmall
 
 	baseclass		LavaSmoke
 	chunkclass		LavaSmoke
@@ -60,7 +60,7 @@ splash Sizzle
 	chunkyvelshift	-1
 	chunkzvelshift	7
 	chunkbasezvel	1
-	sound			world/lavsiz2
+	sound			world/lavasizzle
 	NoAlert
 }
 
