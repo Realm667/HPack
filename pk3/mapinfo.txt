@@ -28,13 +28,6 @@ map H1M3 "Elven Wood"
 {
 	// fade = "15 25 5"
 	music = H1M3
-	next = h1m4
-	Cluster = 101
-}
-
-map H1M4 "LightHouse"
-{
-	music = H1M4
 	next = h1m5
 	Cluster = 101
 }
@@ -55,20 +48,12 @@ map H1M6 "Asylum of Hate"
 
 map H1M7 "Dead End"
 {
-	next = "H1M0"
+	next = "H1M10"
 	sky1 = "SKYTOP03", 0
 	music = "D_SSLD1"
 	par = 600
 	monsterfallingdamage
 	smoothlighting
-	Cluster = 101
-}
-
-
-map H1M8 "Gloom Citadel"
-{
-	next = H1M9
-	music = "BADASS"
 	Cluster = 101
 }
 
@@ -125,15 +110,7 @@ map H2M4 "Icy Catacomb"
 {
 	fade = "10 15 20"
 	music = FANTAR
-	next = h2m5
-	Cluster = 102
-}
-
-map H2M5 "Gauntlet"
-{
-	sky1 = "SKYTOP10", 1
-	music = MUS_E1M7
-	next = h1m7
+	next = h2m6
 	Cluster = 102
 }
 
@@ -141,16 +118,7 @@ map H2M6 "Fortress of Eternity"
 {
 	// fade = "10 15 20"
 	music = MUS_H2M6
-	next = h2m7
-	Cluster = 102
-}
-
-
-map H2M7 "Desert of the Ages"
-{
-	fade = "10 15 20"
-	next = H2M8
-	music = MUS_E1M8
+	next = h2m8
 	Cluster = 102
 }
 
@@ -178,12 +146,6 @@ map H2M0 "Asterion"
 	Cluster = 102
 }
 
-map H2M11 "Dome of doom"
-{
-	next = h2m0
-	cluster = 102
-	music = MUS_2M11
-}
 
 map H3M1 "Scorched Earth"
 {
@@ -215,17 +177,8 @@ map H3M4 "Tabernacle of Magma"
 {
 	fade = "20 10 05"
 	music = MIRE
-	next = h3m5
-	Cluster = 103
-}
-
-map H3M5 "Cavern of Earthblood"
-{
-	music = MUS_E1M9
 	next = h3m6
 	Cluster = 103
-	sky1 = "sky2", 0
-	sky2 = "sky2", 0
 }
 
 map H3M6 "City of Metal"
@@ -248,7 +201,7 @@ map H3M7 "Hell Stronghold"
 
 map H3M8 "Hell's Forge"
 {
-	next = H3M0
+	next = H3M10
 	cluster = 103
 	music = H_FORGE
 	fade = "40 20 10"
@@ -263,6 +216,7 @@ map H3M10 "Perceptive incentive"	// This map is supposed to be H3M6
 	sky2 = PRI_OSKY, 0.0
 	DoubleSky
 	music = MUS_E2M9
+	next = H3M0
 }
 
 map H3M0 "Infernux Prime"
@@ -300,45 +254,23 @@ map H4M4 "Fortress of Despair"
 {
 //	sky1 = PRI_OSKY, -0.2
 	music = MUS_E2M4
-	next = h4m5
-}
-map H4M5 "Bishops' Sanctuary"
-{
-	sky1 = "SKYTOP02",0
-	music = MUS_E1M2
 	next = h4m6
-	Cluster = 104
 }
 
 map H4M6 "Arid Crypt"
 {
 	fade = "20 20 20"
-	next = H4M7
-	music = MUS_E2M6
-	Cluster = 104
-}
-
-map H4M7 "Crystalline Cliffs"
-{
 	next = H4M8
-	music = "Music/dh3-h4m9-amb.spc"
+	music = MUS_E2M6
 	Cluster = 104
 }
 
 map H4M8 "DarkFort"
 {
-	next = H4M9
+	next = H4M0
 	music = MUS_E1M9
 	Cluster = 104
 }
-
-map H4M9 "Temp"
-{
-	next = H4M0
-	music = ROMERIC
-	Cluster = 104
-}
-
 
 map H4M0 "Pseudo Heaven"
 {
@@ -370,27 +302,10 @@ Map H5M2 "Vortex"
 map H5M3 "The Void Temple"
 {
 	music = Hexd
-	next = h5m4
+	next = h5m6
 	sky1 = BSSKY
 	Cluster = 105
 	MonsterFallingDamage
-}
-
-map H5M4 "Chambers of Gold"
-{
-	next = H5M5
-	music = MUS_E3M9
-	Cluster = 105
-}
-
-map H5M5 "At the Ship to Eternity"
-{
-//	gravity = 1
-	music = hevngate
-	next = h5m6
-	cluster = 105
-	smoothlighting
-	sky1 = BSSKY
 }
 
 map H5M6 "Canyon of Ether"
@@ -407,15 +322,6 @@ map H5M7 "Clash of the elements"
 	music = castle4
 	sky1 = BSSKY
 	cluster = 105
-	next = h5m8
-}
-
-map H5M8 "Fortress of Despair"
-{
-	next = "h5m0"
-	cluster = 105
-	sucktime = 1
-	music = "MUS_E2M7"
 	next = h5m9
 }
 
@@ -474,9 +380,6 @@ Episode H5M1
 	Optional
 }
 Cluster 105 {}
-
-
-
 
 Intermission Final
 {
