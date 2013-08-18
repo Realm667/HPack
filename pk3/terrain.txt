@@ -623,7 +623,6 @@ floor FLAT504A rock
 floor FLAT504B rock
 floor FLAT504C rock
 floor FLAT504D rock
-floor FLAT504E rock
 floor FLAT504F rock
 floor FLAT504G rock
 floor FLAT504H rock
@@ -1139,7 +1138,6 @@ floor STNBAR06 rock
 floor STNBAR07 rock
 floor STNBAR08 rock
 floor STNBAR09 rock
-floor STNBAR10 rock
 floor STNBAR11 rock
 floor STNBAR12 rock
 floor STNBAR13 rock
@@ -1203,7 +1201,7 @@ floor WALL38BL rock
 floor WALL38BN rock
 floor WALL38RE rock
 floor WALL44_2 dirt
-floor WALL44_21 dirt
+floor WALL44_4 dirt
 floor WALL44_3 dirt
 floor WALL44G2 dirt
 floor WALL44G3 dirt
