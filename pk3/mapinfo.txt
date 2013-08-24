@@ -334,11 +334,11 @@ map H5M9 "The Dark Rift"
 	smoothlighting
 }
 
-map H5MX "Paradisio"
+map H5MX "At the Back of My Head"
 {
    cluster = 105
    levelnum = 7448
-   next = "H5M8"
+   next = "H5M0"
    music = "D_FARAWY"
    sky1 = "SKY3" 
 }
