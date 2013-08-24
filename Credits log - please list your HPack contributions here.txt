@@ -198,3 +198,11 @@ Contributor: el zee
 -------------------
 Maps:	H2M10.WAD - "House of the ancients"
 	H2M0.WAD - "Asterion"
+
+-------------------
+Contributor: Starscream/Pyroscourge
+-------------------
+- H3M0.WAD
+- H5MX.WAD
+
+Used music: bldrstod.ogg - "TSEC - Far Away"
