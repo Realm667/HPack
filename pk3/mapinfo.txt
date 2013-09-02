@@ -9,7 +9,7 @@ adddefaultmap
 map titlemap "Demonic Uprising" {}
 
 
-map H1M1 "Silverspring Docks"
+map H1M1 "Dark Shore"
 {
 	music = H1M1
 	next = h1m2
@@ -72,11 +72,11 @@ map H1M0 "City of Darkness"
 	Cluster = 101
 }
 
-map H1MX "Ghost Town"
+map H1MX "ChickenSpring"
 {
-	next = H1M1
+	next = H1M5
 	cluster = 101
-	music = H_CREEP
+	music = MUS_E1M9
 	sky1 = sky1
 	fade = "20 15 20"
 	outsidefog = "20 15 20"
