@@ -9,9 +9,9 @@ adddefaultmap
 map titlemap "Demonic Uprising" {}
 
 
-map H1M1 "Gloom Citadel"
+map H1M1 "Gloom Tower"
 {
-	music = BADASS
+	music = MUS_E1M4
 	next = h1m2
 	Cluster = 101
 }
