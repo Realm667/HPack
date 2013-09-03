@@ -226,9 +226,8 @@ map H3M0 "Infernux Prime"
    	sky1 = "SKY2" 
 }
 
-map H4M1 "City of Blood"
+map H4M1 "Ethreal Ruins"
 {
-	fade = "20 05 05"
 	music = CHAP_3R
 	next = h4m2
 	Cluster = 104
