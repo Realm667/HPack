@@ -1,7 +1,10 @@
+// [Blue Shadow] This way of adding new player classes is deprecated,
+// so it has been switched to the MAPINFO way.
+
 //KEYCONF for HPackPlayer
 
-clearplayerclasses
-addplayerclass "HPackPlayer"
+//clearplayerclasses
+//addplayerclass "HPackPlayer"
 
 addkeysection "Heretic Artifacts" heretic_keysection
 addmenukey "Boots of Jumping" "use ArtiHighJump"
