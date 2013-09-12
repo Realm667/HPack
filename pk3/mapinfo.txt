@@ -1,3 +1,11 @@
+// [Blue Shadow] Adding new player classes is done from here now,
+// as the KEYCONF way is deprecated.
+
+gameinfo
+{
+	PlayerClasses = "HPackPlayer"
+}
+
 // Properties that all maps have, unless they specifically override them
 adddefaultmap 
 {
