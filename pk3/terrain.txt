@@ -794,10 +794,10 @@ floor GOLDG rock
 floor GOLDH rock
 floor GOLDI rock
 floor GOLDQ rock
-floor GRASDRT1 dirt
-floor GRASDRT2 dirt
-floor GRASDRT3 dirt
-floor GRASDRT4 dirt
+floor GRASDRT1 gravel
+floor GRASDRT2 gravel
+floor GRASDRT3 gravel
+floor GRASDRT4 gravel
 floor GREEN1 dirt
 floor GREEN2 dirt
 floor GREEN3 dirt
@@ -1240,6 +1240,7 @@ floor WALL911 gravel
 floor WALL912 gravel
 floor WALL913 gravel
 floor WALL914 gravel
+floor CLIFROK1 dirt
 floor WCRAT01 wood
 floor WCRAT02 wood
 floor WDGAT321 wood
