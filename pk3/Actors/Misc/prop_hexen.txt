@@ -293,21 +293,7 @@ ACTOR HPZCorpseSleeping : RandomSpawner 16034
 	DropItem "ZCorpseSleeping"
 }
 
-ACTOR HPZFireBull : RandomSpawner 16110
-{
-	//$Category Lights
-	//$Title Maulotaur Brazier (Lit)
-	//$Sprite FBULB0
-	DropItem "ZFireBull"
-}
 
-ACTOR HPZFireBullUnlit : RandomSpawner 16111
-{
-	//$Category Lights
-	//$Title Maulotaur Brazier (Unlit)
-	//$Sprite FBULH0
-	DropItem "ZFireBullUnlit"
-}
 
 ACTOR HPGemPedestal : RandomSpawner 16102
 {
@@ -924,22 +910,6 @@ ACTOR HPZVasePillar : RandomSpawner 16076
 	//$Title Pillar With Vase
 	//$Sprite VASEA0
 	DropItem "ZVasePillar"
-}
-
-ACTOR HPZWallTorch : RandomSpawner 16106
-{
-	//$Category Lights
-	//$Title Wall Torch (Hexen, Lit)
-	//$Sprite WLTRB0
-	DropItem "ZWallTorch"
-}
-
-ACTOR HPZWallTorchUnlit : RandomSpawner 16107
-{
-	//$Category Lights
-	//$Title Wall Torch (Hexen, Unlit)
-	//$Sprite WLTRI0
-	DropItem "ZWallTorchUnlit"
 }
 
 ACTOR HPZWingedStatue : RandomSpawner 16000
