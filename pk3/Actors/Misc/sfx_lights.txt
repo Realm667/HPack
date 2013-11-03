@@ -314,3 +314,159 @@ Actor SnakeBrazierJade 32486
 	}
 }
 
+// HEXEN WALL TORCH
+
+ACTOR HPZWallTorch : RandomSpawner 16106
+{
+	//$Category Lights
+	//$Title Wall Torch (Hexen, Lit)
+	//$Sprite WLTRI0
+	DropItem "ZWallTorchNew"
+}
+ACTOR HPZWallTorchUnlit : RandomSpawner 16107
+{
+	//$Category Lights
+	//$Title Wall Torch (Hexen, Unlit)
+	//$Sprite WLTRI0
+	DropItem "ZWallTorchUnlitNew"
+}
+
+ACTOR HPZFireBull : RandomSpawner 16110
+{
+	//$Category Lights
+	//$Title Maulotaur Brazier (Lit)
+	//$Sprite FBULI0
+	DropItem "ZFireBullNew"
+}
+ACTOR HPZFireBullUnlit : RandomSpawner 16111
+{
+	//$Category Lights
+	//$Title Maulotaur Brazier (Unlit)
+	//$Sprite FBULH0
+	DropItem "ZFireBullUnlitNew"
+}
+
+Actor ZWallTorchNew : SwitchableDecoration replaces ZWallTorch
+{
+  Radius 6
+  Height 16
+  +NoGravity
+  +FixMapThingPos
+  States
+  {
+  Active:
+    WLTR A 0
+    WLTR A 0 Bright A_PlaySound("Torch/Light")
+  Spawn:
+    WLTR A 0
+    WLTR A 0 A_SpawnItemEx("RedFlare", 0, 0, 72, 0, 0, 0, 0, 176)
+    WLTR A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(71, 73), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+    Loop
+  Inactive:
+    WLTR B 0 A_PlaySound("Torch/Die")
+    WLTR B 1
+    Goto Inactive+1
+  }
+}
+Actor ZWallTorchUnlitNew : ZWallTorchNew replaces ZWallTorchUnlit
+{
+	States
+	{
+	Spawn:
+		Goto Super::Inactive
+	}
+}
+
+Actor ZFireBullNew : SwitchableDecoration Replaces ZFireBull//Based on the Minotaur torch from TCotD2
+{
+Radius 20
+Height 80
++SOLID
++FixMapThingPos
+States
+{
+Active:
+	FBUL I 0
+	FBUL I 0 Bright A_PlaySound("Torch/Light")
+Spawn:
+	FBUL I 0
+	FBUL I 0 A_SpawnItemEx("Flare_Red_A1B", 0, 0, 40, 0, 0, 0, 0, 0, 0)
+	FBUL I 1 A_SpawnItemEx("BigRedFire", Random(-2,2), Random(-2,2), Random(38, 40), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(2500, 3000), 0, 128)
+   Loop
+Inactive:
+	FBUL H 0 A_PlaySound("Torch/Die")
+	FBUL H 1
+	Goto Inactive+1
+ }
+}
+
+Actor ZFireBullUnlitNew : ZFireBullNew replaces ZFireBullUnlit
+{
+	States
+	{
+	Spawn:
+		Goto Super::Inactive
+	}
+}
+
+Actor Flare_Red_A1B
+{
++NoGravity
++NoBlockmap
++NOINTERACTION
+-Solid
++FORCEXYBILLBOARD
+Height 2
+Radius 1
+Scale 1.25
+RenderStyle Add
+States
+{
+Spawn:
+	FLRE A 2 Bright
+	Stop
+}
+}
+Actor BigRedFire
+{
++NoGravity
++NoInteraction
++NoBlockmap
++NoTeleport
++ForceXYBillboard
+Radius 0
+Height 0
+RenderStyle Add
+Scale 0.40
+States
+{
+Spawn:
+	FIR1 A 0
+	FIR1 A 0 A_Jump(128,"Spawn2","Spawn3","Spawn4","Spawn5","Spawn6")
+	FLM1 ABCDEFG 1 Bright
+	FLM1 HIJKL 1 Bright A_FadeOut(0.15)
+	Stop
+Spawn2:
+	FLM2 ABCDEFG 1 Bright
+	FLM2 HIJKL 1 Bright A_FadeOut(0.15)
+	Stop
+Spawn3:
+	FLM3 ABCDEFG 1 Bright
+	FLM3 HIJKL 1 Bright A_FadeOut(0.15)
+	Stop
+Spawn4:
+	FLM4 ABCDEFG 1 Bright
+	FLM4 HIJKL 1 Bright A_FadeOut(0.15)
+	Stop
+Spawn5:
+	FLM5 ABCDEFG 1 Bright
+	FLM5 HIJKL 1 Bright A_FadeOut(0.15)
+	Stop
+Spawn6:
+	FLM6 ABCDEFG 1 Bright
+	FLM6 HIJKL 1 Bright A_FadeOut(0.15)
+	Stop
+}
+}
+
+

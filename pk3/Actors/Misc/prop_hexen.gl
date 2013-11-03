@@ -13,3 +13,20 @@ object BridgeBall
 	}
 }
 
+
+object ZFireBullNew
+{
+    frame FBULI { light FIREBULL }
+}
+object ZFireBullUnlitNew
+{
+    frame FBULI { light FIREBULL }
+}
+object ZWallTorchNew
+{
+	frame WLTRA { light WALLTORCH  }
+}
+object ZWallTorchUnlitNew
+{
+	frame WLTRA { light WALLTORCH  }
+}
