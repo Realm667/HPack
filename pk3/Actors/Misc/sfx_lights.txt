@@ -315,7 +315,7 @@ Actor SnakeBrazierJade 32486
 }
 
 // HEXEN WALL TORCH
-
+/*
 ACTOR HPZWallTorch : RandomSpawner 
 {
 	//$Category Lights
@@ -345,31 +345,39 @@ ACTOR HPZFireBullUnlit : RandomSpawner
 	//$Sprite FBULH0
 	DropItem "ZFireBullUnlitNew"
 }
+*/
 
 Actor ZWallTorchNew : SwitchableDecoration replaces ZWallTorch 16106
 {
-  Radius 6
-  Height 16
-  +NoGravity
-  +FixMapThingPos
-  States
-  {
-  Active:
-    WLTR A 0
-    WLTR A 0 Bright A_PlaySound("Torch/Light")
-  Spawn:
-    WLTR A 0
-    WLTR A 0 A_SpawnItemEx("RedFlare", 0, 0, 72, 0, 0, 0, 0, 176)
-    WLTR A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(71, 73), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
-    Loop
-  Inactive:
-    WLTR B 0 A_PlaySound("Torch/Die")
-    WLTR B 1
-    Goto Inactive+1
-  }
+	//$Category Lights
+	//$Title Wall Torch (Hexen, Lit)
+	//$Sprite WLTRA0
+	Radius 6
+	Height 16
+	+NoGravity
+	+FixMapThingPos
+	States
+	{
+	Active:
+		WLTR A 0
+		WLTR A 0 Bright A_PlaySound("Torch/Light")
+	Spawn:
+		WLTR A 0
+		WLTR A 0 A_SpawnItemEx("RedFlare", 0, 0, 72, 0, 0, 0, 0, 176)
+		WLTR A 1 A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(71, 73), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(1000, 2000), 0, 128)
+		Loop
+	Inactive:
+		WLTR B 0 A_PlaySound("Torch/Die")
+		WLTR B 1
+		Goto Inactive+1
+	}
 }
+
 Actor ZWallTorchUnlitNew : ZWallTorchNew replaces ZWallTorchUnlit 16107
 {
+	//$Category Lights
+	//$Title Wall Torch (Hexen, Unlit)
+	//$Sprite WLTRB0
 	States
 	{
 	Spawn:
@@ -377,31 +385,37 @@ Actor ZWallTorchUnlitNew : ZWallTorchNew replaces ZWallTorchUnlit 16107
 	}
 }
 
-Actor ZFireBullNew : SwitchableDecoration Replaces ZFireBull//Based on the Minotaur torch from TCotD2 16110
+Actor ZFireBullNew : SwitchableDecoration Replaces ZFireBull 16110 //Based on the Minotaur torch from TCotD2
 {
-Radius 20
-Height 80
-+SOLID
-+FixMapThingPos
-States
-{
-Active:
-	FBUL I 0
-	FBUL I 0 Bright A_PlaySound("Torch/Light")
-Spawn:
-	FBUL I 0
-	FBUL I 0 A_SpawnItemEx("Flare_Red_A1B", 0, 0, 40, 0, 0, 0, 0, 0, 0)
-	FBUL I 1 A_SpawnItemEx("BigRedFire", Random(-2,2), Random(-2,2), Random(38, 40), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(2500, 3000), 0, 128)
-   Loop
-Inactive:
-	FBUL H 0 A_PlaySound("Torch/Die")
-	FBUL H 1
-	Goto Inactive+1
- }
+	//$Category Lights
+	//$Title Maulotaur Brazier (Lit)
+	//$Sprite FBULI0
+	Radius 20
+	Height 80
+	+SOLID
+	+FixMapThingPos
+	States
+	{
+	Active:
+		FBUL I 0
+		FBUL I 0 Bright A_PlaySound("Torch/Light")
+	Spawn:
+		FBUL I 0
+		FBUL I 0 A_SpawnItemEx("Flare_Red_A1B", 0, 0, 40, 0, 0, 0, 0, 0, 0)
+		FBUL I 1 A_SpawnItemEx("BigRedFire", Random(-2,2), Random(-2,2), Random(38, 40), (0.001)*Random(10, 200), (0.001)*Random(10, 200), (0.001)*Random(2500, 3000), 0, 128)
+		Loop
+	Inactive:
+		FBUL H 0 A_PlaySound("Torch/Die")
+		FBUL H 1
+		Goto Inactive+1
+	}
 }
 
 Actor ZFireBullUnlitNew : ZFireBullNew replaces ZFireBullUnlit 16111
 {
+	//$Category Lights
+	//$Title Maulotaur Brazier (Unlit)
+	//$Sprite FBULH0
 	States
 	{
 	Spawn:
