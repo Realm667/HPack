@@ -39,10 +39,28 @@ ACTOR KeyGizmoFloatRed
 	Height 16
 	+SOLID
 	+NOGRAVITY
+	+RELATIVETOFLOOR
 	States
 	{
 	Spawn:
 		KGZR A -1 Bright
 		Stop
 	}
+}
+
+//-----------------------------------
+
+ACTOR HPKeyGizmoFloatBlue : KeyGizmoFloatBlue replaces KeyGizmoFloatBlue
+{
+	+RELATIVETOFLOOR
+}
+
+ACTOR HPKeyGizmoFloatGreen : KeyGizmoFloatGreen replaces KeyGizmoFloatGreen
+{
+	+RELATIVETOFLOOR
+}
+
+ACTOR HPKeyGizmoFloatYellow : KeyGizmoFloatYellow replaces KeyGizmoFloatYellow
+{
+	+RELATIVETOFLOOR
 }
