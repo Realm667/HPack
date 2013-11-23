@@ -157,7 +157,7 @@ map H2M0 "Asterion"
 
 map H3M1 "Scorched Earth"
 {
-	fade = "50 20 10"
+	fade = "30 10 10"
 	music = MUS_E2M1
 	next = h3m2
 	Cluster = 103
