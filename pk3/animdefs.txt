@@ -119,6 +119,11 @@ texture lvwallc1
  pic lvwallc2 tics 8
  pic lvwallc3 tics 8
 
+texture lvwalld1
+ pic lvwalld1 tics 8
+ pic lvwalld2 tics 8
+ pic lvwalld3 tics 8
+
 texture WALLAN1
  pic WALLAN1 tics 6
  pic WALLAN2 tics 6
