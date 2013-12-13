@@ -118,6 +118,13 @@ map H2M4 "Icy Catacomb"
 {
 	fade = "10 15 20"
 	music = FANTAR
+	next = h2m5
+	Cluster = 102
+}
+
+map H2M5 "Underwater Villa"
+{
+	music = MUS_E1M2
 	next = h2m6
 	Cluster = 102
 }
