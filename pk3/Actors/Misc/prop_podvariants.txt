@@ -188,6 +188,7 @@ ACTOR FirePodGooFireSpawner : FireSpawner
 {
    DamageType Fire
    Args 0, 0, 1, 2, 1
+   +NODAMAGETHRUST
    States
    {
    Spawn:
