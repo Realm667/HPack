@@ -241,7 +241,7 @@ map H3M0 "Infernux Prime"
    	sky1 = "SKY2" 
 }
 
-map H4M1 "Ethreal Ruins"
+map H4M1 "Ethereal Ruins"
 {
 	music = CHAP_3R
 	next = h4m2
@@ -268,7 +268,14 @@ map H4M4 "Fortress of Despair"
 {
 //	sky1 = PRI_OSKY, -0.2
 	music = MUS_E2M4
-	next = h4m6
+	next = H4M5
+}
+
+map H4M5 "Mythril Keep"
+{
+	next = H4M6
+	music = FALCONR
+	Cluster = 104
 }
 
 map H4M6 "Arid Crypt"
