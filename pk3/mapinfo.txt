@@ -77,7 +77,7 @@ map H1M10 "Citadel of Horrors"
 map H1M0 "City of Darkness"
 {
 	music = "H_E1M0"
-	next = H2M1
+	next = "Endtitle"
 	Cluster = 101
 }
 
@@ -140,7 +140,6 @@ map H2M8 "Serpent Residence"
 
 map H2M9 "House of the Ancients"
 {
-	next = H2M11
 	music = "HSHADOWS"
 	next = h2m0
 	Cluster = 102
@@ -195,7 +194,7 @@ map H3M6 "City of Metal"
 	fade = "30 10 10"
 	sky1 = BSSKY, 0.0
 	cluster = 103
-	next = H2M76
+	next = H2M6
 }
 
 map H2M6 "Fortress of Eternity"
@@ -285,7 +284,7 @@ map H4M8 "DarkFort"
 	Cluster = 104
 }
 
-map H4M0 "Pseudo Heaven"
+map H4M0 "Castle of Storms"
 {
 	music = bldrstod
 	next = endtitle
