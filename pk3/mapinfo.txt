@@ -34,7 +34,7 @@ map H1M2 "Sidhe Altar"
 
 map H1M3 "Elven Wood"
 {
-	// fade = "15 25 5"
+	fade = "15 25 5"
 	music = H1M3
 	next = h1m5
 	secretnext = H1MX
