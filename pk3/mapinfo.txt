@@ -37,6 +37,7 @@ map H1M3 "Elven Wood"
 	// fade = "15 25 5"
 	music = H1M3
 	next = h1m5
+	secretnext = H1MX
 	Cluster = 101
 }
 
@@ -125,14 +126,6 @@ map H2M4 "Icy Catacomb"
 map H2M5 "Underwater Villa"
 {
 	music = MUS_E1M2
-	next = h2m6
-	Cluster = 102
-}
-
-map H2M6 "Fortress of Eternity"
-{
-	// fade = "10 15 20"
-	music = MUS_H2M6
 	next = h2m8
 	Cluster = 102
 }
@@ -170,7 +163,7 @@ map H3M1 "Scorched Earth"
 	Cluster = 103
 }
 
-map H3M2 "LavaFalls"
+map H3M2 "Lava Falls"
 {
 	sky1 = "pri_osky", 0
 	fade = "30 10 10"
@@ -202,7 +195,16 @@ map H3M6 "City of Metal"
 	fade = "30 10 10"
 	sky1 = BSSKY, 0.0
 	cluster = 103
-	next = H3M7
+	next = H2M76
+}
+
+map H2M6 "Fortress of Eternity"
+{
+	// fade = "10 15 20"
+	music = MUS_H2M6
+	next = h3m7
+	secretnext = H3M8
+	Cluster = 102
 }
 
 map H3M7 "Hell Stronghold"
@@ -211,27 +213,17 @@ map H3M7 "Hell Stronghold"
 	sky1 = BSSKY, 0.0
 	outsidefog = "40 20 10"
 	cluster = 103
-	next = H3M8
+	next = H3M0
 }
 
 map H3M8 "Hell's Forge"
 {
-	next = H3M10
+	next = H3M7
 	cluster = 103
 	music = H_FORGE
 	fade = "40 20 10"
 	outsidefog = "40 20 10"
 	lightmode = 2
-}
-
-map H3M10 "Perceptive incentive"	// This map is supposed to be H3M6
-{					// I'll take H3M10 temporally - Kore
-	cluster = 103
-	sky1 = PRI_OSKB, 0.1
-	sky2 = PRI_OSKY, 0.0
-	DoubleSky
-	music = MUS_E2M9
-	next = H3M0
 }
 
 map H3M0 "Infernux Prime"
