@@ -43,7 +43,7 @@ map H1M3 "Elven Wood"
 
 map H1M5 "Battlements"
 {
-	music = MUS_E1M5
+	music = MUS_H1M5
 	next = h1m6
 	Cluster = 101
 }
