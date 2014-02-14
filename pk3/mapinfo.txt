@@ -79,6 +79,7 @@ map H1M0 "City of Darkness"
 	music = "MUS_H1M0"
 	next = "Endtitle"
 	Cluster = 101
+	F1 = "F1_H1M0"
 }
 
 map H1MX "ChickenSpring"

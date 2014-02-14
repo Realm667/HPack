@@ -23,6 +23,8 @@ Contributor: Tormentor667
 - H1M0.WAD
 - H2M6.WAD
 
+Fonts by Jimmy
+
 
 -------------------
 Contributor: printz
