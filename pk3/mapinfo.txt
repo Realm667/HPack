@@ -4,6 +4,13 @@
 gameinfo
 {
 	PlayerClasses = "HPackPlayer"
+	menufontcolor_title = "DARKRED"
+    	menufontcolor_label = "DARKRED"
+	menufontcolor_value = "DARKGRAY"
+	menufontcolor_action = "DARKGRAY"
+	menufontcolor_header = "DARKRED"
+	menufontcolor_highlight = "DARKGRAY"
+	menufontcolor_selection = "DARKRED"
 }
 
 // Properties that all maps have, unless they specifically override them
