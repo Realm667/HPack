@@ -361,10 +361,26 @@ ACTOR SunRay
 	States
 	{
 	Spawn:
-		FX01 AAABBB 1 BRIGHT Light(SUNSTAFFFX) A_SpawnItemEx("GoldWandFX6",0,0,0,0,0,0,0,0)
+		FX01 AAABBB 1 BRIGHT Light(SUNSTAFFFX) A_SpawnItemEx("SunRayTrail",0,0,0,0,0,0,0,0)
 		Loop
 	Death:
 		FX01 EFGH 3 BRIGHT Light(SUNSTAFFFX) 
 		Stop
 	}
+}
+
+
+ACTOR SunRayTrail
+{
+  +FORCEXYBILLBOARD
+  +NOBLOCKMAP
+  Gravity 0.125
+  RenderStyle Add
+  Alpha 0.4
+  States
+  {
+  Spawn:
+    FX01 EFGH 2 BRIGHT
+    Stop
+  }
 }
