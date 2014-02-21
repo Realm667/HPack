@@ -67,8 +67,6 @@ weapons/staffblock			stfblk
 weapons/wandcharge		gldchg
 
 weapons/bowreload		bowrel
-weapons/bowrip			bowrip
-weapons/bowstring		bowstr
 
 weapons/blastermelee		blsmel
 weapons/blasterrip			blsrip

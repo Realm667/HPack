@@ -5,8 +5,6 @@ ACTOR HPCrossbow : Crossbow replaces Crossbow
 	//$Category Weapons
 	//$Title Ethereal Crossbow
 	Weapon.SelectionOrder 700
-	Weapon.AmmoType2 "CrossbowAmmo"
-	Weapon.AmmoUse2 1
 	Weapon.SisterWeapon "HPCrossbowPowered"
 	Inventory.PickupMessage "$TXT_WPNCROSSBOW"
 	Tag "$TAG_CROSSBOW"
@@ -23,126 +21,17 @@ ACTOR HPCrossbow : Crossbow replaces Crossbow
 		CRBW AB 4
 		CRBW C 5 A_ReFire
 		Goto Ready
-	AltFire:
-		CRBW I 3 A_PlaySound("weapons/bowstring")
-		CRBW J 3
-	AltHold:
-		CRBW KLM 3
-		CRBW N 1 A_ReFire
-		CRBW D 0 A_PlaySound("weapons/bowrip")
-		CRBW D 4 A_FireCustomMissile ("CrossbowFX5", 0, 1)
-		CRBW E 3
-		CRBW F 3 A_PlayWeaponSound("weapons/bowreload")
-		CRBW GH 3
-		Goto Ready
 	}
 }
 
 ACTOR HPCrossbowFX4 : CrossbowFX4 replaces CrossbowFX4 { +FORCEXYBILLBOARD }
-
-ACTOR CrossbowFX5 : CrossbowFX1
-{
-	-NOGRAVITY
-	-NOBLOCKMAP
-	+WINDTHRUST
-	+THRUGHOST
-	+RIPPER
-	Gravity 0.25
-	Speed 50
-	Damage 6
-	Seesound ""
-	Decal "CrossbowScorch2"
-	States
-	{
-	Spawn:
-		FX03 A 1 BRIGHT A_SpawnItemEx("CrossbowFX6", random2[BoltSpark]()*0.015625, random2[BoltSpark]()*0.015625, 0, 0,0,0,0,SXF_ABSOLUTEPOSITION, 50)
-		Loop //About that calculation, don't ask me. I had to steal it from the Wiki!
-	Death:
-		FX03 CDE 8 BRIGHT A_NoGravity
-		Stop
-	}
-}
-
-ACTOR CrossbowFX6
-{
-	+FORCEXYBILLBOARD
-	+NOBLOCKMAP
-	Gravity 0.125
-	RenderStyle Add
-	States
-	{
-	Spawn:
-		FX03 G 8 BRIGHT
-		Stop
-	}
-}
 
 
 ACTOR HPCrossbowPowered : CrossbowPowered
 {
 	+WEAPON.POWERED_UP
 	Weapon.SelectionOrder 700
-	Weapon.AmmoGive2 0
-	Weapon.AmmoType2 "CrossbowAmmo"
-	Weapon.AmmoUse2 1
 	Weapon.SisterWeapon "HPCrossbow"
 	Tag "$TAG_CROSSBOW"
 	Obituary "$OB_MPCROSSBOW"
-	States
-	{
-	AltFire:
-		CRBW I 3 A_PlaySound("weapons/bowstring")
-		CRBW J 3
-	AltHold:
-		CRBW KKLLMM 1 A_FireCustomMissile("CrossbowFX8",random(-6,6),0,0,random(-4,4))
-		CRBW N 1 A_ReFire
-		CRBW D 0 A_PlaySound("weapons/bowrip")
-		CRBW D 3 A_FireCustomMissile ("CrossbowFX7", 0, 1)
-		CRBW E 3
-		CRBW F 2 A_PlayWeaponSound("weapons/bowreload")
-		CRBW GH 2
-		Goto Ready
-	}
-}
-
-ACTOR CrossbowFX7 : CrossbowFX2
-{
-	-NOGRAVITY
-	Gravity 0.25
-	Speed 50
-	Damage 20
-	Decal "CrossbowScorch"
-	States
-	{
-	Death:
-		FX03 C 8 BRIGHT A_NoGravity
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,20,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,40,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,60,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,80,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,100,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,120,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,140,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,160,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,180,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-20,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-40,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-60,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-80,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-100,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-120,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-140,16)
-		FX03 D 0 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,-160,16)
-		FX03 D 8 BRIGHT A_SpawnItemEx("CrossbowFX3",0,0,0,20,0,0,0,16)
-		FX03 E 8 BRIGHT
-		Stop
-	}
-}
-
-ACTOR CrossbowFX8 : CrossbowFX6
-{
-	Projectile
-	Speed 7
-	Damage 0
-	+NOGRAVITY
 }
