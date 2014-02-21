@@ -110,21 +110,3 @@ pointlight BOWTRAIL2
     //frame FX03F { light BOWTRAIL1 }
     //frame FX03G { light BOWTRAIL2 }
 //}
-
-object CrossbowFX5
-{
-    frame FX03B { light BIGBOWBOLT }
-    
-    frame FX03H { light BIGBOWBOLT_X1 }
-    frame FX03I { light BIGBOWBOLT_X2 }
-    frame FX03J { light BIGBOWBOLT_X3 }
-}
-
-object CrossbowFX7
-{
-    frame FX03B { light BIGBOWBOLT }
-    
-    frame FX03H { light BIGBOWBOLT_X1 }
-    frame FX03I { light BIGBOWBOLT_X2 }
-    frame FX03J { light BIGBOWBOLT_X3 }
-}

@@ -5,13 +5,10 @@ ACTOR HPWand : GoldWand replaces GoldWand
 	//$Category Weapons
 	//$Title Elven Wand
 	+BLOODSPLATTER
-	+WEAPON.ALT_AMMO_OPTIONAL
 	Weapon.SelectionOrder 1900
 	Weapon.AmmoGive 25
 	Weapon.AmmoUse1 1
-	Weapon.AmmoUse2 5
 	Weapon.AmmoType1 "GoldWandAmmo"
-	Weapon.AmmoType2 "GoldWandAmmo"
 	Weapon.SisterWeapon "HPWandPowered"
 	Weapon.YAdjust 0
 	AttackSound "weapons/wandhit"
@@ -42,13 +39,10 @@ ACTOR HPGoldWandFX2 : GoldWandFX2 replaces GoldWandFX2 { +FORCEXYBILLBOARD Decal
 ACTOR HPWandPowered : GoldWandPowered
 {
 	+WEAPON.POWERED_UP
-	+WEAPON.ALT_AMMO_OPTIONAL
 	Tag "$TAG_GOLDWAND"
 	Weapon.SelectionOrder 1900
 	Weapon.AmmoGive 0
 	Weapon.SisterWeapon "HPWand"
-	Weapon.AmmoUse2 10
-	Weapon.AmmoType2 "GoldWandAmmo"
 	Weapon.YAdjust 0
 	Obituary "$OB_MPGOLDWAND"
 
