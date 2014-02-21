@@ -64,7 +64,6 @@ weapons/staffswing2			stfsw2
 weapons/staffswing3			stfsw3
 weapons/staffblock			stfblk
 
-weapons/wandshoot		gldpow
 weapons/wandcharge		gldchg
 
 weapons/bowreload		bowrel
