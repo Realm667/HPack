@@ -14,13 +14,6 @@ ACTOR HPCrossbow : Crossbow replaces Crossbow
 	Spawn:
 		WBOW A -1
 		Stop
-	Reload:
-		CRBW E 3
-		CRBW F 3 A_PlayWeaponSound("weapons/bowreload")
-		CRBW GH 3
-		CRBW AB 4
-		CRBW C 5 A_ReFire
-		Goto Ready
 	}
 }
 

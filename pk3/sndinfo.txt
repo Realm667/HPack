@@ -79,11 +79,6 @@ weapons/phoenixshoot		null
 weapons/phoenixshoot2		phosht
 weapons/phoenixshoot3		phobir
 
-weapons/gauntletsmiss1		punchmis
-weapons/gauntletswall1		punch8
-weapons/gauntletspunch		mumpun5
-weapons/gauntletscombo		hmhit1a
-
 weapons/gauntletsshoot		gntsht
 weapons/gauntletscharge		gntchg
 weapons/gauntletshadoken	gnthad

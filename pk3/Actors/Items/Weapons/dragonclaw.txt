@@ -14,7 +14,6 @@ ACTOR HPBlaster : Blaster replaces Blaster
 	Inventory.PickupMessage "$TXT_WPNBLASTER"
 	Tag "$TAG_BLASTER"
 	Obituary "$OB_MPBLASTER"
-	AttackSound "weapons/blasterrip"
 	Decal "RailScorchLower"
 	States
 	{
