@@ -68,7 +68,6 @@ weapons/wandcharge		gldchg
 
 weapons/bowreload		bowrel
 
-weapons/blastermelee		blsmel
 weapons/blasterrip			blsrip
 
 weapons/hornrodspike		hrnspk
