@@ -57,9 +57,9 @@ flickerlight PHOENIX_X6
     chance 0.3
 }
 
-object PhoenixFX1
+object HPPhoenixFX1
 {
-    frame FX04A { light PHOENIXSHOT }
+    frame PHOXA { light PHOENIXSHOT }
 
     frame FX08A { light PHOENIX_X1 }
     frame FX08B { light PHOENIX_X2 }
