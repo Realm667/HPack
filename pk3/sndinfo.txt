@@ -76,8 +76,7 @@ weapons/hornrodpowshoot		null
 weapons/hornrodpowshoot2	hrnpow
 
 weapons/phoenixshoot		null
-weapons/phoenixshoot2		phosht
-weapons/phoenixshoot3		phobir
+weapons/phoenixshoot2		phobir
 
 weapons/gauntletsshoot		gntsht
 weapons/gauntletscharge		gntchg
