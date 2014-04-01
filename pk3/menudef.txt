@@ -1,0 +1,109 @@
+// [Blue Shadow] Note that having the 'DefaultListMenu' block alone is not enough to change default
+// settings like font color, for instance. You need to copy each menu definition as well, and put it
+// after said block. This behaves in a similar way to that of the 'defaultmap' block in MAPINFO, as in,
+// it only affects definitions that come after it.
+
+DefaultListMenu
+{
+  Font "BigFont", "DarkRed"
+  Selector "M_SLCTR1", -28, -1
+  Linespacing 20
+}
+
+// Main menu ---------------------------------------------------------------------------------------
+
+ListMenu "MainMenu"
+{
+  StaticPatch 88, 0, "M_HTIC"
+  StaticPatch 40, 10, "M_SKL01"
+  StaticPatch 232, 10, "M_SKL00"
+  Position 110, 56
+
+  TextItem "$MNU_NEWGAME", "n", "PlayerclassMenu"
+  TextItem "$MNU_OPTIONS", "o", "OptionsMenu"
+  TextItem "HPack Options", "h", "HPackOptionsMenu"
+  TextItem "$MNU_GAMEFILES", "g", "GameFilesMenu"
+  TextItem "$MNU_INFO", "i", "ReadThisMenu"
+  TextItem "$MNU_QUITGAME", "q", "QuitMenu"
+}
+
+// Episode selection menu --------------------------------------------------------------------------
+
+ListMenu "EpisodeMenu"
+{
+  NetgameMessage "$NEWGAME"
+  Position 80, 50
+}
+
+// Skill selection menu ----------------------------------------------------------------------------
+
+ListMenu "SkillMenu"
+{
+  Position 38, 30
+}
+
+// Game files selection menu -----------------------------------------------------------------------
+
+ListMenu "GameFilesMenu"
+{
+  Position 110, 60
+  TextItem "$MNU_LOADGAME", "l", "LoadGameMenu"
+  TextItem "$MNU_SAVEGAME", "s", "SaveGameMenu"
+}
+
+// Load game menu ----------------------------------------------------------------------------------
+
+ListMenu "LoadGameMenu"
+{
+  NetgameMessage "$LOADNET"
+  StaticTextCentered 160, -10, "$MNU_LOADGAME"
+
+  Position 80, 54
+  Class "LoadMenu"
+}
+
+// Save game menu ----------------------------------------------------------------------------------
+
+ListMenu "SaveGameMenu"
+{
+  StaticTextCentered 160, -10, "$MNU_SAVEGAME"
+
+  Position 80, 54
+  Class "SaveMenu"
+}
+
+// HPack options menu ------------------------------------------------------------------------------
+
+// [Blue Shadow] Based mostly on ZDCMP2's options menu :)
+
+OptionMenu "HPackOptionsMenu"
+{
+  Title "HPack Options"
+  StaticText ""
+  StaticText "HPack Settings",        1
+  StaticText ""
+  // Settings should go here
+
+  StaticText "HPack Controls",        1
+  StaticTextSwitchable "ENTER to change, BACKSPACE to clear",
+                       "Press new key for control, ESC to cancel",
+                       "ControlMessage"
+  StaticText ""
+  Control "Boots of Jumping",         "use ArtiHighJump"
+  Control "Boots of Speed",           "use ArtiSpeedBoots"
+  Control "Chaos Device",             "use ArtiTeleport"
+  Control "Fire Wave Rune",           "use ArtiFireWave"
+  Control "Golden Crystal",           "use ArtiWandCrystal"
+  Control "Hades Sphere",             "use ArtiHadesSphere"
+  Control "Lich Skull",               "use ArtiLichSkull"
+  Control "Morph Ovum",               "use ArtiEgg"
+  Control "Mystic Urn",               "use ArtiSuperHealth"
+  Control "Quartz Flask",             "use ArtiHealth"
+  Control "Ring of Invincibility",    "use ArtiInvulnerability"
+  Control "Shadowsphere",             "use ArtiInvisibility"
+  Control "Timebomb of the Ancients", "use ArtiTimeBomb"
+  Control "Tome of Might",            "use ArtiTomeOfMight"
+  Control "Tome of Power",            "use ArtiTomeOfPower"
+  Control "Torch",                    "use ArtiTorch"
+  Control "Wings of Wrath",           "use ArtiFly"
+}
