@@ -216,9 +216,9 @@ map H2M6 "Fortress of Eternity"
 
 map H3M7 "Hell Stronghold"
 {
-	music = DADV_NGR
+	music = CBLUD006
 	sky1 = BSSKY, 0.0
-	outsidefog = "40 20 10"
+	//outsidefog = "40 20 10"
 	cluster = 103
 	next = H3M0
 }
