@@ -168,6 +168,10 @@ actor HPKnightGhost : KnightGhost replaces KnightGhost
 
 actor HPMummy : Mummy replaces Mummy
 {
+	// [Blue Shadow] As of development build 382-ga9bea7d of ZDoom, the golems are changed so they
+	// can potentially damage and infight with each other (an origianl Heretic behavior). This will
+	// restore the old behavior, so they don't infight. The same thing goes for the gargoyles below.
+	Species "Mummy"
 	States
 	{
 	Raise:
@@ -178,6 +182,7 @@ actor HPMummy : Mummy replaces Mummy
 
 actor HPMummyGhost : MummyGhost replaces MummyGhost
 {
+	Species "Mummy"
 	States
 	{
 	Raise:
@@ -188,6 +193,7 @@ actor HPMummyGhost : MummyGhost replaces MummyGhost
 
 actor HPMummyLeader : MummyLeader replaces MummyLeader
 {
+	Species "Mummy"
 	States
 	{
 	Raise:
@@ -198,6 +204,7 @@ actor HPMummyLeader : MummyLeader replaces MummyLeader
 
 actor HPMummyLeaderGhost : MummyLeaderGhost replaces MummyLeaderGhost
 {
+	Species "Mummy"
 	States
 	{
 	Raise:
@@ -374,6 +381,7 @@ actor HPWizard : Wizard replaces Wizard
 
 actor HPHereticImp : HereticImp replaces HereticImp
 {
+	Species "HereticImp"
 	States
 	{
 	Raise:
@@ -384,6 +392,7 @@ actor HPHereticImp : HereticImp replaces HereticImp
 
 actor HPHereticImpLeader : HereticImpLeader replaces HereticImpLeader
 {
+	Species "HereticImp"
 	States
 	{
 	Raise:
