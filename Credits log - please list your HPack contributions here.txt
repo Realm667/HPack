@@ -208,3 +208,8 @@ Contributor: Starscream/Pyroscourge
 - H5MX.WAD
 
 Used music: bldrstod.ogg - "TSEC - Far Away"
+
+--------------------
+Contributor: NeoWorm
+--------------------
+- Widescreen-friendly status bar.
