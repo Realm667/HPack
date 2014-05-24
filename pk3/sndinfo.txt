@@ -70,8 +70,6 @@ weapons/bowreload		bowrel
 
 weapons/blasterrip			blsrip
 
-weapons/hornrodspike		hrnspk
-weapons/hornrodstab			hrnstb
 weapons/hornrodpowshoot		null
 weapons/hornrodpowshoot2	hrnpow
 
