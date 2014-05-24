@@ -337,21 +337,6 @@ shadowbeast/spread	BDPSPR
 shadowbeast/spiritsit	BDSPR2
 shadowbeast/spiritdth	BDSPR1
 
-//Bormereth
-$random DMage/Attack	{ DMage/Attack1 DMage/Attack2 }
-DMage/Attack1		magea1
-DMage/Attack2		magea2
-DMage/death			maged1
-DMage/Pain			mageh1
-$random DMage/Idle	{ DMage/Idle1 DMage/Idle2 }
-DMage/Idle1			mages1
-DMage/Idle2			mages2
-bormereth/missilesimple		00AM04
-bormereth/missilesimpledeath	00SO01
-bormereth/missile2prepare   00PA04
-bormereth/missile2fired		00AM12
-bormereth/missile2death		STRIKE1
-
 //Cultist
 monster/culsit dsculsit
 monster/culatk dsculatk

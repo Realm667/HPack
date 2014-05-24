@@ -138,16 +138,6 @@ object BloodLichFireball
     Frame MSP4I { Light OrangeMediumFlicker3 }
 }
 
-object ReiverGhostFX
-{
-    Frame WRBLA { Light OrangeMediumFlicker3 }
-    Frame WRBLB { Light OrangeMediumFlicker3 }
-    Frame WRBLC { Light OrangeMediumFlicker3 }
-    Frame WRBLD { Light OrangeMediumFlicker1 }
-    Frame WRBLE { Light OrangeMediumFlicker2 }
-    Frame WRBLF { Light OrangeMediumFlicker3 }
-}
-
 object ResurrectionFlame
 {
     Frame FIREA { Light ArchFire1 }
