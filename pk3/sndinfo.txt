@@ -96,14 +96,8 @@ weapons/sunstaffbeam2		sunbm2
 weapons/sunstaffbeam3		sunbm3
 weapons/sunstaffstart		sunstr
 weapons/sunstaffcharge		sunchr
-weapons/sunstaffshoot		sunsht
 weapons/sunstaffpowshoot	sunpow
-weapons/sunstaffrip			sunrip
-weapons/sunstaffhit			sunhit
-weapons/sunstaffbounce		sunbnc
-weapons/sunstaffexplode		sunexp
 weapons/sunstaffnew			sunnew
-weapons/sunstaffSphereFly	sunbalf
 weapons/sunstaffSphereExp	sunbald
 
 $pitchshift weapons/sunstaffbeam1 0

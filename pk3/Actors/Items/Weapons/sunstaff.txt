@@ -9,11 +9,8 @@ ACTOR HPSunstaff : Weapon 16453
 	Weapon.SelectionOrder 2000
 	Weapon.Kickback 0
 	Weapon.AmmoUse1 1
-	Weapon.AmmoUse2 20
 	Weapon.AmmoGive1 50
-	Weapon.AmmoGive2 0
 	Weapon.AmmoType1 "SunStaffAmmo"
-	Weapon.AmmoType2 "SunStaffAmmo"
 	Weapon.YAdjust 0
 	Obituary "$OB_MPSUNSTAFF"
 	Inventory.PickupMessage "$TXT_WPNSUNSTAFF"
@@ -64,51 +61,19 @@ ACTOR HPSunstaff : Weapon 16453
 		SUNS JJ 1 BRIGHT A_FireCustomMissile("SunFake2",0,0,0)
 		SUNS KD 2 BRIGHT
 		Goto Ready
-	AltFire:
-		SUNS J 2 BRIGHT A_PlaySoundEx("weapons/sunstaffshoot","Auto",0) 
-		SUNS I 2 BRIGHT 
-		SUNS N 0 A_PlayWeaponSound("weapons/sunstaffrip") 
-		SUNS N 0 A_Recoil(4)
-		SUNS N 0 A_LightInverse
-		SUNS N 2 Offset (0,48) A_FireCustomMissile("SunSphere", 0, 1, 0, 0)
-		SUNS N 2 Offset (0,40) A_Light0
-		SUNS N 2 Offset (0,36) A_PlaySound("weapons/sunstaffnew") 
-		SUNS N 2 Offset (0,34)
-		SUNS N 6 Offset (0,32)
-		SUNS ML 3
-		SUNS KABCD 3 BRIGHT
-		Goto Ready
 	}
 }
 
 ACTOR HPSunStaffPowered : HPSunStaff
 {
-	+WEAPON.ALT_AMMO_OPTIONAL
 	+WEAPON.POWERED_UP
 	Tag "$TAG_SUNSTAFF"
 	Weapon.SisterWeapon "HPSunStaff"
 	Weapon.AmmoGive1 0
-	Weapon.AmmoGive2 0
 	Weapon.AmmoUse1 5
-	Weapon.AmmoUse2 50
 	States
 	{
 	Fire:
-	Hold:
-		SUNS J 0 A_PlayWeaponSound("weapons/sunstaffrip") 
-		SUNS J 3 BRIGHT A_PlaySoundEx("weapons/sunstaffhit","Auto",0)
-		SUNS J 0 A_GunFlash
-		SUNS I 3 BRIGHT Offset (0,34) A_FireCustomMissile("SunPower", 0, 1, 0, 0)
-		SUNS H 3 BRIGHT Offset (0,36)
-		SUNS K 3 BRIGHT Offset (0,32)
-		SUNS BCD 3 BRIGHT
-		SUNS A 0 A_Refire		
-		Goto Ready
-	Flash:
-		TNT1 A 1 A_LightInverse
-		TNT1 A 0 A_Light0
-		Stop
-	AltFire:
 		SUNS A 0 A_JumpIfNoAmmo("Ready")
 		SUNS A 0 A_PlayWeaponSound("Weapons/sunstaffcharge")
 		SUNS BCDABCDABCDABCD 2 BRIGHT 
@@ -125,6 +90,10 @@ ACTOR HPSunStaffPowered : HPSunStaff
 		SUNS ML 3
 		SUNS KABCD 3 BRIGHT
 		Goto Ready
+    Flash:
+		TNT1 A 1 A_LightInverse
+		TNT1 A 0 A_Light0
+		Stop
 	}
 }
 
@@ -206,105 +175,6 @@ Actor SunSpot2 : SunBlur
 	Spawn:
 		SUNP AA 1 BRIGHT Light(SUNSTAFFFX) 
 		Stop
-	}
-}
-
-
-
-actor SunSphere
-{
-	PROJECTILE
-	+FORCEXYBILLBOARD
-	radius 6
-	height 4
-	speed 25
-	damage 10
-	alpha 1.0
-	renderstyle Add
-	deathsound "weapons/sunstaffexplode"
-	Damagetype Solar
-	states
-	{
-		Spawn:
-			SUNM A 0 
-			SUNM A 0 A_PlaySoundEx("weapons/sunstaffhit","Auto",0)
-			SUNM A 0 A_PlaySoundEx("weapons/sunstaffSphereFly","Voice",1)
-			SUNM ABCDEF 3 bright Light(SUNSTAFFFX) 
-			Goto Spawn+3
-		Death:
-			SUNM A 0 A_PlaySoundEx("weapons/sunstaffSphereExp","Auto",0)
-			SUNM G 3 bright Light(SUNSTAFFFX) 
-			SUNM H 3 bright Light(SUNSTAFFFX) A_Explode(64,128,1)
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 6,  0,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 6, 90,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 6,180,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20, 6,0,270,32,0) SUNB I 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 5, 15,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 5,105,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 5,195,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20, 5,0,285,32,0) SUNB I 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 4, 30,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 4,120,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 4,210,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20, 4,0,300,32,0) SUNB I 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 3, 45,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 3,135,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 3,225,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20, 3,0,315,32,0) SUNB J 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 2, 60,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 2,150,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 2,240,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20, 2,0,330,32,0) SUNB J 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 1, 75,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 1,165,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 1,255,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20, 1,0,345,32,0) SUNB J 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 0, 90,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 0,180,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0, 0,270,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20, 0,0,  0,32,0) SUNB K 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-1,105,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-1,195,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-1,285,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,-1,0, 15,32,0) SUNB K 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-2,120,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-2,210,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-2,300,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,-2,0, 30,32,0) SUNB K 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-3,135,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-3,225,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-3,315,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,-3,0, 45,32,0) SUNB L 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-4,150,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-4,240,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-4,330,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,-4,0, 60,32,0) SUNB L 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-5,165,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-5,255,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-5,345,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,-5,0, 75,32,0) SUNB L 1 bright
-			SUNM A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-6,180,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-6,270,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,0,-6,  0,32,0) SUNB A 0 A_SpawnItemEx("SunProj",8,0,12,20,-6,0, 90,32,0) 
-			SUNM MNOP 3 bright
-			stop
-	}
-}
-
-actor SunProj
-{
-	PROJECTILE
-	+PAINLESS
-	+RIPPER
-	+HERETICBOUNCE
-	+BLOODLESSIMPACT
-	+FORCEXYBILLBOARD
-	+NOBOSSRIP
-	-BLOODSPLATTER
-	radius 16
-	height 8
-	speed 20
-	damage (2*random(1,6))
-	alpha 1.0
-	scale 1.25
-	renderstyle Add
-	Damagetype Solar
-	states
-	{
-		Spawn:
-			SUNP AB 1 BRIGHT A_CustomMissile("SunBlur",0,0,180)
-			Wait
-		Death:
-			SUND ABCDEF 2 bright Light(SUNSTAFFFX) 
-			stop
-	}
-}
-
-actor SunPower : SunProj
-{
-	-PAINLESS
-	+HEXENBOUNCE
-	speed 80
-	Damage 10
-	Reactiontime 100
-	seesound "weapons/sunstaffrip"
-	states
-	{
-		Spawn:
-			SUNP A 0
-			SUNP A 0 A_PlaySoundEx("weapons/sunstaffbeam2","Body",1)
-			SUNP AB 1 BRIGHT A_CustomMissile("SunBlur",0,0,180)
-			SUNP A 0 A_Countdown
-			Goto Spawn+2
-		Death:
-			TNT1 A 1 A_StopSoundEx("Body")
-			stop
-		XDeath:
-			TNT1 A 1 A_StopSoundEx("Body")
-			SUND ABCDEF 2 bright Light(SUNSTAFFFX) 
-			stop
 	}
 }
 
