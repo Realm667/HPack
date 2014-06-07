@@ -1,11 +1,4 @@
 // Sun Staff
-pulselight SUNSPHERELIGHT
-{
-    color 1.0 1.0 0.0
-    size 256
-    secondarySize 384
-    interval 0.1
-}
 
 pointlight SUNSPHERE_X1
 {
