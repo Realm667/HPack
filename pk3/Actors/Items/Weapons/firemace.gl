@@ -1,17 +1,1 @@
 // Firemace
-object MaceFX5
-{
-    frame FX02G { light MACEBALL_X1 }
-    frame FX02H { light MACEBALL_X2 }
-    frame FX02I { light MACEBALL_X3 }
-    frame FX02J { light MACEBALL_X4 }
-}
-
-object MaceFX6
-{
-    frame FX02G { light MACEBALL_X1 }
-    frame FX02H { light MACEBALL_X2 }
-    frame FX02I { light MACEBALL_X3 }
-    frame FX02J { light MACEBALL_X4 }
-}
-
