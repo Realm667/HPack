@@ -41,7 +41,6 @@ map H1M2 "Sidhe Altar"
 
 map H1M3 "Elven Wood"
 {
-	fade = "15 25 5"
 	music = MUS_H1M3
 	next = h1m5
 	secretnext = H1MX
@@ -102,7 +101,6 @@ map H1MX "ChickenSpring"
 
 map H2M1 "Chapel of the Seas"
 {
-	fade = "10 30 20"
 	music = UNDERHAL
 	next = h2m2
 	Cluster = 102
@@ -117,7 +115,6 @@ map H2M2 "Dark Water"
 
 map H2M3 "Aquatemple"
 {
-	fade = "10 20 50"
 	music = MUS_E3M3
 	next = h2m4
 	Cluster = 102
@@ -153,7 +150,6 @@ map H2M9 "House of the Ancients"
 	Cluster = 102
 }
 
-
 map H2M0 "Asterion"
 {
 	music = MUS_E1M9
@@ -164,7 +160,7 @@ map H2M0 "Asterion"
 
 map H3M1 "Scorched Earth"
 {
-	fade = "30 10 10"
+	// fade = "30 10 10"
 	music = MUS_E2M1
 	next = h3m2
 	Cluster = 103
@@ -173,7 +169,7 @@ map H3M1 "Scorched Earth"
 map H3M2 "Lava Falls"
 {
 	sky1 = "pri_osky", 0
-	fade = "30 10 10"
+	// fade = "30 10 10"
 	music = MUS_E2M2
 	next = h3m3
 	Cluster = 103
@@ -182,7 +178,7 @@ map H3M2 "Lava Falls"
 map H3M3 "Bastion of Sorrow"
 {
 	sky1 = "pri_osky", 0
-	fade = "30 10 10"
+	// fade = "30 10 10"
 	music = MUS_E1M4
 	next = h3m4
 	Cluster = 103
@@ -190,7 +186,7 @@ map H3M3 "Bastion of Sorrow"
 
 map H3M4 "Tabernacle of Magma"
 {
-	fade = "20 10 05"
+	// fade = "20 10 05"
 	music = MIRE
 	next = h3m6
 	Cluster = 103
