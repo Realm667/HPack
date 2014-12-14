@@ -449,6 +449,9 @@ misc/gibbed		DSSLOP
 DSGONG	DSGONG
 PortalChoir/Loop	DSCHOIR
 
+//Gothic door thingy
+StoneStopMoving		STNFALL
+
 
 
 ////////////////////
