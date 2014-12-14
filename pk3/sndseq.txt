@@ -88,6 +88,12 @@ end
 	door 11
 end
 
+:MovingStones //H3M7
+	playuntildone   IceStartMove
+	stopsound	StoneStopMoving
+	door 20
+end
+
 
 :Silence
 end
