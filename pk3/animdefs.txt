@@ -133,6 +133,9 @@ texture SKULFAC1	range SKULFAC3	tics 9
 texture CHAINFA1	range CHAINFA3	tics 9
 
 
+switch EVILSK_1 on sound Switch1 pic SW3OFF tics 0
+switch EVILSK_2 off sound Switch2 pic SW3ON tics 0
+
 switch SW3ON on sound Switch1 pic SW3OFF tics 0
 switch SW3OFF off sound Switch2 pic SW3ON tics 0
 
