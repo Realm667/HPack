@@ -144,3 +144,18 @@ actor BlueBanner : CrimsonBanner 8933
 	}
 }
 
+actor Yorp 9951
+{
+	//$Category EasterEggs
+	+SOLID
+	radius 8
+	height 32
+	
+	states
+	{
+	spawn:
+		YORP A -1
+		Stop
+	}
+}
+
