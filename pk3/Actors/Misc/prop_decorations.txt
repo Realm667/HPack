@@ -159,3 +159,23 @@ actor Yorp 9951
 	}
 }
 
+actor FogModern 9952
+{
+	//$Category Decoration
+	+NOBLOCKMAP
+  	+NOGRAVITY
+	-SOLID
+  	RenderStyle Translucent
+  	Alpha 0.5
+	radius 64
+	height 32
+	
+	states
+	{
+	spawn:
+		FGBL A -1
+		Stop
+	}
+	
+}
+
