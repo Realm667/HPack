@@ -1,0 +1,16 @@
+NoAutoStartMap
+Background BG_E5
+Splat IN_X
+Pointer IN_YAH
+
+Spots
+{
+	H5M1 50 155
+	H5M2 116 162
+	H5M3 190 164 
+	H5M6 236 147
+	H5M7 192 137
+	H5M9 151 111
+	H5MX 175 218
+	H5M0 175 42
+}

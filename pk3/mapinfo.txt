@@ -11,6 +11,9 @@ gameinfo
 	menufontcolor_header = "DARKRED"
 	menufontcolor_highlight = "DARKGRAY"
 	menufontcolor_selection = "DARKRED"
+	dimcolor = "2B00FF"
+	dimamount = 0.3
+	pickupcolor = "FFFFFF"
 }
 
 // Properties that all maps have, unless they specifically override them
@@ -33,6 +36,8 @@ map H1M1 "Gloom Tower"
 	music = MUS_E1M4
 	next = h1m2
 	Cluster = 101
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1M2 "Sidhe Altar"
@@ -41,6 +46,8 @@ map H1M2 "Sidhe Altar"
 	next = h1m3
 	Cluster = 101
 	lightmode = 2
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1M3 "Elven Wood"
@@ -49,6 +56,8 @@ map H1M3 "Elven Wood"
 	next = h1m5
 	secretnext = H1MX
 	Cluster = 101
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1M5 "Battlements"
@@ -56,6 +65,8 @@ map H1M5 "Battlements"
 	music = MUS_H1M5
 	next = h1m6
 	Cluster = 101
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1M6 "Asylum of Hate"
@@ -63,6 +74,8 @@ map H1M6 "Asylum of Hate"
 	music = MUS_H1M6
 	next = h1m7
 	Cluster = 101
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1M7 "Dead End"
@@ -74,6 +87,8 @@ map H1M7 "Dead End"
 	monsterfallingdamage
 	smoothlighting
 	Cluster = 101
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1M10 "Citadel of Horrors"
@@ -82,6 +97,8 @@ map H1M10 "Citadel of Horrors"
 	music = "BADASS"
 	sky1 = DNIGHT
 	Cluster = 101
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1M0 "City of Darkness"
@@ -90,6 +107,8 @@ map H1M0 "City of Darkness"
 	next = "Endtitle"
 	Cluster = 101
 	F1 = "F1_H1M0"
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H1MX "ChickenSpring"
@@ -101,6 +120,8 @@ map H1MX "ChickenSpring"
 	fade = "20 15 20"
 	outsidefog = "20 15 20"
 	lightmode = 2
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 map H2M1 "Chapel of the Seas"
@@ -108,6 +129,8 @@ map H2M1 "Chapel of the Seas"
 	music = UNDERHAL
 	next = h2m2
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 map H2M2 "Dark Water"
@@ -115,6 +138,8 @@ map H2M2 "Dark Water"
 	music = MUS_E1M3
 	next = h2m3
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 map H2M3 "Aquatemple"
@@ -122,6 +147,8 @@ map H2M3 "Aquatemple"
 	music = MUS_E3M3
 	next = h2m4
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 map H2M4 "Icy Catacomb"
@@ -130,6 +157,8 @@ map H2M4 "Icy Catacomb"
 	music = FANTAR
 	next = h2m5
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 map H2M5 "Underwater Villa"
@@ -137,6 +166,8 @@ map H2M5 "Underwater Villa"
 	music = MUS_E1M2
 	next = h2m8
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 map H2M8 "Serpent Residence"
@@ -145,6 +176,8 @@ map H2M8 "Serpent Residence"
 	music = MUS_E2M3
 	next = h2m9
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 map H2M9 "House of the Ancients"
@@ -152,6 +185,8 @@ map H2M9 "House of the Ancients"
 	music = "HSHADOWS"
 	next = h2m0
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 map H2M0 "Asterion"
@@ -159,6 +194,8 @@ map H2M0 "Asterion"
 	music = MUS_E1M9
 	next = "Endtitle"
 	Cluster = 102
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 
@@ -168,6 +205,8 @@ map H3M1 "Scorched Earth"
 	music = MUS_E2M1
 	next = h3m2
 	Cluster = 103
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M2 "Lava Falls"
@@ -177,6 +216,8 @@ map H3M2 "Lava Falls"
 	music = MUS_E2M2
 	next = h3m3
 	Cluster = 103
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M3 "Bastion of Sorrow"
@@ -186,6 +227,8 @@ map H3M3 "Bastion of Sorrow"
 	music = MUS_E1M4
 	next = h3m4
 	Cluster = 103
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M4 "Tabernacle of Magma"
@@ -194,6 +237,8 @@ map H3M4 "Tabernacle of Magma"
 	music = MIRE
 	next = h3m6
 	Cluster = 103
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M6 "City of Metal"
@@ -203,6 +248,8 @@ map H3M6 "City of Metal"
 	sky1 = BSSKY, 0.0
 	cluster = 103
 	next = H2M6
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H2M6 "Fortress of Eternity"
@@ -212,6 +259,8 @@ map H2M6 "Fortress of Eternity"
 	next = h3m7
 	secretnext = H3M8
 	Cluster = 102
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M7 "Hell Stronghold"
@@ -221,6 +270,8 @@ map H3M7 "Hell Stronghold"
 	//outsidefog = "40 20 10"
 	cluster = 103
 	next = H3M0
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M8 "Hell's Forge"
@@ -231,6 +282,8 @@ map H3M8 "Hell's Forge"
 	fade = "40 20 10"
 	outsidefog = "40 20 10"
 	lightmode = 2
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M0 "Infernux Prime"
@@ -238,6 +291,8 @@ map H3M0 "Infernux Prime"
    	levelnum = 30
    	music = "D_INFERN"
    	sky1 = "SKY2" 
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H4M1 "Ethereal Ruins"
@@ -245,6 +300,8 @@ map H4M1 "Ethereal Ruins"
 	music = CHAP_3R
 	next = h4m2
 	Cluster = 104
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H4M2 "The Bloody Path"
@@ -253,6 +310,8 @@ map H4M2 "The Bloody Path"
 	music = romeric
 	next = h4m3
 	Cluster = 104
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H4M3 "Monastery of Souls"
@@ -261,6 +320,8 @@ map H4M3 "Monastery of Souls"
 	next = H4M4
 	music = cryptr
 	Cluster = 104
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H4M4 "Fortress of Despair"
@@ -268,6 +329,8 @@ map H4M4 "Fortress of Despair"
 //	sky1 = PRI_OSKY, -0.2
 	music = MUS_E2M4
 	next = H4M5
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H4M5 "Mythril Keep"
@@ -275,6 +338,8 @@ map H4M5 "Mythril Keep"
 	next = H4M6
 	music = FALCONR
 	Cluster = 104
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H4M6 "Arid Crypt"
@@ -283,6 +348,8 @@ map H4M6 "Arid Crypt"
 	next = H4M8
 	music = MUS_E2M6
 	Cluster = 104
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H4M8 "DarkFort"
@@ -290,6 +357,8 @@ map H4M8 "DarkFort"
 	next = H4M0
 	music = MUS_E1M9
 	Cluster = 104
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H4M0 "Castle of Storms"
@@ -298,6 +367,8 @@ map H4M0 "Castle of Storms"
 	next = endtitle
 	cluster = 104
 	fade = "5D 8A A8"
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
 }
 
 map H5M1 "Ziggurat of Sorrow"
@@ -306,6 +377,8 @@ map H5M1 "Ziggurat of Sorrow"
 	music = ROMERIC
 	next = h5m2
 	Cluster = 105
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
 }
 
 
@@ -317,6 +390,8 @@ Map H5M2 "Vortex"
 	Sky1 = "CSSKY", 0.01
 	Fade = "57 00 7F"
 	Gravity = 300
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
 }
 
 map H5M3 "The Void Temple"
@@ -326,6 +401,8 @@ map H5M3 "The Void Temple"
 	sky1 = BSSKY
 	Cluster = 105
 	MonsterFallingDamage
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
 }
 
 map H5M6 "Canyon of Ether"
@@ -335,6 +412,8 @@ map H5M6 "Canyon of Ether"
 	Sky1 = "CSSKY", 0.01
 	Fade = "25 00 7F"
 	Cluster = 105
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
 }
 
 map H5M7 "Clash of the elements"
@@ -343,6 +422,8 @@ map H5M7 "Clash of the elements"
 	sky1 = BSSKY
 	cluster = 105
 	next = h5m9
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
 }
 
 map H5M9 "The Dark Rift"
@@ -352,15 +433,19 @@ map H5M9 "The Dark Rift"
 	skyrotate =0.4, 0.3, 0.2
 	music = "D_ICYV2"
 	smoothlighting
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
 }
 
 map H5MX "At the Back of My Head"
 {
-   cluster = 105
-   levelnum = 7448
-   next = "H5M0"
-   music = "D_FARAWY"
-   sky1 = "SKY3" 
+   	cluster = 105
+   	levelnum = 7448
+   	next = "H5M0"
+	music = "D_FARAWY"
+   	sky1 = "SKY3" 
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
 }
 
 

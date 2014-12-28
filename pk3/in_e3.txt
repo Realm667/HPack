@@ -1,0 +1,17 @@
+NoAutoStartMap
+Background BG_E3
+Splat IN_X
+Pointer IN_YAH
+
+Spots
+{
+	H3M1 279 214
+	H3M2 177 210
+	H3M3 48 218
+	H3M4 67 167
+	H3M6 121 122
+	H2M6 152 30
+	H3M7 188 156
+	H3M8 211 124
+	H3M0 222 73
+}
