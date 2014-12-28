@@ -21,7 +21,11 @@ adddefaultmap
 	smoothlighting
 }
 
-map titlemap "Demonic Uprising" {}
+map titlemap "Demonic Uprising" 
+{
+	sky1 = DNIGHT
+	evenlighting
+}
 
 
 map H1M1 "Gloom Tower"
