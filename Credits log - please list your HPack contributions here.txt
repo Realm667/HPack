@@ -213,3 +213,12 @@ Used music: bldrstod.ogg - "TSEC - Far Away"
 Contributor: NeoWorm
 --------------------
 - Widescreen-friendly status bar.
+
+--------------------
+Other credits
+--------------------
+E1 intermission background by Geistig (http://www.deviantart.com/art/medieval-city-30478361)
+E2 intermission background by FerdinandLadera (http://ferdinandladera.deviantart.com/art/Golden-Temple-347576998)
+E3 intermission background by elartwyne (http://elartwyne.deviantart.com/art/Hell-Gate-336498872)
+E4 intermission background by flaviobolla (http://flaviobolla.deviantart.com/)
+E5 intermission background by AdamBurn (http://www.deviantart.com/art/Floating-Castle-concept-106619540)
