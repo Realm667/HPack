@@ -22,8 +22,12 @@ Contributor: Tormentor667
 - TITLEMAP
 - H1M0.WAD
 - H2M6.WAD
+- H1M10.WAD
 
-Fonts by Jimmy
+-------------------
+Contributor: Jimmy
+-------------------
+BIGFONT and SMALLFONT replacements
 
 
 -------------------
