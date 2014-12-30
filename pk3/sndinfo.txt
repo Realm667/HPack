@@ -596,6 +596,13 @@ WaterMove               brook1
 IceStartMove            icemv2
 EarthStartMove          quake2
 
+;
+; Fire Torch
+;
+
+Torch/Light	torchlit
+Torch/Die	torchdie
+
 // Redefined Heretic sounds
 world/drip				drop2
 world/sludgegloop		muck5
