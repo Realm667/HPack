@@ -452,6 +452,9 @@ PortalChoir/Loop	DSCHOIR
 //Gothic door thingy
 StoneStopMoving		STNFALL
 
+//Minecraft Open Door
+Minecraft/DoorOpen	MCDOOR
+
 
 
 ////////////////////
