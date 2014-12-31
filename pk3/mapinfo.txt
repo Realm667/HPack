@@ -128,6 +128,7 @@ map H2M1 "Chapel of the Seas"
 {
 	music = UNDERHAL
 	next = h2m2
+	secretnext = h2mx
 	Cluster = 102
 	exitpic ="$IN_E2"
 	enterpic ="$IN_E2"
@@ -196,6 +197,16 @@ map H2M0 "Asterion"
 	Cluster = 102
 	exitpic ="$IN_E2"
 	enterpic ="$IN_E2"
+}
+
+map H2MX "Crafting the Docks"
+{
+	next = H2M2
+	music = "MINE"
+	sky1 = DNIGHT
+	Cluster = 101
+	exitpic ="$IN_E1"
+	enterpic ="$IN_E1"
 }
 
 
