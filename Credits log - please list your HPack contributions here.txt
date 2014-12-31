@@ -219,6 +219,11 @@ Contributor: NeoWorm
 - Widescreen-friendly status bar.
 
 --------------------
+Contributor: NeuralStunner
+--------------------
+- Staff's pickup and HUD icon graphics.
+
+--------------------
 Other credits
 --------------------
 E1 intermission background by Geistig (http://www.deviantart.com/art/medieval-city-30478361)

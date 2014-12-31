@@ -25,6 +25,7 @@ ACTOR HPStaff : Staff replaces Staff
 	+WEAPON.NOALERT
 	Decal "BulletChip"
 	Inventory.PickupMessage "ELVEN STAFF"
+	Inventory.Icon "WSTFI0"
    States
    {
    Spawn:
