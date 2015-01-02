@@ -20,6 +20,8 @@ warp texture SKYTP14W
 warp texture CSSKY
 warp texture BSSKY
 warp2 texture WWATERNW
+warp texture mc__103
+warp texture mc_tele
 
 texture WLLATFL1
  pic WLLATFL1 tics 8
@@ -186,6 +188,9 @@ switch SWPAT_P1 off sound Switch2 pic SWPAT_P0 tics 0
 
 switch SWPAT_S0 on sound Switch1 pic SWPAT_S1 tics 0
 switch SWPAT_S1 off sound Switch2 pic SWPAT_S0 tics 0
+
+switch mc_sw1 on sound Switch1 pic mc_sw2 tics 0
+switch mc_sw2 off sound Switch2 pic mc_sw1 tics 0
 
 /* Animation definition for Shadowcaster textures when used in Doom, Heretic, Hexen or Strife. */
 

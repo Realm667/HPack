@@ -395,3 +395,19 @@ ACTOR VolcanoPurple : Volcano 12457
   }
 
 }
+
+actor FirePodExplosionOnly //Tormentor667
+{
+   DamageFactor Fire, 0.0
+   States
+   {
+   Spawn:
+      FPOD BBBBBBB 2 A_PodPain("FirePodGoo")
+      FPOD C 5 Bright A_RemovePod
+      FPOD D 5 Bright A_Scream
+      FPOD E 5 Bright A_SpawnItemEx("FirePodExplosion", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
+      FPOD F 10 Bright
+      Stop
+   Stop
+   }
+}
