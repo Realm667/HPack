@@ -14,6 +14,7 @@ Actor RainSpawner 10010
   Height 1
   +NOCLIP
   +CLIENTSIDEONLY
+  +SPAWNCEILING
   +NOGRAVITY
   +DONTSPLASH
 
@@ -40,21 +41,21 @@ Actor RainSpawner 10010
 
   PlaySound:
     // Play and loop the rain sound, then fall through to the "AreaTypeDecide" state.
-    TNT1 A 0 A_PlaySound("Ambient/Rain", 7, 1.0, TRUE)
+    TNT1 A 0 A_PlaySound("Ambient/Rain", CHAN_7, 1.0, TRUE)
 
   AreaTypeDecide:
     // Before deciding the area type, do a range check, jumping to the "NoRain" state to
     // stop the spawner from producing rain if the player is out of range, and falling
     // through to the next state to do the actual area type choosing, otherwise.
-    TNT1 A 0 A_CheckRange(CRP_DISTANCE + Args[0], "NoRain")
+    TNT1 A 0 A_CheckRange(CRP_DISTANCE + Args[0], "NoRain", TRUE)
     TNT1 A 0 A_JumpIf(Args[3] > 0, "Circle")
 
   Square:
-    TNT1 A 2 A_SpawnItemEx("RainDrop", Random(-Args[0], Args[0]), Random(-Args[0], Args[0]), -2 + (ceilingz - z), 0, 0, 0, 0, SXF_CLIENTSIDE, Args[1])
+    TNT1 A 2 A_SpawnItemEx("RainDrop", Random(-Args[0], Args[0]), Random(-Args[0], Args[0]), -2, 0, 0, 0, 0, SXF_CLIENTSIDE, Args[1])
     Goto AreaTypeDecide
 
   Circle:
-    TNT1 A 2 A_SpawnItemEx("RainDrop", Random(-Args[0], Args[0]), 0, -2 + (ceilingz - z), 0, 0, 0, Random(0, 360), SXF_CLIENTSIDE, Args[1])
+    TNT1 A 2 A_SpawnItemEx("RainDrop", Random(-Args[0], Args[0]), 0, -2, 0, 0, 0, Random(0, 360), SXF_CLIENTSIDE, Args[1])
     Goto AreaTypeDecide
 
   NoRain:
