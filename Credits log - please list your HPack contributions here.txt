@@ -224,6 +224,11 @@ Contributor: NeuralStunner
 - Staff's pickup and HUD icon graphics.
 
 --------------------
+Contributor: KeksDose
+--------------------
+- Fire particles used for the torches and braziers.
+
+--------------------
 Other credits
 --------------------
 E1 intermission background by Geistig (http://www.deviantart.com/art/medieval-city-30478361)
