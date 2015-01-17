@@ -2,6 +2,7 @@
 // Requires that the Heretic/Hexen light definitions be loaded.
 
 object TOTLTwinedTorch  { frame TWTRA { light TWINETORCH } }
+object TOTLTwinedTorchUnlit { frame TWTRA { light TWINETORCH } }
 object ToTLBrassTorch   { frame BRTRA { light BRASSTORCH } }
 object ToTLSkullTorch   { frame FSKLA { light BRASSTORCH } }
 object TOTLWallTorch    { frame WTRHA { light WALLTORCH  } }
