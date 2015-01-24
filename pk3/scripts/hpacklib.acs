@@ -1,0 +1,16 @@
+#library "hpacklib"
+#include "zcommon.acs"
+
+Script "HPack_GetLightSourceStyle" (void)
+{
+  If(!GetUserVariable(0, "user_init"))
+  {
+    SetUserVariable(0, "user_init", TRUE);
+    SetResultValue(GetCVar("hpack_lightsourcestyle"));
+  }
+
+  Else
+  {
+    SetResultValue(GetUserVariable(0, "user_style"));
+  }
+}

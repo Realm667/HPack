@@ -82,8 +82,9 @@ OptionMenu "HPackOptionsMenu"
   StaticText ""
   StaticText "HPack Settings",        1
   StaticText ""
-  // Settings should go here
+  Option "Particle-based Light Sources", "hpack_lightsourcestyle", "OnOff"
 
+  StaticText ""
   StaticText "HPack Controls",        1
   StaticTextSwitchable "ENTER to change, BACKSPACE to clear",
                        "Press new key for control, ESC to cancel",
