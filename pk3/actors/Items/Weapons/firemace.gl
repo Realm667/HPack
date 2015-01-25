@@ -1,1 +1,32 @@
 // Firemace
+object HPMaceFX1
+{
+    frame FX02G { light MACEBALL_X1 }
+    frame FX02H { light MACEBALL_X2 }
+    frame FX02I { light MACEBALL_X3 }
+    frame FX02J { light MACEBALL_X4 }
+}
+
+object HPMaceFX2
+{
+    frame FX02G { light MACEBALL_X1 }
+    frame FX02H { light MACEBALL_X2 }
+    frame FX02I { light MACEBALL_X3 }
+    frame FX02J { light MACEBALL_X4 }
+}
+
+object HPMaceFX3
+{
+    frame FX02G { light MACEBALL_X1 }
+    frame FX02H { light MACEBALL_X2 }
+    frame FX02I { light MACEBALL_X3 }
+    frame FX02J { light MACEBALL_X4 }
+}
+
+object HPMaceFX4
+{
+    frame FX02G { light MACEBALL_X1 }
+    frame FX02H { light MACEBALL_X2 }
+    frame FX02I { light MACEBALL_X3 }
+    frame FX02J { light MACEBALL_X4 }
+}

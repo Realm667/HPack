@@ -1,0 +1,30 @@
+object HPMummyLeader
+{
+    frame MUMMY { light MUMMYATK }
+}
+
+object HPMummyLeaderGhost
+{
+    frame MUMMY { light MUMMYATK }
+}
+
+object HPIronlich
+{
+    frame LICHD { light IRONLICH1 }
+    frame LICHE { light IRONLICH2 }
+    frame LICHF { light IRONLICH3 }
+    frame LICHG { light IRONLICH4 }
+}
+
+object HPClink
+{
+    frame CLNKK { light CLINK_X1 }
+    frame CLNKL { light CLINK_X2 }
+    frame CLNKM { light CLINK_X3 }
+    frame CLNKN { light CLINK_X4 }
+}
+
+object HPBeast
+{
+    frame BEASI { light BEASTATK }
+}

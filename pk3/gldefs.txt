@@ -4,7 +4,6 @@
 
 // Standard definitions are loaded first
 #include "hexen.gl"
-#include "heretic.gl"
 
 // Special effects
 #include "brightmaps.gl"
@@ -15,6 +14,7 @@
 // Items and decoration
 #include "actors/misc/prop_decorations.gl"
 #include "actors/misc/prop_hexen.gl"
+#include "actors/misc/prop_podvariants.gl"
 #include "actors/misc/sfx_lights.gl"
 #include "actors/misc/candelabra.gl"
 #include "actors/items/ammo.gl"
@@ -24,7 +24,7 @@
 #include "actors/items/weapons/sunstaff.gl"
 #Include "actors/items/weapons/StaffChaos.gl"
 #include "actors/items/weapons/goldwand.gl"
-#include "actors/items/weapons/crossbow.gl"
+//#include "actors/items/weapons/crossbow.gl" // [Blue Shadow] Its contents are redundant.
 #include "actors/items/weapons/dragonclaw.gl"
 #include "actors/items/weapons/hellstaff.gl"
 #include "actors/items/weapons/phoenixrod.gl"
@@ -36,6 +36,7 @@
 #include "actors/monsters/bishop.gl"
 #include "actors/monsters/bloodlich.gl"
 #include "actors/monsters/champion.gl"
+#include "actors/monsters/clinkjump.gl"
 #include "actors/monsters/cultist.gl"
 #include "actors/monsters/chaoswyvern.gl"
 #include "actors/monsters/darknessrift.gl"
@@ -46,6 +47,7 @@
 #include "actors/monsters/ghoul.gl"
 #include "actors/monsters/guardiancube.gl"
 #include "actors/monsters/infernodemon.gl"
+#include "actors/monsters/resurrection_frames.gl"
 #include "actors/monsters/satyr.gl"
 #include "actors/monsters/sentinel.gl"
 #include "actors/monsters/shadowbeast.gl"

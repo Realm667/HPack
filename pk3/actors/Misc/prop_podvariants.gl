@@ -1,0 +1,8 @@
+// Pod
+object BlastPod
+{
+    frame PPODC { light POD_X1 }
+    frame PPODD { light POD_X2 }
+    frame PPODE { light POD_X3 }
+    frame PPODF { light POD_X4 }
+}

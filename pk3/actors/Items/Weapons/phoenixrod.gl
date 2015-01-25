@@ -2,61 +2,6 @@
 // PHOENIX ROD LIGHTING //
 // -------------------- //
 
-// Phoenix rod shot
-pointlight PHOENIXSHOT
-{
-    color 1.0 0.6 0.0
-    size 64
-}
-
-flickerlight PHOENIX_X1
-{
-    color 1.0 0.8 0.4
-    size 104
-    secondarySize 112
-    chance 0.3
-}
-
-flickerlight PHOENIX_X2
-{
-    color 1.0 0.6 0.0
-    size 88
-    secondarySize 96
-    chance 0.3
-}
-
-flickerlight PHOENIX_X3
-{
-    color 0.8 0.6 0.0
-    size 72
-    secondarySize 80
-    chance 0.3
-}
-
-flickerlight PHOENIX_X4
-{
-    color 0.6 0.4 0.0
-    size 56
-    secondarySize 64
-    chance 0.3
-}
-
-flickerlight PHOENIX_X5
-{
-    color 0.4 0.2 0.0
-    size 40
-    secondarySize 48
-    chance 0.3
-}
-
-flickerlight PHOENIX_X6
-{
-    color 0.2 0.0 0.0
-    size 24
-    secondarySize 32
-    chance 0.3
-}
-
 object HPPhoenixFX1
 {
     frame PHOXA { light PHOENIXSHOT }
@@ -69,38 +14,4 @@ object HPPhoenixFX1
     frame FX08F { light PHOENIX_X6 }
     frame FX08G { light PHOENIX_X6 }
     frame FX08H { light PHOENIX_X6 }
-}
-
-// Phoenix rod flamethrower
-flickerlight PHOENIXFLAME
-{
-    color 0.7 0.4 0.0
-    size 48
-    secondarySize 56
-    chance 0.5
-}
-
-flickerlight PHOENIXFLAME2
-{
-    color 0.5 0.2 0.0
-    size 24
-    secondarySize 32
-    chance 0.5
-}
-
-flickerlight PHOENIXFLAME3
-{
-    color 0.3 0.1 0.0
-    size 16
-    secondarySize 24
-    chance 0.5
-}
-
-object PhoenixFX2
-{
-    frame FX09A { light PHOENIXFLAME }
-    frame FX09B { light PHOENIXFLAME }
-
-    frame FX09C { light PHOENIXFLAME2 }
-    frame FX09D { light PHOENIXFLAME3 }
 }
