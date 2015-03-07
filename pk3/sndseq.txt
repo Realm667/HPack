@@ -89,7 +89,7 @@ end
 end
 
 :MovingStones //H3M7
-	playuntildone   IceStartMove
+	playrepeat   	StoneStartMoving
 	stopsound	StoneStopMoving
 	door 20
 end

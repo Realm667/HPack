@@ -450,6 +450,7 @@ DSGONG	DSGONG
 PortalChoir/Loop	DSCHOIR
 
 //Gothic door thingy
+StoneStartMoving	CRYPTLP
 StoneStopMoving		STNFALL
 
 //Minecraft Open Door
