@@ -9,12 +9,14 @@ original author or source, so we can keep track of resources and credit
 -------------------
 Contributor: PRIMEVAL
 -------------------
-- Intermission music (MUS_INTR)
-- Title music  (MUS_TITL)
+- Intermission music (MUS_INTR) "Ex Mortis"
+- Title music  (MUS_TITL) "Demonic Uprising"
 - Music for H2M6 (HInter)
-- Placeholder music (HShadows)
-- Music for H1M1
-- Music for H1M0
+- Placeholder music (HShadows) "Shadows Forever Fall"
+- Music for H1M1 "Twilight"
+- Music for H1M2 "Unholy"
+- Music for H1M3 "Altered State"
+- Music for H1M0 "Ghost Town" and "Sentinels"
 -------------------
 Contributor: Tormentor667
 -------------------
