@@ -3,4 +3,4 @@ server bool hpack_lightsourcestyle = true;
 // Footsteps
 user bool hpack_fstep_enable = true;
 user float hpack_fstep_volmul = 1.0;
-user float hpack_fstep_delaymul = 1.0;
+user float hpack_fstep_delaymul = 1.2;

@@ -30,15 +30,16 @@ Script "HPack_GetLightSourceStyle" (void)
 // If you are adding a new texture to the list of textures that have custom sounds, add the
 // texture's name to this list, as well as defining its sound in the LANGUAGE lump.
 
-// [Blue Shadow] As of this commit, the array below lists 791 textures. Bump this up if the texture
+// [Blue Shadow] As of this commit, the array below lists 855 textures. Bump this up if the texture
 // count ever exceeds the value.
 #define HPKC_FTSTEP_TEXCOUNT 1000
 
 #define HPKC_FTSTEP_TEXNAME   0 // First column ---> Texture/flat name
 #define HPKC_FTSTEP_STEPSOUND 1 // Second column --> Associated footstep sound
 
-str hpka_floorTexture[HPKC_FTSTEP_TEXCOUNT][2] =
+str hpka_floorTexture[HPKC_FTSTEP_TEXCOUNT + 1][2] =
 {
+    // Hard surfaces
     { "BLUEFRA2", "floor/tile2" },
     { "BLUEFRA3", "floor/tile2" },
     { "BLUEFRA4", "floor/tile2" },
@@ -830,6 +831,72 @@ str hpka_floorTexture[HPKC_FTSTEP_TEXCOUNT][2] =
     { "WOODTR08", "floor/wood" },
     { "WOODTR10", "floor/wood" },
     { "WOODWLH",  "floor/wood" },
+
+    // Liquids
+    { "FLTAAWA1", "world/lavasizzle" },
+    { "FLTAAWA2", "world/lavasizzle" },
+    { "FLTAAWA3", "world/lavasizzle" },
+    { "FLTMUD1",  "world/sludgegloop" },
+    { "FLTMUD2",  "world/sludgegloop" },
+    { "FLTMUD3",  "world/sludgegloop" },
+    { "SCBLOOD1", "world/sludgegloop" },
+    { "SCBLOOD2", "world/sludgegloop" },
+    { "SCBLOOD3", "world/sludgegloop" },
+    { "SCBLOOD4", "world/sludgegloop" },
+    { "SCBLOOD5", "world/sludgegloop" },
+    { "SCBLOOD6", "world/sludgegloop" },
+    { "WREDLIQ",  "world/sludgegloop" },
+    { "WLLBLOD1", "world/sludgegloop" },
+    { "WLLBLOD2", "world/sludgegloop" },
+    { "WLLBLOD3", "world/sludgegloop" },
+    { "SCLAVAA1", "world/lavasizzle" },
+    { "SCLAVAA2", "world/lavasizzle" },
+    { "SCLAVAA3", "world/lavasizzle" },
+    { "SCLAVAB1", "world/lavasizzle" },
+    { "SCLAVAB2", "world/lavasizzle" },
+    { "SCLAVAB3", "world/lavasizzle" },
+    { "WLAVA01",  "world/lavasizzle" },
+    { "WLAVA02",  "world/lavasizzle" },
+    { "SCLAVAC1", "world/lavasizzle" },
+    { "SCLAVAC2", "world/lavasizzle" },
+    { "SCLAVAC3", "world/lavasizzle" },
+    { "SCLAVAD1", "world/lavasizzle" },
+    { "SCLAVAD2", "world/lavasizzle" },
+    { "SCLAVAC3", "world/lavasizzle" },
+    { "SCSLIME1", "world/lavasizzle" },
+    { "SCSLIME2", "world/lavasizzle" },
+    { "SCSLIME3", "world/lavasizzle" },
+    { "WLLATFL1", "world/lavasizzle" },
+    { "WLLATFL2", "world/lavasizzle" },
+    { "WLLATFL3", "world/lavasizzle" },
+    { "SCSLUDG1", "world/sludgegloop" },
+    { "SCSLUDG2", "world/sludgegloop" },
+    { "SCSLUDG3", "world/sludgegloop" },
+    { "SCSLUDG4", "world/sludgegloop" },
+    { "SCSLUDG5", "world/sludgegloop" },
+    { "SCSLUDG6", "world/sludgegloop" },
+    { "WLLSLIM1", "world/sludgegloop" },
+    { "WLLSLIM2", "world/sludgegloop" },
+    { "WLLSLIM3", "world/sludgegloop" },
+    { "SCWATER1", "world/watersplash" },
+    { "SCWATER2", "world/watersplash" },
+    { "SCWATER3", "world/watersplash" },
+    { "WWATER01", "world/watersplash" },
+    { "WDWATR01", "world/watersplash" },
+    { "WSLIME01", "world/lavasizzle" },
+    { "WSLIME02", "world/sludgegloop" },
+    { "WSLIME03", "world/sludgegloop" },
+    { "FLTMUD1",  "world/sludgegloop" },
+    { "FLTMUD2",  "world/sludgegloop" },
+    { "FLTMUD3",  "world/sludgegloop" },
+    { "FLTAAWA1", "world/lavasizzle" },
+    { "FLTAAWA2", "world/lavasizzle" },
+    { "FLTAAWA3", "world/lavasizzle" },
+    { "FLATHUA1", "world/lavasizzle" },
+    { "FLATHUA2", "world/lavasizzle" },
+    { "FLATHUA3", "world/lavasizzle" },
+    { "WSLIMH",   "world/sludgegloop" },
+    { "WINDIGO",  "world/lavasizzle" }, // 855
 
     { "-EndOfList-" } // [Blue Shadow] Keep all texture additions above this
 };
