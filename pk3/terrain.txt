@@ -186,7 +186,7 @@ floor WINDIGO sizzle
 //////////////////
 // FLOOR SOUNDS //
 //////////////////
-
+/*
 splash carpet
 {
 	smallclass		None
@@ -1286,3 +1286,4 @@ floor WOODTR07 wood
 floor WOODTR08 wood
 floor WOODTR10 wood
 floor WOODWLH wood
+*/

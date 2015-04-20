@@ -231,6 +231,11 @@ Contributor: KeksDose
 - Fire particles used for the torches and braziers.
 
 --------------------
+Contributor: The Zombie Killer
+--------------------
+- New footsteps system
+
+--------------------
 Other credits
 --------------------
 E1 intermission background by Geistig (http://www.deviantart.com/art/medieval-city-30478361)

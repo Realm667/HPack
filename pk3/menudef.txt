@@ -80,9 +80,15 @@ OptionMenu "HPackOptionsMenu"
 {
   Title "HPack Options"
   StaticText ""
-  StaticText "HPack Settings",        1
+  StaticText "General/Misc Settings", 1
   StaticText ""
-  Option "Particle-based Light Sources", "hpack_lightsourcestyle", "OnOff"
+  Option "Particle-based Light Sources", "hpack_lightsourcestyle", "YesNo"
+  StaticText ""
+  StaticText "Footsteps Settings",    1
+  StaticText ""
+  Option "Enable Footsteps", "hpack_fstep_enable", "YesNo"
+  Slider "Step Sound Volume Multiplier", "hpack_fstep_volmul", 0, 1.0, 0.05, 2
+  Slider "Step Delay Multiplier", "hpack_fstep_delaymul", 0.1, 2.0, 0.1
 
   StaticText ""
   StaticText "HPack Controls",        1
