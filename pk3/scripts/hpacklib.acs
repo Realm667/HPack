@@ -903,33 +903,27 @@ str hpka_floorTexture[HPKC_FTSTEP_TEXCOUNT + 1][2] =
 
 // ------------------------------------------------------------------------------------------------
 
-Function int GetVelocity (void)
+Function int HPKF_GetVelocity (void)
 {
-    int vel;
     int x = GetActorVelX(0);
     int y = GetActorVelY(0);
-    int angle = VectorAngle(x, y);
 
-    If(((angle + 0.125) % 0.5) > 0.25)
-        vel = FixedDiv(y, Sin(angle));
-    Else
-        vel = FixedDiv(x, Cos(angle));
-
-    return vel >> 16;
+    return FixedSqrt(FixedMul(x, x) + FixedMul(y, y));
 }
 
 // ------------------------------------------------------------------------------------------------
 
 Script "HPKS_FootSteps" Enter
 {
-    int delayTime, stepVolume;
+    int velocity, delayTime, stepVolume;
 
     While(TRUE)
     {
         If(GetCVar("hpack_fstep_enable"))
         {
-            delayTime = FixedMul(16 - GetVelocity() / 2, GetCVar("hpack_fstep_delaymul"));
-            stepVolume = FixedMul(GetCVar("hpack_fstep_volmul"), GetVelocity() * 127 / 15);
+            velocity = HPKF_GetVelocity() >> 16;
+            delayTime = FixedMul(16 - velocity / 2, GetCVar("hpack_fstep_delaymul"));
+            stepVolume = FixedMul(velocity * 127 / 15, GetCVar("hpack_fstep_volmul"));
 
             If(GetActorZ(0) - GetActorFloorZ(0) == 0)
             {
