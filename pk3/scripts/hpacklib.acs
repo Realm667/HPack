@@ -27,11 +27,8 @@ Script "HPack_GetLightSourceStyle" (void)
 //
 // ------------------------------------------------------------------------------------------------
 
-// If you are adding a new texture to the list of textures that have custom sounds, add the
-// texture's name to this list, as well as defining its sound in the LANGUAGE lump.
-
-// [Blue Shadow] As of this commit, the array below lists 855 textures. Bump this up if the texture
-// count ever exceeds the value.
+// [Blue Shadow] The array below lists 855 textures. Bump this up if the textures count ever
+// exceeds the value.
 #define HPKC_FTSTEP_TEXCOUNT 1000
 
 #define HPKC_FTSTEP_TEXNAME   0 // First column ---> Texture/flat name
