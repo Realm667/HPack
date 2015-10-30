@@ -1,6 +1,3 @@
 brightmap sprite blsrb0	{ map "Brightmaps/Sprites/Items/DragonClaw/blsrb0.png"	disablefullbright	}
 brightmap sprite blsrc0	{ map "Brightmaps/Sprites/Items/DragonClaw/blsrc0.png"	disablefullbright	}
 brightmap sprite blsrd0	{ map "Brightmaps/Sprites/Items/DragonClaw/blsrd0.png"	disablefullbright	}
-brightmap sprite blsrg0	{ map "Brightmaps/Sprites/Items/DragonClaw/blsrg0.png"	disablefullbright	}
-brightmap sprite blsrh0	{ map "Brightmaps/Sprites/Items/DragonClaw/blsrh0.png"	disablefullbright	}
-brightmap sprite blsri0	{ map "Brightmaps/Sprites/Items/DragonClaw/blsri0.png"	disablefullbright	}

@@ -432,16 +432,6 @@ Texture WALL5012, 64, 64
 	Patch WALL5012, 0, 0
 }
 
-Texture WALL5013, 64, 64
-{
-	Patch WALL5013, 0, 0
-}
-
-Texture WALL5014, 64, 64
-{
-	Patch WALL5014, 0, 0
-}
-
 Texture MOSAICFC, 128, 128
 {
 	Patch WALL501, 0, 0
@@ -543,21 +533,40 @@ Texture CELTICSL, 64, 128
 	}
 }
 
-Texture CELTICB, 64, 128
+Texture BLUEFRAG, 64, 64
 {
-	Patch CELTICB, 0, 0
+	Patch WALL508, 0, 0
 }
 
-Texture CELTICC, 64, 128
+Texture WALL513B, 128, 128
 {
-	Patch CELTICC, 0, 0
+	Patch WALL513B, 0, 0
 }
 
-Texture CELTICD, 64, 128
+Texture WALL518B, 128, 128
 {
-	Patch CELTICD, 0, 0
+	Patch WALL518B, 0, 0
 }
 
+Texture WALL60B, 128, 128
+{
+	Patch WALL60B, 0, 0
+}
+
+Texture WLLWTFL1, 64, 128
+{
+	Patch WLLWTFL1, 0, 0
+}
+
+Texture WLLWTFL2, 64, 128
+{
+	Patch WLLWTFL1, 0, 0 // [Blue Shadow] Yes, it uses the same patch as WLLWTFL1.
+}
+
+Texture WLLWTFL3, 64, 128
+{
+	Patch WLLWTFL1, 0, 0 // [Blue Shadow] This, too.
+}
 
 //Guardian Cube J frame
 
@@ -584,5 +593,23 @@ Sprite CUBEJ4J6, 38, 36
 	Offset 19, 30
 	Patch CUBEC0, 0, 0
 }
+
+// ------------------------------------------------------------------------------------------------
+//
+//   Offset modifications of original sprites
+//
+// ------------------------------------------------------------------------------------------------
+
+// Crossbow
+Sprite WBOWA0, 45, 40 { Offset 22, 36 Patch WBOWA0, 0, 0 }
+
+// Dragon Claw
+Sprite BLSRA0, 144, 92 { Offset -77, -87 Patch BLSRA0, 0, 0 }
+Sprite BLSRB0, 147, 92 { Offset -77, -87 Patch BLSRB0, 0, 0 }
+Sprite BLSRC0, 144, 91 { Offset -85, -87 Patch BLSRC0, 0, 0 }
+Sprite BLSRD0, 139, 124 { Offset -88, -50 Patch BLSRD0, 0, 0 }
+
+// Hell Staff
+Sprite WSKLA0, 20, 41 { Offset 10, 37 Patch WSKLA0, 0, 0 }
 
 // End of texture definitions
