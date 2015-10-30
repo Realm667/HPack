@@ -595,7 +595,7 @@ DoorCloseLight          dorstp4
 DoorCloseHeavy          drstp7
 DoorCreak               drcrk5a
 
-LavaMove                lava2
+LavaMove                lavamv
 WaterMove               brook1
 IceStartMove            icemv2
 EarthStartMove          quake2
