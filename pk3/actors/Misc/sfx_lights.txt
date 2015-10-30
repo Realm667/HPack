@@ -155,77 +155,78 @@ Actor BigRedFire
 
 // ------------------------------------------------------------------------------------------------
 
-Actor ToTLBrassTorch : SwitchableDecoration replaces BrassTorch
+ACTOR HPSwitchableLightSource : SwitchableDecoration
 {
-  Radius 6
-  Height 35
-  +Solid
+  +SOLID
+
   var int user_init;
   var int user_style;
+
   States
   {
   Spawn:
     // [Blue Shadow] Get the CVAR's value and store it in this variable. The variable will be
     // used below to jump to the correct state for the style.
-    BRTR A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
+    TNT1 A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
     Goto ChooseStyle
 
   Active:
-    BRTR A 0 A_PlaySound("Torch/Light")
+    TNT1 A 0 A_PlaySound("Torch/Light")
 
   ChooseStyle:
     // [Blue Shadow] Depending on what was stored in the variable, choose the style. 0 for
     // normal, sprite-based, and any non-zero value for particle-based.
-    BRTR A 0 A_JumpIf(user_style, "Particles")
+    TNT1 A 0 A_JumpIf(user_style, "Particles")
+    TNT1 A 0 A_Jump(256, "Normal")
 
+  Inactive:
+    // [Blue Shadow] This is needed so the that the torch skips playing the below sound if it
+    // was set to spawn unlit (by setting the "Dormant" flag via the map editor). The sound
+    // skipping is only done once, of course, when the torch first spawns.
+    "####" "#" 0 A_JumpIf(!user_init, 2)
+
+    "####" "#" 0 A_PlaySound("Torch/Die")
+
+    // [Blue Shadow] When spawned unlit, the Inactive state is entered immediately, thus the
+    // CVAR's value cannot be checked and stored in the variable from the Spawn state. This is
+    // why this is here.
+    "####" "#" 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
+
+    // [Blue Shadow] Removes the flare when deactivated.
+    "####" "#" 0 A_RemoveChildren(TRUE, RMVF_MISC)
+
+    "####" "#" -1
+    Stop
+  }
+}
+
+Actor ToTLBrassTorch : HPSwitchableLightSource replaces BrassTorch
+{
+  Radius 6
+  Height 35
+  States
+  {
   Normal:
     BRTR ABCDEFGHIJKLM 4 Bright Light("BRASSTORCH")
     Loop
-
   Particles:
     // [Blue Shadow] The flare only needs to be spawned once.
     BRTR N 0 A_SpawnItemEx("RedFlare", 0, 0, 38, 0, 0, 0, 0, SXF_SETMASTER | SXF_CLIENTSIDE)
   SpawnFire:
     BRTR N 1 Light("BRASSTORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(34, 36), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
     Loop
-
   Inactive:
-    // [Blue Shadow] This is needed so the that the torch skips playing the below sound if it
-    // was set to spawn unlit (by setting the "Dormant" flag via the map editor). The sound
-    // skipping is only done once, of course, when the torch first spawns.
-    BRTR N 0 A_JumpIf(!user_init, 2)
-
-    BRTR N 0 A_PlaySound("Torch/Die")
-
-    // [Blue Shadow] When spawned unlit, the Inactive state is entered immediately, thus the
-    // CVAR's value cannot be checked and stored in the variable from the Spawn state. This is
-    // why this is here.
-    BRTR N 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-
-    // [Blue Shadow] Removes the flare when deactivated.
-    BRTR N 0 A_RemoveChildren(TRUE, RMVF_MISC)
-
-    BRTR N -1
-    Stop
+    BRTR N 0
+    Goto Super::Inactive
   }
 }
 
-Actor TOTLTwinedTorch : SwitchableDecoration replaces ZTwinedTorch
+Actor TOTLTwinedTorch : HPSwitchableLightSource replaces ZTwinedTorch
 {
   Radius 10
   Height 64
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    TWTR A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    TWTR A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    TWTR A 0 A_JumpIf(user_style, "Particles")
   Normal:
     TWTR ABCDEFGH 4 Bright Light("TWINETORCH")
     Loop
@@ -235,12 +236,8 @@ Actor TOTLTwinedTorch : SwitchableDecoration replaces ZTwinedTorch
     TWTR J 1 Light("TWINETORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-3, 3), Random(58, 60), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
     Loop
   Inactive:
-    TWTR I 0 A_JumpIf(!user_init, 2)
-    TWTR I 0 A_PlaySound("Torch/Die")
-    TWTR I 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    TWTR I 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    TWTR I -1
-    Stop
+    TWTR I 0
+    Goto Super::Inactive
   }
 }
 
@@ -254,22 +251,12 @@ ACTOR TOTLTwinedTorchUnlit : TOTLTwinedTorch replaces ZTwinedTorchUnlit
   }
 }
 
-Actor ToTLSkullTorch : SwitchableDecoration replaces FireThing
+Actor ToTLSkullTorch : HPSwitchableLightSource replaces FireThing
 {
   Radius 5
   Height 28
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    FSKL A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    FSKL A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    FSKL A 0 A_JumpIf(user_style, "Particles")
   Normal:
     FSKL A 4 Bright Light("BRASSTORCH")
     FSKL B 3 Bright Light("BRASSTORCH")
@@ -287,31 +274,17 @@ Actor ToTLSkullTorch : SwitchableDecoration replaces FireThing
     FSKL J 1 Light("BRASSTORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(26, 28), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
     Loop
   Inactive:
-    FSKL J 0 A_JumpIf(!user_init, 2)
-    FSKL J 0 A_PlaySound("Torch/Die")
-    FSKL J 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    FSKL J 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    FSKL J -1
-    Stop
+    FSKL J 0
+    Goto Super::Inactive
   }
 }
 
-Actor TOTLFireBrazier : SwitchableDecoration replaces FireBrazier
+Actor TOTLFireBrazier : HPSwitchableLightSource replaces FireBrazier
 {
   Radius 16
   Height 44
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    KFR1 A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    KFR1 A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    KFR1 A 0 A_JumpIf(user_style, "Particles")
   Normal:
     KFR1 ABCDEFGH 3 Bright Light("FIREBRAZ")
     Loop
@@ -322,31 +295,17 @@ Actor TOTLFireBrazier : SwitchableDecoration replaces FireBrazier
     //KFR1 I 1 Light("FIREBRAZ") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(48, 50), 0, 0, 0, 0, 128)
     Loop
   Inactive:
-    KFR1 I 0 A_JumpIf(!user_init, 2)
-    KFR1 I 0 A_PlaySound("Torch/Die")
-    KFR1 I 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    KFR1 I 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    KFR1 I -1
-    Stop
+    KFR1 I 0
+    Goto Super::Inactive
   }
 }
 
-Actor ToTLSerpentTorch : SwitchableDecoration replaces SerpentTorch
+Actor ToTLSerpentTorch : HPSwitchableLightSource replaces SerpentTorch
 {
   Radius 12
   Height 54
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    SRTC A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    SRTC A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    SRTC A 0 A_JumpIf(user_style, "Particles")
   Normal:
     SRTC ABC 4 /*Bright*/ Light("SERPTORCH")
     Loop
@@ -356,33 +315,19 @@ Actor ToTLSerpentTorch : SwitchableDecoration replaces SerpentTorch
     SRTC D 1 Light("SERPTORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(50, 52), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
     Loop
   Inactive:
-    SRTC D 0 A_JumpIf(!user_init, 2)
-    SRTC D 0 A_PlaySound("Torch/Die")
-    SRTC D 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    SRTC D 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    SRTC D -1
-    Stop
+    SRTC D 0
+    Goto Super::Inactive
   }
 }
 
-Actor SnakeBrazierBrass : SwitchableDecoration 32484
+Actor SnakeBrazierBrass : HPSwitchableLightSource 32484
 {
   //$Category Lights
   //$Title Snake Brazier (Brass)
   Radius 12
   Height 56
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    BNAK A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    BNAK A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    BNAK A 0 A_JumpIf(user_style, "Particles")
   Normal:
     BNAK ABCDEFG 3 Bright Light("SNAKETORCH")
     Loop
@@ -393,33 +338,19 @@ Actor SnakeBrazierBrass : SwitchableDecoration 32484
     //BNAK H 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
     Loop
   Inactive:
-    BNAK H 0 A_JumpIf(!user_init, 2)
-    BNAK H 0 A_PlaySound("Torch/Die")
-    BNAK H 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    BNAK H 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    BNAK H -1
-    Stop
+    BNAK H 0
+    Goto Super::Inactive
   }
 }
 
-Actor SnakeBrazierGold : SwitchableDecoration 32485
+Actor SnakeBrazierGold : HPSwitchableLightSource 32485
 {
   //$Category Lights
   //$Title Snake Brazier (Gold)
   Radius 12
   Height 56
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    YNAK A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    YNAK A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    YNAK A 0 A_JumpIf(user_style, "Particles")
   Normal:
     YNAK ABCDEFG 3 Bright Light("SNAKETORCH")
     Loop
@@ -430,33 +361,19 @@ Actor SnakeBrazierGold : SwitchableDecoration 32485
     //YNAK H 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
     Loop
   Inactive:
-    YNAK H 0 A_JumpIf(!user_init, 2)
-    YNAK H 0 A_PlaySound("Torch/Die")
-    YNAK H 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    YNAK H 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    YNAK H -1
-    Stop
+    YNAK H 0
+    Goto Super::Inactive
   }
 }
 
-Actor SnakeBrazierJade : SwitchableDecoration 32486
+Actor SnakeBrazierJade : HPSwitchableLightSource 32486
 {
   //$Category Lights
   //$Title Snake Brazier (Jade)
   Radius 12
   Height 56
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    GNAK A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    GNAK A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    GNAK A 0 A_JumpIf(user_style, "Particles")
   Normal:
     GNAK ABCDEFG 3 Bright Light("SNAKETORCH")
     Loop
@@ -467,32 +384,20 @@ Actor SnakeBrazierJade : SwitchableDecoration 32486
     //GNAK H 1 Light("SNAKETORCH") A_SpawnItemEx("RedFire2", Random(-3, 3), Random(-3, 3), Random(68, 70), 0, 0, 0, 0, 128)
     Loop
   Inactive:
-    GNAK H 0 A_JumpIf(!user_init, 2)
-    GNAK H 0 A_PlaySound("Torch/Die")
-    GNAK H 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    GNAK H 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    GNAK H -1
-    Stop
+    GNAK H 0
+    Goto Super::Inactive
   }
 }
 
-Actor TOTLWallTorch : SwitchableDecoration replaces WallTorch
+Actor TOTLWallTorch : HPSwitchableLightSource replaces WallTorch
 {
   Radius 6
   Height 16
   +NoGravity
   +FixMapThingPos
-  var int user_init;
-  var int user_style;
+  -Solid
   States
   {
-  Spawn:
-    WTRH A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    WTRH A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    WTRH A 0 A_JumpIf(user_style, "Particles")
   Normal:
     WTRH ABC 6 Bright Light("WALLTORCH")
     Loop
@@ -502,16 +407,12 @@ Actor TOTLWallTorch : SwitchableDecoration replaces WallTorch
     WTRH D 1 Light("WALLTORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(71, 73), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
     Loop
   Inactive:
-    WTRH D 0 A_JumpIf(!user_init, 2)
-    WTRH D 0 A_PlaySound("Torch/Die")
-    WTRH D 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    WTRH D 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    WTRH D -1
-    Stop
+    WTRH D 0
+    Goto Super::Inactive
   }
 }
 
-Actor ZWallTorchNew : SwitchableDecoration replaces ZWallTorch 16106
+Actor ZWallTorchNew : HPSwitchableLightSource replaces ZWallTorch 16106
 {
   //$Category Lights
   //$Title Wall Torch (Hexen, Lit)
@@ -520,17 +421,9 @@ Actor ZWallTorchNew : SwitchableDecoration replaces ZWallTorch 16106
   Height 16
   +NoGravity
   +FixMapThingPos
-  var int user_init;
-  var int user_style;
+  -Solid
   States
   {
-  Spawn:
-    WLTR A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    WLTR A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    WLTR A 0 A_JumpIf(user_style, "Particles")
   Normal:
     WLTR ABCDEFGH 5 Bright Light("WALLTORCH")
     Loop
@@ -540,12 +433,8 @@ Actor ZWallTorchNew : SwitchableDecoration replaces ZWallTorch 16106
     WLTR I 1 Light("WALLTORCH") A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(71, 73), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
     Loop
   Inactive:
-    WLTR I 0 A_JumpIf(!user_init, 2)
-    WLTR I 0 A_PlaySound("Torch/Die")
-    WLTR I 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    WLTR I 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    WLTR I -1
-    Stop
+    WLTR I 0
+    Goto Super::Inactive
   }
 }
 
@@ -554,6 +443,7 @@ Actor ZWallTorchUnlitNew : ZWallTorchNew replaces ZWallTorchUnlit 16107
   //$Category Lights
   //$Title Wall Torch (Hexen, Unlit)
   //$Sprite WLTRI0
+  //$Obsolete Use "Wall Torch (Hexen, Lit)" in conjunction with the "Dormant" flag
   States
   {
   Spawn:
@@ -563,25 +453,15 @@ Actor ZWallTorchUnlitNew : ZWallTorchNew replaces ZWallTorchUnlit 16107
 }
 
 // Based on the Minotaur torch from TCotD2
-Actor ZFireBullNew : SwitchableDecoration Replaces ZFireBull 16110
+Actor ZFireBullNew : HPSwitchableLightSource Replaces ZFireBull 16110
 {
   //$Category Lights
   //$Title Maulotaur Brazier (Lit)
   //$Sprite FBULA0
   Radius 20
   Height 80
-  +Solid
-  var int user_init;
-  var int user_style;
   States
   {
-  Spawn:
-    FBUL A 0 NoDelay A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    Goto ChooseStyle
-  Active:
-    FBUL A 0 A_PlaySound("Torch/Light")
-  ChooseStyle:
-    FBUL A 0 A_JumpIf(user_style, "Particles")
   Normal:
     FBUL ABCDEFG 4 Bright Light("FIREBULL")
     Loop
@@ -591,12 +471,8 @@ Actor ZFireBullNew : SwitchableDecoration Replaces ZFireBull 16110
     FBUL K 1 Light("FIREBULL") A_SpawnItemEx("BigRedFire", Random(-2, 2), Random(-2, 2), Random(38, 40), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(2500, 3000), 0, SXF_CLIENTSIDE)
     Loop
   Inactive:
-    FBUL H 0 A_JumpIf(!user_init, 2)
-    FBUL H 0 A_PlaySound("Torch/Die")
-    FBUL H 0 A_SetUserVar("user_style", CallACS("HPack_GetLightSourceStyle"))
-    FBUL H 0 A_RemoveChildren(TRUE, RMVF_MISC)
-    FBUL H -1
-    Stop
+    FBUL H 0
+    Goto Super::Inactive
   }
 }
 
@@ -605,6 +481,7 @@ Actor ZFireBullUnlitNew : ZFireBullNew replaces ZFireBullUnlit 16111
   //$Category Lights
   //$Title Maulotaur Brazier (Unlit)
   //$Sprite FBULH0
+  //$Obsolete Use "Maulotaur Brazier (Lit)" in conjunction with the "Dormant" flag
   States
   {
   Spawn:

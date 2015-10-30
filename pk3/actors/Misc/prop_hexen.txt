@@ -901,6 +901,7 @@ ACTOR HPZTwinedTorchUnlit : RandomSpawner 16105
 	//$Category Lights
 	//$Title Twined Torch (Unlit)
 	//$Sprite TWTRI0
+	//$Obsolete Use "Twined Torch (Lit)" in conjunction with the "Dormant" flag
 	DropItem "ZTwinedTorchUnlit"
 }
 
