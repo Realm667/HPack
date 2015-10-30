@@ -11,6 +11,17 @@
 #include "Brightmaps/Sprites/Items/PhoenixRod/Brightmaps.gl"
 #include "Brightmaps/Sprites/Items/DragonClaw/Brightmaps.gl"
 
+#include "brightmaps/Sprites/Misc/brightmaps.gl"
+
+#include "brightmaps/Sprites/Monsters/Disciple/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/DSparil/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/Gargoyle/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/Golem/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/IronLich/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/Sabreclaw/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/UndeadWarrior/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/Weredragon/brightmaps.gl"
+
 brightmap sprite playf1		{ map "Brightmaps/Sprites/playf1.png"	disablefullbright	}
 brightmap sprite playf2f8	{ map "Brightmaps/Sprites/playf2f8.png"	disablefullbright	}
 brightmap sprite playf3f7	{ map "Brightmaps/Sprites/playf3f7.png"	disablefullbright	}

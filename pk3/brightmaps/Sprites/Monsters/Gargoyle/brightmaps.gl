@@ -1,0 +1,143 @@
+brightmap sprite IMPXD1
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD1.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXD2
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD2.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXD3
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD3.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXD4
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD4.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXD5
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD5.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXD6
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD6.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXD7
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD7.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXD8
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXD8.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE1
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE1.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE2
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE2.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE3
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE3.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE4
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE4.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE5
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE5.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE6
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE6.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE7
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE7.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXE8
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXE8.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF1
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF1.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF2
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF2.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF3
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF3.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF4
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF4.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF5
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF5.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF6
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF6.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF7
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF7.png"
+	disablefullbright
+}
+
+brightmap sprite IMPXF8
+{
+	map "brightmaps/sprites/monsters/gargoyle/IMPXF8.png"
+	disablefullbright
+}

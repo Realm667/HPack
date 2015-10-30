@@ -1,0 +1,23 @@
+brightmap sprite BEASI1
+{
+	map "brightmaps/sprites/monsters/weredragon/BEASI1.png"
+	disablefullbright
+}
+
+brightmap sprite BEASI2I8
+{
+	map "brightmaps/sprites/monsters/weredragon/BEASI2I8.png"
+	disablefullbright
+}
+
+brightmap sprite BEASI3I7
+{
+	map "brightmaps/sprites/monsters/weredragon/BEASI3I7.png"
+	disablefullbright
+}
+
+brightmap sprite BEASI4I6
+{
+	map "brightmaps/sprites/monsters/weredragon/BEASI4I6.png"
+	disablefullbright
+}

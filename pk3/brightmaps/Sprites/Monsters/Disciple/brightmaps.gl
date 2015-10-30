@@ -1,0 +1,125 @@
+brightmap sprite WZRDC1
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDC1.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDC2C8
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDC2C8.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDC3C7
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDC3C7.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDC4C6
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDC4C6.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDC5
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDC5.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDD1
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDD1.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDD2D8
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDD2D8.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDD3D7
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDD3D7.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDD4D6
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDD4D6.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDD5
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDD5.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDe1
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDe1.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDe2e8
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDe2e8.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDe3e7
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDe3e7.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDF0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDF0.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDG0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDG0.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDH0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDH0.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDI0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDI0.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDJ0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDJ0.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDK0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDK0.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDl0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDl0.png"
+	disablefullbright
+}
+
+brightmap sprite WZRDm0
+{
+	map "brightmaps/sprites/monsters/disciple/WZRDm0.png"
+	disablefullbright
+}

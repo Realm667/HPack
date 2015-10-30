@@ -1,0 +1,47 @@
+brightmap sprite CHDLA0
+{
+	map "brightmaps/sprites/misc/CHDLA0.png"
+	disablefullbright
+}
+
+brightmap sprite CHDLB0
+{
+	map "brightmaps/sprites/misc/CHDLB0.png"
+	disablefullbright
+}
+
+brightmap sprite CHDLC0
+{
+	map "brightmaps/sprites/misc/CHDLC0.png"
+	disablefullbright
+}
+
+brightmap sprite vlcoa0
+{
+	map "brightmaps/sprites/misc/vlcoa0.png"
+	disablefullbright
+}
+
+brightmap sprite vlcob0
+{
+	map "brightmaps/sprites/misc/vlcob0.png"
+	disablefullbright
+}
+
+brightmap sprite vlcoc0
+{
+	map "brightmaps/sprites/misc/vlcoc0.png"
+	disablefullbright
+}
+
+brightmap sprite vlcod0
+{
+	map "brightmaps/sprites/misc/vlcod0.png"
+	disablefullbright
+}
+
+brightmap sprite vlcoe0
+{
+	map "brightmaps/sprites/misc/vlcoe0.png"
+	disablefullbright
+}

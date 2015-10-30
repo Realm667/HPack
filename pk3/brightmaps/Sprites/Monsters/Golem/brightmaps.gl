@@ -1,0 +1,53 @@
+brightmap sprite mummh1
+{
+	map "brightmaps/sprites/monsters/golem/mummh1.png"
+	disablefullbright
+}
+
+brightmap sprite mummh2
+{
+	map "brightmaps/sprites/monsters/golem/mummh2.png"
+	disablefullbright
+}
+
+brightmap sprite mummh3
+{
+	map "brightmaps/sprites/monsters/golem/mummh3.png"
+	disablefullbright
+}
+
+brightmap sprite mummh7
+{
+	map "brightmaps/sprites/monsters/golem/mummh7.png"
+	disablefullbright
+}
+
+brightmap sprite mummh8
+{
+	map "brightmaps/sprites/monsters/golem/mummh8.png"
+	disablefullbright
+}
+
+brightmap sprite mumms0
+{
+	map "brightmaps/sprites/monsters/golem/mumms0.png"
+	disablefullbright
+}
+
+brightmap sprite mummt0
+{
+	map "brightmaps/sprites/monsters/golem/mummt0.png"
+	disablefullbright
+}
+
+brightmap sprite mummu0
+{
+	map "brightmaps/sprites/monsters/golem/mummu0.png"
+	disablefullbright
+}
+
+brightmap sprite mummv0
+{
+	map "brightmaps/sprites/monsters/golem/mummv0.png"
+	disablefullbright
+}

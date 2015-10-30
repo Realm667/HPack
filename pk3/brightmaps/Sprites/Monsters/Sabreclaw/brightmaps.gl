@@ -1,0 +1,35 @@
+brightmap sprite CLNKI0
+{
+	map "brightmaps/sprites/monsters/sabreclaw/CLNKI0.png"
+	disablefullbright
+}
+
+brightmap sprite CLNKJ0
+{
+	map "brightmaps/sprites/monsters/sabreclaw/CLNKJ0.png"
+	disablefullbright
+}
+
+brightmap sprite CLNKK0
+{
+	map "brightmaps/sprites/monsters/sabreclaw/CLNKK0.png"
+	disablefullbright
+}
+
+brightmap sprite CLNKL0
+{
+	map "brightmaps/sprites/monsters/sabreclaw/CLNKL0.png"
+	disablefullbright
+}
+
+brightmap sprite CLNKM0
+{
+	map "brightmaps/sprites/monsters/sabreclaw/CLNKM0.png"
+	disablefullbright
+}
+
+brightmap sprite CLNKN0
+{
+	map "brightmaps/sprites/monsters/sabreclaw/CLNKN0.png"
+	disablefullbright
+}

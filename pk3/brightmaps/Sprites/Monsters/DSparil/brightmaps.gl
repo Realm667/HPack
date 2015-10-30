@@ -1,0 +1,191 @@
+brightmap sprite SDTHA0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHA0.png"
+	disablefullbright
+}
+
+brightmap sprite SDTHB0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHB0.png"
+	disablefullbright
+}
+
+brightmap sprite SDTHC0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHC0.png"
+	disablefullbright
+}
+
+brightmap sprite SDTHD0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHD0.png"
+	disablefullbright
+}
+
+brightmap sprite SDTHE0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHE0.png"
+	disablefullbright
+}
+
+brightmap sprite SDTHF0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHF0.png"
+	disablefullbright
+}
+
+brightmap sprite SDTHG0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHG0.png"
+	disablefullbright
+}
+
+brightmap sprite SDTHH0
+{
+	map "brightmaps/sprites/monsters/dsparil/SDTHH0.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R1
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R1.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R2
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R2.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R3
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R3.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R4
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R4.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R5
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R5.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R6
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R6.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R7
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R7.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2R8
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2R8.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S1
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S1.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S2
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S2.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S3
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S3.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S4
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S4.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S5
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S5.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S6
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S6.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S7
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S7.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2S8
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2S8.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T1
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T1.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T2
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T2.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T3
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T3.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T4
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T4.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T5
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T5.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T6
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T6.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T7
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T7.png"
+	disablefullbright
+}
+
+brightmap sprite SOR2T8
+{
+	map "brightmaps/sprites/monsters/dsparil/SOR2T8.png"
+	disablefullbright
+}

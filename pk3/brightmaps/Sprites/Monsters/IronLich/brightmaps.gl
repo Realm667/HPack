@@ -1,0 +1,53 @@
+brightmap sprite LICHB1
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHB1.png"
+	disablefullbright
+}
+
+brightmap sprite LICHB2B8
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHB2B8.png"
+	disablefullbright
+}
+
+brightmap sprite LICHB3M7
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHB3B7.png"
+	disablefullbright
+}
+
+brightmap sprite LICHC0
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHC0.png"
+	disablefullbright
+}
+
+brightmap sprite LICHD0
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHD0.png"
+	disablefullbright
+}
+
+brightmap sprite LICHE0
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHE0.png"
+	disablefullbright
+}
+
+brightmap sprite LICHF0
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHF0.png"
+	disablefullbright
+}
+
+brightmap sprite LICHG0
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHG0.png"
+	disablefullbright
+}
+
+brightmap sprite LICHH0
+{
+	map "brightmaps/sprites/monsters/ironlich/LICHH0.png"
+	disablefullbright
+}

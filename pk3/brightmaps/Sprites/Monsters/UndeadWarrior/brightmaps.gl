@@ -1,0 +1,349 @@
+brightmap sprite kniga1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga1.png"
+}
+
+brightmap sprite kniga2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga2.png"
+}
+
+brightmap sprite kniga3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga3.png"
+}
+
+brightmap sprite kniga4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga4.png"
+}
+
+brightmap sprite kniga5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga5.png"
+}
+
+brightmap sprite kniga6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga6.png"
+}
+
+brightmap sprite kniga7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga7.png"
+}
+
+brightmap sprite kniga8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/kniga8.png"
+}
+
+brightmap sprite knigb1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb1.png"
+}
+
+brightmap sprite knigb2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb2.png"
+}
+
+brightmap sprite knigb3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb3.png"
+}
+
+brightmap sprite knigb4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb4.png"
+}
+
+brightmap sprite knigb5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb5.png"
+}
+
+brightmap sprite knigb6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb6.png"
+}
+
+brightmap sprite knigb7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb7.png"
+}
+
+brightmap sprite knigb8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigb8.png"
+}
+
+brightmap sprite knigc1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc1.png"
+}
+
+brightmap sprite knigc2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc2.png"
+}
+
+brightmap sprite knigc3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc3.png"
+}
+
+brightmap sprite knigc4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc4.png"
+}
+
+brightmap sprite knigc5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc5.png"
+}
+
+brightmap sprite knigc6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc6.png"
+}
+
+brightmap sprite knigc7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc7.png"
+}
+
+brightmap sprite knigc8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigc8.png"
+}
+
+brightmap sprite knigd1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd1.png"
+}
+
+brightmap sprite knigd2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd2.png"
+}
+
+brightmap sprite knigd3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd3.png"
+}
+
+brightmap sprite knigd4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd4.png"
+}
+
+brightmap sprite knigd5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd5.png"
+}
+
+brightmap sprite knigd6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd6.png"
+}
+
+brightmap sprite knigd7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd7.png"
+}
+
+brightmap sprite knigd8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigd8.png"
+}
+
+brightmap sprite knige1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige1.png"
+}
+
+brightmap sprite knige2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige2.png"
+}
+
+brightmap sprite knige3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige3.png"
+}
+
+brightmap sprite knige4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige4.png"
+}
+
+brightmap sprite knige5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige5.png"
+}
+
+brightmap sprite knige6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige6.png"
+}
+
+brightmap sprite knige7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige7.png"
+}
+
+brightmap sprite knige8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knige8.png"
+}
+
+brightmap sprite knigf1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf1.png"
+}
+
+brightmap sprite knigf2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf2.png"
+}
+
+brightmap sprite knigf3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf3.png"
+}
+
+brightmap sprite knigf4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf4.png"
+}
+
+brightmap sprite knigf5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf5.png"
+}
+
+brightmap sprite knigf6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf6.png"
+}
+
+brightmap sprite knigf7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf7.png"
+}
+
+brightmap sprite knigf8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigf8.png"
+}
+
+brightmap sprite knigg1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg1.png"
+}
+
+brightmap sprite knigg2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg2.png"
+}
+
+brightmap sprite knigg3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg3.png"
+}
+
+brightmap sprite knigg4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg4.png"
+}
+
+brightmap sprite knigg5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg5.png"
+}
+
+brightmap sprite knigg6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg6.png"
+}
+
+brightmap sprite knigg7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg7.png"
+}
+
+brightmap sprite knigg8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigg8.png"
+}
+
+brightmap sprite knigh1
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh1.png"
+}
+
+brightmap sprite knigh2
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh2.png"
+}
+
+brightmap sprite knigh3
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh3.png"
+}
+
+brightmap sprite knigh4
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh4.png"
+}
+
+brightmap sprite knigh5
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh5.png"
+}
+
+brightmap sprite knigh6
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh6.png"
+}
+
+brightmap sprite knigh7
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh7.png"
+}
+
+brightmap sprite knigh8
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigh8.png"
+}
+
+brightmap sprite knigi0
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigi0.png"
+}
+
+brightmap sprite knigj0
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigj0.png"
+}
+
+brightmap sprite knigk0
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigk0.png"
+}
+
+brightmap sprite knigl0
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigl0.png"
+}
+
+brightmap sprite knigm0
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knigm0.png"
+}
+
+brightmap sprite knign0
+{
+	map "brightmaps/sprites/monsters/undeadwarrior/knign0.png"
+}
