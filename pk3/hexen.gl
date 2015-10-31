@@ -1275,7 +1275,7 @@ flickerlight2 BCANDLE
 
 object ZBlueCandle
 {
-    frame CAND { light BCANDLE }
+    frame BCAN { light BCANDLE }
 }
 
 // Small flame
