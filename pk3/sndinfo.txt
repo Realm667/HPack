@@ -564,6 +564,8 @@ world/glassbreak	DSGLASS1
 world/glassshatter	GLASS5
 $random world/glass		{ world/glassbreak  world/glassshatter }
 
+// ZCorpseLynchedNoHeart's blood drip (Hexen)
+Drip                    blddrp1
 
 ;===========================================================================
 ; 
