@@ -118,6 +118,8 @@ actor FirePod : BlastPod 20010
 	//$Category Obstacles
 	//$Title Pod (Fire Variant)
    DamageFactor Fire, 0.0
+   Obituary "$OB_LAVA"
+   +NEVERTARGET
    States
    {
    //* // Old states
@@ -164,7 +166,10 @@ actor FirePod : BlastPod 20010
 
 ACTOR FirePodGoo : PodGoo
 {
+	DamageType "Fire"
 	+DONTSPLASH
+	+NODAMAGETHRUST
+	var int user_count;
 	States
 	{
 	Spawn:
@@ -176,26 +181,16 @@ ACTOR FirePodGoo : PodGoo
 	// */// end of new states
 		Loop
 	Death:
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 5 A_SpawnItemEx ("FirePodGooFireSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER, 0)
+		TNT1 A 0 A_PlaySound("SFX/FireStart", CHAN_7)
+		TNT1 A 0 A_PlaySound("SFX/FireLoop1", CHAN_6, 1.0, TRUE)
+	Explode:
+		TNT1 A 0 A_Explode(32, 32)
+		TNT1 AAAAA 1 Light("FireSpawnerSmall") A_GiveInventory("HPSpawnSmallFire")
+		TNT1 A 0 A_SetUserVar("user_count", user_count + 1)
+		TNT1 A 0 A_JumpIf(user_count < 34, "Explode")
+		TNT1 A 0 A_PlaySound("SFX/FireDie", CHAN_6)
 		Stop
 	}
-}
-
-// This actor is needed to fix the fancy SFX stuff. This is the actor that
-// deals damage for the pod goo flames, so it has damagetype fire.
-// NOTE: FireSpawner had to be modified to make it work!
-ACTOR FirePodGooFireSpawner : FireSpawner
-{
-   DamageType Fire
-   Args 0, 0, 1, 2, 1
-   +NODAMAGETHRUST
-   States
-   {
-   Spawn:
-      TNT1 A 0
-      TNT1 A 0 A_Explode(32,32)
-      Goto "Countdown"
-   }
 }
 
 // Important note: this does _not_ have DamageType Fire, and this is _not_

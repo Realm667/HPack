@@ -21,7 +21,3 @@ Flickerlight FireSpawnerLarge
 	SecondarySize 128
 	Chance 0.6
 }
-
-Object SmallFlame { Frame TNT1 { Light FireSpawnerSmall } }
-Object MediumFlame { Frame TNT1 { Light FireSpawnerMedium } }
-Object LargeFlame { Frame TNT1 { Light FireSpawnerLarge } }
