@@ -1,4 +1,3 @@
-
 //**************************************************************************
 //**
 //** zdefs.acs
@@ -28,6 +27,7 @@
 #define TEXFLAG_TOP				1
 #define TEXFLAG_MIDDLE			2
 #define TEXFLAG_BOTTOM			4
+#define TEXFLAG_ADDOFFSET		8
 
 #define GAME_SINGLE_PLAYER      0
 #define GAME_NET_COOPERATIVE    1
@@ -97,6 +97,7 @@
 #define PROP_INSTANTWEAPONSWITCH        2
 #define PROP_FLY			3
 #define PROP_TOTALLYFROZEN		4
+#define PROP_BUDDHA			16
 
 // The following properties correspond to powers given by certain items
 #define PROP_INVULNERABILITY		5
@@ -191,6 +192,7 @@
 #define CR_PURPLE				19
 #define CR_DARKGRAY				20
 #define CR_DARKGREY				20
+#define CR_CYAN					21
 
 // HUD message types --------------------------------------------------------
 
@@ -201,11 +203,32 @@
 
 // OR this with one of the above to log the hudmessage to the console.
 // i.e. instead of HUDMSG_PLAIN, you can use HUDMSG_PLAIN | HUDMSG_LOG
-#define HUDMSG_LOG	0x80000000
+#define HUDMSG_LOG					0x80000000
 
 // OR this with one of the above if the color you passed is a string
 // instead of one of the CR_ constants.
-#define HUDMSG_COLORSTRING	0x40000000
+#define HUDMSG_COLORSTRING			0x40000000
+
+// OR this with one of the above to use additive blending when drawing the
+// HUD message.
+#define HUDMSG_ADDBLEND				0x20000000
+
+// OR this with one of the above to use the extra alpha parameter
+#define HUDMSG_ALPHA				0x10000000
+
+// Or this with one of the above to not wrap lines
+#define HUDMSG_NOWRAP				0x08000000
+
+// HUD message layers; these are not flags
+#define HUDMSG_LAYER_OVERHUD		0x00000000
+#define HUDMSG_LAYER_UNDERHUD		0x00001000
+#define HUDMSG_LAYER_OVERMAP		0x00002000
+
+// HUD message visibility flags
+#define HUDMSG_NOTWITH3DVIEW		0x00010000
+#define HUDMSG_NOTWITHFULLMAP		0x00020000
+#define HUDMSG_NOTWITHOVERLAYMAP	0x00040000
+
 
 // "Scripted" Marine weapon types -------------------------------------------
 
@@ -249,16 +272,42 @@
 #define APROP_Score			22
 #define APROP_Notrigger		23
 #define APROP_DamageFactor	24
+#define APROP_MasterTID 	25
+#define APROP_TargetTID 	26
+#define APROP_TracerTID 	27
+#define APROP_Waterlevel	28
+#define APROP_ScaleX        29
+#define APROP_ScaleY        30
+#define APROP_Dormant		31
+#define APROP_Mass			32
+#define APROP_Accuracy      33
+#define APROP_Stamina       34
+#define APROP_Height		35
+#define APROP_Radius		36
+#define APROP_Reactiontime	37
+#define APROP_MeleeRange	38
+#define APROP_ViewHeight	39
+#define APROP_AttackZOffset	40
+#define APROP_StencilColor	41
+#define APROP_Friction		42
+#define APROP_DamageMultiplier	43
 
 // Render Styles ------------------------------------------------------------
 
-#define STYLE_None		0	// Do not draw
+#define STYLE_None			0	// Do not draw
 #define STYLE_Normal		1	// Normal; just copy the image to the screen
-#define STYLE_Fuzzy		2	// Draw silhouette using "fuzz" effect
+#define STYLE_Fuzzy			2	// Draw silhouette using "fuzz" effect
 #define STYLE_SoulTrans		3	// Draw translucent with amount in r_transsouls
-#define STYLE_OptFuzzy		4	// Draw as fuzzy or translucent, based on user preference
+#define STYLE_OptFuzzy		4	// Draw as fuzzy, translucent or shadow, based on user preference
+#define STYLE_Stencil		5	// Draw as solid color
+#define STYLE_AddStencil	6	// Draw as additive solid color
+#define STYLE_AddShaded		7	// 
 #define STYLE_Translucent	64	// Draw translucent
-#define STYLE_Add		65	// Draw additive
+#define STYLE_Add			65	// Draw additive
+#define STYLE_Shaded		66	// 
+#define STYLE_TranslucentStencil 67
+#define STYLE_Shadow		68	// Draw dark translucent stencil
+#define STYLE_Subtract  69  // Draw subtractive
 
 // Properties you can use with GetLevelInfo() -------------------------------
 
@@ -283,6 +332,8 @@
 #define PLAYERINFO_MOVEBOB		5
 #define PLAYERINFO_STILLBOB		6
 #define PLAYERINFO_PLAYERCLASS	7
+#define PLAYERINFO_FOV			8
+#define PLAYERINFO_DESIREDFOV	9
 
 
 // Flags for ReplaceTextures ------------------------------------------------
@@ -499,9 +550,6 @@
 #define T_SNAKEPROJECTILEBIG    139
 #define T_WIZARDSHOT            140
 
-// All D'Sparil teleport destinations must be spawned before D'Sparil alone.
-// D'Sparil can be spawned alone manually, and he is also spawned automatically
-// when he "dies" on his serpent.
 #define T_DSPARILTELEPORTDEST   141
 #define T_DSPARILONSERPENT      142
 #define T_DSPARILALONE          143
@@ -636,6 +684,103 @@
 #define SECSEQ_FULLHEIGHT		3
 #define SECSEQ_INTERIOR			4
 
+// Channels for PlaySound and StopSound
+
+#define CHAN_AUTO				0
+#define CHAN_WEAPON				1
+#define CHAN_VOICE				2
+#define CHAN_ITEM				3
+#define CHAN_BODY				4
+#define CHAN_5					5
+#define CHAN_6					6
+#define CHAN_7					7
+
+// Modifier flags for PlaySound
+
+#define CHAN_LISTENERZ			8
+#define CHAN_MAYBE_LOCAL		16
+#define CHAN_UI					32
+#define CHAN_NOPAUSE			64
+
+// Standard attenuation values for PlaySound
+
+#define ATTN_NONE				0		// full volume the entire level
+#define ATTN_NORM				1.0
+#define ATTN_IDLE				1.001
+#define ATTN_STATIC				3.0		// dimish very rapidly with distance
+
+// Identifiers for PlayActorSound
+
+#define SOUND_See				0
+#define SOUND_Attack			1
+#define SOUND_Pain				2
+#define SOUND_Death				3
+#define SOUND_Active			4
+#define SOUND_Use				5
+#define SOUND_Bounce			6
+#define SOUND_WallBounce		7
+#define SOUND_CrushPain			8
+#define SOUND_Howl				9
+
+// Flags for SpawnDecal
+
+#define SDF_ABSANGLE			1
+#define SDF_PERMANENT			2
+
+// Actor pointer selectors
+
+#DEFINE	AAPTR_DEFAULT 0
+#DEFINE	AAPTR_NULL 0x1
+#DEFINE	AAPTR_TARGET 0x2
+#DEFINE	AAPTR_MASTER 0x4
+#DEFINE	AAPTR_TRACER 0x8
+
+#DEFINE	AAPTR_PLAYER_GETTARGET 0x10
+#DEFINE	AAPTR_PLAYER_GETCONVERSATION 0x20
+
+#DEFINE	AAPTR_PLAYER1 0x40
+#DEFINE	AAPTR_PLAYER2 0x80
+#DEFINE	AAPTR_PLAYER3 0x100
+#DEFINE	AAPTR_PLAYER4 0x200
+#DEFINE	AAPTR_PLAYER5 0x400
+#DEFINE	AAPTR_PLAYER6 0x800
+#DEFINE	AAPTR_PLAYER7 0x1000
+#DEFINE	AAPTR_PLAYER8 0x2000
+
+#DEFINE AAPTR_FRIENDPLAYER 0x4000
+#DEFINE AAPTR_GET_LINETARGET 0x8000
+
+// Actor pointer operation flags
+
+#DEFINE PTROP_UNSAFETARGET 1
+#DEFINE PTROP_UNSAFEMASTER 2
+#DEFINE PTROP_NOSAFEGUARDS PTROP_UNSAFETARGET |PTROP_UNSAFEMASTER 
+
+// Line activation flags
+
+#define SPAC_Cross			1		// when player crosses line
+#define SPAC_Use			2		// when player uses line
+#define SPAC_MCross			4		// when monster crosses line
+#define SPAC_Impact			8		// when projectile hits line
+#define SPAC_Push			16		// when player pushes line
+#define SPAC_PCross			32		// when projectile crosses line
+#define SPAC_UseThrough		64		// when player uses line (doesn't block)
+#define SPAC_AnyCross		128		// when anything without the TELEPORT flag crosses the line
+#define SPAC_MUse			256		// monsters can use
+#define SPAC_MPush			512		// monsters can push
+#define SPAC_UseBack		1024	// can be used from the back side
+
+#define SPAC_None			0
+
+// GetArmorInfo
+
+#define ARMORINFO_CLASSNAME		0
+#define ARMORINFO_SAVEAMOUNT		1
+#define ARMORINFO_SAVEPERCENT		2
+#define ARMORINFO_MAXABSORB		3
+#define ARMORINFO_MAXFULLABSORB		4
+#define ARMORINFO_ACTUALSAVEAMOUNT	5
+
 // ==========================================================================
 // Skulltag Definitions
 // ==========================================================================
@@ -644,6 +789,26 @@
 #define TEAM_BLUE				0
 #define TEAM_RED				1
 #define NO_TEAM					2
+
+// Team properties ----------------------------------------------------------
+#define TPROP_Name				0
+#define TPROP_Score				1
+#define TPROP_IsValid			2
+#define TPROP_NumPlayers		3
+#define TPROP_NumLivePlayers	4
+#define TPROP_TextColor			5
+#define TPROP_PlayerStartNum	6
+#define TPROP_Spread			7
+#define TPROP_Carrier			8
+#define TPROP_Assister			9
+#define TPROP_FragCount			10
+#define TPROP_DeathCount		11
+#define TPROP_WinCount			12
+#define TPROP_PointCount		13
+#define TPROP_ReturnTics		14
+#define TPROP_TeamItem			15
+#define TPROP_WinnerTheme		16
+#define TPROP_LoserTheme		17
 
 // Skulltag Invasion --------------------------------------------------------
 #define IS_WAITINGFORPLAYERS	0
@@ -678,7 +843,7 @@
 
 // Skulltag Armor/Health Items ----------------------------------------------
 #define T_MAXHEALTHBONUS		166
-#define T_MASARMORBONUS			167
+#define T_MAXARMORBONUS			167
 #define T_REDARMOR				168
 
 // Skulltag Powerups --------------------------------------------------------
@@ -708,6 +873,9 @@
 #define T_HIGHJUMP				188
 #define T_HASTE					189
 
+// Zandronum database additions ---------------------------------------------
+#define DB_ORDER_ASC			0
+#define DB_ORDER_DESC			1
 
 // Events when you have input grabbed
 
@@ -781,11 +949,15 @@
 #define CHANGELEVEL_NOMONSTERS 4
 #define CHANGELEVEL_CHANGESKILL 8
 #define CHANGELEVEL_NOINTERMISSION 16
+#define CHANGELEVEL_RESETHEALTH	32
+#define CHANGELEVEL_PRERAISEWEAPON 64
 
-#define NO_CHANGE -32767.0
+#define NO_CHANGE 32767.0
 
 #define SECF_SILENT 1
 #define SECF_NOFALLINGDAMAGE 2
+#define SECF_FLOORDROP 4
+#define SECF_NORESPAWN 8
 
 #define BLOCKF_CREATURES 1
 #define BLOCKF_MONSTERS 2
@@ -795,3 +967,111 @@
 #define BLOCKF_EVERYTHING 32
 #define BLOCKF_RAILING 64
 #define BLOCKF_USE 128
+#define BLOCKF_SIGHT 256
+#define BLOCKF_HITSCAN 512
+
+#define FOGP_DENSITY 0
+#define FOGP_OUTSIDEDENSITY 1
+#define FOGP_SKYFOG 2
+
+#define PRINTNAME_LEVELNAME -1
+#define PRINTNAME_LEVEL -2
+#define PRINTNAME_SKILL -3
+
+#define CSF_NOFAKEFLOORS 1
+#define CSF_NOBLOCKALL 2
+
+#define FHF_NORANDOMPUFFZ	1
+#define FHF_NOIMPACTDECAL	2
+
+// PickActor flags
+
+#define	PICKAF_FORCETID			1
+#define	PICKAF_RETURNTID		2
+
+// Actor flags
+#define MF_SPECIAL          0x00000001
+#define MF_SOLID            0x00000002
+#define MF_SHOOTABLE        0x00000004
+#define MF_NOSECTOR         0x00000008
+#define MF_NOBLOCKMAP       0x00000010
+#define MF_AMBUSH           0x00000020
+#define MF_JUSTHIT          0x00000040
+#define MF_JUSTATTACKED     0x00000080
+#define MF_SPAWNCEILING     0x00000100
+#define MF_NOGRAVITY        0x00000200
+#define MF_DROPOFF          0x00000400
+#define MF_PICKUP           0x00000800
+#define MF_NOCLIP           0x00001000
+#define MF_INCHASE          0x00002000
+#define MF_FLOAT            0x00004000
+#define MF_TELEPORT         0x00008000
+#define MF_MISSILE          0x00010000
+#define MF_DROPPED          0x00020000
+#define MF_SHADOW           0x00040000
+#define MF_NOBLOOD          0x00080000
+#define MF_CORPSE           0x00100000
+#define MF_INFLOAT          0x00200000
+#define MF_INBOUNCE         0x00200000
+#define MF_COUNTKILL        0x00400000
+#define MF_COUNTITEM        0x00800000
+#define MF_SKULLFLY         0x01000000
+#define MF_NOTDMATCH        0x02000000
+#define MF_SPAWNSOUNDSOURCE 0x04000000
+#define MF_FRIENDLY         0x08000000
+#define MF_UNMORPHED        0x10000000
+#define MF_NOLIFTDROP       0x20000000
+#define MF_STEALTH          0x40000000
+#define MF_ICECORPSE        0x80000000
+
+// Linedef flags
+#define ML_BLOCKING            0x00000001
+#define ML_BLOCKMONSTERS       0x00000002
+#define ML_TWOSIDED            0x00000004
+#define ML_DONTPEGTOP          0x00000008
+#define ML_DONTPEGBOTTOM       0x00000010
+#define ML_SECRET              0x00000020
+#define ML_SOUNDBLOCK          0x00000040
+#define ML_DONTDRAW            0x00000080
+#define ML_MAPPED              0x00000100
+#define ML_REPEAT_SPECIAL      0x00000200
+#define ML_ADDTRANS            0x00000400
+#define ML_MONSTERSCANACTIVATE 0x00002000
+#define ML_BLOCK_PLAYERS       0x00004000
+#define ML_BLOCKEVERYTHING     0x00008000
+#define ML_ZONEBOUNDARY        0x00010000
+#define ML_RAILING             0x00020000
+#define ML_BLOCK_FLOATERS      0x00040000
+#define ML_CLIP_MIDTEX         0x00080000
+#define ML_WRAP_MIDTEX         0x00100000
+#define ML_3DMIDTEX            0x00200000
+#define ML_CHECKSWITCHRANGE    0x00400000
+#define ML_FIRSTSIDEONLY       0x00800000
+#define ML_BLOCKPROJECTILE     0x01000000
+#define ML_BLOCKUSE            0x02000000
+#define ML_BLOCKSIGHT          0x04000000
+#define ML_BLOCKHITSCAN        0x08000000
+
+#define QF_RELATIVE		1
+#define QF_SCALEDOWN		1 << 1
+#define QF_SCALEUP		1 << 2
+#define QF_MAX			1 << 3
+#define QF_FULLINTENSITY	1 << 4
+#define QF_WAVE			1 << 5
+
+#define WARPF_ABSOLUTEOFFSET 0x1
+#define WARPF_ABSOLUTEANGLE 0x2
+#define WARPF_USECALLERANGLE 0x4
+#define WARPF_NOCHECKPOSITION 0x8
+#define WARPF_INTERPOLATE 0x10
+#define WARPF_WARPINTERPOLATION 0x20
+#define WARPF_COPYINTERPOLATION 0x40
+#define WARPF_STOP 0x80
+#define WARPF_TOFLOOR 0x100
+#define WARPF_TESTONLY 0x200
+#define WARPF_ABSOLUTEPOSITION 0x400
+#define WARPF_BOB 0x800
+#define WARPF_MOVEPTR 0x1000
+#define WARPF_USEPTR 0x2000
+#define WARPF_COPYVELOCITY 0x4000
+#define WARPF_COPYPITCH 0x8000

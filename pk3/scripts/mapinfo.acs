@@ -1,0 +1,102 @@
+//-------------------------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------------------------------------------
+
+#define HPC_MAPAUTHORU  "\cg<Unknown>"
+
+#define HPC_MAPAUTHOR0  "Shadesmaster"
+#define HPC_MAPAUTHOR1  "Captain Toenail"
+#define HPC_MAPAUTHOR2  "Tormentor667"
+#define HPC_MAPAUTHOR3  "Archi"
+#define HPC_MAPAUTHOR4  "elzee"
+#define HPC_MAPAUTHOR5  "Gothic"
+#define HPC_MAPAUTHOR6  "Pyroscourge"
+#define HPC_MAPAUTHOR7  "Gez"
+#define HPC_MAPAUTHOR8  "Icytux"
+#define HPC_MAPAUTHOR9  "Dreadopp"
+#define HPC_MAPAUTHOR10 "blood"
+#define HPC_MAPAUTHOR11 "Krumzy"
+
+//-------------------------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------------------------------------------
+
+str hpa_mapauthors[49] =
+{
+    HPC_MAPAUTHOR0,  // M1 - H1M1
+    HPC_MAPAUTHOR0,  // M2 - H1M2
+    HPC_MAPAUTHOR0,  // M3 - H1M3
+    HPC_MAPAUTHOR0,  // M4 - H1M5
+    HPC_MAPAUTHORU,  // M5 - H1M6
+    HPC_MAPAUTHOR1,  // M6 - H1M7
+    HPC_MAPAUTHOR2,  // M7 - H1M10
+    HPC_MAPAUTHOR2,  // M8 - H1M0  - Boss
+    HPC_MAPAUTHOR0,  // M9 - H1MX  - Secret
+    "",
+    HPC_MAPAUTHORU,  // M1 - H2M1
+    HPC_MAPAUTHORU,  // M2 - H2M2
+    HPC_MAPAUTHORU,  // M3 - H2M3
+    HPC_MAPAUTHORU,  // M4 - H2M4
+    HPC_MAPAUTHORU,  // M5 - H2M5
+    HPC_MAPAUTHOR3,  // M6 - H2M8
+    HPC_MAPAUTHOR4,  // M7 - H2M9
+    HPC_MAPAUTHORU,  // M8 - H2M0  - Boss
+    HPC_MAPAUTHOR2,  // M9 - H2MX  - Secret
+    "",
+    HPC_MAPAUTHORU,  // M1 - H3M1
+    HPC_MAPAUTHORU,  // M2 - H3M2
+    HPC_MAPAUTHORU,  // M3 - H3M3
+    HPC_MAPAUTHORU,  // M4 - H3M4
+    HPC_MAPAUTHORU,  // M5 - H3M6
+    HPC_MAPAUTHOR2,  // M6 - H2M6  - No, the "2" is not a typo.
+    HPC_MAPAUTHOR5,  // M7 - H3M7
+    HPC_MAPAUTHOR6,  // M8 - H3M0  - Boss
+    HPC_MAPAUTHORU,  // M9 - H3M8  - Secret
+    "",
+    HPC_MAPAUTHORU,  // M1 - H4M1
+    HPC_MAPAUTHOR3,  // M2 - H4M2
+    HPC_MAPAUTHORU,  // M3 - H4M3
+    HPC_MAPAUTHORU,  // M4 - H4M4
+    HPC_MAPAUTHOR9,  // M5 - H4M5
+    HPC_MAPAUTHORU,  // M6 - H4M6
+    HPC_MAPAUTHORU,  // M7 - H4M8
+    HPC_MAPAUTHOR3,  // M8 - H4M0  - Boss
+    HPC_MAPAUTHOR10, // M9 - H4M?  - Secret; missing
+    "",
+    HPC_MAPAUTHORU,  // M1 - H5M1
+    HPC_MAPAUTHORU,  // M2 - H5M2
+    HPC_MAPAUTHOR7,  // M3 - H5M3
+    HPC_MAPAUTHORU,  // M4 - H5M6
+    HPC_MAPAUTHOR5,  // M5 - H5M7
+    HPC_MAPAUTHOR8,  // M6 - H5M9
+    HPC_MAPAUTHOR11, // M7 - H5M?  - Missing
+    HPC_MAPAUTHOR6,  // M8 - H5M?  - Boss; missing
+    HPC_MAPAUTHOR6   // M9 - H5MX  - Secret
+};
+
+//-------------------------------------------------------------------------------------------------
+//
+//  Prints the names of the map and its author upon map load.
+//
+//-------------------------------------------------------------------------------------------------
+
+Script "HPS_MapInfo" Open
+{
+    // Do not bother if the current map is a titlemap.
+    If(GameType() == GAME_TITLE_MAP)
+        Terminate;
+
+   	SetHudSize(640, 480, FALSE);
+	SetFont("BIGFONT");
+	HudMessageBold(n:PRINTNAME_LEVELNAME;
+                   HUDMSG_FADEINOUT | HUDMSG_NOTWITHFULLMAP | HUDMSG_NOTWITHOVERLAYMAP, 0,
+                   CR_DARKRED, 160.0, 360.0, 4.0, 1.5, 1.5);
+	SetFont("SMALLFONT");
+	HudMessageBold(s:"by ", s:hpa_mapauthors[GetLevelInfo(LEVELINFO_LEVELNUM) - 11];
+                   HUDMSG_FADEINOUT | HUDMSG_NOTWITHFULLMAP | HUDMSG_NOTWITHOVERLAYMAP, 0,
+                   CR_DARKGRAY, 160.4, 375.0, 4.0, 1.5, 1.5);
+}
+
+//-------------------------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------------------------------------------

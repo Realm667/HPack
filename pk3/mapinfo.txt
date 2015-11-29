@@ -42,6 +42,7 @@ map titlemap "Demonic Uprising"
 
 map H1M1 "Gloom Tower"
 {
+	levelnum = 11
 	music = MUS_E1M4
 	next = h1m2
 	Cluster = 101
@@ -51,6 +52,7 @@ map H1M1 "Gloom Tower"
 
 map H1M2 "Sidhe Altar"
 {
+	levelnum = 12
 	music = MUS_H1M2
 	next = h1m3
 	Cluster = 101
@@ -61,6 +63,7 @@ map H1M2 "Sidhe Altar"
 
 map H1M3 "Elven Wood"
 {
+	levelnum = 13
 	music = MUS_H1M3
 	next = h1m5
 	secretnext = H1MX
@@ -71,6 +74,7 @@ map H1M3 "Elven Wood"
 
 map H1M5 "Battlements"
 {
+	levelnum = 14
 	music = MUS_H1M5
 	next = h1m6
 	Cluster = 101
@@ -80,6 +84,7 @@ map H1M5 "Battlements"
 
 map H1M6 "Asylum of Hate"
 {
+	levelnum = 15
 	music = MUS_H1M6
 	next = h1m7
 	Cluster = 101
@@ -89,6 +94,7 @@ map H1M6 "Asylum of Hate"
 
 map H1M7 "Dead End"
 {
+	levelnum = 16
 	next = "H1M10"
 	sky1 = "SKYTOP03", 0
 	music = "D_SSLD1"
@@ -102,6 +108,7 @@ map H1M7 "Dead End"
 
 map H1M10 "Citadel of Horrors"
 {
+	levelnum = 17
 	next = H1M0
 	music = "BADASS"
 	sky1 = DNIGHT
@@ -112,6 +119,7 @@ map H1M10 "Citadel of Horrors"
 
 map H1M0 "City of Darkness"
 {
+	levelnum = 18
 	music = "MUS_H1M0"
 	next = "Endtitle"
 	Cluster = 101
@@ -122,6 +130,7 @@ map H1M0 "City of Darkness"
 
 map H1MX "ChickenSpring"
 {
+	levelnum = 19
 	next = H1M5
 	cluster = 101
 	music = MUS_E1M9
@@ -137,6 +146,7 @@ map H1MX "ChickenSpring"
 
 map H2M1 "Chapel of the Seas"
 {
+	levelnum = 21
 	music = UNDERHAL
 	next = h2m2
 	secretnext = h2mx
@@ -147,6 +157,7 @@ map H2M1 "Chapel of the Seas"
 
 map H2M2 "Dark Water"
 {
+	levelnum = 22
 	music = MUS_E1M3
 	next = h2m3
 	Cluster = 102
@@ -156,6 +167,7 @@ map H2M2 "Dark Water"
 
 map H2M3 "Aquatemple"
 {
+	levelnum = 23
 	music = MUS_E3M3
 	next = h2m4
 	Cluster = 102
@@ -165,6 +177,7 @@ map H2M3 "Aquatemple"
 
 map H2M4 "Icy Catacomb"
 {
+	levelnum = 24
 	fade = "10 15 20"
 	music = FANTAR
 	next = h2m5
@@ -175,6 +188,7 @@ map H2M4 "Icy Catacomb"
 
 map H2M5 "Underwater Villa"
 {
+	levelnum = 25
 	music = MUS_E1M2
 	next = h2m8
 	Cluster = 102
@@ -184,6 +198,7 @@ map H2M5 "Underwater Villa"
 
 map H2M8 "Serpent Residence"
 {
+	levelnum = 26
 	sky1 = "SKYTOP10", 0
 	music = MUS_E2M3
 	next = h2m9
@@ -194,6 +209,7 @@ map H2M8 "Serpent Residence"
 
 map H2M9 "House of the Ancients"
 {
+	levelnum = 27
 	music = "HSHADOWS"
 	next = h2m0
 	Cluster = 102
@@ -203,6 +219,7 @@ map H2M9 "House of the Ancients"
 
 map H2M0 "Asterion"
 {
+	levelnum = 28
 	music = MUS_E1M9
 	next = "Endtitle"
 	Cluster = 102
@@ -212,6 +229,7 @@ map H2M0 "Asterion"
 
 map H2MX "Crafting the Docks"
 {
+	levelnum = 29
 	next = H2M2
 	music = "MINE"
 	sky1 = DNIGHT
@@ -224,6 +242,7 @@ map H2MX "Crafting the Docks"
 
 map H3M1 "Scorched Earth"
 {
+	levelnum = 31
 	// fade = "30 10 10"
 	music = MUS_E2M1
 	next = h3m2
@@ -234,6 +253,7 @@ map H3M1 "Scorched Earth"
 
 map H3M2 "Lava Falls"
 {
+	levelnum = 32
 	sky1 = "pri_osky", 0
 	// fade = "30 10 10"
 	music = MUS_E2M2
@@ -245,6 +265,7 @@ map H3M2 "Lava Falls"
 
 map H3M3 "Bastion of Sorrow"
 {
+	levelnum = 33
 	sky1 = "pri_osky", 0
 	// fade = "30 10 10"
 	music = MUS_E1M4
@@ -256,6 +277,7 @@ map H3M3 "Bastion of Sorrow"
 
 map H3M4 "Tabernacle of Magma"
 {
+	levelnum = 34
 	// fade = "20 10 05"
 	music = MIRE
 	next = h3m6
@@ -266,6 +288,7 @@ map H3M4 "Tabernacle of Magma"
 
 map H3M6 "City of Metal"
 {
+	levelnum = 35
 	music = MUS_E1M5
 	fade = "30 10 10"
 	sky1 = BSSKY, 0.0
@@ -277,6 +300,7 @@ map H3M6 "City of Metal"
 
 map H2M6 "Fortress of Eternity"
 {
+	levelnum = 36
 	// fade = "10 15 20"
 	music = MUS_H2M6
 	next = h3m7
@@ -288,6 +312,7 @@ map H2M6 "Fortress of Eternity"
 
 map H3M7 "Hell Stronghold"
 {
+	levelnum = 37
 	music = CBLUD006
 	sky1 = BSSKY, 0.0
 	//outsidefog = "40 20 10"
@@ -299,7 +324,7 @@ map H3M7 "Hell Stronghold"
 
 map H3M0 "Infernux Prime"
 {
-   	levelnum = 30
+   	levelnum = 38
    	music = "D_INFERN"
    	sky1 = "SKY2" 
 	exitpic ="$IN_E3"
@@ -308,6 +333,7 @@ map H3M0 "Infernux Prime"
 
 map H3M8 "Hell's Forge"
 {
+	levelnum = 39
 	next = H3M7
 	cluster = 103
 	music = H_FORGE
@@ -322,6 +348,7 @@ map H3M8 "Hell's Forge"
 
 map H4M1 "Ethereal Ruins"
 {
+	levelnum = 41
 	music = CHAP_3R
 	next = h4m2
 	Cluster = 104
@@ -331,6 +358,7 @@ map H4M1 "Ethereal Ruins"
 
 map H4M2 "The Bloody Path"
 {
+	levelnum = 42
 	//sky1 = "SKYTOP10", 0
 	music = romeric
 	next = h4m3
@@ -341,6 +369,7 @@ map H4M2 "The Bloody Path"
 
 map H4M3 "Monastery of Souls"
 {
+	levelnum = 43
 	fade = "20 20 20"
 	next = H4M4
 	music = cryptr
@@ -351,6 +380,7 @@ map H4M3 "Monastery of Souls"
 
 map H4M4 "Fortress of Despair"
 {
+	levelnum = 44
 //	sky1 = PRI_OSKY, -0.2
 	music = MUS_E2M4
 	next = H4M5
@@ -360,6 +390,7 @@ map H4M4 "Fortress of Despair"
 
 map H4M5 "Mythril Keep"
 {
+	levelnum = 45
 	next = H4M6
 	music = FALCONR
 	Cluster = 104
@@ -369,6 +400,7 @@ map H4M5 "Mythril Keep"
 
 map H4M6 "Arid Crypt"
 {
+	levelnum = 46
 	fade = "20 20 20"
 	next = H4M8
 	music = MUS_E2M6
@@ -379,6 +411,7 @@ map H4M6 "Arid Crypt"
 
 map H4M8 "DarkFort"
 {
+	levelnum = 47
 	next = H4M0
 	music = MUS_E1M9
 	Cluster = 104
@@ -388,6 +421,7 @@ map H4M8 "DarkFort"
 
 map H4M0 "Castle of Storms"
 {
+	levelnum = 48
 	music = bldrstod
 	next = endtitle
 	cluster = 104
@@ -398,6 +432,7 @@ map H4M0 "Castle of Storms"
 
 /* map H4MX "?" // Secret map; missing
 {
+	levelnum = 49
 	Cluster = 104
 	exitpic ="$IN_E4"
 	enterpic ="$IN_E4"
@@ -407,6 +442,7 @@ map H4M0 "Castle of Storms"
 
 map H5M1 "Ziggurat of Sorrow"
 {
+	levelnum = 51
 	fade = "0 05 10"
 	music = ROMERIC
 	next = h5m2
@@ -417,6 +453,7 @@ map H5M1 "Ziggurat of Sorrow"
 
 Map H5M2 "Vortex"
 {
+	levelnum = 52
 	Next = "H5M3"
 	Music = "MUS_E2M3"
 	Cluster = 105
@@ -429,6 +466,7 @@ Map H5M2 "Vortex"
 
 map H5M3 "The Void Temple"
 {
+	levelnum = 53
 	music = Hexd
 	next = h5m6
 	sky1 = BSSKY
@@ -440,6 +478,7 @@ map H5M3 "The Void Temple"
 
 map H5M6 "Canyon of Ether"
 {
+	levelnum = 54
 	next = H5M7
 	music = LEVELR
 	Sky1 = "CSSKY", 0.01
@@ -451,6 +490,7 @@ map H5M6 "Canyon of Ether"
 
 map H5M7 "Clash of the elements"
 {
+	levelnum = 55
 	music = castle4
 	sky1 = BSSKY
 	cluster = 105
@@ -461,6 +501,7 @@ map H5M7 "Clash of the elements"
 
 map H5M9 "The Dark Rift"
 {
+	levelnum = 56
 	cluster = 105
 	sky1 = "VOID", 0.8
 	skyrotate =0.4, 0.3, 0.2
@@ -472,6 +513,7 @@ map H5M9 "The Dark Rift"
 
 /* map H5M? "?" // Last map before the boss; missing
 {
+	levelnum = 57
    	cluster = 105
 	exitpic ="$IN_E5"
 	enterpic ="$IN_E5"
@@ -479,6 +521,7 @@ map H5M9 "The Dark Rift"
 
 /* map H5M0 "?" // Boss map; missing
 {
+	levelnum = 58
    	cluster = 105
 	exitpic ="$IN_E5"
 	enterpic ="$IN_E5"
@@ -487,7 +530,7 @@ map H5M9 "The Dark Rift"
 map H5MX "At the Back of My Head"
 {
    	cluster = 105
-   	levelnum = 7448
+   	levelnum = 59
    	next = "H5M0"
 	music = "D_FARAWY"
    	sky1 = "SKY3" 
