@@ -5,7 +5,7 @@ gameinfo
 {
 	PlayerClasses = "HPackPlayer"
 	menufontcolor_title = "DARKRED"
-    	menufontcolor_label = "DARKRED"
+    menufontcolor_label = "DARKRED"
 	menufontcolor_value = "DARKGRAY"
 	menufontcolor_action = "DARKGRAY"
 	menufontcolor_header = "DARKRED"
@@ -16,20 +16,29 @@ gameinfo
 	pickupcolor = "FFFFFF"
 }
 
+//-------------------------------------------------------------------------------------------------
+//
+//  Map definitions
+//
+//-------------------------------------------------------------------------------------------------
+
 // Properties that all maps have, unless they specifically override them
-adddefaultmap 
+adddefaultmap
 {
 	grinding_polyobj
 	fallingdamage
 	smoothlighting
 }
 
-map titlemap "Demonic Uprising" 
+// Titlemap --------------------------------------------------------------
+
+map titlemap "Demonic Uprising"
 {
 	sky1 = DNIGHT
 	evenlighting
 }
 
+// Episode 1: Terrene of Sorrow ------------------------------------------
 
 map H1M1 "Gloom Tower"
 {
@@ -124,6 +133,8 @@ map H1MX "ChickenSpring"
 	enterpic ="$IN_E1"
 }
 
+// Episode 2: Beneath the Altar ------------------------------------------
+
 map H2M1 "Chapel of the Seas"
 {
 	music = UNDERHAL
@@ -209,6 +220,7 @@ map H2MX "Crafting the Docks"
 	enterpic ="$IN_E1"
 }
 
+// Episode 3: Into the Furnace -------------------------------------------
 
 map H3M1 "Scorched Earth"
 {
@@ -285,6 +297,15 @@ map H3M7 "Hell Stronghold"
 	enterpic ="$IN_E3"
 }
 
+map H3M0 "Infernux Prime"
+{
+   	levelnum = 30
+   	music = "D_INFERN"
+   	sky1 = "SKY2" 
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
+}
+
 map H3M8 "Hell's Forge"
 {
 	next = H3M7
@@ -297,14 +318,7 @@ map H3M8 "Hell's Forge"
 	enterpic ="$IN_E3"
 }
 
-map H3M0 "Infernux Prime"
-{
-   	levelnum = 30
-   	music = "D_INFERN"
-   	sky1 = "SKY2" 
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
-}
+// Episode 4: Hell's Wake ------------------------------------------------
 
 map H4M1 "Ethereal Ruins"
 {
@@ -382,6 +396,15 @@ map H4M0 "Castle of Storms"
 	enterpic ="$IN_E4"
 }
 
+/* map H4MX "?" // Secret map; missing
+{
+	Cluster = 104
+	exitpic ="$IN_E4"
+	enterpic ="$IN_E4"
+} */
+
+// Episode 5: The Astral Plane -------------------------------------------
+
 map H5M1 "Ziggurat of Sorrow"
 {
 	fade = "0 05 10"
@@ -391,7 +414,6 @@ map H5M1 "Ziggurat of Sorrow"
 	exitpic ="$IN_E5"
 	enterpic ="$IN_E5"
 }
-
 
 Map H5M2 "Vortex"
 {
@@ -448,6 +470,20 @@ map H5M9 "The Dark Rift"
 	enterpic ="$IN_E5"
 }
 
+/* map H5M? "?" // Last map before the boss; missing
+{
+   	cluster = 105
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
+} */
+
+/* map H5M0 "?" // Boss map; missing
+{
+   	cluster = 105
+	exitpic ="$IN_E5"
+	enterpic ="$IN_E5"
+} */
+
 map H5MX "At the Back of My Head"
 {
    	cluster = 105
@@ -459,6 +495,11 @@ map H5MX "At the Back of My Head"
 	enterpic ="$IN_E5"
 }
 
+//-------------------------------------------------------------------------------------------------
+//
+//  Episode and cluster definitions
+//
+//-------------------------------------------------------------------------------------------------
 
 ClearEpisodes
 
@@ -496,6 +537,12 @@ Episode H5M1
 	Optional
 }
 Cluster 105 {}
+
+//-------------------------------------------------------------------------------------------------
+//
+//
+//
+//-------------------------------------------------------------------------------------------------
 
 Intermission Final
 {
