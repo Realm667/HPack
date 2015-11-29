@@ -86,13 +86,13 @@ Script "HPS_MapInfo" Open
     If(GameType() == GAME_TITLE_MAP)
         Terminate;
 
-   	SetHudSize(640, 480, FALSE);
-	SetFont("BIGFONT");
-	HudMessageBold(n:PRINTNAME_LEVELNAME;
+    SetHudSize(640, 480, FALSE);
+    SetFont("BIGFONT");
+    HudMessageBold(n:PRINTNAME_LEVELNAME;
                    HUDMSG_FADEINOUT | HUDMSG_NOTWITHFULLMAP | HUDMSG_NOTWITHOVERLAYMAP, 0,
                    CR_DARKRED, 160.0, 360.0, 4.0, 1.5, 1.5);
-	SetFont("SMALLFONT");
-	HudMessageBold(s:"by ", s:hpa_mapauthors[GetLevelInfo(LEVELINFO_LEVELNUM) - 11];
+    SetFont("SMALLFONT");
+    HudMessageBold(s:"by ", s:hpa_mapauthors[GetLevelInfo(LEVELINFO_LEVELNUM) - 11];
                    HUDMSG_FADEINOUT | HUDMSG_NOTWITHFULLMAP | HUDMSG_NOTWITHOVERLAYMAP, 0,
                    CR_DARKGRAY, 160.4, 375.0, 4.0, 1.5, 1.5);
 }
