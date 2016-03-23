@@ -313,7 +313,7 @@ map H2M6 "Fortress of Eternity"
 map H3M7 "Hell Stronghold"
 {
 	levelnum = 37
-	music = CBLUD006
+	music = cblood6
 	sky1 = BSSKY, 0.0
 	//outsidefog = "40 20 10"
 	cluster = 103
