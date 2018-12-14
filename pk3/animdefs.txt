@@ -134,6 +134,12 @@ texture WALLAN1
 texture SKULFAC1	range SKULFAC3	tics 9
 texture CHAINFA1	range CHAINFA3	tics 9
 
+texture EFIREA
+ pic EFIREA tics 6
+ pic EFIREB tics 6
+ pic EFIREC tics 6
+ pic EFIRED tics 6
+
 
 switch EVILSK_1 on sound Switch1 pic SW3OFF tics 0
 switch EVILSK_2 off sound Switch2 pic SW3ON tics 0
@@ -191,6 +197,10 @@ switch SWPAT_S1 off sound Switch2 pic SWPAT_S0 tics 0
 
 switch mc_sw1 on sound Switch1 pic mc_sw2 tics 0
 switch mc_sw2 off sound Switch2 pic mc_sw1 tics 0
+
+switch METALSW1 on sound Switch1 pic METALSW2 tics 0
+switch METALSW2 off sound Switch2 pic METALSW1 tics 0
+
 
 /* Animation definition for Shadowcaster textures when used in Doom, Heretic, Hexen or Strife. */
 
