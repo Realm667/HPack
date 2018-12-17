@@ -415,6 +415,20 @@ epig/explo EPIGXPLO
 
 vile/firecrkl DSFLAME
 
+//Blood Lich
+MageStaffFire		STRIKE3
+MageStaffExplode	STRIKE1
+FlameBreath				HEDAT1
+
+//Reaver
+WraithSight             raith5a
+WraithActive            raith3
+WraithPain              raith4a
+WraithAttack            raith1b
+WraithDeath             rathdth2
+WraithMissileFire       BSTATK
+WraithMissileExplode    PHOHIT
+
 /////////////////
 // MISC SOUNDS //
 /////////////////
