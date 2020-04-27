@@ -132,7 +132,7 @@ ACTOR FallenFX
    States
    {
    Spawn:
-      NULL A 3 Bright
+      TNT1 A 3
       FBFX ABCDE 3 BRIGHT
       Stop 
    }

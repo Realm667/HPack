@@ -1,4 +1,9 @@
-pk3/Maps/h2m11.dbs
-pk3/Maps/h2m11.wad.backup1
-pk3/Maps/h2m11.wad.backup2
-pk3/Maps/h2m11.wad.backup3
+*.backup1
+*.backup2
+*.backup3
+*.bak
+*.dbs
+*.pk3
+*.tmp
+*.7z
+ssh-agent.exe.stackdump

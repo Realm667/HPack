@@ -129,7 +129,7 @@ ACTOR AcolFX2
    States
    {
    Spawn:
-      Null A 3
+      TNT1 A 3
       ACOL A 5 A_FadeOut(0.10)
       goto Spawn+1
    }

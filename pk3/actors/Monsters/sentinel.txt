@@ -169,7 +169,7 @@ ACTOR Barbtrail
 	States
 	{
 	Spawn:
-		NULL A 1 Bright
+		TNT1 A 1
 		SSFX ABCDEFGH 2 Bright
 		Stop 
 	}

@@ -322,7 +322,7 @@ ACTOR ShadePuff
    States
    {
    Spawn:
-      NULL A 3 Bright
+      TNT1 A 3
       NBAL CDEFG 3 BRIGHT
       Stop 
    }

@@ -105,7 +105,7 @@ ACTOR WickedFX
    States
    {
    Spawn:
-      NULL A 3 Bright
+      TNT1 A 3
       WIBL EFGHI 3 BRIGHT
       Stop 
    }
@@ -136,7 +136,7 @@ ACTOR WickedTorso
       WICK TUVW 5
       Goto Ground+5
    Death:
-      NULL A 1
+      TNT1 A 1
       stop        
    }
 }
