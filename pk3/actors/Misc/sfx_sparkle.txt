@@ -90,7 +90,7 @@ actor WhiteSparkleSpawner 209
 						random(0, 2*Args[2]),			// Z offset
 						0,								// X velocity
 						0,								// Y velocity
-						random(1,4),					// Z velocity
+						frandom(1,4),					// Z velocity
 						0,								// Angle
 						SXF_TRANSFERTRANSLATION|SXF_CLIENTSIDE)
 		Loop
@@ -113,7 +113,7 @@ actor WhiteSparkleSpawner 209
 						random(0, 2*Args[2]),			// Z offset
 						0,								// X velocity
 						0,								// Y velocity
-						random(1,4),					// Z velocity
+						frandom(1,4),					// Z velocity
 						Random(0, 360),					// Angle
 						SXF_TRANSFERTRANSLATION|SXF_CLIENTSIDE)
 		Loop
@@ -124,7 +124,7 @@ actor WhiteSparkleSpawner 209
 						random(0, 2*Args[2]),			// Z offset
 						0,								// X velocity
 						0,								// Y velocity
-						random(0.1,2.0),				// Z velocity
+						frandom(0.1,2.0),				// Z velocity
 						Random(0, 360),					// Angle
 						SXF_TRANSFERTRANSLATION|SXF_CLIENTSIDE)
 		Loop
