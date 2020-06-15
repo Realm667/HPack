@@ -2,76 +2,67 @@
 //
 //-------------------------------------------------------------------------------------------------
 
-#define HPC_MAPAUTHORU  "\cg<Unknown>"
+#define HPC_MAPAUTHOR_UNKNOWN  "\cg<Unknown>"
 
-#define HPC_MAPAUTHOR0  "Shadesmaster"
-#define HPC_MAPAUTHOR1  "Captain Toenail"
-#define HPC_MAPAUTHOR2  "Tormentor667"
-#define HPC_MAPAUTHOR3  "Archi"
-#define HPC_MAPAUTHOR4  "elzee"
-#define HPC_MAPAUTHOR5  "Gothic"
-#define HPC_MAPAUTHOR6  "Pyroscourge"
-#define HPC_MAPAUTHOR7  "Gez"
-#define HPC_MAPAUTHOR8  "Icytux"
-#define HPC_MAPAUTHOR9  "Dreadopp"
-#define HPC_MAPAUTHOR10 "blood"
-#define HPC_MAPAUTHOR11 "Krumzy"
+#define HPC_MAPAUTHOR_SHADESMASTER "Shadesmaster"
+#define HPC_MAPAUTHOR_CAPTAINTOENAIL  "Captain Toenail"
+#define HPC_MAPAUTHOR_TORMENTOR667  "Tormentor667"
+#define HPC_MAPAUTHOR_ARCHI "Archi"
+#define HPC_MAPAUTHOR_ELZEE "el zee"
+#define HPC_MAPAUTHOR_GOTHIC "Gothic"
+#define HPC_MAPAUTHOR_PYROSCOURGE "Pyroscourge"
+#define HPC_MAPAUTHOR_GEZ "Gez"
+#define HPC_MAPAUTHOR_ICYTUX "Icytux"
+#define HPC_MAPAUTHOR_DREADOPP "Dreadopp"
+#define HPC_MAPAUTHOR_JAEKEN "Serge Jaeken"
+#define HPC_MAPAUTHOR_KORE "Kore"
 
 //-------------------------------------------------------------------------------------------------
 //
 //-------------------------------------------------------------------------------------------------
 
-str hpa_mapauthors[49] =
+str hpa_mapauthors[40] =
 {
-    HPC_MAPAUTHOR0,  // M1 - H1M1
-    HPC_MAPAUTHOR0,  // M2 - H1M2
-    HPC_MAPAUTHOR0,  // M3 - H1M3
-    HPC_MAPAUTHOR0,  // M4 - H1M5
-    HPC_MAPAUTHORU,  // M5 - H1M6
-    HPC_MAPAUTHOR1,  // M6 - H1M7
-    HPC_MAPAUTHOR2,  // M7 - H1M10
-    HPC_MAPAUTHOR2,  // M8 - H1M0  - Boss
-    HPC_MAPAUTHOR0,  // M9 - H1MX  - Secret
+    HPC_MAPAUTHOR_SHADESMASTER  ,  // M1 - H1M1 - Gloom Tower
+    HPC_MAPAUTHOR_SHADESMASTER  ,  // M2 - H1M2 - Sidhe Altar
+    HPC_MAPAUTHOR_SHADESMASTER  ,  // M3 - H1M3 - Elven Wood
+    HPC_MAPAUTHOR_SHADESMASTER  ,  // M4 - H1M4 - Battlements
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M5 - H1M5 - Asylum of Hate
+    HPC_MAPAUTHOR_CAPTAINTOENAIL,  // M6 - H1M6 - Dead End
+    HPC_MAPAUTHOR_TORMENTOR667  ,  // M7 - H1M7 - Citadel of Horrors
+    HPC_MAPAUTHOR_TORMENTOR667  ,  // M8 - H1M8 - City of Darkness"
+    HPC_MAPAUTHOR_SHADESMASTER  ,  // M9 - H1MX - ChickenSpring
     "",
-    HPC_MAPAUTHORU,  // M1 - H2M1
-    HPC_MAPAUTHORU,  // M2 - H2M2
-    HPC_MAPAUTHORU,  // M3 - H2M3
-    HPC_MAPAUTHORU,  // M4 - H2M4
-    HPC_MAPAUTHORU,  // M5 - H2M5
-    HPC_MAPAUTHOR3,  // M6 - H2M8
-    HPC_MAPAUTHOR4,  // M7 - H2M9
-    HPC_MAPAUTHORU,  // M8 - H2M0  - Boss
-    HPC_MAPAUTHOR2,  // M9 - H2MX  - Secret
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M1 - H2M1 - Chapel of the Seas
+    HPC_MAPAUTHOR_JAEKEN        ,  // M2 - H2M2 - Dark Water
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M3 - H2M3 - Aquatemple
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M4 - H2M4 - Icy Catacomb
+    HPC_MAPAUTHOR_ARCHI         ,  // M5 - H2M5 - Serpent Residence
+    HPC_MAPAUTHOR_ELZEE         ,  // M6 - H2M6 - House of the Ancients
+    HPC_MAPAUTHOR_ELZEE         ,  // M7 - H2M7 - Asterion
+    HPC_MAPAUTHOR_UNKNOWN       ,  // [no map]
+    HPC_MAPAUTHOR_TORMENTOR667  ,  // M9 - H2MX - Crafting the Docks
     "",
-    HPC_MAPAUTHORU,  // M1 - H3M1
-    HPC_MAPAUTHORU,  // M2 - H3M2
-    HPC_MAPAUTHORU,  // M3 - H3M3
-    HPC_MAPAUTHORU,  // M4 - H3M4
-    HPC_MAPAUTHORU,  // M5 - H3M6
-    HPC_MAPAUTHOR2,  // M6 - H2M6  - No, the "2" is not a typo.
-    HPC_MAPAUTHOR5,  // M7 - H3M7
-    HPC_MAPAUTHOR6,  // M8 - H3M0  - Boss
-    HPC_MAPAUTHORU,  // M9 - H3M8  - Secret
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M1 - H3M1 - Scorched Earth
+    HPC_MAPAUTHOR_KORE          ,  // M2 - H3M2 - Lava Falls
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M3 - H3M3 - Bastion of Sorrow
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M4 - H3M4 - Tabernacle of Magma
+    HPC_MAPAUTHOR_TORMENTOR667  ,  // M5 - H3M5 - Fortress of Eternity
+    HPC_MAPAUTHOR_GOTHIC        ,  // M6 - H3M6 - Hell Stronghold
+    HPC_MAPAUTHOR_DREADOPP      ,  // M7 - H3M7 - Mythril Keep
+    HPC_MAPAUTHOR_PYROSCOURGE   ,  // M8 - H3M8 - Infernux Prime
+    HPC_MAPAUTHOR_UNKNOWN       ,  // [no map]
     "",
-    HPC_MAPAUTHORU,  // M1 - H4M1
-    HPC_MAPAUTHOR3,  // M2 - H4M2
-    HPC_MAPAUTHORU,  // M3 - H4M3
-    HPC_MAPAUTHORU,  // M4 - H4M4
-    HPC_MAPAUTHOR9,  // M5 - H4M5
-    HPC_MAPAUTHORU,  // M6 - H4M6
-    HPC_MAPAUTHORU,  // M7 - H4M8
-    HPC_MAPAUTHOR3,  // M8 - H4M0  - Boss
-    HPC_MAPAUTHOR10, // M9 - H4M?  - Secret; missing
-    "",
-    HPC_MAPAUTHORU,  // M1 - H5M1
-    HPC_MAPAUTHORU,  // M2 - H5M2
-    HPC_MAPAUTHOR7,  // M3 - H5M3
-    HPC_MAPAUTHORU,  // M4 - H5M6
-    HPC_MAPAUTHOR5,  // M5 - H5M7
-    HPC_MAPAUTHOR8,  // M6 - H5M9
-    HPC_MAPAUTHOR11, // M7 - H5M?  - Missing
-    HPC_MAPAUTHOR6,  // M8 - H5M?  - Boss; missing
-    HPC_MAPAUTHOR6   // M9 - H5MX  - Secret
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M1 - H4M1 - Ethereal Ruins
+    HPC_MAPAUTHOR_ARCHI         ,  // M2 - H4M2 - The Bloody Path
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M3 - H4M3 - Arid Crypt
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M4 - H4M4 - Ziggurat of Sorrow
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M5 - H4M5 - Vortex
+    HPC_MAPAUTHOR_UNKNOWN       ,  // M6 - H4M6 - Canyon of Ether
+    HPC_MAPAUTHOR_ICYTUX        ,  // M7 - H4M7 - The Dark Rift
+    HPC_MAPAUTHOR_GEZ           ,  // M8 - H4M8 - The Void Temple
+    HPC_MAPAUTHOR_PYROSCOURGE   ,  // M9 - H4MX - At the Back of My Head
+    ""
 };
 
 //-------------------------------------------------------------------------------------------------

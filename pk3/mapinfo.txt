@@ -310,7 +310,7 @@ map H3M7 "Mythril Keep"
 
 map H3M8 "Infernux Prime"
 {
-	levelnum = 37
+	levelnum = 38
 	music = "D_INFERN"
 	sky1 = "SKY2" 
 	exitpic ="$IN_E3"
