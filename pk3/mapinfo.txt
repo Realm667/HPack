@@ -224,8 +224,8 @@ map H2MX "Crafting the Docks"
 	music = "MINE"
 	sky1 = DNIGHT
 	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	exitpic ="$IN_E2"
+	enterpic ="$IN_E2"
 }
 
 // Episode 3: Into the Furnace -------------------------------------------
@@ -304,15 +304,15 @@ map H3M7 "Mythril Keep"
 	next = H3M8
 	music = FALCONR
 	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	exitpic ="$IN_E3"
+	enterpic ="$IN_E3"
 }
 
 map H3M8 "Infernux Prime"
 {
 	levelnum = 38
 	music = "D_INFERN"
-	sky1 = "SKY2" 
+	sky1 = "SKY2"
 	exitpic ="$IN_E3"
 	enterpic ="$IN_E3"
 }
