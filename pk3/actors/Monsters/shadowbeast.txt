@@ -16,7 +16,7 @@ ACTOR ShadowBeast 30129
   ACTIVESOUND "shadowbeast/active"
   MONSTER
   +FloorClip
-  DropItem "MedianRunes", 84, 10
+  DropItem "SkullRodMed", 84, 10
   DropItem "ArtiHealth", 10, 1
   states
   {

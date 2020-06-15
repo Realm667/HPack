@@ -17,7 +17,7 @@ actor Satyr 3999
     ActiveSound "knight/active"
     Obituary "$OB_SATYR"
     MissileType "SatyrArrow"
-    DropItem "CrossbowAmmo2", 64, 5
+    DropItem "CrossbowMed", 64, 5
     States
     {
     Spawn:

@@ -21,7 +21,6 @@ ACTOR BloodLich : IronLich 16249
     +DONTSPLASH
     +BOSS
 	DropItem "ChaosAmmo", 84, 10
-	DropItem "ArtiWraithHand", 51, 0
     States
     {
     Spawn:

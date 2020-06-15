@@ -57,7 +57,7 @@ ACTOR HPSonFire : HPSorcerer 22001
 	//$Title Son of D'Sparil (Fire)
   Game Heretic
   Translation "209:224=145:159","192:208=247:241"
-  DropItem "FireAmmo", 84, 10
+  DropItem "PhoenixRodAmmo", 84, 10
   bloodcolor "orange"
   states
   {
