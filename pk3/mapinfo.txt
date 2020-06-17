@@ -28,6 +28,7 @@ adddefaultmap
 	grinding_polyobj
 	fallingdamage
 	smoothlighting
+	lightmode = 0
 }
 
 // Titlemap --------------------------------------------------------------
