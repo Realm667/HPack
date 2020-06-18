@@ -33,7 +33,7 @@ ACTOR HPSkullPowered : SkullRodPowered
 		HROD E 2 Bright
 		HROD F 3 Bright
 		HROD G 0 Bright A_PlaySound("weapons/hornrodpowshoot3", CHAN_WEAPON)
-		HROD G 0 Bright A_RailAttack(0, 0, 1, "", "", RGF_SILENT|RGF_NOPIERCING, 0, "", 0, 0, 0, 0, 32, 0, "HPHellstaffPowerSmoke")
+		HROD G 0 Bright A_RailAttack(0, 0, 1, "", "", RGF_SILENT|RGF_NOPIERCING, 0, "None", 0, 0, 0, 0, 32, 0, "HPHellstaffPowerSmoke")
 		HROD G 4 Bright A_FireBullets(0, 0, 1, 20*random(1, 8), "HPHellstaffPowerPuff", FBF_NORANDOM)
 		HROD F 2 Bright
 		HROD E 3 Bright

@@ -12,7 +12,6 @@ ACTOR HPDSparilGauntlets : Weapon 23465
 	Weapon.AmmoGive1 10
 	Weapon.YAdjust 10
 	Weapon.AmmoType1 "ChaosAmmo"
-	Weapon.AmmoType2 "ChaosAmmo"
 	Obituary "$OB_MPDSPARILS"
 	+WEAPON.NOAUTOFIRE
 	Inventory.PickupMessage "$TXT_WPNDSPARILS"
