@@ -24,7 +24,7 @@
 #include "actors/items/weapons/sunstaff.gl"
 #Include "actors/items/weapons/StaffChaos.gl"
 #include "actors/items/weapons/goldwand.gl"
-//#include "actors/items/weapons/crossbow.gl" // [Blue Shadow] Its contents are redundant.
+#include "actors/items/weapons/crossbow.gl"
 #include "actors/items/weapons/dragonclaw.gl"
 #include "actors/items/weapons/hellstaff.gl"
 #include "actors/items/weapons/phoenixrod.gl"

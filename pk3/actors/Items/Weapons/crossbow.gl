@@ -33,7 +33,7 @@ flickerlight BIGBOWBOLT_X3
     chance 0.3
 }
 
-object CrossbowFX1
+object HPCrossbowFX1
 {
     frame FX03B { light BIGBOWBOLT }
     
@@ -73,7 +73,7 @@ flickerlight SMALLBOWBOLT_X3
     chance 0.3
 }
 
-object CrossbowFX3
+object HPCrossbowFX8
 {
     frame FX03A { light SMALLBOWBOLT }
     
@@ -83,7 +83,7 @@ object CrossbowFX3
 }
 
 // Tomed crossbow projectile
-object CrossbowFX2
+object HPCrossbowFX7
 {
     frame FX03B { light BIGBOWBOLT }
     
@@ -105,7 +105,7 @@ pointlight BOWTRAIL2
     size 16
 }
 
-//object CrossbowFX4
+//object HPCrossbowFX4
 //{
     //frame FX03F { light BOWTRAIL1 }
     //frame FX03G { light BOWTRAIL2 }
