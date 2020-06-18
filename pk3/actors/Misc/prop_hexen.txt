@@ -541,31 +541,25 @@ ACTOR HPZStalactiteIceTiny : RandomSpawner 16065
 	DropItem "ZStalactiteIceTiny"
 }
 
-ACTOR HPZStalactiteLarge : RandomSpawner 16027
+ACTOR HPZStalactiteLarge : ZStalactiteLarge 16027
 {
 	//$Category Obstacles
 	//$Title Stalactite (Rock, Large)
 	//$Sprite SLC1A0
-	+SPAWNCEILING
-	DropItem "ZStalactiteLarge"
 }
 
-ACTOR HPZStalactiteMedium : RandomSpawner 16028
+ACTOR HPZStalactiteMedium : ZStalactiteMedium 16028
 {
 	//$Category Obstacles
 	//$Title Stalactite (Rock, Medium)
 	//$Sprite SLC2A0
-	+SPAWNCEILING
-	DropItem "ZStalactiteMedium"
 }
 
-ACTOR HPZStalactiteSmall : RandomSpawner 16029
+ACTOR HPZStalactiteSmall : ZStalactiteSmall 16029
 {
 	//$Category Obstacles
 	//$Title Stalactite (Rock, Small)
 	//$Sprite SLC3A0
-	+SPAWNCEILING
-	DropItem "ZStalactiteSmall"
 }
 
 ACTOR HPZStalagmiteIceLarge : RandomSpawner 16066
