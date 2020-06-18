@@ -78,6 +78,9 @@ weapons/hornrodpowshoot3 helpow // help! ow!
 weapons/phoenixshoot		null
 weapons/phoenixshoot2		phobir
 
+weapons/macehit             firsml
+weapons/macepowhit          firhit
+
 weapons/gauntletsshoot		gntsht
 weapons/gauntletscharge		gntchg
 weapons/gauntletshadoken	gnthad
