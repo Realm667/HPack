@@ -70,8 +70,10 @@ weapons/bowreload		bowrel
 
 weapons/blasterrip			blsrip
 
-weapons/hornrodpowshoot		null
-weapons/hornrodpowshoot2	hrnpow
+weapons/hornrodhit       helhit
+weapons/hornrodpowshoot  null
+weapons/hornrodpowshoot2 hrnpow
+weapons/hornrodpowshoot3 helpow // help! ow!
 
 weapons/phoenixshoot		null
 weapons/phoenixshoot2		phobir
