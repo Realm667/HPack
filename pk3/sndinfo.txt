@@ -85,6 +85,7 @@ weapons/gauntletsshoot		gntsht
 weapons/gauntletscharge		gntchg
 weapons/gauntletshadoken	gnthad
 weapons/gauntletspowshoot	gntpws
+weapons/gauntletspowhit	    phohit
 weapons/gauntletsrip		gntrip
 $limit weapons/gauntletsshoot 0
 $limit weapons/gauntletspowshoot 0

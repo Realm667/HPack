@@ -12,37 +12,6 @@ object GauntletFX1
     frame GNFXG { light DISCIPLEBALL_X2 }
 }
 
-object GauntletAltFX1
-{
-    frame GNF1A { light DISCIPLEBALL }
-    frame GNF1B { light DISCIPLEBALL }
-    frame GNF1C { light DISCIPLEBALL }
-
-    frame GNF1D { light DISCIPLEBALL  }
-    frame GNF1E { light DISCIPLEBALL  }
-    frame GNF1F { light GAUNTLETBOOM1 }
-    frame GNF1G { light GAUNTLETBOOM1 }
-    frame GNF1H { light GAUNTLETBOOM1 }
-    frame GNF1I { light GAUNTLETBOOM2 }
-    frame GNF1J { light GAUNTLETBOOM2 }
-    frame GNF1K { light GAUNTLETBOOM2 }
-    frame GNF1L { light GAUNTLETBOOM3 }
-    frame GNF1M { light GAUNTLETBOOM3 }
-    frame GNF1N { light GAUNTLETBOOM4 }
-    frame GNF1O { light GAUNTLETBOOM4 }
-    frame GNF1P { light GAUNTLETBOOM5 }
-    frame GNF1Q { light GAUNTLETBOOM5 }
-    frame GNF1R { light GAUNTLETBOOM4 }
-    frame GNF1S { light GAUNTLETBOOM4 }
-    frame GNF1T { light GAUNTLETBOOM3 }
-    frame GNF1U { light GAUNTLETBOOM3 }
-    frame GNF1V { light GAUNTLETBOOM2 }
-    frame GNF1W { light GAUNTLETBOOM2 }
-    frame GNF1X { light GAUNTLETBOOM1 }
-    frame GNF1Y { light GAUNTLETBOOM1 }
-    frame GNF1Z { light GAUNTLETBOOM1 }
-}
-
 object GauntletFX4
 {
     frame GNF2A { light GAUNTLETPOWBALL }
@@ -53,27 +22,6 @@ object GauntletFX4
     frame GNF2E { light GAUNTLETPOWBALL    }
     frame GNF2F { light GAUNTLETPOWBALL_X1 }
     frame GNF2G { light GAUNTLETPOWBALL_X2 }
-}
-
-object GauntletAltFX2
-{
-    frame GNF3A { light GAUNTLETPOWBALL }
-    frame GNF3B { light GAUNTLETPOWBALL }
-    frame GNF3C { light GAUNTLETPOWBALL }
-
-    frame GNF3D { light GAUNTLETPOWBALL  }
-    frame GNF3E { light GAUNTLETPOWBALL  }
-    frame GNF3F { light GAUNTLETPOWBOOM1 }
-    frame GNF3G { light GAUNTLETPOWBOOM1 }
-    frame GNF3H { light GAUNTLETPOWBOOM2 }
-    frame GNF3I { light GAUNTLETPOWBOOM2 }
-    frame GNF3J { light GAUNTLETPOWBOOM3 }
-    frame GNF3K { light GAUNTLETPOWBOOM3 }
-    frame GNF3L { light GAUNTLETPOWBOOM4 }
-    frame GNF3M { light GAUNTLETPOWBOOM4 }
-    frame GNF3N { light GAUNTLETPOWBOOM5 }
-    frame GNF3O { light GAUNTLETPOWBOOM5 }
-    frame GNF3P { light GAUNTLETPOWBOOM4 }
 }
 
 flickerlight GAUNTLETBOOM1
