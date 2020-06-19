@@ -171,12 +171,11 @@ actor SunStaffHefty : SunStaffAmmo 16455
 	radius 12
 	height 12
 	inventory.pickupmessage "$TXT_AMMOSUNSTAFF2"
-	inventory.icon "BAL8A0"
 	inventory.amount 100
 	states
 	{
 	Spawn:
-		BAL8 ABCDEFGH 3 BRIGHT light(LWANDAMMO)
+		SUNH ABCDEF 4 BRIGHT light(LWANDAMMO)
 		loop
 	}
 }
