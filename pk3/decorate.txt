@@ -37,7 +37,7 @@
 
 //Redefined Monsters
 //Must be loaded before the new monsters so that some new monsters can be derived from them
-#include "actors/monsters/resurrection_frames.txt"
+#include "actors/monsters/heretic_monsters.txt"
 
 //New Monsters
 #include "actors/monsters/acolyte.txt"
