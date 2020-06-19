@@ -14,15 +14,15 @@ ACTOR HPackPlayer : HereticPlayer
 	Player.StartItem "HPWand"
 	Player.StartItem "HPStaff"
 	Player.WeaponSlot 1, "HPStaff", "HPGauntlets"
-	Player.WeaponSlot 2, "HPWand"
+	Player.WeaponSlot 2, "HPWand", "HPMorphWand"
 	Player.WeaponSlot 3, "HPCrossbow"
-	Player.WeaponSlot 4, "HPForce", "HPBlaster"
+	Player.WeaponSlot 4, "HPBlaster"
 	Player.WeaponSlot 5, "HPSkull"
 	Player.WeaponSlot 6, "HPPhoenix"
-	Player.WeaponSlot 7, "HPMace", "HPDSparilGauntlets"
+	Player.WeaponSlot 7, "HPMace"
 	Player.WeaponSlot 8, "HPSunStaff"
-	Player.WeaponSlot 9, "HPStaffChaos"
-	Player.WeaponSlot 0, "HPMorphWand"
+	Player.WeaponSlot 9, "HPDSparilGauntlets"
+	Player.WeaponSlot 0, "HPStaffChaos"
 	States
 	{
 	Spawn:
