@@ -336,6 +336,7 @@ map H4M2 "The Bloody Path"
 	//sky1 = "SKYTOP10", 0
 	music = romeric
 	next = h4m3
+	secretnext = h4mX
 	Cluster = 104
 	exitpic ="$IN_E4"
 	enterpic ="$IN_E4"
@@ -416,8 +417,8 @@ map H4M8 "The Void Temple"
 map H4MX "At the Back of My Head"
 {
 	Cluster = 104
-	levelnum = 59
-	next = "H4M5"
+	levelnum = 49
+	next = "H4M3"
 	music = "D_FARAWY"
 	sky1 = "SKY3" 
 	exitpic ="$IN_E5"
