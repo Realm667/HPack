@@ -5,6 +5,7 @@ ACTOR HPCrossbow : Crossbow replaces Crossbow
 	//$Category Weapons
 	//$Title Ethereal Crossbow
 	Weapon.SelectionOrder 700
+	Weapon.AmmoType1 "HPCrossbowAmmo"
 	Weapon.SisterWeapon "HPCrossbowPowered"
 	Inventory.PickupMessage "$TXT_WPNCROSSBOW"
 	Tag "$TAG_CROSSBOW"
@@ -37,6 +38,7 @@ ACTOR HPCrossbowPowered : CrossbowPowered
 {
 	+WEAPON.POWERED_UP
 	Weapon.SelectionOrder 700
+	Weapon.AmmoType1 "HPCrossbowAmmo"
 	Weapon.SisterWeapon "HPCrossbow"
 	Tag "$TAG_CROSSBOW"
 	Obituary "$OB_MPCROSSBOW"
