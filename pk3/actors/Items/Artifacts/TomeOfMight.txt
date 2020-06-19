@@ -21,7 +21,7 @@ Actor ArtiTomeOfMight : CustomInventory 19999
 	+INVENTORY.FANCYPICKUPSOUND
 	Inventory.Icon "ARTITOME"
 	Inventory.DefMaxAmount
-	Inventory.PickupSound "pickups/p_pkup"
+	Inventory.PickupSound "misc/p_pkup"
 	Inventory.UseSound "misc/invuse"
 	Inventory.PickupMessage "$TXT_ARTITOMEOFMIGHT"
 	Tag "$TAG_ARTITOMEOFMIGHT"
