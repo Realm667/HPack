@@ -194,7 +194,7 @@ ACTOR ChaosAmmo : Ammo 16456
   Inventory.MaxAmount 150
   Ammo.BackpackAmount 0
   Ammo.BackpackMaxAmount 300
-  Inventory.Icon "GAMMB0"
+  Inventory.Icon "GAMMA0"
   States
   {
   Spawn:
