@@ -604,6 +604,9 @@ $random world/glass		{ world/glassbreak  world/glassshatter }
 // ZCorpseLynchedNoHeart's blood drip (Hexen)
 Drip                    blddrp1
 
+// Pods
+PoisonPod/Puff          puff1
+
 ;===========================================================================
 ; 
 ; HEXEN IMPORTED 'WORLD SOUNDS'
