@@ -6,7 +6,7 @@ ACTOR GoldWandMed : GoldWandAmmo 14256
 {
 	//$Category Ammunition
 	//$Title Crystal Gem
-  	Inventory.PickupMessage "$TXT_AMMOGOLDWAND1"
+  	Inventory.PickupMessage "$TXT_AMMOGOLDWAND3"
   	Inventory.Amount 25
   	States
   	{
