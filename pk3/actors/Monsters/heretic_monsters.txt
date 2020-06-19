@@ -1,9 +1,33 @@
+//list of monster changes:
+
+//Gargoyle does not infight with Fire Gargoyle
+//Separate sounds for regular and gib deaths
+//All Golem and Nitrogolem variants no longer infight with each other.
+//Sounds added for Nitrogolem windup, firing, projectile impact.
+//Weredragon: Increased health, better melee attack, 
+//fixed ammo drop, lights up when firing
+//Various ammo drop tweaks
+//Disciple lights up during attack windup and death
+//Sabreclaw lights up during death
+//Maulotaur melee attack is much more powerful and has splash damage.
+//Enemies don't infight with the Iron Lich
+//Lich lights up during death sequence
+//Various damage/speed increases for enemy projectiles
+//Weredragon fireball/contrail are bright
+//Impact sounds added for projectiles that didn't have them
+
 actor HPBeast : Beast replaces Beast
 {
-	Health 400
-	Mass 400
+	Health 300
+	Mass 300
+	MeleeRange 64
+	DropItem "CrossbowAmmo", 84, 5
 	States
 	{
+	Missile:
+		BEAS H 10 A_FaceTarget
+		BEAS I 10 Bright A_CustomComboAttack("BeastBall", 32, random[BeastAttack](5,15)*3, "beast/attack")
+		Goto See
 	Raise:
 		BEAS ZYXWVUTSR 6
 		Goto See
@@ -26,73 +50,63 @@ actor HPBeastStrong : HPBeast 16601
 	Obituary "$OB_BEASTSTRONG"
 	States
 	{
-	// Missile:
-    	// 	BEAS H 10 A_FaceTarget
-    	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-	// 	BEAS H 5 bright A_FaceTarget
-	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-	// 	BEAS H 5 bright A_FaceTarget
-	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-	// 	BEAS H 5 bright A_FaceTarget
-	// 	BEAS I 0 bright A_CustomMissile("BeastBall2",80)
-	// 	goto see
 	Missile:
-    		TNT1 A 0 A_JumpIfHealthLower (250, "Missile2") 
-    		TNT1 A 0 A_Jump(90, 5)
-    		BEAS H 6 A_FaceTarget
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -8)
-    		BEAS I 6 A_CustomMissile ("BeastBall2", 80, 0, 8)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 0)
-    		Goto See
-    		BEAS H 4 A_FaceTarget
-    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, -16)
-    		BEAS I 0 A_FaceTarget
-    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, -8)
-    		BEAS I 0 A_FaceTarget
-    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 0)
-    		BEAS I 0 A_FaceTarget
-    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 8)
-    		BEAS I 0 A_FaceTarget
-    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 16)
-    		BEAS I 0 A_FaceTarget
-    		BEAS I 4 A_CustomMissile ("BeastBall2", 80, 0, 32)
-    		Goto See
-  	Missile2:
-    		TNT1 A 0 A_Jump(90, 15)
-    		BEAS H 6 A_FaceTarget
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		BEAS I 2 A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-    		Goto See
-    		BEAS H 16 A_FaceTarget
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -64)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 64)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -56)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 56)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -48)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 48)    
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -40)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 40)    
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -32)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 32)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -24)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 24)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -16)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 16)    
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, -8)
-    		BEAS I 0 A_CustomMissile ("BeastBall2", 80, 0, 8)    
-    		BEAS I 6 A_CustomMissile ("BeastBall2", 80, 0, 0)
-    		Goto See
+		TNT1 A 0 A_JumpIfHealthLower (250, "Missile2") 
+		TNT1 A 0 A_Jump(90, 5)
+		BEAS H 6 A_FaceTarget
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -8)
+		BEAS I 6 Bright A_CustomMissile ("BeastBall2", 80, 0, 8)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 0)
+		Goto See
+		BEAS H 4 A_FaceTarget
+		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, -16)
+		BEAS I 0 Bright A_FaceTarget
+		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, -8)
+		BEAS I 0 Bright A_FaceTarget
+		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 0)
+		BEAS I 0 Bright A_FaceTarget
+		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 8)
+		BEAS I 0 Bright A_FaceTarget
+		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 16)
+		BEAS I 0 Bright A_FaceTarget
+		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 32)
+		Goto See
+	Missile2:
+		TNT1 A 0 A_Jump(90, 15)
+		BEAS H 6 A_FaceTarget
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
+		Goto See
+		BEAS H 16 A_FaceTarget
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -64)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 64)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -56)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 56)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -48)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 48)    
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -40)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 40)    
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -32)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 32)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -24)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 24)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -16)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 16)    
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -8)
+		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 8)    
+		BEAS I 6 Bright A_CustomMissile ("BeastBall2", 80, 0, 0)
+		Goto See
 	}
 }
 
@@ -123,6 +137,8 @@ actor HPChicken : Chicken replaces Chicken 16602
 
 actor HPClink : Clink replaces Clink
 {
+	Mass 150
+	DropItem "SkullRodAmmo", 36, 10
 	States
 	{
 	Melee:
@@ -130,6 +146,14 @@ actor HPClink : Clink replaces Clink
 		CLNK F 4 A_FaceTarget
 		CLNK G 7 A_CustomMeleeAttack(random[ClinkAttack](3,9), "clink/attack", "clink/attack")
 		Goto See
+	Death:
+		CLNK IJ 6 BRIGHT
+		CLNK K 5 BRIGHT A_Scream
+		CLNK L 5 BRIGHT A_NoBlocking
+		CLNK M 5 BRIGHT
+		CLNK N 5
+		CLNK O -1
+		Stop
 	Raise:
 		CLNK ONMLKJI 5
 		Goto See
@@ -138,8 +162,19 @@ actor HPClink : Clink replaces Clink
 
 actor HPIronLich : IronLich replaces IronLich
 {
+	Mass 1500
+	+NOTARGET
+	+NOINFIGHTING
 	States
 	{
+	Death:
+		LICH C 7 BRIGHT
+		LICH D 7 BRIGHT A_Scream
+		LICH EF 7 BRIGHT
+		LICH G 7 BRIGHT A_NoBlocking
+		LICH H 7
+		LICH I -1 A_BossDeath
+		Stop
 	Raise:
 		LICH IHGFEDC 7
 		Goto See
@@ -148,6 +183,7 @@ actor HPIronLich : IronLich replaces IronLich
 
 actor HPKnight : Knight replaces Knight
 {
+	Health 175
 	States
 	{
 	Raise:
@@ -166,12 +202,44 @@ actor HPKnightGhost : KnightGhost replaces KnightGhost
 	}
 }
 
+actor HPMinotaur : Minotaur replaces Minotaur
+{
+	Species "Maulotaur"
+	DropItem "ArtiSuperHealth", 12
+	DropItem "PhoenixRodHefty", 84, 10
+	States
+	{
+	Melee:
+		MNTR V 10 A_FaceTarget
+		MNTR W 7 A_FaceTarget
+		MNTR X 0 A_MinotaurAtk1
+		MNTR X 12 A_SpawnItemEx ("HPMinotaurHammerSplash", 32, 0, 0)
+		Goto See
+	}
+}
+
+actor HPMinotaurHammerSplash
+{
+	Radius 8
+	Height 8
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		Goto Death
+	Death:
+		TNT1 A 0 A_Explode(80, 64)
+		Stop
+	}
+}
+
 actor HPMummy : Mummy replaces Mummy
 {
 	// [Blue Shadow] As of development build 382-ga9bea7d of ZDoom, the golems are changed so they
 	// can potentially damage and infight with each other (an origianl Heretic behavior). This will
 	// restore the old behavior, so they don't infight. The same thing goes for the gargoyles below.
 	Species "Mummy"
+	Speed 10
 	States
 	{
 	Raise:
@@ -183,6 +251,7 @@ actor HPMummy : Mummy replaces Mummy
 actor HPMummyGhost : MummyGhost replaces MummyGhost
 {
 	Species "Mummy"
+	Speed 10
 	States
 	{
 	Raise:
@@ -194,8 +263,20 @@ actor HPMummyGhost : MummyGhost replaces MummyGhost
 actor HPMummyLeader : MummyLeader replaces MummyLeader
 {
 	Species "Mummy"
+	Health 90
+	Speed 11
 	States
 	{
+	Missile:
+		MUMM X 5 A_FaceTarget
+		MUMM Y 0 Bright A_PlaySound("mummy/charge1")
+		MUMM Y 5 Bright A_FaceTarget
+		MUMM X 5 A_FaceTarget
+		MUMM Y 0 Bright A_PlaySound("mummy/charge2")
+		MUMM Y 5 Bright A_FaceTarget
+		MUMM X 5 A_FaceTarget
+		MUMM Y 5 Bright A_CustomComboAttack("HPMummyFX1", 32, random[MummyAttack2](1,8)*2, "mummy/attack2")
+		Goto See
 	Raise:
 		MUMM PONMLKJI 5
 		Goto See
@@ -205,16 +286,37 @@ actor HPMummyLeader : MummyLeader replaces MummyLeader
 actor HPMummyLeaderGhost : MummyLeaderGhost replaces MummyLeaderGhost
 {
 	Species "Mummy"
+	Speed 11
 	States
 	{
+	Missile:
+		MUMM X 5 A_FaceTarget
+		MUMM Y 0 Bright A_PlaySound("mummy/charge1")
+		MUMM Y 5 Bright A_FaceTarget
+		MUMM X 5 A_FaceTarget
+		MUMM Y 0 Bright A_PlaySound("mummy/charge2")
+		MUMM Y 5 Bright A_FaceTarget
+		MUMM X 5 A_FaceTarget
+		MUMM Y 5 Bright A_CustomComboAttack("HPMummyFX1", 32, random[MummyAttack2](1,8)*2, "mummy/attack2")
+		Goto See
 	Raise:
 		MUMM PONMLKJI 5
 		Goto See
 	}
 }
 
+Actor HPMummyFX1 : MummyFX1 replaces MummyFX1
+{
+	+SPAWNSOUNDSOURCE
+	SeeSound "mummy/shoot"
+	DeathSound "misc/magichit"
+}
+
 actor HPSnake : Snake replaces Snake
 {
+	Health 240
+	Mass 200
+	DropItem "PhoenixRodAmmo", 84, 1
 	States
 	{
 	Raise:
@@ -373,6 +475,25 @@ actor HPWizard : Wizard replaces Wizard
 	+NoBloodDecals
 	States
 	{
+	Missile:
+		WZRD C 4 A_WizAtk1
+		WZRD C 4 A_WizAtk2
+		WZRD C 4 A_WizAtk1
+		WZRD C 4 A_WizAtk2
+		WZRD C 4 A_WizAtk1
+		WZRD C 4 A_WizAtk2
+		WZRD C 4 A_WizAtk1
+		WZRD C 4 A_WizAtk2
+		WZRD D 12 Bright A_WizAtk3
+		Goto See
+	Death:
+		WZRD F 6 Bright A_GhostOff
+		WZRD G 6 Bright A_Scream
+		WZRD HI 6 Bright
+		WZRD J 6 Bright A_NoBlocking
+		WZRD KL 6
+		WZRD M -1 A_SetFloorClip
+		Stop
 	Raise:
 		WZRD MLKJIHGF 6
 		Goto See
@@ -384,6 +505,27 @@ actor HPHereticImp : HereticImp replaces HereticImp
 	Species "HereticImp"
 	States
 	{
+	Missile:
+		IMPX A 10 A_FaceTarget
+		IMPX A 0 A_Jump (176, "MissileAbort")
+		IMPX B 6 A_SkullAttack(12)
+		IMPX CBAB 6
+		Goto Missile+2
+	MissileAbort:
+		IMPX A 0
+		Goto See
+	Death:
+		IMPX G 4 A_ImpDeath
+		IMPX H 0 A_PlaySound("himp/scream")
+		IMPX H 5
+		Wait
+	XDeath:
+		IMPX S 5 A_ImpXDeath1
+		IMPX T 5 A_PlaySound("himp/gib")
+		IMPX U 5
+		IMPX V 5 A_Gravity
+		IMPX W 5 
+		Wait
 	Raise:
 		IMPX HG 5
 		Goto See
@@ -395,6 +537,18 @@ actor HPHereticImpLeader : HereticImpLeader replaces HereticImpLeader
 	Species "HereticImp"
 	States
 	{
+	Death:
+		IMPX G 4 A_ImpDeath
+		IMPX H 0 A_PlaySound("himp/scream")
+		IMPX H 5
+		Wait
+	XDeath:
+		IMPX S 5 A_ImpXDeath1
+		IMPX T 5 A_PlaySound("himp/gib")
+		IMPX U 5
+		IMPX V 5 A_Gravity
+		IMPX W 5
+		Wait
 	Raise:
 		IMPX HG 5
 		Goto See
@@ -422,4 +576,72 @@ ACTOR HPSuperGargoyle : HPHereticImp 17051
 		IMPX A 0 A_Jump(192, "Melee")
 		Goto Missile+2
 	}
+}
+
+// projectile tweaks
+
+Actor HPHereticImpBall : HereticImpBall replaces HereticImpBall
+{
+	Damage 2
+	DeathSound "misc/fireballsmall"
+}
+
+Actor HPKnightAxe : KnightAxe replaces KnightAxe
+{
+	Damage 3
+}
+
+ACTOR HPWizardFX1 : WizardFX1 replaces WizardFX1
+{
+	DeathSound "misc/magichit"
+}
+
+Actor HPBeastBall : BeastBall replaces BeastBall
+{
+	Speed 14
+	Damage 6
+	Decal DoomImpScorch
+	DeathSound "misc/fireballhit"
+	+BRIGHT
+}
+
+ACTOR HPPuffy : Puffy replaces Puffy
+{
+	+BRIGHT
+}
+
+Actor HPSnakeProjA : SnakeProjA replaces SnakeProjA
+{
+	Speed 15
+	Damage 2
+	DeathSound "misc/magicsmall"
+}
+
+Actor HPSnakeProjB : SnakeProjB replaces SnakeProjB
+{
+	Speed 15
+	Damage 5
+	DeathSound "misc/magichit"
+}
+
+ACTOR HPHeadFX1 : HeadFX1 replaces HeadFX1
+{
+	DeathSound "misc/icehit"
+}
+
+ACTOR HPHeadFX2 : HeadFX2 replaces HeadFX2
+{
+	+THRUGHOST
+	DeathSound "misc/icehit"
+}
+
+ACTOR HPHeadFX3 : HeadFX3 replaces HeadFX3
+{
+	DeathSound "misc/fireballbig"
+}
+
+ACTOR HPMinotaurFX1 : MinotaurFX1 replaces MinotaurFX1
+{
+	Damage 4
+	DeathSound "misc/fireballhit"
 }

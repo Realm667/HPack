@@ -124,6 +124,22 @@ misc/ripslop			null
 // MONSTER SOUNDS //
 ////////////////////
 
+//Heretic Monsters
+himp/scream             imppai
+himp/gib                impgib
+
+mummy/charge1           gldchg
+mummy/charge2           mumchg
+mummy/shoot             mumsht
+
+misc/fireballhit        firhit
+misc/fireballbig        firbig
+misc/fireballsmall      firsml
+misc/magichit           maghit
+misc/magicsmall         magsml
+misc/magicbig           magbig
+misc/icehit             shards1b
+
 //Skull Wizard
 H2SkullWizard/Sight		SKWZSIGH
 H2SkullWizard/Pain		SKWZPAIN

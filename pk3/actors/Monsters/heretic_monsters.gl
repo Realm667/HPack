@@ -1,19 +1,18 @@
-object HPMummyLeader
+object HPBeast
 {
-    frame MUMMY { light MUMMYATK }
+    frame BEASI { light BEASTATK }
 }
 
-object HPMummyLeaderGhost
+object HPBeastBall
 {
-    frame MUMMY { light MUMMYATK }
-}
+    frame FRB1A { light BEASTBALL }
+    frame FRB1B { light BEASTBALL }
+    frame FRB1C { light BEASTBALL }
 
-object HPIronlich
-{
-    frame LICHD { light IRONLICH1 }
-    frame LICHE { light IRONLICH2 }
-    frame LICHF { light IRONLICH3 }
-    frame LICHG { light IRONLICH4 }
+    frame FRB1D { light BEASTBALL_X1 }
+    frame FRB1E { light BEASTBALL_X2 }
+    frame FRB1F { light BEASTBALL_X3 }
+    frame FRB1G { light BEASTBALL_X4 }
 }
 
 object HPClink
@@ -24,7 +23,133 @@ object HPClink
     frame CLNKN { light CLINK_X4 }
 }
 
-object HPBeast
+object HPHeadFX1
 {
-    frame BEASI { light BEASTATK }
+    frame FX05A { light FROSTBALL }
+    frame FX05B { light FROSTBALL }
+    frame FX05C { light FROSTBALL }
+
+    frame FX05D { light FROSTBALL_X1 }
+    frame FX05E { light FROSTBALL_X2 }
+    frame FX05F { light FROSTBALL_X3 }
+    frame FX05G { light FROSTBALL_X4 }
+}
+
+object HPHeadFX2
+{
+    frame FX05H { light FROSTSHARD }
+    frame FX05I { light FROSTSHARD }
+    frame FX05J { light FROSTSHARD }
+}
+
+object HPHeadFX3
+{
+    frame FX06A { light LICHFIRE }
+    frame FX06B { light LICHFIRE }
+    frame FX06C { light LICHFIRE }
+
+    frame FX06D { light LICHFIRE_X1 }
+    frame FX06E { light LICHFIRE_X2 }
+    frame FX06F { light LICHFIRE_X3 }
+    frame FX06G { light LICHFIRE_X4 }
+}
+
+object HPHereticImpBall
+{
+    frame FX10A { light HIMPBALL }
+    frame FX10B { light HIMPBALL }
+    frame FX10C { light HIMPBALL }
+
+    frame FX10D { light HIMPBALL    }
+    frame FX10E { light HIMPBALL_X1 }
+    frame FX10F { light HIMPBALL_X2 }
+    frame FX10G { light HIMPBALL_X3 }
+}
+
+object HPIronlich
+{
+    frame LICHD { light IRONLICH1 }
+    frame LICHE { light IRONLICH2 }
+    frame LICHF { light IRONLICH3 }
+    frame LICHG { light IRONLICH4 }
+}
+
+object HPKnightAxe
+{
+    frame SPAXA { light GREENAXE }
+    frame SPAXB { light GREENAXE }
+    frame SPAXC { light GREENAXE }
+
+    frame SPAXD { light GREENAXE_X1 }
+    frame SPAXE { light GREENAXE_X2 }
+    frame SPAXF { light GREENAXE_X3 }
+}
+
+object HPMinotaurFX1
+{
+    frame FX12A { light MAULBALL }
+    frame FX12B { light MAULBALL }
+
+    frame FX12C { light MAULBALL_X1 }
+    frame FX12D { light MAULBALL_X2 }
+    frame FX12E { light MAULBALL_X3 }
+    frame FX12F { light MAULBALL_X3 }
+    frame FX12G { light MAULBALL_X4 }
+    frame FX12H { light MAULBALL_X4 }
+}
+
+object HPMummyFX1
+{
+    frame FX15A { light MUMMYBALL }
+    frame FX15B { light MUMMYBALL }
+    frame FX15C { light MUMMYBALL }
+
+    frame FX15D { light MUMMYBALL_X1 }
+    frame FX15E { light MUMMYBALL_X2 }
+    frame FX15F { light MUMMYBALL_X3 }
+}
+
+object HPMummyLeader
+{
+    frame MUMMY { light MUMMYATK }
+}
+
+object HPMummyLeaderGhost
+{
+    frame MUMMY { light MUMMYATK }
+}
+
+object HPSnakeProjA
+{
+    frame SNFXA { light SNAKESHOT1 }
+    frame SNFXB { light SNAKESHOT1 }
+    frame SNFXC { light SNAKESHOT1 }
+    frame SNFXD { light SNAKESHOT1 }
+
+    frame SNFXE { light SNAKESHOT1_X1 }
+    frame SNFXF { light SNAKESHOT1_X2 }
+    frame SNFXG { light SNAKESHOT1_X3 }
+    frame SNFXH { light SNAKESHOT1_X4 }
+}
+
+object HPSnakeProjB
+{
+    frame SNFXJ { light SNAKESHOT2 }
+    frame SNFXK { light SNAKESHOT2 }
+
+    frame SNFXL { light SNAKESHOT2_X1 }
+    frame SNFXM { light SNAKESHOT2_X2 }
+    frame SNFXN { light SNAKESHOT2_X3 }
+}
+
+object HPWizardFX1
+{
+    frame FX11A { light DISCIPLEBALL }
+    frame FX11B { light DISCIPLEBALL }
+    frame FX11C { light DISCIPLEBALL }
+
+    frame FX11D { light DISCIPLEBALL    }
+    frame FX11E { light DISCIPLEBALL    }
+    frame FX11F { light DISCIPLEBALL_X1 }
+    frame FX11G { light DISCIPLEBALL_X2 }
 }
