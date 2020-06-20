@@ -108,6 +108,7 @@ map H1M8 "City of Darkness"
 	levelnum = 18
 	music    = M_H1M8
 	next     = Endtitle
+	nointermission
 }
 
 map H1MX "ChickenSpring"
@@ -180,6 +181,7 @@ map H2M7 "Asterion"
 	levelnum = 27
 	music    = M_H2M7
 	next     = Endtitle
+	nointermission
 }
 
 map H2MX "Crafting the Docks"
@@ -261,6 +263,7 @@ map H3M8 "Infernux Prime"
 	music    = M_H3M8
 	next     = Endtitle
 	sky1     = "SKY2", 0.0
+	nointermission
 }
 
 // Episode 4: The Astral Plane -------------------------------------------
@@ -345,6 +348,7 @@ map H4M8 "The Void Temple"
 	next     = Endtitle
 	sky1     = "BSSKY", 0.0
 	monsterfallingdamage
+	nointermission
 }
 
 map H4MX "At the Back of My Head"
