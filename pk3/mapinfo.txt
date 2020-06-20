@@ -52,7 +52,7 @@ adddefaultmap
 map H1M1 "Gloom Tower"
 {
 	levelnum  = 11
-	music     = MUS_E1M4
+	music     = M_H1M1
 	next      = H1M2
 }
 
@@ -113,7 +113,7 @@ map H1M8 "City of Darkness"
 map H1MX "ChickenSpring"
 {
 	levelnum   = 19
-	music      = MUS_E1M9
+	music      = M_H1MX
 	next       = H1M4
 	sky1       = "sky1", 0.0
 	fade       = "20 15 20"
@@ -142,14 +142,14 @@ map H2M1 "Chapel of the Seas"
 map H2M2 "Dark Water"
 {
 	levelnum = 22
-	music    = MUS_E1M3
+	music    = M_H2M2
 	next     = H2M3
 }
 
 map H2M3 "Aquatemple"
 {
 	levelnum = 23
-	music    = MUS_E3M3
+	music    = M_H2M3
 	next     = H2M4
 }
 
@@ -164,7 +164,7 @@ map H2M4 "Icy Catacomb"
 map H2M5 "Serpent Residence"
 {
 	levelnum = 25
-	music    = MUS_E2M3
+	music    = M_H2M5
 	next     = H2M6
 }
 
@@ -178,7 +178,7 @@ map H2M6 "House of the Ancients"
 map H2M7 "Asterion"
 {
 	levelnum = 27
-	music    = MUS_E1M9
+	music    = M_H2M7
 	next     = Endtitle
 }
 
@@ -203,7 +203,7 @@ adddefaultmap
 map H3M1 "Scorched Earth"
 {
 	levelnum = 31
-	music    = MUS_E2M1
+	music    = M_H3M1
 	next     = H3M2
 //	fade     = "30 10 10"
 }
@@ -211,7 +211,7 @@ map H3M1 "Scorched Earth"
 map H3M2 "Lava Falls"
 {
 	levelnum = 32
-	music    = MUS_E2M2
+	music    = M_H3M2
 	next     = H3M3
 //	fade     = "30 10 10"
 }
@@ -219,7 +219,7 @@ map H3M2 "Lava Falls"
 map H3M3 "Bastion of Sorrow"
 {
 	levelnum = 33
-	music    = MUS_E1M4
+	music    = M_H3M3
 	next     = H3M4
 //	fade     = "30 10 10"
 }
@@ -291,7 +291,7 @@ map H4M2 "The Bloody Path"
 map H4M3 "Arid Crypt"
 {
 	levelnum = 43
-	music    = MUS_E2M6
+	music    = M_H4M3
 	next     = H4M4
 	fade     = "20 20 20"
 }
@@ -314,7 +314,7 @@ map H4M4 "Ziggurat of Sorrow"
 Map H4M5 "Vortex"
 {
 	levelnum = 45
-	music    = MUS_E2M3
+	music    = M_H4M5
 	next     = H4M6
 	fade     = "57 00 7F"
 	gravity  = 300
