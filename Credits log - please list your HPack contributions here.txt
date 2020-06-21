@@ -290,6 +290,11 @@ Contributor: KeksDose
 --------------------
 - Fire particles used for the torches and braziers.
 
+-------------------
+Contributor: boris
+-------------------
+- Breakable glass script
+
 --------------------
 Other credits
 --------------------

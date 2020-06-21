@@ -1,0 +1,71 @@
+//-------------------------------------------------------------------------------------------------
+// Breakable glass -- by boris
+//-------------------------------------------------------------------------------------------------
+
+script "BreakGlass" (int id)
+{
+    int tid = id;
+    int spawndistance = 8;
+
+    int x1 = GetActorX(tid) >> 16;
+    int y1 = GetActorY(tid) >> 16;
+    int z1 = GetActorZ(tid) >> 16;
+    int angle = GetActorAngle(tid) >> 8;
+
+    int x2 = GetActorX(-tid) >> 16;
+    int y2 = GetActorY(-tid) >> 16;
+    int z2 = GetActorZ(-tid) >> 16;
+
+    // Horizontal stuff
+    int hlength = linelength(x1, y1, x2, y2);
+    int hnumsteps = fixeddiv(hlength<<16, spawndistance<<16);
+    int hstepsize = fixeddiv(1.0, hnumsteps);
+
+    // Vertical stuff
+    int vnumsteps = fixeddiv(abs(z1 - z2)<<16, spawndistance<<16);
+    int vstepsize = fixeddiv(1.0, vnumsteps);
+
+    for(int hu = 0.0; hu < 1.0; hu += hstepsize)
+    {
+        int x = coordat(x1, x2, hu);
+        int y = coordat(y1, y2, hu);
+
+        for(int vu = 0.0; vu < 1.0; vu += vstepsize)
+        {
+            int z  = coordat(z1, z2, vu);
+            Spawn("GlassShardSpawner", x, y, z, 0, angle);
+        }
+    }
+
+    Setlineblocking(id, OFF);
+
+    thingsound(id, "world/glass", 127);
+}
+
+// Returns the length (distance) between two points
+function int linelength(int x1, int y1, int x2, int y2)
+{
+    int d1 = abs(x2 - x1);
+    int d2 = abs(y2 - y1);
+
+    return sqrt(d1*d1 + d2*d2);
+}
+
+// Returns a value that's between a and b.
+// u has to be a fixed point between 0.0 and 1.0
+function int coordat(int a, int b, int u)
+{
+    a <<= 16;
+    b <<= 16;
+
+    return a + fixedmul(u, (b - a));
+}
+
+// Returns the absolute value
+function int abs (int x)
+{
+    if (x < 0)
+        return -x;
+
+    return x;
+}
