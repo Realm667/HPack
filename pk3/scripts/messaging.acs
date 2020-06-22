@@ -1,0 +1,16 @@
+//-------------------------------------------------------------------------------------------------
+// Messaging & cutscene helpers -- by Xaser
+//-------------------------------------------------------------------------------------------------
+
+script "MusicFadeOut" (int fadetime)
+{
+    int fadePerTic = FixedDiv( 1.0, FixedMul( fadetime, 35.0 ) );
+    int musicVolume = 1.0;
+
+    while(musicVolume > 0)
+    {
+        musicVolume -= fadePerTic;
+        SetMusicVolume(musicVolume);
+        Delay(1);
+    }
+}

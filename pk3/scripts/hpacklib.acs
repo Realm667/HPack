@@ -4,3 +4,4 @@
 #include "lightstyle.acs"
 #include "mapinfo.acs"
 #include "glassbreak.acs"
+#include "messaging.acs"
