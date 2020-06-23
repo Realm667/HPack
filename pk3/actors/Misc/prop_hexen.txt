@@ -1064,3 +1064,63 @@ ACTOR HSmallFog
 		Loop
 	}
 }
+
+ACTOR HPBell : SwitchableDecoration 16124
+{
+	//$Category Obstacles
+	//$Title Bell
+	//$Sprite BBLLF0
+
+	Radius 56
+	Height 120
+	Mass 0x7fffffff
+	DeathSound "world/bellring"
+
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	+FORCEYBILLBOARD
+
+	States
+	{
+	Spawn:
+	Inactive:
+		BBLL F -1
+		Stop
+	Active:
+		BBLL A 4
+		BBLL BC 4
+		BBLL D 5 A_Scream
+		BBLL CB 4
+		BBLL A 3
+		BBLL E 4
+		BBLL F 5
+		BBLL G 6 A_Scream
+		BBLL F 5
+		BBLL EA 4
+		BBLL BC 5
+		BBLL D 6 A_Scream
+		BBLL CB 5
+		BBLL A 4
+		BBLL EF 5
+		BBLL G 7 A_Scream
+		BBLL FEA 5
+		BBLL B 6
+		BBLL C 6
+		BBLL D 7 A_Scream
+		BBLL CB 6
+		BBLL A 5
+		BBLL EF 6
+		BBLL G 7 A_Scream
+		BBLL FEABC 6
+		BBLL B 7
+		BBLL A 8
+		BBLL E 12
+		BBLL A 10
+		BBLL B 12
+		BBLL A 12
+		BBLL E 14
+		BBLL A 1
+		Goto Spawn
+	}
+}

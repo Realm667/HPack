@@ -610,6 +610,9 @@ Drip                    blddrp1
 // Pods
 PoisonPod/Puff          puff1
 
+// Bell
+world/bellring          BELLRNG
+
 ;===========================================================================
 ; 
 ; HEXEN IMPORTED 'WORLD SOUNDS'
