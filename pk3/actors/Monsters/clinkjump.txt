@@ -2,6 +2,7 @@ actor JumpClink : HPClink 19273
 {
   //$Category Monsters
   //$Title Sabreclaw (Jumping)
+  //$Sprite CLNKQ1
   CameraHeight 49
   +SHORTMISSILERANGE
   +NOTARGETSWITCH
