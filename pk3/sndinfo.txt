@@ -613,6 +613,10 @@ PoisonPod/Puff          puff1
 // Bell
 world/bellring          BELLRNG
 
+// Book
+world/bookout           BOOKOUT
+world/bookin            BOOKIN
+
 ;===========================================================================
 ; 
 ; HEXEN IMPORTED 'WORLD SOUNDS'
