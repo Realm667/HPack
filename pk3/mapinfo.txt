@@ -145,6 +145,7 @@ map H2M2 "Dark Water"
 	levelnum = 22
 	music    = M_H2M2
 	next     = H2M3
+	monsterfallingdamage
 }
 
 map H2M3 "Aquatemple"
