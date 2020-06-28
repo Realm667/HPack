@@ -142,12 +142,24 @@ ACTOR HPZBarrel : RandomSpawner 16079
 	DropItem "ZBarrel"
 }
 
-ACTOR HPZBlueCandle : RandomSpawner 16083
+ACTOR HPZBlueCandle : SwitchableDecoration 16083
 {
 	//$Category Lights
 	//$Title Candle (Blue)
 	//$Sprite BCANA0
-	DropItem "ZBlueCandle"
+	Radius 20
+	Height 16
+	+NOBLOCKMAP
+	States
+	{
+	Spawn:
+	Active:
+		BCAN ABCDE 5 Bright
+		Loop
+	Inactive:
+		BCAN F -1
+		Stop
+	}
 }
 
 ACTOR HPZBucket : RandomSpawner 16080
