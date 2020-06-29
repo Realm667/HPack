@@ -617,6 +617,9 @@ world/bellring          BELLRNG
 world/bookout           BOOKOUT
 world/bookin            BOOKIN
 
+// Spooky Magic
+world/spookymagic       MAGIC
+
 ;===========================================================================
 ; 
 ; HEXEN IMPORTED 'WORLD SOUNDS'

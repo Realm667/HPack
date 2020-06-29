@@ -112,3 +112,37 @@ actor PurpleStarSpawner: GreenStarSpawner 506
    //$Title Star Spawner (Purple)
 	translation "209:224=169:176"
 }
+
+// special window-go-poof effect used in H2M4.
+// no doomednum; it's spawned with a script.
+
+actor WindowPoof64
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+NOSECTOR
+	+NOINTERACTION
+	+NOCLIP
+	-SOLID
+	+CLIENTSIDEONLY
+
+	Translation "209:224=0:35"
+
+	States
+	{
+	Spawn:
+		TNT1 A 5
+		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx (
+			/*actor*/  "BaseStar2",
+			/*xofs*/   0,
+			/*yofs*/   frandom(-32.0, 32.0),
+			/*zofs*/   frandom(8.0, ceilingz-floorz-8.0),
+			/*xvel*/   0,
+			/*yvel*/   0,
+			/*zvel*/   0,
+			/*angle*/  0,
+			/*flags*/  SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE
+		)
+		Stop
+	}
+}
