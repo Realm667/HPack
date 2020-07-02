@@ -28,7 +28,7 @@ adddefaultmap
 	grinding_polyobj
 	fallingdamage
 	smoothlighting
-	lightmode = 0
+	lightmode = 8
 }
 
 // Titlemap --------------------------------------------------------------
@@ -61,7 +61,6 @@ map H1M2 "Sidhe Altar"
 	levelnum  = 12
 	music     = M_H1M2
 	next      = H1M3
-	lightmode = 2
 }
 
 map H1M3 "Elven Wood"
@@ -101,6 +100,7 @@ map H1M7 "Citadel of Horrors"
 	levelnum = 17
 	music    = M_H1M7
 	next     = H1M8
+	lightmode = 0
 }
 
 map H1M8 "City of Darkness"
@@ -109,6 +109,7 @@ map H1M8 "City of Darkness"
 	music    = M_H1M8
 	next     = Endtitle
 	nointermission
+	lightmode = 0
 }
 
 map H1MX "ChickenSpring"
@@ -119,7 +120,6 @@ map H1MX "ChickenSpring"
 	sky1       = "sky1", 0.0
 	fade       = "20 15 20"
 	outsidefog = "20 15 20"
-	lightmode  = 2
 }
 
 // Episode 2: Beneath the Altar ------------------------------------------
@@ -138,6 +138,7 @@ map H2M1 "Chapel of the Seas"
 	music      = M_H2M1
 	next       = H2M2
 	secretnext = H2MX
+	lightmode = 0
 }
 
 map H2M2 "Dark Water"
@@ -145,6 +146,7 @@ map H2M2 "Dark Water"
 	levelnum = 22
 	music    = M_H2M2
 	next     = H2M3
+	lightmode = 0
 	monsterfallingdamage
 }
 
@@ -161,6 +163,7 @@ map H2M4 "Icy Catacomb"
 	music    = M_H2M4
 	next     = H2M5
 	fade     = "10 15 20"
+	lightmode = 0
 }
 
 map H2M5 "Serpent Residence"
@@ -175,6 +178,7 @@ map H2M6 "House of the Ancients"
 	levelnum = 26
 	music    = M_H2M6
 	next     = H2M7
+	lightmode = 0
 }
 
 map H2M7 "Asterion"
@@ -182,6 +186,7 @@ map H2M7 "Asterion"
 	levelnum = 27
 	music    = M_H2M7
 	next     = Endtitle
+	lightmode = 0
 	nointermission
 }
 
@@ -191,6 +196,7 @@ map H2MX "Crafting the Docks"
 	music    = M_H2MX
 	next     = H2M2
 	sky1     = "DNIGHT", 0.0
+	lightmode = 0
 }
 
 // Episode 3: Into the Furnace -------------------------------------------
@@ -209,6 +215,7 @@ map H3M1 "Scorched Earth"
 	music    = M_H3M1
 	next     = H3M2
 //	fade     = "30 10 10"
+	lightmode = 0
 }
 
 map H3M2 "Lava Falls"
@@ -217,6 +224,7 @@ map H3M2 "Lava Falls"
 	music    = M_H3M2
 	next     = H3M3
 //	fade     = "30 10 10"
+	lightmode = 0
 }
 
 map H3M3 "Bastion of Sorrow"
@@ -241,6 +249,7 @@ map H3M5 "Fortress of Eternity"
 	music    = M_H3M5
 	next     = H3M6
 //	fade     = "10 15 20"
+	lightmode = 0
 }
 
 Map H3M6 "Hell Stronghold"
@@ -313,6 +322,7 @@ map H4M4 "Ziggurat of Sorrow"
 	music    = M_H4M4
 	next     = H4M5
 	fade     = "0 05 10"
+	lightmode = 0
 }
 
 Map H4M5 "Vortex"
@@ -331,6 +341,7 @@ map H4M6 "Canyon of Ether"
 	music    = M_H4M6
 	sky1     = "CSSKY", 0.01
 	fade     = "25 00 7F"
+	lightmode = 0
 }
 
 map H4M7 "The Dark Rift"
