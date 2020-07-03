@@ -13,7 +13,6 @@
 #define HPC_MAPAUTHOR_PYROSCOURGE "Pyroscourge"
 #define HPC_MAPAUTHOR_GEZ "Gez"
 #define HPC_MAPAUTHOR_ICYTUX "Icytux"
-#define HPC_MAPAUTHOR_DREADOPP "Dreadopp"
 #define HPC_MAPAUTHOR_JAEKEN "Serge Jaeken"
 #define HPC_MAPAUTHOR_KORESIARCH "Koresiarch"
 #define HPC_MAPAUTHOR_UNHOLYPIMPIN "unholypimpin"
@@ -52,8 +51,8 @@ str hpa_mapauthors[40] =
     HPC_MAPAUTHOR_SHADESMASTER  ,  // M4 - H3M4 - Tabernacle of Magma
     HPC_MAPAUTHOR_TORMENTOR667  ,  // M5 - H3M5 - Fortress of Eternity
     HPC_MAPAUTHOR_GOTHIC        ,  // M6 - H3M6 - Hell Stronghold
-    HPC_MAPAUTHOR_DREADOPP      ,  // M7 - H3M7 - Mythril Keep
-    HPC_MAPAUTHOR_PYROSCOURGE   ,  // M8 - H3M8 - Infernux Prime
+    HPC_MAPAUTHOR_PYROSCOURGE   ,  // M7 - H3M7 - Infernux Prime
+    ""                          ,  // [no map]
     ""                          ,  // [no map]
     "",
     HPC_MAPAUTHOR_SHADESMASTER  ,  // M1 - H4M1 - Ethereal Ruins

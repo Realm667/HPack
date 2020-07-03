@@ -260,17 +260,10 @@ Map H3M6 "Hell Stronghold"
 	sky1     = "BSSKY", 0.0
 }
 
-map H3M7 "Mythril Keep"
+map H3M7 "Infernux Prime"
 {
 	levelnum = 37
 	music    = M_H3M7
-	next     = H3M8
-}
-
-map H3M8 "Infernux Prime"
-{
-	levelnum = 38
-	music    = M_H3M8
 	next     = Endtitle
 	sky1     = "SKY2", 0.0
 	nointermission
