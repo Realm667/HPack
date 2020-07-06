@@ -65,8 +65,12 @@ Contributor: Viscra Maelstrom
 Contributor: Eris Falling
 -------------------
 - Music for H3M1: "The Ophidians"
-- Music for H4M1: "Convergent Kingdoms"
 - Music for H4M5: "Turbulence"
+
+-------------------
+Contributor: AD_79
+-------------------
+- Music for H4M1: "Convergent Kingdoms"
 
 -------------------
 Contributor: Mikolah
@@ -236,7 +240,7 @@ Contributor: Captain Toenail
 -------------------------
 Contributor: Gothic
 -------------------------
-- H3M7: "Hell Stronghold"
+- H3M6: "Hell Stronghold"
 
 -------------------------
 Contributor: qwerqsar
@@ -267,7 +271,7 @@ Contributor: el zee
 -------------------
 Contributor: Pyroscourge
 -------------------
-- H3M8: "Infernux Prime"
+- H3M7: "Infernux Prime"
 - H5MX: "In the back of my head"
 
 --------------------
