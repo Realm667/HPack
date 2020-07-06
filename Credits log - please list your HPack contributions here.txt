@@ -83,6 +83,20 @@ Contributor: pcorf
 - Music for H1MX: "Crushed Spirits"
 
 -------------------
+Contributor: BouncyTEM
+-------------------
+Various ambient sounds:
+- Stars1.ogg
+- Stars2.ogg
+- wind.ogg
+- wind3.ogg
+- wind5.ogg
+- cavelake.ogg
+- drycave.ogg
+- river.ogg
+- wetcave.ogg
+
+-------------------
 Contributor: printz
 -------------------
 - H5M2: "Vortex" -- [XA] maybe? not sure if this one is printz or ShadesMaster... or both?

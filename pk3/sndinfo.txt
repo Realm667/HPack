@@ -522,7 +522,7 @@ ambx21   drycave  //Dry Cave
 ambx22   river	  //Middle River
 ambx23   wetcave  //Wet Cave
 
-//Additional Ambient Screams
+// Additional Ambient Screams
 
 Ambient/Scream1		scream1
 Ambient/Scream2		scream2
@@ -533,6 +533,11 @@ Ambient/Scream6		scream6
 Ambient/Scream7		scream7
 Ambient/Scream8		scream8
 Ambient/Scream		scrmeptm
+
+// Mo' Ambience
+
+Ambient/Stars1      STARS1
+Ambient/Stars2      STARS2
 
 ;=========================================================
 ;AMBIENT SOUND LISTING
@@ -563,6 +568,8 @@ $AMBIENT 23 ambx23 POINT CONTINUOUS 0.8
 $AMBIENT 24 SFX/FireLoop1 POINT CONTINUOUS 0.5
 $AMBIENT 25 SFX/FireLoop2 POINT CONTINUOUS 0.5
 $AMBIENT 26 SFX/FireLoop3 POINT CONTINUOUS 0.5
+$AMBIENT 27 Ambient/Stars1 POINT CONTINUOUS 0.75
+$AMBIENT 28 Ambient/Stars2 POINT CONTINUOUS 0.5
 $ambient 60 "PortalChoir/Loop" POINT continuous  255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
 $ambient 62 amb/windsubs surround continuous 0.5
