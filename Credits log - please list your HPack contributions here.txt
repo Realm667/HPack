@@ -88,6 +88,7 @@ Contributor: BouncyTEM
 Various ambient sounds:
 - Stars1.ogg
 - Stars2.ogg
+- Magtorch.ogg
 - wind.ogg
 - wind3.ogg
 - wind5.ogg

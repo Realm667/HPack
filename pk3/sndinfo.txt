@@ -538,6 +538,7 @@ Ambient/Scream		scrmeptm
 
 Ambient/Stars1      STARS1
 Ambient/Stars2      STARS2
+Ambient/MagicTorch  MAGTORCH
 
 ;=========================================================
 ;AMBIENT SOUND LISTING
@@ -570,6 +571,7 @@ $AMBIENT 25 SFX/FireLoop2 POINT CONTINUOUS 0.5
 $AMBIENT 26 SFX/FireLoop3 POINT CONTINUOUS 0.5
 $AMBIENT 27 Ambient/Stars1 POINT CONTINUOUS 0.75
 $AMBIENT 28 Ambient/Stars2 POINT CONTINUOUS 0.5
+$AMBIENT 29 Ambient/MagicTorch POINT CONTINUOUS 0.5
 $ambient 60 "PortalChoir/Loop" POINT continuous  255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
 $ambient 62 amb/windsubs surround continuous 0.5
