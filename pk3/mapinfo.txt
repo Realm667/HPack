@@ -1,6 +1,10 @@
 // [Blue Shadow] Adding new player classes is done from here now,
 // as the KEYCONF way is deprecated.
 
+// [XA] TODO: split up gameinfo, episodes, etc. into individual mapinfos.
+
+include "mapinfo/hpack/doomednums.txt"
+
 gameinfo
 {
 	PlayerClasses = "HPackPlayer"
