@@ -7,7 +7,7 @@
 
 TXT_WPNSTAFF = "ELVEN STAFF";
 TXT_WPNWAND = "ELVEN WAND"; // not "Gold Wand," since it's referred to as the "Elvenwand" in-game.
-TXT_WPNDSPARILS = "GLOVES OF D'SPARIL";
+TXT_WPNDSPARILS = "HAND OF D'SPARIL";
 TXT_WPNSUNSTAFF = "LIGHTBRINGER";
 TXT_WPNSTAFFCHAOS = "STAFF OF CHAOS";
 TXT_WPNPOLYMORPH = "POLYMORPH WAND";
@@ -29,8 +29,7 @@ TXT_AMMOSKULLROD3 = "MEDIAN RUNES";
 TXT_AMMOPHOENIXROD3 = "BLAZE ORB";
 TXT_AMMOMACE3 = "GREATER MACE SPHERE";
 
-
-TXT_ARTIHADESSPHERE = "HADES SPHERE";
+TXT_ARTISUPERHEALTH = "CRYSTAL PHILTER";
 TXT_ARTIJUMP = "BOOTS OF JUMPING";
 TXT_ARTITOMEOFMIGHT = "TOME OF MIGHT";
 TXT_ARTIMASTERSCROLL = "SCROLL OF THE MASTER";
@@ -140,7 +139,7 @@ OB_MPBLASTER = "%o was blasted a new one by %k's Dragon Claw.";
 OB_MPSKULLROD = "%o got sent down under by %k's Hellstaff.";
 OB_MPPHOENIXROD = "%o was scorched to cinders by %k's Phoenix Rod.";
 OB_MPMACE = "%o got a Mace to the face from $k.";
-OB_MPDSPARILS = "%o was seared to a crisp by %k's Chaos Gauntlets.";
+OB_MPDSPARILS = "%o was seared to a crisp by %k's Hand of D'Sparil.";
 OB_MPSUNSTAFF = "%o was blinded by the glory of %k's Lightbringer staff.";
 OB_MPSQUIRREL = "%o was not a tough nut to crack for %k.";
 OB_MPSTAFFCHAOS = "%o could not hide from %k's chaotic energy.";
@@ -149,7 +148,7 @@ OB_COSTSTAFFCHAOS = "%o succumbed to the forces of Chaos.";
 OB_HELLFIRE = "%o tried to walk through a wall of fire";
 
 // Tags
-TAG_DSPARILSG = "Gloves of D'Sparil";
+TAG_DSPARILSG = "Hand of D'Sparil";
 TAG_SUNSTAFF = "Lightbringer";
 TAG_STAFFOFCHAOS = "Staff of Chaos";
 TAG_POLYMORPHWAND = "Polymorph Wand";

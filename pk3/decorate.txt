@@ -13,6 +13,7 @@
 #include "actors/misc/sfx_blood.txt"
 #include "actors/misc/sfx_shrines.txt"
 #include "actors/misc/sfx_blackmagic.txt"
+#include "actors/misc/sfx_glass.txt"
 
 //Player stuff
 #include "actors/player.txt"
@@ -37,7 +38,7 @@
 
 //Redefined Monsters
 //Must be loaded before the new monsters so that some new monsters can be derived from them
-#include "actors/monsters/resurrection_frames.txt"
+#include "actors/monsters/heretic_monsters.txt"
 
 //New Monsters
 #include "actors/monsters/acolyte.txt"

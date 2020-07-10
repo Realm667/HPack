@@ -14,7 +14,7 @@ object HPHornRodFX1
     frame FX00L { light HELLSTAFFBALL_X5 }
 }
 
-object HPHornRodFX2
+object HPHellstaffPowerPuff
 {
     frame FX00C { light HELLSTAFFBALL }
     frame FX00D { light HELLSTAFFBALL }
@@ -26,4 +26,15 @@ object HPHornRodFX2
     frame FX00J { light HELLSTAFFBALL_X3 }
     frame FX00K { light HELLSTAFFBALL_X4 }
     frame FX00L { light HELLSTAFFBALL_X5 }
+}
+
+object HPRainPillar
+{
+    frame FX22A { light REDRAIN }
+    frame FX22B { light REDRAIN }
+
+    frame FX22C { light REDRAIN_X1 }
+    frame FX22D { light REDRAIN_X2 }
+    frame FX22E { light REDRAIN_X3 }
+    frame FX22F { light REDRAIN_X4 }
 }

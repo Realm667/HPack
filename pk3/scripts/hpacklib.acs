@@ -1,5 +1,7 @@
 #library "hpacklib"
 #include "zcommon.acs"
 
-#include "..\..\pk3\scripts\lightstyle.acs"
-#include "..\..\pk3\scripts\mapinfo.acs"
+#include "lightstyle.acs"
+#include "mapinfo.acs"
+#include "glassbreak.acs"
+#include "messaging.acs"

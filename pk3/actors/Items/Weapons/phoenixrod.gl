@@ -15,3 +15,12 @@ object HPPhoenixFX1
     frame FX08G { light PHOENIX_X6 }
     frame FX08H { light PHOENIX_X6 }
 }
+
+object HPPhoenixFlame
+{
+    frame FX09A { light PHOENIXFLAME }
+    frame FX09B { light PHOENIXFLAME }
+
+    frame FX09C { light PHOENIXFLAME2 }
+    frame FX09D { light PHOENIXFLAME3 }
+}

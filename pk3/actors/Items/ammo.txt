@@ -6,7 +6,7 @@ ACTOR GoldWandMed : GoldWandAmmo 14256
 {
 	//$Category Ammunition
 	//$Title Crystal Gem
-  	Inventory.PickupMessage "$TXT_AMMOGOLDWAND1"
+  	Inventory.PickupMessage "$TXT_AMMOGOLDWAND3"
   	Inventory.Amount 25
   	States
   	{
@@ -16,23 +16,54 @@ ACTOR GoldWandMed : GoldWandAmmo 14256
   	}
 }
 
-// -------------- //
-// ETHREAL ARROWS //
-// -------------- //
+// --------------- //
+// ETHEREAL ARROWS //
+// --------------- //
 
-ACTOR CrossbowMed : CrossbowAmmo 14257
+ACTOR HPCrossbowAmmo : Ammo replaces CrossbowAmmo
 {
-  	//$Category Ammunition
+	Inventory.PickupMessage "$TXT_AMMOCROSSBOW1"
+	Inventory.Amount 3
+	Inventory.MaxAmount 30
+	Ammo.BackpackAmount 3
+	Ammo.BackpackMaxAmount 60
+	Inventory.Icon "INAMBOW"
+	Tag "$AMMO_CROSSBOW"
+
+	States
+	{
+	Spawn:
+		AMC1 A -1 Light(ETHARROWS)
+		Stop
+	}
+}
+
+ACTOR HPCrossbowHefty : HPCrossbowAmmo replaces CrossbowHefty
+{
+	Inventory.PickupMessage "$TXT_AMMOCROSSBOW2"
+	Inventory.Amount 15
+
+	States
+	{
+	Spawn:
+		AMC2 ABC 5 Light(ETHQUIVER)
+		Loop
+	}
+}
+
+ACTOR CrossbowMed : HPCrossbowAmmo 14257
+{
+	//$Category Ammunition
 	//$Title Ethereal Arrow Bundle
-  	Inventory.PickupMessage "$TXT_AMMOCROSSBOW3"
-  	Inventory.Amount 10
+	Inventory.PickupMessage "$TXT_AMMOCROSSBOW3"
+	Inventory.Amount 6
 	Scale .75
-  	States
-  	{
-  	Spawn:
-    	META A -1 Bright Light(ETHBUNDLE)
-    	Loop
-  	}
+	States
+	{
+	Spawn:
+	META A -1 Bright Light(ETHBUNDLE)
+		Loop
+	}
 }
 
 // ----------- //
@@ -140,12 +171,11 @@ actor SunStaffHefty : SunStaffAmmo 16455
 	radius 12
 	height 12
 	inventory.pickupmessage "$TXT_AMMOSUNSTAFF2"
-	inventory.icon "BAL8A0"
 	inventory.amount 100
 	states
 	{
 	Spawn:
-		BAL8 ABCDEFGH 3 BRIGHT light(LWANDAMMO)
+		SUNH ABCDEF 4 BRIGHT light(LWANDAMMO)
 		loop
 	}
 }
@@ -164,7 +194,7 @@ ACTOR ChaosAmmo : Ammo 16456
   Inventory.MaxAmount 150
   Ammo.BackpackAmount 0
   Ammo.BackpackMaxAmount 300
-  Inventory.Icon "GAMMB0"
+  Inventory.Icon "GAMMA0"
   States
   {
   Spawn:

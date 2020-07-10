@@ -1,6 +1,10 @@
 // [Blue Shadow] Adding new player classes is done from here now,
 // as the KEYCONF way is deprecated.
 
+// [XA] TODO: split up gameinfo, episodes, etc. into individual mapinfos.
+
+include "mapinfo/hpack/doomednums.txt"
+
 gameinfo
 {
 	PlayerClasses = "HPackPlayer"
@@ -28,513 +32,340 @@ adddefaultmap
 	grinding_polyobj
 	fallingdamage
 	smoothlighting
+	lightmode = 8
 }
 
 // Titlemap --------------------------------------------------------------
 
 map titlemap "Demonic Uprising"
 {
-	sky1 = DNIGHT
+	sky1 = "DNIGHT", 0.0
 	evenlighting
 }
 
 // Episode 1: Terrene of Sorrow ------------------------------------------
 
+adddefaultmap
+{
+	Cluster   = 101
+	exitpic   = "$IN_E1"
+	enterpic  = "$IN_E1"
+	sky1      = "DNIGHT", 0.0
+}
+
 map H1M1 "Gloom Tower"
 {
-	levelnum = 11
-	music = MUS_E1M4
-	next = h1m2
-	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	levelnum  = 11
+	music     = M_H1M1
+	next      = H1M2
 }
 
 map H1M2 "Sidhe Altar"
 {
-	levelnum = 12
-	music = MUS_H1M2
-	next = h1m3
-	Cluster = 101
-	lightmode = 2
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	levelnum  = 12
+	music     = M_H1M2
+	next      = H1M3
 }
 
 map H1M3 "Elven Wood"
 {
-	levelnum = 13
-	music = MUS_H1M3
-	next = h1m5
+	levelnum   = 13
+	music      = M_H1M3
+	next       = H1M4
 	secretnext = H1MX
-	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
 }
 
-map H1M5 "Battlements"
+map H1M4 "Battlements"
 {
 	levelnum = 14
-	music = MUS_H1M5
-	next = h1m6
-	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	music    = M_H1M4
+	next     = H1M5
 }
 
-map H1M6 "Asylum of Hate"
+map H1M5 "Asylum of Hate"
 {
 	levelnum = 15
-	music = MUS_H1M6
-	next = h1m7
-	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	music    = M_H1M5
+	next     = H1M6
 }
 
-map H1M7 "Dead End"
+map H1M6 "Dead End"
 {
 	levelnum = 16
-	next = "H1M10"
-	sky1 = "SKYTOP03", 0
-	music = "D_SSLD1"
-	par = 600
+	music    = M_H1M6
+	next     = H1M7
+	sky1     = "SKYTOP03", 0.0
+	par      = 600
 	monsterfallingdamage
-	smoothlighting
-	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
 }
 
-map H1M10 "Citadel of Horrors"
+map H1M7 "Citadel of Horrors"
 {
 	levelnum = 17
-	next = H1M0
-	music = "BADASS"
-	sky1 = DNIGHT
-	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	music    = M_H1M7
+	next     = H1M8
+	lightmode = 0
 }
 
-map H1M0 "City of Darkness"
+map H1M8 "City of Darkness"
 {
 	levelnum = 18
-	music = "MUS_H1M0"
-	next = "Endtitle"
-	Cluster = 101
-	F1 = "F1_H1M0"
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	music    = M_H1M8
+	next     = Endtitle
+	nointermission
+	lightmode = 0
 }
 
 map H1MX "ChickenSpring"
 {
-	levelnum = 19
-	next = H1M5
-	cluster = 101
-	music = MUS_E1M9
-	sky1 = sky1
-	fade = "20 15 20"
+	levelnum   = 19
+	music      = M_H1MX
+	next       = H1M4
+	sky1       = "sky1", 0.0
+	fade       = "20 15 20"
 	outsidefog = "20 15 20"
-	lightmode = 2
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
 }
 
 // Episode 2: Beneath the Altar ------------------------------------------
 
+adddefaultmap
+{
+	Cluster  = 102
+	exitpic  = "$IN_E2"
+	enterpic = "$IN_E2"
+	sky1     = "SKYTOP10", 0.0
+}
+
 map H2M1 "Chapel of the Seas"
 {
-	levelnum = 21
-	music = UNDERHAL
-	next = h2m2
-	secretnext = h2mx
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
+	levelnum   = 21
+	music      = M_H2M1
+	next       = H2M2
+	secretnext = H2MX
+	lightmode = 0
 }
 
 map H2M2 "Dark Water"
 {
 	levelnum = 22
-	music = MUS_E1M3
-	next = h2m3
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
+	music    = M_H2M2
+	next     = H2M3
+	lightmode = 0
+	monsterfallingdamage
 }
 
 map H2M3 "Aquatemple"
 {
 	levelnum = 23
-	music = MUS_E3M3
-	next = h2m4
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
+	music    = M_H2M3
+	next     = H2M4
 }
 
 map H2M4 "Icy Catacomb"
 {
 	levelnum = 24
-	fade = "10 15 20"
-	music = FANTAR
-	next = h2m5
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
+	music    = M_H2M4
+	next     = H2M5
+	fade     = "10 15 20"
+	lightmode = 0
 }
 
-map H2M5 "Underwater Villa"
+map H2M5 "Serpent Residence"
 {
 	levelnum = 25
-	music = MUS_E1M2
-	next = h2m8
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
+	music    = M_H2M5
+	next     = H2M6
 }
 
-map H2M8 "Serpent Residence"
+map H2M6 "House of the Ancients"
 {
 	levelnum = 26
-	sky1 = "SKYTOP10", 0
-	music = MUS_E2M3
-	next = h2m9
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
+	music    = M_H2M6
+	next     = H2M7
+	lightmode = 0
 }
 
-map H2M9 "House of the Ancients"
+map H2M7 "Asterion"
 {
 	levelnum = 27
-	music = "HSHADOWS"
-	next = h2m0
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
-}
-
-map H2M0 "Asterion"
-{
-	levelnum = 28
-	music = MUS_E1M9
-	next = "Endtitle"
-	Cluster = 102
-	exitpic ="$IN_E2"
-	enterpic ="$IN_E2"
+	music    = M_H2M7
+	next     = Endtitle
+	lightmode = 0
+	nointermission
 }
 
 map H2MX "Crafting the Docks"
 {
 	levelnum = 29
-	next = H2M2
-	music = "MINE"
-	sky1 = DNIGHT
-	Cluster = 101
-	exitpic ="$IN_E1"
-	enterpic ="$IN_E1"
+	music    = M_H2MX
+	next     = H2M2
+	sky1     = "DNIGHT", 0.0
+	lightmode = 0
 }
 
 // Episode 3: Into the Furnace -------------------------------------------
 
+adddefaultmap
+{
+	Cluster  = 103
+	exitpic  = "$IN_E3"
+	enterpic = "$IN_E3"
+	sky1     = "pri_osky", 0.0
+}
+
 map H3M1 "Scorched Earth"
 {
 	levelnum = 31
-	// fade = "30 10 10"
-	music = MUS_E2M1
-	next = h3m2
-	Cluster = 103
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
+	music    = M_H3M1
+	next     = H3M2
+//	fade     = "30 10 10"
+	lightmode = 0
 }
 
 map H3M2 "Lava Falls"
 {
 	levelnum = 32
-	sky1 = "pri_osky", 0
-	// fade = "30 10 10"
-	music = MUS_E2M2
-	next = h3m3
-	Cluster = 103
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
+	music    = M_H3M2
+	next     = H3M3
+//	fade     = "30 10 10"
+	lightmode = 0
 }
 
 map H3M3 "Bastion of Sorrow"
 {
 	levelnum = 33
-	sky1 = "pri_osky", 0
-	// fade = "30 10 10"
-	music = MUS_E1M4
-	next = h3m4
-	Cluster = 103
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
+	music    = M_H3M3
+	next     = H3M4
+//	fade     = "30 10 10"
 }
 
 map H3M4 "Tabernacle of Magma"
 {
 	levelnum = 34
-	// fade = "20 10 05"
-	music = MIRE
-	next = h3m6
-	Cluster = 103
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
+	music    = M_H3M4
+	next     = H3M5
+//	fade     = "20 10 05"
 }
 
-map H3M6 "City of Metal"
+map H3M5 "Fortress of Eternity"
 {
 	levelnum = 35
-	music = MUS_E1M5
-	fade = "30 10 10"
-	sky1 = BSSKY, 0.0
-	cluster = 103
-	next = H2M6
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
+	music    = M_H3M5
+	next     = H3M6
+//	fade     = "10 15 20"
+	lightmode = 0
 }
 
-map H2M6 "Fortress of Eternity"
+Map H3M6 "Hell Stronghold"
 {
 	levelnum = 36
-	// fade = "10 15 20"
-	music = MUS_H2M6
-	next = h3m7
-	secretnext = H3M8
-	Cluster = 102
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
+	music    = M_H3M6
+	next     = H3M7
+	sky1     = "BSSKY", 0.0
 }
 
-Map H3M7 "Hell Stronghold"
+map H3M7 "Infernux Prime"
 {
-	LevelNum = 37
-	Music = TRAPPED
-	Sky1 = BSSKY, 0.0
-	Cluster = 103
-	Next = H3M0
-	ExitPic ="$IN_E3"
-	EnterPic ="$IN_E3"
+	levelnum = 37
+	music    = M_H3M7
+	next     = Endtitle
+	sky1     = "SKY2", 0.0
+	nointermission
 }
 
-map H3M0 "Infernux Prime"
+// Episode 4: The Astral Plane -------------------------------------------
+
+adddefaultmap
 {
-   	levelnum = 38
-   	music = "D_INFERN"
-   	sky1 = "SKY2" 
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
+	Cluster  = 104
+	exitpic  = "$IN_E4"
+	enterpic = "$IN_E4"
+	sky1     = "SKYTOP10", 0.0
 }
-
-map H3M8 "Hell's Forge"
-{
-	levelnum = 39
-	next = H3M7
-	cluster = 103
-	music = H_FORGE
-	fade = "40 20 10"
-	outsidefog = "40 20 10"
-	lightmode = 2
-	exitpic ="$IN_E3"
-	enterpic ="$IN_E3"
-}
-
-// Episode 4: Hell's Wake ------------------------------------------------
 
 map H4M1 "Ethereal Ruins"
 {
 	levelnum = 41
-	music = CHAP_3R
-	next = h4m2
-	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	music    = M_H4M1
+	next     = H4M2
 }
 
 map H4M2 "The Bloody Path"
 {
-	levelnum = 42
-	//sky1 = "SKYTOP10", 0
-	music = romeric
-	next = h4m3
-	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	levelnum   = 42
+	music      = M_H4M2
+	next       = H4M3
+	secretnext = H4MX
 }
 
-map H4M3 "Monastery of Souls"
+map H4M3 "Arid Crypt"
 {
 	levelnum = 43
-	fade = "20 20 20"
-	next = H4M4
-	music = cryptr
-	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	music    = M_H4M3
+	next     = H4M4
+	fade     = "20 20 20"
 }
 
-map H4M4 "Fortress of Despair"
+adddefaultmap
+{
+	exitpic  = "$IN_E5"
+	enterpic = "$IN_E5"
+	sky1     = "CSSKY", 0.0
+}
+
+map H4M4 "Ziggurat of Sorrow"
 {
 	levelnum = 44
-//	sky1 = PRI_OSKY, -0.2
-	music = MUS_E2M4
-	next = H4M5
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	music    = M_H4M4
+	next     = H4M5
+	fade     = "0 05 10"
+	lightmode = 0
 }
 
-map H4M5 "Mythril Keep"
+Map H4M5 "Vortex"
 {
 	levelnum = 45
-	next = H4M6
-	music = FALCONR
-	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	music    = M_H4M5
+	next     = H4M6
+	fade     = "57 00 7F"
+	gravity  = 300
 }
 
-map H4M6 "Arid Crypt"
+map H4M6 "Canyon of Ether"
 {
 	levelnum = 46
-	fade = "20 20 20"
-	next = H4M8
-	music = MUS_E2M6
-	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	next     = H4M7
+	music    = M_H4M6
+	sky1     = "CSSKY", 0.01
+	fade     = "25 00 7F"
+	lightmode = 0
 }
 
-map H4M8 "DarkFort"
+map H4M7 "The Dark Rift"
 {
-	levelnum = 47
-	next = H4M0
-	music = MUS_E1M9
-	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	levelnum  = 47
+	music     = M_H4M7
+	next      = H4M8
+	sky1      = "VOID", 0.8
+	skyrotate = 0.4, 0.3, 0.2
 }
 
-map H4M0 "Castle of Storms"
+map H4M8 "The Void Temple"
 {
 	levelnum = 48
-	music = bldrstod
-	next = endtitle
-	cluster = 104
-	fade = "5D 8A A8"
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
+	music    = M_H4M8
+	next     = Endtitle
+	sky1     = "BSSKY", 0.0
+	monsterfallingdamage
+	nointermission
 }
 
-/* map H4MX "?" // Secret map; missing
+map H4MX "At the Back of My Head"
 {
 	levelnum = 49
-	Cluster = 104
-	exitpic ="$IN_E4"
-	enterpic ="$IN_E4"
-} */
-
-// Episode 5: The Astral Plane -------------------------------------------
-
-map H5M1 "Ziggurat of Sorrow"
-{
-	levelnum = 51
-	fade = "0 05 10"
-	music = ROMERIC
-	next = h5m2
-	Cluster = 105
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-}
-
-Map H5M2 "Vortex"
-{
-	levelnum = 52
-	Next = "H5M3"
-	Music = "MUS_E2M3"
-	Cluster = 105
-	Sky1 = "CSSKY", 0.01
-	Fade = "57 00 7F"
-	Gravity = 300
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-}
-
-map H5M3 "The Void Temple"
-{
-	levelnum = 53
-	music = Hexd
-	next = h5m6
-	sky1 = BSSKY
-	Cluster = 105
-	MonsterFallingDamage
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-}
-
-map H5M6 "Canyon of Ether"
-{
-	levelnum = 54
-	next = H5M7
-	music = LEVELR
-	Sky1 = "CSSKY", 0.01
-	Fade = "25 00 7F"
-	Cluster = 105
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-}
-
-map H5M7 "Clash of the elements"
-{
-	levelnum = 55
-	music = castle4
-	sky1 = BSSKY
-	cluster = 105
-	next = h5m9
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-}
-
-map H5M9 "The Dark Rift"
-{
-	levelnum = 56
-	cluster = 105
-	sky1 = "VOID", 0.8
-	skyrotate =0.4, 0.3, 0.2
-	music = "D_ICYV2"
-	smoothlighting
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-}
-
-/* map H5M? "?" // Last map before the boss; missing
-{
-	levelnum = 57
-   	cluster = 105
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-} */
-
-/* map H5M0 "?" // Boss map; missing
-{
-	levelnum = 58
-   	cluster = 105
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
-} */
-
-map H5MX "At the Back of My Head"
-{
-   	cluster = 105
-   	levelnum = 59
-   	next = "H5M0"
-	music = "D_FARAWY"
-   	sky1 = "SKY3" 
-	exitpic ="$IN_E5"
-	enterpic ="$IN_E5"
+	music    = M_H4MX
+	next     = H4M3
+	sky1     = "SKY3", 0.0
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -568,17 +399,10 @@ Cluster 103 {}
 
 Episode H4M1
 {
-	Name = "Hell's Wake"
-	Optional
-}
-Cluster 104 {}
-
-Episode H5M1
-{
 	Name = "The Astral Plane"
 	Optional
 }
-Cluster 105 {}
+Cluster 104 {}
 
 //-------------------------------------------------------------------------------------------------
 //
@@ -588,24 +412,21 @@ Cluster 105 {}
 
 Intermission Final
 {
-
 	Fader
 	{
-	  FadeType = FadeIn
+		FadeType = FadeIn
 	}
 
 	Cast
 	{
-	  CastClass = "MummyLeader"
-	  CastName = "Nitrogolem"
-	  AttackSound = "Missile", 1, "mummy/head"
-	  AttackSound = "Melee", 1, "mummy/attack2"
+		CastClass = "MummyLeader"
+		CastName = "Nitrogolem"
+		AttackSound = "Missile", 1, "mummy/head"
+		AttackSound = "Melee", 1, "mummy/attack2"
 	}
 
-	
 	Fader
 	{
-	  FadeType = FadeOut
+		FadeType = FadeOut
 	}
-
 }

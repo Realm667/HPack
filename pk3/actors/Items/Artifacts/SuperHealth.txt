@@ -1,0 +1,15 @@
+// SUPER HEALTH POTION
+ACTOR SuperHealthPotion : Health 5211
+{
+  //$Category Health and Armor
+  Tag "Crystal Philter"
+  Inventory.Amount 50
+  Inventory.PickupMessage "$TXT_ARTISUPERHEALTH"
+  +FLOATBOB
+  States
+  {
+  Spawn:
+    PTN3 ABC 3
+    Loop
+  }
+}

@@ -70,16 +70,22 @@ weapons/bowreload		bowrel
 
 weapons/blasterrip			blsrip
 
-weapons/hornrodpowshoot		null
-weapons/hornrodpowshoot2	hrnpow
+weapons/hornrodhit       helhit
+weapons/hornrodpowshoot  null
+weapons/hornrodpowshoot2 hrnpow
+weapons/hornrodpowshoot3 helpow // help! ow!
 
 weapons/phoenixshoot		null
 weapons/phoenixshoot2		phobir
+
+weapons/macehit             firsml
+weapons/macepowhit          firhit
 
 weapons/gauntletsshoot		gntsht
 weapons/gauntletscharge		gntchg
 weapons/gauntletshadoken	gnthad
 weapons/gauntletspowshoot	gntpws
+weapons/gauntletspowhit	    phohit
 weapons/gauntletsrip		gntrip
 $limit weapons/gauntletsshoot 0
 $limit weapons/gauntletspowshoot 0
@@ -117,6 +123,22 @@ misc/ripslop			null
 ////////////////////
 // MONSTER SOUNDS //
 ////////////////////
+
+//Heretic Monsters
+himp/scream             imppai
+himp/gib                impgib
+
+mummy/charge1           gldchg
+mummy/charge2           mumchg
+mummy/shoot             mumsht
+
+misc/fireballhit        firhit
+misc/fireballbig        firbig
+misc/fireballsmall      firsml
+misc/magichit           maghit
+misc/magicsmall         magsml
+misc/magicbig           magbig
+misc/icehit             shards1b
 
 //Skull Wizard
 H2SkullWizard/Sight		SKWZSIGH
@@ -500,7 +522,7 @@ ambx21   drycave  //Dry Cave
 ambx22   river	  //Middle River
 ambx23   wetcave  //Wet Cave
 
-//Additional Ambient Screams
+// Additional Ambient Screams
 
 Ambient/Scream1		scream1
 Ambient/Scream2		scream2
@@ -511,6 +533,12 @@ Ambient/Scream6		scream6
 Ambient/Scream7		scream7
 Ambient/Scream8		scream8
 Ambient/Scream		scrmeptm
+
+// Mo' Ambience
+
+Ambient/Stars1      STARS1
+Ambient/Stars2      STARS2
+Ambient/MagicTorch  MAGTORCH
 
 ;=========================================================
 ;AMBIENT SOUND LISTING
@@ -538,6 +566,12 @@ $AMBIENT 20 ambx20 POINT CONTINUOUS 0.8
 $AMBIENT 21 ambx21 POINT CONTINUOUS 0.8
 $AMBIENT 22 ambx22 POINT CONTINUOUS 0.8
 $AMBIENT 23 ambx23 POINT CONTINUOUS 0.8
+$AMBIENT 24 SFX/FireLoop1 POINT CONTINUOUS 0.5
+$AMBIENT 25 SFX/FireLoop2 POINT CONTINUOUS 0.5
+$AMBIENT 26 SFX/FireLoop3 POINT CONTINUOUS 0.5
+$AMBIENT 27 Ambient/Stars1 POINT CONTINUOUS 0.75
+$AMBIENT 28 Ambient/Stars2 POINT CONTINUOUS 0.5
+$AMBIENT 29 Ambient/MagicTorch POINT CONTINUOUS 0.5
 $ambient 60 "PortalChoir/Loop" POINT continuous  255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
 $ambient 62 amb/windsubs surround continuous 0.5
@@ -561,6 +595,7 @@ $Limit SFX/FireDie	0
 
 //SFX Rain
 Ambient/Rain	AMBRAIN
+$volume Ambient/Rain 0.25
 
 //SFX Steam
 Steam/Loop	STEMLOOP
@@ -580,6 +615,19 @@ $random world/glass		{ world/glassbreak  world/glassshatter }
 
 // ZCorpseLynchedNoHeart's blood drip (Hexen)
 Drip                    blddrp1
+
+// Pods
+PoisonPod/Puff          puff1
+
+// Bell
+world/bellring          BELLRNG
+
+// Book
+world/bookout           BOOKOUT
+world/bookin            BOOKIN
+
+// Spooky Magic
+world/spookymagic       MAGIC
 
 ;===========================================================================
 ; 

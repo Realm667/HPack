@@ -101,9 +101,30 @@ Actor WyvernBall
 	}
 }
 
-Actor WyvernBreath : PhoenixFX2
+Actor WyvernBreath
 {
-	Damage 1
+	Radius 6
+	Height 8
 	Speed 20
+	Damage 1
+	DamageType Fire
+	Projectile
+	RenderStyle Add
 	SeeSound "ChaosWyvern/Toast"
+	Obituary "$OB_MPPPHOENIXROD"
+
+	States
+	{
+	Spawn:
+		FX09 ABABA 2 Bright
+		FX09 B 2 Bright A_ChangeVelocity( 0.0, 0.0, 1.5 )
+		FX09 CDEF 2 Bright
+		Stop
+	Death:
+		FX09 G 3 Bright
+		FX09 H 3 Bright A_ChangeVelocity( 0.0, 0.0, 1.8 )
+		FX09 I 4 Bright
+		FX09 JK 5 Bright
+		Stop
+	}
 }

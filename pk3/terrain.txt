@@ -182,6 +182,9 @@ floor FLATHUA2 Acid
 floor FLATHUA3 Acid
 floor WSLIMH Mud
 floor WINDIGO sizzle
+floor WATRWAL1 Water
+floor WATRWAL2 Water
+floor WATRWAL3 Water
 
 //////////////////
 // FLOOR SOUNDS //

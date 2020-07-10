@@ -9,39 +9,98 @@ original author or source, so we can keep track of resources and credit
 -------------------
 Contributor: PRIMEVAL
 -------------------
-- Intermission music (MUS_INTR) "Ex Mortis"
 - Title music  (MUS_TITL) "Demonic Uprising"
-- Music for H2M6 (HInter)
-- Placeholder music (HShadows) "Shadows Forever Fall"
-- Music for H1M1 "Twilight"
-- Music for H1M2 "Unholy"
-- Music for H1M3 "Altered State"
-- Music for H1M0 "Ghost Town" and "Sentinels"
+- Intermission music (MUS_INTR) "Ex Mortis"
+- Music for H1M2: "Unholy"
+- Music for H1M3: "Altered State"
+- Music for H1M4: "Undead Boogie"
+- Music for H1M5: "Spirits Unrest"
+- Music for H1M8: "Ghost Town" and "Sentinels"
+- Music for H2M6: "Shadows Forever Fall"
+
 -------------------
 Contributor: Tormentor667
 -------------------
 - Numerous textures
 - TITLEMAP
-- H1M0.WAD
-- H2M6.WAD
-- H1M10.WAD
+- H1M7: "Citadel of Horrors"
+- H1M8: "City of Darkness"
+- H3M5: "Fortress of Eternity"
+
+-------------------------
+Contributor: ShadesMaster
+-------------------------
+- H1M1: "Gloom Tower"
+- H1M2: "Sidhe Altar"
+- H1M3: "Elven Wood"
+- H1M4: "Battlements"
+- H1MX: "ChickenSpring"
+- H2M1: "Chapel of the Seas"
+- H2M3: "Aquatemple"
+- H2M4: "Icy Catacomb"
+- H3M1: "Scorched Earth"
+- H3M4: "Tabernacle of Magma"
+- H4M1: "Ethereal Ruins"
+- H4M4: "Ziggurat of Sorrow"
+- H4M5: "Vortex"
 
 -------------------
 Contributor: Jimmy
 -------------------
-BIGFONT and SMALLFONT replacements
+- BIGFONT and SMALLFONT replacements
+- Music for H1M1: "Lighthouse"
+- Music for H2M7: "Encrypted"
 
+-------------------
+Contributor: mrgrimsdale
+-------------------
+- Music for H4M6: "The Cadavers' Waltz" (co-authored with Jimmy)
+
+-------------------
+Contributor: Viscra Maelstrom
+-------------------
+- Music for H2M3: "Liquidation"
+
+-------------------
+Contributor: Eris Falling
+-------------------
+- Music for H3M1: "The Ophidians"
+- Music for H4M5: "Turbulence"
+
+-------------------
+Contributor: AD_79
+-------------------
+- Music for H4M1: "Convergent Kingdoms"
+
+-------------------
+Contributor: Mikolah
+-------------------
+- Music for H2M5: "Serpentine Pillars"
+
+-------------------
+Contributor: pcorf
+-------------------
+- Music for H1MX: "Crushed Spirits"
+
+-------------------
+Contributor: BouncyTEM
+-------------------
+Various ambient sounds:
+- Stars1.ogg
+- Stars2.ogg
+- Magtorch.ogg
+- wind.ogg
+- wind3.ogg
+- wind5.ogg
+- cavelake.ogg
+- drycave.ogg
+- river.ogg
+- wetcave.ogg
 
 -------------------
 Contributor: printz
 -------------------
-Map(s): H4M4 (given to ShadesMaster), H2M11, H5M2
-Used music:
-- ORGAN.MUS	-	MIDI version of "The Ytse Jam" by "Dream Theater"
-				Extracted from DETHMETL.WAD from /idgames/music
-				(wad compiled by Chris Pisarczyk).
-- HEVNGATE.MP3	-	"heaven gate" by "warg", downloaded from www.soundsnap.com (royalty free)
-- MUS_H2MX.MP3	-	Heretic MUS_E1M7 remix by Kinkiness.
+- H5M2: "Vortex" -- [XA] maybe? not sure if this one is printz or ShadesMaster... or both?
 
 Sounds contributed:
 - DoorCloseHeavy	-	from id/Raven Software's Hexen
@@ -113,107 +172,127 @@ Textures contributed:
 - LEATHERD	|
 - LEATHERE	/
 
-
 -------------------------
 Contributor: S. Jaeken
 -------------------------
-Maps:	H2M2 - Dark Water
-	H2M5 - Drowning Pools
-	H2M8 - Hellrose Garden
-	H3M3 - Mt. Heresy
-	H5M0 - Untitled
-
+- H2M2: "Dark Water"
+- H3M3: "Bastion of Sorrow" -- [XA] maybe? Old credits list this map as "Mt. Heresy" -- was it renamed, or replaced? ShadesMaster may have made this one instead.
 
 -------------------------
 Contributor: Gez
 -------------------------
-Added snake braziers based on serpent brazier prop derived from Hexx game.
+- H5M3: "The Void Temple"
+- Added snake braziers based on serpent brazier prop derived from Hexx game.
 
-Map: H5M3 - The Void Temple
-Used music: D7.mid (Daggerfall dungeon music, composed by Eric Heberling)
+-------------------------
+Eric Heberling
+-------------------------
+- Music for H2M2: Daggerfall dungeon music
 
 -------------------------
 Contributor: darkhaven3
 -------------------------
-Map: H4M9 - Dark Sun Rising
-Used music:	dh3-h4m9-amb.spc (Super Metroid "Crateria Raining" ambient loop)
-		dh3-h4m9-enemies.spc (Super Metroid Space Pirates theme)
-		dh3-h4m9-final.spc (Super Metroid Samus Aran's theme)
-Texture(s):	ZZZBLACK.png
-		ZZZROCK1.png (based on the BLUEFRAG variants)
-		ZZZSTRT1.png (based on FLOOR03 variants)
-		ZZZTRIM1.png (based on METL2 variants)
+- Texture(s):
+	ZZZBLACK.png
+	ZZZROCK1.png (based on the BLUEFRAG variants)
+	ZZZSTRT1.png (based on FLOOR03 variants)
+	ZZZTRIM1.png (based on METL2 variants)
 
 -------------------------
 Contributor: Disguise
 -------------------------
-Map(s): H3M8 - Hell's Forge
-Used music(s): H_FORGE.mid ("Grand Design" by sirjuddington for HellCore)
-	       H_CREEP.midi (Alternate late game music replacement by Mr. Chris)
-Texture(s): METL4C (Vertical version of METL4)
+- Texture(s): METL4C (Vertical version of METL4)
+
+-------------------------
+Contributor sirjuddington
+-------------------------
+- Music for H3M2: "Grand Design"
+
+-------------------------
+Contributor: Mr. Chris
+-------------------------
+- Music for H3M3: "Creep"
 
 -------------------------
 Contributor: Nightfall
 -------------------------
-Map: H5M9 - Fortress of Despair
-TEXTURES entry - SKYTP14W (warping version of SKYTOP14) FWIW
-REDPORT1-9, REDPORTX (Hexen red portal textures, X is frame)
-FLAT504M - red version of FLAT504
-REDMET** - red recolors of the various black metal textures
+- TEXTURES entry - SKYTP14W (warping version of SKYTOP14) FWIW
+- REDPORT1-9, REDPORTX (Hexen red portal textures, X is frame)
+- FLAT504M - red version of FLAT504
+- REDMET** - red recolors of the various black metal textures
 
 -------------------------
-Contributor: Kore
+Contributor: Koresiarch
 -------------------------
-Map(s): H3M2
+- H3M2: "Lava Falls" (co-authored with ShadesMaster)
 
 -------------------------
 Contributor: Ghastly
 -------------------------
-General resource and quality management and testing.
+- General resource and quality management and testing.
 
 -------------------------
 Contributor: Archi
 -------------------------
-Maps:	H2M9 - Serpent Residence
-	H4M2 - The Bloody Path
-	H4M0 - Pseudo Heaven
-
-Used music: bldrstod.ogg - "Falkenbach - Baldurs Tod" ogg compressed variant
-
-
--------------------------
-Contributor: UltimateLorenzo
--------------------------
-Maps:	H1M4 - Lighthouse
-	H1M11 - Dungeon
+- H2M5: "Serpent Residence"
+- H4M2: "The Bloody Path"
 
 -------------------------
 Contributor: Blue Shadow
 -------------------------
-Undead Champion sprites.
+- Undead Champion sprites.
+
+-------------------------
+Contributor: unholypimpin
+-------------------------
+- H1M5: "Asylum of Hate"
+
+-------------------------
+Contributor: Captain Toenail
+-------------------------
+- H1M6: "Dead End"
 
 -------------------------
 Contributor: Gothic
 -------------------------
-Maps:	H3M7 - Hell Stronghold
-	Music used: "Dangerous Adventures" by cazok on Newgrounds (http://cazok.newgrounds.com/)
+- H3M6: "Hell Stronghold"
 
-	H5M7 - Clash of the Elements
-	Music used:  In the castle, Super Castlevania IV (MIDI from midishrine)
+-------------------------
+Contributor: qwerqsar
+-------------------------
+- H4M3: "Arid Crypt" (co-authored with ShadesMaster) -- [XA] ...I think. :P
+
+-------------------------
+Contributor: Blackfish
+-------------------------
+- H4M6: "Canyon of Ether" (co-authored with ShadesMaster) -- [XA] ditto. Sort of a guesstimate. :P
+
+-------------------------
+Contributor: Icytux
+-------------------------
+- H4M7: "The Dark Rift"
+
+-------------------------
+Contributor: cazok (http://cazok.newgrounds.com/)
+-------------------------
+- Music for H3M6: "Dangerous Adventures"
 
 -------------------
 Contributor: el zee
 -------------------
-Maps:	H2M10.WAD - "House of the ancients"
-	H2M0.WAD - "Asterion"
+- H2M6: "House of the Ancients"
+- H2M7: "Asterion"
 
 -------------------
-Contributor: Starscream/Pyroscourge
+Contributor: Pyroscourge
 -------------------
-- H3M0.WAD
-- H5MX.WAD
+- H3M7: "Infernux Prime"
+- H5MX: "In the back of my head"
 
-Used music: bldrstod.ogg - "TSEC - Far Away"
+--------------------
+Contributor: Andreas Viklund (TSEC)
+--------------------
+- Music for H5MX: "Far Away"
 
 --------------------
 Contributor: NeoWorm
@@ -230,11 +309,16 @@ Contributor: KeksDose
 --------------------
 - Fire particles used for the torches and braziers.
 
+-------------------
+Contributor: boris
+-------------------
+- Breakable glass script
+
 --------------------
 Other credits
 --------------------
-E1 intermission background by Geistig (http://www.deviantart.com/art/medieval-city-30478361)
-E2 intermission background by FerdinandLadera (http://ferdinandladera.deviantart.com/art/Golden-Temple-347576998)
-E3 intermission background by elartwyne (http://elartwyne.deviantart.com/art/Hell-Gate-336498872)
-E4 intermission background by flaviobolla (http://flaviobolla.deviantart.com/)
-E5 intermission background by AdamBurn (http://www.deviantart.com/art/Floating-Castle-concept-106619540)
+- E1 intermission background by Geistig (http://www.deviantart.com/art/medieval-city-30478361)
+- E2 intermission background by FerdinandLadera (http://ferdinandladera.deviantart.com/art/Golden-Temple-347576998)
+- E3 intermission background by elartwyne (http://elartwyne.deviantart.com/art/Hell-Gate-336498872)
+- E4 intermission background by flaviobolla (http://flaviobolla.deviantart.com/)
+- E5 intermission background by AdamBurn (http://www.deviantart.com/art/Floating-Castle-concept-106619540)

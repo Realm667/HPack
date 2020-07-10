@@ -17,7 +17,6 @@ Actor SkullWizard 16511
   ActiveSound "H2SkullWizard/Sight"
   MeleeSound "H2SkullWizard/Melee"
   DropItem "SkullRodAmmo", 84, 10
-  DropItem "LichSkull", 4, 1
   Species "Wizard"
   BloodType "WizardRedBlood"
   Monster

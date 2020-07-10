@@ -4,3 +4,6 @@ brightmap sprite ptn1c0	{ map "Brightmaps/Sprites/Items/Pickups/ptn1c0.png"	}
 brightmap sprite ptn2a0	{ map "Brightmaps/Sprites/Items/Pickups/ptn2a0.png"	}
 brightmap sprite ptn2b0	{ map "Brightmaps/Sprites/Items/Pickups/ptn2b0.png"	}
 brightmap sprite ptn2c0	{ map "Brightmaps/Sprites/Items/Pickups/ptn2c0.png"	}
+brightmap sprite ptn3a0	{ map "Brightmaps/Sprites/Items/Pickups/ptn3a0.png"	}
+brightmap sprite ptn3b0	{ map "Brightmaps/Sprites/Items/Pickups/ptn3b0.png"	}
+brightmap sprite ptn3c0	{ map "Brightmaps/Sprites/Items/Pickups/ptn3c0.png"	}

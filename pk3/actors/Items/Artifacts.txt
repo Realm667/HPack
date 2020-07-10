@@ -1,7 +1,7 @@
 #include "actors/items/artifacts/bootsofhighjump.txt"
 #include "actors/items/artifacts/bracersofforce.txt"
 #include "actors/items/artifacts/discofrepulsion.txt"
-#include "actors/items/artifacts/hadessphere.txt"
+#include "actors/items/artifacts/superhealth.txt"
 //#include "actors/items/artifacts/lichskull.txt"
 #include "actors/items/artifacts/firestormrune.txt"
 #include "actors/items/artifacts/tomeofmight.txt"

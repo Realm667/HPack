@@ -1,0 +1,34 @@
+/*
+ * HPack MAPINFO: DoomEdNums
+ */
+
+DoomEdNums
+{
+	11101 = HPFountainBlue
+	11102 = HPFountainRed
+	11103 = HPFountainBlack
+	11104 = HPFountainGreen
+	11105 = HPFountainOlive
+	11106 = HPFountainPurple
+	11107 = HPFountainWhite
+	11108 = HPFountainYellow
+	11109 = HPFountainGold
+	11110 = HPFountainBrown
+	11111 = HPFountainFire
+	11112 = HPFountainIceGray
+	11113 = HPFountainIceBlue
+
+	11201 = HPFountainLineBlue
+	11202 = HPFountainLineRed
+	11203 = HPFountainLineBlack
+	11204 = HPFountainLineGreen
+	11205 = HPFountainLineOlive
+	11206 = HPFountainLinePurple
+	11207 = HPFountainLineWhite
+	11208 = HPFountainLineYellow
+	11209 = HPFountainLineGold
+	11210 = HPFountainLineBrown
+	11211 = HPFountainLineFire
+	11212 = HPFountainLineIceGray
+	11213 = HPFountainLineIceBlue
+}

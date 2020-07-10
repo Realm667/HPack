@@ -18,7 +18,7 @@ Pointlight RedShadowBall3
 
 Pointlight RedShadowBall4
 {
-  Color 1.2 0.0 0.0
+  Color 1.0 0.0 0.0
   Size 42
 }
 

@@ -63,10 +63,10 @@ ACTOR HPStaff : Staff replaces Staff
       TNT1 A 0 A_GiveInventory("StaffToken", 1)
       STFF DE 2 
       STFF F 2 A_PlayWeaponSound("weapons/staffswing1")
-      STFF G 2 A_CustomPunch(5, 0, 0, "StaffPuff", 120)
+      STFF G 2 A_CustomPunch(7, 0, 0, "StaffPuff", 120)
       STFF HIJK 1
       STFF L 2 A_PlayWeaponSound("weapons/staffswing3")
-      STFF M 2 A_CustomPunch(5, 0, 0, "StaffPuff", 96)
+      STFF M 2 A_CustomPunch(6, 0, 0, "StaffPuff", 120)
       STFF NO 2
       TNT1 AAAAAAAAAAAAAAAA 1 A_WeaponReady
       goto End
@@ -74,7 +74,7 @@ ACTOR HPStaff : Staff replaces Staff
       TNT1 A 4 A_GiveInventory("StaffToken", 1)
       STFF U 2 
       STFF T 1 A_PlayWeaponSound("weapons/staffswing1")
-      STFF S 1 A_CustomPunch(7, 0, 0, "StaffPuff", 96)
+      STFF S 1 A_CustomPunch(10, 0, 0, "StaffPuff", 120)
       STFF R 1 
       STFF QP 2 
       TNT1 AAAAAAAAAAAAAAAA 1 A_WeaponReady
@@ -83,7 +83,7 @@ ACTOR HPStaff : Staff replaces Staff
       TNT1 A 4 A_TakeInventory("StaffToken", 6)
       STFF A 2 A_PlayWeaponSound("weapons/staffswing2")
       STFF B 2
-      STFF C 6 A_CustomPunch(15, 0, 0, "StaffPuff", 96)
+      STFF C 6 A_CustomPunch(20, 0, 0, "StaffPuff", 144)
       STFF B 2
       STFF A 8
 	  Goto Ready
@@ -92,10 +92,10 @@ ACTOR HPStaff : Staff replaces Staff
       STFF O 2 
       STFF N 2 A_PlayWeaponSound("weapons/staffswing2")
       STFF M 2 
-      STFF L 1 A_CustomPunch(6, 0, 0, "StaffPuff", 120)
+      STFF L 1 A_CustomPunch(8, 0, 0, "StaffPuff", 120)
       STFF KJIH 1
       STFF G 1 A_PlayWeaponSound("weapons/staffswing3")
-      STFF F 2 Offset (-20,32) A_CustomPunch(6, 0, 0, "StaffPuff", 64)
+      STFF F 2 Offset (-20,32) A_CustomPunch(8, 0, 0, "StaffPuff", 120)
       STFF E 2 Offset (-60,32)
       STFF E 2 Offset (-100,0)
 	  TNT1 A 0 Offset (0,32)
@@ -105,7 +105,7 @@ ACTOR HPStaff : Staff replaces Staff
       TNT1 A 0 A_GiveInventory("StaffToken", 1)
       STFF JK 2
       STFF L 1 A_PlayWeaponSound("weapons/staffswing1")
-      STFF M 1 A_CustomPunch(8, 0, 0, "StaffPuff", 96)
+      STFF M 1 A_CustomPunch(12, 0, 0, "StaffPuff", 120)
       STFF NO 2
       TNT1 AAAAAAAAAAAAAAAA 1 A_WeaponReady
 	  Goto End	
@@ -149,7 +149,7 @@ ACTOR HPStaff : Staff replaces Staff
       STFF V 2
       STFF W 1 A_PlayWeaponSound("weapons/staffswing1")
       STFF X 1 
-      STFF Y 1 A_CustomPunch(12, 0, 0, "StaffPuff", 120)
+      STFF Y 1 A_CustomPunch(16, 0, 0, "StaffPuff", 120)
       STFF Z 1 
       TNT1 A 12
       goto End
@@ -170,7 +170,7 @@ ACTOR HPStaff : Staff replaces Staff
       STFF P 2
       STFF Q 2 A_PlayWeaponSound("weapons/staffswing2")
       STFF R 1 
-      STFF S 1 A_CustomPunch(20, 0, 0, "StaffPuff", 120)
+      STFF S 1 A_CustomPunch(30, 0, 0, "StaffPuff", 120)
       STFF TU 1 
       TNT1 A 12
       goto End

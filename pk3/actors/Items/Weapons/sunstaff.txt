@@ -70,7 +70,7 @@ ACTOR HPSunStaffPowered : HPSunStaff
 	Tag "$TAG_SUNSTAFF"
 	Weapon.SisterWeapon "HPSunStaff"
 	Weapon.AmmoGive1 0
-	Weapon.AmmoUse1 5
+	Weapon.AmmoUse1 25
 	States
 	{
 	Fire:

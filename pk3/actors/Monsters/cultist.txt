@@ -4,7 +4,6 @@ ACTOR Thrall 30119
 	//$Title Cultist
 	Health 75
 	PainChance 200
-	DropItem Fire
 	Scale 0.90
 	Speed 8 
 	Radius 20 

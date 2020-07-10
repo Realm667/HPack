@@ -5,6 +5,7 @@ ACTOR HPCrossbow : Crossbow replaces Crossbow
 	//$Category Weapons
 	//$Title Ethereal Crossbow
 	Weapon.SelectionOrder 700
+	Weapon.AmmoType1 "HPCrossbowAmmo"
 	Weapon.SisterWeapon "HPCrossbowPowered"
 	Inventory.PickupMessage "$TXT_WPNCROSSBOW"
 	Tag "$TAG_CROSSBOW"
@@ -14,17 +15,62 @@ ACTOR HPCrossbow : Crossbow replaces Crossbow
 	Spawn:
 		WBOW A -1
 		Stop
+	Fire:
+		CRBW D 0 Bright A_PlaySound("weapons/bowshoot", CHAN_WEAPON)
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX1",  0.0, 1,  0, 3)
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX8", -4.5, 0, -2, 3)
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX8",  4.5, 0,  2, 3)
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX8", -9.0, 0, -4, 3)
+		CRBW D 3 Bright A_FireCustomMissile("HPCrossbowFX8",  9.0, 0,  4, 3)
+		CRBW D 3 Offset(0, 36)
+		CRBW E 3 Offset(0, 36)
+		CRBW E 3 Offset(0, 33)
+		CRBW E 8 Offset(0, 32)
+		CRBW F 3 A_PlayWeaponSound("weapons/bowreload")
+		CRBW GH 3
+		CRBW AB 4
+		CRBW C 5 A_ReFire
+		Goto Ready
 	}
 }
-
-ACTOR HPCrossbowFX4 : CrossbowFX4 replaces CrossbowFX4 { +FORCEXYBILLBOARD }
-
 
 ACTOR HPCrossbowPowered : CrossbowPowered
 {
 	+WEAPON.POWERED_UP
 	Weapon.SelectionOrder 700
+	Weapon.AmmoType1 "HPCrossbowAmmo"
 	Weapon.SisterWeapon "HPCrossbow"
 	Tag "$TAG_CROSSBOW"
 	Obituary "$OB_MPCROSSBOW"
+
+	States
+	{
+	Fire:
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX7",  0.0, 1,  0, 3)
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX7", -4.5, 0, -2, 3)
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX7",  4.5, 0,  2, 3)
+		CRBW D 0 Bright A_FireCustomMissile("HPCrossbowFX8", -9.0, 0, -4, 3)
+		CRBW D 3 Bright A_FireCustomMissile("HPCrossbowFX8",  9.0, 0,  4, 3)
+		CRBW E 2
+		CRBW F 2 A_PlayWeaponSound("weapons/bowreload")
+		CRBW G 3
+		CRBW H 2
+		CRBW A 3
+		CRBW B 3
+		CRBW C 4 A_ReFire
+		Goto Ready
+	}
+}
+
+ACTOR HPCrossbowFX1 : CrossbowFX1 replaces CrossbowFX1 { SeeSound "" }
+ACTOR HPCrossbowFX4 : CrossbowFX4 replaces CrossbowFX4 { +FORCEXYBILLBOARD }
+
+ACTOR HPCrossbowFX7 : CrossbowFX2
+{
+	Damage 7
+}
+
+ACTOR HPCrossbowFX8 : CrossbowFX3
+{
+	Damage 4
 }
