@@ -21,7 +21,7 @@ class HPFountain : SwitchableDecoration
 	Spawn:
 	Active:
 		TNT1 A 1;
-		TNT1 A 1 H_SpawnFountainDroplets(7); // [XA] TODO: constant
+		TNT1 A 1 H_SpawnFountainDroplets(HP_FOUNTAN_NUM_PARTICLES);
 		Loop;
 	Inactive:
 		TNT1 A 1;
@@ -34,8 +34,8 @@ class HPFountain : SwitchableDecoration
 	void H_SpawnFountainDroplets(int amount)
 	{
 		for(int i = 0; i < amount; i++) {
-			A_SpawnItemEx("FountainDroplet", frandom[HPEffectRandom](-5,5), frandom[HPEffectRandom](-5,5), frandom[HPEffectRandom](0,4), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,7), 0, SXF_TRANSFERTRANSLATION, 192);
-			A_SpawnItemEx("TinyDroplet"    , frandom[HPEffectRandom](-5,5), frandom[HPEffectRandom](-5,5), 0                           , frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,7), 0, SXF_TRANSFERTRANSLATION, 192);
+			A_SpawnItemEx("FountainDroplet", frandom[HPEffectRandom](-5,5), frandom[HPEffectRandom](-5,5), frandom[HPEffectRandom](0,4), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,HP_FOUNTAN_MAX_Z_VELOCITY), 0, SXF_TRANSFERTRANSLATION, 192);
+			A_SpawnItemEx("TinyDroplet"    , frandom[HPEffectRandom](-5,5), frandom[HPEffectRandom](-5,5), 0                           , frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,HP_FOUNTAN_MAX_Z_VELOCITY), 0, SXF_TRANSFERTRANSLATION, 192);
 		}
 	}
 }
@@ -58,7 +58,8 @@ class HPFountainLine : SwitchableDecoration
 	{
 	Spawn:
 	Active:
-		TNT1 A 1;TNT1 A 1 H_SpawnLineFountainDroplets(7); // [XA] TODO: constant
+		TNT1 A 1;
+		TNT1 A 1 H_SpawnLineFountainDroplets(HP_FOUNTAN_NUM_PARTICLES);
 		Wait;
 	Inactive:
 		TNT1 A 1;
@@ -71,8 +72,8 @@ class HPFountainLine : SwitchableDecoration
 	void H_SpawnLineFountainDroplets(int amount)
 	{
 		for(int i = 0; i < amount; i++) {
-			A_SpawnItemEx("FountainDroplet", 0, frandom[HPEffectRandom](-args[0],args[0]), 0, frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,7), 0, SXF_TRANSFERTRANSLATION, 192);
-			A_SpawnItemEx("TinyDroplet"    , 0, frandom[HPEffectRandom](-args[0],args[0]), 0, frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,7), 0, SXF_TRANSFERTRANSLATION, 192);
+			A_SpawnItemEx("FountainDroplet", 0, frandom[HPEffectRandom](-args[0],args[0]), 0, frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,HP_FOUNTAN_MAX_Z_VELOCITY), 0, SXF_TRANSFERTRANSLATION, 192);
+			A_SpawnItemEx("TinyDroplet"    , 0, frandom[HPEffectRandom](-args[0],args[0]), 0, frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](-2,2), frandom[HPEffectRandom](2,HP_FOUNTAN_MAX_Z_VELOCITY), 0, SXF_TRANSFERTRANSLATION, 192);
 		}
 	}
 }
