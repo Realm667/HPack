@@ -22,7 +22,7 @@ class HPFountain : SwitchableDecoration
 	Active:
 		TNT1 A 1;
 		TNT1 A 1 H_SpawnFountainDroplets(HP_FOUNTAN_NUM_PARTICLES);
-		Loop;
+		Wait;
 	Inactive:
 		TNT1 A 1;
 		Wait;
