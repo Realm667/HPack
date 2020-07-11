@@ -31,4 +31,6 @@ DoomEdNums
 	11211 = HPFountainLineFire
 	11212 = HPFountainLineIceGray
 	11213 = HPFountainLineIceBlue
+
+	11250 = HPVortex
 }

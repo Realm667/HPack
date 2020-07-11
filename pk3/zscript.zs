@@ -3,3 +3,4 @@
 #include "zscript/hpack/constants.zs"
 
 #include "zscript/hpack/sfx/fountains.zs"
+#include "zscript/hpack/sfx/vortex.zs"
