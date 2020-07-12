@@ -310,7 +310,7 @@ adddefaultmap
 
 map H4M1 "Ethereal Ruins"
 {
-	author   = "ShadesMaster"
+	author   = "ShadesMaster & Xaser"
 	levelnum = 41
 	music    = M_H4M1
 	next     = H4M2
