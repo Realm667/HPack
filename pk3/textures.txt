@@ -599,6 +599,11 @@ Texture "WLLWTFL3", 64, 128
 	Patch "WLLWTFL1", 0, 0
 }
 
+Texture "XSKULLIG", 64, 64
+{
+	Patch "WSKULLIG", 0, 0
+}
+
 Sprite "CUBEJ1J5", 43, 33
 {
 	Offset 21, 28

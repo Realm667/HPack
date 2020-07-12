@@ -3,6 +3,7 @@ WARP texture wskulli2
 WARP texture wskullic
 WARP texture wskullie
 WARP texture wskullig
+WARP texture xskullig // non-glowing variant for E4M1 tunnel
 WARP texture wskullim
 WARP texture wskullin
 WARP texture wskulliq
