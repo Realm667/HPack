@@ -3,6 +3,10 @@
 
 [enu default]
 
+// Maps
+
+MAP_AUTHOR_FORMAT = "by %s";
+
 // Items & weapons
 
 TXT_WPNSTAFF = "ELVEN STAFF";

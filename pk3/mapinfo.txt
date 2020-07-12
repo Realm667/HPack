@@ -18,6 +18,7 @@ gameinfo
 	dimcolor = "2B00FF"
 	dimamount = 0.3
 	pickupcolor = "FFFFFF"
+	addeventhandlers = "HPMapCalloutEventHandler"
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -55,6 +56,7 @@ adddefaultmap
 
 map H1M1 "Gloom Tower"
 {
+	author    = "ShadesMaster"
 	levelnum  = 11
 	music     = M_H1M1
 	next      = H1M2
@@ -62,6 +64,7 @@ map H1M1 "Gloom Tower"
 
 map H1M2 "Sidhe Altar"
 {
+	author    = "ShadesMaster"
 	levelnum  = 12
 	music     = M_H1M2
 	next      = H1M3
@@ -69,6 +72,7 @@ map H1M2 "Sidhe Altar"
 
 map H1M3 "Elven Wood"
 {
+	author     = "ShadesMaster"
 	levelnum   = 13
 	music      = M_H1M3
 	next       = H1M4
@@ -77,6 +81,7 @@ map H1M3 "Elven Wood"
 
 map H1M4 "Battlements"
 {
+	author   = "ShadesMaster"
 	levelnum = 14
 	music    = M_H1M4
 	next     = H1M5
@@ -84,6 +89,7 @@ map H1M4 "Battlements"
 
 map H1M5 "Asylum of Hate"
 {
+	author   = "unholypimpin"
 	levelnum = 15
 	music    = M_H1M5
 	next     = H1M6
@@ -91,6 +97,7 @@ map H1M5 "Asylum of Hate"
 
 map H1M6 "Dead End"
 {
+	author   = "Captain Toenail"
 	levelnum = 16
 	music    = M_H1M6
 	next     = H1M7
@@ -101,6 +108,7 @@ map H1M6 "Dead End"
 
 map H1M7 "Citadel of Horrors"
 {
+	author   = "Tormentor667"
 	levelnum = 17
 	music    = M_H1M7
 	next     = H1M8
@@ -109,6 +117,7 @@ map H1M7 "Citadel of Horrors"
 
 map H1M8 "City of Darkness"
 {
+	author   = "Tormentor667"
 	levelnum = 18
 	music    = M_H1M8
 	next     = Endtitle
@@ -118,6 +127,7 @@ map H1M8 "City of Darkness"
 
 map H1MX "ChickenSpring"
 {
+	author     = "ShadesMaster"
 	levelnum   = 19
 	music      = M_H1MX
 	next       = H1M4
@@ -138,6 +148,7 @@ adddefaultmap
 
 map H2M1 "Chapel of the Seas"
 {
+	author     = "ShadesMaster"
 	levelnum   = 21
 	music      = M_H2M1
 	next       = H2M2
@@ -147,6 +158,7 @@ map H2M1 "Chapel of the Seas"
 
 map H2M2 "Dark Water"
 {
+	author   = "Serge Jaeken"
 	levelnum = 22
 	music    = M_H2M2
 	next     = H2M3
@@ -156,6 +168,7 @@ map H2M2 "Dark Water"
 
 map H2M3 "Aquatemple"
 {
+	author   = "ShadesMaster"
 	levelnum = 23
 	music    = M_H2M3
 	next     = H2M4
@@ -163,6 +176,7 @@ map H2M3 "Aquatemple"
 
 map H2M4 "Icy Catacomb"
 {
+	author   = "ShadesMaster & Xaser"
 	levelnum = 24
 	music    = M_H2M4
 	next     = H2M5
@@ -172,6 +186,7 @@ map H2M4 "Icy Catacomb"
 
 map H2M5 "Serpent Residence"
 {
+	author   = "Archi"
 	levelnum = 25
 	music    = M_H2M5
 	next     = H2M6
@@ -179,6 +194,7 @@ map H2M5 "Serpent Residence"
 
 map H2M6 "House of the Ancients"
 {
+	author   = "el zee"
 	levelnum = 26
 	music    = M_H2M6
 	next     = H2M7
@@ -187,6 +203,7 @@ map H2M6 "House of the Ancients"
 
 map H2M7 "Asterion"
 {
+	author   = "el zee"
 	levelnum = 27
 	music    = M_H2M7
 	next     = Endtitle
@@ -196,6 +213,7 @@ map H2M7 "Asterion"
 
 map H2MX "Crafting the Docks"
 {
+	author   = "Tormentor667"
 	levelnum = 29
 	music    = M_H2MX
 	next     = H2M2
@@ -215,6 +233,7 @@ adddefaultmap
 
 map H3M1 "Scorched Earth"
 {
+	author   = "ShadesMaster"
 	levelnum = 31
 	music    = M_H3M1
 	next     = H3M2
@@ -224,6 +243,7 @@ map H3M1 "Scorched Earth"
 
 map H3M2 "Lava Falls"
 {
+	author   = "Koresiarch"
 	levelnum = 32
 	music    = M_H3M2
 	next     = H3M3
@@ -233,6 +253,7 @@ map H3M2 "Lava Falls"
 
 map H3M3 "Bastion of Sorrow"
 {
+	author   = "Serge Jaeken" // [XA] Not sure about this one. Looks way more like a ShadesMaster map; maybe an old WIP of Serge's was in this slot before?
 	levelnum = 33
 	music    = M_H3M3
 	next     = H3M4
@@ -241,6 +262,7 @@ map H3M3 "Bastion of Sorrow"
 
 map H3M4 "Tabernacle of Magma"
 {
+	author   = "ShadesMaster"
 	levelnum = 34
 	music    = M_H3M4
 	next     = H3M5
@@ -249,6 +271,7 @@ map H3M4 "Tabernacle of Magma"
 
 map H3M5 "Fortress of Eternity"
 {
+	author   = "Tormentor667"
 	levelnum = 35
 	music    = M_H3M5
 	next     = H3M6
@@ -258,6 +281,7 @@ map H3M5 "Fortress of Eternity"
 
 Map H3M6 "Hell Stronghold"
 {
+	author   = "Gothic"
 	levelnum = 36
 	music    = M_H3M6
 	next     = H3M7
@@ -266,6 +290,7 @@ Map H3M6 "Hell Stronghold"
 
 map H3M7 "Infernux Prime"
 {
+	author   = "Pyroscourge"
 	levelnum = 37
 	music    = M_H3M7
 	next     = Endtitle
@@ -285,6 +310,7 @@ adddefaultmap
 
 map H4M1 "Ethereal Ruins"
 {
+	author   = "ShadesMaster"
 	levelnum = 41
 	music    = M_H4M1
 	next     = H4M2
@@ -292,6 +318,7 @@ map H4M1 "Ethereal Ruins"
 
 map H4M2 "The Bloody Path"
 {
+	author     = "Archi"
 	levelnum   = 42
 	music      = M_H4M2
 	next       = H4M3
@@ -300,6 +327,7 @@ map H4M2 "The Bloody Path"
 
 map H4M3 "Arid Crypt"
 {
+	author   = "qwerqsar" // [XA] Maybe. I had to fish this author name out of an old textfile.
 	levelnum = 43
 	music    = M_H4M3
 	next     = H4M4
@@ -315,6 +343,7 @@ adddefaultmap
 
 map H4M4 "Ziggurat of Sorrow"
 {
+	author   = "ShadesMaster"
 	levelnum = 44
 	music    = M_H4M4
 	next     = H4M5
@@ -324,6 +353,7 @@ map H4M4 "Ziggurat of Sorrow"
 
 Map H4M5 "Vortex"
 {
+	author   = "ShadesMaster" // [XA] I think?
 	levelnum = 45
 	music    = M_H4M5
 	next     = H4M6
@@ -333,6 +363,7 @@ Map H4M5 "Vortex"
 
 map H4M6 "Canyon of Ether"
 {
+	author   = "Blackfish"
 	levelnum = 46
 	next     = H4M7
 	music    = M_H4M6
@@ -343,6 +374,7 @@ map H4M6 "Canyon of Ether"
 
 map H4M7 "The Dark Rift"
 {
+	author    = "Icytux"
 	levelnum  = 47
 	music     = M_H4M7
 	next      = H4M8
@@ -352,6 +384,7 @@ map H4M7 "The Dark Rift"
 
 map H4M8 "The Void Temple"
 {
+	author   = "Gez"
 	levelnum = 48
 	music    = M_H4M8
 	next     = Endtitle
@@ -362,6 +395,7 @@ map H4M8 "The Void Temple"
 
 map H4MX "At the Back of My Head"
 {
+	author   = "Pyroscourge"
 	levelnum = 49
 	music    = M_H4MX
 	next     = H4M3

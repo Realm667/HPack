@@ -2,6 +2,12 @@
  * HPack ZScript: Common Constants, for easy adjustments.
  */
 
+const HP_MAP_CALLOUT_XPOS = 0.5;
+const HP_MAP_CALLOUT_YPOS = 0.25;
+const HP_MAP_CALLOUT_DURATION_SECONDS = 7;
+const HP_MAP_CALLOUT_FADE_IN_SECONDS  = 1;
+const HP_MAP_CALLOUT_FADE_OUT_SECONDS = 1;
+
 const HP_FOUNTAN_NUM_PARTICLES = 7;
 const HP_FOUNTAN_MAX_Z_VELOCITY = 7;
 
