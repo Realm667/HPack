@@ -353,7 +353,7 @@ map H4M4 "Ziggurat of Sorrow"
 
 Map H4M5 "Vortex"
 {
-	author   = "ShadesMaster" // [XA] I think?
+	author   = "ShadesMaster"
 	levelnum = 45
 	music    = M_H4M5
 	next     = H4M6

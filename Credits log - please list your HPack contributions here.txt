@@ -100,8 +100,6 @@ Various ambient sounds:
 -------------------
 Contributor: printz
 -------------------
-- H5M2: "Vortex" -- [XA] maybe? not sure if this one is printz or ShadesMaster... or both?
-
 Sounds contributed:
 - DoorCloseHeavy	-	from id/Raven Software's Hexen
 - DoorCloseLight	-	from id/Raven Software's Hexen
