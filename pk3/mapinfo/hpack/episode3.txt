@@ -1,0 +1,89 @@
+/*
+ * HPack MAPINFO: Episode 3 -- Into the Furnace
+ */
+
+Episode H3M1
+{
+	Name = "Into the Furnace"
+	Optional
+}
+Cluster 103 {}
+
+adddefaultmap
+{
+	Cluster   = 103
+	exitpic   = "$IN_E3"
+	enterpic  = "$IN_E3"
+	sky1      = "pri_osky", 0.0
+	lightmode = 8
+	grinding_polyobj
+	fallingdamage
+	smoothlighting
+}
+
+map H3M1 "Scorched Earth"
+{
+	author   = "ShadesMaster"
+	levelnum = 31
+	music    = M_H3M1
+	next     = H3M2
+//	fade     = "30 10 10"
+	lightmode = 0
+}
+
+map H3M2 "Lava Falls"
+{
+	author   = "Koresiarch"
+	levelnum = 32
+	music    = M_H3M2
+	next     = H3M3
+//	fade     = "30 10 10"
+	lightmode = 0
+}
+
+map H3M3 "Bastion of Sorrow"
+{
+	author   = "Serge Jaeken" // [XA] Not sure about this one. Looks way more like a ShadesMaster map; maybe an old WIP of Serge's was in this slot before?
+	levelnum = 33
+	music    = M_H3M3
+	next     = H3M4
+//	fade     = "30 10 10"
+}
+
+map H3M4 "Tabernacle of Magma"
+{
+	author   = "ShadesMaster"
+	levelnum = 34
+	music    = M_H3M4
+	next     = H3M5
+//	fade     = "20 10 05"
+}
+
+map H3M5 "Fortress of Eternity"
+{
+	author   = "Tormentor667"
+	levelnum = 35
+	music    = M_H3M5
+	next     = H3M6
+//	fade     = "10 15 20"
+	lightmode = 0
+}
+
+Map H3M6 "Hell Stronghold"
+{
+	author   = "Gothic"
+	levelnum = 36
+	music    = M_H3M6
+	next     = H3M7
+	sky1     = "BSSKY", 0.0
+}
+
+map H3M7 "Infernux Prime"
+{
+	author   = "Pyroscourge"
+	levelnum = 37
+	music    = M_H3M7
+	next     = Endtitle
+	sky1     = "SKY2", 0.0
+	nointermission
+}

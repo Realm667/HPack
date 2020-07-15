@@ -1,0 +1,104 @@
+/*
+ * HPack MAPINFO: Episode 1 -- Terrene of Sorrow
+ */
+
+Episode H1M1
+{
+	Name = "Terrene of Sorrow"
+	Optional
+}
+Cluster 101 {}
+
+adddefaultmap
+{
+	Cluster   = 101
+	exitpic   = "$IN_E1"
+	enterpic  = "$IN_E1"
+	sky1      = "DNIGHT", 0.0
+	lightmode = 8
+	grinding_polyobj
+	fallingdamage
+	smoothlighting
+}
+
+map H1M1 "Gloom Tower"
+{
+	author    = "ShadesMaster"
+	levelnum  = 11
+	music     = M_H1M1
+	next      = H1M2
+}
+
+map H1M2 "Sidhe Altar"
+{
+	author    = "ShadesMaster"
+	levelnum  = 12
+	music     = M_H1M2
+	next      = H1M3
+}
+
+map H1M3 "Elven Wood"
+{
+	author     = "ShadesMaster"
+	levelnum   = 13
+	music      = M_H1M3
+	next       = H1M4
+	secretnext = H1MX
+}
+
+map H1M4 "Battlements"
+{
+	author   = "ShadesMaster"
+	levelnum = 14
+	music    = M_H1M4
+	next     = H1M5
+}
+
+map H1M5 "Asylum of Hate"
+{
+	author   = "unholypimpin"
+	levelnum = 15
+	music    = M_H1M5
+	next     = H1M6
+}
+
+map H1M6 "Dead End"
+{
+	author   = "Captain Toenail"
+	levelnum = 16
+	music    = M_H1M6
+	next     = H1M7
+	sky1     = "SKYTOP03", 0.0
+	par      = 600
+	monsterfallingdamage
+}
+
+map H1M7 "Citadel of Horrors"
+{
+	author   = "Tormentor667"
+	levelnum = 17
+	music    = M_H1M7
+	next     = H1M8
+	lightmode = 0
+}
+
+map H1M8 "City of Darkness"
+{
+	author   = "Tormentor667"
+	levelnum = 18
+	music    = M_H1M8
+	next     = Endtitle
+	nointermission
+	lightmode = 0
+}
+
+map H1MX "ChickenSpring"
+{
+	author     = "ShadesMaster"
+	levelnum   = 19
+	music      = M_H1MX
+	next       = H1M4
+	sky1       = "sky1", 0.0
+	fade       = "20 15 20"
+	outsidefog = "20 15 20"
+}

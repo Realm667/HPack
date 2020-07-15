@@ -1,0 +1,19 @@
+/*
+ * HPack MAPINFO: Gameinfo
+ */
+
+gameinfo
+{
+	PlayerClasses = "HPackPlayer"
+	menufontcolor_title = "DARKRED"
+	menufontcolor_label = "DARKRED"
+	menufontcolor_value = "DARKGRAY"
+	menufontcolor_action = "DARKGRAY"
+	menufontcolor_header = "DARKRED"
+	menufontcolor_highlight = "DARKGRAY"
+	menufontcolor_selection = "DARKRED"
+	dimcolor = "2B00FF"
+	dimamount = 0.3
+	pickupcolor = "FFFFFF"
+	addeventhandlers = "HPMapCalloutEventHandler"
+}
