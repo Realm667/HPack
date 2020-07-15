@@ -114,6 +114,18 @@ weapons/polyhit			polyhit
 weapons/polyshot		polysht
 weapons/polyalt			polyalt
 
+squirrel/active1 SQUIDLE1
+squirrel/active2 SQUIDLE2
+squirrel/active3 SQUIDLE3
+squirrel/active4 SQUIDLE4
+squirrel/attack1 SQUATK1
+squirrel/attack2 SQUATK2
+squirrel/death   EPIGTOD
+
+$random squirrel/active { squirrel/active1 squirrel/active2 squirrel/active3 squirrel/active4 }
+$random squirrel/attack { squirrel/attack1 squirrel/attack2 }
+$alias squirrel/pain squirrel/attack
+
 ScrollOfHellfire/Start	HFSCSTRT
 
 misc/ripslop			null

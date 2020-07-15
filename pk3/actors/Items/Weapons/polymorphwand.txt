@@ -216,7 +216,7 @@ ACTOR Squirrel : MorphedMonster 30156
   +FLOORCLIP
   +FRIGHTENED
   //+TOUCHY
-  SeeSound "squirrel/pain"
+  SeeSound "squirrel/active"
   AttackSound "squirrel/attack"
   PainSound "squirrel/pain"
   DeathSound "squirrel/death"
@@ -236,9 +236,9 @@ ACTOR Squirrel : MorphedMonster 30156
 	SQRL B 6 A_CustomMeleeAttack(random(1,8))
     Goto See
   Death:
-    SQRL D 3 A_Scream
-    SQRL E 3 A_NoBlocking
-    SQRL F 3
+    SQRL D 6 A_Scream
+    SQRL E 6 A_NoBlocking
+    SQRL F 6
     Stop
   }
 }
