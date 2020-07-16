@@ -32,7 +32,7 @@
 #include "actors/misc/prop_chantingmonk.txt"
 #include "actors/misc/prop_decorations.txt"
 #include "actors/misc/prop_plusbarrel.txt"
-#include "actors/misc/prop_keksdose.txt"
+#include "actors/misc/prop_statues.txt"
 #include "actors/misc/prop_shadowcaster.txt"
 #include "actors/misc/plantlife.txt"
 

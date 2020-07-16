@@ -1,0 +1,95 @@
+Actor StonedKnight 31100
+{
+	//$Category Obstacles
+	//$Title Statue (Undead Warrior)
+	+SOLID
+	-SHOOTABLE
+	Radius 20
+	Height 56
+ 
+	States
+	{
+	Spawn:
+		KDSK A 350
+		Wait
+	}
+}
+
+Actor StonedWizard : StonedKnight 31101
+{
+	//$Category Obstacles
+	//$Title Statue (Disciple of D'Sparil)
+	States
+	{
+	Spawn:
+		KDSW A 350
+		Wait
+	}
+}
+
+Actor StonedLich : StonedKnight 31102
+{
+	//$Category Obstacles
+	//$Title Statue (Iron Lich)
+	States
+	{
+	Spawn:
+		KDSL A 350
+		Wait
+	}
+}
+
+ACTOR DSparilStatue 10300
+{
+  //$Category Obstacles
+  //$Title Statue (D'Sparil Shrine)
+  Radius 16
+  Height 96
+  +SOLID
+  States
+  {
+  Spawn:
+    STAD ABCDE 3 Bright
+    Loop
+  }
+}
+
+ACTOR EtherealStatueRed : SwitchableDecoration 10302
+{
+  //$Category Obstacles
+  //$Title Statue (Ethereal Red)
+  Radius 10
+  Height 62
+  +SOLID
+  States
+  {
+  Spawn:
+  Active:
+    STE1 A 0 Bright A_SpawnItemEx("RedFlare", 0, 0, 78, 0, 0, 0, 0, SXF_SETMASTER | SXF_CLIENTSIDE)
+    STE1 A 1 Bright A_SpawnItemEx("RedFire1", Random(-2, 2), Random(-2, 2), Random(77, 79), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
+    Wait
+  Inactive:
+    STE1 A -1
+    Stop
+  }
+}
+
+ACTOR EtherealStatueBlue : SwitchableDecoration 10303
+{
+  //$Category Obstacles
+  //$Title Statue (Ethereal Blue)
+  Radius 10
+  Height 62
+  +SOLID
+  States
+  {
+  Spawn:
+  Active:
+    STE2 A 0 Bright A_SpawnItemEx("BlueFlare", 0, 0, 76, 0, 0, 0, 0, SXF_SETMASTER | SXF_CLIENTSIDE)
+    STE2 A 1 Bright A_SpawnItemEx("TorchStarBlue", Random(-2, 2), Random(-2, 2), Random(75, 77), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
+    Wait
+  Inactive:
+    STE2 A -1
+    Stop
+  }
+}
