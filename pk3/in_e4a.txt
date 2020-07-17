@@ -1,0 +1,9 @@
+NoAutoStartMap
+Background BG_E4A
+Splat IN_X
+Pointer IN_YAH
+
+Spots
+{
+	H4M1 216 90
+}

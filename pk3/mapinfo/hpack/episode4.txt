@@ -12,9 +12,9 @@ Cluster 104 {}
 adddefaultmap
 {
 	Cluster   = 104
-	exitpic   = "$IN_E4"
-	enterpic  = "$IN_E4"
-	sky1      = "SKYTOP10", 0.0
+	exitpic   = "$IN_E4B"
+	enterpic  = "$IN_E4B"
+	sky1      = "CSSKY", 0.0
 	lightmode = 8
 	grinding_polyobj
 	fallingdamage
@@ -27,6 +27,8 @@ map H4M1 "Ethereal Ruins"
 	levelnum = 41
 	music    = M_H4M1
 	next     = H4M2
+	exitpic  = "$IN_E4A"
+	enterpic = "$IN_E4A"
 }
 
 map H4M2 "The Bloody Path"
@@ -38,51 +40,44 @@ map H4M2 "The Bloody Path"
 	secretnext = H4MX
 }
 
-map H4M3 "Arid Crypt"
-{
-	author   = "qwerqsar" // [XA] Maybe. I had to fish this author name out of an old textfile.
-	levelnum = 43
-	music    = M_H4M3
-	next     = H4M4
-	fade     = "20 20 20"
-}
-
-adddefaultmap
-{
-	exitpic  = "$IN_E5"
-	enterpic = "$IN_E5"
-	sky1     = "CSSKY", 0.0
-}
-
-map H4M4 "Ziggurat of Sorrow"
+map H4M3 "Ziggurat of Sorrow"
 {
 	author   = "ShadesMaster"
 	levelnum = 44
-	music    = M_H4M4
-	next     = H4M5
+	music    = M_H4M3
+	next     = H4M4
 	fade     = "0 05 10"
 	lightmode = 0
 }
 
-Map H4M5 "Vortex"
+Map H4M4 "Vortex"
 {
 	author   = "ShadesMaster"
 	levelnum = 45
-	music    = M_H4M5
-	next     = H4M6
+	music    = M_H4M4
+	next     = H4M5
 	fade     = "57 00 7F"
 	gravity  = 300
 }
 
-map H4M6 "Canyon of Ether"
+map H4M5 "Canyon of Ether"
 {
 	author   = "Blackfish"
 	levelnum = 46
-	next     = H4M7
-	music    = M_H4M6
+	music    = M_H4M5
+	next     = H4M6
 	sky1     = "CSSKY", 0.01
 	fade     = "25 00 7F"
 	lightmode = 0
+}
+
+map H4M6 "Astral Crypt"
+{
+	author   = "qwerqsar" // [XA] Maybe. I had to fish this author name out of an old textfile.
+	levelnum = 43
+	music    = M_H4M6
+	next     = H4M7
+	fade     = "20 20 20"
 }
 
 map H4M7 "The Dark Rift"
