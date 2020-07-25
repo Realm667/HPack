@@ -60,14 +60,14 @@ Map H4M4 "Vortex"
 	gravity  = 300
 }
 
-map H4M5 "Canyon of Ether"
+map H4M5 "Valley of the Mists"
 {
-	author   = "Blackfish"
+	author   = "Blackfish & ShadesMaster"
 	levelnum = 46
 	music    = M_H4M5
 	next     = H4M6
-	sky1     = "CSSKY", 0.01
-	fade     = "25 00 7F"
+	sky1     = "ZZZWHITE", 0.0
+	fade     = "FF FF FF"
 	lightmode = 0
 }
 
