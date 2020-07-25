@@ -33,4 +33,5 @@ DoomEdNums
 	11213 = HPFountainLineIceBlue
 
 	11250 = HPVortex
+	11251 = HPVortexRockSpawner
 }

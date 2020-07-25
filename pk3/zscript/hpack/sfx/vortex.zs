@@ -96,3 +96,118 @@ class HPVortexSoul : Actor
 		Stop;
 	}
 }
+
+class HPVortexRock : Actor
+{
+	Default
+	{
+		Projectile;
+		+THRUACTORS;
+		+DONTBLAST;
+		+CLIENTSIDEONLY;
+		+FORCEXYBILLBOARD;
+		Damage 0;
+		Speed 20;
+		Radius 1;
+		Height 1;
+	}
+
+	States
+	{
+	Spawn:
+		RCK1 A 0 NoDelay H_VortexRockInit();
+	Spawn1:
+		RCK1 A -1;
+		Stop;
+	Spawn2:
+		RCK2 A -1;
+		Stop;
+	}
+
+	/**
+	 * H_VortexRockInit
+	 */
+	state H_VortexRockInit()
+	{
+		double scale = frandom(0.5, 1.0);
+		self.scale.x = scale * ( random(0, 1) * 2 - 1 );
+		self.scale.y = scale * ( random(0, 1) * 2 - 1 );
+		return A_Jump(256, "Spawn1", "Spawn2");
+	}
+}
+
+class HPVortexRockSpawner : Actor
+{
+	//$Category HPack_SpecialEffects
+	//$Title Vertical Rock Spawner
+
+	//$Arg0 X range
+	//$Arg0Default 128
+
+	//$Arg1 Y range
+	//$Arg1Default 128
+
+	//$Arg2 Fail Chance
+	//$Arg2Default 0
+
+	//$Arg3 Velocity Percent
+	//$Arg3Default 0
+
+	//$Arg4 Scale Percent
+	//$Arg4Default 0
+
+	Default
+	{
+		+NOBLOCKMAP
+		+NOGRAVITY
+		+NOSECTOR
+		+NOINTERACTION
+		+NOCLIP
+		-SOLID
+		+CLIENTSIDEONLY
+	}
+
+	States
+	{
+	Spawn:
+	Active:
+		TNT1 A 1 NoDelay H_SpawnVortexRock();
+		Loop;
+	Inactive:
+		TNT1 A 1;
+		Loop;
+	}
+
+	/**
+	 * H_SpawnVortexRock
+	 */
+	void H_SpawnVortexRock()
+	{
+		double velPercent = 1.0f;
+		if(Args[3] > 0) {
+			velPercent = 0.01 * Args[3];
+		}
+
+		double scalePercent = 1.0f;
+		if(Args[4] > 0) {
+			scalePercent = 0.01 * Args[4];
+		}
+
+		bool spawned;
+		Actor rock;
+
+		[spawned, rock] = A_SpawnItemEx( "HPVortexRock",
+			xofs: frandom(-Args[0], Args[0]),
+			yofs: frandom(-Args[1], Args[1]),
+			zvel: frandom(20.0, 40.0) * velPercent,
+			angle: angle,
+			flags: SXF_CLIENTSIDE,
+			failchance: Args[2]
+		);
+
+		if(rock) {
+			rock.scale.x *= scalePercent;
+			rock.scale.y *= scalePercent;
+		}
+	}
+}
