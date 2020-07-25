@@ -102,7 +102,7 @@ ACTOR ToxinCloud : PoisonCloud
    Height 48
    DamageType "Poison"
    RENDERSTYLE translucent
-   ReactionTime 20
+   ReactionTime 7
    ALPHA 0.67
    Seesound "weapons/poof1"
    States
