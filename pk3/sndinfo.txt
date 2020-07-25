@@ -510,29 +510,29 @@ Minecraft/DoorOpen	MCDOOR
 // AMBIENT SOUNDS //
 ////////////////////
 
-AMBX1    ambx1    //Thunder Close
-AMBX2    ambx2    //Thunder Far
-AMBX3    ambx3    //Thunder Close  
-AMBX4    ambx4    //Rain Slight
-AMBX5    ambx5    //Fire Medium
-AMBX6    ambx6    //Forest
-AMBX7    ambx7    //Frog Swamp
-AMBX8    ambx8    //Swarm Swamp
-AMBX9    ambx9    //Frog Swamp
-AMBX10   ambx10   //Night
-AMBX11   ambx11   //Night
-ambx12   WIND 	  //Wind Silent
-ambx13   WIND3	  //Wind Scary
-ambx14   WIND5	  //Wind Strong
-ambx15   bubbleuw //Bubbles Underwater
-ambx16   dong	  //Cathedral Clock
-ambx17   lava1	  //Lava Loud
-ambx18   lava2	  //Lava Bubble
-ambx19   water	  //Small River
-ambx20   cavelake //Lake in a Cave
-ambx21   drycave  //Dry Cave
-ambx22   river	  //Middle River
-ambx23   wetcave  //Wet Cave
+ambient/thunder1   ambx1    //Thunder Close
+ambient/thunderfar ambx2    //Thunder Far
+ambient/thunder2   ambx3    //Thunder Close  
+ambient/rain       ambx4    //Rain Slight
+ambient/fire       ambx5    //Fire Medium
+ambient/forest     ambx6    //Forest
+ambient/swamp1     ambx7    //Frog Swamp
+ambient/swamp2     ambx8    //Swarm Swamp
+ambient/swamp3     ambx9    //Frog Swamp
+ambient/night1     ambx10   //Night
+ambient/night2     ambx11   //Night
+ambient/wind       WIND     //Wind Silent
+ambient/windscary  WIND3    //Wind Scary
+ambient/windstrong WIND5    //Wind Strong
+ambient/bubbles    bubbleuw //Bubbles Underwater
+ambient/dong       dong     //Cathedral Clock
+ambient/lava1      lava1    //Lava Loud
+ambient/lava2      lava2    //Lava Bubble
+ambient/water      water    //Small River
+ambient/cavelake   cavelake //Lake in a Cave
+ambient/drycave    drycave  //Dry Cave
+ambient/river      river    //Middle River
+ambient/wetcave    wetcave  //Wet Cave
 
 // Additional Ambient Screams
 
@@ -555,36 +555,36 @@ Ambient/MagicTorch  MAGTORCH
 ;=========================================================
 ;AMBIENT SOUND LISTING
 ;=========================================================
-$AMBIENT 1 ambx1 RANDOM 20.0 35.0 1.0
-$AMBIENT 2 ambx2 RANDOM 20.0 35.0 1.0
-$AMBIENT 3 ambx3 RANDOM 20.0 35.0 1.0
-$AMBIENT 4 ambx4 SURROUND CONTINUOUS 0.35
-$AMBIENT 5 ambx5 POINT CONTINUOUS 1.0
-$AMBIENT 6 ambx6 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 7 ambx7 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 8 ambx8 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 9 ambx9 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 10 ambx10 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 11 ambx11 POINT RANDOM 20.0 35.0 1.0
-$AMBIENT 12 ambx12 POINT CONTINUOUS 1.0
-$AMBIENT 13 ambx13 POINT CONTINUOUS 1.0
-$AMBIENT 14 ambx14 POINT CONTINUOUS 1.0
-$AMBIENT 15 ambx15 POINT CONTINUOUS 0.6
-$AMBIENT 16 ambx16 POINT RANDOM 20.0 60.0 1.0
-$AMBIENT 17 ambx17 POINT CONTINUOUS 0.8
-$AMBIENT 18 ambx18 POINT CONTINUOUS 0.8
-$AMBIENT 19 ambx19 POINT CONTINUOUS 0.8
-$AMBIENT 20 ambx20 POINT CONTINUOUS 0.8
-$AMBIENT 21 ambx21 POINT CONTINUOUS 0.8
-$AMBIENT 22 ambx22 POINT CONTINUOUS 0.8
-$AMBIENT 23 ambx23 POINT CONTINUOUS 0.8
-$AMBIENT 24 SFX/FireLoop1 POINT CONTINUOUS 0.5
-$AMBIENT 25 SFX/FireLoop2 POINT CONTINUOUS 0.5
-$AMBIENT 26 SFX/FireLoop3 POINT CONTINUOUS 0.5
-$AMBIENT 27 Ambient/Stars1 POINT CONTINUOUS 0.75
-$AMBIENT 28 Ambient/Stars2 POINT CONTINUOUS 0.5
+$AMBIENT 1 ambient/thunder1    RANDOM 20.0 35.0 1.0
+$AMBIENT 2 ambient/thunderfar  RANDOM 20.0 35.0 1.0
+$AMBIENT 3 ambient/thunder2    RANDOM 20.0 35.0 1.0
+$AMBIENT 4 ambient/rain        SURROUND CONTINUOUS 0.35
+$AMBIENT 5 ambient/fire        POINT CONTINUOUS 1.0
+$AMBIENT 6 ambient/forest      POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 7 ambient/swamp1      POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 8 ambient/swamp2      POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 9 ambient/swamp3      POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 10 ambient/night1     POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 11 ambient/night2     POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 12 ambient/wind       POINT CONTINUOUS 1.0
+$AMBIENT 13 ambient/windscary  POINT CONTINUOUS 1.0
+$AMBIENT 14 ambient/windstrong POINT CONTINUOUS 1.0
+$AMBIENT 15 ambient/bubbles    POINT CONTINUOUS 0.6
+$AMBIENT 16 ambient/dong       POINT RANDOM 20.0 60.0 1.0
+$AMBIENT 17 ambient/lava1      POINT CONTINUOUS 0.8
+$AMBIENT 18 ambient/lava2      POINT CONTINUOUS 0.8
+$AMBIENT 19 ambient/water      POINT CONTINUOUS 0.8
+$AMBIENT 20 ambient/cavelake   POINT CONTINUOUS 0.8
+$AMBIENT 21 ambient/drycave    POINT CONTINUOUS 0.8
+$AMBIENT 22 ambient/river      POINT CONTINUOUS 0.8
+$AMBIENT 23 ambient/wetcave    POINT CONTINUOUS 0.8
+$AMBIENT 24 SFX/FireLoop1      POINT CONTINUOUS 0.5
+$AMBIENT 25 SFX/FireLoop2      POINT CONTINUOUS 0.5
+$AMBIENT 26 SFX/FireLoop3      POINT CONTINUOUS 0.5
+$AMBIENT 27 Ambient/Stars1     POINT CONTINUOUS 0.75
+$AMBIENT 28 Ambient/Stars2     POINT CONTINUOUS 0.5
 $AMBIENT 29 Ambient/MagicTorch POINT CONTINUOUS 0.5
-$ambient 60 "PortalChoir/Loop" POINT continuous  255
+$ambient 60 "PortalChoir/Loop" POINT continuous 255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
 $ambient 62 amb/windsubs surround continuous 0.5
 $ambient 63 printz/ambient/pr_wind1 surround random 30.0 300.0 0.5
