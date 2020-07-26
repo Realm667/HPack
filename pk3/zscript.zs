@@ -1,6 +1,6 @@
 // HPack ZScript Includefile of Awesome
 
-version "2.4.0"
+version "4.4.0"
 
 #include "zscript/hpack/constants.zs"
 
