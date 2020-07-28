@@ -1,11 +1,3 @@
-// [Blue Shadow] Powerup has been ZScriptified.
-
-/* Actor PowerNoDrown : PowerProtection
-{
-  DamageFactor "Drowning", 0
-  Inventory.Icon "TDEPA0"
-} */
-
 // TALISMAN OF THE DEPTHS
 actor ArtiDepthsTalisman : PowerupGiver 10111
 {
