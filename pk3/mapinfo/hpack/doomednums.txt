@@ -4,6 +4,8 @@
 
 DoomEdNums
 {
+	10010 = RainSpawner
+
 	11101 = HPFountainBlue
 	11102 = HPFountainRed
 	11103 = HPFountainBlack

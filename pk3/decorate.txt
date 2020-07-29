@@ -1,7 +1,6 @@
 //Special Effects
 #include "actors/misc/sfx_ember.txt"
 #include "actors/misc/sfx_fire.txt"
-#include "actors/misc/sfx_rain.txt"
 #include "actors/misc/sfx_snow.txt"
 #include "actors/misc/sfx_steam.txt"
 #include "actors/misc/sfx_thunder.txt"
