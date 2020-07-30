@@ -286,13 +286,6 @@ weapons/skulfi dsskulfi
 weapons/bloodx dsbloodx
 weapons/poof1 dspoof1
 
-//Dragon Familiar
-dragonfam/see dfsee
-dragonfam/pain dfpain
-dragonfam/death dfdie
-dragonfam/idle dfidle
-dragonfam/attack dfattack
-
 //InfernoDemon
 Inferno/Alert	INFRALRT
 Inferno/Walk	INFRWALK

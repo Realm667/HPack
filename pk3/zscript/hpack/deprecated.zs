@@ -56,3 +56,11 @@ class ShadowDragon : HPDeprecatedActor
 		HPDeprecatedActor.ReplacementActor 'Beast';
 	}
 }
+
+class DragonFamiliar : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'None';
+	}
+}

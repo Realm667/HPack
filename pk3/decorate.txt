@@ -50,7 +50,6 @@
 #include "actors/monsters/darknessrift.txt"
 #include "actors/monsters/deathknight.txt"
 #include "actors/monsters/disciple.txt"
-#include "actors/monsters/dragonfamiliar.txt"
 #include "actors/monsters/fallen.txt"
 #include "actors/monsters/frostgargoyle.txt"
 #include "actors/monsters/ghoul.txt"

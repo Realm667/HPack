@@ -40,7 +40,6 @@
 #include "actors/monsters/darknessrift.gl"
 #include "actors/monsters/deathknight.gl"
 #include "actors/monsters/disciple.gl"
-#include "actors/monsters/dragonfamiliar.gl"
 #include "actors/monsters/fallen.gl"
 #include "actors/monsters/ghoul.gl"
 #include "actors/monsters/guardiancube.gl"
