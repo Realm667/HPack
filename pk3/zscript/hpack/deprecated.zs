@@ -48,3 +48,11 @@ class ChaosWyvern : HPDeprecatedActor
 		HPDeprecatedActor.ReplacementActor 'SkullWizard';
 	}
 }
+
+class ShadowDragon : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'Beast';
+	}
+}

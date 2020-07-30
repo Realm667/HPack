@@ -65,7 +65,6 @@
 #include "actors/monsters/serpent.txt"
 #include "actors/monsters/shadowbeast.txt"
 #include "actors/monsters/shadowclaw.txt"
-#include "actors/monsters/shadowdragon.txt"
 #include "actors/monsters/skullwizard.txt"
 #include "actors/monsters/sonsofdsparil.txt"
 #include "actors/monsters/swarm.txt"

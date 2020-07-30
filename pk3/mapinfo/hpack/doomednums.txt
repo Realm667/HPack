@@ -38,6 +38,7 @@ DoomEdNums
 	11251 = HPVortexRockSpawner
 
 	// Deprecated actors; these will be removed once maps are updated to not use 'em.
+	14563 = ShadowDragon
 	16249 = BloodLich
 	16518 = ChaosWyvern
 	20002 = HornBeast
