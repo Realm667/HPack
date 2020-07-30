@@ -42,6 +42,8 @@ DoomEdNums
 	14563 = ShadowDragon
 	16249 = BloodLich
 	16518 = ChaosWyvern
+	16601 = HPBeastStrong
+	17051 = HPSuperGargoyle
 	19273 = JumpClink
 	20002 = HornBeast
 }

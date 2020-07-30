@@ -72,3 +72,19 @@ class JumpClink : HPDeprecatedActor
 		HPDeprecatedActor.ReplacementActor 'Clink';
 	}
 }
+
+class HPBeastStrong : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'RedChaosSerpent';
+	}
+}
+
+class HPSuperGargoyle : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'HPHereticImpLeader';
+	}
+}
