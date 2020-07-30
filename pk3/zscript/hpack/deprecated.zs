@@ -1,0 +1,26 @@
+/*
+ * HPack ZScript: Deprecated actor replacers
+ */
+
+class HPDeprecatedActor : RandomSpawner
+{
+	name replacementActor;
+	property ReplacementActor: replacementActor;
+
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'Unknown';
+	}
+
+	/**
+	 * ChooseSpawn
+	 *
+	 * Logs a warning message to the console and
+	 * spawns the replacement actor. 'Nuff said.
+	 */
+	override Name ChooseSpawn()
+	{
+		console.Printf(TEXTCOLOR_ORANGE .. "Warning: Actor '%s' has been removed. Spawning '%s' instead until this map is updated.", GetClassName(), replacementActor);
+		return replacementActor;
+	}
+}
