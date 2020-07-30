@@ -36,4 +36,7 @@ DoomEdNums
 
 	11250 = HPVortex
 	11251 = HPVortexRockSpawner
+
+	// Deprecated actors; these will be removed once maps are updated to not use 'em.
+	20002 = HornBeast
 }

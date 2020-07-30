@@ -58,7 +58,6 @@
 #include "actors/monsters/ghoul.txt"
 #include "actors/monsters/guardiancube.txt"
 #include "actors/monsters/hellrose.txt"
-#include "actors/monsters/hornbeast.txt"
 #include "actors/monsters/icelich.txt"
 #include "actors/monsters/infernodemon.txt"
 #include "actors/monsters/nightshade.txt"

@@ -295,12 +295,6 @@ weapons/skulfi dsskulfi
 weapons/bloodx dsbloodx
 weapons/poof1 dspoof1
 
-//HornBeast
-horn/sight		dshrnsit
-horn/attack		woosh3
-horn/shotx		strike1
-horn/death		dshrndie
-
 //Dragon Familiar
 dragonfam/see dfsee
 dragonfam/pain dfpain

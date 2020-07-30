@@ -24,3 +24,11 @@ class HPDeprecatedActor : RandomSpawner
 		return replacementActor;
 	}
 }
+
+class HornBeast : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'RedChaosSerpent';
+	}
+}
