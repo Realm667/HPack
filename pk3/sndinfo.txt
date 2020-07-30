@@ -385,6 +385,7 @@ DemonAttack             dematk2
 DemonDeath              sbtdth3
 DemonMissileFire        impfire2
 DemonMissileExplode     impact3
+DemonMissileExplode2    phohit
 DemonToast              phopow
 
 //Wicked
