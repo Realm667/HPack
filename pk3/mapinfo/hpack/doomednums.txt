@@ -39,5 +39,6 @@ DoomEdNums
 
 	// Deprecated actors; these will be removed once maps are updated to not use 'em.
 	16249 = BloodLich
+	16518 = ChaosWyvern
 	20002 = HornBeast
 }

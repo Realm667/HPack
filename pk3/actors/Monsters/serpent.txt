@@ -236,19 +236,19 @@ Actor RedChaosSerpent : GreenChaosSerpent 16555
 		RDMN G 3 A_CustomMissile("RedDemonFX", 64, 0, 4, 0)
 		Goto See
 	Breath:
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
     	goto See

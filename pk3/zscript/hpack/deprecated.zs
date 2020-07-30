@@ -40,3 +40,11 @@ class BloodLich : HPDeprecatedActor
 		HPDeprecatedActor.ReplacementActor 'HPSentinel';
 	}
 }
+
+class ChaosWyvern : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'SkullWizard';
+	}
+}

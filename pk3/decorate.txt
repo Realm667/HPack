@@ -44,7 +44,6 @@
 #include "actors/monsters/archwizard.txt"
 #include "actors/monsters/bishop.txt"
 #include "actors/monsters/champion.txt"
-#include "actors/monsters/chaoswyvern.txt"
 #include "actors/monsters/clinkjump.txt"
 #include "actors/monsters/cultist.txt"
 #include "actors/monsters/darklich.txt"
