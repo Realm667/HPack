@@ -32,3 +32,11 @@ class HornBeast : HPDeprecatedActor
 		HPDeprecatedActor.ReplacementActor 'RedChaosSerpent';
 	}
 }
+
+class BloodLich : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'HPSentinel';
+	}
+}
