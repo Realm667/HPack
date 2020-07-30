@@ -64,3 +64,11 @@ class DragonFamiliar : HPDeprecatedActor
 		HPDeprecatedActor.ReplacementActor 'None';
 	}
 }
+
+class JumpClink : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'Clink';
+	}
+}

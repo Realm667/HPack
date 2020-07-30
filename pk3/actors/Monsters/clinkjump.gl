@@ -1,7 +1,0 @@
-object JumpClink
-{
-    frame CLNKK { light CLINK_X1 }
-    frame CLNKL { light CLINK_X2 }
-    frame CLNKM { light CLINK_X3 }
-    frame CLNKN { light CLINK_X4 }
-}

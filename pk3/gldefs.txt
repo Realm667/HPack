@@ -35,7 +35,6 @@
 #include "actors/monsters/archwizard.gl"
 #include "actors/monsters/bishop.gl"
 #include "actors/monsters/champion.gl"
-#include "actors/monsters/clinkjump.gl"
 #include "actors/monsters/cultist.gl"
 #include "actors/monsters/darknessrift.gl"
 #include "actors/monsters/deathknight.gl"
