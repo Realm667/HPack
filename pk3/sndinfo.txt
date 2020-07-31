@@ -185,15 +185,6 @@ BishopDeath             bishdth1
 BishopMissileExplode    bshhit2
 BishopBlur              blur6
 
-// Chaos Wyvern
-ChaosWyvern/Sight	DSCHASIT
-ChaosWyvern/Act		DSCHASIT
-ChaosWyvern/Pain	DSCHAPN
-ChaosWyvern/Breath	DSCHAFIR
-ChaosWyvern/Bomb	DSCHAFI2
-ChaosWyvern/Death	DSCHADIE
-ChaosWyvern/Toast	DSTOASTY
-
 // NightShade
 $random monster/nshsit		{ monster/nshsi1  monster/nshsi2 }
 monster/nshsi1                  dsnshsi1
@@ -295,19 +286,6 @@ weapons/skulfi dsskulfi
 weapons/bloodx dsbloodx
 weapons/poof1 dspoof1
 
-//HornBeast
-horn/sight		dshrnsit
-horn/attack		woosh3
-horn/shotx		strike1
-horn/death		dshrndie
-
-//Dragon Familiar
-dragonfam/see dfsee
-dragonfam/pain dfpain
-dragonfam/death dfdie
-dragonfam/idle dfidle
-dragonfam/attack dfattack
-
 //InfernoDemon
 Inferno/Alert	INFRALRT
 Inferno/Walk	INFRWALK
@@ -407,6 +385,8 @@ DemonAttack             dematk2
 DemonDeath              sbtdth3
 DemonMissileFire        impfire2
 DemonMissileExplode     impact3
+DemonMissileExplode2    phohit
+DemonToast              phopow
 
 //Wicked
 monster/wiksit                  dswiksit
@@ -448,20 +428,6 @@ epig/port EPIGPORT
 epig/explo EPIGXPLO
 
 vile/firecrkl DSFLAME
-
-//Blood Lich
-MageStaffFire		STRIKE3
-MageStaffExplode	STRIKE1
-FlameBreath				HEDAT1
-
-//Reaver
-WraithSight             raith5a
-WraithActive            raith3
-WraithPain              raith4a
-WraithAttack            raith1b
-WraithDeath             rathdth2
-WraithMissileFire       BSTATK
-WraithMissileExplode    PHOHIT
 
 /////////////////
 // MISC SOUNDS //

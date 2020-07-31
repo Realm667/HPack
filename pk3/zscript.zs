@@ -3,6 +3,7 @@
 version "4.4.0"
 
 #include "zscript/hpack/constants.zs"
+#include "zscript/hpack/deprecated.zs"
 
 #include "zscript/hpack/events/mapcallout.zs"
 

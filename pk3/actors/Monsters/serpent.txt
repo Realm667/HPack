@@ -224,31 +224,80 @@ Actor RedChaosSerpent : GreenChaosSerpent 16555
 	Missile:
 		RDMN E 0 A_JumpIfCloser(300, "Breath")
 		RDMN E 0 A_JumpIfHealthLower(250, "MissilePlus")
-		RDMN E 5 A_FaceTarget
-		RDMN F 6 A_FaceTarget
-		RDMN G 5 A_CustomMissile("RedDemonFX",64,0,0,0)
-		Goto See
-	MissilePlus:
+		RDMN E 0 A_Jump(90, "Missile2")
 		RDMN E 3 A_FaceTarget
 		RDMN F 4 A_FaceTarget
-		RDMN G 0 A_CustomMissile("RedDemonFX", 64, 0, -4, 0)
-		RDMN G 0 A_CustomMissile("RedDemonFX", 64, 0)
-		RDMN G 3 A_CustomMissile("RedDemonFX", 64, 0, 4, 0)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -8)
+		RDMN G 6 Bright A_CustomMissile ("RedDemonFX", 64, 0, 8)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 0)
+		Goto See
+	Missile2:
+		RDMN E 4 A_FaceTarget
+		RDMN F 4 Bright A_CustomMissile ("RedDemonFX", 64, 0, -16)
+		RDMN G 0 Bright A_FaceTarget
+		RDMN G 4 Bright A_CustomMissile ("RedDemonFX", 64, 0, -8)
+		RDMN F 0 Bright A_FaceTarget
+		RDMN F 4 Bright A_CustomMissile ("RedDemonFX", 64, 0, 0)
+		RDMN G 0 Bright A_FaceTarget
+		RDMN G 4 Bright A_CustomMissile ("RedDemonFX", 64, 0, 8)
+		RDMN F 0 Bright A_FaceTarget
+		RDMN F 4 Bright A_CustomMissile ("RedDemonFX", 64, 0, 16)
+		RDMN G 0 Bright A_FaceTarget
+		RDMN G 4 Bright A_CustomMissile ("RedDemonFX", 64, 0, 32)
+		Goto See
+	MissilePlus:
+		RDMN E 0 A_Jump(90, "MissilePlus2")
+		RDMN E 3 A_FaceTarget
+		RDMN F 4 A_FaceTarget
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		RDMN G 2 Bright A_CustomMissile ("RedDemonFX", 64, 0, random(-8,8))
+		Goto See
+	MissilePlus2:
+		RDMN E 8 A_FaceTarget
+		RDMN F 8 A_FaceTarget
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -64)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 64)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -56)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 56)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -48)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 48)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -40)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 40)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -32)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 32)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -24)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 24)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -16)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 16)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, -8)
+		RDMN G 0 Bright A_CustomMissile ("RedDemonFX", 64, 0, 8)
+		RDMN G 6 Bright A_CustomMissile ("RedDemonFX", 64, 0, 0)
 		Goto See
 	Breath:
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-    	RDMN G 0 bright A_PlaySoundEx("ChaosWyvern/Toast", auto)
+    	RDMN G 0 bright A_PlaySoundEx("DemonToast", auto)
     	RDMN G 0 bright A_FaceTarget
     	RDMN GGG 2 bright A_CustomMissile("SerpentFireBreath", 64, 0, random(-10,10), CMF_CHECKTARGETDEAD)
     	goto See
@@ -381,26 +430,19 @@ ACTOR SerpentFireBreath
   }
 }
 
-ACTOR RedDemonFX : VolcanoBlast
+ACTOR RedDemonFX : BeastBall
 {
-  Radius 16
-  Height 32
   Speed 15
-  Damage 12
-  ExplosionDamage 32
-  ExplosionRadius 54
-  +NOBLOCKMAP
-  +MISSILE
-  +NOTELEPORT
-  +NOGRAVITY
+  Damage 5
+  DeathSound "DemonMissileExplode2"
   States
   {
   Spawn:
     RDFX ABC 4 BRIGHT
     Loop
   Death:
-    XPL1 A 4 BRIGHT A_VolcBallImpact
-    XPL1 B 4 BRIGHT A_Explode
+    XPL1 A 4 BRIGHT
+    XPL1 B 4 BRIGHT A_Explode(16, 64)
     XPL1 CDEF 4 BRIGHT
     Stop
   }
