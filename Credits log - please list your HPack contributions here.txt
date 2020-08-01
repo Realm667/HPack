@@ -50,6 +50,9 @@ Contributor: Jimmy
 - BIGFONT and SMALLFONT replacements
 - Music for H1M1: "Lighthouse"
 - Music for H2M7: "Encrypted"
+- Music for H3M5, both partial covers of tracks from Drakensang:
+  - "Sad Dunes", based on "Hinter den Feuerfällen von Algormosch"
+  - "Mad Dunes", based on "Schild und Speer"
 
 -------------------
 Contributor: mrgrimsdale
