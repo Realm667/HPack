@@ -11,6 +11,7 @@ Actor Deathknight : Knight 30114
   MeleeRange 56
   DropItem "SkullRodAmmo" 84 20
   Obituary "$OB_DEATHKNIGHTH"
+  Tag "$FN_DEATHKNIGHT"
   SeeSound "monster/dknsit"
   PainSound "monster/dknpai"
   DeathSound "monster/dkndth"

@@ -21,6 +21,7 @@ Actor Guardian 30102
   ActiveSound "monster/cubfly"
   DeathSound "monster/cubdth"
   Obituary "$OB_GUARDIAN"
+  Tag "$FN_GUARDIAN"
   DropItem "GoldWandAmmo" 120 5
   States 
   { 

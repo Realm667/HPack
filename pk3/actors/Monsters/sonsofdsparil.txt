@@ -15,6 +15,7 @@ ACTOR HPSorcerer
   PainSound "sonMage/pain"
   ActiveSound "sonMage/idle"
   Obituary "$OB_SONOFDSPARIL"
+  Tag "$FN_SONOFDSPARIL"
   States
   {
   Spawn:

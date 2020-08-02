@@ -4,6 +4,7 @@ actor DarkLich : Heresiarch 16517
 	//$Title Dark Lich
 	//$Sprite SKELA1
   obituary "$OB_DARKLICH"
+  Tag "$FN_DARKLICH"
   health 1500
   painchance 32
   speed 7

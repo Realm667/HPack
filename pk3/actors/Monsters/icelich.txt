@@ -29,6 +29,7 @@ actor IceLich : Iceguy 16248
 	ActiveSound "ironlich/active"
 	AttackSound ""
 	Obituary "$OB_ICELICH"
+	Tag "$FN_ICELICH"
 	DropItem "BlasterAmmo", 48, 16
 	States
 	{

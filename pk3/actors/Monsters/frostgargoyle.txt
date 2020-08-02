@@ -4,6 +4,7 @@ Actor FrostImp : HereticImp 19283
 	//$Title Frost Gargoyle
 	Obituary "$OB_FROSTIMP"
 	HitObituary "$OB_FROSTIMPH"
+	Tag "$FN_FROSTIMP"
 	BloodColor "A4 A4 B8"
 	+NOICEDEATH //How do you freeze an ice cube? ;)
 	States

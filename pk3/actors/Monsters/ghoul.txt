@@ -16,6 +16,7 @@ ACTOR Ghoul 30123
 	+DONTHURTSPECIES
 	Obituary "$OB_GHOUL"
 	HitObituary "$OB_GHOULH"
+	Tag "$FN_GHOUL"
 	DropItem "CrossbowAmmo" 84 5
 	SeeSound "monster/ghlsit" 
 	MeleeSound "monster/ghlhit" 

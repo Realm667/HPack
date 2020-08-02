@@ -16,6 +16,7 @@ actor Satyr 3999
     DeathSound "satyr/death"
     ActiveSound "knight/active"
     Obituary "$OB_SATYR"
+    Tag "$FN_SATYR"
     MissileType "SatyrArrow"
     DropItem "CrossbowMed", 64, 5
     States

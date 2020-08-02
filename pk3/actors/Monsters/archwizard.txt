@@ -3,6 +3,7 @@ actor ArchWizard : Heresiarch 16516
 	//$Category Monsters
 	//$Title Arch Wizard
 	Obituary "$OB_ARCHWIZARD"
+	Tag "$FN_ARCHWIZARD"
 	Health 3500
 	PainChance 32
 	Speed 14

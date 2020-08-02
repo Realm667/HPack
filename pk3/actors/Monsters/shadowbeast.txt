@@ -2,7 +2,8 @@ ACTOR ShadowBeast 30129
 {
 	//$Category Monsters
 	//$Title Shadow Beast
-  OBITUARY "%o was killed by a shadow beast."
+  OBITUARY "$OB_SHADOWBEAST"
+  Tag "$FN_SHADOWBEAST"
   Bloodcolor "70 AC 00"
   Health 500
   Radius 40

@@ -11,8 +11,9 @@ Actor Champion : HPKnight 16512
   +MissileMore
   +DontHurtSpecies
   Translation "145:160=225:240", "209:224=145:160", "98:110=96:108"
-  Obituary "$OB_CHAMION"
+  Obituary "$OB_CHAMPION"
   HitObituary "$OB_CHAMPIONH"
+  Tag "$FN_CHAMPION"
   Speed 10
   States
   {

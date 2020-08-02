@@ -19,6 +19,7 @@ ACTOR Disciple 30117
 	DropItem "SkullRodAmmo" 84 20
 	DropItem "ArtiTomeOfPower" 5
 	Obituary "$OB_DISCIPLE"
+	Tag "$FN_DISCIPLE"
 	SeeSound "monster/dissit" 
 	PainSound "monster/dispai" 
 	DeathSound "monster/disdth" 

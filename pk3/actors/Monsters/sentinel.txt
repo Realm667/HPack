@@ -27,6 +27,7 @@ actor HPSentinel : HPIronLich replaces Sentinel 30122
 	DeathSound "monster/sendth"
 	ActiveSound "monster/senact"
 	Obituary "$OB_SENTINEL"
+	Tag "$FN_SENTINEL"
 	States
 	{
 	Spawn:

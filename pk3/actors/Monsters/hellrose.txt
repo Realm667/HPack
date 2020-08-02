@@ -11,6 +11,7 @@ ACTOR Hellrose : PodGenerator 20001
 	Speed 0
 	Scale 0.8
 	Obituary "$OB_HELLROSE"
+	Tag "$FN_HELLROSE"
 	BloodColor "0 50 0"
 	Monster
 	-NOBLOCKMAP
@@ -117,6 +118,7 @@ ACTOR HellroseBramble : Pod
 	BloodColor "0 50 0"
 	Painchance 128
 	Monster
+	Tag "$FN_HELLROSEBRAMBLE"
 	-DROPOFF
 	-SLIDESONWALLS
 	-CANPASS

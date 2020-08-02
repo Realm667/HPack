@@ -175,7 +175,8 @@ ACTOR Squirrel : MorphedMonster 30156
   PainSound "squirrel/pain"
   DeathSound "squirrel/death"
   ActiveSound "squirrel/active"
-  Obituary "%o was bitten to death."
+  Obituary "$OB_SQUIRREL"
+  Tag "$FN_SQUIRREL"
   States
   {
   Spawn:
