@@ -52,7 +52,7 @@ map H4M3 "Ziggurat of Sorrow"
 
 Map H4M4 "Vortex"
 {
-	author   = "ShadesMaster"
+	author   = "ShadesMaster & Xaser"
 	levelnum = 45
 	music    = M_H4M4
 	next     = H4M5
