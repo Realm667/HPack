@@ -1,10 +1,11 @@
-actor DarkLich : Heresiarch 16517
+actor DarkLich 16517
 {
 	//$Category Monsters
 	//$Title Dark Lich
 	//$Sprite SKELA1
   obituary "$OB_DARKLICH"
   Tag "$FN_DARKLICH"
+Monster
   health 1500
   painchance 32
   speed 7
@@ -33,7 +34,7 @@ actor DarkLich : Heresiarch 16517
   +NOTARGET
   +NOBLOOD
   +GHOST
-  -DONTFALL
+  +DONTFALL
   +DONTMORPH
   RenderStyle Translucent
   Alpha 0.4
