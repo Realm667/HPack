@@ -1,5 +1,4 @@
 //DECORATE for HPackPlayer
-
 ACTOR HPackPlayer : HereticPlayer
 {
 	Health 100
@@ -36,9 +35,9 @@ ACTOR HPackPlayer : HereticPlayer
 		PLAY C 5
 		TNT1 A 0 A_CheckFloor("Step2")
 		PLAY D 5
-		goto Spawn
+		Goto Spawn
 	Step1:
-	    	TNT1 A 0
+	    TNT1 A 0
 		TNT1 A 0 A_SpawnItemEx("PlayerStep", 0.0, 0.0, 11.1, 0.0, 0.0, 0.0, 0.0, SXF_NoCheckPosition | 128)
 		PLAY B 5
 		Goto Otherleg
@@ -46,7 +45,7 @@ ACTOR HPackPlayer : HereticPlayer
 		TNT1 A 0
 		TNT1 A 0 A_SpawnItemEx("PlayerStep", 0.0, 0.0, 11.1, 0.0, 0.0, 0.0, 0.0, SXF_NoCheckPosition | 128)
 		PLAY D 5
-		goto Spawn
+		Goto Spawn
 	Melee:
 	Missile:
 		PLAY F 6 BRIGHT
@@ -112,10 +111,9 @@ ACTOR HPackPlayer : HereticPlayer
 
 ACTOR PlayerStep
 {
-	Radius  32
-	Height  55
+	Radius 32
+	Height 55
 	Gravity 10
-	//Mass 0
 	+CORPSE
 	+NOCLIP
 	-DONTSPLASH
