@@ -14,10 +14,11 @@ actor Satyr 3999
     SeeSound "satyr/sight"
     PainSound "satyr/pain"
     DeathSound "satyr/death"
-    ActiveSound "knight/active"
+    ActiveSound "satyr/active"
     Obituary "$OB_SATYR"
     Tag "$FN_SATYR"
     MissileType "SatyrArrow"
+    MissileHeight 40
     DropItem "CrossbowMed", 64, 5
     States
     {
@@ -28,11 +29,13 @@ actor Satyr 3999
 	   STYR AABBCCDD 3 A_Chase
 	   Loop
     Missile:
+       STYR E 0 A_PlaySound("satyr/attack1", CHAN_6)
        STYR E 6 A_FaceTarget
        STYR F 6
        STYR G 10
-       STYR H 0 A_MissileAttack
-       STYR I 4
+       STYR H 0 A_PlaySound("satyr/attack2", CHAN_7)
+       STYR H 2 A_MissileAttack
+       STYR I 2
        Goto See
     Pain:
        STYR A 2
