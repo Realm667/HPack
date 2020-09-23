@@ -202,9 +202,12 @@ IceGuyMissileExplode    shards1b
 
 // Satyr
 satyr/sight		dssatsit
+satyr/active	dssatact
 satyr/death 	dssatdth
 satyr/pain 		dssatpai
 satyr/hit		dssathit
+satyr/attack1	bowrel
+satyr/attack2	dssatatk
 
 //Swarm
 Swarm/Fly	SWRMFLY
