@@ -16,4 +16,14 @@ gameinfo
 	dimamount = 0.3
 	pickupcolor = "FFFFFF"
 	addeventhandlers = "HPMapCalloutEventHandler"
+	weaponslot = 1, "HPStaff", "HPGauntlets"
+	weaponslot = 2, "HPWand"
+	weaponslot = 3, "HPCrossbow"
+	weaponslot = 4, "HPBlaster"
+	weaponslot = 5, "HPSkull"
+	weaponslot = 6, "HPPhoenix"
+	weaponslot = 7, "HPMace"
+	weaponslot = 8, "HPSunStaff"
+	weaponslot = 9, "HPDSparilGauntlets"
+	weaponslot = 0, "HPMorphWand", "HPStaffChaos"
 }
