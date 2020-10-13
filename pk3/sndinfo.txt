@@ -263,20 +263,27 @@ monster/falwng dsfalwng
 weapons/firmfi dsfirmfi
 weapons/firex5 dsfirex5
 
+//Undead Champion
+champion/sight  dschasit
+champion/active dschaact
+champion/pain   dschapai
+champion/death  dschadth
+
 //Death Knight
-monster/dknhit dsdknhit
-monster/dknsit dsdknsit
-monster/dknpai dsdknpai
-monster/dkndth dsdkndth
-monster/dknact dsdknact
-monster/dknswg dsdknswg
-monster/dkndrt dsdkndrt
-weapons/firex2 dsfirex2
-monster/dknmsl dsdknmsl
-weapons/boom1 dsboom1
-weapons/boltfi dsboltfi
-weapons/firex4 dsfirex4
-weapons/scorch dsscorch
+deathknight/sight   dsdknsit
+deathknight/active  dsdknact
+deathknight/attack1 dsdknat1
+deathknight/attack2 dsdknat1
+deathknight/attack3 dsdknat1
+deathknight/swing   dsdknswg
+deathknight/hit     dsdknhit
+deathknight/dart    dsdkndrt
+deathknight/missile dsdknmsl
+deathknight/pain1   dsdknpa1
+deathknight/pain2   dsdknpa2
+deathknight/death   dsdkndth
+$random deathknight/pain { deathknight/pain1 deathknight/pain2 }
+$random deathknight/attack { deathknight/attack1 deathknight/attack2 deathknight/attack3 }
 
 //Ghoul
 monster/ghlsit dsghlsit

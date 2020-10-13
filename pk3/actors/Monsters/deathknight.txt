@@ -12,15 +12,15 @@ Actor Deathknight : Knight 30114
   DropItem "SkullRodAmmo" 84 20
   Obituary "$OB_DEATHKNIGHTH"
   Tag "$FN_DEATHKNIGHT"
-  SeeSound "monster/dknsit"
-  PainSound "monster/dknpai"
-  DeathSound "monster/dkndth"
-  ActiveSound "monster/dknact"
+  SeeSound "deathknight/sight"
+  PainSound "deathknight/pain"
+  DeathSound "deathknight/death"
+  ActiveSound "deathknight/active"
   States
   {
   Spawn:
     DKNT A 0
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldLower", 1)
+    DKNT A 0 A_GiveInventory("DeathKnightShieldLower", 1)
   ActualSpawn:
     DKNT AB 10 A_Look
     Loop
@@ -118,7 +118,7 @@ Actor Deathknight : Knight 30114
     TNT1 A 0 A_JumpIfInventory("DeathKnightShieldUp", 1, "Melee2")
     TNT1 A 0 A_GiveInventory("DeathKnightShieldLower", 1)
     DKNT E 6 A_FaceTarget
-    TNT1 A 0 A_Playsound("monster/dknswg")
+    TNT1 A 0 A_Playsound("deathknight/swing")
     DKNT F random(4, 5) A_FaceTarget // [Blue Shadow] Randomized... because we can :P
     DKNT G 2 A_FaceTarget
     DKNT G 0 A_CustomMissile("DeathKnightWave", 28)
@@ -127,7 +127,7 @@ Actor Deathknight : Knight 30114
   Melee2:
     TNT1 A 0 A_GiveInventory("DeathKnightShieldLower", 1)
     DKNT E 6 A_FaceTarget
-    TNT1 A 0 A_Playsound("monster/dknswg")
+    TNT1 A 0 A_Playsound("deathknight/swing")
     DKNT F random(4, 5) A_FaceTarget
     DKNT G 2 A_FaceTarget
     DKNT G 0 A_CustomMissile("DeathKnightWave", 28)
@@ -257,7 +257,7 @@ Actor DeathKnightWaveTrail
 /*Actor DeathKnightPuff
 {
   RenderStyle Add
-  SeeSound "monster/dknhit"
+  SeeSound "deathknight/hit"
 //  +BLOODLESSIMPACT
   +NOBLOCKMAP
   +NOGRAVITY

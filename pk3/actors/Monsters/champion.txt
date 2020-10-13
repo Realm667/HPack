@@ -14,6 +14,10 @@ Actor Champion : HPKnight 16512
   Obituary "$OB_CHAMPION"
   HitObituary "$OB_CHAMPIONH"
   Tag "$FN_CHAMPION"
+  SeeSound "champion/sight"
+  PainSound "champion/pain"
+  DeathSound "champion/death"
+  ActiveSound "champion/active"
   Speed 10
   States
   {
