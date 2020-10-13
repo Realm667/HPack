@@ -277,13 +277,16 @@ deathknight/attack2 dsdknat1
 deathknight/attack3 dsdknat1
 deathknight/swing   dsdknswg
 deathknight/hit     dsdknhit
-deathknight/dart    dsdkndrt
+deathknight/fire    dsdkndrt
+deathknight/wave    dsdknwav
+deathknight/wavehit magsml
 deathknight/missile dsdknmsl
 deathknight/pain1   dsdknpa1
 deathknight/pain2   dsdknpa2
 deathknight/death   dsdkndth
 $random deathknight/pain { deathknight/pain1 deathknight/pain2 }
 $random deathknight/attack { deathknight/attack1 deathknight/attack2 deathknight/attack3 }
+$volume deathknight/wave 0.66
 
 //Ghoul
 monster/ghlsit dsghlsit
