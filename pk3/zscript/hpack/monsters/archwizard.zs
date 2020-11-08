@@ -205,6 +205,11 @@ class ArchWizard : Actor
 	void H_ArchwizardFadeOut()
 	{
 		A_FadeOut(0.1, FTF_CLAMP);
+		for(int i = 0; i < NUM_ARCHWIZARD_ATTACKS; i++) {
+			if(balls[i]) {
+				balls[i].A_FadeOut(0.1, FTF_CLAMP);
+			}
+		}
 	}
 
 	void H_ArchwizardTeleport()
@@ -220,11 +225,21 @@ class ArchWizard : Actor
 	void H_ArchwizardFadeIn()
 	{
 		A_FadeIn(0.1, FTF_CLAMP);
+		for(int i = 0; i < NUM_ARCHWIZARD_ATTACKS; i++) {
+			if(balls[i]) {
+				balls[i].A_FadeIn(0.1, FTF_CLAMP);
+			}
+		}
 	}
 
 	void H_ArchwizardTeleportEnd()
 	{
 		A_SetTranslucent(1.0, 0);
+		for(int i = 0; i < NUM_ARCHWIZARD_ATTACKS; i++) {
+			if(balls[i]) {
+				balls[i].A_SetTranslucent(1.0, 0);
+			}
+		}
 		A_SetShootable();
 		A_FaceTarget();
 	}
@@ -418,6 +433,7 @@ class ArchwizardBall : Actor
 	void H_ArchwizardBallPop()
 	{
 		A_StartSound("archwizard/ballpop", CHAN_BODY, CHANF_DEFAULT, 1., ATTN_NONE);
+		A_SetTranslucent(1.0, 0);
 
 		// fly off in a random direction.
 		self.bNoGravity = false;
