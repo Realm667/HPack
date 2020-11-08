@@ -177,6 +177,8 @@ archwizard/laserbounce1 arclas3
 archwizard/laserbounce2 arclas2
 archwizard/acidfire     dsskulfi
 archwizard/acidhit      dsbloodx
+archwizard/acidcloud    dspoof1
+archwizard/acidloop     arcacid
 archwizard/summon       arcsum
 archwizard/pain1        arcpai1
 archwizard/pain2        arcpai2
@@ -185,9 +187,10 @@ archwizard/explode      sordexp
 archwizard/bones        sordbon
 $random archwizard/active { archwizard/active1 archwizard/active2 }
 $random archwizard/pain { archwizard/pain1 archwizard/pain2 }
+$volume archwizard/acidloop 0.25;
+$attenuation archwizard/acidloop 2.0;
 SorcererBallPop         cork
 SorcererBallBounce      bounce2
-SorcererBallExplode     impact3
 SorcererBigBallExplode  sorblexp
 
 //Bishop
