@@ -1,5 +1,12 @@
-class ArchWizard : Heresiarch
+/**
+ * The Archwizard. He's a jerk.
+ */
+class ArchWizard : Actor
 {
+	const ARCHWIZARD_BALL1_ANGLEOFFSET = 0.0;
+	const ARCHWIZARD_BALL2_ANGLEOFFSET = 120.0;
+	const ARCHWIZARD_BALL3_ANGLEOFFSET = 240.0;
+	const ARCHWIZARD_BALL_ROTATION_SPEED = 3.5;
 	const ARCHWIZARD_LOSEFIRSTBALL_THRESHOLD = 0.50;
 	const ARCHWIZARD_LOSESECONDBALL_THRESHOLD = 0.25;
 
@@ -11,7 +18,8 @@ class ArchWizard : Heresiarch
 		NUM_ARCHWIZARD_ATTACKS
 	}
 
-	SorcBall balls[NUM_ARCHWIZARD_ATTACKS];
+	ArchwizardBall balls[NUM_ARCHWIZARD_ATTACKS];
+	double ballAngle;
 	int lastAttack;
 	int numBalls;
 
@@ -39,7 +47,13 @@ class ArchWizard : Heresiarch
 		Obituary "$OB_ARCHWIZARD";
 		Tag "$FN_ARCHWIZARD";
 
+		Monster;
+		+FLOORCLIP;
 		+BOSS;
+		+DONTMORPH;
+		+NOTARGET;
+		+NOICEDEATH;
+		+DEFLECT;
 		+NOBLOODDECALS;
 	}
 
@@ -99,24 +113,21 @@ class ArchWizard : Heresiarch
 	{
 		Super.PostBeginPlay();
 
-		// most of this is yoinked from the heresiarch,
-		// so it's kinda magic.
+		self.ballAngle = 1.0;
 
-		// [XA] TODO: just copy over the stuff we need
-		// instead of relying on all the heresiarch bullshit :P
-
-		args[0] = 0;
-		args[2] = Heresiarch.SORCBALL_INITIAL_SPEED;
-		args[3] = Heresiarch.SORC_NORMAL;
-		args[4] = Heresiarch.SORCBALL_INITIAL_SPEED;
-		self.BallAngle = 1.0;
-
-		balls[ARCHWIZARD_ATTACK_LASER ] = H_ArchwizardSpawnBall("SorcBall1");
-		balls[ARCHWIZARD_ATTACK_SUMMON] = H_ArchwizardSpawnBall("SorcBall2");
-		balls[ARCHWIZARD_ATTACK_ACID  ] = H_ArchwizardSpawnBall("SorcBall3");
+		balls[ARCHWIZARD_ATTACK_LASER ] = H_ArchwizardSpawnBall("ArchwizardBallPurple");
+		balls[ARCHWIZARD_ATTACK_SUMMON] = H_ArchwizardSpawnBall("ArchwizardBallBlue");
+		balls[ARCHWIZARD_ATTACK_ACID  ] = H_ArchwizardSpawnBall("ArchwizardBallGreen");
 
 		numBalls = NUM_ARCHWIZARD_ATTACKS;
 		lastattack = -1;
+	}
+
+	override void Tick()
+	{
+		Super.Tick();
+
+		ballAngle += ARCHWIZARD_BALL_ROTATION_SPEED;
 	}
 
 	override int TakeSpecialDamage(Actor inflictor, Actor source, int damage, Name damagetype)
@@ -138,7 +149,7 @@ class ArchWizard : Heresiarch
 		}
 
 		// don't take any damage from self or ball explosions
-		if(source == inflictor || source is "SorcBall") {
+		if(source == inflictor || source is "ArchwizardBall") {
 			return 0;
 		}
 
@@ -146,13 +157,13 @@ class ArchWizard : Heresiarch
 		return damage;
 	}
 
-	SorcBall H_ArchwizardSpawnBall(class<Actor> ballClass)
+	ArchwizardBall H_ArchwizardSpawnBall(class<Actor> ballClass)
 	{
 		Actor ball = Spawn(ballClass, pos, NO_REPLACE);
 		if (ball) {
 			ball.target = self;
 		}
-		return SorcBall(ball);
+		return ArchwizardBall(ball);
 	}
 
 	void H_ArchwizardLoseBall()
@@ -177,6 +188,7 @@ class ArchWizard : Heresiarch
 			return;
 		}
 
+		// Castration joke goes here.
 		balls[ballToRemove].target = NULL;
 		balls[ballToRemove] = NULL;
 		lastAttack = -1;
@@ -298,6 +310,9 @@ class ArchWizard : Heresiarch
 	}
 }
 
+/**
+ * Spooky Scary Etc.
+ */
 class ArchWizardSkeleton : Actor
 {
 	Default
@@ -316,6 +331,197 @@ class ArchWizardSkeleton : Actor
 	}
 }
 
+/**
+ * Archwizard orbity balls (or cubes, whatever). Based
+ * on the Heresiarch's balls (heh), but heavily simplified.
+ */
+class ArchwizardBall : Actor
+{
+	int bounceTics;
+	double angleOffset;
+	property AngleOffset:angleOffset;
+
+	Default
+	{
+		Speed 10;
+		Radius 5;
+		Height 5;
+
+		BounceType "Hexen";
+		BounceSound "archwizard/ballbounce";
+		DeathSound "archwizard/ballexplode";
+
+		Projectile;
+		-ACTIVATEIMPACT;
+		-ACTIVATEPCROSS;
+		+FULLVOLDEATH;
+		+CANBOUNCEWATER;
+		+NOWALLBOUNCESND;
+		+USEBOUNCESTATE;
+	}
+
+	States
+	{
+	// these are overridden by child classes...
+	Spawn:
+	Explode:
+		TNT1 A 0;
+		Stop;
+
+	// ...while these are common to all:
+	Orbit:
+		#### ABCDEFGHIJKLMNOP 2 H_ArchwizardBallOrbit();
+		Loop;
+	Pop:
+		#### A 5 H_ArchwizardBallPop();
+	Decay:
+		#### B 1 H_ArchwizardBallDecay();
+		Wait;
+	Bounce:
+		#### B 0 H_ArchwizardBallBounce();
+		Goto Decay;
+	Death:
+		#### A 0 Bright H_ArchwizardBallExplode();
+		Goto Explode;
+	}
+
+	state H_ArchwizardBallOrbit()
+	{
+		// fly off the handle when the parent is dead/gone.
+		if (target == null || target.health <= 0) {
+			return FindState("Pop");
+		}
+
+		Archwizard parent = Archwizard(target);
+		if(parent == NULL) {
+			A_Log("ArchwizardBall::H_ArchwizardBallOrbit, summoning actor is not an Archwizard. Aborting.");
+			return NULL;
+		}
+
+		// rotate about the summoner's head. the base rotation angle
+		// is controlled by the parent; here we just position the
+		// ball relative to the base angle and the ball offset.
+		double dist = parent.radius - (radius*2);
+		double baseangle = parent.ballAngle;
+		double curangle = baseangle + angleOffset;
+
+		Vector3 pos = parent.Vec3Angle(dist, curangle, -parent.Floorclip + parent.Height);
+		SetOrigin(pos, true);
+		self.angle = curangle;
+		self.floorz = parent.floorz;
+		self.ceilingz = parent.ceilingz;
+
+		// all done
+		return NULL;
+	}
+
+	void H_ArchwizardBallPop()
+	{
+		A_StartSound("archwizard/ballpop", CHAN_BODY, CHANF_DEFAULT, 1., ATTN_NONE);
+
+		// fly off in a random direction.
+		self.bNoGravity = false;
+		self.gravity = 0.125;
+
+		self.vel.X = random[Archwizard](-5, 4);
+		self.vel.Y = random[Archwizard](-5, 4);
+		self.vel.Z = random[Archwizard](2, 4);
+
+		// bounce around for a few seconds, then go boom.
+		self.bounceTics = 35 * 5;
+	}
+
+	void H_ArchwizardBallDecay()
+	{
+		self.bounceTics--;
+	}
+
+	state H_ArchwizardBallBounce()
+	{
+		// Check if we should explode. Unlike the Heresiarch,
+		// we actually wait until the ball hits the ground again
+		// whenever the timer expires, so the explosion doesn't
+		// look like it's bouncing too. :P
+		if (self.bounceTics <= 0) {
+			return FindState("Death");
+		}
+		return NULL;
+	}
+
+	state H_ArchwizardBallExplode()
+	{
+		A_StartSound("archwizard/ballexplode", CHAN_BODY, CHANF_DEFAULT, 1.0, ATTN_NONE);
+
+		self.bNoGravity = true;
+		self.vel = (0, 0, 0);
+		A_Explode(255, 255);
+		
+		return FindState("Explode");
+	}
+}
+
+class ArchwizardBallPurple : ArchwizardBall
+{
+	Default
+	{
+		ArchwizardBall.AngleOffset Archwizard.ARCHWIZARD_BALL1_ANGLEOFFSET;
+	}
+
+	States
+	{
+	Spawn:
+		SBMP A 0;
+		Goto Orbit;
+	Explode:
+		SBS4 DE 5 Bright;
+		SBS4 FGH 6 Bright;
+		Stop;
+	}
+}
+
+class ArchwizardBallBlue : ArchwizardBall
+{
+	Default
+	{
+		ArchwizardBall.AngleOffset Archwizard.ARCHWIZARD_BALL2_ANGLEOFFSET;
+	}
+
+	States
+	{
+	Spawn:
+		SBMB A 0;
+		Goto Orbit;
+	Explode:
+		SBS5 HI 5 Bright;
+		SBS5 JKL 6 Bright;
+		Stop;
+	}
+}
+
+class ArchwizardBallGreen : ArchwizardBall
+{
+	Default
+	{
+		ArchwizardBall.AngleOffset Archwizard.ARCHWIZARD_BALL3_ANGLEOFFSET;
+	}
+
+	States
+	{
+	Spawn:
+		SBMG A 0;
+		Goto Orbit;
+	Explode:
+		SBS3 DE 5 Bright;
+		SBS3 FGH 6 Bright;
+		Stop;
+	}
+}
+
+/**
+ * Archwizard "Laser" attack. A combination bouncer+seeker,
+ * this projectile bounces directly towards its target (well,
+ * tracer) when impacting a wall. Better get yer dodge on.
+ */
 class ArchWizardLaser : Actor
 {
 	Vector3 bounceVec;
@@ -436,6 +642,10 @@ class ArchWizardSpark : ArchWizardLaserTrail
 	}
 }
 
+/**
+ * Archwizard "Acid" attack. Erupts into poison clouds on
+ * impact, for a grand ole area-denyin' time.
+ */
 class ArchWizardAcidShot : Actor
 {
 	Default
@@ -551,6 +761,10 @@ class ArchWizardAcidTrail : Actor
 	}
 }
 
+/**
+ * Archwizard "Summon" attack... what little there is
+ * to define here, at least. The summoning is implied. ;)
+ */
 class ArchWizardSummonPulse : ArchWizardLaserTrail
 {
 	States

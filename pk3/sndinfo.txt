@@ -185,13 +185,13 @@ archwizard/pain2        arcpai2
 archwizard/death        arcdth
 archwizard/explode      sordexp
 archwizard/bones        sordbon
+archwizard/ballpop      cork
+archwizard/ballbounce   bounce2
+archwizard/ballexplode  sorblexp
 $random archwizard/active { archwizard/active1 archwizard/active2 }
 $random archwizard/pain { archwizard/pain1 archwizard/pain2 }
 $volume archwizard/acidloop 0.25;
 $attenuation archwizard/acidloop 2.0;
-SorcererBallPop         cork
-SorcererBallBounce      bounce2
-SorcererBigBallExplode  sorblexp
 
 //Bishop
 BishopSight             syab2d
