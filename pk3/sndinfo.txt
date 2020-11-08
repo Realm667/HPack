@@ -166,15 +166,32 @@ fireblast/explode		DSFREXP
 superfireblast/explode	DSHELLEX
 
 //ArchWizard
-HomingBall/Fire			DSBSFIRE
-HomingBall/Fly			DSBSFLY
-HomingBall/Explode		DSBSHIT
-ArchWizard/Sight		DSDIFOOL
-ArchWizard/Active		DSMNALSE
-ArchWizard/Fire			CNTSHLD4
-ArchWizard/Pain			BSHPN1
-SorcererBallBounce      bounce2
-SorcererBigBallExplode  sorblexp
+archwizard/sight        arcsit
+archwizard/active1      arcact1
+archwizard/active2      arcact2
+archwizard/attack1      arcatk1
+archwizard/attack2      arcatk2
+archwizard/attack3      arcatk3
+archwizard/laserfire    arclas1
+archwizard/laserbounce1 arclas3
+archwizard/laserbounce2 arclas2
+archwizard/acidfire     dsskulfi
+archwizard/acidhit      dsbloodx
+archwizard/acidcloud    dspoof1
+archwizard/acidloop     arcacid
+archwizard/summon       arcsum
+archwizard/pain1        arcpai1
+archwizard/pain2        arcpai2
+archwizard/death        arcdth
+archwizard/explode      sordexp
+archwizard/bones        sordbon
+archwizard/ballpop      cork
+archwizard/ballbounce   bounce2
+archwizard/ballexplode  sorblexp
+$random archwizard/active { archwizard/active1 archwizard/active2 }
+$random archwizard/pain { archwizard/pain1 archwizard/pain2 }
+$volume archwizard/acidloop 0.25;
+$attenuation archwizard/acidloop 2.0;
 
 //Bishop
 BishopSight             syab2d
@@ -280,7 +297,6 @@ deathknight/hit     dsdknhit
 deathknight/fire    dsdkndrt
 deathknight/wave    dsdknwav
 deathknight/wavehit magsml
-deathknight/missile dsdknmsl
 deathknight/pain1   dsdknpa1
 deathknight/pain2   dsdknpa2
 deathknight/death   dsdkndth
