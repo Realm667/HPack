@@ -587,6 +587,15 @@ class ArchWizardLaser : Actor
 		Stop;
 	}
 
+	override int SpecialMissileHit(Actor victim)
+	{
+		// phase through any actors that are not the intended target. ;)
+		if(victim == self.tracer) {
+			return -1; // hit normally
+		}
+		return 1; // phase through 'em
+	}
+
 	void H_ArchwizardLaserTrail(int trailFrame)
 	{
 		bool spawned;
