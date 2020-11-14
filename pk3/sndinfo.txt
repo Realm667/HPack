@@ -305,15 +305,15 @@ $random deathknight/attack { deathknight/attack1 deathknight/attack2 deathknight
 $volume deathknight/wave 0.66
 
 //Ghoul
-monster/ghlsit dsghlsit
-monster/ghlhit dsghlhit
-monster/ghlpai dsghlpai
-monster/ghldth dsghldth
-monster/ghlact dsghlact
-monster/ghlswg dsghlswg
-weapons/skulfi dsskulfi
-weapons/bloodx dsbloodx
-weapons/poof1 dspoof1
+ghoul/sight       dsghlsit
+ghoul/active      dsghlact
+ghoul/swing       mumat1
+ghoul/hit         mumat2
+ghoul/pain        dsghlpai
+ghoul/death       dsghldth
+ghoul/missilefire dsskulfi
+ghoul/missilehit  dsbloodx
+ghoul/poof        dspoof1
 
 //InfernoDemon
 Inferno/Alert	INFRALRT
