@@ -246,6 +246,7 @@ actor HPSnakeWeak : HPSnake 16603
 	Scale 0.8
 	DropItem "GoldWandAmmo", 84, 10
 	Obituary "$OB_SNAKEWEAK"
+	Tag "$FN_SNAKEWEAK"
 	States
 	{
 	Missile:
@@ -273,6 +274,7 @@ actor HPSnakeStrong : HPSnake 16604
 	Scale 1.2
 	DropItem "BlasterAmmo", 84, 10
 	Obituary "$OB_SNAKESTRONG"
+	Tag "$FN_SNAKESTRONG"
 	States
 	{
 	Missile:

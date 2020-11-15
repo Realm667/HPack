@@ -88,7 +88,7 @@ OB_ACOLYTE = "An Acolyte of Chaos was promoted for killing %o.";
 OB_ARCHWIZARD = "%o was no match for the Arch-Wizard.";
 OB_BISHOP = "%o succumbed to the power of a Bishop of Chaos.";
 OB_BLOODLICH = "%o was reduced to a pile of ash by a Blood Lich.";
-OB_CHAMION = "%o was defeated by an Undead Champion.";
+OB_CHAMPION = "%o was defeated by an Undead Champion.";
 OB_CHAMPIONH = "%o was slaughtered by an Undead Champion.";
 OB_CULTIST = "%o was killed by a lowly Cultist.";
 OB_DARKLICH = "%o did not learn to flee the Dark Lich";
@@ -105,6 +105,8 @@ OB_FROSTIMPH = "%o was frostbitten by a Gargoyle.";
 OB_FROSTIMPL =  "%o was frozen stiff by a Frost Gargoyle.";
 OB_GHOUL = "%o fell to a Ghoul's toxins.";
 OB_GHOULH = "%o was beaten to death by a Ghoul.";
+OB_GHAST = "%o was spooked by a Ghast.";
+OB_GHASTH = "%o was ripped apart by a Ghast.";
 OB_GUARDIAN = "%o was fried by a Guardian Cube.";
 OB_HELLROSE = "%o is six feet under.";
 OB_ICELICH = "%o was frozen by an Ice Lich";
@@ -139,6 +141,37 @@ OB_MPSTAFFCHAOS = "%o could not hide from %k's chaotic energy.";
 OB_COSTSTAFFCHAOS = "%o succumbed to the forces of Chaos.";
 
 OB_HELLFIRE = "%o tried to walk through a wall of fire";
+
+// Friendly names for monsters
+FN_ACOLYTE = "Acolyte of Chaos";
+FN_ARCHWIZARD = "Arch-Wizard";
+FN_BISHOP = "Bishop of Chaos";
+FN_CHAMPION = "Undead Champion";
+FN_CULTIST = "Cultist";
+FN_DARKLICH = "Dark Lich";
+FN_DEMON3 = "Magma Serpent";
+FN_DEATHKNIGHT = "Deathknight";
+FN_DISCIPLE = "Apostle of Chaos";
+FN_FALLEN = "Fallen";
+FN_FROSTIMP = "Frost Gargoyle";
+FN_GHOUL = "Ghoul";
+FN_GUARDIAN = "Guardian Cube";
+FN_HELLROSE = "Hell Rose";
+FN_HELLROSEBRAMBLE = "Hell Rose Bramble";
+FN_ICELICH = "Ice Lich";
+FN_INFERNODEMON = "Inferno Demon";
+FN_NIGHTSHADE = "Nightshade";
+FN_SATYR = "Satyr";
+FN_SENTINEL = "Sentinel";
+FN_SHADOWBEAST = "Shadow Beast";
+FN_SHADOWCLAW = "Shadowclaw";
+FN_SKULLWIZARD = "Augur of Chaos";
+FN_SNAKEWEAK = "Ophidian Offspring";
+FN_SNAKESTRONG = "Ophidian Lord";
+FN_SONOFDSPARIL = "Son of D'Sparil";
+FN_SQUIRREL = "Squirrel";
+FN_WICKED = "Wicked";
+FN_WIZARD = "Disciple of Chaos";
 
 // Tags
 TAG_DSPARILSG = "Hand of D'Sparil";

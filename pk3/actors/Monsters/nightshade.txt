@@ -12,6 +12,7 @@ Actor Nightshade 30131
   //$Category Monsters
   //$Title Nightshade
   Obituary "$OB_NIGHTSHADE"
+  Tag "$FN_NIGHTSHADE"
   Health 100
   Radius 16
   Height 45

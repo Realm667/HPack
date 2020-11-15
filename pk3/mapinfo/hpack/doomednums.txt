@@ -37,6 +37,8 @@ DoomEdNums
 	11250 = HPVortex
 	11251 = HPVortexRockSpawner
 
+	16516 = ArchWizard
+
 	// Deprecated actors; these will be removed once maps are updated to not use 'em.
 	3106 = DragonFamiliar
 	14563 = ShadowDragon

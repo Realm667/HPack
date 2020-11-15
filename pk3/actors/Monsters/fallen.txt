@@ -16,6 +16,7 @@ ACTOR Fallen 30113
 	RenderStyle Add
 	Alpha 0.8
 	Obituary "$OB_FALLEN"
+	Tag "$FN_FALLEN"
 	SeeSound "monster/falsit" 
 	PainSound "monster/falpai" 
 	DeathSound "monster/faldth" 

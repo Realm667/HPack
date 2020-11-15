@@ -4,7 +4,13 @@ Actor FrostImp : HereticImp 19283
 	//$Title Frost Gargoyle
 	Obituary "$OB_FROSTIMP"
 	HitObituary "$OB_FROSTIMPH"
+	Tag "$FN_FROSTIMP"
 	BloodColor "A4 A4 B8"
+	SeeSound "frostimp/sight"
+	PainSound "frostimp/pain"
+	DeathSound "frostimp/death"
+	AttackSound "frostimp/attack"
+	ActiveSound "frostimp/active"
 	+NOICEDEATH //How do you freeze an ice cube? ;)
 	States
 	{
@@ -16,7 +22,7 @@ Actor FrostImp : HereticImp 19283
 		Loop
 	Melee:
 		IIMP DE 6 A_FaceTarget
-		IIMP F 6 A_CustomMeleeAttack(random[ImpMeAttack](5,12), "himp/attack", "himp/attack")
+		IIMP F 6 A_CustomMeleeAttack(random[ImpMeAttack](5,12), "frostimp/melee", "frostimp/melee")
 		Goto See
 	Missile:
 		IIMP A 10 A_FaceTarget
@@ -43,7 +49,7 @@ Actor FrostImp : HereticImp 19283
 		Wait
 	Crash:
 		IIMP I 7 A_NoBlocking
-		IIMP J 7 A_Scream
+		IIMP J 7 A_PlaySound("frostimp/shards")
 		IIMP K 7
 		IIMP L -1
 		Stop
@@ -113,7 +119,7 @@ Actor FrostImpShard : IceGuyFX2
   Damage (Random(1, 3))
   Scale 0.5
   SeeSound "FrostImp/Shards"
-  DeathSound "IceGuyMissileExplode"
+  DeathSound "misc/icehit"
   States
   {
   Spawn:

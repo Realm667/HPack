@@ -58,7 +58,7 @@ ACTOR IcePodGoo : PodGoo
 ACTOR IcePodShard : IceGuyFX2
 {
    SeeSound "FrostImp/Shards"
-   DeathSound "IceGuyMissileExplode"
+   DeathSound "misc/icehit"
    States
    {
    Spawn:

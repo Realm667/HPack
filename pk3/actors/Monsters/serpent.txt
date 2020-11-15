@@ -195,6 +195,7 @@ Actor RedChaosSerpent : GreenChaosSerpent 16555
   	// Species "RedChaosSerpent"
   	Obituary "$OB_DEMON3"
   	HitObituary "$OB_DEMON3H"
+	Tag "$FN_DEMON3"
 	States
 	{
 	Spawn:

@@ -28,6 +28,7 @@ Actor Shadowclaw 10301
   Renderstyle Translucent
   Alpha 0.8
   HitObituary "$OB_SHADOWCLAW"
+  Tag "$FN_SHADOWCLAW"
   States
   {
   Spawn:

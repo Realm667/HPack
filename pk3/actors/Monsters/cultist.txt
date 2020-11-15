@@ -14,6 +14,7 @@ ACTOR Thrall 30119
 	+FLOORCLIP
 	DropItem "BlasterAmmo", 84, 3
 	Obituary "$OB_CULTIST"
+	Tag "$FN_CULTIST"
 	SeeSound "monster/culsit" 
 	AttackSound "monster/culatk" 
 	PainSound "monster/culpai" 

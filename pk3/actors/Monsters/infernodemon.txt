@@ -36,6 +36,7 @@ ACTOR InfernoDemon 12345
   DeathSound "Infdem/death"
   ActiveSound "Infdem/active"
   Obituary "$OB_INFERNODEMON"
+  Tag "$FN_INFERNODEMON"
 
   States
   {

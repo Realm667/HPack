@@ -150,6 +150,7 @@ misc/fireballsmall      firsml
 misc/magichit           maghit
 misc/magicsmall         magsml
 misc/magicbig           magbig
+misc/icefire            frosty2
 misc/icehit             shards1b
 
 //Skull Wizard
@@ -166,15 +167,32 @@ fireblast/explode		DSFREXP
 superfireblast/explode	DSHELLEX
 
 //ArchWizard
-HomingBall/Fire			DSBSFIRE
-HomingBall/Fly			DSBSFLY
-HomingBall/Explode		DSBSHIT
-ArchWizard/Sight		DSDIFOOL
-ArchWizard/Active		DSMNALSE
-ArchWizard/Fire			CNTSHLD4
-ArchWizard/Pain			BSHPN1
-SorcererBallBounce      bounce2
-SorcererBigBallExplode  sorblexp
+archwizard/sight        arcsit
+archwizard/active1      arcact1
+archwizard/active2      arcact2
+archwizard/attack1      arcatk1
+archwizard/attack2      arcatk2
+archwizard/attack3      arcatk3
+archwizard/laserfire    arclas1
+archwizard/laserbounce1 arclas3
+archwizard/laserbounce2 arclas2
+archwizard/acidfire     dsskulfi
+archwizard/acidhit      dsbloodx
+archwizard/acidcloud    dspoof1
+archwizard/acidloop     arcacid
+archwizard/summon       arcsum
+archwizard/pain1        arcpai1
+archwizard/pain2        arcpai2
+archwizard/death        arcdth
+archwizard/explode      sordexp
+archwizard/bones        sordbon
+archwizard/ballpop      cork
+archwizard/ballbounce   bounce2
+archwizard/ballexplode  sorblexp
+$random archwizard/active { archwizard/active1 archwizard/active2 }
+$random archwizard/pain { archwizard/pain1 archwizard/pain2 }
+$volume archwizard/acidloop 0.25;
+$attenuation archwizard/acidloop 2.0;
 
 //Bishop
 BishopSight             syab2d
@@ -197,14 +215,15 @@ monster/nshexp                  dsnshexp
 
 // Ice Lich
 FrostBreath		FROSTB
-IceGuyAttack            frosty2
-IceGuyMissileExplode    shards1b
 
 // Satyr
 satyr/sight		dssatsit
+satyr/active	dssatact
 satyr/death 	dssatdth
 satyr/pain 		dssatpai
 satyr/hit		dssathit
+satyr/attack1	bowrel
+satyr/attack2	dssatatk
 
 //Swarm
 Swarm/Fly	SWRMFLY
@@ -225,13 +244,14 @@ Shadowclaw/Active	SCLWACT
 Shadowclaw/Pain		SCLWPAI
 Shadowclaw/Death	SCLWDTH
 
-//Frostgargoyle
-FrostImp/Shards		IIMPSHRD
-IceGuyAttack            frosty2
-IceGuyMissileExplode    shards1b
-
-//Hellmage
-HellMage/Sight	WIZSIT2
+// Frost Gargoyle
+frostimp/sight      frosit
+frostimp/active     froact
+frostimp/attack     froatk
+frostimp/melee      impat1
+frostimp/pain       fropai
+frostimp/death      frodth
+frostimp/shards     froshard
 
 // Sons of D'Sparil
 sonMage/sight1      sonsite1
@@ -260,31 +280,40 @@ monster/falwng dsfalwng
 weapons/firmfi dsfirmfi
 weapons/firex5 dsfirex5
 
+//Undead Champion
+champion/sight  dschasit
+champion/active dschaact
+champion/pain   dschapai
+champion/death  dschadth
+
 //Death Knight
-monster/dknhit dsdknhit
-monster/dknsit dsdknsit
-monster/dknpai dsdknpai
-monster/dkndth dsdkndth
-monster/dknact dsdknact
-monster/dknswg dsdknswg
-monster/dkndrt dsdkndrt
-weapons/firex2 dsfirex2
-monster/dknmsl dsdknmsl
-weapons/boom1 dsboom1
-weapons/boltfi dsboltfi
-weapons/firex4 dsfirex4
-weapons/scorch dsscorch
+deathknight/sight   dsdknsit
+deathknight/active  dsdknact
+deathknight/attack1 dsdknat1
+deathknight/attack2 dsdknat1
+deathknight/attack3 dsdknat1
+deathknight/swing   dsdknswg
+deathknight/hit     dsdknhit
+deathknight/fire    dsdkndrt
+deathknight/wave    dsdknwav
+deathknight/wavehit magsml
+deathknight/pain1   dsdknpa1
+deathknight/pain2   dsdknpa2
+deathknight/death   dsdkndth
+$random deathknight/pain { deathknight/pain1 deathknight/pain2 }
+$random deathknight/attack { deathknight/attack1 deathknight/attack2 deathknight/attack3 }
+$volume deathknight/wave 0.66
 
 //Ghoul
-monster/ghlsit dsghlsit
-monster/ghlhit dsghlhit
-monster/ghlpai dsghlpai
-monster/ghldth dsghldth
-monster/ghlact dsghlact
-monster/ghlswg dsghlswg
-weapons/skulfi dsskulfi
-weapons/bloodx dsbloodx
-weapons/poof1 dspoof1
+ghoul/sight       dsghlsit
+ghoul/active      dsghlact
+ghoul/swing       mumat1
+ghoul/hit         mumat2
+ghoul/pain        dsghlpai
+ghoul/death       dsghldth
+ghoul/missilefire dsskulfi
+ghoul/missilehit  dsbloodx
+ghoul/poof        dspoof1
 
 //InfernoDemon
 Inferno/Alert	INFRALRT
@@ -608,6 +637,11 @@ world/bookin            BOOKIN
 
 // Spooky Magic
 world/spookymagic       MAGIC
+
+// E4M1 Portal Open
+world/portal1           portal1
+world/portal2           portal2
+world/portal3           portal3
 
 ;===========================================================================
 ; 

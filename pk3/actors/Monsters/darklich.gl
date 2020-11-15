@@ -1,0 +1,23 @@
+object DarkLichHomingBall
+{
+	frame BSBSF { light DISCIPLEBALL    }
+	frame BSBSG { light DISCIPLEBALL    }
+	frame BSBSH { light DISCIPLEBALL    }
+	frame BSBSI { light DISCIPLEBALL_X1 }
+	frame BSBSJ { light DISCIPLEBALL_X1 }
+	frame BSBSK { light DISCIPLEBALL_X1 }
+	frame BSBSL { light DISCIPLEBALL_X2 }
+	frame BSBSM { light DISCIPLEBALL_X2 }
+}
+
+object DarkLichFX1
+{
+	frame FX11A { light DISCIPLEBALL }
+	frame FX11B { light DISCIPLEBALL }
+	frame FX11C { light DISCIPLEBALL }
+
+	frame FX11D { light DISCIPLEBALL    }
+	frame FX11E { light DISCIPLEBALL    }
+	frame FX11F { light DISCIPLEBALL_X1 }
+	frame FX11G { light DISCIPLEBALL_X2 }
+}
