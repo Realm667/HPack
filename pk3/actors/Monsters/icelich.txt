@@ -45,7 +45,7 @@ actor IceLich : Iceguy 16248
 	Missile:
 		ILCH B 0 bright A_JumpIfCloser(300, "Breath")
 		ILCH B 0 bright A_FaceTarget
-		ILCH B 0 bright A_PlaySoundEx("IceGuyAttack", auto) 
+		ILCH B 0 bright A_PlaySoundEx("misc/icefire", auto) 
 		ILCH B 0 bright A_CustomMissile("IceGuyFX", 44, 10, 0, 1)
 		ILCH B 3 bright A_CustomMissile("IceGuyFX", 44, -10, 0, 1)
 		Goto See

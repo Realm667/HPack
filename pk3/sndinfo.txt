@@ -150,6 +150,7 @@ misc/fireballsmall      firsml
 misc/magichit           maghit
 misc/magicsmall         magsml
 misc/magicbig           magbig
+misc/icefire            frosty2
 misc/icehit             shards1b
 
 //Skull Wizard
@@ -214,8 +215,6 @@ monster/nshexp                  dsnshexp
 
 // Ice Lich
 FrostBreath		FROSTB
-IceGuyAttack            frosty2
-IceGuyMissileExplode    shards1b
 
 // Satyr
 satyr/sight		dssatsit
@@ -245,13 +244,14 @@ Shadowclaw/Active	SCLWACT
 Shadowclaw/Pain		SCLWPAI
 Shadowclaw/Death	SCLWDTH
 
-//Frostgargoyle
-FrostImp/Shards		IIMPSHRD
-IceGuyAttack            frosty2
-IceGuyMissileExplode    shards1b
-
-//Hellmage
-HellMage/Sight	WIZSIT2
+// Frost Gargoyle
+frostimp/sight      frosit
+frostimp/active     froact
+frostimp/attack     froatk
+frostimp/melee      impat1
+frostimp/pain       fropai
+frostimp/death      frodth
+frostimp/shards     froshard
 
 // Sons of D'Sparil
 sonMage/sight1      sonsite1
@@ -305,15 +305,15 @@ $random deathknight/attack { deathknight/attack1 deathknight/attack2 deathknight
 $volume deathknight/wave 0.66
 
 //Ghoul
-monster/ghlsit dsghlsit
-monster/ghlhit dsghlhit
-monster/ghlpai dsghlpai
-monster/ghldth dsghldth
-monster/ghlact dsghlact
-monster/ghlswg dsghlswg
-weapons/skulfi dsskulfi
-weapons/bloodx dsbloodx
-weapons/poof1 dspoof1
+ghoul/sight       dsghlsit
+ghoul/active      dsghlact
+ghoul/swing       mumat1
+ghoul/hit         mumat2
+ghoul/pain        dsghlpai
+ghoul/death       dsghldth
+ghoul/missilefire dsskulfi
+ghoul/missilehit  dsbloodx
+ghoul/poof        dspoof1
 
 //InfernoDemon
 Inferno/Alert	INFRALRT
@@ -646,6 +646,11 @@ world/bookin            BOOKIN
 
 // Spooky Magic
 world/spookymagic       MAGIC
+
+// E4M1 Portal Open
+world/portal1           portal1
+world/portal2           portal2
+world/portal3           portal3
 
 ;===========================================================================
 ; 

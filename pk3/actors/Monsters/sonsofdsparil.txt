@@ -358,8 +358,8 @@ ACTOR SorcererIceFX : IceGuyFX
 {
   Speed 20
   FastSpeed 30
-  SeeSound "IceGuyAttack"
-  DeathSound "IceGuyMissileExplode"
+  SeeSound "misc/icefire"
+  DeathSound "misc/icehit"
   DamageType Ice
   +BRIGHT
   RenderStyle Normal
