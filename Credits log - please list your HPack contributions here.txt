@@ -45,6 +45,15 @@ Contributor: ShadesMaster
 - H4M5: "Vortex"
 
 -------------------
+Contributor: Xaser
+-------------------
+[XA] TODO: map credits and a bunch of stuff here. I did things. :P
+- Music for H1M6, both covers of tunes from Serious Sam: The
+  Second Encounter, originally composed by Damjan Mravunac
+  - "Land of the Damned - Peace"
+  - "Land of the Damned - Attack"
+
+-------------------
 Contributor: Jimmy
 -------------------
 - BIGFONT and SMALLFONT replacements
@@ -53,6 +62,7 @@ Contributor: Jimmy
 - Music for H3M5, both partial covers of tracks from Drakensang:
   - "Sad Dunes", based on "Hinter den Feuerfällen von Algormosch"
   - "Mad Dunes", based on "Schild und Speer"
+- Music for H3M7 Boss: "Pyroclast"
 
 -------------------
 Contributor: mrgrimsdale
