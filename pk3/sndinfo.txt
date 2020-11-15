@@ -638,6 +638,11 @@ world/bookin            BOOKIN
 // Spooky Magic
 world/spookymagic       MAGIC
 
+// E4M1 Portal Open
+world/portal1           portal1
+world/portal2           portal2
+world/portal3           portal3
+
 ;===========================================================================
 ; 
 ; HEXEN IMPORTED 'WORLD SOUNDS'
