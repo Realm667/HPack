@@ -2,6 +2,40 @@
 // Messaging & cutscene helpers -- by Xaser
 //-------------------------------------------------------------------------------------------------
 
+#define TALKER_PROP_BOXIMAGE 0
+#define TALKER_PROP_TALKERNAME 1
+#define TALKER_PROP_MSGCOLOR 2
+#define NUM_TALKER_PROPS 3
+
+str talkers[NUM_TALKERS][NUM_TALKER_PROPS] = {
+    { "MSGBOX00", "Inscription", "Gold"  },
+    { "MSGBOX01", "Corvus"     , "Green" }
+};
+
+script "MessageBox" (int talker, int message, int vistime)
+{
+    if(talker < 0 || talker >= NUM_TALKERS) {
+        Log(s:"Talker ID", i:talker, s:" out of range.");
+        terminate;
+    }
+
+    // collect some vars, for clarity
+    str boxImage   = talkers[talker][TALKER_PROP_BOXIMAGE];
+    str talkerName = talkers[talker][TALKER_PROP_TALKERNAME];
+    str msgColor   = talkers[talker][TALKER_PROP_MSGCOLOR];
+
+    // draw da box
+    SetHudSize(640, 480, 1);
+    SetFont(boxImage);
+    HudMessageBold(s:"a"; HUDMSG_FADEINOUT, 2, 0, 320.0, 60.0, vistime, 1.0, 1.0);
+
+    // speak, mortal!
+    SetFont("SMALLFONT");
+    HudMessageBold(s:"\cC", s:talkerName, s:":\n", s:message;
+        HUDMSG_FADEINOUT | HUDMSG_COLORSTRING, 1, msgColor, 162.1, 60.0, vistime, 1.0, 1.0
+    );
+}
+
 script "MusicFadeOut" (int fadetime)
 {
     int fadePerTic = FixedDiv( 1.0, FixedMul( fadetime, 35.0 ) );
