@@ -50,6 +50,7 @@ Contributor: Jimmy
 - BIGFONT and SMALLFONT replacements
 - Music for H1M1: "Lighthouse"
 - Music for H2M7: "Encrypted"
+- Music for H4M2: "Crow's Nest" (co-authored)
 
 -------------------
 Contributor: mrgrimsdale
@@ -65,6 +66,7 @@ Contributor: Viscra Maelstrom
 Contributor: Eris Falling
 -------------------
 - Music for H3M1: "The Ophidians"
+- Music for H4M2: "Crow's Nest" (co-authored)
 - Music for H4M5: "Turbulence"
 
 -------------------
@@ -81,6 +83,11 @@ Contributor: Mikolah
 Contributor: pcorf
 -------------------
 - Music for H1MX: "Crushed Spirits"
+
+-------------------
+Contributor: Dragonfly
+-------------------
+- Music for H4M2: "Crow's Nest" (co-authored)
 
 -------------------
 Contributor: BouncyTEM
