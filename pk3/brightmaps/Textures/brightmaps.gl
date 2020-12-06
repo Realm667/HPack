@@ -9,3 +9,9 @@ brightmap texture swpat_i1	{ map "Brightmaps/Textures/swpat_i1.png"}
 brightmap texture lavafl1	{ map "Brightmaps/Textures/lavafl1.png"	}
 brightmap texture lavafl2	{ map "Brightmaps/Textures/lavafl2.png"	}
 brightmap texture lavafl3	{ map "Brightmaps/Textures/lavafl3.png"	}
+brightmap texture twinkle1	{ map "Brightmaps/Textures/twinkle.png"	}
+brightmap texture twinkle2	{ map "Brightmaps/Textures/twinkle.png"	}
+brightmap texture twinkle3	{ map "Brightmaps/Textures/twinkle.png"	}
+brightmap texture twinkle4	{ map "Brightmaps/Textures/twinkle.png"	}
+brightmap texture twinkle5	{ map "Brightmaps/Textures/twinkle.png"	}
+brightmap texture twinkle6	{ map "Brightmaps/Textures/twinkle.png"	}

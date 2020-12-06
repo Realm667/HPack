@@ -126,6 +126,14 @@ texture lvwalld1
  pic lvwalld1 tics 8
  pic lvwalld2 tics 8
  pic lvwalld3 tics 8
+ 
+texture TWINKLE1
+ pic TWINKLE1 tics 4
+ pic TWINKLE2 tics 4
+ pic TWINKLE3 tics 4
+ pic TWINKLE4 tics 4
+ pic TWINKLE5 tics 4
+ pic TWINKLE6 tics 4
 
 texture WALLAN1
  pic WALLAN1 tics 6
