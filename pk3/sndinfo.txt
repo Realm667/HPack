@@ -191,8 +191,8 @@ archwizard/ballbounce   bounce2
 archwizard/ballexplode  sorblexp
 $random archwizard/active { archwizard/active1 archwizard/active2 }
 $random archwizard/pain { archwizard/pain1 archwizard/pain2 }
-$volume archwizard/acidloop 0.25;
-$attenuation archwizard/acidloop 2.0;
+$volume archwizard/acidloop 0.25
+$attenuation archwizard/acidloop 2.0
 
 //Bishop
 BishopSight             syab2d
@@ -528,6 +528,11 @@ ambient/cavelake   cavelake //Lake in a Cave
 ambient/drycave    drycave  //Dry Cave
 ambient/river      river    //Middle River
 ambient/wetcave    wetcave  //Wet Cave
+ambient/godcube1   godcube1 //"God Cubes" (hey, that's what they were called in DMC3 :P )
+ambient/godcube2   godcube2
+ambient/godcube3   godcube3
+ambient/godcube4   godcube4
+$random ambient/godcube { ambient/godcube1 ambient/godcube2 ambient/godcube3 ambient/godcube4 }
 
 // Additional Ambient Screams
 
@@ -540,6 +545,7 @@ Ambient/Scream6		scream6
 Ambient/Scream7		scream7
 Ambient/Scream8		scream8
 Ambient/Scream		scrmeptm
+$random Ambient/Screams { Ambient/Scream1 Ambient/Scream2 Ambient/Scream3 Ambient/Scream4 Ambient/Scream5 Ambient/Scream6 Ambient/Scream7 Ambient/Scream8 }
 
 // Mo' Ambience
 
@@ -581,6 +587,9 @@ $AMBIENT 27 Ambient/Stars1     POINT CONTINUOUS 0.75
 $AMBIENT 28 Ambient/Stars2     POINT CONTINUOUS 0.5
 $AMBIENT 29 Ambient/MagicTorch POINT CONTINUOUS 0.5
 $AMBIENT 30 Ambient/Contraption POINT CONTINUOUS 1.0
+$AMBIENT 31 ambient/godcube    POINT PERIODIC 5.5 1.0
+$AMBIENT 32 ambient/screams    POINT RANDOM 20.0 35.0 1.0
+$AMBIENT 33 ambient/screams    RANDOM 20.0 35.0 1.0
 $ambient 60 "PortalChoir/Loop" POINT continuous 255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
 $ambient 62 amb/windsubs surround continuous 0.5

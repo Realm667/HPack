@@ -1,6 +1,21 @@
 #library "hpacklib"
 #include "zcommon.acs"
 
+// public defines -- accessible to map scripts
+
+#libdefine TALKER_INSCRIPTION 0
+#libdefine TALKER_CORVUS 1
+#libdefine NUM_TALKERS 2
+
+// includes
+
 #include "lightstyle.acs"
 #include "glassbreak.acs"
 #include "messaging.acs"
+
+// public function interface -- accessible to map scripts
+
+function void MessageBox(int talker, int message, int vistime)
+{
+    ACS_NamedExecute("MessageBox", 0, talker, message, vistime);
+}

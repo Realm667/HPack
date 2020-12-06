@@ -33,7 +33,7 @@ map H4M1 "Ethereal Ruins"
 
 map H4M2 "The Bloody Path"
 {
-	author     = "Archi"
+	author     = "Archi & Xaser"
 	levelnum   = 42
 	music      = M_H4M2
 	next       = H4M3
