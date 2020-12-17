@@ -1,141 +1,222 @@
-actor DarkLich 16517
+Actor DarkLich 16517
 {
 	//$Category Monsters
 	//$Title Dark Lich
 	//$Sprite SKELA1
-  obituary "$OB_DARKLICH"
-  Tag "$FN_DARKLICH"
 Monster
-  health 1500
-  painchance 32
-  speed 7
-  Scale .75
-  radius 40
-  height 88
-  mass 1500
-  damage 0
-  SeeSound "ironlich/sight"
-  AttackSound "ironlich/attack"
-  PainSound "ironlich/pain"
-  DeathSound "ironlich/death"
-  ActiveSound "ironlich/active"
-  DropItem "BlasterAmmo", 84, 10
-  DropItem "ArtiTomeOfPower", 51, 0
-  DropItem "ArtiTomeOfMight", 51, 0
-  Species "IronLich"
-  +NOBLOOD
-  +MISSILEMORE
-  +MISSILEEVENMORE
-  +QUICKTORETALIATE
-  +NORADIUSDMG
-  +DONTHARMSPECIES
-  +FLOAT
-  +NOGRAVITY
-  +NOTARGET
-  +NOBLOOD
-  +GHOST
-  +DONTFALL
-  +DONTMORPH
-  RenderStyle Translucent
-  Alpha 0.4
-  states
-  {
-  Spawn:
-    SKEL A 3
-  See:
-	SKEL A 3 A_Chase
-	SKEL A 0 A_SpawnItem("DLFX3",0,0)
-	loop
-  Pain:
-    SKEL A 6 A_Pain
-    goto See
-  Missile:
-    SKEL A 0 A_Jump (256, "Fire1", "Fire2")
-    stop
-  Fire1:
-    SKEL A 8 A_FaceTarget
-    SKEL B 8 A_CustomMissile ("DarkLichHomingBall", 24, 0, 0, 0)
-    SKEL A 8 A_FaceTarget
-    SKEL B 8 A_CustomMissile ("DarkLichHomingBall", 24, 0, 0, 0)
-    goto See
-  Fire2:
-    SKEL A 8 A_FaceTarget
-    SKEL B 8 A_FaceTarget
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, -6, 0)
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, 0, 0)
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, 6, 0)
-    SKEL A 8 A_FaceTarget
-    SKEL B 8 A_FaceTarget
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, -6, 0)
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, 0, 0)
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, 6, 0)
-    SKEL A 8 A_FaceTarget
-    SKEL B 8 A_FaceTarget
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, -6, 0)
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, 0, 0)
-    SKEL B 0 A_CustomMissile ("DarkLichFX1", 24, 0, 6, 0)
-    goto See
-  Death: 	
-	BSBS E 0 Bright A_Scream
-//    BSBS E 0 Bright A_SetTranslucent (1, 1) 
-	BSBS E 0 Bright A_NoBlocking
-    BSBS E 3 Bright A_Explode (64, 96, 0)
-    BSBS FGHIJKLM 3 Bright
-    stop
-  }
+Species "IronLich"
+Health 1500
+Radius 40
+Height 88
+Speed 10
+Mass 1500
+PainChance 32
+Obituary "$OB_DARKLICH"
+Tag "$FN_DARKLICH"
+RenderStyle Translucent
+Alpha 0.6
+DropItem "ChaosAmmo", 90, 40
+DropItem "ArtiTomeOfPower", 15, 0
+SeeSound "DarkLich/Sight"
+ActiveSound "DarkLich/Active"
+PainSound "DarkLich/Pain"
+DeathSound "DarkLich/Death"
++NOBLOOD
++MISSILEEVENMORE
++NORADIUSDMG
++DONTHARMSPECIES
++FLOAT
++NOGRAVITY
++NOTARGET
++NOBLOOD
++GHOST
++DONTFALL
++DONTMORPH
+States
+	{
+	Spawn:
+		SKEL A 1 A_Look
+		Loop
+	See:
+		SKEL A 3 { A_Chase; A_SpawnItemEx("DarkLichShadow"); }
+		TNT1 A 0 A_Jump(8,"CheckforJump")
+		Loop
+	CheckforJump:
+		TNT1 A 0 A_JumpIfTargetinLOS("Teleport",0,JLOSF_DEADNOJUMP|JLOSF_COMBATANTONLY)
+		Goto See
+	Teleport:
+		TNT1 A 0 { A_SetInvulnerable; A_UnSetShootable; A_StartSound("DarkLich/Teleport",CHAN_BODY,CHANF_OVERLAP); }
+		SKEL A 1 { A_Chase("","",CHF_NOPLAYACTIVE); A_FadeOut(0.1,0); }
+		SKEL AA 1 A_FadeOut(0.1,0)
+		SKEL A 1 { A_Chase("","",CHF_NOPLAYACTIVE); A_FadeOut(0.1,0); }
+		SKEL AA 1 A_FadeOut(0.1,0)
+		TNT1 A 0 A_ScaleVelocity(4.0)
+		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Chase("","",CHF_NOPLAYACTIVE)
+		TNT1 A 0 A_ScaleVelocity(1.0)
+		SKEL A 1 { A_Chase("","",CHF_NOPLAYACTIVE); A_FadeIn(0.1); }
+		SKEL AA 1 A_FadeIn(0.1)
+		SKEL A 1 { A_Chase("","",CHF_NOPLAYACTIVE); A_FadeIn(0.1); }
+		SKEL AA 1 A_FadeIn(0.1)
+		TNT1 A 0 { A_UnSetInvulnerable; A_SetShootable; }
+		Goto See
+	Pain:
+		SKEL A 6 A_Pain
+		Goto See
+	Missile:
+		TNT1 A 0 A_JumpIfCloser(384,"Miasma")
+	MissileCheck:
+		TNT1 A 0 A_Jump(256,"PurpleFire","MagicShots")
+		Loop
+	Miasma:
+		TNT1 A 0 A_JumpIfInventory("MiasmaCooldown",1,"MissileCheck")
+		SKEL A 8 A_FaceTarget
+		SKEL B 24 { A_StartSound("DarkLich/Attack1",CHAN_BODY); A_GiveInventory("MiasmaCooldown"); A_SpawnProjectile("MiasmaCloudSpawner",32,0,0,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,20,-9,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,40,-18,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,60,-27,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,80,-36,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,0,0,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,-20,9,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,-40,18,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,-60,27,CMF_AIMOFFSET); A_SpawnProjectile("MiasmaCloudSpawner",32,-80,36,CMF_AIMOFFSET); }
+		Goto See
+	PurpleFire:
+		SKEL A 8 A_FaceTarget
+		SKEL B 16 { A_SpawnProjectile("PurpleFireSpawner",32); A_StartSound("DarkLich/Attack2",CHAN_BODY); }
+		Goto See
+	MagicShots:
+		SKEL A 8 A_FaceTarget
+		SKEL CCCC 4 { A_FaceTarget; A_SpawnProjectile("DLEnergyBall",48,16,0); A_SpawnProjectile("DLEnergyBall",48,-16,0); A_StartSound("DarkLich/Attack3",CHAN_BODY); }
+		SKEL A 4
+		Goto See
+	Death: 	
+		SKEL D 1 Bright { A_SetTranslucent(0.5,1); A_SetScale(1.3); }
+		SKEL D 2 Bright { A_Explode(64,96,0); A_ScreamandUnblock; }
+		SKEL EFGH 3 Bright
+		SKEL IIII 2 Bright A_FadeOut(0.1)
+		Stop
+	}
 }
 
-ACTOR DLFX3
-{   
-   Radius 2
-   Height 2
-   Speed 0
-   PROJECTILE
-   RENDERSTYLE Translucent
-   ALPHA 0.5
-   Scale .75
-   States
-   {
-   Spawn:
-      TNT1 A 3
-      SKEL A 3 A_FadeOut(0.10)
-      goto spawn+1
-   }
-}
-
-ACTOR DarkLichHomingBall : MageStaffFX2
+Actor MiasmaCooldown : Powerup
 {
-  Speed 15
-  SeeSound "HomingBall/Fire"
-  DeathSound "HomingBall/Explode"
-  DamageType "none"
-
-  States
-  {
-  Spawn:
-    BSBS A 0 Bright Light(DISCIPLEBALL)
-    BSBS A 0 Bright Light(DISCIPLEBALL) A_PlaySoundEx ("HomingBall/Fly", "SoundSlot6", 1)
-    BSBS A 2 Bright Light(DISCIPLEBALL) A_MStaffTrack
-    BSBS A 0 Bright Light(DISCIPLEBALL) A_SpawnItemEx (ArchWizardSpark, random (-6, 6), random (-6, 6), random (-6, 6), 0, 0, 0, 0, 160)
-    BSBS B 2 Bright Light(DISCIPLEBALL) A_MStaffTrack
-    BSBS B 0 Bright Light(DISCIPLEBALL) A_SpawnItemEx (ArchWizardSpark, random (-6, 6), random (-6, 6), random (-6, 6), 0, 0, 0, 0, 160)
-    BSBS C 2 Bright Light(DISCIPLEBALL) A_MStaffTrack
-    BSBS C 0 Bright Light(DISCIPLEBALL) A_SpawnItemEx (ArchWizardSpark, random (-6, 6), random (-6, 6), random (-6, 6), 0, 0, 0, 0, 160)
-    BSBS D 2 Bright Light(DISCIPLEBALL) A_MStaffTrack
-    BSBS D 0 Bright Light(DISCIPLEBALL) A_SpawnItemEx (ArchWizardSpark, random (-6, 6), random (-6, 6), random (-6, 6), 0, 0, 0, 0, 160)
-    Loop
-  Death:
-    BSBS E 0 Bright Light(DISCIPLEBALL) A_StopSoundEx ("SoundSlot6")
-    BSBS E 0 Bright Light(DISCIPLEBALL) A_SetTranslucent (1, 1)
-    BSBS E 3 Bright Light(DISCIPLEBALL) A_Explode (25, 96, 0)
-    BSBS FGHIJKLM 3 Bright
-    Stop
-  }
+Inventory.ForbiddenTo "PlayerPawn"
+Powerup.Duration -15
 }
 
-ACTOR DarkLichFX1 : WizardFX1
+Actor DarkLichShadow
 {
-  speed 25
-  damage 8
-  seesound "DarkLichizard/Fire"
+Renderstyle Translucent
+Alpha 0.5
++NOINTERACTION
+States
+	{
+	Spawn:
+		TNT1 A 3
+		SKEL AAAAA 3 A_FadeOut(0.1)
+		Stop
+	}
+}
+
+Actor MiasmaCloudSpawner
+{
+Projectile
+Radius 2
+Height 2
+Speed 16
+Damage 0
++THRUACTORS
++BOUNCEONFLOORS
+States
+	{
+	Spawn:
+		TNT1 AAAA 2
+		TNT1 AAAA 8 A_SpawnItemEx("MiasmaCloud")
+		Stop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+Actor MiasmaCloud
+{
+Radius 24
+Height 30
+Scale 0.7
++NOBLOCKMAP
++NOGRAVITY
++NODAMAGETHRUST
++CANBLAST
++BLOODLESSIMPACT
+RenderStyle Translucent
+Alpha 0.45
+DamageType PoisonCloud
+PoisonDamage 3
+ReactionTime 7
+States
+	{
+	Spawn:
+		LMIA A 5 A_Explode(1,40,XF_NOSPLASH,false,40)
+		LMIA B 5 A_Explode(1,60,XF_NOSPLASH,false,60)
+		LMIA C 5 A_Explode(1,80,XF_NOSPLASH,false,80)
+		LMIA DEF 5 A_Explode(1,100,XF_NOSPLASH,false,100)
+		TNT1 A 0 A_CountDown
+		Goto Spawn+3
+	Death:
+		LMIA CBA 5
+		Stop
+	}
+}
+
+Actor PurpleFireSpawner
+{
+Projectile
+Radius 14
+Height 12
+Speed 16
+Damage 0
+DamageType Fire
++THRUACTORS
+States
+	{
+	Spawn:
+		TNT1 A 1
+		TNT1 A 4 A_SpawnProjectile("PurpleFireWave",0,0,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz))
+		TNT1 A 4 { A_SpawnProjectile("PurpleFireWave",0,18,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); A_SpawnProjectile("PurpleFireWave",0,-18,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); }
+		TNT1 A 4 { A_SpawnProjectile("PurpleFireWave",0,36,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); A_SpawnProjectile("PurpleFireWave",0,-36,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); }
+		TNT1 A 4 { A_SpawnProjectile("PurpleFireWave",0,54,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); A_SpawnProjectile("PurpleFireWave",0,-54,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); }
+		TNT1 A 4 { A_SpawnProjectile("PurpleFireWave",0,72,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); A_SpawnProjectile("PurpleFireWave",0,-72,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); }
+		TNT1 A 4 { A_SpawnProjectile("PurpleFireWave",0,90,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); A_SpawnProjectile("PurpleFireWave",0,-90,0,CMF_AIMDIRECTION|CMF_TRACKOWNER,4*(-velz)); }
+		Stop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+Actor PurpleFireWave : PurpleFireSpawner
+{
+Damage 6
+RenderStyle Add
+SeeSound "DLPurpleFire/Shot"
+DeathSound "DLPurpleFire/Hit"
+-ACTIVATEIMPACT
+-ACTIVATEPCROSS
+-NOBLOCKMAP
+-THRUACTORS
+States
+	{
+	Spawn:
+		LPFR ABC 4 Bright
+		Loop
+	Death:
+		LPFR DEFG 5 Bright
+		Stop
+	}
+}
+
+Actor DLEnergyBall : GauntletFX1
+{
+States
+	{
+	Spawn:
+		GNFX AAA 1 Bright A_SpawnItemEx("GauntletFX2",random2[BoltSpark]()*0.015625,random2[BoltSpark]()*0.015625,0,0,0,0,0,SXF_ABSOLUTEPOSITION,50)
+		TNT1 A 0 A_SeekerMissile(5,8)
+		GNFX BBB 1 Bright A_SpawnItemEx("GauntletFX2",random2[BoltSpark]()*0.015625,random2[BoltSpark]()*0.015625,0,0,0,0,0,SXF_ABSOLUTEPOSITION,50)
+		TNT1 A 0 A_SeekerMissile(5,8)
+		Loop
+	}
 }

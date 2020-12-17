@@ -1,23 +1,96 @@
-object DarkLichHomingBall
+//Dark Lich miasma cloud
+PointLight Miasma_1
 {
-	frame BSBSF { light DISCIPLEBALL    }
-	frame BSBSG { light DISCIPLEBALL    }
-	frame BSBSH { light DISCIPLEBALL    }
-	frame BSBSI { light DISCIPLEBALL_X1 }
-	frame BSBSJ { light DISCIPLEBALL_X1 }
-	frame BSBSK { light DISCIPLEBALL_X1 }
-	frame BSBSL { light DISCIPLEBALL_X2 }
-	frame BSBSM { light DISCIPLEBALL_X2 }
+	Color 0.1 0.0 0.1
+	Size 64
+}
+PointLight Miasma_2
+{
+	Color 0.1 0.0 0.1
+	Size 72
+}
+PointLight Miasma_3
+{
+	Color 0.1 0.0 0.1
+	Size 80
+}
+PointLight Miasma_4
+{
+	Color 0.1 0.0 0.1
+	Size 96
+}
+Object MiasmaCloud
+{
+	Frame LMIAA { Light Miasma_1 }
+	Frame LMIAB { Light Miasma_2 }
+	Frame LMIAC { Light Miasma_3 }
+	Frame LMIAD { Light Miasma_4 }
+	Frame LMIAE { Light Miasma_4 }
+	Frame LMIAF { Light Miasma_4 }
 }
 
-object DarkLichFX1
-{
-	frame FX11A { light DISCIPLEBALL }
-	frame FX11B { light DISCIPLEBALL }
-	frame FX11C { light DISCIPLEBALL }
+//Dark Lich fire wall
 
-	frame FX11D { light DISCIPLEBALL    }
-	frame FX11E { light DISCIPLEBALL    }
-	frame FX11F { light DISCIPLEBALL_X1 }
-	frame FX11G { light DISCIPLEBALL_X2 }
+FlickerLight DLichFire
+{
+	Color 0.9 0.2 0.8
+	Size 72
+	SecondarySize 84
+	Chance 0.5
+	Attenuate 1
+}
+FlickerLight DLichFire_X1
+{
+	Color 0.7 0.1 0.6
+	Size 84
+	SecondarySize 96
+	Chance 0.5
+	Attenuate 1
+}
+FlickerLight DLichFire_X2
+{
+	Color 0.6 0.0 0.5
+	Size 72
+	SecondarySize 84
+	Chance 0.5
+	Attenuate 1
+}
+FlickerLight DLichFire_X3
+{
+	Color 0.4 0.0 0.3
+	Size 60
+	SecondarySize 72
+	Chance 0.5
+	Attenuate 1
+}
+FlickerLight DLichFire_X4
+{
+	Color 0.1 0.0 0.1
+	Size 48
+	SecondarySize 60
+	Chance 0.5
+	Attenuate 1
+}
+Object PurpleFireWave
+{
+	Frame LPFRA { Light DLichFire }
+	Frame LPFRB { Light DLichFire }
+	Frame LPFRC { Light DLichFire }
+	Frame LPFRD { Light DLichFire_X1 }
+	Frame LPFRE { Light DLichFire_X2 }
+	Frame LPFRF { Light DLichFire_X3 }
+	Frame LPFRG { Light DLichFire_X4 }
+}
+
+//Dark Lich energy ball
+
+Object DLEnergyBall
+{
+	Frame GNFXA { light DISCIPLEBALL }
+	Frame GNFXB { light DISCIPLEBALL }
+	Frame GNFXC { light DISCIPLEBALL }
+	Frame GNFXD { light DISCIPLEBALL    }
+	Frame GNFXE { light DISCIPLEBALL    }
+	Frame GNFXF { light DISCIPLEBALL_X1 }
+	Frame GNFXG { light DISCIPLEBALL_X2 }
 }
