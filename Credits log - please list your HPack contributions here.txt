@@ -266,7 +266,7 @@ Contributor: Captain Toenail
 -------------------------
 Contributor: Gothic
 -------------------------
-- H3M6: "Hell Stronghold"
+- H3M6: "Hellfire Stronghold"
 - New Dark Lich attacks and behavior:
 	- Miasma sprites edited from Necrodome.
 	- Fire sprites edited from Heretic.
