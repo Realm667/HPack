@@ -88,7 +88,7 @@ end
 	door 11
 end
 
-:MovingStones //H3M7
+:MovingStones //H3M6
 	playrepeat   	StoneStartMoving
 	stopsound	StoneStopMoving
 	door 20

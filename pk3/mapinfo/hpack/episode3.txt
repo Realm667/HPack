@@ -67,7 +67,7 @@ map H3M5 "Fortress of Eternity"
 	lightmode = 0
 }
 
-Map H3M6 "Hell Stronghold"
+Map H3M6 "Hellfire Stronghold"
 {
 	author   = "Gothic"
 	levelnum = 36

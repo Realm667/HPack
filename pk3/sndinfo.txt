@@ -458,6 +458,24 @@ epig/explo EPIGXPLO
 
 vile/firecrkl DSFLAME
 
+//Dark Lich
+DarkLich/Sight DLICHSEE
+$random DarkLich/Active { DLICHAC1 DLICHAC2 }
+DLICHAC1 DLICHAC1
+DLICHAC2 DLICHAC2
+DarkLich/Pain DLICHPAI
+DarkLich/Death DLICHDTH
+$random DarkLich/Teleport { DLICHTL1 DLICHTL2 }
+DLICHTL1 DLICHTL1
+DLICHTL2 DLICHTL2
+
+DarkLich/Attack1 DLICHMIA
+DarkLich/Attack2 DLICHFIR
+DarkLich/Attack3 GNTPWS
+
+DLPurpleFire/Shot DLFIRE1
+DLPurpleFire/Hit DLFIRE2
+
 /////////////////
 // MISC SOUNDS //
 /////////////////
@@ -492,9 +510,9 @@ misc/gibbed		DSSLOP
 DSGONG	DSGONG
 PortalChoir/Loop	DSCHOIR
 
-//Gothic door thingy
-StoneStartMoving	CRYPTLP
-StoneStopMoving		STNFALL
+//Gothic Giant Rock Doors
+StoneStartMoving	RCKSLIDE
+StoneStopMoving		RCKSTOP
 
 //Minecraft Open Door
 Minecraft/DoorOpen	MCDOOR

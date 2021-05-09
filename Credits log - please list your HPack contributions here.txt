@@ -273,8 +273,13 @@ Contributor: Captain Toenail
 -------------------------
 Contributor: Gothic
 -------------------------
-- H3M6: "Hell Stronghold"
-
+- H3M6: "Hellfire Stronghold"
+- New Dark Lich attacks and behavior:
+	- Miasma sprites edited from Necrodome.
+	- Fire sprites edited from Heretic.
+	- Death sprites (placeholders) edited from Powerslave.
+	- Sounds from Blizzard games (Starcraft, Diablo, Diablo 2).
+- RCKSLIDE.ogg and RCKSTOP.ogg (taken from Rune).
 -------------------------
 Contributor: qwerqsar
 -------------------------
@@ -293,7 +298,7 @@ Contributor: Icytux
 -------------------------
 Contributor: cazok (http://cazok.newgrounds.com/)
 -------------------------
-- Music for H3M6: "Dangerous Adventures"
+- Music for H3M5: "Dangerous Adventures"
 
 -------------------
 Contributor: el zee

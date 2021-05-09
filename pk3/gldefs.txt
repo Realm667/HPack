@@ -36,6 +36,7 @@
 #include "actors/monsters/bishop.gl"
 #include "actors/monsters/champion.gl"
 #include "actors/monsters/cultist.gl"
+#include "actors/monsters/darklich.gl"
 #include "actors/monsters/darknessrift.gl"
 #include "actors/monsters/deathknight.gl"
 #include "actors/monsters/disciple.gl"
