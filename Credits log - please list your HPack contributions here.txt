@@ -63,6 +63,7 @@ Contributor: Jimmy
   - "Sad Dunes", based on "Hinter den Feuerfällen von Algormosch"
   - "Mad Dunes", based on "Schild und Speer"
 - Music for H3M7 Boss: "Pyroclast"
+- Music for H4M2: "Crow's Nest" (co-authored)
 
 -------------------
 Contributor: mrgrimsdale
@@ -78,6 +79,7 @@ Contributor: Viscra Maelstrom
 Contributor: Eris Falling
 -------------------
 - Music for H3M1: "The Ophidians"
+- Music for H4M2: "Crow's Nest" (co-authored)
 - Music for H4M5: "Turbulence"
 
 -------------------
@@ -94,6 +96,11 @@ Contributor: Mikolah
 Contributor: pcorf
 -------------------
 - Music for H1MX: "Crushed Spirits"
+
+-------------------
+Contributor: Dragonfly
+-------------------
+- Music for H4M2: "Crow's Nest" (co-authored)
 
 -------------------
 Contributor: BouncyTEM
