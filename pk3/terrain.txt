@@ -82,11 +82,40 @@ splash Mud
 
 //Terrains
 
+terrain Water
+{
+	splash			Water
+	footclip		10
+	liquid
+	leftstepsounds	world/watersplash
+	rightstepsounds	world/watersplash
+}
+
+terrain Sludge
+{
+	splash			Sludge
+	footclip		10
+	liquid
+	leftstepsounds	world/sludgegloop
+	rightstepsounds	world/sludgegloop
+}
+
+terrain Lava
+{
+	splash			Lava
+	footclip		10
+	liquid
+	leftstepsounds	world/lavasizzle
+	rightstepsounds	world/lavasizzle
+}
+
 terrain LavaRed
 {
 	splash			LavaRed
 	footclip		4
 	liquid
+	leftstepsounds	world/lavasizzle
+	rightstepsounds	world/lavasizzle
 }
 
 terrain Sizzle
@@ -94,6 +123,8 @@ terrain Sizzle
 	splash			Sizzle
 	footclip		0
 	liquid
+	leftstepsounds	world/lavasizzle
+	rightstepsounds	world/lavasizzle
 }
 
 terrain Blood
@@ -101,6 +132,8 @@ terrain Blood
 	splash			Blood
 	footclip		10
 	liquid
+	leftstepsounds	world/sludgegloop
+	rightstepsounds	world/sludgegloop
 }
 
 terrain Acid
@@ -108,6 +141,8 @@ terrain Acid
 	splash			Acid
 	footclip		10
 	liquid
+	leftstepsounds	world/lavasizzle
+	rightstepsounds	world/lavasizzle
 }
 
 terrain Mud
@@ -115,6 +150,8 @@ terrain Mud
 	splash			Mud
 	footclip		10
 	liquid
+	leftstepsounds	world/sludgegloop
+	rightstepsounds	world/sludgegloop
 }
 
 // The flats!
@@ -409,84 +446,96 @@ terrain carpet //
 {
 	splash			carpet
 	footclip		0
-	//liquid
+	leftstepsounds	floor/carpet
+	rightstepsounds	floor/carpet
 }
 
 terrain dirt //
 {
 	splash			dirt
 	footclip		0
-	//liquid
+	leftstepsounds	floor/dirt
+	rightstepsounds	floor/dirt
 }
 
 terrain gravel //
 {
 	splash			gravel
 	footclip		0
-	//liquid
+	leftstepsounds	floor/gravel
+	rightstepsounds	floor/gravel
 }
 
 terrain metal //
 {
 	splash			metal
 	footclip		0
-	//liquid
+	leftstepsounds	floor/metal
+	rightstepsounds	floor/metal
 }
 
 terrain metal2 //
 {
 	splash			metal2
 	footclip		0
-	//liquid
+	leftstepsounds	floor/met2
+	rightstepsounds	floor/met2
 }
 
 terrain rock //
 {
 	splash			rock
 	footclip		0
-	//liquid
+	leftstepsounds	floor/rock
+	rightstepsounds	floor/rock
 }
 
 terrain snow //
 {
 	splash			snow
 	footclip		0
-	//liquid
+	leftstepsounds	floor/snow
+	rightstepsounds	floor/snow
 }
 
 terrain slimy //
 {
 	splash			slimy
 	footclip		0
-	//liquid
+	leftstepsounds	floor/slimy
+	rightstepsounds	floor/slimy
 }
 
 terrain hard
 {
 	splash			hard
 	footclip		0
-	//liquid
+	leftstepsounds	floor/hard
+	rightstepsounds	floor/hard
 }
 
 terrain tile
 {
 	splash			tile
 	footclip		0
-	//liquid
+	leftstepsounds	floor/tile
+	rightstepsounds	floor/tile
 }
 
 terrain tile2 //
 {
 	splash			tile2
 	footclip		0
-	//liquid
+	leftstepsounds	floor/tile2
+	rightstepsounds	floor/tile2
 }
 
 terrain wood //
 {
 	splash			wood
 	footclip		0
-	//liquid
+	leftstepsounds	floor/wood
+	rightstepsounds	floor/wood
 	
 }
 
@@ -494,7 +543,8 @@ terrain electric
 {
 	splash			electric
 	footclip		0
-	//liquid
+	leftstepsounds	floor/elec1
+	rightstepsounds	floor/elec1
 }
 
 // Which flat does what

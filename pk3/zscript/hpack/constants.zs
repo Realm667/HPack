@@ -2,6 +2,8 @@
  * HPack ZScript: Common Constants, for easy adjustments.
  */
 
+const HP_PLAYER_FOOTSTEP_CHANNEL = CHAN_7;
+
 const HP_MAP_CALLOUT_XPOS = 0.5;
 const HP_MAP_CALLOUT_YPOS = 0.25;
 const HP_MAP_CALLOUT_DURATION_SECONDS = 7;

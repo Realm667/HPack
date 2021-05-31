@@ -3,6 +3,13 @@
  */
 class HPackPlayer : HereticPlayer
 {
+	enum EPlayerFoot
+	{
+		PLAYER_FOOT_LEFT = 0,
+		PLAYER_FOOT_RIGHT,
+		NUM_PLAYER_FEET
+	}
+
 	Default
 	{
 		Health 100;
@@ -35,22 +42,9 @@ class HPackPlayer : HereticPlayer
 		Stop;
 	See:
 		PLAY A 5;
-		TNT1 A 0 A_CheckFloor("Step1");
-		PLAY B 5;
-	Otherleg:
+		PLAY B 5 H_Footstep(PLAYER_FOOT_LEFT);
 		PLAY C 5;
-		TNT1 A 0 A_CheckFloor("Step2");
-		PLAY D 5;
-		Goto Spawn;
-	Step1:
-		TNT1 A 0;
-		TNT1 A 0 A_SpawnItemEx("PlayerStep", 0.0, 0.0, 11.1, 0.0, 0.0, 0.0, 0.0, SXF_NoCheckPosition | 128);
-		PLAY B 5;
-		Goto Otherleg;
-	Step2:
-		TNT1 A 0;
-		TNT1 A 0 A_SpawnItemEx("PlayerStep", 0.0, 0.0, 11.1, 0.0, 0.0, 0.0, 0.0, SXF_NoCheckPosition | 128);
-		PLAY D 5;
+		PLAY D 5 H_Footstep(PLAYER_FOOT_RIGHT);
 		Goto Spawn;
 	Melee:
 	Missile:
@@ -113,28 +107,26 @@ class HPackPlayer : HereticPlayer
 		PLAY W -1;
 		Stop;
 	}
-}
 
-class PlayerStep : Actor
-{
-	Default
+	void H_Footstep(EPlayerFoot foot)
 	{
-		Radius 32;
-		Height 55;
-		Gravity 10;
+		// check if player is on the ground.
+		// conveniently, floorz accounts for
+		// 3D floors, so this is dead simple.
+		if (pos.z > floorz) {
+			return;
+		}
 
-		+CORPSE;
-		+NOCLIP;
-		-DONTSPLASH;
-	}
+		// not much to do if there ain't no terrain.
+		TerrainDef terrain = GetFloorTerrain();
+		if (terrain == NULL) {
+			return;
+		}
 
-	States
-	{
-	Spawn:
-		TNT1 A 3;
-		Stop;
-	Crash:
-		TNT1 A 1;
-		Stop;
+		// play the sound, using the player as
+		// the origin, so it sounds correct even
+		// when the player moves. friggin finally :P
+		sound footstepSound = (foot == PLAYER_FOOT_LEFT ? terrain.LeftStepSound : terrain.RightStepSound);
+		A_StartSound(footstepSound, HP_PLAYER_FOOTSTEP_CHANNEL, CHANF_OVERLAP);
 	}
 }
