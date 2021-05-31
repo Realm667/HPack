@@ -40,13 +40,13 @@ map H4M2 "The Bloody Path"
 	secretnext = H4MX
 }
 
-map H4M3 "Ziggurat of Sorrow"
+map H4M3 "Ziggurat Stardust"
 {
 	author   = "ShadesMaster"
 	levelnum = 44
 	music    = M_H4M3
 	next     = H4M4
-	fade     = "0 05 10"
+	fade     = "08 08 08"
 	lightmode = 0
 }
 
