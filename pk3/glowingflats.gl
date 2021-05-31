@@ -98,4 +98,6 @@ Glow
 	Texture	"FLTWAWA1", 0820D0, 24 
 	Texture	"FLTWAWA2", 0820D0, 24
 	Texture	"FLTWAWA3", 0820D0, 24
+
+	Texture	"WLAVA02", FF8000, 48
 }
