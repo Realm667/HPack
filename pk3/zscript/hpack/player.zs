@@ -1,14 +1,25 @@
 /**
+ * HPack Player Definition (and friends)
+ */
+
+enum EPlayerFoot
+{
+	PLAYER_FOOT_LEFT = 0,
+	PLAYER_FOOT_RIGHT,
+	NUM_PLAYER_FEET
+}
+
+struct HPackPlayerCVars
+{
+	HPackCachedCvar footstepVolume;
+}
+
+/**
  * Corvus says "hi"
  */
 class HPackPlayer : HereticPlayer
 {
-	enum EPlayerFoot
-	{
-		PLAYER_FOOT_LEFT = 0,
-		PLAYER_FOOT_RIGHT,
-		NUM_PLAYER_FEET
-	}
+	HPackPlayerCVars cvars;
 
 	Default
 	{
@@ -108,6 +119,12 @@ class HPackPlayer : HereticPlayer
 		Stop;
 	}
 
+	override void PostBeginPlay()
+	{
+		cvars.footstepVolume = HPackCachedCvar.Create('hpack_footstep_volume', self.player);
+		super.PostBeginPlay();
+	}
+
 	void H_Footstep(EPlayerFoot foot)
 	{
 		// check if player is on the ground.
@@ -127,6 +144,7 @@ class HPackPlayer : HereticPlayer
 		// the origin, so it sounds correct even
 		// when the player moves. friggin finally :P
 		sound footstepSound = (foot == PLAYER_FOOT_LEFT ? terrain.LeftStepSound : terrain.RightStepSound);
-		A_StartSound(footstepSound, HP_PLAYER_FOOTSTEP_CHANNEL, CHANF_OVERLAP);
+		double footstepVolume = cvars.footstepVolume.Get().GetFloat();
+		A_StartSound(footstepSound, HP_PLAYER_FOOTSTEP_CHANNEL, CHANF_OVERLAP, footstepVolume);
 	}
 }
