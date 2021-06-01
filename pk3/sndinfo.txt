@@ -729,131 +729,126 @@ printz/ambient/pr_wind1 pr_wind1
 printz/ambient/pr_wind2 pr_wind2
 
 
-////////////////////////
-// GROUND STEP SOUNDS //
-////////////////////////
+///////////////////////
+// FOOTSTEPS OH SNAP //
+///////////////////////
 
-//Carpet - soft ground
-$random floor/carpet		{ floor/carpet01  floor/carpet02 floor/carpet03 }
-floor/carpet01	dscarp1
-floor/carpet02	dscarp2
-floor/carpet03	dscarp3
+footstep/carpet/left   sounds/footstep/dirt1.ogg
+footstep/carpet/right  sounds/footstep/dirt2.ogg
+footstep/carpet/land   sounds/footstep/dirtL.ogg
 
-$limit floor/carpet 1
+footstep/dirt/left     sounds/footstep/dirt1.ogg
+footstep/dirt/right    sounds/footstep/dirt2.ogg
+footstep/dirt/land     sounds/footstep/dirtL.ogg
 
-//Dirt
-$random floor/dirt		{ floor/dirt01  floor/dirt02 floor/dirt03 floor/dirt04  floor/dirt05 floor/dirt06 }
-floor/dirt01	dsdirt1
-floor/dirt02	dsdirt2
-floor/dirt03	dsdirt3
-floor/dirt04	dsdirt4
-floor/dirt05	dsdirt5
-floor/dirt06	dsdirt6
+footstep/gravel/left   sounds/footstep/gravel1.ogg
+footstep/gravel/right  sounds/footstep/gravel2.ogg
+footstep/gravel/land   sounds/footstep/gravelL.ogg
 
-$limit floor/dirt 1
+footstep/liquid1/left  sounds/footstep/liquidA1.ogg
+footstep/liquid1/right sounds/footstep/liquidA2.ogg
+footstep/liquid1/land  sounds/footstep/liquidAL.ogg
 
-//Gravel - loose crunchy surface
-$random floor/gravel		{ floor/grav01  floor/grav02 floor/grav03 floor/grav04 }
-floor/grav01	dsgrav1
-floor/grav02	dsgrav2
-floor/grav03	dsgrav3
-floor/grav04	dsgrav4
+footstep/liquid2/left  sounds/footstep/liquidB1.ogg
+footstep/liquid2/right sounds/footstep/liquidB2.ogg
+footstep/liquid2/land  sounds/footstep/liquidBL.ogg
 
-$limit floor/gravel 1
+footstep/liquid3/left  sounds/footstep/liquidC1.ogg
+footstep/liquid3/right sounds/footstep/liquidC2.ogg
+footstep/liquid3/land  sounds/footstep/liquidBL.ogg
 
-//Metal - hard metal
-$random floor/metal		{ floor/metl01  floor/metl02 floor/metl03 floor/metl04  floor/metl05 floor/metl06 }
-floor/metl01	dsmet01
-floor/metl02	dsmet02
-floor/metl03	dsmet03
-floor/metl04	dsmet04
-floor/metl05	dsmet05
-floor/metl06	dsmet06
+footstep/liquid4/left  sounds/footstep/liquidD1.ogg
+footstep/liquid4/right sounds/footstep/liquidD2.ogg
+footstep/liquid4/land  sounds/footstep/liquidAL.ogg
 
-$limit floor/metal 1
+footstep/liquid5/left  sounds/footstep/liquidE1.ogg
+footstep/liquid5/right sounds/footstep/liquidE2.ogg
+footstep/liquid5/land  sounds/footstep/liquidAL.ogg
 
-//Metal2 - clanky metal
-$random floor/met2		{ floor/met201  floor/met202 floor/met203 floor/met204 }
-floor/met201	dsmet201
-floor/met202	dsmet202
-floor/met203	dsmet203
-floor/met204	dsmet204
+footstep/magic/left1   sounds/footstep/magic1.ogg
+footstep/magic/left2   sounds/footstep/magic3.ogg
+footstep/magic/right1  sounds/footstep/magic2.ogg
+footstep/magic/right2  sounds/footstep/magic4.ogg
+footstep/magic/land    sounds/footstep/magicL.ogg
+$random footstep/magic/left  { footstep/magic/left1  footstep/magic/left2  }
+$random footstep/magic/right { footstep/magic/right1 footstep/magic/right2 }
 
-$limit floor/met2 1
+footstep/metal1/left1  sounds/footstep/metalA1.ogg
+footstep/metal1/left2  sounds/footstep/metalA3.ogg
+footstep/metal1/right1 sounds/footstep/metalA2.ogg
+footstep/metal1/right2 sounds/footstep/metalA4.ogg
+footstep/metal1/land   sounds/footstep/metalAL.ogg
+$random footstep/metal1/left  { footstep/metal1/left1  footstep/metal1/left2  }
+$random footstep/metal1/right { footstep/metal1/right1 footstep/metal1/right2 }
 
-//Rock - Hard outdoor type floor
-$random floor/rock		{ floor/rock01  floor/rock02 floor/rock03 floor/rock04  floor/rock05 floor/rock06 floor/rock07 floor/rock08 }
-floor/rock01	dsrock1
-floor/rock02	dsrock2
-floor/rock03	dsrock3
-floor/rock04	dsrock4
-floor/rock05	dsrock5
-floor/rock06	dsrock6
-floor/rock07	dsrock7
-floor/rock08	dsrock8
+footstep/metal2/left   sounds/footstep/metalB1.ogg
+footstep/metal2/right  sounds/footstep/metalB2.ogg
+footstep/metal2/land   sounds/footstep/metalBL.ogg
 
-$limit floor/rock 1
+footstep/rickety/left  sounds/footstep/rickety1.ogg
+footstep/rickety/right sounds/footstep/rickety2.ogg
+footstep/rickety/land  sounds/footstep/ricketyL.ogg
 
-//Snow
-$random floor/snow		{ floor/snow01  floor/snow02 floor/snow03 floor/snow04  floor/snow05 floor/snow06 }
-floor/snow01	dssnow1
-floor/snow02	dssnow2
-floor/snow03	dssnow3
-floor/snow04	dssnow4
-floor/snow05	dssnow5
-floor/snow06	dssnow6
+footstep/rock1/left1    sounds/footstep/rockA1.ogg
+footstep/rock1/left2    sounds/footstep/rockA3.ogg
+footstep/rock1/right1   sounds/footstep/rockA2.ogg
+footstep/rock1/right2   sounds/footstep/rockA4.ogg
+footstep/rock1/land     sounds/footstep/rockAL.ogg
+$random footstep/rock1/left  { footstep/rock1/left1  footstep/rock1/left2  }
+$random footstep/rock1/right { footstep/rock1/right1 footstep/rock1/right2 }
 
-$limit floor/snow 1
+footstep/rock2/left     sounds/footstep/rockB1.ogg
+footstep/rock2/right    sounds/footstep/rockB2.ogg
+footstep/rock2/land     sounds/footstep/rockBL.ogg
 
-//Hard - generic hard floor
-$random floor/hard		{ floor/hard01  floor/hard02 floor/hard03 floor/hard04  floor/hard05 floor/hard06 }
-floor/hard01	dshard1
-floor/hard02	dshard2
-floor/hard03	dshard3
-floor/hard04	dshard4
-floor/hard05	dshard5
-floor/hard06	dshard6
+footstep/rock3/left     sounds/footstep/rockC1.ogg
+footstep/rock3/right    sounds/footstep/rockC2.ogg
+footstep/rock3/land     sounds/footstep/rockCL.ogg
 
-$limit floor/hard 1
+footstep/rock4/left     sounds/footstep/rockD1.ogg
+footstep/rock4/right    sounds/footstep/rockD2.ogg
+footstep/rock4/land     sounds/footstep/rockDL.ogg
 
-//Tile - Hard indoor floor
-$random floor/tile		{ floor/tile01  floor/tile02 floor/tile03 floor/tile04  floor/tile05 floor/tile06 }
-floor/tile01	dstile01
-floor/tile02	dstile02
-floor/tile03	dstile03
-floor/tile04	dstile04
-floor/tile05	dstile05
-floor/tile06	dstile06
+footstep/slimy1/left1   sounds/footstep/slimyA1.ogg
+footstep/slimy1/left2   sounds/footstep/slimyA3.ogg
+footstep/slimy1/right1  sounds/footstep/slimyA2.ogg
+footstep/slimy1/right2  sounds/footstep/slimyA4.ogg
+footstep/slimy1/land    sounds/footstep/slimyAL.ogg
+$random footstep/slimy1/left  { footstep/slimy1/left1  footstep/slimy1/left2  }
+$random footstep/slimy1/right { footstep/slimy1/right1 footstep/slimy1/right2 }
 
-$limit floor/tile 1
+footstep/slimy2/left    sounds/footstep/slimyB1.ogg
+footstep/slimy2/right   sounds/footstep/slimyB2.ogg
+footstep/slimy2/land    sounds/footstep/slimyBL.ogg
 
-//Tile2 - More echoey traditional tile
-$random floor/tile2		{ floor/tile201  floor/tile202 floor/tile203 floor/tile204  floor/tile205 floor/tile206 floor/tile207 floor/tile208 }
-floor/tile201	dstile21
-floor/tile202	dstile22
-floor/tile203	dstile23
-floor/tile204	dstile24
-floor/tile205	dstile25
-floor/tile206	dstile26
-floor/tile207	dstile27
-floor/tile208	dstile28
+footstep/slimy3/left    sounds/footstep/slimyC1.ogg
+footstep/slimy3/right   sounds/footstep/slimyC2.ogg
+footstep/slimy3/land    sounds/footstep/slimyBL.ogg
 
-$limit floor/tile2 1
+footstep/slimy4/left    sounds/footstep/slimyD1.ogg
+footstep/slimy4/right   sounds/footstep/slimyD2.ogg
+footstep/slimy4/land    sounds/footstep/slimyBL.ogg
 
-//Wood
-$random floor/wood		{ floor/wood01  floor/wood02 floor/wood03 floor/wood04 }
-floor/wood01	dswood1
-floor/wood02	dswood2
-floor/wood03	dswood3
-floor/wood04	dswood4
+footstep/snow/left1   sounds/footstep/snow1.ogg
+footstep/snow/left2   sounds/footstep/snow3.ogg
+footstep/snow/right1  sounds/footstep/snow2.ogg
+footstep/snow/right2  sounds/footstep/snow4.ogg
+footstep/snow/land    sounds/footstep/slimyBL.ogg
+$random footstep/snow/left  { footstep/snow/left1  footstep/snow/left2  }
+$random footstep/snow/right { footstep/snow/right1 footstep/snow/right2 }
 
-$limit floor/wood 1
+footstep/tile1/left1   sounds/footstep/tileA1.ogg
+footstep/tile1/left2   sounds/footstep/tileA3.ogg
+footstep/tile1/right1  sounds/footstep/tileA2.ogg
+footstep/tile1/right2  sounds/footstep/tileA4.ogg
+footstep/tile1/land    sounds/footstep/dirtL.ogg
+$random footstep/tile1/left  { footstep/tile1/left1  footstep/tile1/left2  }
+$random footstep/tile1/right { footstep/tile1/right1 footstep/tile1/right2 }
 
-//Slimy - for the Doom snake floors
-$random floor/slimy		{ floor/slimy01  floor/slimy02 floor/slimy03 floor/slimy04 }
-floor/slimy01	dsslimy1
-floor/slimy02	dsslimy2
-floor/slimy03	dsslimy3
-floor/slimy04	dsslimy4
+footstep/tile2/left    sounds/footstep/tileB1.ogg
+footstep/tile2/right   sounds/footstep/tileB2.ogg
+footstep/tile2/land    sounds/footstep/tileBL.ogg
 
-$limit floor/slimy 1
+footstep/wood/left     sounds/footstep/wood1.ogg
+footstep/wood/right    sounds/footstep/wood2.ogg
+footstep/wood/land     sounds/footstep/woodL.ogg

@@ -1,4 +1,7 @@
-// Excerpted and adapted from NJSPLASH.wad
+/////////////////////////////////////////////
+// SPLASHES                                //
+// Excerpted and adapted from NJSPLASH.wad //
+/////////////////////////////////////////////
 
 splash Blood
 {
@@ -80,15 +83,13 @@ splash Mud
 	NoAlert
 }
 
-//Terrains
-
 terrain Water
 {
 	splash			Water
 	footclip		10
 	liquid
-	leftstepsounds	world/watersplash
-	rightstepsounds	world/watersplash
+	leftstepsounds	footstep/liquid2/left
+	rightstepsounds	footstep/liquid2/right
 }
 
 terrain Sludge
@@ -96,8 +97,8 @@ terrain Sludge
 	splash			Sludge
 	footclip		10
 	liquid
-	leftstepsounds	world/sludgegloop
-	rightstepsounds	world/sludgegloop
+	leftstepsounds	footstep/liquid3/left
+	rightstepsounds	footstep/liquid3/right
 }
 
 terrain Lava
@@ -132,8 +133,8 @@ terrain Blood
 	splash			Blood
 	footclip		10
 	liquid
-	leftstepsounds	world/sludgegloop
-	rightstepsounds	world/sludgegloop
+	leftstepsounds	footstep/liquid1/left
+	rightstepsounds	footstep/liquid1/right
 }
 
 terrain Acid
@@ -141,8 +142,8 @@ terrain Acid
 	splash			Acid
 	footclip		10
 	liquid
-	leftstepsounds	world/lavasizzle
-	rightstepsounds	world/lavasizzle
+	leftstepsounds	footstep/liquid4/left
+	rightstepsounds	footstep/liquid4/right
 }
 
 terrain Mud
@@ -150,11 +151,594 @@ terrain Mud
 	splash			Mud
 	footclip		10
 	liquid
-	leftstepsounds	world/sludgegloop
-	rightstepsounds	world/sludgegloop
+	leftstepsounds	footstep/liquid5/left
+	rightstepsounds	footstep/liquid5/right
 }
 
-// The flats!
+///////////////////////////////
+// FOOTSTEPS & HARD LANDINGS //
+///////////////////////////////
+
+splash carpet
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/carpet/land
+	NoAlert
+}
+
+splash dirt
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/dirt/land
+	NoAlert
+}
+
+splash gravel
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/gravel/land
+	NoAlert
+}
+
+splash liquid
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/liquid1/land
+	NoAlert
+}
+
+splash liquid2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/liquid2/land
+	NoAlert
+}
+
+splash liquid3
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/liquid3/land
+	NoAlert
+}
+
+splash liquid4
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/liquid4/land
+	NoAlert
+}
+
+splash liquid5
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/liquid5/land
+	NoAlert
+}
+
+splash magic
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/magic/land
+	NoAlert
+}
+
+splash metal
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/metal1/land
+	NoAlert
+}
+
+splash metal2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/metal2/land
+	NoAlert
+}
+
+splash rickety
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/rickety/land
+	NoAlert
+}
+
+splash rock
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/rock1/land
+	NoAlert
+}
+
+splash rock2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/rock2/land
+	NoAlert
+}
+
+splash rock3
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/rock3/land
+	NoAlert
+}
+
+splash rock4
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/rock4/land
+	NoAlert
+}
+
+splash slimy
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/slimy1/land
+	NoAlert
+}
+
+splash slimy2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/slimy2/land
+	NoAlert
+}
+
+splash slimy3
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/slimy3/land
+	NoAlert
+}
+
+splash slimy4
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/slimy4/land
+	NoAlert
+}
+
+splash snow
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/snow/land
+	NoAlert
+}
+
+splash tile
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/tile1/land
+	NoAlert
+}
+
+splash tile2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/tile2/land
+	NoAlert
+}
+
+splash wood
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			footstep/wood/land
+	NoAlert
+}
+
+terrain carpet
+{
+	splash			carpet
+	footclip		0
+	leftstepsounds	footstep/carpet/left
+	rightstepsounds	footstep/carpet/right
+}
+
+terrain dirt
+{
+	splash			dirt
+	footclip		0
+	leftstepsounds	footstep/dirt/left
+	rightstepsounds	footstep/dirt/right
+}
+
+terrain gravel
+{
+	splash			gravel
+	footclip		0
+	leftstepsounds	footstep/gravel/left
+	rightstepsounds	footstep/gravel/right
+}
+
+terrain liquid
+{
+	splash			liquid
+	footclip		0
+	leftstepsounds	footstep/liquid1/left
+	rightstepsounds	footstep/liquid1/right
+}
+
+terrain liquid2
+{
+	splash			liquid2
+	footclip		0
+	leftstepsounds	footstep/liquid2/left
+	rightstepsounds	footstep/liquid2/right
+}
+
+terrain liquid3
+{
+	splash			liquid3
+	footclip		0
+	leftstepsounds	footstep/liquid3/left
+	rightstepsounds	footstep/liquid3/right
+}
+
+terrain liquid4
+{
+	splash			liquid4
+	footclip		0
+	leftstepsounds	footstep/liquid4/left
+	rightstepsounds	footstep/liquid4/right
+}
+
+terrain liquid5
+{
+	splash			liquid5
+	footclip		0
+	leftstepsounds	footstep/liquid5/left
+	rightstepsounds	footstep/liquid5/right
+}
+
+terrain magic
+{
+	splash			magic
+	footclip		0
+	leftstepsounds	footstep/magic/left
+	rightstepsounds	footstep/magic/right
+}
+
+terrain metal
+{
+	splash			metal
+	footclip		0
+	leftstepsounds	footstep/metal1/left
+	rightstepsounds	footstep/metal1/right
+}
+
+terrain metal2
+{
+	splash			metal2
+	footclip		0
+	leftstepsounds	footstep/metal2/left
+	rightstepsounds	footstep/metal2/right
+}
+
+terrain rickety
+{
+	splash			rickety
+	footclip		0
+	leftstepsounds	footstep/rickety/left
+	rightstepsounds	footstep/rickety/right
+}
+
+terrain rock
+{
+	splash			rock
+	footclip		0
+	leftstepsounds	footstep/rock1/left
+	rightstepsounds	footstep/rock1/right
+}
+
+terrain rock2
+{
+	splash			rock2
+	footclip		0
+	leftstepsounds	footstep/rock2/left
+	rightstepsounds	footstep/rock2/right
+}
+
+terrain rock3
+{
+	splash			rock3
+	footclip		0
+	leftstepsounds	footstep/rock3/left
+	rightstepsounds	footstep/rock3/right
+}
+
+terrain rock4
+{
+	splash			rock4
+	footclip		0
+	leftstepsounds	footstep/rock4/left
+	rightstepsounds	footstep/rock4/right
+}
+
+terrain slimy
+{
+	splash			slimy
+	footclip		0
+	leftstepsounds	footstep/slimy1/left
+	rightstepsounds	footstep/slimy1/right
+}
+
+terrain slimy2
+{
+	splash			slimy2
+	footclip		0
+	leftstepsounds	footstep/slimy2/left
+	rightstepsounds	footstep/slimy2/right
+}
+
+terrain slimy3
+{
+	splash			slimy3
+	footclip		0
+	leftstepsounds	footstep/slimy3/left
+	rightstepsounds	footstep/slimy3/right
+}
+
+terrain slimy4
+{
+	splash			slimy4
+	footclip		0
+	leftstepsounds	footstep/slimy4/left
+	rightstepsounds	footstep/slimy4/right
+}
+
+terrain snow
+{
+	splash			snow
+	footclip		0
+	leftstepsounds	footstep/snow/left
+	rightstepsounds	footstep/snow/right
+}
+
+terrain tile
+{
+	splash			tile
+	footclip		0
+	leftstepsounds	footstep/tile1/left
+	rightstepsounds	footstep/tile1/right
+}
+
+terrain tile2
+{
+	splash			tile2
+	footclip		0
+	leftstepsounds	footstep/tile2/left
+	rightstepsounds	footstep/tile2/right
+}
+
+terrain wood
+{
+	splash			wood
+	footclip		0
+	leftstepsounds	footstep/wood/left
+	rightstepsounds	footstep/wood/right
+}
+
+//////////////////
+// TEXTURE DEFS //
+//////////////////
+
 floor FLTAAWA1 Acid
 floor FLTAAWA2 Acid
 floor FLTAAWA3 Acid
@@ -223,331 +807,6 @@ floor WATRWAL1 Water
 floor WATRWAL2 Water
 floor WATRWAL3 Water
 
-//////////////////
-// FLOOR SOUNDS //
-//////////////////
-
-splash carpet
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/carpet
-	NoAlert
-}
-
-splash dirt
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/dirt
-	NoAlert
-}
-
-splash gravel //
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/gravel
-	NoAlert
-}
-
-splash metal //
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/metal
-	NoAlert
-}
-
-splash metal2
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/met2
-	NoAlert
-}
-
-splash rock
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/rock
-	NoAlert
-}
-
-
-splash slimy
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/slimy
-	NoAlert
-}
-
-
-splash snow
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/snow
-	NoAlert
-}
-
-splash hard
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/hard
-	NoAlert
-}
-
-splash tile
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/tile
-	NoAlert
-}
-
-splash tile2
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/tile2
-	NoAlert
-}
-
-splash wood
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/wood
-	NoAlert
-}
-
-
-splash electric
-{
-	smallclass		None
-	smallclip		0
-	smallsound		njmt
-
-	baseclass		None
-	chunkclass		None
-	chunkxvelshift	0
-	chunkyvelshift	0
-	chunkzvelshift	0
-	chunkbasezvel	0
-	sound			floor/elec1
-	NoAlert
-}
-
-//Terrains
-
-//Hard terrains
-
-terrain carpet //
-{
-	splash			carpet
-	footclip		0
-	leftstepsounds	floor/carpet
-	rightstepsounds	floor/carpet
-}
-
-terrain dirt //
-{
-	splash			dirt
-	footclip		0
-	leftstepsounds	floor/dirt
-	rightstepsounds	floor/dirt
-}
-
-terrain gravel //
-{
-	splash			gravel
-	footclip		0
-	leftstepsounds	floor/gravel
-	rightstepsounds	floor/gravel
-}
-
-terrain metal //
-{
-	splash			metal
-	footclip		0
-	leftstepsounds	floor/metal
-	rightstepsounds	floor/metal
-}
-
-terrain metal2 //
-{
-	splash			metal2
-	footclip		0
-	leftstepsounds	floor/met2
-	rightstepsounds	floor/met2
-}
-
-terrain rock //
-{
-	splash			rock
-	footclip		0
-	leftstepsounds	floor/rock
-	rightstepsounds	floor/rock
-}
-
-terrain snow //
-{
-	splash			snow
-	footclip		0
-	leftstepsounds	floor/snow
-	rightstepsounds	floor/snow
-}
-
-terrain slimy //
-{
-	splash			slimy
-	footclip		0
-	leftstepsounds	floor/slimy
-	rightstepsounds	floor/slimy
-}
-
-terrain hard
-{
-	splash			hard
-	footclip		0
-	leftstepsounds	floor/hard
-	rightstepsounds	floor/hard
-}
-
-terrain tile
-{
-	splash			tile
-	footclip		0
-	leftstepsounds	floor/tile
-	rightstepsounds	floor/tile
-}
-
-terrain tile2 //
-{
-	splash			tile2
-	footclip		0
-	leftstepsounds	floor/tile2
-	rightstepsounds	floor/tile2
-}
-
-terrain wood //
-{
-	splash			wood
-	footclip		0
-	leftstepsounds	floor/wood
-	rightstepsounds	floor/wood
-	
-}
-
-terrain electric
-{
-	splash			electric
-	footclip		0
-	leftstepsounds	floor/elec1
-	rightstepsounds	floor/elec1
-}
-
-// Which flat does what
 floor BLUEFRA2 tile2
 floor BLUEFRA3 tile2
 floor BLUEFRA4 tile2
