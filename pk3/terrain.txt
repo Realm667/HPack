@@ -545,7 +545,7 @@ splash wood
 
 terrain carpet
 {
-	splash			carpet
+//	splash			carpet
 	footclip		0
 	leftstepsounds	footstep/carpet/left
 	rightstepsounds	footstep/carpet/right
@@ -553,7 +553,7 @@ terrain carpet
 
 terrain dirt
 {
-	splash			dirt
+//	splash			dirt
 	footclip		0
 	leftstepsounds	footstep/dirt/left
 	rightstepsounds	footstep/dirt/right
@@ -561,7 +561,7 @@ terrain dirt
 
 terrain gravel
 {
-	splash			gravel
+//	splash			gravel
 	footclip		0
 	leftstepsounds	footstep/gravel/left
 	rightstepsounds	footstep/gravel/right
@@ -569,7 +569,7 @@ terrain gravel
 
 terrain liquid
 {
-	splash			liquid
+//	splash			liquid
 	footclip		0
 	leftstepsounds	footstep/liquid1/left
 	rightstepsounds	footstep/liquid1/right
@@ -577,7 +577,7 @@ terrain liquid
 
 terrain liquid2
 {
-	splash			liquid2
+//	splash			liquid2
 	footclip		0
 	leftstepsounds	footstep/liquid2/left
 	rightstepsounds	footstep/liquid2/right
@@ -585,7 +585,7 @@ terrain liquid2
 
 terrain liquid3
 {
-	splash			liquid3
+//	splash			liquid3
 	footclip		0
 	leftstepsounds	footstep/liquid3/left
 	rightstepsounds	footstep/liquid3/right
@@ -593,7 +593,7 @@ terrain liquid3
 
 terrain liquid4
 {
-	splash			liquid4
+//	splash			liquid4
 	footclip		0
 	leftstepsounds	footstep/liquid4/left
 	rightstepsounds	footstep/liquid4/right
@@ -601,7 +601,7 @@ terrain liquid4
 
 terrain liquid5
 {
-	splash			liquid5
+//	splash			liquid5
 	footclip		0
 	leftstepsounds	footstep/liquid5/left
 	rightstepsounds	footstep/liquid5/right
@@ -609,7 +609,7 @@ terrain liquid5
 
 terrain magic
 {
-	splash			magic
+//	splash			magic
 	footclip		0
 	leftstepsounds	footstep/magic/left
 	rightstepsounds	footstep/magic/right
@@ -617,7 +617,7 @@ terrain magic
 
 terrain metal
 {
-	splash			metal
+//	splash			metal
 	footclip		0
 	leftstepsounds	footstep/metal1/left
 	rightstepsounds	footstep/metal1/right
@@ -625,7 +625,7 @@ terrain metal
 
 terrain metal2
 {
-	splash			metal2
+//	splash			metal2
 	footclip		0
 	leftstepsounds	footstep/metal2/left
 	rightstepsounds	footstep/metal2/right
@@ -633,7 +633,7 @@ terrain metal2
 
 terrain rickety
 {
-	splash			rickety
+//	splash			rickety
 	footclip		0
 	leftstepsounds	footstep/rickety/left
 	rightstepsounds	footstep/rickety/right
@@ -641,7 +641,7 @@ terrain rickety
 
 terrain rock
 {
-	splash			rock
+//	splash			rock
 	footclip		0
 	leftstepsounds	footstep/rock1/left
 	rightstepsounds	footstep/rock1/right
@@ -649,7 +649,7 @@ terrain rock
 
 terrain rock2
 {
-	splash			rock2
+//	splash			rock2
 	footclip		0
 	leftstepsounds	footstep/rock2/left
 	rightstepsounds	footstep/rock2/right
@@ -657,7 +657,7 @@ terrain rock2
 
 terrain rock3
 {
-	splash			rock3
+//	splash			rock3
 	footclip		0
 	leftstepsounds	footstep/rock3/left
 	rightstepsounds	footstep/rock3/right
@@ -665,7 +665,7 @@ terrain rock3
 
 terrain rock4
 {
-	splash			rock4
+//	splash			rock4
 	footclip		0
 	leftstepsounds	footstep/rock4/left
 	rightstepsounds	footstep/rock4/right
@@ -673,7 +673,7 @@ terrain rock4
 
 terrain slimy
 {
-	splash			slimy
+//	splash			slimy
 	footclip		0
 	leftstepsounds	footstep/slimy1/left
 	rightstepsounds	footstep/slimy1/right
@@ -681,7 +681,7 @@ terrain slimy
 
 terrain slimy2
 {
-	splash			slimy2
+//	splash			slimy2
 	footclip		0
 	leftstepsounds	footstep/slimy2/left
 	rightstepsounds	footstep/slimy2/right
@@ -689,7 +689,7 @@ terrain slimy2
 
 terrain slimy3
 {
-	splash			slimy3
+//	splash			slimy3
 	footclip		0
 	leftstepsounds	footstep/slimy3/left
 	rightstepsounds	footstep/slimy3/right
@@ -697,7 +697,7 @@ terrain slimy3
 
 terrain slimy4
 {
-	splash			slimy4
+//	splash			slimy4
 	footclip		0
 	leftstepsounds	footstep/slimy4/left
 	rightstepsounds	footstep/slimy4/right
@@ -705,7 +705,7 @@ terrain slimy4
 
 terrain snow
 {
-	splash			snow
+//	splash			snow
 	footclip		0
 	leftstepsounds	footstep/snow/left
 	rightstepsounds	footstep/snow/right
@@ -713,7 +713,7 @@ terrain snow
 
 terrain tile
 {
-	splash			tile
+//	splash			tile
 	footclip		0
 	leftstepsounds	footstep/tile1/left
 	rightstepsounds	footstep/tile1/right
@@ -721,7 +721,7 @@ terrain tile
 
 terrain tile2
 {
-	splash			tile2
+//	splash			tile2
 	footclip		0
 	leftstepsounds	footstep/tile2/left
 	rightstepsounds	footstep/tile2/right
@@ -729,7 +729,7 @@ terrain tile2
 
 terrain wood
 {
-	splash			wood
+//	splash			wood
 	footclip		0
 	leftstepsounds	footstep/wood/left
 	rightstepsounds	footstep/wood/right
