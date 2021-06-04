@@ -857,8 +857,8 @@ $volume footstep/carpet/left   0.5
 $volume footstep/carpet/right  0.5
 $volume footstep/carpet/land   0.5
 
-$volume footstep/dirt/left     0.5
-$volume footstep/dirt/right    0.5
+$volume footstep/dirt/left     0.66
+$volume footstep/dirt/right    0.66
 $volume footstep/dirt/land     0.5
 
 $volume footstep/gravel/left   0.5
@@ -873,8 +873,8 @@ $volume footstep/liquid2/left  0.5
 $volume footstep/liquid2/right 0.5
 $volume footstep/liquid2/land  0.5
 
-$volume footstep/liquid3/left  0.5
-$volume footstep/liquid3/right 0.5
+$volume footstep/liquid3/left  0.4
+$volume footstep/liquid3/right 0.4
 $volume footstep/liquid3/land  0.5
 
 $volume footstep/liquid4/left  0.5
@@ -897,12 +897,12 @@ $volume footstep/metal1/right1 0.5
 $volume footstep/metal1/right2 0.5
 $volume footstep/metal1/land   0.5
 
-$volume footstep/metal2/left   0.5
-$volume footstep/metal2/right  0.5
+$volume footstep/metal2/left   0.45
+$volume footstep/metal2/right  0.45
 $volume footstep/metal2/land   0.5
 
-$volume footstep/rickety/left  0.5
-$volume footstep/rickety/right 0.5
+$volume footstep/rickety/left  0.45
+$volume footstep/rickety/right 0.45
 $volume footstep/rickety/land  0.5
 
 $volume footstep/rock1/left1   0.5
@@ -915,22 +915,22 @@ $volume footstep/rock2/left    0.5
 $volume footstep/rock2/right   0.5
 $volume footstep/rock2/land    0.5
 
-$volume footstep/rock3/left    0.5
-$volume footstep/rock3/right   0.5
+$volume footstep/rock3/left    0.4
+$volume footstep/rock3/right   0.4
 $volume footstep/rock3/land    0.5
 
-$volume footstep/rock4/left    0.5
-$volume footstep/rock4/right   0.5
+$volume footstep/rock4/left    0.4
+$volume footstep/rock4/right   0.4
 $volume footstep/rock4/land    0.5
 
-$volume footstep/slimy1/left1  0.5
-$volume footstep/slimy1/left2  0.5
-$volume footstep/slimy1/right1 0.5
-$volume footstep/slimy1/right2 0.5
+$volume footstep/slimy1/left1  0.4
+$volume footstep/slimy1/left2  0.4
+$volume footstep/slimy1/right1 0.4
+$volume footstep/slimy1/right2 0.4
 $volume footstep/slimy1/land   0.5
 
-$volume footstep/slimy2/left   0.5
-$volume footstep/slimy2/right  0.5
+$volume footstep/slimy2/left   0.4
+$volume footstep/slimy2/right  0.4
 $volume footstep/slimy2/land   0.5
 
 $volume footstep/slimy3/left   0.5
@@ -941,10 +941,10 @@ $volume footstep/slimy4/left   0.5
 $volume footstep/slimy4/right  0.5
 $volume footstep/slimy4/land   0.5
 
-$volume footstep/snow/left1    0.5
-$volume footstep/snow/left2    0.5
-$volume footstep/snow/right1   0.5
-$volume footstep/snow/right2   0.5
+$volume footstep/snow/left1    0.45
+$volume footstep/snow/left2    0.45
+$volume footstep/snow/right1   0.45
+$volume footstep/snow/right2   0.45
 $volume footstep/snow/land     0.5
 
 $volume footstep/tile1/left1   0.5
