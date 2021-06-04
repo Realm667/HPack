@@ -3062,9 +3062,9 @@ floor WALL702 tile
 floor WALL900 rock2
 floor WALL910 rock3
 floor WALL911 slimy2
-floor WALL912 dirt
-floor WALL913 dirt
-floor WALL914 dirt
+floor WALL912 slimy2
+floor WALL913 slimy2
+floor WALL914 slimy2
 floor WALLAN1 magic
 floor WALLAN2 magic
 floor WALLAN3 magic
