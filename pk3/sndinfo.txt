@@ -885,16 +885,12 @@ $volume footstep/liquid5/left  0.5
 $volume footstep/liquid5/right 0.5
 $volume footstep/liquid5/land  0.5
 
-$volume footstep/magic/left1   0.5
-$volume footstep/magic/left2   0.5
-$volume footstep/magic/right1  0.5
-$volume footstep/magic/right2  0.5
+$volume footstep/magic/left    0.5
+$volume footstep/magic/right   0.5
 $volume footstep/magic/land    0.5
 
-$volume footstep/metal1/left1  0.5
-$volume footstep/metal1/left2  0.5
-$volume footstep/metal1/right1 0.5
-$volume footstep/metal1/right2 0.5
+$volume footstep/metal1/left   0.5
+$volume footstep/metal1/right  0.5
 $volume footstep/metal1/land   0.5
 
 $volume footstep/metal2/left   0.45
@@ -905,10 +901,8 @@ $volume footstep/rickety/left  0.45
 $volume footstep/rickety/right 0.45
 $volume footstep/rickety/land  0.5
 
-$volume footstep/rock1/left1   0.5
-$volume footstep/rock1/left2   0.5
-$volume footstep/rock1/right1  0.5
-$volume footstep/rock1/right2  0.5
+$volume footstep/rock1/left    0.5
+$volume footstep/rock1/right   0.5
 $volume footstep/rock1/land    0.5
 
 $volume footstep/rock2/left    0.5
@@ -923,10 +917,8 @@ $volume footstep/rock4/left    0.4
 $volume footstep/rock4/right   0.4
 $volume footstep/rock4/land    0.5
 
-$volume footstep/slimy1/left1  0.4
-$volume footstep/slimy1/left2  0.4
-$volume footstep/slimy1/right1 0.4
-$volume footstep/slimy1/right2 0.4
+$volume footstep/slimy1/left   0.4
+$volume footstep/slimy1/right  0.4
 $volume footstep/slimy1/land   0.5
 
 $volume footstep/slimy2/left   0.4
@@ -941,16 +933,12 @@ $volume footstep/slimy4/left   0.5
 $volume footstep/slimy4/right  0.5
 $volume footstep/slimy4/land   0.5
 
-$volume footstep/snow/left1    0.45
-$volume footstep/snow/left2    0.45
-$volume footstep/snow/right1   0.45
-$volume footstep/snow/right2   0.45
+$volume footstep/snow/left     0.35
+$volume footstep/snow/right    0.35
 $volume footstep/snow/land     0.5
 
-$volume footstep/tile1/left1   0.5
-$volume footstep/tile1/left2   0.5
-$volume footstep/tile1/right1  0.5
-$volume footstep/tile1/right2  0.5
+$volume footstep/tile1/left    0.5
+$volume footstep/tile1/right   0.5
 $volume footstep/tile1/land    0.5
 
 $volume footstep/tile2/left    0.5

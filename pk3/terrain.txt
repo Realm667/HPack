@@ -1857,9 +1857,9 @@ floor Marble9 tile2
 floor MarbleFl tile
 floor MarbleSt tile
 floor MARBLICH tile
-floor MARBSTU2 rock4
+floor MARBSTU2 rock2
 floor MARBSTUB metal
-floor MARBSTUC rock4
+floor MARBSTUC rock2
 floor MARBSUG1 tile
 floor MARBSUG2 tile
 floor MARBSUP1 tile
