@@ -2,6 +2,10 @@
  * HPack ZScript: Common Constants, for easy adjustments.
  */
 
+const HP_PLAYER_FOOTSTEP_WALK_THRESHOLD = 3.0;
+const HP_PLAYER_FOOTSTEP_WALK_TICS = 16;
+const HP_PLAYER_FOOTSTEP_RUN_THRESHOLD = 10.5;
+const HP_PLAYER_FOOTSTEP_RUN_TICS = 10;
 const HP_PLAYER_FOOTSTEP_CHANNEL = CHAN_7;
 
 const HP_MAP_CALLOUT_XPOS = 0.5;
