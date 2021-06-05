@@ -83,6 +83,7 @@ OptionMenu "HPackOptionsMenu"
   StaticText "HPack Settings",        1
   StaticText ""
   Option "Particle-based Light Sources", "hpack_lightsourcestyle", "OnOff"
+  Slider "Footstep Volume", "hpack_footstep_volume", 0, 1.0, 0.05, 2
 
   StaticText ""
   StaticText "HPack Controls",        1
