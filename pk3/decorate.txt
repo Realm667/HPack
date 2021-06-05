@@ -15,7 +15,6 @@
 #include "actors/misc/sfx_glass.txt"
 
 //Player stuff
-#include "actors/player.txt"
 #Include "actors/items/ammo.txt"
 #include "actors/items/item_keys.txt"
 #include "actors/items/item_food.txt"

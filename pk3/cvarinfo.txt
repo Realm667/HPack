@@ -1,1 +1,2 @@
 server bool hpack_lightsourcestyle = true;
+user float hpack_footstep_volume = 1.0;
