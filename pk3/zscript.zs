@@ -17,3 +17,5 @@ version "4.4.0"
 #include "zscript/hpack/sfx/fountains.zs"
 #include "zscript/hpack/sfx/rain.zs"
 #include "zscript/hpack/sfx/vortex.zs"
+
+#include "zscript/hpack/statusbar.zs"
