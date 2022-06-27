@@ -90,9 +90,9 @@ class HPMapCalloutEventHandler : EventHandler
 	 */
 	ui void DrawMapCallout(HPMapCallout callout)
 	{
-		int nameWidth   = bigfont.StringWidth(callout.name) * CleanXFac_1;
-		int nameHeight  = bigfont.GetHeight() * CleanYFac_1;
-		int authorWidth = smallfont.StringWidth(callout.author) * CleanXFac_1;
+		int nameWidth   = bigfont.StringWidth(callout.name) * CleanXFac;
+		int nameHeight  = bigfont.GetHeight() * CleanYFac;
+		int authorWidth = smallfont.StringWidth(callout.author) * CleanXFac;
 
 		int xpos = Screen.GetWidth()  * callout.pos.x;
 		int ypos = Screen.GetHeight() * callout.pos.y;
@@ -101,7 +101,7 @@ class HPMapCalloutEventHandler : EventHandler
 		float endfade   = clamp(double(callout.endTime - level.totaltime  ) / (HP_MAP_CALLOUT_FADE_OUT_SECONDS * TICRATE), 0.0, 1.0);
 		float alpha     = min(startfade, endfade);
 
-		Screen.DrawText(bigfont  , Font.CR_RED  , (xpos - (nameWidth   / 2) ), ypos             , callout.name  , DTA_CleanNoMove_1, true, DTA_Alpha, alpha);
-		Screen.DrawText(smallfont, Font.CR_WHITE, (xpos - (authorWidth / 2) ), ypos + nameHeight, callout.author, DTA_CleanNoMove_1, true, DTA_Alpha, alpha);
+		Screen.DrawText(bigfont  , Font.CR_RED  , (xpos - (nameWidth   / 2) ), ypos             , callout.name  , DTA_CleanNoMove, true, DTA_Alpha, alpha);
+		Screen.DrawText(smallfont, Font.CR_WHITE, (xpos - (authorWidth / 2) ), ypos + nameHeight, callout.author, DTA_CleanNoMove, true, DTA_Alpha, alpha);
 	}
 }
