@@ -26,4 +26,5 @@ gameinfo
 	weaponslot = 8, "HPSunStaff"
 	weaponslot = 9, "HPDSparilGauntlets"
 	weaponslot = 0, "HPMorphWand", "HPStaffChaos"
+	statusbarclass = "HPackStatusBar"
 }
