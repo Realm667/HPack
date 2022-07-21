@@ -5,6 +5,7 @@ ACTOR KeyRed : HereticKey 91
 	Game Heretic
 	SpawnID 88
 	Inventory.PickupMessage "$TXT_GOTREDKEY"
+	Inventory.Icon "RKEYICON"
 	States
 	{
 	Spawn:
