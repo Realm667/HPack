@@ -39,6 +39,16 @@ texture WLLSLIM1
  pic WLLSLIM2 tics 8
  pic WLLSLIM3 tics 8
 
+texture WLLINDI1
+ pic WLLINDI1 tics 4
+ pic WLLINDI2 tics 4
+ pic WLLINDI3 tics 4
+
+texture WLLINDF1
+ pic WLLINDF1 tics 4
+ pic WLLINDF2 tics 4
+ pic WLLINDF3 tics 4
+
 texture CANDLES1
  pic CANDLES1 tics 8
  pic CANDLES2 tics 8
@@ -126,6 +136,14 @@ texture lvwalld1
  pic lvwalld1 tics 8
  pic lvwalld2 tics 8
  pic lvwalld3 tics 8
+ 
+texture TWINKLE1
+ pic TWINKLE1 tics 4
+ pic TWINKLE2 tics 4
+ pic TWINKLE3 tics 4
+ pic TWINKLE4 tics 4
+ pic TWINKLE5 tics 4
+ pic TWINKLE6 tics 4
 
 texture WALLAN1
  pic WALLAN1 tics 6
@@ -140,6 +158,12 @@ texture EFIREA
  pic EFIREB tics 6
  pic EFIREC tics 6
  pic EFIRED tics 6
+
+flat FLATHUA1
+ pic FLATHUA1 tics 8
+ pic FLATHUA2 tics 8
+ pic FLATHUA3 tics 8
+ pic FLATHUA4 tics 8
 
 
 switch EVILSK_1 on sound Switch1 pic SW3OFF tics 0
