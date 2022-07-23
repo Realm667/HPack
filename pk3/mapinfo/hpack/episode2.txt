@@ -23,7 +23,7 @@ adddefaultmap
 
 map H2M1 "Chapel of the Seas"
 {
-	author     = "ShadesMaster"
+	author     = "ShadesMaster & Xaser"
 	levelnum   = 21
 	music      = M_H2M1
 	next       = H2M2
@@ -61,7 +61,7 @@ map H2M4 "Icy Catacomb"
 
 map H2M5 "Serpent Residence"
 {
-	author   = "Archi"
+	author   = "Archi & Xaser"
 	levelnum = 25
 	music    = M_H2M5
 	next     = H2M6

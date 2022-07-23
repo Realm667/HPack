@@ -23,7 +23,7 @@ adddefaultmap
 
 map H1M1 "Gloom Tower"
 {
-	author    = "ShadesMaster"
+	author    = "ShadesMaster & Xaser"
 	levelnum  = 11
 	music     = M_H1M1
 	next      = H1M2
@@ -39,7 +39,7 @@ map H1M2 "Sidhe Altar"
 
 map H1M3 "Elven Wood"
 {
-	author     = "ShadesMaster"
+	author     = "ShadesMaster & Xaser"
 	levelnum   = 13
 	music      = M_H1M3
 	next       = H1M4
@@ -48,7 +48,7 @@ map H1M3 "Elven Wood"
 
 map H1M4 "Battlements"
 {
-	author   = "ShadesMaster"
+	author   = "ShadesMaster & Xaser"
 	levelnum = 14
 	music    = M_H1M4
 	next     = H1M5

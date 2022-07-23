@@ -41,7 +41,7 @@ map H3M2 "Lava Falls"
 
 map H3M3 "Bastion of Sorrow"
 {
-	author   = "Serge Jaeken" // [XA] Not sure about this one. Looks way more like a ShadesMaster map; maybe an old WIP of Serge's was in this slot before?
+	author   = "ShadesMaster"
 	levelnum = 33
 	music    = M_H3M3
 	next     = H3M4
@@ -50,7 +50,7 @@ map H3M3 "Bastion of Sorrow"
 
 map H3M4 "Tabernacle of Magma"
 {
-	author   = "ShadesMaster"
+	author   = "ShadesMaster & Xaser"
 	levelnum = 34
 	music    = M_H3M4
 	next     = H3M5
