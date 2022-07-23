@@ -711,6 +711,7 @@ EarthStartMove          quake2
 
 Torch/Light	torchlit
 Torch/Die	torchdie
+$limit Torch/Light 4
 
 // Redefined Heretic sounds
 world/drip				drop2
