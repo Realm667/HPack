@@ -1,0 +1,12 @@
+/*
+ * HPack MAPINFO: Titlemap
+ */
+
+map titlemap "Demonic Uprising"
+{
+	sky1 = "DNIGHT", 0.0
+	lightmode = 0
+	evenlighting
+}
+
+// Boy, what a long file.

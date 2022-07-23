@@ -3,6 +3,7 @@ Actor SkullWizard 16511
   //$Category Monsters
   //$Title Augur of Chaos
   Obituary "$OB_SKULLWIZARD"
+  Tag "$FN_SKULLWIZARD"
   Health 500
   Radius 21
   Height 66

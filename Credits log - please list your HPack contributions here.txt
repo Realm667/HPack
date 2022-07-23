@@ -45,11 +45,25 @@ Contributor: ShadesMaster
 - H4M5: "Vortex"
 
 -------------------
+Contributor: Xaser
+-------------------
+[XA] TODO: map credits and a bunch of stuff here. I did things. :P
+- Music for H1M6, both covers of tunes from Serious Sam: The
+  Second Encounter, originally composed by Damjan Mravunac
+  - "Land of the Damned - Peace"
+  - "Land of the Damned - Attack"
+
+-------------------
 Contributor: Jimmy
 -------------------
 - BIGFONT and SMALLFONT replacements
 - Music for H1M1: "Lighthouse"
 - Music for H2M7: "Encrypted"
+- Music for H3M5, both partial covers of tracks from Drakensang:
+  - "Sad Dunes", based on "Hinter den Feuerfällen von Algormosch"
+  - "Mad Dunes", based on "Schild und Speer"
+- Music for H3M7 Boss: "Pyroclast"
+- Music for H4M2: "Crow's Nest" (co-authored)
 
 -------------------
 Contributor: mrgrimsdale
@@ -65,8 +79,13 @@ Contributor: Viscra Maelstrom
 Contributor: Eris Falling
 -------------------
 - Music for H3M1: "The Ophidians"
-- Music for H4M1: "Convergent Kingdoms"
+- Music for H4M2: "Crow's Nest" (co-authored)
 - Music for H4M5: "Turbulence"
+
+-------------------
+Contributor: AD_79
+-------------------
+- Music for H4M1: "Convergent Kingdoms"
 
 -------------------
 Contributor: Mikolah
@@ -79,10 +98,28 @@ Contributor: pcorf
 - Music for H1MX: "Crushed Spirits"
 
 -------------------
+Contributor: Dragonfly
+-------------------
+- Music for H4M2: "Crow's Nest" (co-authored)
+
+-------------------
+Contributor: BouncyTEM
+-------------------
+Various ambient sounds:
+- Stars1.ogg
+- Stars2.ogg
+- Magtorch.ogg
+- wind.ogg
+- wind3.ogg
+- wind5.ogg
+- cavelake.ogg
+- drycave.ogg
+- river.ogg
+- wetcave.ogg
+
+-------------------
 Contributor: printz
 -------------------
-- H5M2: "Vortex" -- [XA] maybe? not sure if this one is printz or ShadesMaster... or both?
-
 Sounds contributed:
 - DoorCloseHeavy	-	from id/Raven Software's Hexen
 - DoorCloseLight	-	from id/Raven Software's Hexen
@@ -236,8 +273,13 @@ Contributor: Captain Toenail
 -------------------------
 Contributor: Gothic
 -------------------------
-- H3M7: "Hell Stronghold"
-
+- H3M6: "Hellfire Stronghold"
+- New Dark Lich attacks and behavior:
+	- Miasma sprites edited from Necrodome.
+	- Fire sprites edited from Heretic.
+	- Death sprites (placeholders) edited from Powerslave.
+	- Sounds from Blizzard games (Starcraft, Diablo, Diablo 2).
+- RCKSLIDE.ogg and RCKSTOP.ogg (taken from Rune).
 -------------------------
 Contributor: qwerqsar
 -------------------------
@@ -256,7 +298,7 @@ Contributor: Icytux
 -------------------------
 Contributor: cazok (http://cazok.newgrounds.com/)
 -------------------------
-- Music for H3M6: "Dangerous Adventures"
+- Music for H3M5: "Dangerous Adventures"
 
 -------------------
 Contributor: el zee
@@ -267,7 +309,7 @@ Contributor: el zee
 -------------------
 Contributor: Pyroscourge
 -------------------
-- H3M8: "Infernux Prime"
+- H3M7: "Infernux Prime"
 - H5MX: "In the back of my head"
 
 --------------------
@@ -289,6 +331,11 @@ Contributor: NeuralStunner
 Contributor: KeksDose
 --------------------
 - Fire particles used for the torches and braziers.
+
+-------------------
+Contributor: boris
+-------------------
+- Breakable glass script
 
 --------------------
 Other credits

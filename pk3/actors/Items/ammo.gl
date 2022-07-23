@@ -2,6 +2,17 @@
 // CRYSTALLINE AMMO //
 // ---------------- //
 
+// Large wand ammo -- copied from lights.pk3 to stop UDB from throwing
+// a bogus warning (it seems to do taht even when lights.pk3 is loaded)
+// as a resource, unfortunately.)
+pulselight LWANDAMMO
+{
+	color 1.0 1.0 0.0
+	size 16
+	secondarySize 18
+	interval 2.0
+}
+
 // Medium wand ammo
 Pulselight MWANDAMMO
 {

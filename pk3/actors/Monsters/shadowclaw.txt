@@ -7,6 +7,8 @@
 
 Actor Shadowclaw 10301
 { 
+  //$Category Monsters
+  //$Title Shadowclaw
   Health 250
   Height 64
   Radius 30
@@ -15,6 +17,7 @@ Actor Shadowclaw 10301
   PainChance 32
   Monster
   +NoBlood
+  +Ghost
   SeeSound "Shadowclaw/sight"
   DeathSound "Shadowclaw/death"
   PainSound "Shadowclaw/pain"
@@ -25,6 +28,7 @@ Actor Shadowclaw 10301
   Renderstyle Translucent
   Alpha 0.8
   HitObituary "$OB_SHADOWCLAW"
+  Tag "$FN_SHADOWCLAW"
   States
   {
   Spawn:

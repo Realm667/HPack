@@ -16,12 +16,13 @@ ACTOR Ghoul 30123
 	+DONTHURTSPECIES
 	Obituary "$OB_GHOUL"
 	HitObituary "$OB_GHOULH"
+	Tag "$FN_GHOUL"
 	DropItem "CrossbowAmmo" 84 5
-	SeeSound "monster/ghlsit" 
-	MeleeSound "monster/ghlhit" 
-	PainSound "monster/ghlpai" 
-	DeathSound "monster/ghldth" 
-	ActiveSound "monster/ghlact"
+	SeeSound "ghoul/sight"
+	MeleeSound "ghoul/hit"
+	PainSound "ghoul/pain"
+	DeathSound "ghoul/death"
+	ActiveSound "ghoul/active"
 	States 
 	{ 
 	Spawn: 
@@ -33,12 +34,12 @@ ACTOR Ghoul 30123
    Melee:
        GHUL E 0 A_Jump(128,5)
        GHUL E 6 A_FaceTarget
-       GHUL F 0 A_PlaySound("monster/ghlswg")
+       GHUL F 0 A_PlaySound("ghoul/swing")
        GHUL F 6 A_FaceTarget
        GHUL G 5 A_MeleeAttack
        Goto See
        GHUL R 6 A_FaceTarget
-       GHUL S 0 A_PlaySound("monster/ghlswg")
+       GHUL S 0 A_PlaySound("ghoul/swing")
        GHUL S 6 A_FaceTarget
        GHUL T 5 A_MeleeAttack
        Goto See
@@ -81,8 +82,8 @@ ACTOR ToxinShot
    PROJECTILE
 //   +THRUGHOST
    +FLOATBOB
-   Seesound "weapons/skulfi"
-   DeathSound "weapons/bloodx"
+   Seesound "ghoul/missilefire"
+   DeathSound "ghoul/missilehit"
    States
    {
    Spawn:
@@ -102,15 +103,17 @@ ACTOR ToxinCloud : PoisonCloud
    Height 48
    DamageType "Poison"
    RENDERSTYLE translucent
-   ReactionTime 20
+   ReactionTime 7
    ALPHA 0.67
-   Seesound "weapons/poof1"
    States
    {
    Spawn:
-      GGAS ABCDEFGFD 5 A_PoisonBagDamage
+      GGAS AB 5
+      GGAS C 0 A_PlaySound("ghoul/poof")
+   BadGas:
+      GGAS CDEFGFD 5 A_PoisonBagDamage
       GGAS A 0 A_Countdown
-      goto Spawn+2
+      Loop
    Death:
       GGAS C 5 A_FadeOut(0.10)
       GGAS C 0 A_PoisonBagDamage
@@ -155,4 +158,6 @@ Actor GhoulGhost : Ghoul 32123
 	+GHOST
 	RenderStyle Translucent
 	Alpha 0.4
+	Obituary "$OB_GHAST"
+	HitObituary "$OB_GHASTH"
 }

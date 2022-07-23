@@ -18,19 +18,16 @@ Actor RedFlare : TorchFlareBase
   {
   Spawn:
     RFLR A -1 Bright
-    //RFLR B 1 Bright
     Stop
   }
 }
 
-/* [Blue Shadow] Currently not used
 Actor BlueFlare : RedFlare
 {
   States
   {
   Spawn:
     RFLB A -1 Bright
-    //RFLB B 1 Bright
     Stop
   }
 }
@@ -40,8 +37,7 @@ Actor GreenFlare : RedFlare
   States
   {
   Spawn:
-    RFLG A -1 Bright
-    //RFLG B 1 Bright
+    RFLG B -1 Bright
     Stop
   }
 }
@@ -52,11 +48,73 @@ Actor YellowFlare : RedFlare
   {
   Spawn:
     RFLY A -1 Bright
-    //RFLY B 1 Bright
     Stop
   }
 }
-*/
+
+Actor RedFlareFade : RedFlare
+{
+  Alpha 0
+  States
+  {
+  Spawn:
+    RFLR A 0 Bright
+    Goto Fade
+  Fade:
+    "####" "##########" 1 Bright A_FadeIn(0.05)
+    "####" "##########" 1 Bright A_FadeOut(0.05)
+    Stop
+  }
+}
+
+Actor BlueFlareFade : RedFlareFade
+{
+  States
+  {
+  Spawn:
+    RFLB A 0 Bright
+    Goto Fade
+  Fade:
+    "####" "##########" 1 Bright A_FadeIn(0.1) // blue is a bit too dark at 0.5
+    "####" "##########" 1 Bright A_FadeOut(0.1)
+    Stop
+  }
+}
+
+Actor GreenFlareFade : RedFlareFade
+{
+  States
+  {
+  Spawn:
+    RFLG B 0 Bright
+    Goto Fade
+  }
+}
+
+Actor YellowFlareFade : RedFlareFade
+{
+  States
+  {
+  Spawn:
+    RFLY A 0 Bright
+    Goto Fade
+  }
+}
+
+Actor RainbowFlare : RedFlare
+{
+  States
+  {
+  Spawn:
+    TNT1 A 0 NoDelay A_Jump(256, 1, 2, 3, 4)
+  Rrrrrrrrrrainbows:
+    TNT1 A 10 Bright A_SpawnItemEx("RedFlareFade", 0, 0, 0, 0, 0, 0, 0, SXF_CLIENTSIDE)
+    TNT1 A 10 Bright A_SpawnItemEx("BlueFlareFade", 0, 0, 0, 0, 0, 0, 0, SXF_CLIENTSIDE)
+    TNT1 A 10 Bright A_SpawnItemEx("GreenFlareFade", 0, 0, 0, 0, 0, 0, 0, SXF_CLIENTSIDE)
+    TNT1 A 10 Bright A_SpawnItemEx("YellowFlareFade", 0, 0, 0, 0, 0, 0, 0, SXF_CLIENTSIDE)
+    Loop
+  }
+}
 
 Actor Flare_Red_A1B : TorchFlareBase
 {
@@ -522,3 +580,72 @@ ACTOR HPZFireBullUnlit : RandomSpawner
 	DropItem "ZFireBullUnlitNew"
 }
 */
+
+// ye olde magick torche
+
+actor TorchStarGreen {
+  +MISSILE
+  +NOGRAVITY
+  +NOBLOCKMAP
+  +NOINTERACTION
+  +FORCEXYBILLBOARD
+  -SOLID
+  Radius 0
+  Height 0
+  RenderStyle Add
+  Alpha 1.0
+  Scale 0.2
+  States
+  {
+  Spawn:
+    SKFX A 1 Bright A_FadeOut(0.1)
+    SKFX A 1 Bright A_SetScale(scalex + 0.033)
+    Loop
+  }
+}
+
+actor TorchStarBlue   : TorchStarGreen { translation "209:224=185:200" }
+actor TorchStarWhite  : TorchStarGreen { translation "209:224=0:35"    }
+actor TorchStarRed    : TorchStarGreen { translation "209:224=145:159" }
+actor TorchStarOrange : TorchStarGreen { translation "209:224=112:127" }
+actor TorchStarPurple : TorchStarGreen { translation "209:224=169:176" }
+
+actor TorchStarRandom : TorchStarGreen {
+  States
+  {
+  Spawn:
+    TNT1 A 0 NoDelay A_Jump(256, 1, 2, 3, 4, 5, 6)
+    TNT1 A 1 A_SpawnItemEx ("TorchStarGreen" , 0, 0, 0, velx, vely, velz, angle, SXF_CLIENTSIDE) Stop
+    TNT1 A 1 A_SpawnItemEx ("TorchStarBlue"  , 0, 0, 0, velx, vely, velz, angle, SXF_CLIENTSIDE) Stop
+    TNT1 A 1 A_SpawnItemEx ("TorchStarWhite" , 0, 0, 0, velx, vely, velz, angle, SXF_CLIENTSIDE) Stop
+    TNT1 A 1 A_SpawnItemEx ("TorchStarRed"   , 0, 0, 0, velx, vely, velz, angle, SXF_CLIENTSIDE) Stop
+    TNT1 A 1 A_SpawnItemEx ("TorchStarOrange", 0, 0, 0, velx, vely, velz, angle, SXF_CLIENTSIDE) Stop
+    TNT1 A 1 A_SpawnItemEx ("TorchStarPurple", 0, 0, 0, velx, vely, velz, angle, SXF_CLIENTSIDE) Stop
+  }
+}
+
+Actor HPMagicWallTorch : HPSwitchableLightSource 16131
+{
+  //$Category Lights
+  //$Title Wall Torch (Magic)
+  //$Sprite WTRHD0
+  Radius 6
+  Height 16
+  +NoGravity
+  +FixMapThingPos
+  -Solid
+  States
+  {
+  Normal:
+    WTRH ABC 6 Bright // [XA] TODO: this, I guess. :P
+    Loop
+  Particles:
+    WTRH D 0 A_SpawnItemEx("RainbowFlare", 0, 0, 72, 0, 0, 0, 0, SXF_SETMASTER | SXF_CLIENTSIDE)
+  SpawnFire:
+    WTRH D 1 A_SpawnItemEx("TorchStarRandom", frandom(-2, 2), frandom(-2, 2), frandom(67, 69), 0.001 * Random(10, 200), 0.001 * Random(10, 200), 0.001 * Random(1000, 2000), 0, SXF_CLIENTSIDE)
+    Loop
+  Inactive:
+    WTRH D 0
+    Goto Super::Inactive
+  }
+}

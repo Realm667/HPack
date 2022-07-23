@@ -1,0 +1,51 @@
+/*
+ * HPack MAPINFO: DoomEdNums
+ */
+
+DoomEdNums
+{
+	10010 = RainSpawner
+
+	11101 = HPFountainBlue
+	11102 = HPFountainRed
+	11103 = HPFountainBlack
+	11104 = HPFountainGreen
+	11105 = HPFountainOlive
+	11106 = HPFountainPurple
+	11107 = HPFountainWhite
+	11108 = HPFountainYellow
+	11109 = HPFountainGold
+	11110 = HPFountainBrown
+	11111 = HPFountainFire
+	11112 = HPFountainIceGray
+	11113 = HPFountainIceBlue
+
+	11201 = HPFountainLineBlue
+	11202 = HPFountainLineRed
+	11203 = HPFountainLineBlack
+	11204 = HPFountainLineGreen
+	11205 = HPFountainLineOlive
+	11206 = HPFountainLinePurple
+	11207 = HPFountainLineWhite
+	11208 = HPFountainLineYellow
+	11209 = HPFountainLineGold
+	11210 = HPFountainLineBrown
+	11211 = HPFountainLineFire
+	11212 = HPFountainLineIceGray
+	11213 = HPFountainLineIceBlue
+
+	11250 = HPVortex
+	11251 = HPVortexRockSpawner
+
+	16516 = ArchWizard
+
+	// Deprecated actors; these will be removed once maps are updated to not use 'em.
+	3106 = DragonFamiliar
+	14563 = ShadowDragon
+	16249 = BloodLich
+	16518 = ChaosWyvern
+	16601 = HPBeastStrong
+	17051 = HPSuperGargoyle
+	19273 = JumpClink
+	20002 = HornBeast
+}

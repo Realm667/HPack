@@ -1,6 +1,7 @@
 ACTOR BBarrel : Barrel replaces Barrel
 {
 	Health 50
+	Mass 10000000
 	+VULNERABLE
 	+NOBLOOD
 	DeathSound "woodenbarrel/death"

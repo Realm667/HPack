@@ -34,95 +34,6 @@ actor HPBeast : Beast replaces Beast
 	}
 }
 
-actor HPBeastStrong : HPBeast 16601
-{
-	//$Category Monsters
-	//$Title Weredragon Brute
-	+NORADIUSDMG
-	+DONTHURTSPECIES
-	Health 1200
-	Scale 1.4
-	Speed 18
-	Mass 1000
-	Radius 48
-	Height 128
-	Translation "66:136=%[0.0, 0.0, 0.0]:[2.0, 0.4, 0.2]", "210:217=55:62"
-	Obituary "$OB_BEASTSTRONG"
-	States
-	{
-	Missile:
-		TNT1 A 0 A_JumpIfHealthLower (250, "Missile2") 
-		TNT1 A 0 A_Jump(90, 5)
-		BEAS H 6 A_FaceTarget
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -8)
-		BEAS I 6 Bright A_CustomMissile ("BeastBall2", 80, 0, 8)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 0)
-		Goto See
-		BEAS H 4 A_FaceTarget
-		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, -16)
-		BEAS I 0 Bright A_FaceTarget
-		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, -8)
-		BEAS I 0 Bright A_FaceTarget
-		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 0)
-		BEAS I 0 Bright A_FaceTarget
-		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 8)
-		BEAS I 0 Bright A_FaceTarget
-		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 16)
-		BEAS I 0 Bright A_FaceTarget
-		BEAS I 4 Bright A_CustomMissile ("BeastBall2", 80, 0, 32)
-		Goto See
-	Missile2:
-		TNT1 A 0 A_Jump(90, 15)
-		BEAS H 6 A_FaceTarget
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		BEAS I 2 Bright A_CustomMissile ("BeastBall2", 80, 0, random(-8,8))
-		Goto See
-		BEAS H 16 A_FaceTarget
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -64)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 64)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -56)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 56)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -48)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 48)    
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -40)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 40)    
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -32)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 32)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -24)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 24)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -16)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 16)    
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, -8)
-		BEAS I 0 Bright A_CustomMissile ("BeastBall2", 80, 0, 8)    
-		BEAS I 6 Bright A_CustomMissile ("BeastBall2", 80, 0, 0)
-		Goto See
-	}
-}
-
-ACTOR BeastBall2 : BeastBall
-{
-	Speed 15
-	Damage 5
-	Scale 1.25
-	States
-	{
-	Death:
-        FRB1 DEFGH 4 A_Explode(16,64)
-        Stop
-	}
-}
-
 actor HPChicken : Chicken replaces Chicken 16602
 {
 	//$Category Monsters
@@ -335,6 +246,7 @@ actor HPSnakeWeak : HPSnake 16603
 	Scale 0.8
 	DropItem "GoldWandAmmo", 84, 10
 	Obituary "$OB_SNAKEWEAK"
+	Tag "$FN_SNAKEWEAK"
 	States
 	{
 	Missile:
@@ -362,15 +274,19 @@ actor HPSnakeStrong : HPSnake 16604
 	Scale 1.2
 	DropItem "BlasterAmmo", 84, 10
 	Obituary "$OB_SNAKESTRONG"
+	Tag "$FN_SNAKESTRONG"
 	States
 	{
 	Missile:
-    	SNKE F 10 A_FaceTarget
+		SNKE F 10 A_FaceTarget
 		SNKE F 0 bright A_PlaySound("array/firep")
-    	SNKE F 10 bright A_CustomMissile("ForceShot3", 56)
+		SNKE F 0 A_FaceTarget
 		SNKE F 10 bright A_CustomMissile("ForceShot3", 56)
+		SNKE F 0 A_FaceTarget
 		SNKE F 10 bright A_CustomMissile("ForceShot3", 56)
-    	Goto See
+		SNKE F 0 A_FaceTarget
+		SNKE F 10 bright A_CustomMissile("ForceShot3", 56)
+		Goto See
 	}
 }
 
@@ -552,29 +468,6 @@ actor HPHereticImpLeader : HereticImpLeader replaces HereticImpLeader
 	Raise:
 		IMPX HG 5
 		Goto See
-	}
-}
-
-ACTOR HPSuperGargoyle : HPHereticImp 17051
-{
-	//$Category Monsters
-	//$Title Gargoyle Lord
-	Health 120
-	Speed 13
-	Scale 1.5
-	States
-	{
-	Melee:
-		IMPX DE 6 A_FaceTarget
-		IMPX F 6 A_CustomComboAttack("HereticImpBall", 32, random[ImpMsAttack2](8,15), "himp/leaderattack")
-		Goto See
-	Missile:
-		IMPX A 0 A_Jump(192, "Melee")
-		IMPX A 10 A_FaceTarget
-		IMPX B 6 A_SkullAttack(12)
-		IMPX CBAB 6
-		IMPX A 0 A_Jump(192, "Melee")
-		Goto Missile+2
 	}
 }
 

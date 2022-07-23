@@ -1,0 +1,111 @@
+/*
+ * HPack MAPINFO: Episode 4 -- The Astral Plane
+ */
+
+Episode H4M1
+{
+	Name = "The Astral Plane"
+	Optional
+}
+Cluster 104 {}
+
+adddefaultmap
+{
+	Cluster   = 104
+	exitpic   = "$IN_E4B"
+	enterpic  = "$IN_E4B"
+	sky1      = "CSSKY", 0.0
+	lightmode = 8
+	grinding_polyobj
+	fallingdamage
+	smoothlighting
+}
+
+map H4M1 "Ethereal Ruins"
+{
+	author   = "ShadesMaster & Xaser"
+	levelnum = 41
+	music    = M_H4M1
+	next     = H4M2
+	exitpic  = "$IN_E4A"
+	enterpic = "$IN_E4A"
+}
+
+map H4M2 "The Bloody Path"
+{
+	author     = "Archi & Xaser"
+	levelnum   = 42
+	music      = M_H4M2
+	next       = H4M3
+	secretnext = H4MX
+}
+
+map H4M3 "Ziggurat of Sorrow"
+{
+	author   = "ShadesMaster"
+	levelnum = 44
+	music    = M_H4M3
+	next     = H4M4
+	fade     = "0 05 10"
+	lightmode = 0
+}
+
+Map H4M4 "Vortex"
+{
+	author   = "ShadesMaster & Xaser"
+	levelnum = 45
+	music    = M_H4M4
+	next     = H4M5
+	fade     = "57 00 7F"
+	gravity  = 300
+}
+
+map H4M5 "Valley of the Mists"
+{
+	author   = "Blackfish & ShadesMaster"
+	levelnum = 46
+	music    = M_H4M5
+	next     = H4M6
+	sky1     = "ZZZWHITE", 0.0
+	fade     = "FF FF FF"
+	lightmode = 0
+}
+
+map H4M6 "Astral Crypt"
+{
+	author   = "qwerqsar" // [XA] Maybe. I had to fish this author name out of an old textfile.
+	levelnum = 43
+	music    = M_H4M6
+	next     = H4M7
+	fade     = "20 20 20"
+}
+
+map H4M7 "The Dark Rift"
+{
+	author    = "Icytux"
+	levelnum  = 47
+	music     = M_H4M7
+	next      = H4M8
+	sky1      = "VOID", 0.8
+	skyrotate = 0.4, 0.3, 0.2
+}
+
+map H4M8 "The Void Temple"
+{
+	author   = "Gez"
+	levelnum = 48
+	music    = M_H4M8
+	next     = Endtitle
+	sky1     = "BSSKY", 0.0
+	monsterfallingdamage
+	nointermission
+}
+
+map H4MX "At the Back of My Head"
+{
+	author   = "Pyroscourge"
+	levelnum = 49
+	music    = M_H4MX
+	next     = H4M3
+	sky1     = "SKY3", 0.0
+}

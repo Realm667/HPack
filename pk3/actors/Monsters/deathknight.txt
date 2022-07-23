@@ -2,161 +2,57 @@ Actor Deathknight : Knight 30114
 {
   //$Category Monsters
   //$Title Death Knight
-  Health 500
+  Health 600
   Radius 24
   Height 72
   Mass 700
-  Speed 8
+  Speed 7
   PainChance 64
-  MeleeRange 56
+  MeleeRange 128
   DropItem "SkullRodAmmo" 84 20
   Obituary "$OB_DEATHKNIGHTH"
-  SeeSound "monster/dknsit"
-  PainSound "monster/dknpai"
-  DeathSound "monster/dkndth"
-  ActiveSound "monster/dknact"
+  Tag "$FN_DEATHKNIGHT"
+  SeeSound "deathknight/sight"
+  PainSound "deathknight/pain"
+  DeathSound "deathknight/death"
+  ActiveSound "deathknight/active"
   States
   {
   Spawn:
-    DKNT A 0
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldLower", 1)
-  ActualSpawn:
     DKNT AB 10 A_Look
     Loop
   See:
-    DKNT A 0 A_JumpIfInventory("DeathKnightShieldUp", 1, "ShieldSee")
-    DKNT A 3 A_Chase
-    DKNT A 2 A_Chase
-    DKNT B 3 A_Chase
-    DKNT B 2 A_Chase
-    DKNT C 3 A_Chase
-    DKNT C 2 A_Chase
-    DKNT D 3 A_Chase
-    DKNT D 2 A_Chase
+    DKNT AABBCCDD 2 A_Chase
     Loop
-  ShieldSee: //This is the worst thing in the world. This code is actually Hitler
-    DKNT P 1 A_Chase
-    DKNT P 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT P 1
-    DKNT P 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT P 1
-    DKNT P 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT P 1 A_Chase
-    DKNT P 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT P 1
-    DKNT P 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT P 1
-    DKNT P 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT Q 1 A_Chase
-    DKNT Q 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT Q 1
-    DKNT Q 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT Q 1
-    DKNT Q 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT Q 1 A_Chase
-    DKNT Q 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT Q 1
-    DKNT Q 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT Q 1
-    DKNT Q 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT R 1 A_Chase
-    DKNT R 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT R 1
-    DKNT R 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT R 1
-    DKNT R 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT R 1 A_Chase
-    DKNT R 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT R 1
-    DKNT R 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT R 1
-    DKNT R 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT S 1 A_Chase
-    DKNT S 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT S 1
-    DKNT S 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT S 1
-    DKNT S 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT S 1 A_Chase
-    DKNT S 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT S 1
-    DKNT S 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT S 1
-    DKNT S 0 A_JumpIfArmorType("DeathKnightArmor", 1)
-    Goto ShieldDown
-    DKNT S 0 A_JumpIfCloser(600, 2) //Lower shield when further away
-    DKNT S 0 A_GiveInventory("DeathKnightShieldLower", 1)
-    DKNT S 0
-    Goto See
   Melee:
-    // [Blue Shadow] If the shield was up by the time it enters its melee state,
-    // go to "Melee2" state
-    TNT1 A 0 A_JumpIfInventory("DeathKnightShieldUp", 1, "Melee2")
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldLower", 1)
+  Missile:
+    DKNT A 0 A_UnsetReflectiveInvulnerable
     DKNT E 6 A_FaceTarget
-    TNT1 A 0 A_Playsound("monster/dknswg")
+    DKNT F 0 A_Playsound("deathknight/swing")
     DKNT F random(4, 5) A_FaceTarget // [Blue Shadow] Randomized... because we can :P
     DKNT G 2 A_FaceTarget
     DKNT G 0 A_CustomMissile("DeathKnightWave", 28)
-    DKNT G 4 A_MeleeAttack
-    Goto See
-  Melee2:
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldLower", 1)
-    DKNT E 6 A_FaceTarget
-    TNT1 A 0 A_Playsound("monster/dknswg")
-    DKNT F random(4, 5) A_FaceTarget
-    DKNT G 2 A_FaceTarget
-    DKNT G 0 A_CustomMissile("DeathKnightWave", 28)
-    DKNT G 4 A_MeleeAttack
-    TNT1 A 0 A_Jump(128, "See") // [Blue Shadow] There's a chance to put the shield back up after the attack
-    TNT1 A 0 A_JumpIfTargetOutsideMeleeRange(1)
-    Goto See
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldRaise", 1)
-    Goto ShieldSee
-  Missile:
-    Stop //This deletes the state it inherits from the Undead Warrior
-  ShieldUp:
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldRaise", 1)
-    DKNT TTTT 2 A_FaceTarget
-    Goto See
-  ShieldDown:
-    DKNT H 4 A_GiveInventory("DeathKnightShieldLower", 1)
-    DKNT H 4 A_Pain
+    DKNT G 4 A_CustomMeleeAttack(5, "deathknight/hit")
     Goto See
   Pain:
     DKNT H 4
     DKNT H 4 A_Pain
-    DKNT H 0 A_JumpIfCloser(600, 1)
-    Goto See
     DKNT H 0 A_Jump(192, "ShieldUp")
     Goto See
+  ShieldUp:
+    DKNT T 0 A_SetReflectiveInvulnerable
+    DKNT TTTT 2 A_FaceTarget
+  ShieldWalk:
+    DKNT PPQQRR 2 A_Chase("Melee", "")
+    DKNT SS 2 A_Chase("Melee", "Missile")
+    Loop
+  ShieldDown:
+    DKNT H 4 A_UnsetReflectiveInvulnerable
+    DKNT H 4 A_Pain
+    Goto See
   Death:
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldLower", 1)
     DKNT I 0 Bright A_CustomMissile("DKSword", 44, 32, -90, 0)
-    DKNT I 6 Bright A_CustomMissile("DKShield", 44, -32, 90, 0)
+    DKNT I 12 Bright A_CustomMissile("DKShield", 44, -32, 90, 0)
     DKNT J 6 Bright A_Scream
     DKNT K 6 Bright
     DKNT L 6 Bright A_NoBlocking
@@ -169,63 +65,35 @@ Actor Deathknight : Knight 30114
   }
 }
 
-Actor DeathKnightShieldUp : Inventory {}
-
-Actor DeathKnightArmor : BasicArmorPickup
-{
-  Armor.SaveAmount 150
-  Armor.SavePercent 60
-}
-
-// [Blue Shadow] These two items are used to make the code less cluttered
-Actor DeathKnightShieldLower : CustomInventory
-{
-  States
-  {
-  Pickup:
-    TNT1 A 0 A_TakeInventory("BasicArmor", 150)
-    TNT1 A 0 A_TakeInventory("DeathKnightShieldUp", 1)
-    TNT1 A 0 A_ChangeFlag("NoPain", 0)
-    TNT1 A 0 A_ChangeFlag("NoBlood", 0)
-    Stop
-  }
-}
-
-Actor DeathKnightShieldRaise : CustomInventory
-{
-  States
-  {
-  Pickup:
-    TNT1 A 0 A_GiveInventory("DeathKnightArmor", 1)
-    TNT1 A 0 A_GiveInventory("DeathKnightShieldUp", 1)
-    TNT1 A 0 A_ChangeFlag("NoPain", 1)
-    TNT1 A 0 A_ChangeFlag("NoBlood", 1)
-    Stop
-  }
-}
-
 Actor DeathKnightWave
 {
-  Radius 10
-  Height 10
+  Radius 8
+  Height 11
   Speed 16
-  Damage (Random(3,6))
+  Damage 0
   Projectile
   RenderStyle Add
   Alpha 0.8
   Scale 0.7
   +DontSplash
   +Ripper
-  SeeSound "weapons/gntini"
-  DeathSound "weapons/devexp"
+  SeeSound "deathknight/fire"
+  DeathSound "deathknight/wavehit"
+  DamageType "DeathKnightWave"
   States
   {
   Spawn:
-    DKWV AAA 1 Bright A_SpawnItemEx("DeathKnightWaveTrail", 0, 0, 0, 0, 0, 0, 0, 128)
-    DKWV A 0 Bright A_FadeOut(0.25)
+    DKWV A 0 Bright NoDelay A_PlaySound("deathknight/wave", CHAN_6, 1.0, 1)
+  SpawnLoop:
+    DKWV A 0 Bright A_Explode(Random(3,6), 24, 0, 0, 24)
+    DKWV A 1 Bright A_SpawnItemEx("DeathKnightWaveTrail", 0, 0, 0, 0, 0, 0, 0, 128)
     Loop
   Death:
-    TNT1 A 0
+    TNT1 A 0 A_StopSound(CHAN_6)
+    TNT1 A 0 A_SpawnItemEx("DeathKnightWaveTrail", 0, 0, 0, 0, 0, 2.0)
+    TNT1 A 0 A_SpawnItemEx("DeathKnightWaveTrail", 0, 0, 0, 0, 0, 1.0)
+    TNT1 A 0 A_SpawnItemEx("DeathKnightWaveTrail", 0, 0, 0, 0, 0,-1.0)
+    TNT1 A 0 A_SpawnItemEx("DeathKnightWaveTrail", 0, 0, 0, 0, 0,-2.0)
     Stop
   }
 }
@@ -256,7 +124,7 @@ Actor DeathKnightWaveTrail
 /*Actor DeathKnightPuff
 {
   RenderStyle Add
-  SeeSound "monster/dknhit"
+  SeeSound "deathknight/hit"
 //  +BLOODLESSIMPACT
   +NOBLOCKMAP
   +NOGRAVITY

@@ -3,126 +3,121 @@
 
 [enu default]
 
+// Maps
+
+MAP_AUTHOR_FORMAT = "by %s";
+
 // Items & weapons
 
-TXT_WPNSTAFF = "ELVEN STAFF";
-TXT_WPNWAND = "ELVEN WAND"; // not "Gold Wand," since it's referred to as the "Elvenwand" in-game.
-TXT_WPNDSPARILS = "HAND OF D'SPARIL";
-TXT_WPNSUNSTAFF = "LIGHTBRINGER";
-TXT_WPNSTAFFCHAOS = "STAFF OF CHAOS";
-TXT_WPNPOLYMORPH = "POLYMORPH WAND";
+TXT_WPNSTAFF = "Elven Staff";
+TXT_WPNWAND = "Elven Wand"; // not "Gold Wand," since it's referred to as the "Elvenwand" in-game.
+TXT_WPNDSPARILS = "Hand of D'sparil";
+TXT_WPNSUNSTAFF = "Lightbringer";
+TXT_WPNSTAFFCHAOS = "Staff of Chaos";
+TXT_WPNPOLYMORPH = "Polymorph Wand";
 
-TXT_AMMOCHAOS1 = "CHAOS RUNE";
-TXT_AMMOCHAOS2 = "CHAOS SIGIL";
-TXT_AMMOCHAOS3 = "CHAOS GLYPH";
-TXT_AMMOSUNSTAFF1 = "SUN STONE";
-TXT_AMMOSUNSTAFF2 = "SOLAR PRISM";
-TXT_AMMOSUNSTAFF3 = "RADIANT GEM";
-TXT_AMMOMORPH1 = "PETRIFIED ACORN";
-TXT_AMMOMORPH2 = "PILE OF PETRIFIED ACORNS";
-TXT_AMMOMORPH3 = "PETRIFIED ACORNS";
+TXT_AMMOCHAOS1 = "Chaos Rune";
+TXT_AMMOCHAOS2 = "Chaos Sigil";
+TXT_AMMOCHAOS3 = "Chaos Glyph";
+TXT_AMMOSUNSTAFF1 = "Sun Stone";
+TXT_AMMOSUNSTAFF2 = "Solar Prism";
+TXT_AMMOSUNSTAFF3 = "Radiant Gem";
+TXT_AMMOMORPH1 = "Petrified Acorn";
+TXT_AMMOMORPH2 = "Pile of Petrified Acorns";
+TXT_AMMOMORPH3 = "Petrified Acorns";
 
-TXT_AMMOGOLDWAND3 = "CRYSTAL GEM";
-TXT_AMMOCROSSBOW3 = "BUNDLE OF ETHEREAL ARROWS";
-TXT_AMMOBLASTER3 = "POWER ORB";
-TXT_AMMOSKULLROD3 = "MEDIAN RUNES";
-TXT_AMMOPHOENIXROD3 = "BLAZE ORB";
-TXT_AMMOMACE3 = "GREATER MACE SPHERE";
+TXT_AMMOGOLDWAND3 = "Crystal Gem";
+TXT_AMMOCROSSBOW3 = "Bundle of Ethereal Arrows";
+TXT_AMMOBLASTER3 = "Power Orb";
+TXT_AMMOSKULLROD3 = "Median Runes";
+TXT_AMMOPHOENIXROD3 = "Blaze Orb";
+TXT_AMMOMACE3 = "Greater Mace Sphere";
 
-TXT_ARTISUPERHEALTH = "CRYSTAL PHILTER";
-TXT_ARTIJUMP = "BOOTS OF JUMPING";
-TXT_ARTITOMEOFMIGHT = "TOME OF MIGHT";
-TXT_ARTIMASTERSCROLL = "SCROLL OF THE MASTER";
-TXT_ARTIWANDCRYSTAL = "ELYSIUM CRYSTAL"; // slight renaming on my part :P
-TXT_ARTIFIREWAVE = "FIRESTORM RUNE"; // ditto
-TXT_ARTILICHSKULL = "LICH SKULL";
-TXT_ARTITALISMANDEPTHS = "TALISMAN OF THE DEPTHS";
-TXT_ARTIFIRERESISTANCE = "BLOOD OF THE SALAMANDER";
-TXT_ARTIREGENERATION = "RING OF REGENERATION";
-TXT_ARTIHELLFIRE = "SCROLL OF HELLFIRE";
-TXT_ARTIWRAITHHAND = "HAND OF THE WRAITH";
-TXT_ARTIOWLRING = "RING OF THE OWL";
-TXT_ARTIFORCEBRACERS = "BRACERS OF FORCE";
-TXT_ARTITERRORMASK = "MASK OF TERROR";
-TXT_ARTIEMERALDAMULET = "EMERALD AMULET";
-TXT_ARTIFROSTRESISTANCE = "BOOTS OF THE NORTH";
+TXT_ARTISUPERHEALTH = "Crystal Philter";
+TXT_ARTIJUMP = "Boots of Jumping";
+TXT_ARTITOMEOFMIGHT = "Tome of Might";
+TXT_ARTIMASTERSCROLL = "Scroll of the Master";
+TXT_ARTIWANDCRYSTAL = "Elysium Crystal"; // slight renaming on my part :P
+TXT_ARTIFIREWAVE = "Firestorm Rune"; // ditto
+TXT_ARTILICHSKULL = "Lich Skull";
+TXT_ARTITALISMANDEPTHS = "Talisman of the Depths";
+TXT_ARTIFIRERESISTANCE = "Blood of the Salamander";
+TXT_ARTIREGENERATION = "Ring of Regeneration";
+TXT_ARTIHELLFIRE = "Scroll of Hellfire";
+TXT_ARTIWRAITHHAND = "Hand of the Wraith";
+TXT_ARTIOWLRING = "Ring of the Owl";
+TXT_ARTIFORCEBRACERS = "Bracers of Force";
+TXT_ARTITERRORMASK = "Mask of Terror";
+TXT_ARTIEMERALDAMULET = "Emerald Amulet";
+TXT_ARTIFROSTRESISTANCE = "Boots of the North";
 
-TXT_GOTREDKEY = "RED KEY";
-TXT_FOODCHICKEN = "CHICKEN WING";
-TXT_FOODBREAD = "LOAF OF BREAD";
-TXT_FOODCHEESE = "SLICE OF CHEESE";
-TXT_FOODAPPLE1 = "GREEN APPLE";
-TXT_FOODAPPLE2 = "RED APPLE";
+TXT_GOTREDKEY = "Red Key";
+TXT_FOODCHICKEN = "Chicken Wing";
+TXT_FOODBREAD = "Loaf of Bread";
+TXT_FOODCHEESE = "Slice of Cheese";
+TXT_FOODAPPLE1 = "Green Apple";
+TXT_FOODAPPLE2 = "Red Apple";
 
 TXT_FIREWALLFAILED = "Cannot use underwater!";
 TXT_FORCEBRACERSFAILED = "Not enough runes!";
 
 // Locked Doors
 
-TXT_NEEDREDKEY = "YOU NEED A RED KEY TO OPEN THIS DOOR";
-TXT_NEEDBLUEKEYO = "YOU NEED A BLUE KEY TO ACTIVATE THIS OBJECT";
-TXT_NEEDGREENKEYO = "YOU NEED A GREEN KEY TO ACTIVATE THIS OBJECT";
-TXT_NEEDREDKEYO = "YOU NEED A RED KEY TO ACTIVATE THIS OBJECT";
-TXT_NEEDYELLOWKEYO = "YOU NEED A YELLOW KEY TO ACTIVATE THIS OBJECT";
+TXT_NEEDBLUEKEY = "\cCYou need a \cHBlue Key\cC to open this door";
+TXT_NEEDGREENKEY = "\cCYou need a \cDGreen Key\cC to open this door";
+TXT_NEEDYELLOWKEY = "\cCYou need a \cKYellow Key\cC to open this door";
+TXT_NEEDREDKEY = "\cCYou need a \cGRed Key\cC to open this door";
+TXT_NEEDBLUEKEYO = "\cCYou need a \cHBlue Key\cC to activate this object";
+TXT_NEEDGREENKEYO = "\cCYou need a \cDGreen Key\cC to activate this object";
+TXT_NEEDYELLOWKEYO = "\cCYou need a \cKYellow Key\cC to activate this object";
+TXT_NEEDREDKEYO = "\cCYou need a \cGRed Key\cC to activate this object";
 
-PD_ALL4 = "YOU NEED ALL FOUR KEYS TO OPEN THIS DOOR";
-PD_ALL4O = "YOU NEED ALL FOUR KEYS TO ACTIVATE THIS DOOR";
-PD_COOLCOLOR = "YOU NEED A GREEN OR BLUE KEY TO OPEN THIS DOOR";
-PD_COOLCOLORO = "YOU NEED A GREEN OR BLUE KEY TO ACTIVATE THIS OBJECT";
-PD_WARMCOLOR = "YOU NEED A RED OR YELLOW KEY TO OPEN THIS DOOR";
-PD_WARMCOLORO = "YOU NEED A RED OR YELLOW KEY TO ACTIVATE THIS OBJECT";
-PD_BOTHCOLORTYPE = "YOU NEED A COOL-COLORED KEY AND A WARM-COLORED KEY TO OPEN THIS DOOR";
-PD_BOTHCOLORTYPEO = "YOU NEED A COOL-COLORED KEY AND A WARM-COLORED KEY TO ACTIVATE THIS OBJECT";
-PD_ANYKEY = "YOU NEED A PRISMATIC KEY TO OPEN THIS DOOR";
-PD_ANYKEYO = "YOU NEED A PRISMATIC KEY TO ACTIVATE THIS OBJECT";
+PD_ALL4 = "\cCYou need \cJAll Four Keys\cC to open this door";
+PD_ALL4O = "\cCYou need \cJAll Four Keys\cC to activate this object";
+PD_COOLCOLOR = "\cCYou need a \cDGreen\cC or \cHBlue Key\cC to open this door";
+PD_COOLCOLORO = "\cCYou need a \cDGreen\cC or \cHBlue Key\cC to activate this object";
+PD_WARMCOLOR = "\cCYou need a \cGRed\cC or \cKYellow Key\cC to open this door";
+PD_WARMCOLORO = "\cCYou need a \cGRed\cC or \cKYellow Key\cC to activate this object";
+PD_BOTHCOLORTYPE = "\cCYou need a \cWCool-Colored Key\cC and a \cXWarm-Colored Key\cC to open this door";
+PD_BOTHCOLORTYPEO = "\cCYou need a \cWCool-Colored Key\cC and a \cXWarm-Colored Key\cC to activate this object";
+PD_ANYKEY = "\cCYou need a \cJPrismatic Key\cC to open this door";
+PD_ANYKEYO = "\cCYou need a \cJPrismatic Key\cC to activate this object";
 
 // Obituaries
 OB_ACOLYTE = "An Acolyte of Chaos was promoted for killing %o.";
 OB_ARCHWIZARD = "%o was no match for the Arch-Wizard.";
-OB_BEASTSHADOW = "%o was charred by a Shadow Dragon";
-OB_BEASTSTRONG = "%o was utterly crushed by a Weredragon Brute.";
 OB_BISHOP = "%o succumbed to the power of a Bishop of Chaos.";
 OB_BLOODLICH = "%o was reduced to a pile of ash by a Blood Lich.";
-OB_BORMERETH = "%o was incinerated by the rage of Bormereth.";
-OB_BORMERETHH = "%o was smashed by Bormereth.";
-OB_BUTCHER = "%o was mashed by a Butcher";
-OB_CHAMION = "%o was defeated by an Undead Champion.";
+OB_CHAMPION = "%o was defeated by an Undead Champion.";
 OB_CHAMPIONH = "%o was slaughtered by an Undead Champion.";
-OB_CHAOSWYVERN = "%o was cremated by the Chaos Wyvern.";
 OB_CULTIST = "%o was killed by a lowly Cultist.";
 OB_DARKLICH = "%o did not learn to flee the Dark Lich";
 OB_DEMON3 = "%o was blasted by a Magma Serpent.";
 OB_DEMON3H = "%o was chewed by a Magma Serpent.";
-OB_INVISIBLEWARRIOR = "%o was violated by an Invisible Warrior.";
 OB_DARKNESSRIFT = "%o overwhelmed by a Darkness Rift";
 OB_DARKNESSRIFTH = "%o was choked by a Darkness Rift";
 OB_DEATHKNIGHT = "%o thought he could battle a Deathknight and live.";
 OB_DEATHKNIGHTH = "A Deathknight hacked %o into pieces.";
 OB_DISCIPLE = "%o was smitten by an Apostle of Chaos.";
-OB_DRAGONFAMILIAR = "%o was cooked by a Dragon Familiar.";
 OB_FALLEN = "%o was burned by a Fallen.";
-OB_FELLBEAST = "%o was dissolved by a FellBeast's acid.";
-OB_FELLBEASTH = "%o was mauled by a FellBeast.";
 OB_FROSTIMP = "%o was rammed by a Frost Gargoyle.";
 OB_FROSTIMPH = "%o was frostbitten by a Gargoyle.";
 OB_FROSTIMPL =  "%o was frozen stiff by a Frost Gargoyle.";
 OB_GHOUL = "%o fell to a Ghoul's toxins.";
 OB_GHOULH = "%o was beaten to death by a Ghoul.";
+OB_GHAST = "%o was spooked by a Ghast.";
+OB_GHASTH = "%o was ripped apart by a Ghast.";
 OB_GUARDIAN = "%o was fried by a Guardian Cube.";
 OB_HELLROSE = "%o is six feet under.";
-OB_HORNBEAST = "%o was burned to a crisp by a Horn Beast.";
 OB_ICELICH = "%o was frozen by an Ice Lich";
 OB_INFERNODEMON = "%o was sent to burn in the fires of Hell for an eternity.";
 OB_NIGHTSHADE = "%o couldn't escape the Nightshade.";
-OB_KNIGHTARCHER = "%o was blazed by a Knight Archer.";
-OB_REIVERGHOST = "%o was charred by a reiver ghost.";
-OB_REIVERGHOSTH = "%o had %p soul devoured by a reiver ghost.";
 OB_SATYR = "%o was stung by a Satyr's arrow.";
 OB_SENTINEL = "%o was blasted away by a Sentinel.";
 OB_SHADOWBEAST = "%o was killed by a Shadow Beast.";
 OB_SHADOWCLAW = "%o was decapitated by a Shadowclaw.";
 OB_SKULLWIZARD = "%o succumbed to an Augur of Chaos's magic.";
-OB_SNAKEWEAK = "%o was singed by ophidian offspring.";
+OB_SNAKEWEAK = "%o was singed by an Ophidian offspring.";
 OB_SNAKESTRONG = "%o was shocked by the firepower of the Ophidian Lord.";
 OB_SONOFDSPARIL = "%o fell before one who claims to be a Son of D'Sparil.";
 OB_SQUIRREL = "%o was too nutty for %p own good.";
@@ -146,6 +141,37 @@ OB_MPSTAFFCHAOS = "%o could not hide from %k's chaotic energy.";
 OB_COSTSTAFFCHAOS = "%o succumbed to the forces of Chaos.";
 
 OB_HELLFIRE = "%o tried to walk through a wall of fire";
+
+// Friendly names for monsters
+FN_ACOLYTE = "Acolyte of Chaos";
+FN_ARCHWIZARD = "Arch-Wizard";
+FN_BISHOP = "Bishop of Chaos";
+FN_CHAMPION = "Undead Champion";
+FN_CULTIST = "Cultist";
+FN_DARKLICH = "Dark Lich";
+FN_DEMON3 = "Magma Serpent";
+FN_DEATHKNIGHT = "Deathknight";
+FN_DISCIPLE = "Apostle of Chaos";
+FN_FALLEN = "Fallen";
+FN_FROSTIMP = "Frost Gargoyle";
+FN_GHOUL = "Ghoul";
+FN_GUARDIAN = "Guardian Cube";
+FN_HELLROSE = "Hell Rose";
+FN_HELLROSEBRAMBLE = "Hell Rose Bramble";
+FN_ICELICH = "Ice Lich";
+FN_INFERNODEMON = "Inferno Demon";
+FN_NIGHTSHADE = "Nightshade";
+FN_SATYR = "Satyr";
+FN_SENTINEL = "Sentinel";
+FN_SHADOWBEAST = "Shadow Beast";
+FN_SHADOWCLAW = "Shadowclaw";
+FN_SKULLWIZARD = "Augur of Chaos";
+FN_SNAKEWEAK = "Ophidian Offspring";
+FN_SNAKESTRONG = "Ophidian Lord";
+FN_SONOFDSPARIL = "Son of D'Sparil";
+FN_SQUIRREL = "Squirrel";
+FN_WICKED = "Wicked";
+FN_WIZARD = "Disciple of Chaos";
 
 // Tags
 TAG_DSPARILSG = "Hand of D'Sparil";

@@ -1,0 +1,97 @@
+/*
+ * HPack MAPINFO: Episode 2 -- Beneath the Altar
+ */
+
+Episode H2M1
+{
+	Name = "Beneath the Altar"
+	Optional
+}
+Cluster 102 {}
+
+adddefaultmap
+{
+	Cluster   = 102
+	exitpic   = "$IN_E2"
+	enterpic  = "$IN_E2"
+	sky1      = "SKYTOP10", 0.0
+	lightmode = 8
+	grinding_polyobj
+	fallingdamage
+	smoothlighting
+}
+
+map H2M1 "Chapel of the Seas"
+{
+	author     = "ShadesMaster"
+	levelnum   = 21
+	music      = M_H2M1
+	next       = H2M2
+	secretnext = H2MX
+	lightmode = 0
+}
+
+map H2M2 "Dark Water"
+{
+	author   = "Serge Jaeken"
+	levelnum = 22
+	music    = M_H2M2
+	next     = H2M3
+	lightmode = 0
+	monsterfallingdamage
+}
+
+map H2M3 "Aquatemple"
+{
+	author   = "ShadesMaster"
+	levelnum = 23
+	music    = M_H2M3
+	next     = H2M4
+}
+
+map H2M4 "Icy Catacomb"
+{
+	author   = "ShadesMaster & Xaser"
+	levelnum = 24
+	music    = M_H2M4
+	next     = H2M5
+	fade     = "10 15 20"
+	lightmode = 0
+}
+
+map H2M5 "Serpent Residence"
+{
+	author   = "Archi"
+	levelnum = 25
+	music    = M_H2M5
+	next     = H2M6
+}
+
+map H2M6 "House of the Ancients"
+{
+	author   = "el zee"
+	levelnum = 26
+	music    = M_H2M6
+	next     = H2M7
+	lightmode = 0
+}
+
+map H2M7 "Asterion"
+{
+	author   = "el zee"
+	levelnum = 27
+	music    = M_H2M7
+	next     = Endtitle
+	lightmode = 0
+	nointermission
+}
+
+map H2MX "Crafting the Docks"
+{
+	author   = "Tormentor667"
+	levelnum = 29
+	music    = M_H2MX
+	next     = H2M2
+	sky1     = "DNIGHT", 0.0
+	lightmode = 0
+}

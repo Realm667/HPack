@@ -13,6 +13,7 @@ ACTOR Wicked 30133
 	+NOGRAVITY 
 	+FLOAT
 	Obituary "$OB_WICKED"
+	Tag "$FN_WICKED"
 	SeeSound "monster/wiksit" 
 	PainSound "monster/wikpai" 
 	DeathSound "monster/wikdth" 

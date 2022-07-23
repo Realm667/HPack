@@ -3,6 +3,7 @@ WARP texture wskulli2
 WARP texture wskullic
 WARP texture wskullie
 WARP texture wskullig
+WARP texture xskullig // non-glowing variant for E4M1 tunnel
 WARP texture wskullim
 WARP texture wskullin
 WARP texture wskulliq
@@ -200,6 +201,12 @@ switch mc_sw2 off sound Switch2 pic mc_sw1 tics 0
 
 switch METALSW1 on sound Switch1 pic METALSW2 tics 0
 switch METALSW2 off sound Switch2 pic METALSW1 tics 0
+
+switch BOOKPUZ1 on sound world/bookin pic BOOKPUZ2 tics 0
+switch BOOKPUZ2 off sound world/bookout pic BOOKPUZ1 tics 0
+
+switch BOOKPUZ3 on sound world/bookout pic BOOKPUZ4 tics 0
+switch BOOKPUZ4 off sound world/bookin pic BOOKPUZ3 tics 0
 
 
 /* Animation definition for Shadowcaster textures when used in Doom, Heretic, Hexen or Strife. */
