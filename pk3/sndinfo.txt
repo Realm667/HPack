@@ -571,6 +571,7 @@ Ambient/Stars1      STARS1
 Ambient/Stars2      STARS2
 Ambient/MagicTorch  MAGTORCH
 Ambient/Contraption CONTRAPT
+Ambient/BigMove     BIGMOVE
 
 ;=========================================================
 ;AMBIENT SOUND LISTING
