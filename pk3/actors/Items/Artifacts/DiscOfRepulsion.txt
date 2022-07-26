@@ -7,7 +7,7 @@ ACTOR HPArtiBlastRadius : ArtiBlastRadius replaces ArtiBlastRadius 10110
 	States
 	{
 	Spawn:
-		BLST ABCDEFGH 4 Bright
+		ABST ABCB 4 Bright
 		Loop
 	Use:
 		TNT1 A 0 A_Blast(0, 255, 255, 20.0, "BlastEffect2")
