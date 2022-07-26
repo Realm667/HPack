@@ -9,7 +9,7 @@ Actor ArtiRingOfRegeneration : PowerupGiver 19875
   Inventory.DefMaxAmount
   Powerup.Type Regeneration
   Powerup.Duration -60
-  Inventory.Icon "RRGNA0"
+  Inventory.Icon "ARTIRRGN"
   +Inventory.InvBar
   +FloatBob
   +CountItem
@@ -18,7 +18,7 @@ Actor ArtiRingOfRegeneration : PowerupGiver 19875
   States
   {
   Spawn:
-    RRGN BBBBCDDDDC 3 Bright
+    ARGN AAAABCCCCB 3 Bright
     Loop
   }
 }
