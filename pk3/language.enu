@@ -46,7 +46,7 @@ TXT_ARTIREGENERATION = "Ring of Regeneration";
 TXT_ARTIHELLFIRE = "Scroll of Hellfire";
 TXT_ARTIWRAITHHAND = "Hand of the Wraith";
 TXT_ARTIOWLRING = "Ring of the Owl";
-TXT_ARTIFORCEBRACERS = "Bracers of Force";
+TXT_ARTIAEGISWARD = "Aegis Ward";
 TXT_ARTITERRORMASK = "Mask of Terror";
 TXT_ARTIEMERALDAMULET = "Emerald Amulet";
 TXT_ARTIFROSTRESISTANCE = "Boots of the North";
@@ -59,7 +59,6 @@ TXT_FOODAPPLE1 = "Green Apple";
 TXT_FOODAPPLE2 = "Red Apple";
 
 TXT_FIREWALLFAILED = "Cannot use underwater!";
-TXT_FORCEBRACERSFAILED = "Not enough runes!";
 
 // Locked Doors
 
@@ -192,7 +191,7 @@ TAG_ARTIREGENERATION = "Ring of Regeneration";
 TAG_ARTIHELLFIRE = "Scroll of Hellfire";
 TAG_ARTIWRAITHHAND = "Hand of the Wraith";
 TAG_ARTIOWLRING = "Ring of the Owl";
-TAG_ARTIFORCEBRACERS = "Bracers of Force";
+TAG_ARTIAEGISWARD = "Aegis Ward";
 TAG_ARTITERRORMASK = "Mask of Terror";
 TAG_ARTIEMERALDAMULET = "Emerald Amulet";
 TAG_ARTIFROSTRESISTANCE = "Boots of the North";

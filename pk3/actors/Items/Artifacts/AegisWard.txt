@@ -1,0 +1,52 @@
+// ---------- //
+// AEGIS WARD //
+// ---------- //
+
+Actor ArtiAegisWard : CustomInventory 18936
+{
+	//$Category Artifacts
+	//$Title Aegis Ward
+  +FloatBob
+  +CountItem
+  +Inventory.InvBar
+  +Inventory.PickupFlash
+  +Inventory.FancyPickupSound
+  Inventory.DefMaxAmount
+  Inventory.Icon "ARTISHLD"
+  Inventory.PickupSound "Misc/P_PkUp"
+  Inventory.PickupMessage "$TXT_ARTIAEGISWARD"
+  Tag "$TAG_ARTIAEGISWARD"
+	States
+  {
+  Spawn:
+    ASHD ABCB 4 Bright
+    Loop
+  Use:
+    TNT1 A 0 A_GiveInventory("AegisPowerGiver", 1)
+    Stop
+  }
+}
+
+Actor PowerAegis : PowerProtection
+{
+  DamageFactor "Normal", 0.25
+}
+
+Actor AegisPowerGiver : PowerupGiver 
+{
+  +Inventory.AutoActivate
+  Powerup.Type Aegis
+  Powerup.Color Blue 0.1
+  Inventory.MaxAmount 0
+  Powerup.Duration -60
+  States
+  {
+  Spawn:
+    TNT1 A 1
+    Fail
+  }
+}
+
+// --------- //
+// END AEGIS //
+// --------- //
