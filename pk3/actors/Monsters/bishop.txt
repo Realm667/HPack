@@ -4,7 +4,6 @@ Actor HPBishop : Bishop replaces Bishop 30155
 	//$Title Bishop of Chaos
 	Species "Wizard"
 	Health 180
-	DropItem "ArtiSpeedBoots", 4, 0	
 	DropItem "SkullRodAmmo", 84, 10
 	BloodType "WizardPurpleBlood"
 	+NoBloodDecals

@@ -8,7 +8,6 @@
 
 addkeysection "Heretic Artifacts" heretic_keysection
 addmenukey "Boots of Jumping" "use ArtiHighJump"
-addmenukey "Boots of Speed" "use ArtiSpeedBoots"
 addmenukey "Chaos Device" "use ArtiTeleport"
 addmenukey "Fire Wave Rune" "use ArtiFireWave"
 addmenukey "Golden Crystal" "use ArtiWandCrystal"
