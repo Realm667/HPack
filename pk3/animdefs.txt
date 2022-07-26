@@ -313,6 +313,25 @@ pic SPININ13 tics 3
 pic SPININ14 tics 3
 pic SPININ15 tics 3
 
+// Scroll of the Master
+texture SPINMS0
+pic SPINMS0 tics 3
+pic SPINMS1 tics 3
+pic SPINMS2 tics 3
+pic SPINMS3 tics 3
+pic SPINMS4 tics 3
+pic SPINMS5 tics 3
+pic SPINMS6 tics 3
+pic SPINMS7 tics 3
+pic SPINMS8 tics 3
+pic SPINMS9 tics 3
+pic SPINMS10 tics 3
+pic SPINMS11 tics 3
+pic SPINMS12 tics 3
+pic SPINMS13 tics 3
+pic SPINMS14 tics 3
+pic SPINMS15 tics 3
+
 // Wraith
 WARP2 texture WRAIA1
 WARP2 texture WRAIA2A8
