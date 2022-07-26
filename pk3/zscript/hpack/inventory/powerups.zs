@@ -8,7 +8,7 @@ class PowerNoDrown : Powerup
 {
 	Default
 	{
-		Inventory.Icon "TDEPA0";
+		Inventory.Icon "ARTIDEEP";
 	}
 
 	override void DoEffect ()

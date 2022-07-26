@@ -13,11 +13,11 @@ actor ArtiDepthsTalisman : PowerupGiver 10111
   +FloatBob
   +Inventory.PickupFlash
   +CountItem
-  Inventory.Icon "TDEPB0"
+  Inventory.Icon "ARTIDEEP"
   states
   {
   Spawn:
-    TDEP A 1 Bright
+    ADEP A 1 Bright
     Loop
   }
 }
