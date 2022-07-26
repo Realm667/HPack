@@ -9,7 +9,7 @@ Actor ArtiScrollOfHellfire : CustomInventory 18765
   Inventory.PickupSound "misc/p_pkup"
   Inventory.PickupMessage "$TXT_ARTIHELLFIRE"
   Tag "$TAG_ARTIHELLFIRE"
-  Inventory.Icon HFSCA0
+  Inventory.Icon ARTIHFSC
   +Inventory.InvBar
   +Floatbob
   +CountItem
@@ -18,7 +18,7 @@ Actor ArtiScrollOfHellfire : CustomInventory 18765
   States
   {
   Spawn:
-    HFSC BCDC 6 Bright
+    AHFS ABCB 6 Bright
     Loop
   Use:
     TNT1 A 0 A_JumpIf(Waterlevel > 1, "Failed")

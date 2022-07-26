@@ -32,7 +32,7 @@ Actor ArtiTomeOfEternity : PowerupGiver 18937
 	States
 	{
 	Spawn:
-		TINF A 350
+		ATIN A 350
 		Loop
 	}
 }

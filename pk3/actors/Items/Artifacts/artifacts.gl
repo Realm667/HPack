@@ -43,9 +43,9 @@ Pointlight FIRESCROLL3
 
 Object ArtiScrollOfHellfire
 {
-	Frame HFSCB { Light FIRESCROLL1 }
-	Frame HFSCC { Light FIRESCROLL2 }
-	Frame HFSCD { Light FIRESCROLL3 }
+	Frame AHFSA { Light FIRESCROLL1 }
+	Frame AHFSB { Light FIRESCROLL2 }
+	Frame AHFSC { Light FIRESCROLL3 }
 }
 
 FlickerLight HELLFIRE

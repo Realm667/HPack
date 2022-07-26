@@ -9,7 +9,7 @@ Actor ArtiMaskOfTerror : PowerupGiver 18935
   Powerup.Duration -30
   Inventory.PickupMessage "$TXT_ARTITERRORMASK"
   Tag "$TAG_ARTITERRORMASK"
-  Inventory.Icon "MTRRA0"
+  Inventory.Icon "ARTIMTRR"
   +CountItem
   +Inventory.InvBar
   +FloatBob
@@ -17,7 +17,7 @@ Actor ArtiMaskOfTerror : PowerupGiver 18935
   States
   {
   Spawn:
-    MTRR BBBBBBBBBCDC 3 Bright
+    AMTR AAAAAAAAABCB 3 Bright
     Loop
   }
 }

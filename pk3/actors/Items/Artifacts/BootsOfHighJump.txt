@@ -20,7 +20,7 @@ actor ArtiHighJump : PowerupGiver 20003
 	States
 	{
 	Spawn:
-		JMPB A -1 bright
+		AJMP A -1 bright
 		Loop
 	}
 }
