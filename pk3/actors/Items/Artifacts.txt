@@ -11,3 +11,4 @@
 #include "actors/items/artifacts/bootsofthefirewalker.txt"
 #include "actors/items/artifacts/scrollofhellfire.txt"
 #include "actors/items/artifacts/masterscroll.txt"
+#include "actors/items/artifacts/maskofterror.txt"
