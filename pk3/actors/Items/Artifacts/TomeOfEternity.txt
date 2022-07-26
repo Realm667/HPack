@@ -1,0 +1,38 @@
+// ---------------- //
+// TOME OF ETERNITY //
+// ---------------- //
+
+Actor PowerEternity : PowerTimeFreezer
+{
+	Powerup.Duration -15
+	Inventory.Icon "SPININ0"
+}
+
+Actor ArtiTomeOfEternity : PowerupGiver 18937
+{
+	//$Category Artifacts
+	//$Title Tome of Eternity
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.INVBAR
+	+INVENTORY.PICKUPFLASH
+	+INVENTORY.FANCYPICKUPSOUND
+	+NOTIMEFREEZE
+
+	Inventory.Icon "ARTITINF"
+	Inventory.DefMaxAmount
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.UseSound "misc/invuse"
+	Inventory.PickupMessage "$TXT_ARTITOMEOFETERNITY"
+	Tag "$TAG_ARTITOMEOFETERNITY"
+
+	Powerup.Type Eternity
+	Powerup.Colormap 0.0, 0.0, 0.0, 1.0, 1.0, 1.0
+
+	States
+	{
+	Spawn:
+		TINF A 350
+		Loop
+	}
+}
