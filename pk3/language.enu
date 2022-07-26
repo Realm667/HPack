@@ -45,7 +45,7 @@ TXT_ARTIREGENERATION = "Ring of Regeneration";
 TXT_ARTIHELLFIRE = "Scroll of Hellfire";
 TXT_ARTIAEGISWARD = "Aegis Ward";
 TXT_ARTITERRORMASK = "Mask of Terror";
-TXT_ARTIEMERALDAMULET = "Emerald Amulet";
+TXT_ARTIFIREBOOTS = "Boots of the Firewalker";
 
 TXT_GOTREDKEY = "Red Key";
 TXT_FOODCHICKEN = "Chicken Wing";
@@ -186,4 +186,4 @@ TAG_ARTIREGENERATION = "Ring of Regeneration";
 TAG_ARTIHELLFIRE = "Scroll of Hellfire";
 TAG_ARTIAEGISWARD = "Aegis Ward";
 TAG_ARTITERRORMASK = "Mask of Terror";
-TAG_ARTIEMERALDAMULET = "Emerald Amulet";
+TAG_ARTIFIREBOOTS = "Boots of the Firewalker";

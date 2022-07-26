@@ -1,0 +1,28 @@
+// ----------------------- //
+// BOOTS OF THE FIREWALKER //
+// ----------------------- //
+
+Actor ArtiFireBoots : PowerupGiver 18794
+{
+	//$Category Artifacts
+	//$Title Boots of the Firewalker
+
+	Inventory.PickupFlash "PickupFlash"
+	Inventory.RespawnTics 4230
+	Inventory.Icon "ARTIFBOT"
+	Inventory.PickupMessage "$TXT_ARTIFIREBOOTS"
+	Tag "$TXT_ARTIFIREBOOTS"
+	Powerup.Type "FireBoots"
+
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.FANCYPICKUPSOUND
+
+	States
+	{
+	Spawn:
+		AFBT ABC 4 Light(FIREBOOTS)
+		Loop
+	}
+}
+

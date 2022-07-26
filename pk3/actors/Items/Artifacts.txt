@@ -8,6 +8,6 @@
 #include "actors/items/artifacts/elysiumcrystal.txt"
 #include "actors/items/artifacts/talismanofthedepths.txt"
 #include "actors/items/artifacts/ringofregeneration.txt"
-#include "actors/items/artifacts/emeraldamulet.txt"
+#include "actors/items/artifacts/bootsofthefirewalker.txt"
 #include "actors/items/artifacts/scrollofhellfire.txt"
 #include "actors/items/artifacts/masterscroll.txt"
