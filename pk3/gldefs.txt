@@ -29,6 +29,7 @@
 #include "actors/items/weapons/hellstaff.gl"
 #include "actors/items/weapons/phoenixrod.gl"
 #include "actors/items/weapons/dsparilsgloves.gl" 
+#include "zscript/hpack/inventory/royaldagger.gl"
 
 // Monsters
 #include "actors/monsters/acolyte.gl"

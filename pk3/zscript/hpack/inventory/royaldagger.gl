@@ -1,0 +1,15 @@
+object RoyalDagger
+{
+	frame DAGGA { light DISCIPLEBALL }
+}
+
+object RoyalDaggerPuff
+{
+	frame SBFXA { light DISCIPLEBALL }
+	frame SBFXB { light DISCIPLEBALL }
+	frame SBFXC { light DISCIPLEBALL }
+	frame SBFXD { light DISCIPLEBALL }
+	frame SBFXE { light DISCIPLEBALL_X1 }
+	frame SBFXF { light DISCIPLEBALL_X1 }
+	frame SBFXG { light DISCIPLEBALL_X2 }
+}

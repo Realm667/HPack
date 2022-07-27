@@ -39,6 +39,8 @@ DoomEdNums
 
 	16516 = ArchWizard
 
+	5214  = ArtiRoyalDagger
+
 	// Deprecated actors; these will be removed once maps are updated to not use 'em.
 	3106 = DragonFamiliar
 	14563 = ShadowDragon
