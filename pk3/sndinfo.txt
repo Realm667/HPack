@@ -132,6 +132,8 @@ artifacts/dagger/throw   DAGTHROW
 artifacts/dagger/hitwall FIRHIT
 artifacts/dagger/hitbody PHOHIT
 
+BlastRadius             blastr
+
 misc/ripslop			null
 
 // Weapon sounds end.
