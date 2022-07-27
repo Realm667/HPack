@@ -19,6 +19,7 @@ Actor SnowParticle
 	+MISSILE
 	+NOBLOCKMAP
 	+DONTSPLASH
+	+DONTBLAST
 
 	States
 	{

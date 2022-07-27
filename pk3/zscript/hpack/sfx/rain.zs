@@ -103,6 +103,7 @@ class RainDrop : Actor
 		YScale 1.6;
 
 		+DONTSPLASH
+		+DONTBLAST
 		+MISSILE
 		+NOBLOCKMAP
 	}
