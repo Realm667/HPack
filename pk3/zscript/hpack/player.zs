@@ -74,6 +74,13 @@ class HPackPlayer : HereticPlayer
 			footstepTics++;
 		}
 
+		// check if we're underwater. doesn't make
+		// sense to play footsteps while swimming. :P
+		// TODO: play liquid footstep sounds if partially submerged
+		if (waterlevel >= 3) {
+			return;
+		}
+
 		// check if player is on the ground.
 		// conveniently, floorz accounts for
 		// 3D floors, so this is dead simple.
