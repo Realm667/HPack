@@ -14,6 +14,7 @@ version "4.4.0"
 
 #include "zscript/hpack/inventory/powerups.zs"
 #include "zscript/hpack/inventory/royaldagger.zs"
+#include "zscript/hpack/inventory/shrines.zs"
 
 #include "zscript/hpack/sfx/fountains.zs"
 #include "zscript/hpack/sfx/rain.zs"

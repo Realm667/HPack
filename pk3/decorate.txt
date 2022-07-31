@@ -10,7 +10,6 @@
 #include "actors/misc/sfx_lights.txt"
 #include "actors/misc/teleportFX.txt"
 #include "actors/misc/sfx_blood.txt"
-#include "actors/misc/sfx_shrines.txt"
 #include "actors/misc/sfx_blackmagic.txt"
 #include "actors/misc/sfx_glass.txt"
 

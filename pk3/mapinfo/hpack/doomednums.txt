@@ -41,6 +41,29 @@ DoomEdNums
 
 	5214  = ArtiRoyalDagger
 
+	13001 = ShrineTeleport
+	13002 = ShrineEgg
+	13003 = ShrineTimeBomb
+	13004 = ShrineInvisibility
+	13005 = ShrineInvulnerability
+	13006 = ShrineHighJump
+	13007 = ShrineHealth
+	13008 = ShrineTomeOfPower
+	13009 = ShrineFly
+	13010 = ShrineFireBoots
+	13011 = ShrineSuperHealth
+	13012 = ShrineTomeOfMight
+	13013 = ShrineTorch
+	13014 = ShrineBlastRadius
+	13015 = ShrineRoyalDagger
+	13016 = ShrineDepthsTalisman
+	13017 = ShrineScrollOfHellfire
+	13018 = ShrineMasterScroll
+	13019 = ShrineMaskOfTerror
+	13020 = ShrineRingOfRegeneration
+	13021 = ShrineAegisWard
+	13022 = ShrineTomeOfEternity
+
 	// Deprecated actors; these will be removed once maps are updated to not use 'em.
 	3106 = DragonFamiliar
 	14563 = ShadowDragon
