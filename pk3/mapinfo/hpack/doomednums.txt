@@ -39,8 +39,8 @@ DoomEdNums
 
 	16516 = ArchWizard
 
-	5214  = ArtiRoyalDagger
-	5215  = ArtiScimitar
+	5213  = ArtiRoyalDagger
+	19998 = ArtiScimitar
 
 	13001 = ShrineTeleport
 	13002 = ShrineEgg

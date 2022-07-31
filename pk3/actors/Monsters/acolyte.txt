@@ -5,7 +5,7 @@ ACTOR DarkAcolyte : Bishop replaces Acolyte 30118
 	//$Title Acolyte of Chaos
 	Species "Wizard"
 	Health 180
-	DropItem "ArtiWandCrystal", 64, 1
+	DropItem "ArtiTimeBomb", 64, 1
 	DropItem "GoldWandAmmo", 84, 10
 	PainChance 170
 	Obituary "$OB_ACOLYTE"
