@@ -497,6 +497,26 @@ class ShrineRoyalDagger : ShrineBase
 	}
 }
 
+class ShrineScimitar : ShrineBase
+{
+	Default
+	{
+		// $Category HPack_Shrines
+		// $Title Scimitar of the Sages Shrine
+
+		ShrineBase.BoonItem "ArtiScimitar";
+		Translation "0:255=#[127,130,240]";
+	}
+
+	States
+	{
+	Spawn:
+	Active:
+		SSCI A -1 Bright;
+		loop;
+	}
+}
+
 class ShrineDepthsTalisman : ShrineBase
 {
 	Default

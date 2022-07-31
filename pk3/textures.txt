@@ -843,6 +843,12 @@ Sprite "SDAGA0", 32, 32
 	Sprite "ARTIDAGG", 9, 0
 }
 
+Sprite "SSCIA0", 32, 32
+{
+	Offset 16, 48
+	Sprite "ARTISCIM", 2, 0
+}
+
 Sprite "SDEPA0", 32, 32
 {
 	Offset 16, 48

@@ -132,6 +132,8 @@ artifacts/dagger/throw   DAGTHROW
 artifacts/dagger/hitwall FIRHIT
 artifacts/dagger/hitbody PHOHIT
 
+artifacts/scimitar       SCIMITAR
+
 BlastRadius             blastr
 
 misc/ripslop			null

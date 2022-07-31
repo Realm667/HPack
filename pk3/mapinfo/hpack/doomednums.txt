@@ -40,6 +40,7 @@ DoomEdNums
 	16516 = ArchWizard
 
 	5214  = ArtiRoyalDagger
+	5215  = ArtiScimitar
 
 	13001 = ShrineTeleport
 	13002 = ShrineEgg
@@ -63,6 +64,7 @@ DoomEdNums
 	13020 = ShrineRingOfRegeneration
 	13021 = ShrineAegisWard
 	13022 = ShrineTomeOfEternity
+	13023 = ShrineScimitar
 
 	// Deprecated actors; these will be removed once maps are updated to not use 'em.
 	3106 = DragonFamiliar

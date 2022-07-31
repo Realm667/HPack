@@ -41,6 +41,7 @@ TXT_ARTIMASTERSCROLL = "Scroll of the Master";
 TXT_ARTIWANDCRYSTAL = "Elysium Crystal"; // slight renaming on my part :P
 TXT_ARTIFIREWAVE = "Firestorm Rune"; // ditto
 TXT_ARTIROYALDAGGER = "Royal Dagger";
+TXT_ARTISCIMITAR = "Scimitar of the Sages";
 TXT_ARTITALISMANDEPTHS = "Talisman of the Depths";
 TXT_ARTIREGENERATION = "Ring of Regeneration";
 TXT_ARTIHELLFIRE = "Scroll of Hellfire";
@@ -136,6 +137,7 @@ OB_MPSQUIRREL = "%o was not a tough nut to crack for %k.";
 OB_MPSTAFFCHAOS = "%o could not hide from %k's chaotic energy.";
 OB_COSTSTAFFCHAOS = "%o succumbed to the forces of Chaos.";
 OB_MPROYALDAGGER = "%o was assassinated by %k's royal dagger.";
+OB_MPSCIMITAR = "%o was bisected by %k's scimitar.";
 
 OB_HELLFIRE = "%o tried to walk through a wall of fire";
 
@@ -183,6 +185,7 @@ TAG_ARTIMASTERSCROLL = "Scroll of the Master";
 TAG_ARTIWANDCRYSTAL = "Elysium Crystal";
 TAG_ARTIFIREWAVE = "Firestorm Rune";
 TAG_ARTIROYALDAGGER = "Royal Dagger";
+TAG_ARTISCIMITAR = "Scimitar of the Sages";
 TAG_ARTILICHSKULL = "Lich Skull";
 TAG_ARTITALISMANDEPTHS = "Talisman of the Depths";
 TAG_ARTIREGENERATION = "Ring of Regeneration";
