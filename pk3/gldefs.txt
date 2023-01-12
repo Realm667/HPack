@@ -53,8 +53,14 @@
 #include "actors/monsters/wicked.gl"
 #include "actors/monsters/wraith.gl"
 
+// [XA] TODO: move these to anotehr file somewhereish
+
 HardwareShader Texture "SCBLOOD9"
 {
 	Shader "Shaders/warp3.fs"
 }
 
+HardwareShader Texture "XADRIPP"
+{
+	Shader "shaders/warp-dripple.fs"
+}

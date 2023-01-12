@@ -211,3 +211,86 @@ class HPVortexRockSpawner : Actor
 		}
 	}
 }
+
+// Special FX for H4M8's final sky
+
+class HPSkySoul : Actor
+{
+	Default
+	{
+		+NOGRAVITY;
+		+THRUACTORS;
+		+DONTSPLASH;
+		+DONTBLAST;
+		+CLIENTSIDEONLY;
+		+FORCEYBILLBOARD;
+
+		Radius 1;
+		Height 1;
+	}
+
+	States
+	{
+	Spawn:
+		XSOL A 200 Bright;
+		XSOL # 1 Bright A_FadeOut(0.01);
+		Wait;
+	Precache:
+		XSOL ABCDE 0;
+		Stop;
+	}
+
+	override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+
+		self.frame = frandom(0,4);
+	}
+}
+
+class HPSkySoulSpawner : Actor
+{
+	enum ESkySoulSpawnerArgs
+	{
+		ARG_RADIUS,
+		ARG_FREQ
+	}
+
+	Default
+	{
+		//$Category HPack_SpecialEffects
+		//$Title Sky Souls
+		//$Sprite XSOLA0
+
+		//$NotAngled
+
+		//$Arg0 Radius
+		//$Arg0Default 128
+
+		//$Arg1 Frequency
+		//$Arg1Tooltip The lower the number, the more frequent the spawn rate.
+
+		Height 1;
+		Radius 1;
+
+		+CLIENTSIDEONLY
+		+NOINTERACTION
+	}
+
+	override void Tick ()
+	{
+		Super.Tick();
+
+		if (!isFrozen())
+		{
+			A_SpawnItemEx("HPSkySoul",
+				xofs: Random(-args[ARG_RADIUS], args[ARG_RADIUS]),
+				zofs: 2,
+				zvel: 8.0,
+				angle: Random(0, 359),
+				flags: SXF_CLIENTSIDE,
+				failchance: args[ARG_FREQ]
+			);
+		}
+	}
+}
