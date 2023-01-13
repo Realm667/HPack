@@ -36,6 +36,7 @@ DoomEdNums
 
 	11250 = HPVortex
 	11251 = HPVortexRockSpawner
+	11252 = HPSkySoulSpawner
 
 	16516 = ArchWizard
 

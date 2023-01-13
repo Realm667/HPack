@@ -4,7 +4,7 @@ ACTOR SuperHealthPotion : Health 5211
   //$Category Health and Armor
   Tag "Crystal Philter"
   Inventory.Amount 50
-  Inventory.PickupMessage "$TXT_ARTISUPERHEALTH"
+  Inventory.PickupMessage "$TXT_ARTIMEDIUMHEALTH"
   +FLOATBOB
   States
   {
