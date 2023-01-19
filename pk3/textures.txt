@@ -774,116 +774,139 @@ Sprite "WSKLA0", 20, 41
 Sprite "SPTNA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIPTN2", 7, 4
 }
 
 Sprite "SFLYX0", 32, 32
 {
 	Offset 16, 48
+Sprite "ARTISOAR", 2, 4
 }
 
 Sprite "SBOMA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIFBMB", 4, 4
 }
 
 Sprite "SINVA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIINVU", 5, 6
 }
 
 Sprite "SPBKA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIPWBK", 2, 3
 }
 
 Sprite "SNVSA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIINVS", 2, 3
 }
 
 Sprite "SEGGA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIEGGC", 6, 4
 }
 
 Sprite "SSPHA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTISPHL", 5, 2
 }
 
 Sprite "STRCA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTITRCH", 8, 3
 }
 
 Sprite "STLPA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIATLP", 1, 3
 }
 
 Sprite "SBSTA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIBLST", 2, 2
 }
 
 Sprite "SDAGA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIDAGG", 9, 0
 }
 
 Sprite "SSCIA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTISCIM", 2, 0
 }
 
 Sprite "SDEPA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIDEEP", 8, 0
 }
 
 Sprite "SFBTA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIFBOT", 3, 4
 }
 
 Sprite "SHFSA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIHFSC", 1, 3
 }
 
 Sprite "SJMPA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIJUMP", 2, 3
 }
 
 Sprite "SMSTA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIMAST", 4, 4
 }
 
 Sprite "SMTRA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIMTRR", 3, 3
 }
 
 Sprite "SRGNA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTIRRGN", 3, 4
 }
 
 Sprite "SSHLA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTISHLD", 3, 0
 }
 
 Sprite "STINA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTITINF", 2, 3
 }
 
 Sprite "STOMA0", 32, 32
 {
 	Offset 16, 48
+	Sprite "ARTITOME", 2, 3
 }
 
 Texture "MARBARC5", 256, 256
