@@ -280,6 +280,13 @@ Contributor: Gothic
 	- Death sprites (placeholders) edited from Powerslave.
 	- Sounds from Blizzard games (Starcraft, Diablo, Diablo 2).
 - RCKSLIDE.ogg and RCKSTOP.ogg (taken from Rune).
+- A couple of brightmaps.
+
+-------------------------
+Contributor: Stewboy
+-------------------------
+- Music for H3M6: "Trapped"
+
 -------------------------
 Contributor: qwerqsar
 -------------------------
