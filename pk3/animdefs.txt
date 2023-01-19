@@ -354,7 +354,7 @@ WARP2 texture WRAII0
 
 // Shrines
 warp2 texture SPTNA0
-warp2 texture SFLYA0
+warp2 texture SFLYX0
 warp2 texture SBOMA0
 warp2 texture SINVA0
 warp2 texture SPBKA0
