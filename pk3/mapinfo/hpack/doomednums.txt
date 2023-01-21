@@ -37,6 +37,8 @@ DoomEdNums
 	11250 = HPVortex
 	11251 = HPVortexRockSpawner
 	11252 = HPSkySoulSpawner
+	11253 = HPLecternBook
+	11255 = HPLecternBookPageFlip
 
 	16516 = ArchWizard
 

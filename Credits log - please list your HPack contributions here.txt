@@ -344,6 +344,11 @@ Contributor: boris
 -------------------
 - Breakable glass script
 
+-------------------------
+Contributor: zrrion the insect
+-------------------------
+- Lectern sprites
+
 --------------------
 Other credits
 --------------------

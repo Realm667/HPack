@@ -179,3 +179,42 @@ actor FogModern 9952
 	
 }
 
+actor HPLecternBook : SwitchableDecoration
+{
+	//$Category Decoration
+	//$Title Lectern w/Book
+
+	+SOLID
+	+USESPECIAL
+	radius 20
+	height 56
+
+	states
+	{
+	spawn:
+	inactive:
+		LECT A -1
+		Stop
+	active:
+		LECT B -1
+		Stop
+	}
+}
+
+actor HPLecternBookPageFlip
+{
+	//$Category Decoration
+	//$Title Lectern w/Book (pages flippin')
+
+	+SOLID
+	radius 20
+	height 56
+
+	states
+	{
+	spawn:
+		LECT CDEFG 3
+		Loop
+	}
+}
+
