@@ -457,6 +457,13 @@ DSWPAN2		DSWPAN2
 DSWPAN3		DSWPAN3
 $random HWraith/Pain	{ DSWPAN1 DSWPAN2 DSWPAN3 }
 
+madchicken/sight   madcksit
+madchicken/active  madckact
+madchicken/attack  madckatk
+madchicken/feather stfsw1
+madchicken/pain    madckpai
+madchicken/death   madckdth
+
 epig/grunz EPIGGRUN
 epig/see EPIGSEE
 epig/tod EPIGTOD
