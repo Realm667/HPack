@@ -1,0 +1,31 @@
+object SnakeProjC
+{
+    frame SNFXJ { light HIMPBALL }
+    frame SNFXK { light HIMPBALL }
+
+    frame SNFXL { light HIMPBALL_X1 }
+    frame SNFXM { light HIMPBALL_X2 }
+    frame SNFXN { light HIMPBALL_X3 }
+}
+
+Flickerlight FORCEBLAST_X1
+{
+	Color 0.3 0.6 0.9
+	Size 64
+	SecondarySize 72
+	Chance 0.9
+}
+Flickerlight FORCEBLAST_X2
+{
+	Color 0.2 0.5 0.8
+	Size 56
+	SecondarySize 62
+	Chance 0.9
+}
+Flickerlight FORCEBLAST_X3
+{
+	Color 0.1 0.4 0.7
+	Size 48
+	SecondarySize 52
+	Chance 0.9
+}

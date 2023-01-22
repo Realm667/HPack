@@ -46,6 +46,7 @@
 #include "actors/monsters/guardiancube.gl"
 #include "actors/monsters/heretic_monsters.gl"
 #include "actors/monsters/infernodemon.gl"
+#include "actors/monsters/OphidianVariants.gl"
 #include "actors/monsters/satyr.gl"
 #include "actors/monsters/sentinel.gl"
 #include "actors/monsters/shadowbeast.gl"

@@ -491,6 +491,18 @@ DarkLich/Attack3 GNTPWS
 DLPurpleFire/Shot DLFIRE1
 DLPurpleFire/Hit DLFIRE2
 
+//Ophidian Offspring
+OphidianBaby/Sight BSNKSIT
+OphidianBaby/Active BSNKACT
+OphidianBaby/Pain BSNKPAI
+OphidianBaby/Death BSNKDTH
+
+//Ophidian Lord
+OphidianLord/Sight LSNKSIT
+OphidianLord/Active LSNKACT
+OphidianLord/Pain LSNKPAI
+OphidianLord/Death LSNKDTH
+
 /////////////////
 // MISC SOUNDS //
 /////////////////
