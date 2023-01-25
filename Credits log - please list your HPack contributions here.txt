@@ -280,6 +280,16 @@ Contributor: Gothic
 	- Death sprites (placeholders) edited from Powerslave.
 	- Sounds from Blizzard games (Starcraft, Diablo, Diablo 2).
 - RCKSLIDE.ogg and RCKSTOP.ogg (taken from Rune).
+- A couple of brightmaps.
+- Sounds for the Ophidian variants:
+	- Ophidian Offspring sounds from Epic Games (Unreal) and Raven (Mageslayer).
+	- Ophidian Lord sounds from 3DRealms (Shadow Warrior) and Raven (Mageslayer).
+
+-------------------------
+Contributor: Stewboy
+-------------------------
+- Music for H3M6: "Trapped"
+
 -------------------------
 Contributor: qwerqsar
 -------------------------
@@ -336,6 +346,11 @@ Contributor: KeksDose
 Contributor: boris
 -------------------
 - Breakable glass script
+
+-------------------------
+Contributor: zrrion the insect
+-------------------------
+- Lectern sprites
 
 --------------------
 Other credits

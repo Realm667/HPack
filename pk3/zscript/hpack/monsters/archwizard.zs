@@ -373,6 +373,7 @@ class ArchwizardBall : Actor
 		+CANBOUNCEWATER;
 		+NOWALLBOUNCESND;
 		+USEBOUNCESTATE;
+		+NOINTERACTION;
 	}
 
 	States
@@ -438,6 +439,7 @@ class ArchwizardBall : Actor
 		// fly off in a random direction.
 		self.bNoGravity = false;
 		self.gravity = 0.125;
+		self.bNoInteraction = false;
 
 		self.vel.X = random[Archwizard](-5, 4);
 		self.vel.Y = random[Archwizard](-5, 4);

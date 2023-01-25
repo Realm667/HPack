@@ -649,3 +649,16 @@ Actor HPMagicWallTorch : HPSwitchableLightSource 16131
     Goto Super::Inactive
   }
 }
+
+ACTOR HPZCandleFloating : ZCandle 16125
+{
+  +FLOATBOB
+  +NOGRAVITY
+  -SOLID
+  States
+  {
+  Spawn:
+    CNDF ABC 4 Bright
+    Loop
+  }
+}

@@ -46,6 +46,7 @@
 #include "actors/monsters/guardiancube.gl"
 #include "actors/monsters/heretic_monsters.gl"
 #include "actors/monsters/infernodemon.gl"
+#include "actors/monsters/OphidianVariants.gl"
 #include "actors/monsters/satyr.gl"
 #include "actors/monsters/sentinel.gl"
 #include "actors/monsters/shadowbeast.gl"
@@ -53,8 +54,14 @@
 #include "actors/monsters/wicked.gl"
 #include "actors/monsters/wraith.gl"
 
+// [XA] TODO: move these to anotehr file somewhereish
+
 HardwareShader Texture "SCBLOOD9"
 {
 	Shader "Shaders/warp3.fs"
 }
 
+HardwareShader Texture "XADRIPP"
+{
+	Shader "shaders/warp-dripple.fs"
+}

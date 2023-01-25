@@ -343,7 +343,7 @@ class ShrineFly : ShrineBase
 	{
 	Spawn:
 	Active:
-		SFLY A -1 Bright;
+		SFLY X -1 Bright;
 		loop;
 	}
 }

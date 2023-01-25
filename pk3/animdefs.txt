@@ -20,6 +20,7 @@ warp2 flat WINDIGO
 warp texture SKYTP14W
 warp texture CSSKY
 warp texture BSSKY
+warp texture SKYSOUL1
 warp2 texture WWATERNW
 warp texture mc__103
 warp texture mc_tele
@@ -353,7 +354,7 @@ WARP2 texture WRAII0
 
 // Shrines
 warp2 texture SPTNA0
-warp2 texture SFLYA0
+warp2 texture SFLYX0
 warp2 texture SBOMA0
 warp2 texture SINVA0
 warp2 texture SPBKA0

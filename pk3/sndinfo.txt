@@ -457,6 +457,13 @@ DSWPAN2		DSWPAN2
 DSWPAN3		DSWPAN3
 $random HWraith/Pain	{ DSWPAN1 DSWPAN2 DSWPAN3 }
 
+madchicken/sight   madcksit
+madchicken/active  madckact
+madchicken/attack  madckatk
+madchicken/feather stfsw1
+madchicken/pain    madckpai
+madchicken/death   madckdth
+
 epig/grunz EPIGGRUN
 epig/see EPIGSEE
 epig/tod EPIGTOD
@@ -483,6 +490,18 @@ DarkLich/Attack3 GNTPWS
 
 DLPurpleFire/Shot DLFIRE1
 DLPurpleFire/Hit DLFIRE2
+
+//Ophidian Offspring
+OphidianBaby/Sight BSNKSIT
+OphidianBaby/Active BSNKACT
+OphidianBaby/Pain BSNKPAI
+OphidianBaby/Death BSNKDTH
+
+//Ophidian Lord
+OphidianLord/Sight LSNKSIT
+OphidianLord/Active LSNKACT
+OphidianLord/Pain LSNKPAI
+OphidianLord/Death LSNKDTH
 
 /////////////////
 // MISC SOUNDS //
@@ -559,6 +578,9 @@ ambient/godcube2   godcube2
 ambient/godcube3   godcube3
 ambient/godcube4   godcube4
 $random ambient/godcube { ambient/godcube1 ambient/godcube2 ambient/godcube3 ambient/godcube4 }
+ambient/dks1duke   dks1duke // Dark Souls - Duke's Archives
+ambient/dks1pain   dks1pain // Dark Souls - Painted World
+ambient/dmc1hell   dmc1hell // Devil May Cry - Hell ambience
 
 // Additional Ambient Screams
 
@@ -617,6 +639,9 @@ $AMBIENT 30 Ambient/Contraption POINT CONTINUOUS 1.0
 $AMBIENT 31 ambient/godcube    POINT PERIODIC 5.5 1.0
 $AMBIENT 32 ambient/screams    POINT RANDOM 20.0 35.0 1.0
 $AMBIENT 33 ambient/screams    RANDOM 20.0 35.0 1.0
+$ambient 57 ambient/dks1duke   SURROUND CONTINUOUS 0.66
+$ambient 58 ambient/dks1pain   SURROUND CONTINUOUS 0.5
+$ambient 59 ambient/dmc1hell   SURROUND CONTINUOUS 0.33
 $ambient 60 "PortalChoir/Loop" POINT continuous 255
 $ambient 61 printz/ambient/kerri_purrclip_short point 2.0 continuous 1.0
 $ambient 62 amb/windsubs surround continuous 0.5

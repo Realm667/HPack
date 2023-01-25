@@ -93,7 +93,7 @@ States
 Actor MiasmaCooldown : Powerup
 {
 Inventory.ForbiddenTo "PlayerPawn"
-Powerup.Duration -15
+Powerup.Duration -12
 }
 
 Actor DarkLichShadow
@@ -118,7 +118,7 @@ Height 2
 Speed 16
 Damage 0
 +THRUACTORS
-+BOUNCEONFLOORS
++NOEXPLODEFLOOR
 States
 	{
 	Spawn:
