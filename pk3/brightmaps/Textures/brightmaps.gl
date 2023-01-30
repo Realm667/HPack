@@ -301,6 +301,9 @@ brightmap texture REDPORT6 { map "Brightmaps/Textures/tport6.png" }
 brightmap texture REDPORT7 { map "Brightmaps/Textures/tport7.png" }
 brightmap texture REDPORT8 { map "Brightmaps/Textures/tport8.png" }
 brightmap texture REDPORT9 { map "Brightmaps/Textures/tport9.png" }
+brightmap texture XAMIST01 { map "Brightmaps/Textures/XAMIST01.png" }
+brightmap texture XAMIST06 { map "Brightmaps/Textures/XAMIST06.png" }
+brightmap texture XAMIST07 { map "Brightmaps/Textures/XAMIST07.png" }
 brightmap texture WALL651 { map "Brightmaps/Textures/WALL651.png" }
 brightmap texture WALL652 { map "Brightmaps/Textures/WALL651.png" }
 brightmap texture WALL653 { map "Brightmaps/Textures/WALL651.png" }
