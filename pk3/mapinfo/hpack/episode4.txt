@@ -67,8 +67,6 @@ map H4M5 "Valley of the Mists"
 	music    = M_H4M5
 	next     = H4M6
 	sky1     = "ZZZWHITE", 0.0
-	fade     = "FF FF FF"
-	lightmode = 0
 }
 
 map H4M6 "Astral Crypt"
