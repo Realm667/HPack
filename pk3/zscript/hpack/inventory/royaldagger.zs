@@ -20,9 +20,8 @@ class ArtiRoyalDagger : CustomInventory
 		+COUNTITEM;
 		+FLOATBOB;
 		+INVENTORY.INVBAR;
-		+INVENTORY.PICKUPFLASH;
-		+INVENTORY.FANCYPICKUPSOUND;
-
+		+INVENTORY.FANCYPICKUPSOUND;		
+		Inventory.PickupFlash "PickupFlash";
 		Inventory.DefMaxAmount;
 		Inventory.Icon "ARTIDAGG";
 		Inventory.PickupSound "misc/p_pkup";

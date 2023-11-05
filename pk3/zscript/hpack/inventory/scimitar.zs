@@ -141,7 +141,8 @@ Class ScimitarWaveCenter : ScimitarWaveEdge
 	{
 		Super.Tick();
 
-		if(level.frozen) {
+		if( level.isFrozen() )
+		{
 			return;
 		}
 

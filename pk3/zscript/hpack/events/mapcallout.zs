@@ -94,7 +94,7 @@ class HPMapCalloutEventHandler : EventHandler
 		int nameHeight  = bigfont.GetHeight() * CleanYFac;
 		int authorWidth = smallfont.StringWidth(callout.author) * CleanXFac;
 
-		int xpos = Screen.GetWidth()  * callout.pos.x;
+		int xpos = Screen.GetWidth()  * callout.pos.x; //these two pos gets their floating point value truncated, requires different formula - ozy81
 		int ypos = Screen.GetHeight() * callout.pos.y;
 
 		float startfade = clamp(double(level.totaltime - callout.startTime) / (HP_MAP_CALLOUT_FADE_IN_SECONDS  * TICRATE), 0.0, 1.0);

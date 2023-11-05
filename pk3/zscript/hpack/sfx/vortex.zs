@@ -244,7 +244,7 @@ class HPSkySoul : Actor
 	{
 		Super.PostBeginPlay();
 
-		self.frame = frandom(0,4);
+		self.frame = random(0,4);
 	}
 }
 
