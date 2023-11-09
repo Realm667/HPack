@@ -1,0 +1,5 @@
+*.bat   text eol=crlf
+*.rc	text
+zscript.zs		linguist-language=C#
+zscript/*.zs	linguist-language=C#
+zscript/**/*.zs	linguist-language=C#

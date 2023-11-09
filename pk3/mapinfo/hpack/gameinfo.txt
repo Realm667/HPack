@@ -15,7 +15,7 @@ gameinfo
 	dimcolor = "2B00FF"
 	dimamount = 0.3
 	pickupcolor = "FFFFFF"
-	addeventhandlers = "HPMapCalloutEventHandler"
+	addeventhandlers = "HPMapCalloutEventHandler", "HPWaterHandler"
 	weaponslot = 1, "HPStaff", "HPGauntlets"
 	weaponslot = 2, "HPWand"
 	weaponslot = 3, "HPCrossbow"

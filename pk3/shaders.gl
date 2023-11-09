@@ -1,0 +1,28 @@
+//PostProcessing shaders goes here
+
+//Underwater shader
+HardwareShader PostProcess scene
+{
+	Name "watershader"
+	Shader "shaders/hp_uwater.fp" 330
+	Uniform float waterFactor
+	Uniform float timer // placeholder?
+}
+
+HardwareShader PostProcess scene
+{
+	Name "waterzoomshader"
+	Shader "shaders/hp_uwaterzoom.fp" 330
+	Uniform float zoomFactor
+}
+
+HardwareShader Texture "XADRIPP"
+{
+	Shader "shaders/hp_warpdripple.fp"
+}
+
+//this doesn't exist yet
+HardwareShader Texture "SCBLOOD9"
+{
+	Shader "shaders/warp3.fp"
+}
