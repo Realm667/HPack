@@ -603,9 +603,9 @@ Ambient/MagicTorch  MAGTORCH
 Ambient/Contraption CONTRAPT
 Ambient/BigMove     BIGMOVE
 
-;=========================================================
-;AMBIENT SOUND LISTING
-;=========================================================
+//=========================================================
+//AMBIENT SOUND LISTING
+//=========================================================
 $AMBIENT 1 ambient/thunder1    RANDOM 20.0 35.0 1.0
 $AMBIENT 2 ambient/thunderfar  RANDOM 20.0 35.0 1.0
 $AMBIENT 3 ambient/thunder2    RANDOM 20.0 35.0 1.0
@@ -704,26 +704,26 @@ world/portal1           portal1
 world/portal2           portal2
 world/portal3           portal3
 
-;===========================================================================
-; 
-; HEXEN IMPORTED 'WORLD SOUNDS'
-;  added by printz
-;===========================================================================
+//===========================================================================
+// 
+// HEXEN IMPORTED 'WORLD SOUNDS'
+//  added by printz
+//===========================================================================
 
-;
-;
-; Platform Sounds
-;
+//
+//
+// Platform Sounds
+//
 
-;PlatformStart           dorstp3	already in htic
+//PlatformStart           dorstp3	already in htic
 PlatformStartMetal      mtlstrt1
-;PlatformStop            dorstp1b	already in htic
-;StoneMove               stnmv4	already in htic
+//PlatformStop            dorstp1b	already in htic
+//StoneMove               stnmv4	already in htic
 MetalMove               mtlmv3
 
-;
-; Door Sounds
-;
+//
+// Door Sounds
+//
 
 DoorOpen                drltch3a
 DoorLocked              locked
@@ -739,9 +739,9 @@ WaterMove               brook1
 IceStartMove            icemv2
 EarthStartMove          quake2
 
-;
-; Fire Torch
-;
+//
+// Fire Torch
+//
 
 Torch/Light	torchlit
 Torch/Die	torchdie
