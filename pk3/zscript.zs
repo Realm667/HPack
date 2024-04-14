@@ -7,6 +7,7 @@ version "4.4.0"
 #include "zscript/hpack/deprecated.zs"
 
 #include "zscript/hpack/player.zs"
+#include "zscript/hpack/weapons.zs"
 
 #include "zscript/hpack/events/mapcallout.zs"
 

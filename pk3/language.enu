@@ -172,9 +172,13 @@ FN_WIZARD = "Disciple of Chaos";
 
 // Tags
 TAG_DSPARILSG = "Hand of D'Sparil";
+TAG_DSPARILSGP = "Hand of D'Sparil Powered";
 TAG_SUNSTAFF = "Lightbringer";
+TAG_SUNSTAFF = "Lightbringer Powered";
 TAG_STAFFOFCHAOS = "Staff of Chaos";
+TAG_STAFFOFCHAOS = "Staff of Chaos Powered";
 TAG_POLYMORPHWAND = "Polymorph Wand";
+TAG_POLYMORPHWAND = "Polymorph Wand Powered";
 
 TAG_ARTIJUMP = "Boots of Jumping";
 TAG_ARTITOMEOFMIGHT = "Tome of Might";

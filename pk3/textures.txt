@@ -933,4 +933,148 @@ Texture "MARBARC8", 384, 256
 	Patch "MARBARC4", 0, 128
 }
 
+Sprite "STFFJ0", 677, 225
+{
+	Offset 155, -8
+	Patch "STFFF0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFFK0", 287, 126
+{
+	Offset 106, -48
+	Patch "STFFE0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFFL0", 269, 125
+{
+	Offset 68, -50
+	Patch "STFFD0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFFM0", 286, 122
+{
+	Offset 52, -64
+	Patch "STFFC0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFFN0", 157, 273
+{
+	Offset -242, 87
+	Patch "STFFG0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFFO0", 154, 302
+{
+	Offset -191, 32
+	Patch "STFFH0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFFP0", 58, 173
+{
+	Offset -133, -17
+	Patch "STFFI0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPR0", 688, 237
+{
+	Offset 159, 4
+	Patch "STFPH0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPS0", 286, 126
+{
+	Offset 52, -60
+	Patch "STFPE0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPT0", 270, 130
+{
+	Offset 68, -45
+	Patch "STFPF0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPU0", 287, 137
+{
+	Offset 106, -37
+	Patch "STFPG0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPV0", 287, 130
+{
+	Offset -140, -39
+	Patch "STFPK0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPW0", 270, 130
+{
+	Offset -109, -52
+	Patch "STFPL0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPX0", 157, 273
+{
+	Offset -242, 87
+	Patch "STFPM0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPY0", 154, 302
+{
+	Offset -191, 32
+	Patch "STFPN0", 0, 0
+	{
+		FlipX
+	}
+}
+
+Sprite "STFPZ0", 64, 191
+{
+	Offset -148, -32
+	Patch "STFPO0", 0, 0
+	{
+		FlipX
+	}
+}
+
 // End of texture definitions

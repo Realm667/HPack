@@ -18,7 +18,6 @@
 #include "actors/items/item_keys.txt"
 #include "actors/items/item_food.txt"
 #include "actors/items/artifacts.txt"
-#include "actors/items/weapons.txt"
 
 //Properties & SFX
 #include "actors/misc/dryice.txt"

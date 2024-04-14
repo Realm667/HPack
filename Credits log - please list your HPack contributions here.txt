@@ -284,6 +284,16 @@ Contributor: Gothic
 - Sounds for the Ophidian variants:
 	- Ophidian Offspring sounds from Epic Games (Unreal) and Raven (Mageslayer).
 	- Ophidian Lord sounds from 3DRealms (Shadow Warrior) and Raven (Mageslayer).
+- ZScript conversion for weapons.
+- Master Scroll support for the Powered Staff:
+	- Powered up sprites edited from Neoworm's. Sprites STFP M-N-O originally by osjclatchford, extended by Gothic.
+	- Swing sounds from LucasArts (Jedi Knight: Dark Forces 2).
+	- Block sounds from Raven Software (Jedi Knight 2).
+
+-------------------------
+Contributor: Lee Jackson
+-------------------------
+- Music for H1M7: "You Really Suck" from Alien Vendetta MIDI Pack
 
 -------------------------
 Contributor: Stewboy
@@ -331,6 +341,7 @@ Contributor: Andreas Viklund (TSEC)
 Contributor: NeoWorm
 --------------------
 - Widescreen-friendly status bar.
+- Widescreen sprites for the Staff.
 
 --------------------
 Contributor: NeuralStunner

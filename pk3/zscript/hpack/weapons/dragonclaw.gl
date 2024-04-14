@@ -1,0 +1,20 @@
+// ------------------- //
+// DRAGONCLAW LIGHTING //
+// ------------------- //
+
+object HPBlasterFX1
+{
+    frame FX18C { light BIGCLAWPUFF1 }
+    frame FX18D { light BIGCLAWPUFF2 }
+    frame FX18E { light BIGCLAWPUFF3 }
+    frame FX18F { light BIGCLAWPUFF4 }
+    frame FX18G { light BIGCLAWPUFF5 }
+}
+
+object HPRipper
+{
+    frame FX18O { light CLAWPUFF2 }
+    frame FX18P { light BIGCLAWPUFF1 }
+    frame FX18Q { light CLAWPUFF1 }
+    frame FX18R { light CLAWPUFF4 }
+}

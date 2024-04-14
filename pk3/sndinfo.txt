@@ -63,6 +63,17 @@ weapons/staffswing1			stfsw1
 weapons/staffswing2			stfsw2
 weapons/staffswing3			stfsw3
 weapons/staffblock			stfblk
+$random weapons/lightstaffswing { lightstaffswing1 lightstaffswing2 lightstaffswing3 lightstaffswing4 lightstaffswing5 }
+lightstaffswing1 lstafsw1
+lightstaffswing2 lstafsw2
+lightstaffswing3 lstafsw3
+lightstaffswing4 lstafsw4
+lightstaffswing5 lstafsw5
+$random weapons/lightstaffblock { lightstaffblock1 lightstaffblock2 }
+lightstaffblock1 lstafbl1
+lightstaffblock2 lstafbl2
+$volume weapons/lightstaffswing 0.7
+$volume weapons/lightstaffblock 0.7
 
 weapons/wandcharge		gldchg
 
@@ -85,10 +96,13 @@ weapons/gauntletsshoot		gntsht
 weapons/gauntletscharge		gntchg
 weapons/gauntletshadoken	gnthad
 weapons/gauntletspowshoot	gntpws
-weapons/gauntletspowhit	    phohit
+weapons/gauntletspowhit	    gntpow
+weapons/dspgntpowhit		phohit
 weapons/gauntletsrip		gntrip
 $limit weapons/gauntletsshoot 0
 $limit weapons/gauntletspowshoot 0
+$limit weapons/dspgntpowhit 0
+$volume weapons/dspgntpowhit 0.6
 
 weapons/spikeattack		ripslop2
 
@@ -594,6 +608,7 @@ Ambient/Scream7		scream7
 Ambient/Scream8		scream8
 Ambient/Scream		scrmeptm
 $random Ambient/Screams { Ambient/Scream1 Ambient/Scream2 Ambient/Scream3 Ambient/Scream4 Ambient/Scream5 Ambient/Scream6 Ambient/Scream7 Ambient/Scream8 }
+Ambient/Scream9		scream9
 
 // Mo' Ambience
 

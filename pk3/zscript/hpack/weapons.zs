@@ -1,0 +1,13 @@
+// HPack ZScript Includefile of Awesome
+#include "zscript/hpack/weapons/staff.zs"
+#include "zscript/hpack/weapons/gauntlets.zs"
+#include "zscript/hpack/weapons/goldwand.zs"
+#include "zscript/hpack/weapons/crossbow.zs"
+#include "zscript/hpack/weapons/dragonclaw.zs"
+#include "zscript/hpack/weapons/hellstaff.zs"
+#include "zscript/hpack/weapons/phoenixrod.zs"
+#include "zscript/hpack/weapons/firemace.zs"
+#include "zscript/hpack/weapons/dsparilsgloves.zs"
+#include "zscript/hpack/weapons/sunstaff.zs"
+#include "zscript/hpack/weapons/staffchaos.zs"
+#include "zscript/hpack/weapons/polymorphwand.zs"
