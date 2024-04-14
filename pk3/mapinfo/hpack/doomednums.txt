@@ -68,6 +68,12 @@ DoomEdNums
 	13021 = ShrineAegisWard
 	13022 = ShrineTomeOfEternity
 	13023 = ShrineScimitar
+	
+	16453 = HPSunstaff
+	20345 = HPMorphWand
+	23125 = HPStaffChaos
+	23465 = HPDSparilGauntlets
+	30156 = Squirrel
 
 	// Deprecated actors; these will be removed once maps are updated to not use 'em.
 	3106 = DragonFamiliar
