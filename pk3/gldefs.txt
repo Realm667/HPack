@@ -34,7 +34,7 @@
 
 // Monsters
 #include "actors/monsters/acolyte.gl"
-#include "actors/monsters/archwizard.gl"
+#include "zscript/hpack/monsters/archwizard.gl"
 #include "actors/monsters/bishop.gl"
 #include "actors/monsters/champion.gl"
 #include "actors/monsters/cultist.gl"
@@ -48,7 +48,7 @@
 #include "actors/monsters/heretic_monsters.gl"
 #include "actors/monsters/infernodemon.gl"
 #include "actors/monsters/OphidianVariants.gl"
-#include "actors/monsters/satyr.gl"
+#include "zscript/hpack/monsters/Satyr.gl"
 #include "actors/monsters/sentinel.gl"
 #include "actors/monsters/shadowbeast.gl"
 #include "actors/monsters/skullwizard.gl"

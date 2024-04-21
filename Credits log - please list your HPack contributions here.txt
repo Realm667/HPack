@@ -289,6 +289,10 @@ Contributor: Gothic
 	- Powered up sprites edited from Neoworm's. Sprites STFP M-N-O originally by osjclatchford, extended by Gothic.
 	- Swing sounds from LucasArts (Jedi Knight: Dark Forces 2).
 	- Block sounds from Raven Software (Jedi Knight 2).
+- New sprites for the Satyr Archer:
+	- Base sprites by Vader.
+	- XDeath sprites by ItsNatureToDie.
+	- Arrows by Amuscaria.
 
 -------------------------
 Contributor: Lee Jackson

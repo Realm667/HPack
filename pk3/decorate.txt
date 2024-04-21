@@ -54,7 +54,6 @@
 #include "actors/monsters/infernodemon.txt"
 #include "actors/monsters/nightshade.txt"
 #include "actors/monsters/OphidianVariants.txt"
-#include "actors/monsters/satyr.txt"
 #include "actors/monsters/secretmonsters.txt"
 #include "actors/monsters/sentinel.txt"
 #include "actors/monsters/serpent.txt"

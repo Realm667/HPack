@@ -1,0 +1,54 @@
+Pointlight SatyrTrail1
+{
+	Color 0.0 0.8 0.0
+	Size 40
+}
+
+Pointlight SatyrTrail2
+{
+	Color 0.0 0.8 0.0
+	Size 48
+}
+
+Pointlight SatyrTrail3
+{
+	Color 0.0 0.9 0.0
+	Size 56
+}
+
+Pointlight SatyrTrail4
+{
+	Color 0.0 1.0 0.0
+	Size 56
+}
+
+Pointlight SatyrTrail5
+{
+	Color 0.0 0.7 0.0
+	Size 40
+}
+
+Pointlight SatyrTrail6
+{
+	Color 0.0 0.4 0.0
+	Size 32
+}
+
+Pointlight SatyrTrail7
+{
+	Color 0.0 0.2 0.0
+	Size 24
+}
+
+Object SatyrArrow
+{
+	Frame RFX1P { Light SatyrTrail5 }
+	Frame TNT1A { Light SatyrTrail1 }
+	Frame TNT1B { Light SatyrTrail2 }
+	Frame TNT1C { Light SatyrTrail3 }
+	Frame TNT1D { Light SatyrTrail4 }
+	Frame TNT1E { Light SatyrTrail5 }
+	Frame TNT1F { Light SatyrTrail6 }
+	Frame TNT1G { Light SatyrTrail7 }
+}
+
