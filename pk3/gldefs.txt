@@ -20,7 +20,7 @@
 #include "actors/misc/candelabra.gl"
 #include "actors/items/ammo.gl"
 #include "actors/items/item_keys.gl"
-#include "actors/items/artifacts/artifacts.gl"
+#include "zscript/hpack/inventory/artifacts.gl"
 #include "zscript/hpack/weapons/firemace.gl"
 #include "zscript/hpack/weapons/sunstaff.gl"
 #Include "zscript/hpack/weapons/StaffChaos.gl"

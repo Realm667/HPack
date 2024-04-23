@@ -44,6 +44,7 @@ DoomEdNums
 	16516 = ArchWizard
 
 	5213  = ArtiRoyalDagger
+	18765 = ArtiScrollOfHellfire
 	19998 = ArtiScimitar
 
 	13001 = ShrineTeleport

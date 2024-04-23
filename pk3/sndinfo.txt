@@ -140,7 +140,9 @@ $random squirrel/active { squirrel/active1 squirrel/active2 squirrel/active3 squ
 $random squirrel/attack { squirrel/attack1 squirrel/attack2 }
 $alias squirrel/pain squirrel/attack
 
-ScrollOfHellfire/Start	HFSCSTRT
+ScrollOfHellfire/Start HFSCSTRT
+ScrollOfHellfire/Loop FIRELOP3 //phopow
+$limit ScrollOfHellfire/Loop 0
 
 artifacts/dagger/throw   DAGTHROW
 artifacts/dagger/hitwall FIRHIT
