@@ -269,6 +269,7 @@ Contributor: unholypimpin
 Contributor: Captain Toenail
 -------------------------
 - H1M6: "Dead End"
+- Code and sprites for the D'sparil Statue
 
 -------------------------
 Contributor: Gothic
@@ -286,7 +287,7 @@ Contributor: Gothic
 	- Ophidian Lord sounds from 3DRealms (Shadow Warrior) and Raven (Mageslayer).
 - ZScript conversion for weapons.
 - Master Scroll support for the Powered Staff:
-	- Powered up sprites edited from Neoworm's. Sprites STFP M-N-O originally by osjclatchford, extended by Gothic.
+	- Base sprites by Neoworm. Sprites STFP M-N-O originally by osjclatchford, extended by Gothic.
 	- Swing sounds from LucasArts (Jedi Knight: Dark Forces 2).
 	- Block sounds from Raven Software (Jedi Knight 2).
 - New sprites for the Satyr Archer:

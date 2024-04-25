@@ -16,6 +16,7 @@
 #include "actors/misc/prop_decorations.gl"
 #include "actors/misc/prop_hexen.gl"
 #include "actors/misc/prop_podvariants.gl"
+#include "actors/misc/prop_statues.gl"
 #include "actors/misc/sfx_lights.gl"
 #include "actors/misc/candelabra.gl"
 #include "actors/items/ammo.gl"

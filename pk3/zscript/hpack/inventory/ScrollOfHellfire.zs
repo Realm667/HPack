@@ -108,9 +108,7 @@ override void Tick()
 	{
 	Super.Tick();
 	if (Waterlevel > 1)
-		{
-		A_Die();
-		}
+		{ A_Die(); }
 	}
 void HP_WillitBurn()
 	{

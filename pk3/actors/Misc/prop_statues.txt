@@ -41,17 +41,20 @@ Actor StonedLich : StonedKnight 31102
 
 ACTOR DSparilStatue 10300
 {
-  //$Category Obstacles
-  //$Title Statue (D'Sparil Shrine)
-  Radius 16
-  Height 96
-  +SOLID
-  States
-  {
-  Spawn:
-    STAD ABCDE 3 Bright
-    Loop
-  }
+	//$Category Obstacles
+	//$Title Statue (D'Sparil Shrine)
+	//$IsDecoration
+	//$NotAngled
+	Radius 14
+	Height 96
+	Scale 0.9
+	+SOLID
+	States
+		{
+			Spawn:
+				STAR ABC 6 Bright
+				Loop
+		}
 }
 
 ACTOR EtherealStatueRed : SwitchableDecoration 10302
