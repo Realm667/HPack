@@ -369,6 +369,11 @@ Contributor: zrrion the insect
 - Lectern sprites
 
 --------------------
+Contributor: AFADoomer
+--------------------
+- Underwater shaders
+
+--------------------
 Other credits
 --------------------
 - E1 intermission background by Geistig (http://www.deviantart.com/art/medieval-city-30478361)
