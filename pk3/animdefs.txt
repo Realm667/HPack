@@ -377,3 +377,18 @@ warp2 texture SRGNA0
 warp2 texture SSHLA0
 warp2 texture STINA0
 warp2 texture STOMA0
+
+texture 2FIRA0
+	pic 2FIRA0 tics 1
+	pic 2FIRB0 tics 1
+	pic 2FIRC0 tics 1
+	pic 2FIRD0 tics 1
+	pic 2FIRE0 tics 1
+	pic 2FIRF0 tics 1
+	pic 2FIRG0 tics 1
+	pic 2FIRH0 tics 1
+	pic 2FIRI0 tics 1
+	pic 2FIRJ0 tics 1
+	pic 2FIRK0 tics 1
+	pic 2FIRL0 tics 1
+	pic TNT1A0 tics 100

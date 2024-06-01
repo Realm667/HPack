@@ -76,6 +76,12 @@ ListMenu "SaveGameMenu"
 
 // [Blue Shadow] Based mostly on ZDCMP2's options menu :)
 
+OptionValue ParticleMethod
+{
+	0, "Actors"
+	1, "VisualThinkers"
+}
+
 OptionMenu "HPackOptionsMenu"
 {
   Title "HPack Options"
@@ -83,6 +89,7 @@ OptionMenu "HPackOptionsMenu"
   StaticText "HPack Settings",        1
   StaticText ""
   Option "Particle-based Light Sources", "hpack_lightsourcestyle", "OnOff"
+  Option "Particle Rendering Method", "hpack_particlemethod", "ParticleMethod"//, "hpack_lightsourcestyle"
   Slider "Footstep Volume", "hpack_footstep_volume", 0, 1.0, 0.05, 2
 
   StaticText ""

@@ -10,14 +10,13 @@
 #include "brightmaps.gl"
 #include "glowingflats.gl"
 #include "skybox.gl"
-#include "actors/misc/sfx_fire.gl"
+#include "zscript/hpack/sfx/sfx_fire.gl"
 
 // Items and decoration
 #include "actors/misc/prop_decorations.gl"
 #include "actors/misc/prop_hexen.gl"
 #include "actors/misc/prop_podvariants.gl"
-#include "actors/misc/prop_statues.gl"
-#include "actors/misc/sfx_lights.gl"
+#include "zscript/hpack/props/sfx_lights.gl"
 #include "actors/misc/candelabra.gl"
 #include "actors/items/ammo.gl"
 #include "actors/items/item_keys.gl"

@@ -1077,4 +1077,95 @@ Sprite "STFPZ0", 64, 191
 	}
 }
 
+Sprite "2FIRA0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1A0", 0, 0
+	Patch "FIR2A0", 368, 0
+}
+
+Sprite "2FIRB0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1B0", 0, 0
+	Patch "FIR2B0", 368, 0
+}
+
+Sprite "2FIRC0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1C0", 0, 0
+	Patch "FIR2C0", 368, 0
+}
+
+Sprite "2FIRD0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1D0", 0, 0
+	Patch "FIR2D0", 368, 0
+}
+
+Sprite "2FIRE0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1E0", 0, 0
+	Patch "FIR2E0", 368, 0
+}
+
+Sprite "2FIRF0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1F0", 0, 0
+	Patch "FIR2F0", 368, 0
+}
+
+Sprite "2FIRG0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1G0", 0, 0
+	Patch "FIR2G0", 368, 0
+}
+
+Sprite "2FIRH0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1H0", 0, 0
+	Patch "FIR2H0", 368, 0
+}
+
+Sprite "2FIRI0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1I0", 0, 0
+	Patch "FIR2I0", 368, 0
+}
+
+Sprite "2FIRJ0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1J0", 0, 0
+	Patch "FIR2J0", 368, 0
+}
+
+Sprite "2FIRK0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1K0", 0, 0
+	Patch "FIR2K0", 368, 0
+}
+
+Sprite "2FIRL0", 500, 131
+{
+	Offset 250, 65
+	Patch "FIR1L0", 0, 0
+	Patch "FIR2L0", 368, 0
+}
+
+Sprite "2FLAA0", 510, 255
+{
+	Offset 255, 124
+	Patch "RFLRA0", 0, 0
+	Patch "RFLRA0", 256, 0
+}
+
 // End of texture definitions

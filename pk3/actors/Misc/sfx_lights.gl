@@ -1,9 +1,0 @@
-// Snake braziers
-flickerlight2 SNAKETORCH
-{
-    color 1.0 0.7 0.0
-    size 46
-    secondarySize 52
-    interval 0.1
-    offset 0 60 0
-}

@@ -24,5 +24,8 @@ version "4.4.0"
 #include "zscript/hpack/sfx/rain.zs"
 #include "zscript/hpack/sfx/vortex.zs"
 #include "zscript/hpack/sfx/underwater.zs"
+#include "zscript/hpack/sfx/sfx_fire.zs"
+
+#include "zscript/hpack/props/sfx_lights.zs"
 
 #include "zscript/hpack/statusbar.zs"

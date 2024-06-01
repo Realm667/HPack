@@ -203,7 +203,7 @@ Contributor: Gez
 - Added snake braziers based on serpent brazier prop derived from Hexx game.
 
 -------------------------
-Eric Heberling
+Contributor: Eric Heberling
 -------------------------
 - Music for H2M2: Daggerfall dungeon music
 
@@ -222,7 +222,7 @@ Contributor: Disguise
 - Texture(s): METL4C (Vertical version of METL4)
 
 -------------------------
-Contributor sirjuddington
+Contributor: sirjuddington
 -------------------------
 - Music for H3M2: "Grand Design"
 
@@ -269,7 +269,7 @@ Contributor: unholypimpin
 Contributor: Captain Toenail
 -------------------------
 - H1M6: "Dead End"
-- Code and sprites for the D'sparil Statue
+- Sprites for the D'sparil Statue
 
 -------------------------
 Contributor: Gothic
@@ -294,6 +294,12 @@ Contributor: Gothic
 	- Base sprites by Vader.
 	- XDeath sprites by ItsNatureToDie.
 	- Arrows by Amuscaria.
+- Code rewrite for the FireSpawner, HPSwitchableLightSource, ArtiScrollOfHellfire, and derived classes, to include support for VisualThinkers. Big thanks to inkoalawetrust for providing the example in the ZDoom wiki page, which I shamelessly copy-pasted over and over.
+Shoutouts to kevansevans for giving me the idea of replacing decorative actors with VisualThinkers for better optimization.
+	- New Rainbow Torch edited from Daggerfall.
+	- Non Special FX sprites for the Rainbow Torch and Ethereal Statues taken from Hexen, Mageslayer and Reamls of the Haunting, edited by Gothic. Meant to be placeholder sprites in case Xaser wants to do something better for those.
+	- Torch off sound edited from Half-Life.
+	- Cast sound for the Firewall taken from a bunch of Raven Software games, mixed by Gothic.
 
 -------------------------
 Contributor: Lee Jackson

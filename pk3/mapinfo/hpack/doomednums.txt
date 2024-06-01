@@ -4,7 +4,21 @@
 
 DoomEdNums
 {
+	10000 = FireSpawner
 	10010 = RainSpawner
+	
+	16082 = ToTLBrassTorch
+	16104 = TOTLTwinedTorch
+	16081 = ToTLSkullTorch
+	32484 = SnakeBrazierBrass
+	32485 = SnakeBrazierGold
+	32486 = SnakeBrazierJade
+	16106 = ZWallTorchNew
+	16110 = ZFireBullNew
+	16131 = HPMagicWallTorch
+	10302 = EtherealStatueRed
+	10303 = EtherealStatueBlue
+	10300 = DSparilStatue
 
 	11101 = HPFountainBlue
 	11102 = HPFountainRed
@@ -86,4 +100,7 @@ DoomEdNums
 	17051 = HPSuperGargoyle
 	19273 = JumpClink
 	20002 = HornBeast
+	16105 = HPZTwinedTorchUnlit
+	16107 = ZWallTorchUnlitNew
+	16111 = ZFireBullUnlitNew
 }

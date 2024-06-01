@@ -6,22 +6,6 @@ ACTOR HPBatSpawner : RandomSpawner 16123
 	DropItem "BatSpawner"
 }
 
-ACTOR HPBrassTorch : RandomSpawner 16082
-{
-	//$Category Lights
-	//$Title Brass Torch
-	//$Sprite BRTRB0
-	DropItem "BrassTorch"
-}
-
-ACTOR HPFireThing : RandomSpawner 16081
-{
-	//$Category Lights
-	//$Title Demon Brazier
-	//$Sprite FSKLA0
-	DropItem "FireThing"
-}
-
 ACTOR HPLeafSpawner : RandomSpawner 16119
 {
 	//$Category Decoration
@@ -892,23 +876,6 @@ ACTOR HPZTreeSwamp150 : RandomSpawner 16009
 	//$Title Tree (Swamp, 150-tall)
 	//$Sprite TRESA0
 	DropItem "ZTreeSwamp150"
-}
-
-ACTOR HPZTwinedTorch : RandomSpawner 16104
-{
-	//$Category Lights
-	//$Title Twined Torch (Lit)
-	//$Sprite TWTRA0
-	DropItem "ZTwinedTorch"
-}
-
-ACTOR HPZTwinedTorchUnlit : RandomSpawner 16105
-{
-	//$Category Lights
-	//$Title Twined Torch (Unlit)
-	//$Sprite TWTRI0
-	//$Obsolete Use "Twined Torch (Lit)" in conjunction with the "Dormant" flag
-	DropItem "ZTwinedTorchUnlit"
 }
 
 ACTOR HPZVasePillar : RandomSpawner 16076

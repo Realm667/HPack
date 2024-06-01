@@ -1,0 +1,47 @@
+// Snake braziers
+flickerlight2 SNAKETORCH
+{
+	color 1.0 0.7 0.0
+	size 46
+	secondarySize 52
+	interval 0.1
+	offset 0 60 0
+}
+
+// Statues
+flickerlight2 DSPARILSTATUERED
+{
+	color 1.0 0.6 0.0
+	size 64
+	secondarySize 68
+	interval 0.1
+	offset 0 104 0
+}
+
+flickerlight2 ETHERSTATUERED
+{
+	color 1.0 0.6 0.0
+	size 48
+	secondarySize 52
+	interval 0.1
+	offset 0 96 0
+}
+
+flickerlight2 ETHERSTATUEBLUE
+{
+	color 0.0 0.3 1.0
+	size 48
+	secondarySize 52
+	interval 0.1
+	offset 0 96 0
+}
+
+// Rainbow torch
+flickerlight2 WHITETORCHLIGHT
+{
+	color 0.8 0.8 0.8
+	size 36
+	secondarySize 42
+	interval 0.1
+	offset 0 70 0
+}

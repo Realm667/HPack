@@ -1,3 +1,4 @@
 server bool hpack_lightsourcestyle = true;
+server bool hpack_particlemethod = true;
 user float hpack_uweffectsize = 0.015; //Underwater effect parameter
 user float hpack_footstep_volume = 1.0;

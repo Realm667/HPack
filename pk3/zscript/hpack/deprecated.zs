@@ -88,3 +88,36 @@ class HPSuperGargoyle : HPDeprecatedActor
 		HPDeprecatedActor.ReplacementActor 'HPHereticImpLeader';
 	}
 }
+
+class HPZTwinedTorchUnlit : HPDeprecatedActor
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'TOTLTwinedTorch2';
+	}
+	override Name ChooseSpawn()
+	{
+		console.Printf(TEXTCOLOR_ORANGE .. "Warning: Actor '%s' has been removed. Replace it with its lit counterpart with the DORMANT flag set.", GetClassName(), replacementActor);
+		return replacementActor;
+	}
+}
+
+class ZWallTorchUnlitNew : HPZTwinedTorchUnlit
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'ZWallTorchNew2';
+	}
+}
+
+class ZFireBullUnlitNew : HPZTwinedTorchUnlit
+{
+	Default
+	{
+		HPDeprecatedActor.ReplacementActor 'ZFireBullNew2';
+	}
+}
+
+class TOTLTwinedTorch2 : TOTLTwinedTorch {Default{ +DORMANT }}
+class ZWallTorchNew2 : ZWallTorchNew {Default{ +DORMANT }}
+class ZFireBullNew2 : ZFireBullNew {Default{ +DORMANT }}
