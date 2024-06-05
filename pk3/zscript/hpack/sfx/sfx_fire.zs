@@ -229,7 +229,7 @@ States
 	{
 	ToAvoidCrashes:
 		FLM1 A 0;
-        FLM2 A 0;
+		FLM2 A 0;
 		FLM3 A 0;
 		FLM4 A 0;
 		FLM5 A 0;
@@ -237,8 +237,8 @@ States
 		FIR1 A 0;
 		FIR2 A 0;
 		2FIR A 0;
-        Stop;
-    }
+		Stop;
+	}
 }
 
 class FlameActor : HPFlameBase
@@ -250,7 +250,7 @@ override void BeginPlay()
 		sprite = GetSpriteIndex(firsprt[random(0,5)]);
 	}
 States
-    {
+	{
 	Spawn:
 		"####" ABCDE 2;
 		"####" FFGGHHIIJJKKLL 1 A_FadeOut(0.08);
@@ -268,7 +268,7 @@ States
 	{
 	Spawn:
 		EMBR A 32;
-        EMBR A 2 A_FadeOut();
-        Wait;
-    }
+		EMBR A 2 A_FadeOut();
+		Wait;
+	}
 }

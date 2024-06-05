@@ -56,6 +56,7 @@ DoomEdNums
 
 	3999 = Satyr
 	16516 = ArchWizard
+	20001 = HellRose
 
 	5213  = ArtiRoyalDagger
 	18765 = ArtiScrollOfHellfire

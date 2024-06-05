@@ -162,7 +162,7 @@ misc/ripslop			null
 
 //Heretic Monsters
 himp/scream             imppai
-himp/gib                impgib
+himp/gib                SNKDTH //impgib
 
 mummy/charge1           gldchg
 mummy/charge2           mumchg
@@ -171,7 +171,7 @@ mummy/shoot             mumsht
 misc/fireballhit        firhit
 misc/fireballbig        firbig
 misc/fireballsmall      firsml
-misc/magichit           maghit
+misc/magichit           BSHHIT2 //maghit
 misc/magicsmall         magsml
 misc/magicbig           magbig
 misc/icefire            frosty2
@@ -181,11 +181,11 @@ misc/icehit             shards1b
 H2SkullWizard/Sight		SKWZSIGH
 H2SkullWizard/Pain		SKWZPAIN
 H2SkullWizard/Fire		SKWZFIRE
-H2SkullWizard/Hit		SKWZHIT
+H2SkullWizard/Hit		EXPLODE //SKWZHIT
 H2SkullWizard/Melee		SKWZMELE
 H2SkullWizard/Teleport	SKWZTELE
 H2SkullWizard/Death		SKWZDEAT
-yellowskull/hit			shldhit
+yellowskull/hit			PHOHIT //shldhit
 
 fireblast/explode		DSFREXP
 superfireblast/explode	DSHELLEX
@@ -202,7 +202,7 @@ archwizard/laserbounce1 arclas3
 archwizard/laserbounce2 arclas2
 archwizard/acidfire     dsskulfi
 archwizard/acidhit      dsbloodx
-archwizard/acidcloud    dspoof1
+archwizard/acidcloud    PUFF1 //dspoof1
 archwizard/acidloop     arcacid
 archwizard/summon       arcsum
 archwizard/pain1        arcpai1
@@ -245,7 +245,7 @@ satyr/sight		dssatsit
 satyr/active	dssatact
 satyr/death 	dssatdth
 satyr/pain 		dssatpai
-satyr/hit		dssathit
+satyr/hit		EXPLODE //dssathit
 satyr/attack1	bowrel
 satyr/attack2	dssatatk
 
@@ -337,7 +337,7 @@ ghoul/pain        dsghlpai
 ghoul/death       dsghldth
 ghoul/missilefire dsskulfi
 ghoul/missilehit  dsbloodx
-ghoul/poof        dspoof1
+ghoul/poof        PUFF1 //dspoof1
 
 //InfernoDemon
 Inferno/Alert	INFRALRT
@@ -347,13 +347,12 @@ Inferno/Active	INFRACTV
 Apocalypse/Meteor COMETLNC
 Apocalypse/Death COMETEXP
 Meteor/Call DFATTACK
-weapons/firmfi dsfirmfi
 weapons/firex3 dsfirex3
 weapons/firbfi dsfirbfi
 weapons/hellex dshellex
 weapons/justfi dsjustfi
 monster/bomb FIREBALL
-monster/firebeamdeath IMPFIRE2
+monster/firebeamdeath BSTATK //IMPFIRE2
 monster/firebeamstart DARKFLAM
 pyro/explosion DSPIPEX1
 Glyph/Start FLAMESTR
@@ -365,19 +364,18 @@ Infdem/death DYING
 
 //Sentinel
 monster/sensit dssensit
-monster/senpai dssenpai
+monster/senpai dssenpai //heh
 monster/sendth dssendth
 monster/senact dssenact
 monster/cubsit dscubsit
-weapons/bounc1 dsbounc1
+weapons/bounc1 BOUNCE //dsbounc1
 monster/cubfly dscubfly
 monster/cubdth dscubdth
 weapons/boltfi dsboltfi
-monster/disht1 dsdisht1
-weapons/firsfi dsfirsfi
-weapons/maceex dsmaceex
-weapons/bigbrn dsbigbrn
-weapons/firex3 dsfirex3
+monster/disht1 HRNHIT //dsdisht1
+weapons/firsfi MINAT2 //dsfirsfi
+weapons/maceex LOBHIT //dsmaceex
+weapons/bigbrn DFATTACK //dsbigbrn
 weapons/smlbrn dssmlbrn
 
 //ShadowBeast
@@ -388,11 +386,11 @@ shadowbeast/idle2	BDMIDL2
 $random shadowbeast/active { shadowbeast/idle2 shadowbeast/idle1 }
 shadowbeast/pain	BDMPAN1
 shadowbeast/sight	BDMSIT1
-shadowbeast/pr1death	BDPD1
-shadowbeast/pr1sight	BDPS1
-shadowbeast/pr2death	BDPD2
+shadowbeast/pr1death	PHOHIT //BDPD1
+shadowbeast/pr1sight	DSSKULFI //BDPS1
+shadowbeast/pr2death	BSHHIT2 //BDPD2
 shadowbeast/pr2sight	BDPS2
-shadowbeast/spread	BDPSPR
+shadowbeast/spread	DSJUSTFI //BDPSPR
 shadowbeast/spiritsit	BDSPR2
 shadowbeast/spiritdth	BDSPR1
 
@@ -401,8 +399,8 @@ monster/culsit dsculsit
 monster/culatk dsculatk
 monster/culpai dsculpai
 $RANDOM monster/culdth { monster/culdt1 monster/culdt2 }
-monster/culdt1 dsculdt1
-monster/culdt2 dsculdt2
+monster/culdt1 PLRCDTH //dsculdt1
+monster/culdt2 PLRWDTH //dsculdt2
 $RANDOM monster/culact { monster/culac1 monster/culac2 }
 monster/culac1 dsculac1
 monster/culac2 dsculac2
@@ -416,28 +414,29 @@ clink/active			clkact
 
 //DarknessRift
 DarkRift/Active		DRFTACT
-DarkRift/Fire		DRFTFIRE
-DarkRift/Hit		DRFTHIT
+DarkRift/Fire		BOWSHT //DRFTFIRE
+$volume DarkRift/Fire 0.5
+DarkRift/Hit		HRNHIT //DRFTHIT
+$volume DarkRift/Hit 0.5
 DarkRift/Loop		DRFTLOOP
 
 //Disciple
 monster/dissit dsdissit
 monster/disdth dsdisdth
 monster/disact dsdisact
-monster/blur dsblur
+monster/blur BLUR6 //dsblur
 monster/disat1 dsdisat1
 monster/disat2 dsdisat2
-monster/disht1 dsdisht1
-monster/disht2 dsdisht2
+monster/disht2 BLSHIT //dsdisht2
 
 //Serpent
-DemonSight              sbtsit5
+DemonSight              SBTACT //sbtsit5
 DemonActive             sbtsit5
 DemonPain               minact1
 DemonAttack             dematk2
-DemonDeath              sbtdth3
-DemonMissileFire        impfire2
-DemonMissileExplode     impact3
+DemonDeath              SBTDTH //sbtdth3
+DemonMissileFire        BSTATK //IMPFIRE2
+DemonMissileExplode     PHOHIT //impact3
 DemonMissileExplode2    phohit
 DemonToast              phopow
 
@@ -449,8 +448,6 @@ monster/wikac2                  dswikac2
 monster/wikatk                  dswikatk
 monster/wikpai                  dswikpai
 monster/wikdth                  dswikdth
-weapons/firmfi                  dsfirmfi
-weapons/firex5                  dsfirex5
 monster/tenpn1                  dstenpn1
 monster/tenpn2                  dstenpn2
 
@@ -519,6 +516,21 @@ OphidianLord/Active LSNKACT
 OphidianLord/Pain LSNKPAI
 OphidianLord/Death LSNKDTH
 
+//HellRose
+HellRose/Attack HROSEOPN
+HellRose/Death HROSEDTH
+HellRose/XDeath HROSEDT2
+HellRose/Unearth HRVINUP
+HellRose/Dig HRVINDWN
+HellRose/Hit HRVINHIT
+Hellrose/Swing HRVINSWN
+HellRose/BrambleDeath HRVINDTH
+HellRose/StomachGrowl HROSEGRW
+$random HellRose/Spit { HRSpit1 HRSpit2 }
+HRSpit1 HROSESP1
+HRSpit2 HROSESP2
+
+
 /////////////////
 // MISC SOUNDS //
 /////////////////
@@ -526,12 +538,12 @@ OphidianLord/Death LSNKDTH
 //Hexen 2 Prop Sounds
 TreeBreak               treebrk
 TreeExplode             treeburn
-Ignite                  torch2
+Ignite                  torchlit //torch2
 
 //Chanting Monk
 Monk/Chant		DSMCHANT
-Monk/Vanish		DSMVANIS
-Monk/Laugh		DSMLAUGH
+Monk/Vanish		TELEPT //DSMVANIS
+Monk/Laugh		WPNUP //DSMLAUGH
 
 //Barrel Brake
 woodenbarrel/death		dswbrldt
@@ -690,8 +702,8 @@ Steam/Fire	STEMFIRE
 
 //SFX Thunder
 $random thunder/hit { thunder/hit1 thunder/hit2 }
-thunder/hit1 THNDS01
-thunder/hit2 THNDS02
+thunder/hit1 AMBX3 //THNDS01
+thunder/hit2 AMBX1 //THNDS02
 
 
 //Glass Smash
@@ -765,7 +777,7 @@ Torch/Die	torchdie
 $limit Torch/Light 4
 
 // Redefined Heretic sounds
-world/drip				drop2
+world/drip				AMB7 //drop2
 world/sludgegloop		muck5
 
 ////////////////

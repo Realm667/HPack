@@ -1,4 +1,4 @@
-class Satyr : Actor //3999
+class Satyr : Actor
 {
 Default
 	{
