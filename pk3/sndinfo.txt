@@ -86,8 +86,9 @@ weapons/hornrodpowshoot  null
 weapons/hornrodpowshoot2 hrnpow
 weapons/hornrodpowshoot3 helpow // help! ow!
 
-weapons/phoenixshoot		null
-weapons/phoenixshoot2		phobir
+weapons/phoenixshoot null
+weapons/phoenixshoot2 phobir
+weapons/newphoenixhit PHOHIT2
 
 weapons/macehit             firsml
 weapons/macepowhit          firhit
@@ -97,7 +98,7 @@ weapons/gauntletscharge		gntchg
 weapons/gauntletshadoken	gnthad
 weapons/gauntletspowshoot	gntpws
 weapons/gauntletspowhit	    gntpow
-weapons/dspgntpowhit		phohit
+weapons/dspgntpowhit		PHOHIT2
 weapons/gauntletsrip		gntrip
 $limit weapons/gauntletsshoot 0
 $limit weapons/gauntletspowshoot 0
@@ -141,12 +142,12 @@ $random squirrel/attack { squirrel/attack1 squirrel/attack2 }
 $alias squirrel/pain squirrel/attack
 
 ScrollOfHellfire/Start HFSCSTRT
-ScrollOfHellfire/Loop FIRELOP3 //phopow
+ScrollOfHellfire/Loop FIRELOP3
 $limit ScrollOfHellfire/Loop 0
 
 artifacts/dagger/throw   DAGTHROW
 artifacts/dagger/hitwall FIRHIT
-artifacts/dagger/hitbody PHOHIT
+artifacts/dagger/hitbody PHOHIT2
 
 artifacts/scimitar       SCIMITAR
 
@@ -176,6 +177,9 @@ misc/magicsmall         magsml
 misc/magicbig           magbig
 misc/icefire            frosty2
 misc/icehit             shards1b
+
+minotaur/fx2hit PHOHIT2
+minotaur/fx3hit PHOHIT2
 
 //Skull Wizard
 H2SkullWizard/Sight		SKWZSIGH

@@ -26,6 +26,10 @@ version "4.4.0"
 #include "zscript/hpack/sfx/vortex.zs"
 #include "zscript/hpack/sfx/underwater.zs"
 #include "zscript/hpack/sfx/sfx_fire.zs"
+#include "zscript/hpack/sfx/sfx_ember.zs"
+#include "zscript/hpack/sfx/sfx_sparkle.zs"
+#include "zscript/hpack/sfx/sfx_star.zs"
+#include "zscript/hpack/sfx/teleportFX.zs"
 
 #include "zscript/hpack/props/sfx_lights.zs"
 

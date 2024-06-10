@@ -1,12 +1,8 @@
 //Special Effects
-#include "actors/misc/sfx_ember.txt"
 #include "actors/misc/sfx_snow.txt"
 #include "actors/misc/sfx_steam.txt"
 #include "actors/misc/sfx_thunder.txt"
-#include "actors/misc/sfx_sparkle.txt"
-#include "actors/misc/sfx_star.txt"
 #include "actors/misc/sfx_splash.txt"
-#include "actors/misc/teleportFX.txt"
 #include "actors/misc/sfx_blood.txt"
 #include "actors/misc/sfx_blackmagic.txt"
 #include "actors/misc/sfx_glass.txt"

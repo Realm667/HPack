@@ -508,7 +508,7 @@ States
 
 class HPMagicWallTorch : TOTLWallTorch
 {
-static const string trnsp[] = { "TSGreen","TSBlue","TSWhite","TSRed","TSOrange","TSPurple" };
+static const string trnsp[] = { "NoTrans","TSBlue","TSWhite","TSRed","TSOrange","TSPurple" };
 Default
 	{
 	//$Category Lights

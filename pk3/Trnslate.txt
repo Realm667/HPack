@@ -1,6 +1,20 @@
-TSGreen = "209:224=209:224"
 TSBlue = "209:224=185:200"
 TSWhite = "209:224=0:35"
 TSRed = "209:224=145:159"
 TSOrange = "209:224=112:127"
 TSPurple = "209:224=169:176"
+
+BlueSpSpwn = "0:35=185:199"
+GreenSpSpwn = "0:35=209:224"
+RedSpSpwn = "0:35=145:163"
+YellowSpSpwn = "0:35=111:136"
+PurpleSpSpwn = "0:35=169:176"
+CyanSpSpwn = "0:35=192:208"
+
+BlueStSpwn = "209:224=185:200"
+WhiteStSpwn = "209:224=1:35","208:208=35:35"
+RedStSpwn = "209:224=145:159"
+OrangeStSpwn = "209:224=112:127"
+PurpleStSpwn = "209:224=169:176"
+
+NoTrans = "0:0=0:0"

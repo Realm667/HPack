@@ -19,6 +19,27 @@ DoomEdNums
 	10302 = EtherealStatueRed
 	10303 = EtherealStatueBlue
 	10300 = DSparilStatue
+	
+	58 = TeleGlitterGenerator3
+	59 = TeleGlitterGenerator4
+	60 = TeleGlitterGenerator5
+	61 = TeleGlitterGenerator6
+	62 = TeleGlitterGenerator7
+	63 = RandomStarFountain
+	209 = WhiteSparkleSpawner
+	210 = BlueSparkleSpawner
+	211 = GreenSparkleSpawner
+	212 = RedSparkleSpawner
+	213 = YellowSparkleSpawner
+	214 = PurpleSparkleSpawner
+	215 = CyanSparkleSpawner
+	240 = EmberSpawner
+	501 = GreenStarSpawner
+	502 = BlueStarSpawner
+	503 = WhiteStarSpawner
+	504 = RedStarSpawner
+	505 = OrangeStarSpawner
+	506 = PurpleStarSpawner
 
 	11101 = HPFountainBlue
 	11102 = HPFountainRed

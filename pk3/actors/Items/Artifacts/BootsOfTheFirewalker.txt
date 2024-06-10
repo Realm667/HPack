@@ -8,6 +8,7 @@ Actor ArtiFireBoots : PowerupGiver 18794
 	//$Title Boots of the Firewalker
 
 	Inventory.PickupFlash "PickupFlash"
+	Inventory.PickupSound "misc/p_pkup"
 	Inventory.RespawnTics 4230
 	Inventory.Icon "ARTIFBOT"
 	Inventory.PickupMessage "$TXT_ARTIFIREBOOTS"

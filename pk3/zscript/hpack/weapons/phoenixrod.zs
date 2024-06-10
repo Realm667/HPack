@@ -143,6 +143,7 @@ Default
 	{
 	Scale 0.5;
 	Obituary "$OB_MPPHOENIXROD";
+	DeathSound "weapons/newphoenixhit";
 	}
 	States
 	{

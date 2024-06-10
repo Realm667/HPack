@@ -26,34 +26,34 @@ warp texture mc__103
 warp texture mc_tele
 
 texture WLLATFL1
- pic WLLATFL1 tics 8
- pic WLLATFL2 tics 8
- pic WLLATFL3 tics 8
+ pic WLLATFL1 tics 4
+ pic WLLATFL2 tics 4
+ pic WLLATFL3 tics 4
 
 texture WLLBLOD1
- pic WLLBLOD1 tics 8
- pic WLLBLOD2 tics 8
- pic WLLBLOD3 tics 8
+ pic WLLBLOD1 tics 6
+ pic WLLBLOD2 tics 6
+ pic WLLBLOD3 tics 6
 
 texture WLLSLIM1
- pic WLLSLIM1 tics 8
- pic WLLSLIM2 tics 8
- pic WLLSLIM3 tics 8
+ pic WLLSLIM1 tics 6
+ pic WLLSLIM2 tics 6
+ pic WLLSLIM3 tics 6
 
 texture WLLINDI1
- pic WLLINDI1 tics 4
- pic WLLINDI2 tics 4
- pic WLLINDI3 tics 4
+ pic WLLINDI1 tics 6
+ pic WLLINDI2 tics 6
+ pic WLLINDI3 tics 6
 
 texture WLLINDF1
- pic WLLINDF1 tics 4
- pic WLLINDF2 tics 4
- pic WLLINDF3 tics 4
+ pic WLLINDF1 tics 6
+ pic WLLINDF2 tics 6
+ pic WLLINDF3 tics 6
 
 texture CANDLES1
- pic CANDLES1 tics 8
- pic CANDLES2 tics 8
- pic CANDLES3 tics 8
+ pic CANDLES1 tics 4
+ pic CANDLES2 tics 4
+ pic CANDLES3 tics 4
 
 texture DOORXNF1
  pic DOORXNF1 tics 6
@@ -66,19 +66,19 @@ texture DOORXNV1
  pic DOORXNV3 tics 6
 
 texture ELECDOR1
- pic ELECDOR1 tics 8
- pic ELECDOR2 tics 8
- pic ELECDOR3 tics 8
+ pic ELECDOR1 tics 6
+ pic ELECDOR2 tics 6
+ pic ELECDOR3 tics 6
 
 texture ELECDOR4
- pic ELECDOR4 tics 8
- pic ELECDOR5 tics 8
- pic ELECDOR6 tics 8
+ pic ELECDOR4 tics 6
+ pic ELECDOR5 tics 6
+ pic ELECDOR6 tics 6
 
 texture ELECDOR7
- pic ELECDOR7 tics 8
- pic ELECDOR8 tics 8
- pic ELECDOR9 tics 8
+ pic ELECDOR7 tics 6
+ pic ELECDOR8 tics 6
+ pic ELECDOR9 tics 6
 
 texture ELECDR10
  pic ELECDR10 tics 8
@@ -86,9 +86,9 @@ texture ELECDR10
  pic ELECDR12 tics 8
 
 texture GLAVA1
- pic GLAVA1 tics 8
- pic GLAVA2 tics 8 
- pic GLAVA3 tics 8
+ pic GLAVA1 tics 5
+ pic GLAVA2 tics 5 
+ pic GLAVA3 tics 5
 
 texture FLTAAWA1
  pic FLTAAWA1 tics 8
@@ -101,22 +101,22 @@ texture FLTMUD1
  pic FLTMUD3 tics 8
 
 texture FLTTEL21
- pic FLTTEL21 tics 8
- pic FLTTEL22 tics 8
- pic FLTTEL23 tics 8
- pic FLTTEL24 tics 8
+ pic FLTTEL21 tics 6
+ pic FLTTEL22 tics 6
+ pic FLTTEL23 tics 6
+ pic FLTTEL24 tics 6
 
 texture FLTTEL31
- pic FLTTEL31 tics 8
- pic FLTTEL32 tics 8
- pic FLTTEL33 tics 8
- pic FLTTEL34 tics 8
+ pic FLTTEL31 tics 6
+ pic FLTTEL32 tics 6
+ pic FLTTEL33 tics 6
+ pic FLTTEL34 tics 6
 
 texture FLTTEL41
- pic FLTTEL41 tics 8
- pic FLTTEL42 tics 8
- pic FLTTEL43 tics 8
- pic FLTTEL44 tics 8
+ pic FLTTEL41 tics 6
+ pic FLTTEL42 tics 6
+ pic FLTTEL43 tics 6
+ pic FLTTEL44 tics 6
 
 texture lvwalla1
  pic lvwalla1 tics 8
@@ -161,10 +161,10 @@ texture EFIREA
  pic EFIRED tics 6
 
 flat FLATHUA1
- pic FLATHUA1 tics 8
- pic FLATHUA2 tics 8
- pic FLATHUA3 tics 8
- pic FLATHUA4 tics 8
+ pic FLATHUA1 tics 5
+ pic FLATHUA2 tics 5
+ pic FLATHUA3 tics 5
+ pic FLATHUA4 tics 5
 
 
 switch EVILSK_1 on sound Switch1 pic SW3OFF tics 0
