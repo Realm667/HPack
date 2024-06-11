@@ -144,6 +144,7 @@ Default
 	Scale 0.5;
 	Obituary "$OB_MPPHOENIXROD";
 	DeathSound "weapons/newphoenixhit";
+	Decal "Scorch";
 	}
 	States
 	{
@@ -169,6 +170,7 @@ Default
 	ProjectileKickBack 1;
 	+FORCEXYBILLBOARD
 	Obituary "$OB_MPPPHOENIXROD";
+	Decal "PhoenixThrowerScorch";
 	}
 	States
 	{

@@ -34,12 +34,12 @@ States
 		ROSE A 2 A_Look();
 		Loop;
 	See:
-		ROSE A 3 { A_Chase(); spitchance = random(1,5555); }
+		ROSE A 6 { A_Chase(); spitchance = random(1,5000); }
 		Loop;
 	Spit:
-		ROSE A 50 A_StartSound("HellRose/StomachGrowl",2);
-		ROSE BC 5 HP_RoseSporeSpit(2);
-		ROSE D 5 { HP_RoseSporeSpit(2); HP_RoseChunkSpit(); }
+		ROSE A 55 A_StartSound("HellRose/StomachGrowl",2);
+		ROSE B 5 HP_RoseSporeSpit(2);
+		ROSE C 5 { HP_RoseSporeSpit(2); HP_RoseChunkSpit(); }
 		ROSE CB 3 HP_RoseSporeSpit(2);
 		goto See;
 	Missile:
@@ -98,12 +98,9 @@ States
 	{
 		A_StartSound("HellRose/Spit");
 		int x = random(1,1000);
-		if(x > 990)
-			{ spitactor = rarespit[random(0,2)]; }
-		else if(x < 991 && x > 889 )
-			{ spitactor = uncommonspit[random(0,4)]; }
-		else
-			{ spitactor = commonspit[random(0,4)]; }
+		if(x > 980) spitactor = rarespit[random(0,2)];
+		else if(x < 981 && x > 889 ) spitactor = uncommonspit[random(0,4)];
+		else spitactor = commonspit[random(0,4)];
 		A_SpawnItemEx(spitactor,0,0,56,frandom(2,4),0,frandom(3,5),random(0,359));
 		A_SpawnItemEx("Blood",0,0,56,frandom(2,3),0,frandom(2,4),random(0,359),SXF_USEBLOODCOLOR);
 		A_SpawnItemEx("Blood",0,0,56,frandom(2,3),0,frandom(2,4),random(0,359),SXF_USEBLOODCOLOR);
@@ -121,7 +118,7 @@ States
 	override void Tick()
 	{
 		super.Tick();
-		if(InStateSequence(self.Curstate,self.ResolveState("See")) && spitlimit < 4 && spitchance == 5555)
+		if(!isFrozen() && target && Distance3D(target) < 1024 && InStateSequence(self.Curstate,self.ResolveState("See")) && spitlimit < 4 && spitchance == 5000)
 		{
 			spitlimit++;
 			SetStateLabel("Spit");
