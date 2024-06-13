@@ -34,7 +34,7 @@ States
 		ROSE A 2 A_Look();
 		Loop;
 	See:
-		ROSE A 6 { A_Chase(); spitchance = random(1,5000); }
+		ROSE A 4 { A_Chase(); spitchance = random(1,5000); }
 		Loop;
 	Spit:
 		ROSE A 55 A_StartSound("HellRose/StomachGrowl",2);

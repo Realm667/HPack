@@ -177,6 +177,8 @@ misc/magicsmall         magsml
 misc/magicbig           magbig
 misc/icefire            frosty2
 misc/icehit             shards1b
+misc/lichhit1 LICHBB1
+misc/lichhit2 LICHBB2
 
 minotaur/fx2hit PHOHIT2
 minotaur/fx3hit PHOHIT2
@@ -242,7 +244,13 @@ monster/nshatk                  dsnshatk
 monster/nshexp                  dsnshexp
 
 // Ice Lich
-FrostBreath		FROSTB
+FrostBreath FROSTB
+icelich/sight ILICHSEE
+icelich/pain ILICHPAI
+icelich/active ILICHACT
+icelich/death ILICHDET
+IceGuyAttack frosty2
+IceGuyMissileExplode shards1b
 
 // Satyr
 satyr/sight		dssatsit
@@ -539,10 +547,13 @@ HRSpit2 HROSESP2
 // MISC SOUNDS //
 /////////////////
 
-//Hexen 2 Prop Sounds
+//Hexen Prop Sounds
 TreeBreak               treebrk
 TreeExplode             treeburn
 Ignite                  torchlit //torch2
+BatScream               bats
+PoisonShroomPain        stretch3
+PoisonShroomDeath       puff1
 
 //Chanting Monk
 Monk/Chant		DSMCHANT

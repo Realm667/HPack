@@ -9,7 +9,6 @@
 
 // includes
 
-#include "lightstyle.acs"
 #include "glassbreak.acs"
 #include "messaging.acs"
 

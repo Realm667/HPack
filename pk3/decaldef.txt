@@ -63,5 +63,38 @@ DecalGroup ChaosLightning
 	ChaosLightning1		1
 	ChaosLightning2		1
 }
-
 // END Staff of Chaos Decals
+
+generator HPMummyFX1 MummyScorch
+generator HPHereticImpBall HImpScorch
+generator HPKnightAxe AxeScorch
+generator HPWizardFX1 WizardScorch
+generator HPBeastBall DoomImpScorch
+generator HPSnakeProjA SnakeScorch1
+generator HPSnakeProjB SnakeScorch2
+generator HPHeadFX1 SnakeScorch2
+generator HPHeadFX3 CacoScorch
+generator HPMinotaurFX1 MinotaurScorch
+
+generator AcolyteShot BishopScorch
+generator ThrallShot1 HImpScorch
+generator PurpleFireWave CacoScorch
+generator DLEnergyBall HImpScorch
+//generator DeathKnightWave PENDING
+generator ToxinShot DoomImpScorch
+generator ShadeMissile CacoScorch
+generator SnakeProjC SnakeScorch2
+generator ForceShot2 PlasmaScorchLower
+generator HeatBall DoomImpScorch
+generator SentGMissile CrossbowScorch
+generator SentRmissile Scorch
+generator FireSerpFX RevenantScorch
+generator PoisonSerpFX Demon2Scorch
+generator RedDemonFX DoomImpScorch
+generator WickedShot FireDemonScorch
+
+generator HPCrossbowFX1 CrossbowScorch
+generator HPCrossbowFX7 CrossbowScorch
+generator HPCrossbowFX8 CrossbowScorch2
+generator HPMaceBall BaronScorch
+generator HPBigMaceBall Scorch

@@ -34,6 +34,7 @@ Actor FrostImp : HereticImp 19283
 		IIMP G 3
 		IIMP G 3 A_Pain
 		Goto See
+	XDeath:
 	Death:
 		IIMP G 4 A_Scream
 		IIMP G 0 A_CustomMissile("FrostImpChunk1",24,0,15,0,-10)

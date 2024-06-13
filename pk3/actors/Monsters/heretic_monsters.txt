@@ -370,13 +370,13 @@ Actor HPSnakeProjB : SnakeProjB replaces SnakeProjB
 
 ACTOR HPHeadFX1 : HeadFX1 replaces HeadFX1
 {
-	DeathSound "misc/icehit"
+	DeathSound "misc/lichhit1"
 }
 
 ACTOR HPHeadFX2 : HeadFX2 replaces HeadFX2
 {
 	+THRUGHOST
-	DeathSound "misc/icehit"
+	DeathSound "misc/lichhit2"
 }
 
 ACTOR HPHeadFX3 : HeadFX3 replaces HeadFX3

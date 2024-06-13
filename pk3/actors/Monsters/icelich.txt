@@ -23,10 +23,10 @@ actor IceLich : Iceguy 16248
 	+DONTSQUASH
 	+NOICEDEATH
 	+DONTSPLASH
-	SeeSound "ironlich/sight"
-	PainSound "ironlich/pain"
-	DeathSound "freeze/shatter"
-	ActiveSound "ironlich/active"
+	SeeSound "icelich/sight"
+	PainSound "icelich/pain"
+	DeathSound "icelich/death"
+	ActiveSound "icelich/active"
 	AttackSound ""
 	Obituary "$OB_ICELICH"
 	Tag "$FN_ICELICH"
@@ -37,51 +37,57 @@ actor IceLich : Iceguy 16248
 		ILCH A 10 A_Look
 		loop
 	See:
+		ILCH A 0 A_StopSound(7)
 		ILCH AAAA 2 A_Chase
-		ILCH A 0 A_SpawnItemEx("IceGuyWisp1", random(-20,20), random(-20,20), random(50,70), 0, 0, 0, 32, 128)
+		ILCH A 0 A_SpawnItemEx("IceGuyWisp1",random(-20,20),random(-20,20),random(50,70),0,0,0,32,128)
 		ILCH AAAA 2 A_Chase
-		ILCH A 0 A_SpawnItemEx("IceGuyWisp2", random(-20,20), random(-20,20), random(50,70), 0, 0, 0, 32, 128)
+		ILCH A 0 A_SpawnItemEx("IceGuyWisp2",random(-20,20),random(-20,20),random(50,70),0,0,0,32,128)
 		Loop
 	Missile:
-		ILCH B 0 bright A_JumpIfCloser(300, "Breath")
-		ILCH B 0 bright A_FaceTarget
-		ILCH B 0 bright A_PlaySoundEx("misc/icefire", auto) 
-		ILCH B 0 bright A_CustomMissile("IceGuyFX", 44, 10, 0, 1)
-		ILCH B 3 bright A_CustomMissile("IceGuyFX", 44, -10, 0, 1)
+		ILCH B 0 bright A_JumpIfCloser(300,"Breath")
+		ILCH A 3 bright A_FaceTarget
+		ILCH B 3 bright
+			{
+			A_FaceTarget; A_StartSound("IceGuyAttack",6);
+			A_SpawnProjectile("IceGuyFX",44,10,0,CMF_AIMOFFSET);
+			A_SpawnProjectile("IceGuyFX",44,-10,0,CMF_AIMOFFSET);
+			}
+		ILCH BA 3 bright
 		Goto See
 	Breath:
-		ILCH B 0 bright A_PlaySoundEx("ironlich/attack3", auto)
+		ILCH B 0 bright A_StartSound("FrostBreath",7,CHANF_LOOPING,1.0,ATTN_NORM,0,frandom(0,0.8))
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_CustomMissile("IceBreath", 20, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-		ILCH B 0 bright A_PlaySoundEx("ironlich/attack3", auto)
+		ILCH BBB 2 bright A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_CustomMissile("IceBreath", 20, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-		ILCH B 0 bright A_PlaySoundEx("ironlich/attack3", auto)
+		ILCH BBB 2 bright A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_CustomMissile("IceBreath", 20, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-		ILCH B 0 bright A_PlaySoundEx("ironlich/attack3", auto)
+		ILCH BBB 2 bright A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_CustomMissile("IceBreath", 20, 0, random(-10,10), CMF_CHECKTARGETDEAD)
-		ILCH B 0 bright A_PlaySoundEx("ironlich/attack3", auto)
+		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.9); }
+		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.8); }
+		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.7); }
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_CustomMissile("IceBreath", 20, 0, random(-10,10), CMF_CHECKTARGETDEAD)
+		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.6); }
+		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.4); }
+		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.2); }
+		ILCH B 0 bright A_StopSound(7)
 		Goto See
 	Pain:
-		ILCH A 2 A_Pain
+		ILCH A 2 { A_StopSound(7); A_Pain; }
 		Goto See
 	Death:
-		ILCH A 0 A_GenericFreezeDeath
-		ILCH A 3 A_Scream
-		ILCH A 1 A_IceGuyDie
+		ILCH C 1 A_StopSound(7)
+		ILCH C 6 A_Scream
+		ILCH C 1 A_IceGuyDie
 		Stop
 	}
 }
 
-actor IceBreath
+Actor IceBreath
 {
 	Radius 12
 	Height 8
-	Speed 8
+	Speed 10
 	Damage 1
 	RenderStyle Translucent
 	Alpha 0.2
@@ -90,15 +96,15 @@ actor IceBreath
 	-ACTIVATEIMPACT
 	-ACTIVATEPCROSS
 	+WINDTHRUST
-	+SPAWNSOUNDSOURCE
 	+BLOODLESSIMPACT
 	+ICEDAMAGE
-	states
+	States
 	{
 	Spawn:
-		IBRT ABABABABABABABABABAB 2 Bright
+		IBRT ABABABABABABABABAB 2 Bright
+		IBRT ABAB 2 Bright A_FadeOut(0.05)
 	Death:
-		IBRT AB 2 Bright
+		TNT1 A 1
 		Stop
 	}
 }
