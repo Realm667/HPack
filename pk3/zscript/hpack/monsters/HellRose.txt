@@ -112,7 +112,7 @@ States
 	void HP_RoseVine()
 	{
 		if (special1 > 10) return;
-		A_SpawnItemEx("HellroseBramble",random(-2,2),random(-2,2),0,0,0,0,0,SXF_SETMASTER);
+		A_SpawnItemEx("HellroseBramble",randompick(-2,2),randompick(-2,2),0,0,0,0,0,SXF_SETMASTER|SXF_NOCHECKPOSITION);
 		special1++;
 	}
 	override void Tick()
@@ -173,7 +173,6 @@ Default
 	DeathSound "HellRose/BrambleDeath";
 	Obituary "$OB_HELLROSE";
 	Tag "$FN_HELLROSEBRAMBLE";
-	-DROPOFF
 	-SLIDESONWALLS
 	-CANPASS
 	-OLDRADIUSDMG
@@ -191,7 +190,7 @@ Default
 States
 	{
 	Spawn:
-		ROSX R 2 A_Look;
+		ROSX R 2 A_Look();
 		Loop;
 	See:
       ROSX RST 3

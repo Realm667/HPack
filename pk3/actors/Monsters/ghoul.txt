@@ -105,6 +105,7 @@ ACTOR ToxinCloud : PoisonCloud
    RENDERSTYLE translucent
    ReactionTime 7
    ALPHA 0.67
+   DeathSound ""
    States
    {
    Spawn:
