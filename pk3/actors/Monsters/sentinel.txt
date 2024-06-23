@@ -209,7 +209,7 @@ ACTOR RedPuff
 	{
 	Spawn:
 		TNT1 A 3 Bright
-		RPUF ABCDE 3 Bright
+		FRB1 DEFGH 3 Bright
 		Stop 
 	}
 }

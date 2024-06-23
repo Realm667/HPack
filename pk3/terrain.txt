@@ -1739,6 +1739,10 @@ floor iceyb rock2
 floor iceyc rock3
 floor ICYWAL01 rock3
 floor ICYWAL02 metal2
+
+floor IPTEX001 rock2
+floor IPTEX002 tile2
+
 floor iwall41 metal2
 floor KDBURNT magic
 floor KDSKYT66 magic

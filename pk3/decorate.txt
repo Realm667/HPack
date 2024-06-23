@@ -44,7 +44,7 @@
 #include "actors/monsters/ghoul.txt"
 #include "actors/monsters/guardiancube.txt"
 #include "actors/monsters/icelich.txt"
-#include "actors/monsters/infernodemon.txt"
+//#include "actors/monsters/infernodemon.txt"
 #include "actors/monsters/nightshade.txt"
 #include "actors/monsters/OphidianVariants.txt"
 #include "actors/monsters/secretmonsters.txt"
@@ -55,7 +55,6 @@
 #include "actors/monsters/skullwizard.txt"
 #include "actors/monsters/sonsofdsparil.txt"
 #include "actors/monsters/swarm.txt"
-#include "actors/monsters/wicked.txt"
 #include "actors/monsters/wraith.txt"
 #include "actors/monsters/wizardblood.txt"
 

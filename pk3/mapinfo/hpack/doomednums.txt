@@ -76,8 +76,10 @@ DoomEdNums
 	11255 = HPLecternBookPageFlip
 
 	3999 = Satyr
+	12345 = InfernoDemon
 	16516 = ArchWizard
 	20001 = HellRose
+	30133 = Wicked
 
 	5213  = ArtiRoyalDagger
 	18765 = ArtiScrollOfHellfire

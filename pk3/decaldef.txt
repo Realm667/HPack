@@ -91,7 +91,7 @@ generator SentRmissile Scorch
 generator FireSerpFX RevenantScorch
 generator PoisonSerpFX Demon2Scorch
 generator RedDemonFX DoomImpScorch
-generator WickedShot FireDemonScorch
+generator WickedShot DoomImpScorch
 
 generator HPCrossbowFX1 CrossbowScorch
 generator HPCrossbowFX7 CrossbowScorch

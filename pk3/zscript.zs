@@ -12,8 +12,10 @@ version "4.4.0"
 #include "zscript/hpack/events/mapcallout.zs"
 
 #include "zscript/hpack/monsters/archwizard.zs"
+#include "zscript/hpack/monsters/hellrose.zs"
+#include "zscript/hpack/monsters/InfernoDemon.zs"
 #include "zscript/hpack/monsters/Satyr.zs"
-#include "zscript/hpack/monsters/hellrose.txt"
+#include "zscript/hpack/monsters/wicked.zs"
 
 #include "zscript/hpack/inventory/powerups.zs"
 #include "zscript/hpack/inventory/royaldagger.zs"

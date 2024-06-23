@@ -5,7 +5,8 @@
 
 #libdefine TALKER_INSCRIPTION 0
 #libdefine TALKER_CORVUS 1
-#libdefine NUM_TALKERS 2
+#libdefine TALKER_IDEMON 2
+#libdefine NUM_TALKERS 3
 
 // includes
 

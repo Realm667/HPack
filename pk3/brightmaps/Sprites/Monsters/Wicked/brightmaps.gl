@@ -1,0 +1,61 @@
+//Brightmaps
+
+BrightMap Sprite WICKJ1
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKJ1"
+DisableFullBright
+}
+
+BrightMap Sprite WICKJ2J8
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKJ2"
+DisableFullBright
+}
+
+BrightMap Sprite WICKJ3J7
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKJ3"
+DisableFullBright
+}
+
+BrightMap Sprite WICKJ4J6
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKJ4"
+DisableFullBright
+}
+
+BrightMap Sprite WICKJ5
+{ 
+Map "brightmaps/sprites/monsters/Wicked/BMWICKJ5"
+DisableFullBright
+}
+
+BrightMap Sprite WICKK1
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKK1"
+DisableFullBright
+}
+
+BrightMap Sprite WICKK2K8
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKK2"
+DisableFullBright
+}
+
+BrightMap Sprite WICKK3K7
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKK3"
+DisableFullBright
+}
+
+BrightMap Sprite WICKK4K6
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKK4"
+DisableFullBright
+}
+
+BrightMap Sprite WICKK5
+{
+Map "brightmaps/sprites/monsters/Wicked/BMWICKK5"
+DisableFullBright
+}

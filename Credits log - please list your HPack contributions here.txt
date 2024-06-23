@@ -298,13 +298,19 @@ Contributor: Gothic
 Shoutouts to kevansevans for giving me the idea of replacing decorative actors with VisualThinkers for better optimization.
 	- New Rainbow Torch edited from Daggerfall.
 	- Non Special FX sprites for the Rainbow Torch and Ethereal Statues taken from Hexen, Mageslayer and Reamls of the Haunting, edited by Gothic. Meant to be placeholder sprites in case Xaser wants to do something better for those.
-	- Torch off sound edited from Half-Life.
+	- Torch off sound from Rune.
 	- Cast sound for the Firewall taken from a bunch of Raven Software games, mixed by Gothic.
+- New sounds for the Ice Lich, taken from Legends of Might & Magic and mixed with Thief sounds.
 
 -------------------------
 Contributor: Lee Jackson
 -------------------------
 - Music for H1M7: "You Really Suck" from Alien Vendetta MIDI Pack
+
+-------------------------
+Contributor: Muumi
+-------------------------
+- Textures mmsky01-mmsky15 (edited by Gothic)
 
 -------------------------
 Contributor: Stewboy

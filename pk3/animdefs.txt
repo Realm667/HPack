@@ -155,16 +155,30 @@ texture SKULFAC1	range SKULFAC3	tics 9
 texture CHAINFA1	range CHAINFA3	tics 9
 
 texture EFIREA
- pic EFIREA tics 6
- pic EFIREB tics 6
- pic EFIREC tics 6
- pic EFIRED tics 6
+ pic EFIREA tics 5
+ pic EFIREB tics 5
+ pic EFIREC tics 5
+ pic EFIRED tics 5
 
 flat FLATHUA1
  pic FLATHUA1 tics 5
  pic FLATHUA2 tics 5
  pic FLATHUA3 tics 5
  pic FLATHUA4 tics 5
+ 
+texture mmsky01 range mmsky15 tics 3
+
+texture KORAXA1
+pic 1 tics 5
+pic 2 tics 5
+pic 3 tics 5
+pic 4 tics 5
+
+texture KORAXC1
+pic 1 tics 5
+pic 2 tics 5
+pic 3 tics 5
+pic 4 tics 5
 
 
 switch EVILSK_1 on sound Switch1 pic SW3OFF tics 0

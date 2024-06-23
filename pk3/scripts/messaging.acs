@@ -8,8 +8,9 @@
 #define NUM_TALKER_PROPS 3
 
 str talkers[NUM_TALKERS][NUM_TALKER_PROPS] = {
-    { "MSGBOX00", "Inscription", "Gold"  },
-    { "MSGBOX01", "Corvus"     , "Green" }
+	{ "MSGBOX00", "Inscription"  ,"Gold"   },
+	{ "MSGBOX01","Corvus"       ,"Green"  },
+	{ "MSGBOX02","InfernoDemon" ,"Orange" }
 };
 
 script "MessageBox" (int talker, int message, int vistime)

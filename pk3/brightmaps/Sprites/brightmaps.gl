@@ -21,6 +21,7 @@
 #include "brightmaps/Sprites/Monsters/Sabreclaw/brightmaps.gl"
 #include "brightmaps/Sprites/Monsters/UndeadWarrior/brightmaps.gl"
 #include "brightmaps/Sprites/Monsters/Weredragon/brightmaps.gl"
+#include "brightmaps/Sprites/Monsters/Wicked/brightmaps.gl"
 
 brightmap sprite playf1		{ map "Brightmaps/Sprites/playf1.png"	disablefullbright	}
 brightmap sprite playf2f8	{ map "Brightmaps/Sprites/playf2f8.png"	disablefullbright	}

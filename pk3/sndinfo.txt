@@ -352,10 +352,6 @@ ghoul/missilehit  dsbloodx
 ghoul/poof        PUFF1 //dspoof1
 
 //InfernoDemon
-Inferno/Alert	INFRALRT
-Inferno/Walk	INFRWALK
-Inferno/Die		INFRDEAD
-Inferno/Active	INFRACTV
 Apocalypse/Meteor COMETLNC
 Apocalypse/Death COMETEXP
 Meteor/Call DFATTACK
@@ -368,11 +364,12 @@ monster/firebeamdeath BSTATK //IMPFIRE2
 monster/firebeamstart DARKFLAM
 pyro/explosion DSPIPEX1
 Glyph/Start FLAMESTR
-harvester/ghost shghscrm
 Infdem/see BE-SPOT1
 Infdem/active BE-GROWL
 Infdem/pain BE-PAIN1
 Infdem/death DYING
+harvester/ghost shghscrm
+KoraxStep STEP
 
 //Sentinel
 monster/sensit dssensit
@@ -717,6 +714,7 @@ Steam/Fire	STEMFIRE
 
 //SFX Thunder
 $random thunder/hit { thunder/hit1 thunder/hit2 }
+$limit thunder/hit 0
 thunder/hit1 AMBX3 //THNDS01
 thunder/hit2 AMBX1 //THNDS02
 
