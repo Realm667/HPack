@@ -166,6 +166,8 @@ flat FLATHUA1
  pic FLATHUA3 tics 5
  pic FLATHUA4 tics 5
  
+texture REDPORT1 range REDPORT9	tics 5
+ 
 texture mmsky01 range mmsky15 tics 3
 
 texture KORAXA1
@@ -204,6 +206,9 @@ switch SWTIOFF off sound Switch2 pic SWTION tics 0
 
 switch SWTRION on sound Switch1 pic SWTRIOFF tics 0
 switch SWTRIOFF off sound Switch2 pic SWTRION tics 0
+
+switch SWTR2ON on sound Switch1 pic SWTR2OFF tics 0
+switch SWTR2OFF off sound Switch2 pic SWTR2ON tics 0
 
 switch SW50ON on sound Switch1 pic SW50OFF tics 0
 switch SW50OFF off sound Switch2 pic SW50ON tics 0

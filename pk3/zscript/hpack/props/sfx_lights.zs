@@ -431,6 +431,7 @@ Default
 	+NoGravity
 	+FixMapThingPos
 	-Solid
+	+RelativeToFloor
 	}
 	override void PostBeginPlay()
 	{
@@ -756,6 +757,7 @@ Default
 	+RelativeToFloor
 	+NoGravity
 	+Bright
+	
 	RenderStyle "Add";
 	Height 2;
 	Radius 2;

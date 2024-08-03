@@ -575,7 +575,6 @@ Default
 	Alpha 0.67;
 	Scale 2.0;
 	+NOINTERACTION
-	+DONTBLAST
 	+ForceXYBillboard
 	}
 States
