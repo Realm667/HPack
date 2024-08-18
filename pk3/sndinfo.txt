@@ -643,6 +643,7 @@ Ambient/Stars2      STARS2
 Ambient/MagicTorch  MAGTORCH
 Ambient/Contraption CONTRAPT
 Ambient/BigMove     BIGMOVE
+Ambient/CryptOpen   CRYPTOPN
 
 //=========================================================
 //AMBIENT SOUND LISTING
