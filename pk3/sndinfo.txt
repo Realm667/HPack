@@ -643,6 +643,7 @@ Ambient/Stars2      STARS2
 Ambient/MagicTorch  MAGTORCH
 Ambient/Contraption CONTRAPT
 Ambient/BigMove     BIGMOVE
+Ambient/CageMove    CAGEMOVE
 Ambient/CryptOpen   CRYPTOPN
 
 //=========================================================

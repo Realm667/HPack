@@ -359,6 +359,9 @@ Contributor: NeoWorm
 --------------------
 - Widescreen-friendly status bar.
 - Widescreen sprites for the Staff.
+- Upgraded weapon sprites: Crossbow, Hellstaff, Phoenix Rod, Staff (Master's Scroll)
+- New weapon sprites: Lightbringer, Hand of D'Sparil, Staff of Chaos, Polymorph Wand
+- Textures: NWARCH*, NWMASK*, NWSAND*, NWSEA*, NWSHAD*, NWSHAM*
 
 --------------------
 Contributor: NeuralStunner

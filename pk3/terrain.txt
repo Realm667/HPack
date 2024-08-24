@@ -2002,6 +2002,15 @@ floor MOSSRCKB rock3
 floor MOSSRCKC rock3
 floor MOSSRCKD rock3
 floor MOSSRCKE rock3
+floor NWSHAD00 metal
+floor NWSHAD01 metal
+floor NWSHAD02 metal
+floor NWSHAD03 metal
+floor NWSHAM00 metal
+floor NWSHAM01 metal
+floor NWSHAM02 metal
+floor NWSHAM03 metal
+floor NWSHAM04 metal
 floor ORNA001 tile
 floor ORNA002 tile
 floor ORNBARG1 tile
