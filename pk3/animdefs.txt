@@ -118,6 +118,11 @@ texture FLTTEL41
  pic FLTTEL43 tics 6
  pic FLTTEL44 tics 6
 
+texture FLTFLWS1
+ pic FLTFLWS1 tics 4
+ pic FLTFLWS2 tics 4
+ pic FLTFLWS3 tics 4
+
 texture lvwalla1
  pic lvwalla1 tics 8
  pic lvwalla2 tics 8
