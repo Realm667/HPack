@@ -3,6 +3,31 @@
  */
 
 /**
+ * HPackUtils
+ *
+ * General static utils class.
+ */
+class HPackUtils
+{
+	/**
+	 * SetActorZ
+	 *
+	 * Sets the Z position for all actors with the given
+	 * tid. Basically a lil' shim to be called from ACS.
+	 */
+	play static void SetActorZ(int tid, double z)
+	{
+		let it = Level.CreateActorIterator(tid);
+		Actor mo;
+
+		while ((mo = it.Next()) != NULL)
+		{
+			mo.SetXYZ((mo.x, mo.y, z));
+		}
+	}
+}
+
+/**
  * HPackCachedCvar
  *
  * Lazy cached cvar class, for performance's sake.
