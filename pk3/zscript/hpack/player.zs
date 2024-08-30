@@ -76,7 +76,6 @@ class HPackPlayer : HereticPlayer
 
 		// check if we're underwater. doesn't make
 		// sense to play footsteps while swimming. :P
-		// TODO: play liquid footstep sounds if partially submerged
 		if (waterlevel >= 3) {
 			return;
 		}
@@ -88,12 +87,23 @@ class HPackPlayer : HereticPlayer
 			return;
 		}
 
-		// now check to see if there's even a
-		// terrain def for the floor the player
-		// is standing on. no terrain, no sound.
-		TerrainDef terrain = GetFloorTerrain();
-		if (terrain == NULL) {
-			return;
+		// if partially submerged, use a couple
+		// of dedicated liquid footstep sounds
+		sound leftSound;
+		sound rightSound;
+		if(waterlevel > 0) {
+			leftSound = "footstep/liquid3/left";
+			rightSound = "footstep/liquid3/right";
+		} else {
+			// otherwise, check to see if there's even a
+			// terrain def for the floor the player
+			// is standing on. no terrain, no sound.
+			TerrainDef terrain = GetFloorTerrain();
+			if (terrain == NULL) {
+				return;
+			}
+			leftSound = terrain.LeftStepSound;
+			rightSound = terrain.RightStepSound;
 		}
 
 		// next, check to see if the player is
@@ -123,7 +133,7 @@ class HPackPlayer : HereticPlayer
 		// we've now determined that it's time
 		// to play a footstep sound, so grab it
 		// from TERRAIN. left foot, right foot...
-		sound footstepSound = (footstepLeft ? terrain.LeftStepSound : terrain.RightStepSound);
+		sound footstepSound = (footstepLeft ? leftSound : rightSound);
 		footstepLeft = !footstepLeft;
 
 		// play the sound, using the player as
