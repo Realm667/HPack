@@ -111,11 +111,22 @@ class RainDrop : Actor
 	States
 	{
 	Spawn:
-		RNDR A 1 A_JumpIf(waterlevel > 0, "Death");
+		RNDR A 1 A_WaterCheck();
 		Loop;
 
 	Death:
-		RNDR BCDEFGH 3 A_FadeOut(0.15);
+		RNDR ABCDEFGH 1 A_FadeOut(0.1);
 		Stop;
+	}
+
+	state A_WaterCheck()
+	{
+		if(self.waterlevel > 0) {
+			self.SetOrigin((self.pos.x, self.pos.y, self.pos.z + self.waterDepth), true);
+			self.vel.z = 0;
+			self.bNogravity = true;
+			return ResolveState("Death");
+		}
+		return null;
 	}
 }
