@@ -34,5 +34,6 @@ version "4.4.0"
 #include "zscript/hpack/sfx/teleportFX.zs"
 
 #include "zscript/hpack/props/sfx_lights.zs"
+#include "zscript/hpack/props/SpikeTrap.zs"
 
 #include "zscript/hpack/statusbar.zs"

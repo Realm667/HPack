@@ -584,7 +584,10 @@ StoneStopMoving		RCKSTOP
 //Minecraft Open Door
 Minecraft/DoorOpen	MCDOOR
 
-
+//Spike Traps for H4MX
+Spiketrap/Alert SPKTRAP1
+Spiketrap/Raise SPKTRAP2
+Spiketrap/Lower SPKTRAP3
 
 ////////////////////
 // AMBIENT SOUNDS //

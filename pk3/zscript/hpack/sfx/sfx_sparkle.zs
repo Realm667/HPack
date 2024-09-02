@@ -71,7 +71,7 @@ Default
 					p.texture = sprkltex;
 					p.pos = sprkcoord;
 					p.vel = (0,0,ZVelocity);
-					p.flags = SPF_ROLL;//|SPF_FULLBRIGHT
+					p.flags = SPF_ROLL|SPF_ROLLCENTER;//|SPF_FULLBRIGHT
 					p.roll = random(0,359);
 					p.alpha = 0.01;
 					p.scale = (0.2,0.2);

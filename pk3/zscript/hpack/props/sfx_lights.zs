@@ -48,7 +48,7 @@ void HP_ZTFire(int xoffs,int yoffs,int zoffs,int flarezoffs,int firezvmult,strin
 				p.texture = firtex;
 				p.pos = pos+(random(-xoffs,xoffs),random(-yoffs,yoffs),random(zoffs,zoffs+2));
 				p.vel = (0.001*random(-100,100),0.001*random(-100,100),0.001*firezvmult);
-				p.flags = SPF_ROLL;//|SPF_FULLBRIGHT
+				p.flags = SPF_ROLL|SPF_ROLLCENTER;//|SPF_FULLBRIGHT
 				p.roll = random(0,359);
 				p.alpha = 1.0;
 				p.scale = (firescl,firescl);

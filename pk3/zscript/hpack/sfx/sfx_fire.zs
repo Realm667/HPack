@@ -100,7 +100,7 @@ override bool TryPickup(in out Actor toucher)
 				p.texture = firtex;
 				p.pos = toucher.pos+(frandom(-0.6,0.6),frandom(-0.6,0.6),0);
 				p.vel = (FireSpeedX,FireSpeedY,FireSpeedZ);
-				p.flags = SPF_ROLL;//|SPF_FULLBRIGHT
+				p.flags = SPF_ROLL|SPF_ROLLCENTER;//|SPF_FULLBRIGHT
 				p.roll = random(0,359);
 				p.alpha = 0.8;
 				p.scale = FireScale;

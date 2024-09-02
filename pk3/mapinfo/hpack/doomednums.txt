@@ -19,6 +19,7 @@ DoomEdNums
 	10302 = EtherealStatueRed
 	10303 = EtherealStatueBlue
 	10300 = DSparilStatue
+	10304 = SpikeTrap
 	
 	58 = TeleGlitterGenerator3
 	59 = TeleGlitterGenerator4
