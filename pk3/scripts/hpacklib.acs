@@ -22,3 +22,18 @@ function void MessageBox(int talker, int message, int vistime)
 {
     ACS_NamedExecute("MessageBox", 0, talker, message, vistime);
 }
+
+function void HPScrollFloor(int tag, int type, int dx, int dy, int angle)
+{
+    ScriptCall("HPScroller", "ScrollFloor", tag, type, dx, dy, angle);
+}
+
+function void HPScrollCeiling(int tag, int type, int dx, int dy, int angle)
+{
+    ScriptCall("HPScroller", "ScrollCeiling", tag, type, dx, dy, angle);
+}
+
+function void HPScrollFloorAndCeiling(int tag, int type, int dx, int dy, int angle)
+{
+    ScriptCall("HPScroller", "ScrollFloorAndCeiling", tag, type, dx, dy, angle);
+}
