@@ -5,7 +5,6 @@
 #include "actors/misc/sfx_splash.txt"
 #include "actors/misc/sfx_blood.txt"
 #include "actors/misc/sfx_blackmagic.txt"
-#include "actors/misc/sfx_glass.txt"
 
 //Player stuff
 #Include "actors/items/ammo.txt"

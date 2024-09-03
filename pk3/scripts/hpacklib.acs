@@ -3,6 +3,9 @@
 
 // public defines -- accessible to map scripts
 
+#libdefine GLASS_STYLE_STAINED 0
+#libdefine GLASS_STYLE_CLEAR 1
+
 #libdefine TALKER_INSCRIPTION 0
 #libdefine TALKER_CORVUS 1
 #libdefine TALKER_IDEMON 2
