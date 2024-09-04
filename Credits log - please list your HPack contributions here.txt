@@ -350,6 +350,11 @@ Contributor: Pyroscourge
 - H5MX: "In the back of my head"
 
 --------------------
+Contributor: Teck
+--------------------
+- Music for H3M4: "Lower Norfair (Orchestrated)"
+
+--------------------
 Contributor: Andreas Viklund (TSEC)
 --------------------
 - Music for H5MX: "Far Away"
