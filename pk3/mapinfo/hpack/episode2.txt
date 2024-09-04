@@ -41,9 +41,9 @@ map H2M2 "Dark Water"
 	monsterfallingdamage
 }
 
-map H2M3 "Aquatemple"
+map H2M3 "Sodden Palace"
 {
-	author   = "ShadesMaster"
+	author   = "ShadesMaster & Xaser"
 	levelnum = 23
 	music    = M_H2M3
 	next     = H2M4
