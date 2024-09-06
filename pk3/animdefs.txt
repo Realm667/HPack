@@ -50,6 +50,16 @@ texture WLLINDF1
  pic WLLINDF2 tics 6
  pic WLLINDF3 tics 6
 
+texture WLLWATR1
+ pic WLLWATR1 tics 4
+ pic WLLWATR2 tics 4
+ pic WLLWATR3 tics 4
+
+texture WLLWATF1
+ pic WLLWATF1 tics 4
+ pic WLLWATF2 tics 4
+ pic WLLWATF3 tics 4
+
 texture CANDLES1
  pic CANDLES1 tics 4
  pic CANDLES2 tics 4
