@@ -35,7 +35,6 @@
 #include "actors/monsters/champion.txt"
 #include "actors/monsters/cultist.txt"
 #include "actors/monsters/darklich.txt"
-#include "actors/monsters/darknessrift.txt"
 #include "actors/monsters/deathknight.txt"
 #include "actors/monsters/disciple.txt"
 #include "actors/monsters/fallen.txt"

@@ -112,7 +112,7 @@ States
 				p.bAddLightLevel;
 				if(whatstartext == "PTCLA0")
 				{
-					p.flags = SPF_ROLL;
+					p.flags = SPF_ROLL|SPF_ROLLCENTER;
 					p.roll = random(0,359);
 					p.alpha = 0.01;
 					p.scale = (0.2,0.2);
@@ -430,7 +430,7 @@ States
 				p.bAddLightLevel;
 				if(whatstartext == "PTCLA0")
 				{
-					p.flags = SPF_ROLL;
+					p.flags = SPF_ROLL|SPF_ROLLCENTER;
 					p.roll = random(0,359);
 					p.alpha = 0.01;
 					p.scale = (0.2,0.2);
