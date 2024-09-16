@@ -751,6 +751,16 @@ world/portal1           portal1
 world/portal2           portal2
 world/portal3           portal3
 
+// E4M5 Magic Pistons
+world/piston/switch     pistswit
+world/piston/platform   pistplat
+world/piston/pump       pistpump
+$rolloff world/piston/pump 1024 2048
+$rolloff world/piston/platform 512 1024
+$pitchshift world/piston/switch 0
+$pitchshift world/piston/platform 0
+$pitchshift world/piston/pump 0
+
 //===========================================================================
 // 
 // HEXEN IMPORTED 'WORLD SOUNDS'
