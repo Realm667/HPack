@@ -807,6 +807,7 @@ floor SKULLSB2 metal2
 floor SKY1 magic
 floor SKY2 magic
 floor SKY3 magic
+floor SKYSOUP magic
 floor SNDBLCKS rock
 floor SNDCHNKS rock3
 floor SNDPLAIN rock

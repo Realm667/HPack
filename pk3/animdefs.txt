@@ -21,6 +21,7 @@ warp texture SKYTP14W
 warp texture CSSKY
 warp texture BSSKY
 warp texture SKYSOUL1
+warp texture SKYSOUP
 warp2 texture WWATERNW
 warp texture mc__103
 warp texture mc_tele

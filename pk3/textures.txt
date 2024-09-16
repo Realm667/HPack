@@ -569,6 +569,11 @@ Texture "BLUEFRAG", 64, 64
 	Patch "WALL508", 0, 0
 }
 
+Texture "SKYSOUP", 256, 256
+{
+	Patch "SKYSOUL2", 0, 0
+}
+
 Texture "WALL513B", 128, 128
 {
 	Patch "WALL513B", 0, 0
