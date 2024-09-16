@@ -20,6 +20,7 @@ DoomEdNums
 	10303 = EtherealStatueBlue
 	10300 = DSparilStatue
 	10304 = SpikeTrap
+	12457 = VolcanoPurple
 	15001 = Darkness
 	
 	58 = TeleGlitterGenerator3
