@@ -218,3 +218,18 @@ actor HPLecternBookPageFlip
 	}
 }
 
+ACTOR HPZCandleFloating : ZCandle
+{
+	//$Category Lights
+	//$Title Floating Candles
+	+FLOATBOB
+	+NOGRAVITY
+	-SOLID
+States
+	{
+	Spawn:
+		CNDF ABC 4 Bright
+		Loop
+	}
+}
+
