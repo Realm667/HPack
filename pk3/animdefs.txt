@@ -26,6 +26,29 @@ warp2 texture WWATERNW
 warp texture mc__103
 warp texture mc_tele
 
+//H4M8
+warp2 texture WLLWTFL2
+warp2 texture H4M8WT1
+warp2 texture H4M8WT2
+warp2 texture H4M8WT3
+warp2 texture H4M8WT4
+warp2 texture H4M8WT5
+warp2 texture H4M8WT6
+warp2 texture H4M8WT7
+warp2 texture H4M8WT8
+warp2 texture H4M8WT9
+warp2 texture H4M8WT10
+warp2 texture H4M8WF1
+warp2 texture H4M8WF2
+warp2 texture H4M8WF3
+warp2 texture H4M8WF4
+warp2 texture H4M8WF5
+warp2 texture H4M8WF6
+warp2 texture H4M8WF7
+warp2 texture H4M8WF8
+warp2 texture H4M8WF9
+warp2 texture H4M8WF10
+
 texture WLLATFL1
  pic WLLATFL1 tics 4
  pic WLLATFL2 tics 4
