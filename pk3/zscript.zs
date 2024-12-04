@@ -39,5 +39,6 @@ version "4.4.0"
 #include "zscript/hpack/props/SpikeTrap.zs"
 #include "zscript/hpack/props/DarkCloud.zs"
 #include "zscript/hpack/props/hazards.zs"
+#include "zscript/hpack/props/prop_handstatue.zs"
 
 #include "zscript/hpack/statusbar.zs"

@@ -23,6 +23,7 @@ DoomEdNums
 	12457 = VolcanoPurple
 	15001 = Darkness
 	16125 = HPZCandleFloating
+	32480 = HandStatue
 	
 	58 = TeleGlitterGenerator3
 	59 = TeleGlitterGenerator4
