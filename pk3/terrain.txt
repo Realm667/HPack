@@ -3174,7 +3174,7 @@ floor WSKULLIQ magic
 floor WSLIME01 Acid
 floor WSLIME02 Mud
 floor WSLIME03 Sludge
-floor WSLIMH Mud
+floor WSLIMH sludge
 floor WWATER01 Water
 floor ZZZROCK1 rock4
 floor ZZZSTRT1 rock3
