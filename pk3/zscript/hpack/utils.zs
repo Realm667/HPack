@@ -22,7 +22,7 @@ class HPackUtils
 
 		while ((mo = it.Next()) != NULL)
 		{
-			mo.SetXYZ((mo.x, mo.y, z));
+			mo.SetXYZ((mo.Pos.x, mo.Pos.y, z));
 		}
 	}
 }

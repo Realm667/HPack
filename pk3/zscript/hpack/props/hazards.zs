@@ -42,11 +42,11 @@ Class VolcanoPurple : Volcano
 	{
 		int i;
 		for(i = 0; i < 12; i++) {
-			A_CustomMissile("VolcanoPurpleFX", 16.0, 0.0, frandom(90.0, 270.0), 6.0, frandom(0.0, 20.0));
+			A_SpawnProjectile("VolcanoPurpleFX", 16.0, 0.0, frandom(90.0, 270.0), 6.0, frandom(0.0, 20.0));
 		}
 		for(i = 0; i < 12; i++) {
-			A_CustomMissile("VolcanoPurpleFX", 16.0, 0.0, random(0.0, 360.0), 6.0, frandom(0.0, 90.0));
+			A_SpawnProjectile("VolcanoPurpleFX", 16.0, 0.0, random(0.0, 360.0), 6.0, frandom(0.0, 90.0));
 		}
-		A_PlaySound("BishopMissileExplode");
+		A_StartSound("BishopMissileExplode");
 	}
 }

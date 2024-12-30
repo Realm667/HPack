@@ -164,6 +164,7 @@ ACTOR ShadowBeast_Creature
   -SHOOTABLE
   +FLOAT
   +NOGRAVITY
+  -COUNTKILL
   states
   {
   	Spawn:
@@ -225,8 +226,10 @@ ACTOR ShadowBeast_BallFire
   Projectile
   +SPAWNSOUNDSOURCE
   +RIPPER
+  +BLOODLESSIMPACT
   RenderStyle Add
   SeeSound "shadowbeast/pr1death"
+  RipSound ""
   Decal MummyScorch
   States
   {

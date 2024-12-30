@@ -314,3 +314,6 @@ brightmap texture WALLAN2 { map "Brightmaps/Textures/WALLAN2.png" }
 brightmap texture WALLAN3 { map "Brightmaps/Textures/WALLAN3.png" }
 brightmap texture WLAVA02 { map "Brightmaps/Textures/WLAVA02.png" }
 
+brightmap texture CANDLES1 { map "Brightmaps/Textures/CANDLES1.png" }
+brightmap texture CANDLES2 { map "Brightmaps/Textures/CANDLES2.png" }
+brightmap texture CANDLES3 { map "Brightmaps/Textures/CANDLES3.png" }

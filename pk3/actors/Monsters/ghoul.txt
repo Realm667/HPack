@@ -13,7 +13,8 @@ ACTOR Ghoul 30123
 	MONSTER
 	BloodColor "20 60 20"
 	+FLOORCLIP
-	+DONTHURTSPECIES
+	+DONTHARMCLASS
+	DamageFactor "Poison", 0
 	Obituary "$OB_GHOUL"
 	HitObituary "$OB_GHOULH"
 	Tag "$FN_GHOUL"
