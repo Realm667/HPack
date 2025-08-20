@@ -26,15 +26,21 @@ Class VolcanoPurpleFX : BishopFX
 
 Class VolcanoPurple : Volcano
 {
+	int LightRad; int LightCol; int LightZ;
 	States
 	{
 	Spawn:
 		VLCP A 350;
 	ThisSureIsAStateName:
-		VLCP A 35 A_VolcanoSet();
+		VLCP A 35 { A_RemoveLight('Light'); LightRad = 48; LightCol = 250; LightZ = 30; A_VolcanoSet(); }
 		VLCP BCDBCD 3;
-		VLCP E 10;
 		VLCP E 0 A_VolcanoPurpleErupt();
+		VLCP EEEEEAAAAA 2
+		{
+			color Purp = color(LightCol,0,LightCol);
+			A_AttachLight('Light',DynamicLight.PointLight,Purp,LightRad,LightRad,DynamicLight.LF_ATTENUATE,(0,0,LightZ));
+			LightRad+=32; LightCol-=25; LightZ+=10;
+		}
 		Goto ThisSureIsAStateName;
 	}
 
