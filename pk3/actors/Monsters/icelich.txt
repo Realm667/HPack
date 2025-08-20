@@ -57,19 +57,19 @@ actor IceLich : Iceguy 16248
 	Breath:
 		ILCH B 0 bright A_StartSound("FrostBreath",7,CHANF_LOOPING,1.0,ATTN_NORM,0,frandom(0,0.8))
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
+		ILCH BBB 2 bright A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
+		ILCH BBB 2 bright A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
 		ILCH B 0 bright A_FaceTarget
-		ILCH BBB 2 bright A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
+		ILCH BBB 2 bright A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD)
 		ILCH B 0 bright A_FaceTarget
-		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.9); }
-		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.8); }
-		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.7); }
+		ILCH B 2 bright { A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.9); }
+		ILCH B 2 bright { A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.8); }
+		ILCH B 2 bright { A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.7); }
 		ILCH B 0 bright A_FaceTarget
-		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.6); }
-		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.4); }
-		ILCH B 2 bright { A_SpawnProjectile("IceBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.2); }
+		ILCH B 2 bright { A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.6); }
+		ILCH B 2 bright { A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.4); }
+		ILCH B 2 bright { A_SpawnProjectile("IceLichBreath",20,0,random(-10,10),CMF_CHECKTARGETDEAD); A_SoundVolume(7,0.2); }
 		ILCH B 0 bright A_StopSound(7)
 		Goto See
 	Pain:
@@ -83,7 +83,7 @@ actor IceLich : Iceguy 16248
 	}
 }
 
-Actor IceBreath
+Actor IceLichBreath
 {
 	Radius 12
 	Height 8

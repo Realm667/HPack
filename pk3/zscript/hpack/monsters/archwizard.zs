@@ -37,6 +37,7 @@ class ArchWizard : Actor
 		Damage 0;
 
 		DamageFactor "Poison", 0.0; // lazy self-poison immunity
+		DamageFactor "DontHarmYourself", 0.0; //so they don't get damaged by their own cubes
 
 		SeeSound "archwizard/sight";
 		DeathSound "archwizard/death";
@@ -374,6 +375,8 @@ class ArchwizardBall : Actor
 		+NOWALLBOUNCESND;
 		+USEBOUNCESTATE;
 		+NOINTERACTION;
+
+		DamageType "DontHarmYourself";
 	}
 
 	States

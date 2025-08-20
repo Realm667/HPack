@@ -1,0 +1,83 @@
+flickerlight ICEGARG
+{
+	attenuate 1
+	color 0.2 0.3 1.0
+	size 60
+	secondarysize 72
+	chance 0.4
+}
+
+flickerlight ICEGARG2
+{
+	attenuate 1
+	color 0.1 0.2 0.9
+	size 50
+	secondarysize 62
+	chance 0.4
+}
+
+flickerlight ICEGARG3
+{
+	attenuate 1
+	color 0.0 0.1 0.8
+	size 35
+	secondarysize 47
+	chance 0.4
+}
+
+flickerlight ICEGARGATK
+{
+	attenuate 1
+	color 0.2 0.3 1.0
+	size 84
+	secondarysize 96
+	chance 0.4
+}
+
+object FrostImp
+{
+	frame IIMPA { light ICEGARG }
+	frame IIMPB { light ICEGARG }
+	frame IIMPC { light ICEGARG }
+	frame IIMPD { light ICEGARG }
+	frame IIMPG { light ICEGARG }
+	frame IIMPH { light ICEGARG }
+	frame IIMPI { light ICEGARG }
+	frame IIMPJ { light ICEGARG }
+	frame IIMPK { light ICEGARG2 }
+	frame IIMPL { light ICEGARG3 }
+	frame IIMPM { light ICEGARG3 }
+
+	frame IIMPE { light ICEGARGATK }
+	frame IIMPF { light ICEGARGATK }
+}
+
+object FrostImpLeader
+{
+	frame IIMPA { light ICEGARG }
+	frame IIMPB { light ICEGARG }
+	frame IIMPC { light ICEGARG }
+	frame IIMPD { light ICEGARG }
+	frame IIMPG { light ICEGARG }
+	frame IIMPH { light ICEGARG }
+	frame IIMPI { light ICEGARG }
+	frame IIMPJ { light ICEGARG }
+	frame IIMPK { light ICEGARG2 }
+	frame IIMPL { light ICEGARG3 }
+	frame IIMPM { light ICEGARG3 }
+
+	frame IIMPE { light ICEGARGATK }
+	frame IIMPF { light ICEGARGATK }
+}
+
+object FrostImpShard
+{
+	frame IMSDA { light MFROSTSHARD }
+	frame IMSDB { light MFROSTSHARD }
+	frame IMSDC { light MFROSTSHARD }
+	frame IMSDD { light MFROSTSHARD_X1 }
+	frame IMSDE { light MFROSTSHARD_X2 }
+	frame IMSDF { light MFROSTSHARD_X3 }
+	frame IMSDG { light MFROSTSHARD_X4 }
+	frame IMSDH { light MFROSTSHARD_X4 }
+}

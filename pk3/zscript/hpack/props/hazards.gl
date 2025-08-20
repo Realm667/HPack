@@ -1,0 +1,4 @@
+object VolcanoPurple
+{
+	frame VLCPE { light ArchBallPURPLE_X1 }
+}
