@@ -1,0 +1,111 @@
+Flickerlight POLYWANDSHOT
+{
+	color 0.8 1.0 0.7
+	size 72
+	secondarysize 78
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POLYWANDSHOT_X1
+{
+	color 0.6 0.8 0.5
+	size 96
+	secondarysize 104
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POLYWANDSHOT_X2
+{
+	color 0.5 0.7 0.4
+	size 108
+	secondarysize 116
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POLYWANDSHOT_X3
+{
+	color 0.3 0.5 0.2
+	size 132
+	secondarysize 140
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POLYWANDSHOT_X4
+{
+	color 0.1 0.2 0.0
+	size 144
+	secondarysize 152
+	chance 0.8
+	attenuate 1
+}
+
+Object SquirrelFX
+{
+	frame CURSA { light POLYWANDSHOT }
+	frame CURSB { light POLYWANDSHOT }
+	frame CURSC { light POLYWANDSHOT }
+	frame CURSD { light POLYWANDSHOT }
+	frame CURSE { light POLYWANDSHOT }
+	frame CURSF { light POLYWANDSHOT }
+
+	frame CURSG { light POLYWANDSHOT_X1 }
+	frame CURSH { light POLYWANDSHOT_X2 }
+	frame CURSI { light POLYWANDSHOT_X2 }
+	frame CURSJ { light POLYWANDSHOT_X3 }
+	frame CURSK { light POLYWANDSHOT_X3 }
+	frame CURSL { light POLYWANDSHOT_X4 }
+}
+
+Flickerlight POLYWANDSHOT2
+{
+	color 0.9 1.0 0.8
+	size 78
+	secondarysize 82
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POLYWANDSHOT3
+{
+	color 1.0 1.0 0.9
+	size 82
+	secondarysize 90
+	chance 0.8
+	attenuate 1
+}
+
+Object SquirrelFX2
+{
+	frame CURSM { light POLYWANDSHOT }
+	frame CURSN { light POLYWANDSHOT }
+	frame CURSO { light POLYWANDSHOT2 }
+	frame CURSP { light POLYWANDSHOT2 }
+	frame CURSQ { light POLYWANDSHOT3 }
+	frame CURSR { light POLYWANDSHOT2 }
+	frame CURSS { light POLYWANDSHOT }
+	frame CURST { light POLYWANDSHOT }
+	frame CURSU { light POLYWANDSHOT }
+	frame CURSV { light POLYWANDSHOT }
+	frame CURSW { light POLYWANDSHOT }
+
+	frame CURSG { light POLYWANDSHOT_X1 }
+	frame CURSH { light POLYWANDSHOT_X2 }
+	frame CURSI { light POLYWANDSHOT_X2 }
+	frame CURSJ { light POLYWANDSHOT_X3 }
+	frame CURSK { light POLYWANDSHOT_X3 }
+	frame CURSL { light POLYWANDSHOT_X4 }
+}
+
+Object SquirrelFX3
+{
+	frame CURSG { light POLYWANDSHOT_X1 }
+	frame CURSH { light POLYWANDSHOT_X2 }
+	frame CURSI { light POLYWANDSHOT_X2 }
+	frame CURSJ { light POLYWANDSHOT_X3 }
+	frame CURSK { light POLYWANDSHOT_X3 }
+	frame CURSL { light POLYWANDSHOT_X4 }
+}

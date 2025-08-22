@@ -1,19 +1,38 @@
 class HTeleportFog : TeleportFog replaces TeleportFog
 {
+int colred; int colgreen; int colblue;
+int minusfactor1; int minusfactor2; int minusfactor3;
+override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		colred = 100; colgreen = 100; colblue = 250;
+		minusfactor1 = colred/10; minusfactor2 = colgreen/10; minusfactor3 = colblue/10;
+	}
 States
 	{
 	Raven:
-		TNT1 A 3 A_SpawnItemEx("TCentreStar",0,0,0,0,0,0,0,SXF_TRANSFERTRANSLATION|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE);
+		TNT1 A 3 { HP_TeleportLight(colred,colgreen,colblue,96); A_SpawnItemEx("TCentreStar",0,0,0,0,0,0,0,SXF_TRANSFERTRANSLATION|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE); }
 		TNT1 AAAAAAAAAA 0 A_SpawnItemEx("TGlitter",random(32,-32),random(32,-32),-20,0,0,random(1,4),0,SXF_TRANSFERTRANSLATION|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE);
-		TNT1 A 3;
+		TNT1 A 3 HP_TeleportLight(colred,colgreen,colblue,60);
 		TNT1 AAAAAAAAAA 0 A_SpawnItemEx("TGlitter",random(32,-32),random(32,-32),-20,0,0,random(1,4),0,SXF_TRANSFERTRANSLATION|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE);
-		TNT1 A 3;
+		TNT1 A 3 HP_TeleportLight(colred,colgreen,colblue,24);
 		TNT1 AAAAAAAAAA 0 A_SpawnItemEx("TGlitter",random(32,-32),random(32,-32),-20,0,0,random(1,4),0,SXF_TRANSFERTRANSLATION|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE);
-		TNT1 A 3;
+		TNT1 A 3 HP_TeleportLight(colred,colgreen,colblue,60);
 		TNT1 AAAAAAAAAA 0 A_SpawnItemEx("TGlitter",random(32,-32),random(32,-32),-20,0,0,random(1,4),0,SXF_TRANSFERTRANSLATION|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE);
-		TNT1 A 3;
+		TNT1 A 3 HP_TeleportLight(colred,colgreen,colblue,60);
 		TNT1 AAAAAAAAAA 0 A_SpawnItemEx("TGlitter",random(32,-32),random(32,-32),-20,0,0,random(1,4),0,SXF_TRANSFERTRANSLATION|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE);
+		TNT1 A 3 HP_TeleportLight(colred,colgreen,colblue,60);
+		TNT1 AAAAAAAAA 3
+		{
+			HP_TeleportLight(colred,colgreen,colblue,88);
+			colred-=minusfactor1; colgreen-=minusfactor2; colblue-=minusfactor3;
+		}
 		Stop;
+	}
+	void HP_TeleportLight(int Red, int Green, int Blue, int LightRad)
+	{
+		color Telept = color(Red,Green,Blue);
+		A_AttachLight('TeleLight',DynamicLight.FlickerLight,Telept,LightRad,LightRad+8,DynamicLight.LF_ATTENUATE,(0, 0, 0),0.4);
 	}
 }
 
@@ -45,10 +64,42 @@ States
 	}
 }
 
-class HTeleportFogRed : HTeleportFog { Default { Translation "185:208=145:168","177:184=249:245"; } }
-class HTeleportFogGold : HTeleportFog { Default { Translation "185:208=111:136","177:184=137:144"; } }
-class HTeleportFogGreen : HTeleportFog { Default { Translation "185:208=209:224","177:184=233:240"; } }
-class HTeleportFogTan : HTeleportFog { Default { Translation "185:208=66:94","177:184=95:110"; } }
+class HTeleportFogRed : HTeleportFog
+{ Default { Translation "185:208=145:168","177:184=249:245"; }
+override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		colred = 250; colgreen = 100; colblue = 100;
+		minusfactor1 = colred/10; minusfactor2 = colgreen/10; minusfactor3 = colblue/10;
+	}
+}
+class HTeleportFogGold : HTeleportFog
+{ Default { Translation "185:208=111:136","177:184=137:144"; }
+override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		colred = 250; colgreen = 230; colblue = 100;
+		minusfactor1 = colred/10; minusfactor2 = colgreen/10; minusfactor3 = colblue/10;
+	}
+}
+class HTeleportFogGreen : HTeleportFog
+{ Default { Translation "185:208=209:224","177:184=233:240"; }
+override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		colred = 100; colgreen = 250; colblue = 100;
+		minusfactor1 = colred/10; minusfactor2 = colgreen/10; minusfactor3 = colblue/10;
+	}
+}
+class HTeleportFogTan : HTeleportFog
+{ Default { Translation "185:208=66:94","177:184=95:110"; }
+override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		colred = 250; colgreen = 200; colblue = 250;
+		minusfactor1 = colred/10; minusfactor2 = colgreen/10; minusfactor3 = colblue/10;
+	}
+}
 
 class HPTeleGlitter1 : TeleGlitter1 replaces TeleGlitter1 { Default { +FORCEXYBILLBOARD +CLIENTSIDEONLY } }
 class HPTeleGlitter2 : TeleGlitter2 replaces TeleGlitter2 { Default { +FORCEXYBILLBOARD +CLIENTSIDEONLY } }

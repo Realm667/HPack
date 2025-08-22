@@ -29,7 +29,9 @@
 #include "zscript/hpack/weapons/dragonclaw.gl"
 #include "zscript/hpack/weapons/hellstaff.gl"
 #include "zscript/hpack/weapons/phoenixrod.gl"
-#include "zscript/hpack/weapons/dsparilsgloves.gl" 
+#include "zscript/hpack/weapons/dsparilsgloves.gl"
+#include "zscript/hpack/weapons/polymorphwand.gl"
+#include "zscript/hpack/weapons/meleestuff.gl"
 #include "zscript/hpack/inventory/royaldagger.gl"
 
 // Monsters
