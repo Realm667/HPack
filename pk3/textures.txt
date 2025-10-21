@@ -655,6 +655,38 @@ Texture "WLLWATF3", 64, 512
 	Patch "FLTFLWS3", 0, 448
 }
 
+Texture "XAMIFAD1", 256, 512
+{
+	Patch "ROCK904", 0, 0
+	Patch "ROCK904", 0, 128
+	Patch "ROCK904", 0, 256
+	Patch "ROCK904", 0, 384
+}
+
+Texture "XAMIFAD2", 64, 512
+{
+	Patch "LOOSERC2", 0, 0
+	Patch "LOOSERC2", 0, 128
+	Patch "LOOSERC2", 0, 256
+	Patch "LOOSERC2", 0, 384
+}
+
+Texture "XAMIFAD3", 128, 512
+{
+	Patch "ROCK951", 0, 0
+	Patch "ROCK951", 0, 128
+	Patch "ROCK951", 0, 256
+	Patch "ROCK951", 0, 384
+}
+
+Texture "XAMIFAD4", 32, 512
+{
+	Patch "BOOKSIDE", 0, 0
+	Patch "BOOKSIDE", 0, 128
+	Patch "BOOKSIDE", 0, 256
+	Patch "BOOKSIDE", 0, 384
+}
+
 Texture "XSKULLIG", 64, 64
 {
 	Patch "WSKULLIG", 0, 0

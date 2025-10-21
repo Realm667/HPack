@@ -589,6 +589,11 @@ Spiketrap/Alert SPKTRAP1
 Spiketrap/Raise SPKTRAP2
 Spiketrap/Lower SPKTRAP3
 
+//NOPE
+misc/nope1  NOPE1
+misc/nope2  NOPE2
+$random misc/nope { misc/nope1 misc/nope2 }
+
 ////////////////////
 // AMBIENT SOUNDS //
 ////////////////////
@@ -646,6 +651,7 @@ Ambient/Stars2      STARS2
 Ambient/MagicTorch  MAGTORCH
 Ambient/Contraption CONTRAPT
 Ambient/BigMove     BIGMOVE
+Ambient/BigSplash   BIGSPLSH
 Ambient/CageMove    CAGEMOVE
 Ambient/CryptOpen   CRYPTOPN
 
