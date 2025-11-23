@@ -84,7 +84,7 @@ generator DLEnergyBall HImpScorch
 generator ToxinShot DoomImpScorch
 generator ShadeMissile CacoScorch
 generator SnakeProjC SnakeScorch2
-generator ForceShot2 PlasmaScorchLower
+generator ForceShot PlasmaScorchLower
 generator HeatBall DoomImpScorch
 generator SentGMissile CrossbowScorch
 generator SentRmissile Scorch

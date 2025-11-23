@@ -901,3 +901,27 @@ States
 		Stop;
 	}
 }
+
+class HPZChandelier : SwitchableDecoration //16005
+{
+Default
+	{
+	//$Category Lights
+	//$Title Chandelier (Hexen)
+	//$Sprite CDLRA0
+	Radius 20;
+	Height 60;
+	+SPAWNCEILING
+	+NOGRAVITY
+	}
+	States
+	{
+	Spawn:
+	Active:
+		CDLR ABC 4 Bright;
+		Loop;
+	Inactive:
+		CDLR D -1;
+		Stop;
+	}
+}

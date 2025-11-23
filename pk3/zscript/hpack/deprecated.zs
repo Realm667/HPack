@@ -106,7 +106,7 @@ class HPZTwinedTorchUnlit : HPDeprecatedActor
 	}
 	override Name ChooseSpawn()
 	{
-		console.Printf(TEXTCOLOR_ORANGE .. "Warning: Actor '%s' has been removed. Replace it with its lit counterpart with the DORMANT flag set.", GetClassName(), replacementActor);
+		console.Printf(TEXTCOLOR_ORANGE .. "Warning: Actor '%s' has been removed. Replace with its lit counterpart with the DORMANT flag.", GetClassName(), replacementActor);
 		return replacementActor;
 	}
 }
@@ -129,6 +129,16 @@ class ZFireBullUnlitNew : HPZTwinedTorchUnlit
 	}
 }
 
+class HPZChandelierUnlit : HPZTwinedTorchUnlit
+{
+	Default
+	{
+	//$Category HPack Deprecated Classes
+		HPDeprecatedActor.ReplacementActor 'HPZChandelier2';
+	}
+}
+
 class TOTLTwinedTorch2 : TOTLTwinedTorch {Default{ +DORMANT }}
 class ZWallTorchNew2 : ZWallTorchNew {Default{ +DORMANT }}
 class ZFireBullNew2 : ZFireBullNew {Default{ +DORMANT }}
+class HPZChandelier2 : HPZChandelier {Default{ +DORMANT }}

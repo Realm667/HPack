@@ -58,6 +58,7 @@ Actor FrostImpLeader : FrostImp 19284
 {
 	//$Category Monsters
 	//$Title Ice Gargoyle
+	//$Sprite IIMPF1
 	Health 80
 	-MISSILEMORE
 	Obituary "$OB_FROSTIMPL"

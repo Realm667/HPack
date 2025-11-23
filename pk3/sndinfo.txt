@@ -107,11 +107,6 @@ $volume weapons/dspgntpowhit 0.6
 
 weapons/spikeattack		ripslop2
 
-array/fire 		array1
-array/firep 	array2
-array/impactp 	array3
-
-
 weapons/sunstaffbeam1		sunbm1
 weapons/sunstaffbeam2		sunbm2
 weapons/sunstaffbeam3		sunbm3
@@ -525,6 +520,11 @@ OphidianLord/Active LSNKACT
 OphidianLord/Pain LSNKPAI
 OphidianLord/Death LSNKDTH
 
+array/fire 		array1
+array/firep 	array2
+array/impactp 	array3
+$limit array/impactp 0
+
 //HellRose
 HellRose/Attack HROSEOPN
 HellRose/Death HROSEDTH
@@ -593,6 +593,14 @@ Spiketrap/Lower SPKTRAP3
 misc/nope1  NOPE1
 misc/nope2  NOPE2
 $random misc/nope { misc/nope1 misc/nope2 }
+
+//Rock/Stone/Wall breaking
+RockBreakSound wallbrk
+RockBreakSoundSmall wallbrk2 //from Half Life
+
+//Unholy Beacon
+UNHBECLT UNHBECLT
+$Limit UNHBECLT 0
 
 ////////////////////
 // AMBIENT SOUNDS //

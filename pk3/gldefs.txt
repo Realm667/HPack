@@ -14,6 +14,7 @@
 
 // Items and decoration
 #include "zscript/hpack/props/prop_handstatue.gl"
+#include "zscript/hpack/props/prop_Morladim.gl"
 #include "actors/misc/prop_hexen.gl"
 #include "actors/misc/prop_podvariants.gl"
 #include "zscript/hpack/props/sfx_lights.gl"

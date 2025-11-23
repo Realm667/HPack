@@ -227,24 +227,28 @@ ACTOR HPZChainEndSpike : ZChainEndSpike 16090
 	//$Title Chain (Spiked Ball)
 	+FORCEYBILLBOARD
 }
-
-ACTOR HPZChandelier : RandomSpawner 16005
+/*
+ACTOR HPZChandelier : SwitchableDecoration 16005
 {
 	//$Category Lights
-	//$Title Chandelier (Hexen, Lit)
+	//$Title Chandelier (Hexen)
 	//$Sprite CDLRA0
+	Radius 20
+	Height 60
 	+SPAWNCEILING
-	DropItem "ZChandelier"
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+	Active:
+		CDLR ABC 4 Bright
+		Loop
+	Inactive:
+		CDLR D -1
+		Stop
+	}
 }
-
-ACTOR HPZChandelierUnlit : RandomSpawner 16006
-{
-	//$Category Lights
-	//$Title Chandelier (Hexen, Unlit)
-	//$Sprite CDLRD0
-	+SPAWNCEILING
-	DropItem "ZChandelierUnlit"
-}
+*/
 
 ACTOR HPZCorpseHanging : RandomSpawner 16042
 {
