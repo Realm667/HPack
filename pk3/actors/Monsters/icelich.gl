@@ -1,0 +1,17 @@
+Pointlight IceBreath1
+{
+	color 0.0 0.0 .10
+	size 50
+}
+
+Pointlight IceBreath2
+{
+	color 0.0 0.0 0.8
+	size 48
+}
+
+Object IceLichBreath
+{
+	frame IBRTA { light IceBreath1 }
+	frame IBRTB { light IceBreath2 }
+}

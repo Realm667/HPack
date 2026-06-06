@@ -14,6 +14,7 @@
 
 // Items and decoration
 #include "zscript/hpack/props/prop_handstatue.gl"
+#include "zscript/hpack/props/prop_Morladim.gl"
 #include "actors/misc/prop_hexen.gl"
 #include "actors/misc/prop_podvariants.gl"
 #include "zscript/hpack/props/sfx_lights.gl"
@@ -29,7 +30,9 @@
 #include "zscript/hpack/weapons/dragonclaw.gl"
 #include "zscript/hpack/weapons/hellstaff.gl"
 #include "zscript/hpack/weapons/phoenixrod.gl"
-#include "zscript/hpack/weapons/dsparilsgloves.gl" 
+#include "zscript/hpack/weapons/dsparilsgloves.gl"
+#include "zscript/hpack/weapons/polymorphwand.gl"
+#include "zscript/hpack/weapons/meleestuff.gl"
 #include "zscript/hpack/inventory/royaldagger.gl"
 
 // Monsters
@@ -42,13 +45,17 @@
 #include "actors/monsters/deathknight.gl"
 #include "actors/monsters/disciple.gl"
 #include "actors/monsters/fallen.gl"
+#include "actors/monsters/frostgargoyle.gl" 
 #include "actors/monsters/ghoul.gl"
 #include "actors/monsters/guardiancube.gl"
 #include "actors/monsters/heretic_monsters.gl"
+#include "actors/monsters/icelich.gl"
 #include "zscript/hpack/monsters/infernodemon.gl"
 #include "actors/monsters/OphidianVariants.gl"
 #include "zscript/hpack/monsters/Satyr.gl"
+#include "actors/monsters/secretmonsters.gl"
 #include "actors/monsters/sentinel.gl"
+#include "actors/monsters/serpent.gl"
 #include "actors/monsters/shadowbeast.gl"
 #include "actors/monsters/skullwizard.gl"
 #include "zscript/hpack/monsters/wicked.gl"

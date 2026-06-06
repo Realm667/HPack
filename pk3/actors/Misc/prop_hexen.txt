@@ -228,24 +228,6 @@ ACTOR HPZChainEndSpike : ZChainEndSpike 16090
 	+FORCEYBILLBOARD
 }
 
-ACTOR HPZChandelier : RandomSpawner 16005
-{
-	//$Category Lights
-	//$Title Chandelier (Hexen, Lit)
-	//$Sprite CDLRA0
-	+SPAWNCEILING
-	DropItem "ZChandelier"
-}
-
-ACTOR HPZChandelierUnlit : RandomSpawner 16006
-{
-	//$Category Lights
-	//$Title Chandelier (Hexen, Unlit)
-	//$Sprite CDLRD0
-	+SPAWNCEILING
-	DropItem "ZChandelierUnlit"
-}
-
 ACTOR HPZCorpseHanging : RandomSpawner 16042
 {
 	//$Category Obstacles

@@ -1,1 +1,157 @@
-// [XA] TODO: stuff. :P
+flickerlight ArchBallPURPLE_X1
+{
+    color 0.8 0.0 0.8
+    size 88
+    secondarySize 96
+    chance 0.5
+	//attenuate 1
+}
+
+flickerlight ArchBallPURPLE_X2
+{
+    color 0.6 0.0 0.6
+    size 100
+    secondarySize 108
+    chance 0.5
+	//attenuate 1
+}
+
+flickerlight ArchBallPURPLE_X3
+{
+    color 0.3 0.0 0.3
+    size 112
+    secondarySize 120
+    chance 0.5
+	//attenuate 1
+}
+
+object ArchwizardBallPurple
+{
+	frame SBMP { light HARCHPURCUBE }
+	frame SBS4D { light ArchBallPURPLE_X1 }
+	frame SBS4E { light ArchBallPURPLE_X2 }
+	frame SBS4F { light ArchBallPURPLE_X2 }
+	frame SBS4G { light ArchBallPURPLE_X3 }
+	frame SBS4H { light ArchBallPURPLE_X3 }
+}
+
+flickerlight ArchBallBLUE_X1
+{
+    color 0.0 0.0 0.8
+    size 88
+    secondarySize 96
+    chance 0.5
+	//attenuate 1
+}
+
+flickerlight ArchBallBLUE_X2
+{
+    color 0.0 0.0 0.6
+    size 100
+    secondarySize 108
+    chance 0.5
+	//attenuate 1
+}
+
+flickerlight ArchBallBLUE_X3
+{
+    color 0.0 0.0 0.3
+    size 112
+    secondarySize 120
+    chance 0.5
+	//attenuate 1
+}
+
+object ArchwizardBallBlue
+{
+	frame SBMB { light HARCHBLUCUBE }
+	frame SBS5H { light ArchBallBLUE_X1 }
+	frame SBS5I { light ArchBallBLUE_X2 }
+	frame SBS5J { light ArchBallBLUE_X2 }
+	frame SBS5K { light ArchBallBLUE_X3 }
+	frame SBS5L { light ArchBallBLUE_X3 }
+}
+
+flickerlight ArchBallGREEN_X1
+{
+    color 0.0 0.8 0.0
+    size 88
+    secondarySize 96
+    chance 0.5
+	//attenuate 1
+}
+
+flickerlight ArchBallGREEN_X2
+{
+    color 0.0 0.6 0.0
+    size 100
+    secondarySize 108
+    chance 0.5
+	//attenuate 1
+}
+
+flickerlight ArchBallGREEN_X3
+{
+    color 0.0 0.3 0.0
+    size 112
+    secondarySize 120
+    chance 0.5
+	//attenuate 1
+}
+
+object ArchwizardBallGreen
+{
+	frame SBMG { light HARCHGRNCUBE }
+	frame SBS3D { light ArchBallGREEN_X1 }
+	frame SBS3E { light ArchBallGREEN_X2 }
+	frame SBS3F { light ArchBallGREEN_X2 }
+	frame SBS3G { light ArchBallGREEN_X3 }
+	frame SBS3H { light ArchBallGREEN_X3 }
+}
+
+object ArchWizardLaser
+{
+	frame SBS4A { light HARCHPURCUBE }
+	frame SBS4B { light HARCHPURCUBE }
+	frame SBS4C { light HARCHPURCUBE }
+	frame SBFXH { light HARCHBALL_X1 }
+	frame SBFXI { light HARCHBALL_X1 }
+	frame SBFXJ { light HARCHBALL_X2 }
+	frame SBFXK { light HARCHBALL_X2 }
+	frame SBFXL { light HARCHBALL_X3 }
+}
+
+object ArchWizardAcidShot
+{
+	frame GHFXA { light ToxinShot1 }
+	frame GHFXB { light ToxinShot1 }
+	frame GHFXC { light ToxinShot2 }
+	frame GHFXD { light ToxinShot3 }
+	frame GHFXE { light ToxinShot4 }
+	frame GHFXF { light ToxinShot5 }
+}
+
+flickerlight ArchAttackBLUE
+{
+    attenuate 1
+	color 0.0 0.0 1.0
+    size 96
+    secondarysize 108
+    chance 0.4
+}
+
+flickerlight ArchAttackGREEN
+{
+    attenuate 1
+	color 0.0 1.0 0.0
+    size 96
+    secondarysize 108
+    chance 0.4
+}
+
+object ArchWizard
+{
+	frame ARCMC { light HARCHATK }
+	frame ARCMM { light ArchAttackBLUE }
+	frame ARCMN { light ArchAttackGREEN }
+}

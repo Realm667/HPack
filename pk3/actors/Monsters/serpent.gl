@@ -1,0 +1,65 @@
+object FireSerpFX
+{
+	frame FX14A { light SERPENTBALL }
+	frame FX14B { light SERPENTBALL }
+	frame FX14C { light SERPENTBALL }
+
+	frame FX14D { light SERPENTBALL_X1 }
+	frame FX14E { light SERPENTBALL_X2 }
+	frame FX14F { light SERPENTBALL_X3 }
+	frame FX14G { light SERPENTBALL_X4 }
+	frame FX14H { light SERPENTBALL_X4 }
+}
+
+object PoisonSerpFX
+{
+	frame D2FXA { light CSGASBALL }
+	frame D2FXB { light CSGASBALL }
+	frame D2FXC { light CSGASBALL }
+	frame D2FXD { light CSGASBALL }
+	frame D2FXE { light CSGASBALL }
+	frame D2FXF { light CSGASBALL }
+
+	frame D2FXG { light CSGASBALL_X1 }
+	frame D2FXH { light CSGASBALL_X2 }
+	frame D2FXI { light CSGASBALL_X2 }
+	frame D2FXJ { light CSGASBALL_X3 }
+	frame D2FXK { light CSGASBALL_X4 }
+	frame D2FXL { light CSGASBALL_X4 }
+}
+
+Pointlight FireBreath1
+{
+	color 1.0 1.0 0.0
+	size 68
+}
+
+Pointlight FireBreath2
+{
+	color 0.8 0.8 0.0
+	size 70
+}
+
+Pointlight FireBreath3
+{
+	color 0.7 0.7 0.0
+	size 69
+}
+
+object SerpentFireBreath
+{
+	frame FRBSE { light FireBreath1 }
+	frame FRBSF { light FireBreath2 }
+	frame FRBSG { light FireBreath3 }
+}
+
+object RedDemonFX
+{
+	frame RDFX { light VOLCANOBALL1 }
+	frame XPL1A { light TIMEBOMB_X1 }
+	frame XPL1B { light TIMEBOMB_X2 }
+	frame XPL1C { light TIMEBOMB_X3 }
+	frame XPL1D { light TIMEBOMB_X4 }
+	frame XPL1E { light TIMEBOMB_X5 }
+	frame XPL1F { light TIMEBOMB_X5 }
+}

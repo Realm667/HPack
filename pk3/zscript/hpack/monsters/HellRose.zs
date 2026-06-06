@@ -10,7 +10,7 @@ Default
 	//$Title Hell Rose
 	Monster;
 	Health 300;
-	Radius 32;
+	Radius 28;
 	Height 56;
 	CameraHeight 41;
 	Mass 5000;

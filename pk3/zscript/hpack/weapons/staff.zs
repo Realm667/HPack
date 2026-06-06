@@ -211,6 +211,7 @@ Default
 	+SHOOTABLE
 	+NOGRAVITY
 	+REFLECTIVE
+	+DONTSPLASH
 	}
 	States
 	{

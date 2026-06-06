@@ -97,11 +97,6 @@ Actor Thunder_Spark
 
 Actor Thunder_Smoke
 {
-    Height 2
-    Radius 1
-	+MISSILE
-	+NOGRAVITY
-	+NOBLOCKMAP
 	+NOINTERACTION
 	+DONTSPLASH
     RenderStyle Translucent

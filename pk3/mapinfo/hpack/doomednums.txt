@@ -4,9 +4,10 @@
 
 DoomEdNums
 {
+	6255 = UnholyBeacon
 	10000 = FireSpawner
 	10010 = RainSpawner
-	
+	16005 = HPZChandelier
 	16082 = ToTLBrassTorch
 	16104 = TOTLTwinedTorch
 	16081 = ToTLSkullTorch
@@ -126,6 +127,7 @@ DoomEdNums
 	16249 = BloodLich
 	16518 = ChaosWyvern
 	16601 = HPBeastStrong
+	16006 = HPZChandelierUnlit
 	17051 = HPSuperGargoyle
 	19273 = JumpClink
 	20002 = HornBeast

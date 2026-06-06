@@ -1,0 +1,117 @@
+//Apparently the Gauntlet and powered Staff puffs don't have dynamic light
+//definitions. Let's fix that.
+Flickerlight POWERSTAFFPUFF1
+{
+	color 0.5 0.5 1.0
+	size 64
+	secondarysize 72
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POWERSTAFFPUFF2
+{
+	color 0.4 0.4 1.0
+	size 68
+	secondarysize 76
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POWERSTAFFPUFF3
+{
+	color 0.4 0.4 0.9
+	size 72
+	secondarysize 80
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POWERSTAFFPUFF4
+{
+	color 0.2 0.2 0.7
+	size 72
+	secondarysize 80
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POWERSTAFFPUFF5
+{
+	color 0.1 0.1 0.5
+	size 68
+	secondarysize 76
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight POWERSTAFFPUFF6
+{
+	color 0.1 0.1 0.3
+	size 64
+	secondarysize 72
+	chance 0.8
+	attenuate 1
+}
+
+Object HPStaffPuff2
+{
+	frame PUF4A { light POWERSTAFFPUFF1 }
+	frame PUF4B { light POWERSTAFFPUFF2 }
+	frame PUF4C { light POWERSTAFFPUFF3 }
+	frame PUF4D { light POWERSTAFFPUFF4 }
+	frame PUF4E { light POWERSTAFFPUFF5 }
+	frame PUF4F { light POWERSTAFFPUFF6 }
+}
+
+Flickerlight GAUNTLETPUFFGREEN1
+{
+	color 0.0 0.7 0.0
+	size 8
+	secondarysize 12
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight GAUNTLETPUFFGREEN2
+{
+	color 0.0 0.7 0.0
+	size 4
+	secondarysize 8
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight GAUNTLETPUFFRED1
+{
+	color 0.7 0.0 0.0
+	size 8
+	secondarysize 12
+	chance 0.8
+	attenuate 1
+}
+
+Flickerlight GAUNTLETPUFFRED2
+{
+	color 0.7 0.0 0.0
+	size 4
+	secondarysize 8
+	chance 0.8
+	attenuate 1
+}
+
+Object GauntletPuff1
+{
+	frame PUF1A { light GAUNTLETPUFFGREEN1 }
+	frame PUF1B { light GAUNTLETPUFFGREEN1 }
+	frame PUF1C { light GAUNTLETPUFFGREEN2 }
+	frame PUF1D { light GAUNTLETPUFFGREEN2 }
+}
+
+Object GauntletPuff2
+{
+	frame PUF1E { light GAUNTLETPUFFRED1 }
+	frame PUF1F { light GAUNTLETPUFFRED1 }
+	frame PUF1G { light GAUNTLETPUFFRED2 }
+	frame PUF1H { light GAUNTLETPUFFRED2 }
+}

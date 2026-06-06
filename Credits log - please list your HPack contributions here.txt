@@ -301,6 +301,30 @@ Shoutouts to kevansevans for giving me the idea of replacing decorative actors w
 	- Torch off sound from Rune.
 	- Cast sound for the Firewall taken from a bunch of Raven Software games, mixed by Gothic.
 - New sounds for the Ice Lich, taken from Legends of Might & Magic and mixed with Thief sounds.
+- ZScript conversion for the Hell Rose (original by Neoworm)
+	- Sprites taken from Blood Post Mortem.
+	- Sounds from Blood & Blood 2.
+	- Spit sprites from Heretic, Hexen, the Catacomb series, and the official Cacodemon plush by Bethesda.
+- Code rewrite for Star, Sparkle and Teleport effects to include support for VisualThinkers. Again big thanks to inkoalawetrust for the example in the ZDoom Wiki.
+- Code rewrite for the Hand Statue to allow color changes with scripts.
+- Spike Traps used in H4MX:
+	- Sprites taken from Hexx by TAG Games, edited by Gothic.
+	- Sounds from Super Castlevania IV, baby.
+- Textures CTGOLD11, STNGLAS2, STNGLS7, STNGLS8, wall60c, wall60d & wall60e.
+- GLDEFS for the Frost Gargoyle, the secret monsters, the Arch Wizard, the Purple Volcano, the Gauntlets and the Polymorph Wand.
+- wallbrk.ogg (from Hexen 2) & wallbrk2.ogg (from Half Life)
+- Code for the Unholy Beacon.
+
+-------------------------
+Contributor: Mor'ladim
+-------------------------
+- Sprites and sounds for the Unholy Beacon used in H2M6:
+	- Shockwave & Glow sprites from Strider 2 by Capcom.
+
+-------------------------
+Contributor: Frank Klepacki
+-------------------------
+- Song M_H2M6B.mid from Lands of Lore 1: The Throne of Chaos.
 
 -------------------------
 Contributor: Lee Jackson
@@ -340,7 +364,7 @@ Contributor: cazok (http://cazok.newgrounds.com/)
 -------------------
 Contributor: el zee
 -------------------
-- H2M6: "House of the Ancients"
+- H2M6: "House of the Ancients" (modified by Gothic)
 - H2M7: "Asterion"
 
 -------------------

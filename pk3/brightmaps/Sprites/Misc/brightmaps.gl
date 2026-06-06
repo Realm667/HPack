@@ -45,3 +45,33 @@ brightmap sprite vlcoe0
 	map "brightmaps/sprites/misc/vlcoe0.png"
 	disablefullbright
 }
+
+brightmap sprite VLCPA0
+{
+	map "brightmaps/sprites/misc/vlcoa0.png"
+	disablefullbright
+}
+
+brightmap sprite VLCPB0
+{
+	map "brightmaps/sprites/misc/vlcoa0.png"
+	disablefullbright
+}
+
+brightmap sprite VLCPC0
+{
+	map "brightmaps/sprites/misc/vlcoa0.png"
+	disablefullbright
+}
+
+brightmap sprite VLCPD0
+{
+	map "brightmaps/sprites/misc/vlcoa0.png"
+	disablefullbright
+}
+
+brightmap sprite VLCPE0
+{
+	map "brightmaps/sprites/misc/vlcoe0.png"
+	disablefullbright
+}

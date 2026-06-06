@@ -51,78 +51,56 @@ actor HPSnakeStrong : HPSnake 16604
 		SNKE F 10 A_FaceTarget
 		SNKE F 0 bright A_PlaySound("array/firep")
 		SNKE F 0 A_FaceTarget
-		SNKE F 10 bright A_CustomMissile("ForceShot2", 56)
+		SNKE F 10 bright A_CustomMissile("ForceShot", 56)
 		SNKE F 0 A_FaceTarget
-		SNKE F 10 bright A_CustomMissile("ForceShot2", 56)
+		SNKE F 10 bright A_CustomMissile("ForceShot", 56)
 		SNKE F 0 A_FaceTarget
-		SNKE F 10 bright A_CustomMissile("ForceShot2", 56)
+		SNKE F 10 bright A_CustomMissile("ForceShot", 56)
 		Goto See
 	}
 }
 
-ACTOR ForceShot1
+ACTOR ForceShot
 {
-	Radius 3
-	Height 3
-	Speed 60
-	Damage 3
-	Alpha .5
 	Projectile
+	Radius 6
+	Height 6
+	Speed 30
+	Damage 4
+	Alpha 0.5
+	Scale 2
 	RenderStyle Add
-	DeathSound "weapons/skulprojdeath"
+	DeathSound "array/impactp"
 	+FORCEXYBILLBOARD
 	States
 	{
 	Spawn:
-		RADE A 1 Bright Light("FORCEBLAST_X2")
-		RADE AEAEAEAEAEAE 2 Bright Light("FORCEBLAST_X2") A_SpawnItemEx("ForceTrail",0,0,0,0,0,0,0,8)
+		RADE AE 2 Bright Light("FORCEBLAST_X2") A_SpawnItemEx("ForceTrail",0,0,0,0,0,0,0,8)
+		Loop
 	Death:
-		TNT1 A 0 A_ChangeVelocity(0,0,0,CVF_REPLACE)
+		// 8-way particles:
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,-7,-7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,-7,7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,7,7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,7,-7)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,14,0)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,0,14)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,-14,0)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,0,-14)
+		// Alternate height 8-way:
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,-5,-5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,-5,5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,5,5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,5,-5,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,10,0,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,0,10,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,-10,0,5)
+		RADE A 0 A_SpawnItemEx ("ForceTrail",0,0,0,0,-10,5)
 		RADE A 2 Bright Light("FORCEBLAST_X2")
 		RADE BCD 2 Bright Light("FORCEBLAST_X1")
 		RADE EF  2 Bright Light("FORCEBLAST_X2")
 		RADE GHI 2 Bright Light("FORCEBLAST_X3")
 		Stop
-	}
-}
-
-ACTOR ForceShot2 : ForceShot1
-{
-	Radius 6
-	Height 6
-	Speed 30
-	Damage 4
-	Alpha .5
-	Scale 2
-	Projectile
-	RenderStyle Add
-	//DeathSound "array/impactp"
-	States
-	{
-	Spawn:
-		RADE A 1 Bright Light("FORCEBLAST_X2")
-		RADE AEAEAEAEAEAEAEAEAE 2 Bright Light("FORCEBLAST_X2") A_SpawnItemEx("ForceTrail2",0,0,0,0,0,0,0,8)
-	Death:
-		// 8-way particles:
-		TNT1 A 0 A_PlaySound("array/impactp")
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-7,-7)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-7,7)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,7,7)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,7,-7)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,14,0)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,14)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-14,0)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,-14)
-		// Alternate height 8-way:
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-5,-5,5)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-5,5,5)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,5,5,5)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,5,-5,5)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,10,0,5)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,10,5)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,-10,0,5)
-		RADE A 0 A_SpawnItemEx ("ForceTrail2",0,0,0,0,-10,5)
-		Goto Super::Death
 	}
 }
 
@@ -135,6 +113,8 @@ ACTOR ForceTrail
 	Projectile
 	RenderStyle Add
 	Alpha 0.3
+	Scale 1.5
+	-NOGRAVITY
 	+FORCEXYBILLBOARD
 	+DONTSPLASH
 	States
@@ -143,10 +123,4 @@ ACTOR ForceTrail
 		RADE FGHI 2 Bright Light("FORCEBLAST_X3")
 		Stop 
 	}
-}
-
-ACTOR ForceTrail2 : ForceTrail
-{
-	Scale 1.5
-	-NOGRAVITY
 }

@@ -23,6 +23,10 @@ HardwareShader Texture "WLLWATR3" { Shader "shaders/hp_waterfall.fp" Speed 256 }
 HardwareShader Texture "WLLWATF1" { Shader "shaders/hp_gradientfall_bottom.fp" Speed 256 DisableAlphaTest }
 HardwareShader Texture "WLLWATF2" { Shader "shaders/hp_gradientfall_bottom.fp" Speed 256 DisableAlphaTest }
 HardwareShader Texture "WLLWATF3" { Shader "shaders/hp_gradientfall_bottom.fp" Speed 256 DisableAlphaTest }
+HardwareShader Texture "XAMIFAD1" { Shader "shaders/hp_gradientfade_bottom.fp" DisableAlphaTest }
+HardwareShader Texture "XAMIFAD2" { Shader "shaders/hp_gradientfade_bottom.fp" DisableAlphaTest }
+HardwareShader Texture "XAMIFAD3" { Shader "shaders/hp_gradientfade_bottom.fp" DisableAlphaTest }
+HardwareShader Texture "XAMIFAD4" { Shader "shaders/hp_gradientfade_bottom.fp" DisableAlphaTest }
 
 //this doesn't exist yet
 HardwareShader Texture "SCBLOOD9"

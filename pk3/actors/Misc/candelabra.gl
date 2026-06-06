@@ -1,12 +1,13 @@
 // Candelabra
 pointlight CANDELABRA
 {
-    color 1.0 1.0 0.0
-    size 48
-    offset 0 52 0
+	color 1.0 1.0 0.3
+	size 67
+	offset 0 52 0
+	attenuate 1
 }
 
-object HCandelabra
+object Candelabra
 {
-    frame CBRA { light CANDELABRA }
+	frame CBRA { light CANDELABRA }
 }
