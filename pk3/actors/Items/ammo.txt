@@ -175,7 +175,7 @@ actor SunStaffHefty : SunStaffAmmo 16455
 	states
 	{
 	Spawn:
-		SUNH ABCDEF 4 BRIGHT light(LWANDAMMO)
+		SUNH ABCDEFGH 4 BRIGHT light(LWANDAMMO)
 		loop
 	}
 }
