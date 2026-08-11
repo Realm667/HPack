@@ -15,12 +15,17 @@ actor ArtiHighJump : PowerupGiver 20003
 	Inventory.PickupSound "misc/p_pkup"
 	Inventory.UseSound "misc/invuse"
 	Inventory.InterHubAmount 0
-	Powerup.Type "HighJump"
-	Powerup.Duration 1000
+	Powerup.Type JumpBoots
 	States
 	{
 	Spawn:
 		AJMP A -1 bright
 		Loop
 	}
+}
+
+Actor PowerJumpBoots : PowerHighJump
+{
+	Powerup.Duration 1000
+	Inventory.Icon "SPINJB0"
 }

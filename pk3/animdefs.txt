@@ -401,6 +401,25 @@ pic SPINMS13 tics 3
 pic SPINMS14 tics 3
 pic SPINMS15 tics 3
 
+// Boots of High Jump
+texture SPINJB0
+pic SPINJB0 tics 3
+pic SPINJB1 tics 3
+pic SPINJB2 tics 3
+pic SPINJB3 tics 3
+pic SPINJB4 tics 3
+pic SPINJB5 tics 3
+pic SPINJB6 tics 3
+pic SPINJB7 tics 3
+pic SPINJB8 tics 3
+pic SPINJB9 tics 3
+pic SPINJB10 tics 3
+pic SPINJB11 tics 3
+pic SPINJB12 tics 3
+pic SPINJB13 tics 3
+pic SPINJB14 tics 3
+pic SPINJB15 tics 3
+
 // Wraith
 WARP2 texture WRAIA1
 WARP2 texture WRAIA2A8
